@@ -338,7 +338,7 @@ let allPeriodsData = null;
 async function fetchMatchData(expect = null) {
     try {
         // 添加时间戳防止缓存
-        const url = '/zjq4_data.json?t=' + Date.now();
+        const url = 'data/zjq4_data.json?t=' + Date.now();
         const response = await fetch(url);
         if (!response.ok) throw new Error('数据获取失败');
         const data = await response.json();

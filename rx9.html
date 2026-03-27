@@ -441,7 +441,7 @@ let allPeriodsData = null;  // 存储所有期次的数据，用于期次切换
 async function fetchMatchData(expect = null) {
     try {
         // 添加时间戳防止浏览器缓存
-        const url = '/ctzc_data.json?t=' + Date.now();
+        const url = 'data/ctzc_data.json?t=' + Date.now();
         const response = await fetch(url);
         if (!response.ok) throw new Error('数据获取失败');
         const data = await response.json();
