@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 """
 比分直播数据爬虫 - 多数据源整合版
+
+重要规则：
+1. 只保留竞彩比赛（有matchNum的比赛）
+2. 500.com数据仅用于补充比分、状态、namitiyuId等信息
+3. 不添加500.com独有的非竞彩比赛
 """
 
 import json
@@ -206,7 +211,9 @@ def fetch_all_data():
             if key in live_data:
                 ld = live_data[key]
                 m['fid'] = ld['fid']
-                m['matchNum'] = ld.get('matchNum', '')
+                # 保留sporttery的matchNum，只在空时使用500.com的
+                if not m.get('matchNum') and ld.get('matchNum'):
+                    m['matchNum'] = ld.get('matchNum', '')
                 m['homeScore'] = ld['homeScore']
                 m['awayScore'] = ld['awayScore']
                 m['status'] = ld['status']
@@ -223,7 +230,6 @@ def fetch_all_data():
                     m['league'] = ld['league']
             else:
                 m['fid'] = ''
-                m['matchNum'] = ''
                 # 对于不在500.com中的比赛，使用比赛日期作为分组依据
                 if not m.get('saleDateDisplay'):
                     # 从date字段解析日期 (格式: "2026年3月28日 周六")
@@ -246,32 +252,6 @@ def fetch_all_data():
                     m['league'] = league_map[league_key]
             
             matches.append(m)
-    
-    # 添加500.com独有的比赛（不在sporttery中的）
-    for key, ld in live_data.items():
-        if key not in processed_keys:
-            # 创建新的比赛记录
-            match = {
-                'matchId': '',
-                'fid': ld['fid'],
-                'matchNum': ld.get('matchNum', ''),
-                'home': key.split('_')[0] if '_' in key else '',
-                'away': key.split('_')[1] if '_' in key else '',
-                'homeScore': ld['homeScore'],
-                'awayScore': ld['awayScore'],
-                'status': ld['status'],
-                'minute': ld['minute'],
-                'league': ld.get('league', '国际赛'),
-                'date': ld.get('date', ''),
-                'time': ld.get('time', ''),
-                'saleDate': ld.get('saleDate', ''),
-                'saleDateDisplay': ld.get('saleDateDisplay', ''),
-                'homeRank': '',
-                'awayRank': ''
-            }
-            
-            matches.append(match)
-            print(f"    添加500独有比赛: {match['home']} vs {match['away']}")
     
     # 获取namitiyu ID
     print(">>> 获取namitiyu动画ID...")
