@@ -1,22 +1,94 @@
 {
   "matchId": 2038655,
-  "updateTime": "2026-03-28 01:07:07",
+  "updateTime": "2026-03-28 01:18:05",
   "home": "克利夫兰骑士",
   "away": "迈阿密热火",
   "league": "美职篮",
   "homeRank": "[美职篮4]",
   "awayRank": "[美职篮8]",
   "homeStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "73",
+      "wins": "39",
+      "losses": "34",
+      "pointsFor": "120.2",
+      "pointsAgainst": "117.3",
+      "pointDiff": "2.9",
+      "rank": "0",
+      "winRate": "53.4%"
+    },
+    "home": {
+      "games": "37",
+      "wins": "23",
+      "losses": "14",
+      "pointsFor": "122.1",
+      "pointsAgainst": "117.3",
+      "pointDiff": "4.8",
+      "rank": "0",
+      "winRate": "62.2%"
+    },
+    "away": {
+      "games": "36",
+      "wins": "16",
+      "losses": "20",
+      "pointsFor": "118.2",
+      "pointsAgainst": "117.2",
+      "pointDiff": "1.0",
+      "rank": "0",
+      "winRate": "44.4%"
+    },
+    "recent10": {
+      "games": "0",
+      "wins": "0",
+      "losses": "0",
+      "pointsFor": "0.0",
+      "pointsAgainst": "0.0",
+      "pointDiff": "0.0",
+      "rank": "",
+      "winRate": "0.0%"
+    }
   },
   "awayStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "73",
+      "wins": "45",
+      "losses": "28",
+      "pointsFor": "119.0",
+      "pointsAgainst": "115.0",
+      "pointDiff": "4.0",
+      "rank": "0",
+      "winRate": "61.6%"
+    },
+    "home": {
+      "games": "37",
+      "wins": "23",
+      "losses": "14",
+      "pointsFor": "118.1",
+      "pointsAgainst": "114.4",
+      "pointDiff": "3.7",
+      "rank": "0",
+      "winRate": "62.2%"
+    },
+    "away": {
+      "games": "36",
+      "wins": "22",
+      "losses": "14",
+      "pointsFor": "119.9",
+      "pointsAgainst": "115.6",
+      "pointDiff": "4.3",
+      "rank": "0",
+      "winRate": "61.1%"
+    },
+    "recent10": {
+      "games": "0",
+      "wins": "0",
+      "losses": "0",
+      "pointsFor": "0.0",
+      "pointsAgainst": "0.0",
+      "pointDiff": "0.0",
+      "rank": "",
+      "winRate": "0.0%"
+    }
   },
   "odds": {
     "sf": {
@@ -34,13 +106,802 @@
       "under": "1.70"
     }
   },
-  "h2h": null,
-  "homeRecent": null,
-  "awayRecent": null,
+  "h2h": {
+    "summary": "近10次交战：7胜3负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-03-26",
+        "away": "迈阿密热火",
+        "score": "120-103 [223]",
+        "home": "克里夫兰骑士",
+        "result": "负",
+        "diff": "-17"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-11-13",
+        "away": "克里夫兰骑士",
+        "score": "130-116 [246]",
+        "home": "迈阿密热火",
+        "result": "胜",
+        "diff": "14"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-11-11",
+        "away": "克里夫兰骑士",
+        "score": "138-140 [278]",
+        "home": "迈阿密热火",
+        "result": "负",
+        "diff": "-2"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-04-29",
+        "away": "克里夫兰骑士",
+        "score": "138-83   [221]",
+        "home": "迈阿密热火",
+        "result": "胜",
+        "diff": "55"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-04-27",
+        "away": "克里夫兰骑士",
+        "score": "124-87   [211]",
+        "home": "迈阿密热火",
+        "result": "胜",
+        "diff": "37"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-04-24",
+        "away": "迈阿密热火",
+        "score": "112-121 [233]",
+        "home": "克里夫兰骑士",
+        "result": "胜",
+        "diff": "9"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-04-21",
+        "away": "迈阿密热火",
+        "score": "100-121 [221]",
+        "home": "克里夫兰骑士",
+        "result": "胜",
+        "diff": "21"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-03-06",
+        "away": "迈阿密热火",
+        "score": "107-112 [219]",
+        "home": "克里夫兰骑士",
+        "result": "胜",
+        "diff": "5"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-01-30",
+        "away": "克里夫兰骑士",
+        "score": "126-106 [232]",
+        "home": "迈阿密热火",
+        "result": "胜",
+        "diff": "20"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-12-09",
+        "away": "克里夫兰骑士",
+        "score": "113-122 [235]",
+        "home": "迈阿密热火",
+        "result": "负",
+        "diff": "-9"
+      }
+    ]
+  },
+  "homeRecent": {
+    "summary": "近10场：6胜4负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-03-26",
+        "opponent": "热火",
+        "score": "120-103",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-25",
+        "opponent": "魔术",
+        "score": "131-136",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-22",
+        "opponent": "鹈鹕",
+        "score": "111-106",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-20",
+        "opponent": "公牛",
+        "score": "115-110",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-18",
+        "opponent": "雄鹿",
+        "score": "123-116",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-16",
+        "opponent": "独行侠",
+        "score": "130-120",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-14",
+        "opponent": "独行侠",
+        "score": "138-105",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-12",
+        "opponent": "魔术",
+        "score": "122-128",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-10",
+        "opponent": "76人",
+        "score": "101-115",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-09",
+        "opponent": "凯尔特人",
+        "score": "109-98",
+        "result": "负"
+      }
+    ]
+  },
+  "awayRecent": {
+    "summary": "近10场：5胜5负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-03-26",
+        "opponent": "骑士",
+        "score": "120-103",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-24",
+        "opponent": "马刺",
+        "score": "136-111",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-22",
+        "opponent": "火箭",
+        "score": "122-123",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-20",
+        "opponent": "湖人",
+        "score": "134-126",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-18",
+        "opponent": "黄蜂",
+        "score": "106-136",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-15",
+        "opponent": "魔术",
+        "score": "121-117",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-13",
+        "opponent": "雄鹿",
+        "score": "105-112",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-11",
+        "opponent": "奇才",
+        "score": "129-150",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-09",
+        "opponent": "活塞",
+        "score": "110-121",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-07",
+        "opponent": "黄蜂",
+        "score": "128-120",
+        "result": "胜"
+      }
+    ]
+  },
   "leagueRanking": null,
-  "handicapComparison": null,
-  "futureMatches": null,
-  "ouzhi": null,
+  "handicapComparison": {
+    "home": {
+      "total": {
+        "games": "73",
+        "winHandicap": "28",
+        "loseHandicap": "45",
+        "winRate": "38.4%",
+        "bigBall": "34",
+        "smallBall": "39",
+        "bigBallRate": "46.6%"
+      },
+      "away": {
+        "games": "36",
+        "winHandicap": "15",
+        "loseHandicap": "21",
+        "winRate": "41.7%",
+        "bigBall": "20",
+        "smallBall": "16",
+        "bigBallRate": "55.6%"
+      }
+    },
+    "away": {
+      "total": {
+        "games": "73",
+        "winHandicap": "43",
+        "loseHandicap": "30",
+        "winRate": "58.9%",
+        "bigBall": "40",
+        "smallBall": "33",
+        "bigBallRate": "54.8%"
+      },
+      "away": {
+        "games": "36",
+        "winHandicap": "22",
+        "loseHandicap": "14",
+        "winRate": "61.1%",
+        "bigBall": "20",
+        "smallBall": "16",
+        "bigBallRate": "55.6%"
+      }
+    }
+  },
+  "futureMatches": {
+    "home": [
+      {
+        "league": "NBA",
+        "date": "2026-03-31",
+        "homeAway": "客",
+        "opponent": "骑士爵士VS",
+        "daysApart": "3天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-01",
+        "homeAway": "客",
+        "opponent": "骑士湖人VS",
+        "daysApart": "4天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-03",
+        "homeAway": "客",
+        "opponent": "骑士勇士VS",
+        "daysApart": "6天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-06",
+        "homeAway": "主",
+        "opponent": "步行者骑士VS",
+        "daysApart": "9天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-07",
+        "homeAway": "客",
+        "opponent": "骑士灰熊VS",
+        "daysApart": "10天"
+      }
+    ],
+    "away": [
+      {
+        "league": "NBA",
+        "date": "2026-03-30",
+        "homeAway": "客",
+        "opponent": "热火步行者VS",
+        "daysApart": "2天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-31",
+        "homeAway": "主",
+        "opponent": "76人热火VS",
+        "daysApart": "3天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-02",
+        "homeAway": "主",
+        "opponent": "凯尔特人热火VS",
+        "daysApart": "5天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-05",
+        "homeAway": "主",
+        "opponent": "奇才热火VS",
+        "daysApart": "8天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-08",
+        "homeAway": "客",
+        "opponent": "热火猛龙VS",
+        "daysApart": "11天"
+      }
+    ]
+  },
+  "ouzhi": {
+    "companies": [
+      {
+        "company": "威**尔",
+        "initial": {
+          "lose": "2.52",
+          "win": "1.56",
+          "loseRate": "38.24%",
+          "winRate": "61.76%",
+          "returnRate": "96.35%"
+        },
+        "instant": {
+          "lose": "2.80",
+          "win": "1.46",
+          "loseRate": "34.27%",
+          "winRate": "65.73%",
+          "returnRate": "95.96%"
+        },
+        "updateTime": "2026-03-28 00:36:42"
+      },
+      {
+        "company": "*门",
+        "initial": {
+          "lose": "2.60",
+          "win": "1.45",
+          "loseRate": "35.80%",
+          "winRate": "64.20%",
+          "returnRate": "93.09%"
+        },
+        "instant": {
+          "lose": "2.60",
+          "win": "1.45",
+          "loseRate": "35.80%",
+          "winRate": "64.20%",
+          "returnRate": "93.09%"
+        },
+        "updateTime": "2026-03-27 15:32:31"
+      },
+      {
+        "company": "立*",
+        "initial": {
+          "lose": "2.75",
+          "win": "1.44",
+          "loseRate": "34.37%",
+          "winRate": "65.63%",
+          "returnRate": "94.51%"
+        },
+        "instant": {
+          "lose": "2.75",
+          "win": "1.44",
+          "loseRate": "34.37%",
+          "winRate": "65.63%",
+          "returnRate": "94.51%"
+        },
+        "updateTime": "2026-03-28 00:36:42"
+      },
+      {
+        "company": "**t3*5",
+        "initial": {
+          "lose": "2.55",
+          "win": "1.54",
+          "loseRate": "37.65%",
+          "winRate": "62.35%",
+          "returnRate": "96.01%"
+        },
+        "instant": {
+          "lose": "2.80",
+          "win": "1.45",
+          "loseRate": "34.12%",
+          "winRate": "65.88%",
+          "returnRate": "95.53%"
+        },
+        "updateTime": "2026-03-28 00:35:14"
+      },
+      {
+        "company": "I***rw**t*n",
+        "initial": {
+          "lose": "2.55",
+          "win": "1.50",
+          "loseRate": "37.04%",
+          "winRate": "62.96%",
+          "returnRate": "94.44%"
+        },
+        "instant": {
+          "lose": "2.70",
+          "win": "1.45",
+          "loseRate": "34.94%",
+          "winRate": "65.06%",
+          "returnRate": "94.34%"
+        },
+        "updateTime": "2026-03-27 22:33:38"
+      },
+      {
+        "company": "易*博",
+        "initial": {
+          "lose": "2.50",
+          "win": "1.48",
+          "loseRate": "37.19%",
+          "winRate": "62.81%",
+          "returnRate": "92.96%"
+        },
+        "instant": {
+          "lose": "2.80",
+          "win": "1.45",
+          "loseRate": "34.12%",
+          "winRate": "65.88%",
+          "returnRate": "95.53%"
+        },
+        "updateTime": "2026-03-28 00:43:32"
+      },
+      {
+        "company": "伟*",
+        "initial": {
+          "lose": "2.45",
+          "win": "1.48",
+          "loseRate": "37.66%",
+          "winRate": "62.34%",
+          "returnRate": "92.26%"
+        },
+        "instant": {
+          "lose": "2.70",
+          "win": "1.45",
+          "loseRate": "34.94%",
+          "winRate": "65.06%",
+          "returnRate": "94.34%"
+        },
+        "updateTime": "2026-03-28 00:29:52"
+      },
+      {
+        "company": "B**n",
+        "initial": {
+          "lose": "2.80",
+          "win": "1.45",
+          "loseRate": "34.12%",
+          "winRate": "65.88%",
+          "returnRate": "95.53%"
+        },
+        "instant": {
+          "lose": "2.80",
+          "win": "1.45",
+          "loseRate": "34.12%",
+          "winRate": "65.88%",
+          "returnRate": "95.53%"
+        },
+        "updateTime": "2026-03-28 00:38:58"
+      },
+      {
+        "company": "10**t",
+        "initial": {
+          "lose": "2.50",
+          "win": "1.55",
+          "loseRate": "38.27%",
+          "winRate": "61.73%",
+          "returnRate": "95.68%"
+        },
+        "instant": {
+          "lose": "2.80",
+          "win": "1.45",
+          "loseRate": "34.12%",
+          "winRate": "65.88%",
+          "returnRate": "95.53%"
+        },
+        "updateTime": "2026-03-28 00:43:32"
+      },
+      {
+        "company": "C***l",
+        "initial": {
+          "lose": "2.75",
+          "win": "1.44",
+          "loseRate": "34.37%",
+          "winRate": "65.63%",
+          "returnRate": "94.51%"
+        },
+        "instant": {
+          "lose": "2.75",
+          "win": "1.44",
+          "loseRate": "34.37%",
+          "winRate": "65.63%",
+          "returnRate": "94.51%"
+        },
+        "updateTime": "2026-03-28 00:43:32"
+      },
+      {
+        "company": "利*",
+        "initial": {
+          "lose": "2.72",
+          "win": "1.46",
+          "loseRate": "34.93%",
+          "winRate": "65.07%",
+          "returnRate": "95.00%"
+        },
+        "instant": {
+          "lose": "2.75",
+          "win": "1.45",
+          "loseRate": "34.52%",
+          "winRate": "65.48%",
+          "returnRate": "94.94%"
+        },
+        "updateTime": "2026-03-28 00:36:42"
+      },
+      {
+        "company": "M****on88 (明*)",
+        "initial": {
+          "lose": "2.72",
+          "win": "1.47",
+          "loseRate": "35.08%",
+          "winRate": "64.92%",
+          "returnRate": "95.43%"
+        },
+        "instant": {
+          "lose": "2.81",
+          "win": "1.45",
+          "loseRate": "34.04%",
+          "winRate": "65.96%",
+          "returnRate": "95.65%"
+        },
+        "updateTime": "2026-03-28 00:33:13"
+      },
+      {
+        "company": "Be*****",
+        "initial": {
+          "lose": "2.82",
+          "win": "1.52",
+          "loseRate": "35.02%",
+          "winRate": "64.98%",
+          "returnRate": "98.76%"
+        },
+        "instant": {
+          "lose": "2.92",
+          "win": "1.51",
+          "loseRate": "34.09%",
+          "winRate": "65.91%",
+          "returnRate": "99.53%"
+        },
+        "updateTime": "2026-03-28 01:08:13"
+      },
+      {
+        "company": "**t**o",
+        "initial": {
+          "lose": "2.85",
+          "win": "1.45",
+          "loseRate": "33.72%",
+          "winRate": "66.28%",
+          "returnRate": "96.10%"
+        },
+        "instant": {
+          "lose": "2.75",
+          "win": "1.48",
+          "loseRate": "34.99%",
+          "winRate": "65.01%",
+          "returnRate": "96.22%"
+        },
+        "updateTime": "2026-03-27 22:41:49"
+      },
+      {
+        "company": "**ts**n S***tsb**k",
+        "initial": {
+          "lose": "2.70",
+          "win": "1.48",
+          "loseRate": "35.41%",
+          "winRate": "64.59%",
+          "returnRate": "95.60%"
+        },
+        "instant": {
+          "lose": "2.70",
+          "win": "1.48",
+          "loseRate": "35.41%",
+          "winRate": "64.59%",
+          "returnRate": "95.60%"
+        },
+        "updateTime": "2026-03-27 19:24:48"
+      },
+      {
+        "company": "B***eS***ts",
+        "initial": {
+          "lose": "2.75",
+          "win": "1.40",
+          "loseRate": "33.73%",
+          "winRate": "66.27%",
+          "returnRate": "92.77%"
+        },
+        "instant": {
+          "lose": "2.63",
+          "win": "1.44",
+          "loseRate": "35.38%",
+          "winRate": "64.62%",
+          "returnRate": "93.05%"
+        },
+        "updateTime": "2026-03-27 22:41:49"
+      },
+      {
+        "company": "M****hon**t",
+        "initial": {
+          "lose": "2.84",
+          "win": "1.44",
+          "loseRate": "33.64%",
+          "winRate": "66.36%",
+          "returnRate": "95.55%"
+        },
+        "instant": {
+          "lose": "2.90",
+          "win": "1.43",
+          "loseRate": "33.03%",
+          "winRate": "66.97%",
+          "returnRate": "95.77%"
+        },
+        "updateTime": "2026-03-28 00:41:16"
+      },
+      {
+        "company": "U**tab",
+        "initial": {
+          "lose": "2.90",
+          "win": "1.44",
+          "loseRate": "33.18%",
+          "winRate": "66.82%",
+          "returnRate": "96.22%"
+        },
+        "instant": {
+          "lose": "2.75",
+          "win": "1.48",
+          "loseRate": "34.99%",
+          "winRate": "65.01%",
+          "returnRate": "96.22%"
+        },
+        "updateTime": "2026-03-27 22:41:49"
+      },
+      {
+        "company": "12**t (壹*博)",
+        "initial": {
+          "lose": "2.72",
+          "win": "1.47",
+          "loseRate": "35.08%",
+          "winRate": "64.92%",
+          "returnRate": "95.43%"
+        },
+        "instant": {
+          "lose": "2.66",
+          "win": "1.49",
+          "loseRate": "35.90%",
+          "winRate": "64.10%",
+          "returnRate": "95.50%"
+        },
+        "updateTime": "2026-03-27 19:43:38"
+      },
+      {
+        "company": "8*8S***t",
+        "initial": {
+          "lose": "2.60",
+          "win": "1.50",
+          "loseRate": "36.59%",
+          "winRate": "63.41%",
+          "returnRate": "95.12%"
+        },
+        "instant": {
+          "lose": "2.90",
+          "win": "1.40",
+          "loseRate": "32.56%",
+          "winRate": "67.44%",
+          "returnRate": "94.42%"
+        },
+        "updateTime": "2026-03-27 05:43:06"
+      },
+      {
+        "company": "M***hb**k",
+        "initial": {
+          "lose": "2.58",
+          "win": "1.44",
+          "loseRate": "35.82%",
+          "winRate": "64.18%",
+          "returnRate": "92.42%"
+        },
+        "instant": {
+          "lose": "2.96",
+          "win": "1.50",
+          "loseRate": "33.63%",
+          "winRate": "66.37%",
+          "returnRate": "99.55%"
+        },
+        "updateTime": "2026-03-28 01:11:19"
+      }
+    ],
+    "summary": {
+      "最高值": {
+        "initial": {
+          "lose": "2.90",
+          "win": "1.56",
+          "loseRate": "38.27%",
+          "winRate": "66.82%",
+          "returnRate": "98.76%"
+        },
+        "instant": {
+          "lose": "2.96",
+          "win": "1.51",
+          "loseRate": "35.90%",
+          "winRate": "67.44%",
+          "returnRate": "99.55%"
+        }
+      },
+      "最低值": {
+        "initial": {
+          "lose": "2.45",
+          "win": "1.40",
+          "loseRate": "33.18%",
+          "winRate": "61.73%",
+          "returnRate": "92.26%"
+        },
+        "instant": {
+          "lose": "2.60",
+          "win": "1.40",
+          "loseRate": "32.56%",
+          "winRate": "64.10%",
+          "returnRate": "93.05%"
+        }
+      },
+      "平均值": {
+        "initial": {
+          "lose": "2.67",
+          "win": "1.47",
+          "loseRate": "35.57%",
+          "winRate": "64.43%",
+          "returnRate": "94.94%"
+        },
+        "instant": {
+          "lose": "2.77",
+          "win": "1.46",
+          "loseRate": "34.46%",
+          "winRate": "65.54%",
+          "returnRate": "95.49%"
+        }
+      }
+    }
+  },
   "rangfen": {
     "comparison": [
       {
