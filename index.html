@@ -379,7 +379,7 @@
             
             // 比分直播
             try {
-                const liveRes = await fetch('live_data.json?t=' + Date.now());
+                const liveRes = await fetch('data/live_data.json?t=' + Date.now());
                 const liveData = await liveRes.json();
                 const liveCount = liveData.live || 0;
                 const totalCount = liveData.total || 0;
@@ -442,7 +442,7 @@
             
             // 竞彩篮球
             try {
-                const basketballRes = await fetch('basketball_matches.json?t=' + Date.now());
+                const basketballRes = await fetch('data/basketball_matches.json?t=' + Date.now());
                 const basketballData = await basketballRes.json();
                 let basketballCount = 0;
                 
@@ -478,7 +478,7 @@
             
             // 北京单场
             try {
-                const bjdcRes = await fetch('bjdc_data.json?t=' + Date.now());
+                const bjdcRes = await fetch('data/bjdc_data.json?t=' + Date.now());
                 const bjdcData = await bjdcRes.json();
                 const bjdcCount = bjdcData.matches ? bjdcData.matches.length : 0;
                 document.getElementById('bjdc-count').textContent = `可选 ${bjdcCount} 场`;
@@ -488,7 +488,7 @@
             
             // 胜负过关
             try {
-                const sgggRes = await fetch('sggg_data.json?t=' + Date.now());
+                const sgggRes = await fetch('data/sggg_data.json?t=' + Date.now());
                 const sgggData = await sgggRes.json();
                 const sgggCount = sgggData.matches ? sgggData.matches.length : 0;
                 document.getElementById('sggg-count').textContent = `可选 ${sgggCount} 场`;
@@ -498,7 +498,7 @@
             
             // 传统足彩14场
             try {
-                const ctzcRes = await fetch('ctzc_data.json?t=' + Date.now());
+                const ctzcRes = await fetch('data/ctzc_data.json?t=' + Date.now());
                 const ctzcData = await ctzcRes.json();
                 const current = ctzcData.current || '';
                 const periodData = ctzcData.periods ? ctzcData.periods[current] : null;
@@ -514,7 +514,7 @@
             
             // 6场半全场
             try {
-                const bqcRes = await fetch('bqc6_data.json?t=' + Date.now());
+                const bqcRes = await fetch('data/bqc6_data.json?t=' + Date.now());
                 const bqcData = await bqcRes.json();
                 const current = bqcData.current || '';
                 const periodData = bqcData.periods ? bqcData.periods[current] : null;
@@ -527,7 +527,7 @@
             
             // 4场总进球
             try {
-                const zjqRes = await fetch('zjq4_data.json?t=' + Date.now());
+                const zjqRes = await fetch('data/zjq4_data.json?t=' + Date.now());
                 const zjqData = await zjqRes.json();
                 const current = zjqData.current || '';
                 const periodData = zjqData.periods ? zjqData.periods[current] : null;

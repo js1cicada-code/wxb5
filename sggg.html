@@ -410,7 +410,7 @@ function updateTime() {
 async function fetchMatchData() {
     try {
         // 添加时间戳防止缓存
-        const response = await fetch('/sggg_data.json?t=' + Date.now());
+        const response = await fetch('data/sggg_data.json?t=' + Date.now());
         if (!response.ok) throw new Error('数据获取失败');
         const data = await response.json();
         

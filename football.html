@@ -632,7 +632,7 @@
         
         async function fetchFixtureMapping() {
             try {
-                const response = await fetch('/fixture_mapping.json?t=' + Date.now());
+                const response = await fetch('data/fixture_mapping.json?t=' + Date.now());
                 if (response.ok) {
                     const data = await response.json();
                     if (data.mapping) {

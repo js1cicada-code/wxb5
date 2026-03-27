@@ -405,7 +405,7 @@
     /* 从服务器获取JSON数据，如果失败则尝试备用接口 */
     async function fetchMatchData() {
         try {
-            const response = await fetch('/bjdc_data.json?t=' + Date.now());
+            const response = await fetch('data/bjdc_data.json?t=' + Date.now());
             if (!response.ok) {
                 throw new Error('数据获取失败');
             }

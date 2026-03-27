@@ -886,7 +886,7 @@ async function initPage() {
     // 如果没有nid，尝试从映射中获取
     if (!nid && fixtureId) {
         try {
-            const response = await fetch('/fixture_mapping.json?t=' + Date.now());
+            const response = await fetch('data/fixture_mapping.json?t=' + Date.now());
             if (response.ok) {
                 const data = await response.json();
                 const byFixtureId = data.byFixtureId || {};
@@ -902,7 +902,7 @@ async function initPage() {
     // 尝试从live_data获取
     if (!nid && homeName && awayName) {
         try {
-            const response = await fetch('/live_data.json?t=' + Date.now());
+            const response = await fetch('data/live_data.json?t=' + Date.now());
             if (response.ok) {
                 const data = await response.json();
                 const match = data.matches.find(m => 

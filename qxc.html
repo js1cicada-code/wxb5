@@ -353,7 +353,7 @@ function closeModal() {
 async function fetchData() {
     try {
         // 添加时间戳防止缓存
-        const res = await fetch('/qxc_data.json?t=' + Date.now());
+        const res = await fetch('data/qxc_data.json?t=' + Date.now());
         const d = await res.json();
         // 更新期号和截止时间
         document.getElementById('current-period').textContent = d.nextPeriod;
@@ -367,7 +367,7 @@ async function fetchData() {
 /* ========== 获取历史开奖数据 ========== */
 async function fetchHistory() {
     try {
-        const res = await fetch('/qxc_data.json?t=' + Date.now());
+        const res = await fetch('data/qxc_data.json?t=' + Date.now());
         const d = await res.json();
         if (d.history) {
             document.getElementById('history-loading').style.display = 'none';

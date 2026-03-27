@@ -657,7 +657,7 @@
         
         async function loadAnimation(matchId) {
             try {
-                const response = await fetch('live_basketball_data.json?t=' + Date.now());
+                const response = await fetch('data/live_basketball_data.json?t=' + Date.now());
                 const data = await response.json();
                 
                 const match = data.matches.find(m => m.id == matchId);

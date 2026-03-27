@@ -359,7 +359,7 @@
         
         async function fetchData() {
             try {
-                const res = await fetch('/plw_data.json?t=' + Date.now());
+                const res = await fetch('data/plw_data.json?t=' + Date.now());
                 const d = await res.json();
                 document.getElementById('current-period').textContent = d.nextPeriod;
                 document.getElementById('deadline').textContent = `截止：${d.nextDrawDay} ${d.nextDrawTime}`;
@@ -371,7 +371,7 @@
         
         async function fetchHistory() {
             try {
-                const res = await fetch('/plw_data.json?t=' + Date.now());
+                const res = await fetch('data/plw_data.json?t=' + Date.now());
                 const d = await res.json();
                 if (d.history) {
                     document.getElementById('history-loading').style.display = 'none';

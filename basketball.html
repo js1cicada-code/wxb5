@@ -364,7 +364,7 @@
     
     async function fetchRankData() {
         try {
-            const response = await fetch('basketball_matches.json');
+            const response = await fetch('data/basketball_matches.json');
             const data = await response.json();
             if (data.matches) {
                 data.matches.forEach(m => {

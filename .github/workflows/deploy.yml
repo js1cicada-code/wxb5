@@ -37,6 +37,7 @@ jobs:
         run: |
           mkdir -p dist/data
           cp -r data/*.json dist/data/
+          cp data/*.json dist/
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
