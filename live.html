@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比分直播</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg-main: #f0f2f5;
+            --bg-card: #ffffff;
+            --bg-live: #f0fdf4;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border-light: #e5e7eb;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --radius-md: 8px;
+            --radius-lg: 12px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { min-height: 100vh; background: var(--bg-main); }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--text-primary); font-size: 14px; }
+        
+        .header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 12px 16px; padding-top: calc(env(safe-area-inset-top) + 12px); position: sticky; top: 0; z-index: 100; display: flex; align-items: center; }
+        .header-back { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; transition: background 0.2s; flex-shrink: 0; }
+        .header-back:active { background: rgba(255,255,255,0.2); }
+        .header-back svg { width: 24px; height: 24px; fill: #fff; }
+        .header-right { width: 40px; flex-shrink: 0; }
+        
+        .sport-tabs { flex: 1; display: flex; gap: 8px; justify-content: center; }
+        .sport-tab { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 20px; background: rgba(255,255,255,0.15); border-radius: 20px; color: rgba(255,255,255,0.8); font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .sport-tab:active { transform: scale(0.98); }
+        .sport-tab.active { background: #fff; color: var(--primary); }
+        .sport-tab .count { background: rgba(255,255,255,0.3); padding: 2px 6px; border-radius: 10px; font-size: 11px; }
+        .sport-tab.active .count { background: var(--primary); color: #fff; }
+        
+        .filter-bar { background: var(--bg-card); padding: 10px 12px; display: flex; gap: 6px; overflow-x: auto; position: sticky; top: 64px; z-index: 99; border-bottom: 1px solid var(--border-light); }
+        .filter-bar::-webkit-scrollbar { display: none; }
+        .filter-btn { padding: 7px 16px; border-radius: 20px; font-size: 13px; color: var(--text-secondary); background: var(--bg-main); border: none; cursor: pointer; white-space: nowrap; transition: all 0.2s; font-weight: 500; flex-shrink: 0; }
+        .filter-btn:active { transform: scale(0.95); }
+        .filter-btn.active { background: var(--primary); color: #fff; }
+        .filter-btn .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-left: 4px; }
+        .filter-btn.active .dot { background: #fff; }
+        .filter-btn:not(.active) .dot { background: var(--success); animation: pulse-dot 1.5s infinite; }
+        .filter-count { margin-left: 4px; font-size: 11px; opacity: 0.8; }
+        
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+        
+        .match-list { padding: 8px; }
+        
+        .date-header { display: flex; align-items: center; padding: 12px 8px 8px; font-size: 13px; color: var(--text-secondary); font-weight: 500; }
+        .date-header .line { flex: 1; height: 1px; background: var(--border-light); margin-left: 12px; }
+        .date-header .live-badge { display: inline-block; background: var(--success); color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 8px; font-weight: 600; }
+        .today-tag { display: inline-block; background: var(--primary); color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 4px; margin-left: 8px; font-weight: 600; }
+        
+        .league-group { margin-bottom: 10px; }
+        .league-header { display: flex; align-items: center; padding: 10px 12px; background: var(--bg-card); border-radius: var(--radius-md) var(--radius-md) 0 0; gap: 10px; }
+        .league-logo { width: 24px; height: 24px; border-radius: 4px; background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 600; }
+        .league-name { font-size: 14px; font-weight: 600; color: var(--text-primary); flex: 1; }
+        .league-count { font-size: 12px; color: var(--text-muted); background: var(--bg-main); padding: 2px 8px; border-radius: 10px; }
+        
+        .match-card { background: var(--bg-card); border-radius: 0 0 var(--radius-md) var(--radius-md); overflow: hidden; }
+        .match-card.league-alone { border-radius: var(--radius-md); }
+        
+        .match-item { display: flex; align-items: center; padding: 14px 12px; border-bottom: 1px solid var(--border-light); transition: background 0.15s; cursor: pointer; }
+        .match-item:last-child { border-bottom: none; }
+        .match-item:active { background: #f8fafc; }
+        .match-item.is-live { background: linear-gradient(135deg, rgba(34,197,94,0.05) 0%, rgba(34,197,94,0.02) 100%); }
+        
+        .match-time { width: 56px; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+        .match-status { font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 4px; }
+        .match-status.live { background: var(--success); color: #fff; animation: live-pulse 2s infinite; }
+        .match-status.upcoming { background: #fef3c7; color: #d97706; }
+        .match-status.finished { background: var(--bg-main); color: var(--text-muted); }
+        
+        @keyframes live-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            50% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+        }
+        
+        .match-minute { font-size: 11px; color: var(--success); font-weight: 600; margin-top: 4px; }
+        .match-schedule { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+        
+        .match-content { flex: 1; display: flex; align-items: center; padding: 0 12px; }
+        
+        .team { flex: 1; display: flex; align-items: center; }
+        .team.home { flex-direction: row-reverse; }
+        .team-info { display: flex; flex-direction: column; align-items: center; }
+        .team.home .team-info { align-items: flex-end; margin-right: 12px; }
+        .team.away .team-info { align-items: flex-start; margin-left: 12px; }
+        .team-name { font-size: 14px; font-weight: 600; color: var(--text-primary); max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .team-name.winner { color: var(--primary); }
+        .team-rank { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+        .match-num-badge { font-size: 10px; color: var(--text-muted); background: var(--bg-main); padding: 2px 6px; border-radius: 4px; white-space: nowrap; margin-left: 8px; flex-shrink: 0; }
+        .team-card { display: flex; align-items: center; gap: 4px; margin-top: 4px; }
+        .card-dot { width: 8px; height: 10px; border-radius: 2px; }
+        .card-dot.red { background: var(--danger); }
+        .card-dot.yellow { background: #fbbf24; }
+        
+        .score-area { display: flex; flex-direction: column; align-items: center; min-width: 70px; }
+        .score-row { display: flex; align-items: center; gap: 8px; }
+        .score { font-size: 24px; font-weight: 700; color: var(--text-primary); min-width: 24px; text-align: center; }
+        .score.live { color: var(--primary); }
+        .score-sep { font-size: 18px; color: var(--text-muted); }
+        .score-vs { font-size: 16px; font-weight: 600; color: var(--text-muted); padding: 4px 12px; background: var(--bg-main); border-radius: 4px; }
+        .half-score { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+        
+        .empty-state { text-align: center; padding: 80px 20px; }
+        .empty-icon { font-size: 64px; margin-bottom: 16px; opacity: 0.5; }
+        .empty-text { font-size: 15px; color: var(--text-muted); }
+        .empty-hint { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
+        
+        .update-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 10px 16px; display: flex; align-items: center; justify-content: center; gap: 8px; border-top: 1px solid var(--border-light); font-size: 12px; color: var(--text-muted); }
+        .update-bar .refresh { color: var(--primary); cursor: pointer; font-weight: 500; }
+        .update-bar .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); animation: pulse-dot 1.5s infinite; }
+        
+        .skeleton { background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: skeleton 1.5s infinite; border-radius: 4px; }
+        @keyframes skeleton { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+        
+        .match-skeleton { padding: 14px 12px; display: flex; align-items: center; border-bottom: 1px solid var(--border-light); }
+        .match-skeleton .time { width: 56px; }
+        .match-skeleton .team { flex: 1; height: 20px; margin: 0 12px; }
+        .match-skeleton .score { width: 70px; height: 30px; }
+        
+        @media (min-width: 768px) {
+            .header { max-width: 600px; margin: 0 auto; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+            .filter-bar { max-width: 600px; margin: 0 auto; justify-content: center; }
+            .stats-bar { max-width: 600px; margin: 0 auto; }
+            .match-list { max-width: 600px; margin: 0 auto; }
+            .update-bar { max-width: 600px; left: 50%; transform: translateX(-50%); border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <div class="header-back" onclick="history.back()">
+                <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            </div>
+            <div class="sport-tabs">
+                <div class="sport-tab active" data-sport="football">
+                    <span>足球</span>
+                    <span class="count" id="football-count">0</span>
+                </div>
+                <div class="sport-tab" data-sport="basketball">
+                    <span>篮球</span>
+                    <span class="count" id="basketball-count">0</span>
+                </div>
+            </div>
+            <div class="header-right"></div>
+        </div>
+    
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">全部<span class="filter-count" id="filter-all">0</span></button>
+        <button class="filter-btn" data-filter="live">进行中<span class="dot"></span><span class="filter-count" id="filter-live">0</span></button>
+        <button class="filter-btn" data-filter="upcoming">未开始<span class="filter-count" id="filter-upcoming">0</span></button>
+        <button class="filter-btn" data-filter="finished">已结束<span class="filter-count" id="filter-finished">0</span></button>
+    </div>
+    
+    <div class="match-list" id="match-list">
+        <div class="league-group">
+            <div class="match-card league-alone">
+                <div class="match-skeleton"><div class="skeleton time" style="height:28px"></div><div class="skeleton team"></div><div class="skeleton score"></div></div>
+                <div class="match-skeleton"><div class="skeleton time" style="height:28px"></div><div class="skeleton team"></div><div class="skeleton score"></div></div>
+                <div class="match-skeleton"><div class="skeleton time" style="height:28px"></div><div class="skeleton team"></div><div class="skeleton score"></div></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="update-bar">
+        <span class="dot"></span>
+        <span>数据实时更新</span>
+        <span>·</span>
+        <span class="refresh" onclick="loadMatches()">刷新</span>
+    </div>
+
+    <script>
+        let allMatches = [];
+        let currentFilter = 'all';
+        let currentSport = 'football';
+        
+        async function loadMatches() {
+            const file = currentSport === 'football' ? 'live_data.json' : 'live_basketball_data.json';
+            try {
+                const response = await fetch(file + '?t=' + Date.now());
+                const data = await response.json();
+                allMatches = data.matches || [];
+                
+                updateStats(data);
+                renderMatches();
+            } catch (e) {
+                console.error('加载失败:', e);
+                showError();
+            }
+        }
+        
+function updateStats(data) {
+            if (currentSport === 'football') {
+                document.getElementById('football-count').textContent = data.total || 0;
+            } else {
+                document.getElementById('basketball-count').textContent = data.total || 0;
+            }
+            
+            document.getElementById('filter-all').textContent = data.total || 0;
+            document.getElementById('filter-live').textContent = data.live || 0;
+            document.getElementById('filter-upcoming').textContent = data.upcoming || 0;
+            document.getElementById('filter-finished').textContent = data.finished || 0;
+        }
+        
+        function renderMatches() {
+            const container = document.getElementById('match-list');
+            
+            let filtered = allMatches;
+            if (currentFilter !== 'all') {
+                filtered = allMatches.filter(m => m.status === currentFilter);
+            }
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="empty-state">
+                    <div class="empty-icon">⚽</div>
+                    <div class="empty-text">暂无${currentFilter === 'all' ? '' : getFilterName(currentFilter)}比赛</div>
+                    <div class="empty-hint">稍后再来看看吧</div>
+                </div>`;
+                return;
+            }
+            
+            // 按开售日期分组
+            const bySaleDate = {};
+            
+            filtered.forEach(m => {
+                const saleDateDisplay = m.saleDateDisplay || '未知日期';
+                if (!bySaleDate[saleDateDisplay]) bySaleDate[saleDateDisplay] = [];
+                bySaleDate[saleDateDisplay].push(m);
+            });
+            
+            // 按日期排序（今天的排在最前面，过去的日期排在后面，未来的日期排在最后）
+            const today = new Date();
+            const todayMonth = today.getMonth() + 1;
+            const todayDay = today.getDate();
+            const todayStr = `${todayMonth}月${todayDay}日`;
+            
+            const sortedDates = Object.keys(bySaleDate).sort((a, b) => {
+                const isTodayA = a.includes(todayStr) || a.includes('今天');
+                const isTodayB = b.includes(todayStr) || b.includes('今天');
+                
+                // 今天的最前面
+                if (isTodayA && !isTodayB) return -1;
+                if (!isTodayA && isTodayB) return 1;
+                
+                // 解析日期
+                const parseDate = (str) => {
+                    const match = str.match(/(\d{4})-(\d{2})-(\d{2})/);
+                    if (match) {
+                        return new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
+                    }
+                    return new Date(0);
+                };
+                
+                const dateA = parseDate(a);
+                const dateB = parseDate(b);
+                const now = new Date();
+                
+                const isPastA = dateA < now;
+                const isPastB = dateB < now;
+                
+                // 过去的日期按时间倒序（最近的过去排在前面）
+                if (isPastA && isPastB) {
+                    return dateB - dateA;
+                }
+                
+                // 未来的日期按时间正序
+                if (!isPastA && !isPastB) {
+                    return dateA - dateB;
+                }
+                
+                // 过去的日期排在今天之后，未来的日期排在最后
+                return isPastA ? -1 : 1;
+            });
+            
+            let html = '';
+            
+            sortedDates.forEach(saleDateDisplay => {
+                const matches = bySaleDate[saleDateDisplay];
+                
+                // 统计状态
+                const liveCount = matches.filter(m => m.status === 'live').length;
+                const finishedCount = matches.filter(m => m.status === 'finished').length;
+                const upcomingCount = matches.filter(m => m.status === 'upcoming').length;
+                
+                // 格式化日期显示
+                let dateDisplay = saleDateDisplay;
+                const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+                
+                if (saleDateDisplay && saleDateDisplay.match(/^\d{4}-\d{2}-\d{2}$/)) {
+                    const d = new Date(saleDateDisplay);
+                    const today = new Date();
+                    const isToday = d.toDateString() === today.toDateString();
+                    
+                    const month = d.getMonth() + 1;
+                    const day = d.getDate();
+                    const weekday = weekdays[d.getDay()];
+                    
+                    if (isToday) {
+                        dateDisplay = `${month}月${day}日 今天 ${weekday}`;
+                    } else {
+                        dateDisplay = `${month}月${day}日 ${weekday}`;
+                    }
+                }
+                
+                // 日期表头
+                html += `<div class="date-header">${dateDisplay}`;
+                if (liveCount > 0) html += ` <span class="live-badge">${liveCount}场进行中</span>`;
+                html += `</div>`;
+                
+                // 按联赛分组
+                const grouped = {};
+                matches.forEach(m => {
+                    const league = m.league || '其他赛事';
+                    if (!grouped[league]) grouped[league] = [];
+                    grouped[league].push(m);
+                });
+                
+                const leagueNames = Object.keys(grouped);
+                
+                leagueNames.forEach((league, idx) => {
+                    const leagueMatches = grouped[league];
+                    const isAlone = leagueNames.length === 1;
+                    
+                    // 按状态排序：进行中 > 未开始 > 已完赛
+                    leagueMatches.sort((a, b) => {
+                        const statusOrder = { 'live': 0, 'upcoming': 1, 'finished': 2 };
+                        return (statusOrder[a.status] || 3) - (statusOrder[b.status] || 3);
+                    });
+                    
+                    html += `<div class="league-group">
+                        <div class="league-header">
+                            <div class="league-logo">${league.charAt(0)}</div>
+                            <div class="league-name">${league}</div>
+                            <div class="league-count">${leagueMatches.length}场</div>
+                        </div>
+                        <div class="match-card${isAlone ? ' league-alone' : ''}">`;
+                    
+                    leagueMatches.forEach(m => {
+                        html += renderMatch(m);
+                    });
+                    
+                    html += '</div></div>';
+                });
+            });
+            
+            container.innerHTML = html;
+            
+            // 绑定点击事件
+            document.querySelectorAll('.match-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const fid = this.dataset.fid;
+                    const nid = this.dataset.namitiyu;
+                    const home = this.dataset.home;
+                    const away = this.dataset.away;
+                    const league = this.dataset.league || '';
+                    const time = this.dataset.time || '';
+                    const matchId = this.dataset.matchid || '';
+                    
+                    if (currentSport === 'basketball') {
+                        // 篮球跳转到篮球分析页
+                        if (matchId) {
+                            window.location.href = `basketball_analysis.html?id=${matchId}`;
+                        }
+                    } else {
+                        // 足球跳转到足球分析页
+                        if (fid) {
+                            window.location.href = `match_analysis.html?fixtureId=${fid}&nid=${nid || ''}&home=${home}&away=${away}&league=${league}&time=${time}`;
+                        }
+                    }
+                });
+            });
+        }
+        
+        function renderMatch(m) {
+            const isLive = m.status === 'live';
+            const isFinished = m.status === 'finished';
+            const homeWin = m.homeScore > m.awayScore;
+            const awayWin = m.awayScore > m.homeScore;
+            
+            let statusHtml = '';
+            if (isLive) {
+                statusHtml = `<div class="match-status live">${m.minute || ''}'</div><div class="match-minute">进行中</div>`;
+            } else if (isFinished) {
+                statusHtml = `<div class="match-status finished">完场</div>`;
+            } else {
+                statusHtml = `<div class="match-status upcoming">未开始</div><div class="match-schedule">${m.time || ''}</div>`;
+            }
+            
+            const scoreClass = isLive ? ' live' : '';
+            const isUpcoming = m.status === 'upcoming';
+            const showVS = isUpcoming && m.homeScore === 0 && m.awayScore === 0;
+            
+            let scoreHtml = '';
+            if (showVS) {
+                scoreHtml = `<div class="score-row"><span class="score-vs">VS</span></div>`;
+            } else {
+                scoreHtml = `<div class="score-row">
+                    <span class="score${scoreClass}">${m.homeScore}</span>
+                    <span class="score-sep">-</span>
+                    <span class="score${scoreClass}">${m.awayScore}</span>
+                </div>`;
+            }
+            
+            return `
+                <div class="match-item${isLive ? ' is-live' : ''}" data-fid="${m.fid || ''}" data-namitiyu="${m.namitiyuId || ''}" data-matchid="${m.id || ''}" data-home="${encodeURIComponent(m.home)}" data-away="${encodeURIComponent(m.away)}" data-league="${encodeURIComponent(m.league || '')}" data-time="${m.time || ''}" data-hs="${m.homeScore}" data-as="${m.awayScore}">
+                    <div class="match-time">
+                        ${statusHtml}
+                    </div>
+                    <div class="match-content">
+                        <div class="team home">
+                            <div class="team-info">
+                                <span class="team-name${homeWin && isFinished ? ' winner' : ''}">${m.home}</span>
+                            </div>
+                        </div>
+                        <div class="score-area">
+                            ${scoreHtml}
+                        </div>
+                        <div class="team away">
+                            <div class="team-info">
+                                <span class="team-name${awayWin && isFinished ? ' winner' : ''}">${m.away}</span>
+                            </div>
+                        </div>
+                        <div class="match-num-badge">${m.matchNum || ''}</div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function getFilterName(filter) {
+            const names = { live: '进行中', upcoming: '未开始', finished: '已结束' };
+            return names[filter] || '';
+        }
+        
+        function showError() {
+            document.getElementById('match-list').innerHTML = `<div class="empty-state">
+                <div class="empty-icon">⚠️</div>
+                <div class="empty-text">加载失败</div>
+                <div class="empty-hint">请检查网络后重试</div>
+            </div>`;
+        }
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderMatches();
+            });
+        });
+        
+        document.querySelectorAll('.sport-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.sport-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                currentSport = this.dataset.sport;
+                loadMatches();
+            });
+        });
+        
+        loadMatches();
+        
+        // 预加载另一个运动的数据用于显示数量
+        async function loadOtherSportCount() {
+            const otherFile = currentSport === 'football' ? 'live_basketball_data.json' : 'live_data.json';
+            try {
+                const response = await fetch(otherFile + '?t=' + Date.now());
+                const data = await response.json();
+                const countId = currentSport === 'football' ? 'basketball-count' : 'football-count';
+                document.getElementById(countId).textContent = data.total || 0;
+            } catch (e) {}
+        }
+        loadOtherSportCount();
+        
+        setInterval(loadMatches, 60000);
+    </script>
+</body>
+</html>

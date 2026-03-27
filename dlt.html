@@ -1,0 +1,539 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>大乐透选号</title><style>/* ========== CSS变量定义 ========== */
+        /* 使用CSS变量可以方便地统一管理颜色、间距等样式 */
+        :root {
+            --primary: #e74c3c;        /* 主色调：红色（大乐透品牌色） */
+            --primary-dark: #c0392b;   /* 主色调深色版本 */
+            --primary-light: #ff6b6b;  /* 主色调浅色版本 */
+            --secondary: #3498db;      /* 次要色：蓝色（用于后区号码） */
+            --secondary-dark: #2980b9; /* 次要色深色版本 */
+            --accent: #fbbf24;          /* 强调色：金色 */
+            --success: #10b981;         /* 成功状态：绿色 */
+            --danger: #ef4444;          /* 危险状态：红色 */
+            --warning: #f59e0b;         /* 警告状态：橙色 */
+            --bg-main: #f5f5f5;         /* 主背景色 */
+            --bg-card: #ffffff;         /* 卡片背景色 */
+            --bg-elevated: #fafafa;     /* 凸起元素背景色 */
+            --text-primary: #1f2937;    /* 主要文字颜色 */
+            --text-secondary: #6b7280;  /* 次要文字颜色 */
+            --text-muted: #9ca3af;      /* 弱化文字颜色 */
+            --border-light: #f0f0f0;    /* 浅色边框 */
+            --border-medium: #e5e7eb;   /* 中等边框颜色 */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);   /* 小阴影 */
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);   /* 中等阴影 */
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);  /* 大阴影 */
+            --radius-sm: 4px;    /* 小圆角 */
+            --radius-md: 8px;    /* 中等圆角 */
+            --radius-lg: 12px;   /* 大圆角 */
+            --transition-fast: 150ms ease;    /* 快速过渡动画 */
+            --transition-normal: 200ms ease;  /* 普通过渡动画 */
+            --transition-slow: 300ms ease;    /* 慢速过渡动画 */
+        }
+        
+        /* ========== 基础样式重置 ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: auto; min-height: 100vh; overflow-y: auto; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-main); color: var(--text-primary); font-size: 14px; }
+        
+        /* ========== 顶部导航栏样式 ========== */
+        /* 使用渐变色作为背景，固定在页面顶部 */
+        .header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 0 12px; height: 54px; display: flex; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-md); }
+        
+        /* 返回按钮：使用CSS伪元素画一个箭头 */
+        .header-back { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .header-back::before { content: ''; width: 10px; height: 10px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(45deg); }
+        .header-content { flex: 1; text-align: center; }
+        .header h1 { color: #fff; font-size: 17px; font-weight: 600; line-height: 1.2; }
+        .header-time { color: rgba(255,255,255,0.85); font-size: 11px; margin-top: 2px; }
+        
+        /* 标题区域居中显示 */
+        .header-content { flex: 1; text-align: center; }
+        
+        /* 彩种选择器：点击可展开下拉菜单 */
+        
+        
+        /* ========== 期号信息栏 ========== */
+        .period-bar { background: var(--bg-card); padding: 10px 12px; display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm); }
+        .period-label { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+        .period-label span { color: var(--primary); font-weight: 700; }
+        .deadline { font-size: 12px; color: var(--danger); font-weight: 500; }
+        .history-btn { font-size: 12px; color: var(--text-secondary); cursor: pointer; padding: 6px 12px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); background: var(--bg-card); transition: all var(--transition-fast); font-weight: 500; }
+        .history-btn:hover { border-color: var(--primary); color: var(--primary); }
+        
+        /* ========== 标签切换栏 ========== */
+        /* 用于切换标准选号和胆拖选号两种模式 */
+        .tabs { display: flex; background: var(--bg-card); height: 44px; box-shadow: var(--shadow-sm); }
+        .tab { flex: 1; height: 44px; line-height: 44px; text-align: center; color: var(--text-secondary); font-size: 15px; position: relative; cursor: pointer; transition: color var(--transition-fast); }
+        .tab:hover { color: var(--text-primary); }
+        .tab.active { color: var(--primary); font-weight: 600; }
+        .tab.active::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 28px; height: 3px; background: var(--primary); border-radius: 3px 3px 0 0; }
+        
+        /* ========== 主内容区域 ========== */
+        .main-content { padding: 12px; padding-bottom: 200px; } /* 底部留出足够空间给投注栏 */
+        
+        /* 机选按钮组 */
+        .quick-picks { display: flex; gap: 8px; margin-bottom: 12px; }
+        .quick-pick-btn { flex: 1; padding: 10px 0; background: var(--bg-card); border: 1px solid var(--border-medium); border-radius: var(--radius-md); font-size: 13px; color: var(--text-primary); cursor: pointer; transition: all var(--transition-fast); font-weight: 500; }
+        .quick-pick-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .quick-pick-btn:active { background: var(--bg-elevated); }
+        
+        /* 号码选择区域卡片 */
+        .section { background: var(--bg-card); border-radius: var(--radius-md); margin-bottom: 10px; padding: 12px; box-shadow: var(--shadow-sm); }
+        .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .section-title { font-size: 14px; color: var(--text-primary); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        .section-title .badge { font-size: 11px; padding: 2px 6px; border-radius: var(--radius-sm); font-weight: 500; }
+        .section-title .badge.front { background: #fef2f2; color: var(--primary); }   /* 前区标签样式 */
+        .section-title .badge.back { background: #eff6ff; color: var(--secondary); }  /* 后区标签样式 */
+        .section-clear { font-size: 12px; color: var(--text-muted); cursor: pointer; padding: 4px 8px; border-radius: var(--radius-sm); transition: all var(--transition-fast); }
+        .section-clear:hover { color: var(--primary); background: var(--bg-elevated); }
+        
+        /* 号球网格：7列布局（前区35个号码分5行，后区12个号码分2行） */
+        .number-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+        
+        /* 号球样式 */
+        .number-ball { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--bg-elevated); border: 1.5px solid var(--border-medium); border-radius: 50%; font-size: 14px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all var(--transition-normal); user-select: none; -webkit-tap-highlight-color: transparent; }
+        .number-ball:hover { border-color: var(--primary); color: var(--text-primary); }
+        .number-ball:active { transform: scale(0.95); } /* 点击时缩小效果 */
+        /* 前区号码选中状态：使用红色渐变背景 */
+        .number-ball.selected { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); border-color: var(--primary); color: #fff; box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3); }
+        /* 后区号码选中状态：使用蓝色渐变背景 */
+        .number-ball.selected.back { background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%); border-color: var(--secondary); box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3); }
+        
+        /* ========== 底部投注栏 ========== */
+        /* 固定在页面底部，用户选择号码后显示 */
+        .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); z-index: 100; box-shadow: 0 -4px 20px rgba(0,0,0,0.12); padding: 12px; display: none; transform: translateY(100%); transition: transform var(--transition-slow); border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+        .bottom-bar.show { display: block; transform: translateY(0); }
+        
+        /* 投注信息区 */
+        .bet-info { display: flex; align-items: center; justify-content: space-between; }
+        .bet-stats { display: flex; flex-direction: column; gap: 2px; }
+        .bet-amount { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+        .bet-amount span { color: var(--primary); font-weight: 700; font-size: 16px; }
+        .bet-tip { font-size: 11px; color: var(--text-muted); }
+        
+        /* 清空按钮 */
+        .clear-btn { font-size: 12px; color: var(--text-secondary); cursor: pointer; padding: 8px 12px; border: 1.5px solid var(--border-medium); border-radius: var(--radius-md); background: var(--bg-card); display: flex; align-items: center; gap: 4px; transition: all var(--transition-fast); font-weight: 500; }
+        .clear-btn:hover { border-color: var(--danger); color: var(--danger); }
+        .clear-btn svg { width: 14px; height: 14px; }
+        
+        /* 投注额外信息区 */
+        .bet-extra { display: none; padding-top: 12px; border-top: 1px solid var(--border-light); margin-top: 10px; }
+        .bet-extra.show { display: block; }
+        .bet-extra-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+        .bet-extra-title { font-size: 15px; color: var(--text-primary); font-weight: 600; }
+        
+        /* 追加投注金额显示 */
+        .bonus { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+        .bonus span { color: var(--primary); font-weight: 700; font-size: 16px; }
+        
+        /* 派奖选项（暂时未使用） */
+        .pass-options { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+        .pass-option { padding: 8px 14px; border: 1.5px solid var(--border-medium); border-radius: var(--radius-md); font-size: 14px; color: var(--text-secondary); cursor: pointer; background: var(--bg-card); transition: all var(--transition-fast); font-weight: 500; }
+        .pass-option:hover { border-color: var(--primary); color: var(--primary); }
+        .pass-option.selected { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: #fff; border-color: var(--primary); box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3); }
+        
+        /* 投注金额汇总 */
+        .bet-summary { display: flex; gap: 20px; margin-bottom: 12px; font-size: 13px; }
+        .bet-summary-item .label { color: var(--text-secondary); }
+        .bet-summary-item span:not(.label) { color: var(--primary); font-weight: 700; }
+        
+        /* 倍数选择区 */
+        .times-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+        .times-label { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+        .times-control { display: flex; align-items: center; gap: 10px; }
+        .times-btn { width: 32px; height: 32px; border: 1.5px solid var(--border-medium); border-radius: var(--radius-md); background: var(--bg-card); font-size: 18px; cursor: pointer; color: var(--text-secondary); font-weight: 600; line-height: 30px; text-align: center; transition: all var(--transition-fast); }
+        .times-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .times-btn:active { background: var(--bg-elevated); transform: scale(0.95); }
+        .times-input { width: 56px; height: 32px; border: 1.5px solid var(--border-medium); border-radius: var(--radius-md); text-align: center; font-size: 16px; font-weight: 700; color: var(--text-primary); background: var(--bg-card); transition: border-color var(--transition-fast); }
+        .times-input:focus { border-color: var(--primary); outline: none; }
+        
+        /* 追加投注开关 */
+        .append-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+        .append-label { font-size: 14px; color: var(--text-primary); font-weight: 500; }
+        .append-check { width: 44px; height: 24px; background: var(--border-medium); border-radius: 12px; cursor: pointer; position: relative; transition: background var(--transition-fast); }
+        .append-check.checked { background: var(--primary); }
+        .append-check::after { content: ''; position: absolute; width: 20px; height: 20px; background: #fff; border-radius: 50%; top: 2px; left: 2px; transition: transform var(--transition-fast); }
+        .append-check.checked::after { transform: translateX(20px); }
+        
+        /* 确认投注按钮 */
+        .submit-btn { width: 100%; padding: 12px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: #fff; border: none; border-radius: var(--radius-md); font-size: 15px; font-weight: 600; cursor: pointer; transition: all var(--transition-fast); box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3); }
+        .submit-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4); }
+        .submit-btn:active { transform: translateY(0); }
+        .submit-btn:disabled { background: var(--text-muted); cursor: not-allowed; box-shadow: none; transform: none; }
+        
+        /* ========== 历史开奖弹窗 ========== */
+        /* 使用模态框展示历史开奖数据 */
+        .modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 200; display: none; opacity: 0; transition: opacity var(--transition-normal); backdrop-filter: blur(2px); }
+        .modal.show { display: flex; align-items: flex-end; opacity: 1; }
+        .modal-content { background: var(--bg-card); width: 100%; max-height: 80vh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden; transform: translateY(100%); transition: transform var(--transition-slow) cubic-bezier(0.16, 1, 0.3, 1); }
+        .modal.show .modal-content { transform: translateY(0); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid var(--border-light); }
+        .modal-header h3 { font-size: 17px; font-weight: 600; color: var(--text-primary); }
+        .modal-header .close { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--text-muted); cursor: pointer; border-radius: var(--radius-sm); transition: all var(--transition-fast); }
+        .modal-header .close:hover { background: var(--bg-elevated); color: var(--text-primary); }
+        .modal-body { padding: 16px; max-height: 60vh; overflow-y: auto; }
+        
+        /* 历史开奖记录项 */
+        .history-item { padding: 12px 0; border-bottom: 1px solid var(--border-light); }
+        .history-item:last-child { border-bottom: none; }
+        .history-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+        .history-period { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+        .history-date { font-size: 11px; color: var(--text-muted); }
+        .history-balls { display: flex; gap: 4px; flex-wrap: wrap; }
+        .history-ball { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 11px; font-weight: 600; color: #fff; }
+        .history-ball.front { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); }  /* 前区号码球 */
+        .history-ball.back { background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%); } /* 后区号码球 */
+        
+        /* 加载状态提示 */
+        .loading { text-align: center; padding: 20px; color: var(--text-muted); }
+        
+        /* Toast提示消息：用于短暂显示操作反馈 */
+        .toast-msg { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.75); color: #fff; padding: 12px 20px; border-radius: var(--radius-md); font-size: 13px; z-index: 9999; opacity: 0; visibility: hidden; transition: all var(--transition-fast); }
+        .toast-msg.show { opacity: 1; visibility: visible; }
+        
+        @media (min-width: 768px) {
+            body { background: linear-gradient(135deg, #f0f0f0 0%, #e5e5e5 100%); min-height: 100vh; }
+            .header { max-width: 1200px; margin: 16px auto 0; border-radius: var(--radius-lg); }
+            .period-bar { max-width: 1200px; margin: 0 auto; border-radius: var(--radius-md); }
+            .main-content { max-width: 1200px; margin: 0 auto; padding: 16px; }
+            .bottom-bar { max-width: 1200px; margin: 0 auto 16px; border-radius: var(--radius-lg); }
+            .modal.show { align-items: center; justify-content: center; }
+            .modal-content { max-width: 500px; border-radius: var(--radius-lg); }
+        }.header-time{color:rgba(255,255,255,0.85);font-size:11px;margin-top:2px}.header-link{color:#fff;font-size:13px;padding:6px 12px;background:rgba(255,255,255,0.15);border-radius:var(--radius-md);text-decoration:none;transition:all var(--transition-fast)}.header-link:hover{background:rgba(255,255,255,0.25)}</style><script defer=defer src=/js/vendors.193db0f8.js></script><script defer=defer src=/js/main.132476e8.js></script><link href=/css/main.eff2b279.css rel=stylesheet></head><body><div class=header><div class=header-back onclick="window.location.href='index.html'"></div><div class=header-content><h1>大乐透</h1><div class=header-time id=header-time></div></div><a href="dlt_chart.html" class=header-link>走势图</a></div><div class=period-bar><div><div class=period-label>第 <span id=current-period>--</span> 期</div><div class=deadline id=deadline>截止时间：--</div></div><button class=history-btn onclick=showHistory()>历史开奖</button></div><div class=tabs><div class="tab active" data-tab=standard>标准选号</div><div class=tab data-tab=dantuo>胆拖选号</div></div><div class=main-content><div class=quick-picks><button class=quick-pick-btn onclick=randomPick(1)>机选1注</button> <button class=quick-pick-btn onclick=randomPick(5)>机选5注</button> <button class=quick-pick-btn onclick=randomPick(10)>机选10注</button></div><div id=standard-panel><div class=section><div class=section-header><div class=section-title>前区号码 <span class="badge front" id=front-count>0/5</span></div><div class=section-clear onclick="clearSelection('front')">清空</div></div><div class=number-grid id=front-grid></div></div><div class=section><div class=section-header><div class=section-title>后区号码 <span class="badge back" id=back-count>0/2</span></div><div class=section-clear onclick="clearSelection('back')">清空</div></div><div class=number-grid id=back-grid></div></div></div><div id=dantuo-panel style=display:none><div class=section><div class=section-header><div class=section-title>前区胆码 <span class="badge front">1-4个</span></div><div class=section-clear onclick="clearSelection('danFront')">清空</div></div><div class=number-grid id=dan-front-grid></div></div><div class=section><div class=section-header><div class=section-title>前区拖码 <span class="badge front">至少5个</span></div><div class=section-clear onclick="clearSelection('tuoFront')">清空</div></div><div class=number-grid id=tuo-front-grid></div></div><div class=section><div class=section-header><div class=section-title>后区胆码 <span class="badge back">0-1个</span></div><div class=section-clear onclick="clearSelection('danBack')">清空</div></div><div class=number-grid id=dan-back-grid></div></div><div class=section><div class=section-header><div class=section-title>后区拖码 <span class="badge back">至少2个</span></div><div class=section-clear onclick="clearSelection('tuoBack')">清空</div></div><div class=number-grid id=tuo-back-grid></div></div></div></div><div class=bottom-bar id=bottom-bar><div class=bet-info><div class=bet-stats><div class=bet-amount>已选 <span id=bet-count>0</span> 注</div><div class=bet-tip id=bet-tip>请选择号码</div></div><button class=clear-btn id=clear-btn onclick=clearAll()><svg viewBox="0 0 24 24" fill=currentColor><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> 清空</button></div><div class="bet-extra show"><div class=bet-summary><div class=bet-summary-item><span class=label>投注金额：</span><span id=bet-money>0</span> 元</div></div><div class=times-row><div class=times-label>投注倍数</div><div class=times-control><button class=times-btn onclick=changeTimes(-1)>-</button> <input type=number class=times-input id=times-input value=1 min=1 max=99 onchange=updateTimes()> <button class=times-btn onclick=changeTimes(1)>+</button></div></div><div class=append-row><div class=append-label>追加投注</div><div class=append-check id=append-check onclick=toggleAppend()></div></div><button class=submit-btn id=submit-btn disabled=disabled onclick=submitBet()>确认选号</button></div></div><div class=modal id=history-modal onclick="if(event.target===this)closeModal()"><div class=modal-content><div class=modal-header><h3>历史开奖</h3><span class=close onclick=closeModal()>&times;</span></div><div class=modal-body><div class=loading id=history-loading>加载中...</div><div id=history-list></div></div></div></div><div class=toast-msg id=toast></div><script>/* ========== 常量定义 ========== */
+// 大乐透规则：前区35选5，后区12选2，每注2元
+const FRONT_MAX = 35;   // 前区最大号码：35
+const BACK_MAX = 12;    // 后区最大号码：12
+const FRONT_SEL = 5;    // 前区需要选择：5个
+const BACK_SEL = 2;     // 后区需要选择：2个
+const PRICE = 2;        // 每注价格：2元
+
+/* ========== 变量定义 ========== */
+// sel: 存储用户选择的号码
+// standard: 标准选号模式，front前区数组，back后区数组
+// dantuo: 胆拖选号模式，danFront前区胆码，tuoFront前区拖码，danBack后区胆码，tuoBack后区拖码
+const sel = {
+    standard: { front: [], back: [] },
+    dantuo: { danFront: [], tuoFront: [], danBack: [], tuoBack: [] }
+};
+let currentTab = 'standard';  // 当前选号模式：standard标准选号，dantuo胆拖选号
+let times = 1;                // 投注倍数，默认1倍
+let isAppend = false;         // 是否追加投注，默认否
+
+/* ========== 初始化函数 ========== */
+// 页面加载完成后执行
+function init() { updateTime();
+    renderGrids();   // 渲染所有号码网格
+    setupTabs();     // 设置标签切换事件
+    fetchData();     // 从服务器获取期号信息
+}
+
+/* ========== 渲染所有号码网格 ========== */
+// 生成标准选号和胆拖选号的所有号码球
+function renderGrids() {
+    // 标准选号网格
+    renderGrid('front-grid', FRONT_MAX, 'front', false);   // 前区35个号码，红色
+    renderGrid('back-grid', BACK_MAX, 'back', true);       // 后区12个号码，蓝色
+    
+    // 胆拖选号网格
+    renderGrid('dan-front-grid', FRONT_MAX, 'danFront', false);  // 前区胆码
+    renderGrid('tuo-front-grid', FRONT_MAX, 'tuoFront', false);  // 前区拖码
+    renderGrid('dan-back-grid', BACK_MAX, 'danBack', true);      // 后区胆码
+    renderGrid('tuo-back-grid', BACK_MAX, 'tuoBack', true);      // 后区拖码
+}
+
+/* ========== 渲染单个号码网格 ========== */
+// id: 容器元素ID
+// max: 最大号码值
+// type: 号码类型标识
+// isBack: 是否为后区号码（后区使用蓝色样式）
+function renderGrid(id, max, type, isBack) {
+    const container = document.getElementById(id);
+    let html = '';
+    
+    // 循环生成号码球，号码补零显示（如01、02...）
+    for (let i = 1; i <= max; i++) {
+        const num = i.toString().padStart(2, '0');
+        // 后区号码添加back类名以应用蓝色样式
+        html += `<div class="number-ball${isBack ? ' back' : ''}" data-type="${type}" data-num="${num}">${num}</div>`;
+    }
+    container.innerHTML = html;
+    
+    // 为每个号码球绑定点击事件
+    container.querySelectorAll('.number-ball').forEach(ball => {
+        ball.addEventListener('click', () => selectNum(type, ball.dataset.num, isBack));
+    });
+}
+
+/* ========== 选择号码 ========== */
+// type: 号码类型（front/back/danFront/tuoFront/danBack/tuoBack）
+// num: 选择的号码（字符串，如"01"）
+// isBack: 是否为后区号码
+function selectNum(type, num, isBack) {
+    const arr = sel[currentTab][type];  // 获取当前模式下该类型的已选号码数组
+    const ball = document.querySelector(`[data-type="${type}"][data-num="${num}"]`);
+    
+    // 如果已经选中，则取消选中
+    if (arr.includes(num)) {
+        arr.splice(arr.indexOf(num), 1);  // 从数组中移除
+        ball.classList.remove('selected');
+    } else {
+        // 未选中则检查是否超过限制
+        const limits = {
+            front: FRONT_SEL,    // 前区最多5个
+            back: BACK_SEL,      // 后区最多2个
+            danFront: 4,         // 前区胆码最多4个
+            danBack: 1,          // 后区胆码最多1个
+            tuoFront: 34,        // 前区拖码最多34个（胆码至少1个）
+            tuoBack: 11          // 后区拖码最多11个（胆码最多1个）
+        };
+        
+        // 检查是否超过最大选择数量
+        if (limits[type] && arr.length >= limits[type]) {
+            showToast(`最多选择${limits[type]}个号码`);
+            return;
+        }
+        
+        // 胆拖模式下，检查号码是否已在其他区域选择
+        if (currentTab === 'dantuo') {
+            const conflicts = {
+                danFront: 'tuoFront',   // 前区胆码与前区拖码冲突
+                tuoFront: 'danFront',   // 前区拖码与前区胆码冲突
+                danBack: 'tuoBack',     // 后区胆码与后区拖码冲突
+                tuoBack: 'danBack'      // 后区拖码与后区胆码冲突
+            };
+            // 如果该号码已在冲突区域选择，则提示用户
+            if (sel.dantuo[conflicts[type]].includes(num)) {
+                showToast('该号码已在其他区域选择');
+                return;
+            }
+        }
+        
+        // 添加到选中数组并排序
+        arr.push(num);
+        arr.sort();
+        ball.classList.add('selected');
+    }
+    updateUI();  // 更新界面显示
+}
+
+/* ========== 清空指定类型的号码选择 ========== */
+// type: 号码类型
+function clearSelection(type) {
+    sel[currentTab][type] = [];  // 清空该类型的数组
+    // 移除所有该类型号码球的选中样式
+    document.querySelectorAll(`[data-type="${type}"]`).forEach(b => b.classList.remove('selected'));
+    updateUI();
+}
+
+/* ========== 清空当前模式下的所有号码选择 ========== */
+function clearAll() {
+    Object.keys(sel[currentTab]).forEach(clearSelection);
+}
+
+/* ========== 设置标签切换 ========== */
+// 切换标准选号和胆拖选号两种模式
+function setupTabs() {
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            // 切换标签激活状态
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            
+            // 更新当前模式
+            currentTab = tab.dataset.tab;
+            
+            // 切换面板显示
+            document.getElementById('standard-panel').style.display = currentTab === 'standard' ? 'block' : 'none';
+            document.getElementById('dantuo-panel').style.display = currentTab === 'dantuo' ? 'block' : 'none';
+            
+            updateUI();  // 更新界面
+        });
+    });
+}
+
+/* ========== 更新界面显示 ========== */
+// 计算注数和金额，更新底部投注栏
+function updateUI() {
+    const front = sel.standard.front;  // 标准选号前区
+    const back = sel.standard.back;     // 标准选号后区
+    
+    // 更新已选数量显示
+    document.getElementById('front-count').textContent = `${front.length}/5`;
+    document.getElementById('back-count').textContent = `${back.length}/2`;
+    
+    let count = 0;  // 注数
+    
+    if (currentTab === 'standard') {
+        // 标准选号：前区至少5个，后区至少2个才能计算注数
+        if (front.length >= FRONT_SEL && back.length >= BACK_SEL) {
+            // 使用组合公式计算：C(前区数量,5) * C(后区数量,2)
+            count = C(front.length, FRONT_SEL) * C(back.length, BACK_SEL);
+        }
+    } else {
+        // 胆拖选号
+        const d = sel.dantuo;
+        // 条件：前区胆码至少1个，前区胆码+拖码至少6个，后区胆码+拖码至少2个
+        if (d.danFront.length >= 1 && d.danFront.length + d.tuoFront.length >= 6 && d.danBack.length + d.tuoBack.length >= 2) {
+            // 前区注数：从拖码中选择(5-胆码数)个
+            const fc = C(d.tuoFront.length, FRONT_SEL - d.danFront.length);
+            // 后区注数：如果有后区胆码则从拖码选1个，否则从拖码选2个
+            const bc = d.danBack.length ? C(d.tuoBack.length, 1) : C(d.tuoBack.length, 2);
+            count = fc * bc;
+        }
+    }
+    
+    // 计算金额 = 注数 × 单价 × 倍数 + 追加金额（追加时每注多加1元）
+    const money = count * PRICE * times + (isAppend ? count * times : 0);
+    
+    // 更新界面元素
+    document.getElementById('bet-count').textContent = count;
+    document.getElementById('bet-money').textContent = money;
+    document.getElementById('submit-btn').disabled = count === 0;  // 没有有效注数时禁用按钮
+    document.getElementById('bet-tip').textContent = count ? `合计 ${money} 元` : '请选择号码';
+    document.getElementById('bottom-bar').classList.toggle('show', front.length > 0 || back.length > 0 || count > 0);
+}
+
+/* ========== 组合数计算函数 ========== */
+// 计算C(n, r)：从n个元素中选r个的组合数
+// n: 总数
+// r: 选取数
+// 返回: 组合数
+function C(n, r) {
+    if (r > n || r < 0) return 0;      // 非法情况返回0
+    if (r === 0 || r === n) return 1;  // 边界情况
+    let res = 1;
+    // 使用公式 C(n,r) = n*(n-1)*...*(n-r+1) / r!
+    for (let i = 0; i < r; i++) res = res * (n - i) / (i + 1);
+    return Math.round(res);
+}
+
+/* ========== 机选功能 ========== */
+// n: 机选注数
+function randomPick(n) {
+    for (let i = 0; i < n; i++) {
+        const f = [], b = [];
+        
+        // 随机选择5个前区号码（不重复）
+        while (f.length < FRONT_SEL) {
+            const x = Math.floor(Math.random() * FRONT_MAX) + 1;
+            const s = x.toString().padStart(2, '0');
+            if (!f.includes(s)) f.push(s);
+        }
+        
+        // 随机选择2个后区号码（不重复）
+        while (b.length < BACK_SEL) {
+            const x = Math.floor(Math.random() * BACK_MAX) + 1;
+            const s = x.toString().padStart(2, '0');
+            if (!b.includes(s)) b.push(s);
+        }
+        
+        // 排序后显示
+        f.sort();
+        b.sort();
+        showToast(`机选: ${f.join(' ')} + ${b.join(' ')}`);
+    }
+}
+
+/* ========== 倍数调整 ========== */
+// d: 变化量，+1或-1
+function changeTimes(d) {
+    times = Math.max(1, Math.min(99, times + d));  // 限制在1-99之间
+    document.getElementById('times-input').value = times;
+    updateUI();
+}
+
+/* ========== 倍数输入框变化 ========== */
+function updateTimes() {
+    times = Math.max(1, Math.min(99, parseInt(document.getElementById('times-input').value) || 1));
+    document.getElementById('times-input').value = times;
+    updateUI();
+}
+
+/* ========== 切换追加投注 ========== */
+function toggleAppend() {
+    isAppend = !isAppend;
+    document.getElementById('append-check').classList.toggle('checked', isAppend);
+    updateUI();
+}
+
+/* ========== 确认投注 ========== */
+function submitBet() {
+    const f = sel.standard.front.join(' ');
+    const b = sel.standard.back.join(' ');
+    alert(`大乐透选号\n前区: ${f}\n后区: ${b}\n${times}倍${isAppend ? '(追加)' : ''}`);
+}
+
+/* ========== 下拉菜单控制 ========== */
+// 切换下拉菜单的显示/隐藏
+function updateTime() {
+        const now = new Date();
+        document.getElementById('header-time').textContent = now.toLocaleString('zh-CN', {
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+        }) + ' 更新';
+    }
+
+/* ========== 历史开奖弹窗 ========== */
+function showHistory() {
+    document.getElementById('history-modal').classList.add('show');
+    fetchHistory();  // 获取历史数据
+}
+function closeModal() {
+    document.getElementById('history-modal').classList.remove('show');
+}
+
+/* ========== 获取期号数据 ========== */
+// 从服务器获取当前期号信息
+async function fetchData() {
+    try {
+        // 添加时间戳防止缓存
+        const res = await fetch('/dlt_data.json?t=' + Date.now());
+        const d = await res.json();
+        // 更新期号和截止时间
+        document.getElementById('current-period').textContent = d.nextPeriod;
+        document.getElementById('deadline').textContent = `截止：${d.nextDrawDay} ${d.nextDrawTime}`;
+        document.getElementById('header-time').textContent = d.updateTime.split(' ')[1];
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+/* ========== 获取历史开奖数据 ========== */
+async function fetchHistory() {
+    try {
+        const res = await fetch('/dlt_data.json?t=' + Date.now());
+        const d = await res.json();
+        if (d.history) {
+            document.getElementById('history-loading').style.display = 'none';
+            // 遍历历史数据，生成每期开奖号码
+            document.getElementById('history-list').innerHTML = d.history.map(h => {
+                // 前区号码用红色，后区号码用蓝色
+                const balls = h.front.map(n => `<div class="history-ball front">${n}</div>`).join('') +
+                              h.back.map(n => `<div class="history-ball back">${n}</div>`).join('');
+                return `<div class="history-item">
+                    <div class="history-header">
+                        <span class="history-period">第${h.period}期</span>
+                        <span class="history-date">${h.date}</span>
+                    </div>
+                    <div class="history-balls">${balls}</div>
+                </div>`;
+            }).join('');
+        }
+    } catch (e) {
+        document.getElementById('history-loading').textContent = '加载失败';
+    }
+}
+
+/* ========== Toast提示消息 ========== */
+// 显示短暂的提示信息
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    // 1.5秒后自动隐藏
+    setTimeout(() => t.classList.remove('show'), 1500);
+}
+
+/* ========== 页面加载完成后初始化 ========== */
+document.addEventListener('DOMContentLoaded', init);</script></body></html>

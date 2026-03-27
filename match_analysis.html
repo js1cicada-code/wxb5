@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>比赛分析</title>
+    <script src="js/chart.umd.js"></script>
+    <style>
+        :root {
+            --primary: #d43c33;
+            --primary-dark: #b8342c;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --info: #3b82f6;
+            --bg-main: #f0f2f5;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-light: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --radius: 8px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 0 12px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-back {
+            position: absolute;
+            left: 12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+        }
+        
+        .header h1 {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            max-width: 280px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .tabs {
+            display: flex;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 50px;
+            z-index: 99;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 12px 4px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.25s ease;
+        }
+        
+        .tab:hover {
+            color: var(--text-primary);
+            background: rgba(0, 0, 0, 0.02);
+        }
+        
+        .tab.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom-color: var(--primary);
+            background: rgba(212, 60, 51, 0.05);
+        }
+        
+        .content {
+            padding: 8px;
+        }
+        
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            animation: fadeInUp 0.3s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .card:nth-child(1) { animation-delay: 0s; }
+        .card:nth-child(2) { animation-delay: 0.05s; }
+        .card:nth-child(3) { animation-delay: 0.1s; }
+        .card:nth-child(4) { animation-delay: 0.15s; }
+        .card:nth-child(5) { animation-delay: 0.2s; }
+        .card:nth-child(6) { animation-delay: 0.25s; }
+        
+        .card-header {
+            padding: 12px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            background: #fafafa;
+        }
+        .card-header::before {
+            content: '';
+            width: 3px;
+            height: 14px;
+            background: var(--primary);
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+        
+        .card-body {
+            padding: 14px;
+        }
+        
+        .h2h-summary {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding: 12px 0;
+        }
+        
+        .h2h-item {
+            text-align: center;
+        }
+        
+        .h2h-value {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .h2h-value.win { color: var(--success); }
+        .h2h-value.draw { color: var(--warning); }
+        .h2h-value.lose { color: var(--danger); }
+        
+        .h2h-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        
+        .h2h-detail {
+            font-size: 12px;
+            color: var(--text-secondary);
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        
+        .recent-compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .recent-team {
+            background: #fafafa;
+            border-radius: var(--radius);
+            padding: 12px;
+        }
+        
+        .recent-team-header {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .recent-stats-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            padding: 4px 0;
+        }
+        .recent-stats-row .label { color: var(--text-secondary); }
+        .recent-stats-row .value { font-weight: 500; }
+        .recent-stats-row .win { color: var(--success); }
+        .recent-stats-row .draw { color: var(--warning); }
+        .recent-stats-row .lose { color: var(--danger); }
+        
+        .win-rate-bar {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-light);
+        }
+        .win-rate-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        .win-rate-track {
+            height: 6px;
+            background: var(--border-light);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .win-rate-fill {
+            height: 100%;
+            background: var(--success);
+            border-radius: 3px;
+        }
+        
+        .avg-compare {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .avg-team {
+            background: #fafafa;
+            border-radius: var(--radius);
+            padding: 12px;
+        }
+        
+        .avg-team-header {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .avg-stats-table {
+            width: 100%;
+            font-size: 12px;
+        }
+        .avg-stats-table th, .avg-stats-table td {
+            padding: 6px 4px;
+            text-align: center;
+        }
+        .avg-stats-table th {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .avg-stats-table td {
+            font-weight: 600;
+        }
+        .avg-stats-table .label-col {
+            text-align: left;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        .odds-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .odds-table th, .odds-table td {
+            padding: 8px 4px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .odds-table th {
+            background: #fafafa;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 11px;
+        }
+        .odds-table tr:last-child td {
+            border-bottom: none;
+        }
+        .odds-table .company {
+            text-align: left;
+            font-weight: 500;
+            max-width: 70px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .odds-table .highlight {
+            background: #fff7ed;
+            font-weight: 600;
+        }
+        .odds-table .avg-row {
+            background: #eff6ff;
+        }
+        .odds-table .avg-row td {
+            font-weight: 600;
+        }
+        .odds-table .tr2 {
+            background: #fafafa;
+        }
+        .odds-table .win {
+            color: var(--danger);
+            font-weight: 600;
+        }
+        .odds-table .loss {
+            color: var(--success);
+        }
+        
+        .up { color: var(--danger); }
+        .down { color: var(--success); }
+        
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            transition: opacity 0.2s ease;
+        }
+        .loading-spinner {
+            width: 36px;
+            height: 36px;
+            border: 3px solid var(--border-light);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-text {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        
+        .refresh-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: var(--info);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .refresh-btn:active { opacity: 0.8; }
+        
+        .scroll-x {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    
+        .ranking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .rank-table { width: 100%; font-size: 11px; border-collapse: collapse; table-layout: fixed; }
+        .rank-table th, .rank-table td { padding: 5px 2px; text-align: center; border-bottom: 1px solid var(--border-light); }
+        .rank-table th { background: #fafafa; color: var(--text-secondary); white-space: nowrap; font-size: 10px; }
+        .rank-table td:first-child { color: var(--text-secondary); white-space: nowrap; }
+        .rank-table .win { color: var(--success); font-weight: 600; }
+        .rank-table .draw { color: var(--warning); }
+        .rank-table .lose { color: var(--danger); }
+        
+        .match-list { width: 100%; font-size: 13px; border-collapse: collapse; }
+        .match-list th, .match-list td { padding: 8px 6px; text-align: center; border-bottom: 1px solid var(--border-light); }
+        .match-list th { background: #fafafa; font-size: 12px; color: var(--text-secondary); }
+        .match-list .win { color: var(--success); font-weight: 600; }
+        .match-list .draw { color: var(--warning); }
+        .match-list .lose { color: var(--danger); }
+        
+        .future-grid { }
+        .future-team { margin-bottom: 16px; }
+        .future-team:last-child { margin-bottom: 0; }
+        .future-team .team-title { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+        .future-table { width: 100%; font-size: 12px; border-collapse: collapse; }
+        .future-table th { background: #fafafa; padding: 8px; text-align: center; font-weight: 500; color: var(--text-secondary); border-bottom: 1px solid var(--border-light); }
+        .future-table td { padding: 8px; text-align: center; border-bottom: 1px solid var(--border-light); }
+        .future-table tr:last-child td { border-bottom: none; }
+        .future-table .date { color: var(--text-secondary); }
+        .future-table .days { color: var(--primary); font-weight: 500; }
+        .future-empty { text-align: center; color: var(--text-secondary); padding: 20px; font-size: 12px; }
+        
+        .lineup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .lineup-team { }
+        .lineup-team .team-title { font-size: 14px; font-weight: 600; margin-bottom: 10px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px; }
+        .lineup-section { margin-bottom: 12px; }
+        .section-title { font-size: 12px; color: var(--text-secondary); margin-bottom: 6px; font-weight: 500; }
+        .lineup-table { width: 100%; font-size: 12px; border-collapse: collapse; table-layout: fixed; }
+        .lineup-table th { background: #fafafa; padding: 6px 8px; text-align: center; font-weight: 500; color: var(--text-secondary); border-bottom: 1px solid var(--border-light); }
+        .lineup-table td { padding: 6px 8px; text-align: center; border-bottom: 1px solid var(--border-light); }
+        .lineup-table tr:last-child td { border-bottom: none; }
+        .lineup-table .num { font-weight: 500; }
+        .lineup-table .name-col { text-align: left; }
+        .lineup-table .injury-row { background: #fef2f2; }
+        .lineup-table .injury-row td { color: #991b1b; }
+        .lineup-table .suspended-row { background: #fef9c3; }
+        .lineup-table .suspended-row td { color: #854d0e; }
+        .lineup-empty { text-align: center; color: var(--text-secondary); padding: 20px; font-size: 12px; }
+        
+        .ability-section { margin-bottom: 16px; }
+        .ability-title { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+        .ability-bar { display: flex; align-items: center; margin-bottom: 8px; font-size: 12px; }
+        .ability-bar .label { width: 50px; color: var(--text-secondary); flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .ability-bar .bar-container { flex: 1; display: flex; align-items: center; gap: 6px; min-width: 0; }
+        .ability-bar .value { width: auto; text-align: right; font-weight: 500; flex-shrink: 0; }
+        .ability-bar .bar-wrap { flex: 1; height: 8px; background: #e5e7eb; border-radius: 4px; position: relative; overflow: hidden; min-width: 40px; }
+        .ability-bar .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+        .ability-bar .bar-fill.home { background: linear-gradient(90deg, var(--primary), var(--primary-dark)); float: left; }
+        .ability-bar .bar-fill.away { background: linear-gradient(90deg, #3b82f6, #1d4ed8); float: right; }
+        .ability-bar.away-side { flex-direction: row-reverse; }
+        .ability-bar.away-side .label { text-align: right; }
+        .ability-bar.away-side .value { text-align: left; }
+        
+        .rec-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-light); }
+        .rec-row .label { color: var(--text-secondary); }
+        .rec-row .value { font-weight: 500; }
+        .rec-row .highlight { color: var(--primary); font-weight: 600; }
+        .rec-reason { font-size: 13px; padding: 10px 0; color: var(--text-secondary); line-height: 1.6; }
+        
+        .betting-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .betting-table th { background: #fafafa; padding: 10px; text-align: center; font-weight: 500; color: var(--text-secondary); border-bottom: 1px solid var(--border-light); }
+        .betting-table td { padding: 10px; text-align: center; border-bottom: 1px solid var(--border-light); }
+        .betting-table tr:last-child td { border-bottom: none; }
+        .betting-summary { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+        
+        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .chart-container { position: relative; min-height: 150px; }
+        @media (max-width: 768px) {
+            .chart-grid { grid-template-columns: 1fr; }
+        }
+        
+        .intelligence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 768px) { .intelligence-grid { grid-template-columns: 1fr; } }
+        .team-intelligence { background: #fafafa; border-radius: 8px; padding: 12px; }
+        .team-intelligence .team-title { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); }
+        .swot-section { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .swot-item { background: #fff; border-radius: 6px; padding: 8px; }
+        .swot-item.strength { border-left: 3px solid var(--success); }
+        .swot-item.weakness { border-left: 3px solid var(--danger); }
+        .swot-item.opportunity { border-left: 3px solid var(--info); }
+        .swot-item.threat { border-left: 3px solid var(--warning); }
+        .swot-label { font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+        .swot-item.strength .swot-label { color: var(--success); }
+        .swot-item.weakness .swot-label { color: var(--danger); }
+        .swot-item.opportunity .swot-label { color: var(--info); }
+        .swot-item.threat .swot-label { color: var(--warning); }
+        .swot-item ul { list-style: none; font-size: 12px; }
+        .swot-item li { padding: 4px 0; color: var(--text-secondary); line-height: 1.4; }
+        .swot-item li:before { content: "•"; margin-right: 6px; }
+        .intelligence-summary { margin-top: 16px; padding: 12px; background: #fff8e6; border-radius: 8px; border-left: 4px solid var(--warning); }
+        .summary-title { font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+        .summary-content { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+        
+        .recommendation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 768px) { .recommendation-grid { grid-template-columns: 1fr; } }
+        .form-section { background: #fafafa; border-radius: 8px; padding: 12px; }
+        .form-title { font-weight: 600; margin-bottom: 10px; color: var(--text-primary); }
+        .form-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+        .team-label { font-size: 13px; color: var(--text-secondary); min-width: 60px; }
+        .form-badges { display: flex; gap: 3px; }
+        .form-badge { width: 18px; height: 18px; border-radius: 3px; font-size: 10px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+        .form-badge.W { background: var(--success); color: #fff; }
+        .form-badge.D { background: var(--warning); color: #fff; }
+        .form-badge.L { background: var(--danger); color: #fff; }
+        .pick-section { background: #fef2f2; border-radius: 8px; padding: 12px; text-align: center; }
+        .pick-title { font-weight: 600; margin-bottom: 8px; color: var(--text-primary); }
+        .pick-value { font-size: 24px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+        .pick-reason { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-back" onclick="history.back()"></div>
+    <h1 id="header-title">比赛分析</h1>
+</div>
+
+<div id="animation-container" style="background:#000;height:260px;position:relative;overflow:hidden;display:none;">
+    <iframe id="animation-frame" style="width:100%;height:852px;border:none;position:absolute;top:-602px;left:0;" src="about:blank"></iframe>
+</div>
+
+<div class="tabs">
+    <div class="tab active" data-tab="data">分析</div>
+    <div class="tab" data-tab="handicap">让</div>
+    <div class="tab" data-tab="asian">亚</div>
+    <div class="tab" data-tab="european">欧</div>
+    <div class="tab" data-tab="size">大小</div>
+    <div class="tab" data-tab="kelly">凯</div>
+    <div class="tab" data-tab="betting">必</div>
+    <div class="tab" data-tab="intelligence">情报</div>
+</div>
+
+<div class="content">
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">加载中...</div>
+    </div>
+    
+    <div class="tab-content active" id="tab-data" style="display:none;">
+        <div class="card" id="ranking-card" style="display:none;">
+            <div class="card-header">联赛积分排名</div>
+            <div class="card-body">
+                <div class="ranking-grid">
+                    <div id="home-ranking-table"></div>
+                    <div id="away-ranking-table"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" id="h2h-card" style="display:none;">
+            <div class="card-header">双方交锋记录</div>
+            <div class="card-body">
+                <div class="h2h-summary" id="h2h-summary"></div>
+                <div id="h2h-matches"></div>
+            </div>
+        </div>
+        
+        <div class="card" id="recent-card" style="display:none;">
+            <div class="card-header">近期战绩对比</div>
+            <div class="card-body">
+                <div class="recent-compare" id="recent-compare"></div>
+            </div>
+        </div>
+        
+        <div class="card" id="future-card" style="display:none;">
+            <div class="card-header">未来赛事</div>
+            <div class="card-body">
+                <div class="future-grid">
+                    <div id="home-future" class="future-team"></div>
+                    <div id="away-future" class="future-team"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" id="avg-card" style="display:none;">
+            <div class="card-header">平均数据对比</div>
+            <div class="card-body">
+                <div class="avg-compare" id="avg-compare"></div>
+            </div>
+        </div>
+        
+        <div class="card" id="ability-card" style="display:none;">
+            <div class="card-header">球队身价对比</div>
+            <div class="card-body" id="ability-content"></div>
+        </div>
+        
+        <div class="card" id="lineup-card" style="display:none;">
+            <div class="card-header">预计阵容</div>
+            <div class="card-body">
+                <div class="lineup-grid">
+                    <div id="home-lineup" class="lineup-team"></div>
+                    <div id="away-lineup" class="lineup-team"></div>
+                </div>
+            </div>
+        </div>
+        
+<div class="card" id="recommend-card" style="display:none;">
+            <div class="card-header">心水推荐</div>
+            <div class="card-body" id="recommend-body"></div>
+        </div>
+    </div>
+        
+        <div class="card" id="asian-card" style="display:none;">
+            <div class="card-header">亚盘数据</div>
+            <div class="card-body" style="padding:0;">
+                <div class="scroll-x">
+                    <table class="odds-table" id="asian-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>主队</th>
+                                <th>盘口</th>
+                                <th>客队</th>
+                            </tr>
+                        </thead>
+                        <tbody id="asian-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-handicap" style="display:none;">
+        <div class="card">
+            <div class="card-header">让球指数</div>
+            <div class="card-body" style="padding:0;">
+                <table class="odds-table" id="handicap-table">
+                    <thead>
+                        <tr>
+                            <th>公司</th>
+                            <th>让球</th>
+                            <th>状态</th>
+                            <th>胜</th>
+                            <th>平</th>
+                            <th>负</th>
+                            <th>返还率</th>
+                        </tr>
+                    </thead>
+                    <tbody id="handicap-tbody"></tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-asian" style="display:none;">
+        <div class="card">
+            <div class="card-header">亚盘对比</div>
+            <div class="card-body" style="padding:0;">
+                <table class="odds-table" id="asian-odds-table">
+                    <thead>
+                        <tr>
+                            <th>公司</th>
+                            <th>状态</th>
+                            <th>主水</th>
+                            <th>盘口</th>
+                            <th>客水</th>
+                            <th>变化</th>
+                        </tr>
+                    </thead>
+                    <tbody id="asian-odds-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-size" style="display:none;">
+        <div class="card">
+            <div class="card-header">大小球</div>
+            <div class="card-body" style="padding:0;">
+                <table class="odds-table" id="size-odds-table">
+                    <thead>
+                        <tr>
+                            <th>公司</th>
+                            <th>状态</th>
+                            <th>大水</th>
+                            <th>盘口</th>
+                            <th>小水</th>
+                            <th>变化</th>
+                        </tr>
+                    </thead>
+                    <tbody id="size-odds-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-kelly" style="display:none;">
+        <div class="card">
+            <div class="card-header">凯利指数</div>
+            <div class="card-body" style="padding:0;">
+                <table class="odds-table" id="kelly-table">
+                    <thead>
+                        <tr>
+                            <th>公司</th>
+                            <th>让球</th>
+                            <th>状态</th>
+                            <th>胜</th>
+                            <th>平</th>
+                            <th>负</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kelly-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-betting" style="display:none;">
+        <div class="card">
+            <div class="card-header">投注概率分析</div>
+            <div class="card-body">
+                <div class="chart-grid">
+                    <div class="chart-container">
+                        <canvas id="prob-pie-chart"></canvas>
+                    </div>
+                    <div>
+                        <table class="betting-table" id="betting-prob-table">
+                            <thead>
+                                <tr>
+                                    <th>结果</th>
+                                    <th>欧赔</th>
+                                    <th>概率</th>
+                                    <th>购买率</th>
+                                    <th>成交量</th>
+                                    <th>冷热</th>
+                                </tr>
+                            </thead>
+                            <tbody id="betting-prob-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" id="big-deals-card" style="display:none;">
+            <div class="card-header">大额交易明细</div>
+            <div class="card-body">
+                <div class="chart-container" style="height:180px;">
+                    <canvas id="deals-line-chart"></canvas>
+                </div>
+                <table class="betting-table" id="big-deals-table">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>买卖</th>
+                            <th>成交量</th>
+                            <th>时间</th>
+                            <th>占比</th>
+                        </tr>
+                    </thead>
+                    <tbody id="big-deals-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="card" id="profit-card" style="display:none;">
+            <div class="card-header">模拟盈亏</div>
+            <div class="card-body" style="padding:0;">
+                <table class="betting-table" id="profit-table">
+                    <thead>
+                        <tr>
+                            <th>结果</th>
+                            <th>庄家盈亏</th>
+                            <th>盈亏指数</th>
+                        </tr>
+                    </thead>
+                    <tbody id="profit-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="card" id="betting-summary-card" style="display:none;">
+            <div class="card-header">分析提示</div>
+            <div class="card-body">
+                <p id="betting-summary" class="betting-summary"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-intelligence" style="display:none;">
+        <div class="card" id="intelligence-card">
+            <div class="card-header">球队情报</div>
+            <div class="card-body">
+                <div class="intelligence-grid">
+                    <div class="team-intelligence">
+                        <h3 class="team-title" id="intel-home-name">主队</h3>
+                        <div class="swot-section">
+                            <div class="swot-item strength">
+                                <div class="swot-label">优势</div>
+                                <ul id="home-strength-list"></ul>
+                            </div>
+                            <div class="swot-item weakness">
+                                <div class="swot-label">劣势</div>
+                                <ul id="home-weakness-list"></ul>
+                            </div>
+                            <div class="swot-item opportunity">
+                                <div class="swot-label">机会</div>
+                                <ul id="home-opportunity-list"></ul>
+                            </div>
+                            <div class="swot-item threat">
+                                <div class="swot-label">威胁</div>
+                                <ul id="home-threat-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-intelligence">
+                        <h3 class="team-title" id="intel-away-name">客队</h3>
+                        <div class="swot-section">
+                            <div class="swot-item strength">
+                                <div class="swot-label">优势</div>
+                                <ul id="away-strength-list"></ul>
+                            </div>
+                            <div class="swot-item weakness">
+                                <div class="swot-label">劣势</div>
+                                <ul id="away-weakness-list"></ul>
+                            </div>
+                            <div class="swot-item opportunity">
+                                <div class="swot-label">机会</div>
+                                <ul id="away-opportunity-list"></ul>
+                            </div>
+                            <div class="swot-item threat">
+                                <div class="swot-label">威胁</div>
+                                <ul id="away-threat-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intelligence-summary" id="intelligence-summary" style="display:none;">
+                    <div class="summary-title">综合分析</div>
+                    <div class="summary-content" id="summary-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-european" style="display:none;">
+        <div class="card">
+            <div class="card-header">欧赔数据</div>
+            <div class="card-body" style="padding:0;">
+                <div class="scroll-x">
+                    <table class="odds-table" id="european-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>状态</th>
+                                <th>主胜</th>
+                                <th>平局</th>
+                                <th>客胜</th>
+                                <th>返还率</th>
+                            </tr>
+                        </thead>
+                        <tbody id="european-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="refresh-btn" onclick="loadData()">刷新数据</button>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const fixtureId = params.get('fixtureId') || params.get('id');
+let nid = params.get('nid') || params.get('namitiyuId');
+const homeName = params.get('home') || '主队';
+const awayName = params.get('away') || '客队';
+const league = params.get('league') || '';
+const matchTime = params.get('time') || '';
+
+let analysisData = null;
+
+async function initPage() {
+    // 设置页面标题
+    const pageTitle = homeName + ' vs ' + awayName + ' - 比赛分析';
+    document.getElementById('header-title').textContent = homeName + ' vs ' + awayName;
+    document.title = pageTitle;
+    
+    // 如果没有nid，尝试从映射中获取
+    if (!nid && fixtureId) {
+        try {
+            const response = await fetch('/fixture_mapping.json?t=' + Date.now());
+            if (response.ok) {
+                const data = await response.json();
+                const byFixtureId = data.byFixtureId || {};
+                if (byFixtureId[fixtureId] && byFixtureId[fixtureId].namitiyuId) {
+                    nid = byFixtureId[fixtureId].namitiyuId;
+                }
+            }
+        } catch(e) {
+            console.log('获取namitiyuId失败:', e);
+        }
+    }
+    
+    // 尝试从live_data获取
+    if (!nid && homeName && awayName) {
+        try {
+            const response = await fetch('/live_data.json?t=' + Date.now());
+            if (response.ok) {
+                const data = await response.json();
+                const match = data.matches.find(m => 
+                    m.home === homeName && m.away === awayName
+                );
+                if (match && match.namitiyuId) {
+                    nid = match.namitiyuId;
+                }
+            }
+        } catch(e) {
+            console.log('从live_data获取namitiyuId失败:', e);
+        }
+    }
+    
+    // 加载动画
+    if (nid) {
+        const animContainer = document.getElementById('animation-container');
+        const animFrame = document.getElementById('animation-frame');
+        animContainer.style.display = 'block';
+        animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + nid;
+    }
+}
+
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+        const targetTab = this.dataset.tab;
+        const targetContent = document.getElementById('tab-' + targetTab);
+        
+        if (this.classList.contains('active')) return;
+        
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        
+        const currentActive = document.querySelector('.tab-content.active');
+        if (currentActive) {
+            currentActive.classList.remove('visible');
+            setTimeout(() => {
+                currentActive.classList.remove('active');
+                currentActive.style.display = 'none';
+                
+                targetContent.style.display = 'block';
+                targetContent.classList.add('active');
+                requestAnimationFrame(() => {
+                    targetContent.classList.add('visible');
+                });
+            }, 200);
+        } else {
+            targetContent.style.display = 'block';
+            targetContent.classList.add('active');
+            requestAnimationFrame(() => {
+                targetContent.classList.add('visible');
+            });
+        }
+    });
+});
+
+async function loadData() {
+    if (!fixtureId) {
+        showError('缺少比赛ID');
+        return;
+    }
+    
+    document.getElementById('loading').style.display = 'flex';
+    document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+    
+    try {
+        const response = await fetch('/analysis_' + fixtureId + '.json?t=' + Date.now());
+        if (!response.ok) {
+            showError('数据未加载，请稍后刷新');
+            return;
+        }
+        
+        analysisData = await response.json();
+        renderData();
+        
+        const loading = document.getElementById('loading');
+        loading.style.opacity = '0';
+        setTimeout(() => {
+            loading.style.display = 'none';
+        }, 200);
+        
+        const tabData = document.getElementById('tab-data');
+        tabData.style.display = 'block';
+        tabData.classList.add('active');
+        requestAnimationFrame(() => {
+            tabData.classList.add('visible');
+        });
+        
+    } catch (e) {
+        showError('加载失败: ' + e.message);
+    }
+}
+
+function showError(msg) {
+    document.getElementById('loading').innerHTML = 
+        '<div class="empty">📊<div style="margin-top:12px">' + msg + '</div></div>';
+}
+
+function renderData() {
+    try { renderTeamRanking(); } catch(e) {}
+    try { renderLeagueRanking(); } catch(e) {}
+    try { renderH2H(); } catch(e) {}
+    try { renderH2HMatches(); } catch(e) {}
+    try { renderRecentCompare(); } catch(e) {}
+    try { renderFutureMatches(); } catch(e) {}
+    try { renderAverageStats(); } catch(e) {}
+    try { renderAbility(); } catch(e) {}
+    try { renderLineup(); } catch(e) {}
+    try { renderRecommendation(); } catch(e) {}
+    try { renderIntelligence(); } catch(e) {}
+    try { renderAsianOdds(); } catch(e) {}
+    try { renderSizeOdds(); } catch(e) {}
+    try { renderHandicapOdds(); } catch(e) {}
+    try { renderKellyIndex(); } catch(e) {}
+    try { renderEuropeanOdds(); } catch(e) {}
+    try { renderBettingAnalysis(); } catch(e) {}
+    
+    // 显示有数据的卡片
+    const cards = ['ranking-card', 'h2h-card', 'recent-card', 'future-card', 'avg-card', 'ability-card', 'lineup-card', 'recommend-card'];
+    cards.forEach(id => {
+        const card = document.getElementById(id);
+        if (card) {
+            const body = card.querySelector('.card-body');
+            if (body && body.innerText.trim() && !body.innerText.includes('暂无数据')) {
+                card.style.display = 'block';
+            }
+        }
+    });
+}
+
+function renderTeamRanking() {
+    const homeRank = analysisData.homeRanking || {};
+    const awayRank = analysisData.awayRanking || {};
+    const league = analysisData.league || '';
+    
+    const rankingCard = document.getElementById('ranking-card');
+    if (!homeRank.currentRank && !awayRank.currentRank) {
+        rankingCard.style.display = 'none';
+        return;
+    }
+    
+    rankingCard.style.display = 'block';
+    
+    // 主队排名
+    const homeRankEl = document.getElementById('ranking-home');
+    if (homeRankEl) {
+        let html = '<div class="ranking-team">' + homeName + '</div>';
+        if (homeRank.currentRank) {
+            html += '<div class="ranking-pos">' + league + homeRank.currentRank + '</div>';
+        }
+        if (homeRank.matches) {
+            html += '<div class="ranking-stats">' + homeRank.matches + '场 ' + (homeRank.wins || 0) + '胜 ' + (homeRank.draws || 0) + '平 ' + (homeRank.losses || 0) + '负</div>';
+        }
+        homeRankEl.innerHTML = html;
+    }
+    
+    // 客队排名
+    const awayRankEl = document.getElementById('ranking-away');
+    if (awayRankEl) {
+        let html = '<div class="ranking-team">' + awayName + '</div>';
+        if (awayRank.currentRank) {
+            html += '<div class="ranking-pos">' + league + awayRank.currentRank + '</div>';
+        }
+        if (awayRank.matches) {
+            html += '<div class="ranking-stats">' + awayRank.matches + '场 ' + (awayRank.wins || 0) + '胜 ' + (awayRank.draws || 0) + '平 ' + (awayRank.losses || 0) + '负</div>';
+        }
+        awayRankEl.innerHTML = html;
+    }
+}
+
+function renderH2H() {
+    const h2h = analysisData.h2h;
+    if (!h2h) {
+        document.getElementById('h2h-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('h2h-card').style.display = 'block';
+    
+    let html = 
+        '<div class="h2h-item">' +
+            '<div class="h2h-value win">' + (h2h.homeWin || 0) + '</div>' +
+            '<div class="h2h-label">主胜</div>' +
+        '</div>' +
+        '<div class="h2h-item">' +
+            '<div class="h2h-value draw">' + (h2h.draw || 0) + '</div>' +
+            '<div class="h2h-label">平局</div>' +
+        '</div>' +
+        '<div class="h2h-item">' +
+            '<div class="h2h-value lose">' + (h2h.awayWin || 0) + '</div>' +
+            '<div class="h2h-label">客胜</div>' +
+        '</div>';
+    
+    html += '<div class="h2h-detail">近' + (h2h.total || 0) + '场交锋 ｜ ' +
+            homeName + '进' + (h2h.homeGoals || 0) + '球 ｜ ' +
+            awayName + '进' + (h2h.awayGoals || 0) + '球 ｜ ' +
+            '大球' + (h2h.bigBall || 0) + ' 小球' + (h2h.smallBall || 0) + '</div>';
+    
+    document.getElementById('h2h-summary').innerHTML = html;
+}
+
+function renderRecentCompare() {
+    const homeStats = analysisData.homeRecentStats;
+    const awayStats = analysisData.awayRecentStats;
+    
+    if (!homeStats && !awayStats) {
+        document.getElementById('recent-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('recent-card').style.display = 'block';
+    
+    function calcWinRate(stats) {
+        if (!stats) return 0;
+        const total = (stats.win || 0) + (stats.draw || 0) + (stats.lose || 0);
+        return total > 0 ? Math.round((stats.win || 0) / total * 100) : 0;
+    }
+    
+    function renderTeamStats(stats, isHome) {
+        if (!stats) return '<div class="recent-team"></div>';
+        
+        const winRate = calcWinRate(stats);
+        const teamName = stats.team || (isHome ? homeName : awayName);
+        
+        return '<div class="recent-team">' +
+            '<div class="recent-team-header">' + teamName + '</div>' +
+            '<div class="recent-stats-row">' +
+                '<span class="label">胜</span>' +
+                '<span class="value win">' + (stats.win || 0) + '</span>' +
+            '</div>' +
+            '<div class="recent-stats-row">' +
+                '<span class="label">平</span>' +
+                '<span class="value draw">' + (stats.draw || 0) + '</span>' +
+            '</div>' +
+            '<div class="recent-stats-row">' +
+                '<span class="label">负</span>' +
+                '<span class="value lose">' + (stats.lose || 0) + '</span>' +
+            '</div>' +
+            '<div class="recent-stats-row">' +
+                '<span class="label">进球</span>' +
+                '<span class="value">' + (stats.goals || 0) + '</span>' +
+            '</div>' +
+            '<div class="recent-stats-row">' +
+                '<span class="label">失球</span>' +
+                '<span class="value">' + (stats.conceded || 0) + '</span>' +
+            '</div>' +
+            '<div class="win-rate-bar">' +
+                '<div class="win-rate-label">胜率 ' + winRate + '%</div>' +
+                '<div class="win-rate-track">' +
+                    '<div class="win-rate-fill" style="width:' + winRate + '%"></div>' +
+                '</div>' +
+            '</div>' +
+        '</div>';
+    }
+    
+    document.getElementById('recent-compare').innerHTML = 
+        renderTeamStats(homeStats, true) + renderTeamStats(awayStats, false);
+}
+
+function renderAverageStats() {
+    const homeAvg = analysisData.homeAverageStats;
+    const awayAvg = analysisData.awayAverageStats;
+    const homeRank = analysisData.homeRanking || {};
+    const awayRank = analysisData.awayRanking || {};
+    
+    if (!homeAvg && !awayAvg) {
+        document.getElementById('avg-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('avg-card').style.display = 'block';
+    
+    function renderTeamAvg(avg, rank, teamName) {
+        if (!avg) return '<div class="avg-team"></div>';
+        
+        const rankText = rank.currentRank ? '[' + rank.currentRank + ']' : '';
+        
+        return '<div class="avg-team">' +
+            '<div class="avg-team-header">' + teamName + ' ' + rankText + '</div>' +
+            '<table class="avg-stats-table">' +
+                '<tr><th></th><th>全场</th><th>主场</th><th>客场</th></tr>' +
+                '<tr>' +
+                    '<td class="label-col">入球</td>' +
+                    '<td>' + (avg.avgGoals || '-') + '</td>' +
+                    '<td>' + (avg.homeGoals || '-') + '</td>' +
+                    '<td>' + (avg.awayGoals || '-') + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                    '<td class="label-col">失球</td>' +
+                    '<td>' + (avg.avgConceded || '-') + '</td>' +
+                    '<td>' + (avg.homeConceded || '-') + '</td>' +
+                    '<td>' + (avg.awayConceded || '-') + '</td>' +
+                '</tr>' +
+            '</table>' +
+        '</div>';
+    }
+    
+    document.getElementById('avg-compare').innerHTML = 
+        renderTeamAvg(homeAvg, homeRank, homeName) + 
+        renderTeamAvg(awayAvg, awayRank, awayName);
+}
+
+function renderHandicapOdds() {
+    const odds = analysisData.handicapOdds || [];
+    const tbody = document.getElementById('handicap-tbody');
+    
+    if (odds.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="empty">暂无数据</td></tr>';
+        return;
+    }
+    
+    function getOddsColor(instant, initial) {
+        const i = parseFloat(instant);
+        const init = parseFloat(initial);
+        if (isNaN(i) || isNaN(init)) return '';
+        if (i > init) return 'win';
+        if (i < init) return 'loss';
+        return '';
+    }
+    
+    let html = '';
+    odds.forEach((item, index) => {
+        const instant = item.instant || {};
+        const initial = item.initial || {};
+        const trClass = index % 2 === 0 ? '' : 'tr2';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td rowspan="2" class="company"><strong>' + (item.company || '-') + '</strong></td>' +
+            '<td rowspan="2" class="highlight">' + (item.handicap || '-') + '</td>' +
+            '<td>初盘</td>' +
+            '<td>' + (initial.homeOdds || '-') + '</td>' +
+            '<td>' + (initial.drawOdds || '-') + '</td>' +
+            '<td>' + (initial.awayOdds || '-') + '</td>' +
+            '<td>' + (initial.returnRate || '-') + '%</td>' +
+        '</tr>';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td>即时</td>' +
+            '<td class="' + getOddsColor(instant.homeOdds, initial.homeOdds) + '">' + (instant.homeOdds || '-') + '</td>' +
+            '<td class="' + getOddsColor(instant.drawOdds, initial.drawOdds) + '">' + (instant.drawOdds || '-') + '</td>' +
+            '<td class="' + getOddsColor(instant.awayOdds, initial.awayOdds) + '">' + (instant.awayOdds || '-') + '</td>' +
+            '<td>' + (instant.returnRate || '-') + '%</td>' +
+        '</tr>';
+    });
+    
+    tbody.innerHTML = html;
+}
+
+function renderAsianOdds() {
+    const odds = analysisData.asianOdds || [];
+    const tbody = document.getElementById('asian-odds-tbody');
+    
+    if (odds.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty">暂无数据</td></tr>';
+        return;
+    }
+    
+    function getWaterColor(instant, initial) {
+        const i = parseFloat(instant);
+        const init = parseFloat(initial);
+        if (isNaN(i) || isNaN(init)) return '';
+        if (i > init) return 'win';
+        if (i < init) return 'loss';
+        return '';
+    }
+    
+    function getTrendIcon(trend) {
+        if (trend === '升') return '<span class="win">↑</span>';
+        if (trend === '降') return '<span class="loss">↓</span>';
+        return '';
+    }
+    
+    let html = '';
+    odds.forEach((item, index) => {
+        const instant = item.instant || {};
+        const initial = item.initial || {};
+        const trClass = index % 2 === 0 ? '' : 'tr2';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td rowspan="2" class="company"><strong>' + (item.company || '-') + '</strong></td>' +
+            '<td>初盘</td>' +
+            '<td>' + (initial.homeWater || '-') + '</td>' +
+            '<td class="highlight">' + (initial.handicap || '-') + '</td>' +
+            '<td>' + (initial.awayWater || '-') + '</td>' +
+            '<td style="font-size:11px;">' + (initial.time || '-') + '</td>' +
+        '</tr>';
+        
+        const trendHtml = getTrendIcon(instant.trend);
+        html += '<tr class="' + trClass + '">' +
+            '<td>即时</td>' +
+            '<td class="' + getWaterColor(instant.homeWater, initial.homeWater) + '">' + (instant.homeWater || '-') + '</td>' +
+            '<td class="highlight">' + (instant.handicap || '-') + (trendHtml ? ' ' + trendHtml : '') + '</td>' +
+            '<td class="' + getWaterColor(instant.awayWater, initial.awayWater) + '">' + (instant.awayWater || '-') + '</td>' +
+            '<td style="font-size:11px;">' + (instant.time || '-') + '</td>' +
+        '</tr>';
+    });
+    
+    tbody.innerHTML = html;
+}
+
+function renderSizeOdds() {
+    const odds = analysisData.sizeOdds || [];
+    const tbody = document.getElementById('size-odds-tbody');
+    
+    if (odds.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty">暂无数据</td></tr>';
+        return;
+    }
+    
+    function getWaterColor(instant, initial) {
+        const i = parseFloat(instant);
+        const init = parseFloat(initial);
+        if (isNaN(i) || isNaN(init)) return '';
+        if (i > init) return 'win';
+        if (i < init) return 'loss';
+        return '';
+    }
+    
+    function getTrendIcon(trend) {
+        if (trend === '升') return '<span class="win">↑</span>';
+        if (trend === '降') return '<span class="loss">↓</span>';
+        return '';
+    }
+    
+    let html = '';
+    odds.forEach((item, index) => {
+        const instant = item.instant || {};
+        const initial = item.initial || {};
+        const trClass = index % 2 === 0 ? '' : 'tr2';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td rowspan="2" class="company"><strong>' + (item.company || '-') + '</strong></td>' +
+            '<td>初盘</td>' +
+            '<td>' + (initial.bigWater || '-') + '</td>' +
+            '<td class="highlight">' + (initial.handicap || '-') + '</td>' +
+            '<td>' + (initial.smallWater || '-') + '</td>' +
+            '<td style="font-size:11px;">' + (initial.time || '-') + '</td>' +
+        '</tr>';
+        
+        const trendHtml = getTrendIcon(instant.trend);
+        html += '<tr class="' + trClass + '">' +
+            '<td>即时</td>' +
+            '<td class="' + getWaterColor(instant.bigWater, initial.bigWater) + '">' + (instant.bigWater || '-') + '</td>' +
+            '<td class="highlight">' + (instant.handicap || '-') + (trendHtml ? ' ' + trendHtml : '') + '</td>' +
+            '<td class="' + getWaterColor(instant.smallWater, initial.smallWater) + '">' + (instant.smallWater || '-') + '</td>' +
+            '<td style="font-size:11px;">' + (instant.time || '-') + '</td>' +
+        '</tr>';
+    });
+    
+    tbody.innerHTML = html;
+}
+
+function renderKellyIndex() {
+    const odds = analysisData.handicapOdds || [];
+    const tbody = document.getElementById('kelly-tbody');
+    
+    if (odds.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty">暂无数据</td></tr>';
+        return;
+    }
+    
+    function getKellyColor(instant, initial) {
+        const i = parseFloat(instant);
+        const init = parseFloat(initial);
+        if (isNaN(i) || isNaN(init)) return '';
+        if (i > init) return 'win';
+        if (i < init) return 'loss';
+        return '';
+    }
+    
+    let html = '';
+    odds.forEach((item, index) => {
+        const instant = item.instant || {};
+        const initial = item.initial || {};
+        const trClass = index % 2 === 0 ? '' : 'tr2';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td rowspan="3" class="company"><strong>' + (item.company || '-') + '</strong></td>' +
+            '<td rowspan="3" class="highlight">' + (item.handicap || '-') + '</td>' +
+            '<td>初盘</td>' +
+            '<td>' + (initial.homeKelly || '-') + '</td>' +
+            '<td>' + (initial.drawKelly || '-') + '</td>' +
+            '<td>' + (initial.awayKelly || '-') + '</td>' +
+        '</tr>';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td>即时</td>' +
+            '<td class="' + getKellyColor(instant.homeKelly, initial.homeKelly) + '">' + (instant.homeKelly || '-') + '</td>' +
+            '<td class="' + getKellyColor(instant.drawKelly, initial.drawKelly) + '">' + (instant.drawKelly || '-') + '</td>' +
+            '<td class="' + getKellyColor(instant.awayKelly, initial.awayKelly) + '">' + (instant.awayKelly || '-') + '</td>' +
+        '</tr>';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td>概率</td>' +
+            '<td>' + (instant.homeProb || '-') + '%</td>' +
+            '<td>' + (instant.drawProb || '-') + '%</td>' +
+            '<td>' + (instant.awayProb || '-') + '%</td>' +
+        '</tr>';
+    });
+    
+    tbody.innerHTML = html;
+}
+
+function renderEuropeanOdds() {
+    const odds = analysisData.europeanOdds || [];
+    const avg = analysisData.europeanAvg;
+    const tbody = document.getElementById('european-tbody');
+    
+    if (odds.length === 0 && !avg) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty">暂无数据</td></tr>';
+        return;
+    }
+    
+    function getOddsColor(instant, initial) {
+        const i = parseFloat(instant);
+        const init = parseFloat(initial);
+        if (isNaN(i) || isNaN(init)) return '';
+        if (i > init) return 'win';
+        if (i < init) return 'loss';
+        return '';
+    }
+    
+    let html = '';
+    
+    odds.forEach((item, index) => {
+        const instant = item.instant || {};
+        const initial = item.initial || {};
+        const trClass = index % 2 === 0 ? '' : 'tr2';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td rowspan="2" class="company"><strong>' + (item.company || '-') + '</strong></td>' +
+            '<td>初盘</td>' +
+            '<td>' + (initial.homeWin || '-') + '</td>' +
+            '<td>' + (initial.draw || '-') + '</td>' +
+            '<td>' + (initial.awayWin || '-') + '</td>' +
+            '<td>' + (initial.returnRate || '-') + '</td>' +
+        '</tr>';
+        
+        html += '<tr class="' + trClass + '">' +
+            '<td>即时</td>' +
+            '<td class="' + getOddsColor(instant.homeWin, initial.homeWin) + '">' + (instant.homeWin || '-') + '</td>' +
+            '<td class="' + getOddsColor(instant.draw, initial.draw) + '">' + (instant.draw || '-') + '</td>' +
+            '<td class="' + getOddsColor(instant.awayWin, initial.awayWin) + '">' + (instant.awayWin || '-') + '</td>' +
+            '<td>' + (instant.returnRate || '-') + '</td>' +
+        '</tr>';
+    });
+    
+    if (avg) {
+        const avgInstant = avg.instant || {};
+        const avgInitial = avg.initial || {};
+        html += '<tr class="avg-row">' +
+            '<td rowspan="2" class="company"><strong>平均</strong></td>' +
+            '<td>初盘</td>' +
+            '<td class="highlight">' + (avgInitial.homeWin || '-') + '</td>' +
+            '<td class="highlight">' + (avgInitial.draw || '-') + '</td>' +
+            '<td class="highlight">' + (avgInitial.awayWin || '-') + '</td>' +
+            '<td>' + (avgInitial.returnRate || '-') + '</td>' +
+        '</tr>';
+        html += '<tr class="avg-row">' +
+            '<td>即时</td>' +
+            '<td class="highlight">' + (avgInstant.homeWin || '-') + '</td>' +
+            '<td class="highlight">' + (avgInstant.draw || '-') + '</td>' +
+            '<td class="highlight">' + (avgInstant.awayWin || '-') + '</td>' +
+            '<td>' + (avgInstant.returnRate || '-') + '</td>' +
+        '</tr>';
+    }
+    
+    tbody.innerHTML = html;
+}
+
+function renderLeagueRanking() {
+    const homeRanking = analysisData.homeLeagueRanking;
+    const awayRanking = analysisData.awayLeagueRanking;
+    
+    if (!homeRanking && !awayRanking) {
+        document.getElementById('ranking-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('ranking-card').style.display = 'block';
+    
+    function renderRankTable(ranking, teamName) {
+        if (!ranking || ranking.length === 0) {
+            return '<div style="text-align:center;color:var(--text-secondary);padding:20px;">暂无数据</div>';
+        }
+        
+        let html = '<table class="rank-table"><tr><th></th><th>场次</th><th>胜</th><th>平</th><th>负</th><th>积分</th><th>排名</th></tr>';
+        ranking.forEach(row => {
+            html += '<tr>' +
+                '<td>' + (row.type || '') + '</td>' +
+                '<td>' + (row.matches || '-') + '</td>' +
+                '<td class="win">' + (row.win || 0) + '</td>' +
+                '<td class="draw">' + (row.draw || 0) + '</td>' +
+                '<td class="lose">' + (row.lose || 0) + '</td>' +
+                '<td>' + (row.points || '-') + '</td>' +
+                '<td>' + (row.rank || '-') + '</td>' +
+            '</tr>';
+        });
+        html += '</table>';
+        return html;
+    }
+    
+    document.getElementById('home-ranking-table').innerHTML = renderRankTable(homeRanking, homeName);
+    document.getElementById('away-ranking-table').innerHTML = renderRankTable(awayRanking, awayName);
+}
+
+function renderH2HMatches() {
+    const matches = analysisData.h2hMatches || [];
+    if (matches.length === 0) return;
+    
+    let html = '<table class="match-list"><tr><th>联赛</th><th>日期</th><th>主队</th><th>比分</th><th>客队</th><th>结果</th></tr>';
+    matches.slice(0, 6).forEach(m => {
+        const resultClass = m.result === '胜' ? 'win' : (m.result === '平' ? 'draw' : 'lose');
+        html += '<tr>' +
+            '<td>' + (m.league || '-') + '</td>' +
+            '<td>' + (m.date || '-') + '</td>' +
+            '<td>' + (m.homeTeam || '-') + '</td>' +
+            '<td>' + (m.score || '-') + '</td>' +
+            '<td>' + (m.awayTeam || '-') + '</td>' +
+            '<td class="' + resultClass + '">' + (m.result || '-') + '</td>' +
+        '</tr>';
+    });
+    html += '</table>';
+    document.getElementById('h2h-matches').innerHTML = html;
+}
+
+function renderFutureMatches() {
+    const homeFuture = analysisData.homeFutureMatches || [];
+    const awayFuture = analysisData.awayFutureMatches || [];
+    
+    if (homeFuture.length === 0 && awayFuture.length === 0) {
+        document.getElementById('future-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('future-card').style.display = 'block';
+    
+    function renderFutureTable(matches, teamName) {
+        if (matches.length === 0) return '<div class="future-empty">暂无未来赛事</div>';
+        
+        let html = '<div class="future-team"><div class="team-title">' + teamName + '</div>' +
+            '<table class="future-table"><tr><th>联赛</th><th>日期</th><th>对阵</th><th>天数</th></tr>';
+        matches.slice(0, 4).forEach(m => {
+            html += '<tr>' +
+                '<td>' + (m.league || '-') + '</td>' +
+                '<td class="date">' + (m.date || '-') + '</td>' +
+                '<td>' + (m.homeTeam || '-') + ' vs ' + (m.awayTeam || '-') + '</td>' +
+                '<td class="days">' + (m.days || '-') + '</td>' +
+            '</tr>';
+        });
+        html += '</table></div>';
+        return html;
+    }
+    
+    document.getElementById('home-future').innerHTML = renderFutureTable(homeFuture, homeName);
+    document.getElementById('away-future').innerHTML = renderFutureTable(awayFuture, awayName);
+}
+
+function renderAbility() {
+    const homeAbility = analysisData.homeAbility;
+    const awayAbility = analysisData.awayAbility;
+    
+    if (!homeAbility && !awayAbility) {
+        document.getElementById('ability-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('ability-card').style.display = 'block';
+    
+    const homeTotal = (homeAbility && homeAbility.totalValue && homeAbility.totalValue.value) || 0;
+    const awayTotal = (awayAbility && awayAbility.totalValue && awayAbility.totalValue.value) || 0;
+    const maxVal = Math.max(homeTotal, awayTotal, 1);
+    
+    const homeAttack = (homeAbility && homeAbility.attackValue && homeAbility.attackValue.value) || 0;
+    const awayAttack = (awayAbility && awayAbility.attackValue && awayAbility.attackValue.value) || 0;
+    const maxAttack = Math.max(homeAttack, awayAttack, 1);
+    
+    const homeMid = (homeAbility && homeAbility.midfieldValue && homeAbility.midfieldValue.value) || 0;
+    const awayMid = (awayAbility && awayAbility.midfieldValue && awayAbility.midfieldValue.value) || 0;
+    const maxMid = Math.max(homeMid, awayMid, 1);
+    
+    const homeDef = (homeAbility && homeAbility.defenseValue && homeAbility.defenseValue.value) || 0;
+    const awayDef = (awayAbility && awayAbility.defenseValue && awayAbility.defenseValue.value) || 0;
+    const maxDef = Math.max(homeDef, awayDef, 1);
+    
+    let html = '<div class="ability-section">' +
+        '<div class="ability-title">总身价对比</div>' +
+        '<div class="ability-bar">' +
+            '<span class="label">' + homeName + '</span>' +
+            '<span class="value">' + homeTotal + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill home" style="width:' + (homeTotal/maxVal*100) + '%"></div></div>' +
+        '</div>' +
+        '<div class="ability-bar away-side">' +
+            '<span class="label">' + awayName + '</span>' +
+            '<span class="value">' + awayTotal + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill away" style="width:' + (awayTotal/maxVal*100) + '%"></div></div>' +
+        '</div>' +
+    '</div>';
+    
+    html += '<div class="ability-section">' +
+        '<div class="ability-title">锋线身价</div>' +
+        '<div class="ability-bar">' +
+            '<span class="label">' + homeName + '</span>' +
+            '<span class="value">' + homeAttack + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill home" style="width:' + (homeAttack/maxAttack*100) + '%"></div></div>' +
+        '</div>' +
+        '<div class="ability-bar away-side">' +
+            '<span class="label">' + awayName + '</span>' +
+            '<span class="value">' + awayAttack + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill away" style="width:' + (awayAttack/maxAttack*100) + '%"></div></div>' +
+        '</div>' +
+    '</div>';
+    
+    html += '<div class="ability-section">' +
+        '<div class="ability-title">中场身价</div>' +
+        '<div class="ability-bar">' +
+            '<span class="label">' + homeName + '</span>' +
+            '<span class="value">' + homeMid + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill home" style="width:' + (homeMid/maxMid*100) + '%"></div></div>' +
+        '</div>' +
+        '<div class="ability-bar away-side">' +
+            '<span class="label">' + awayName + '</span>' +
+            '<span class="value">' + awayMid + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill away" style="width:' + (awayMid/maxMid*100) + '%"></div></div>' +
+        '</div>' +
+    '</div>';
+    
+    html += '<div class="ability-section">' +
+        '<div class="ability-title">防线身价</div>' +
+        '<div class="ability-bar">' +
+            '<span class="label">' + homeName + '</span>' +
+            '<span class="value">' + homeDef + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill home" style="width:' + (homeDef/maxDef*100) + '%"></div></div>' +
+        '</div>' +
+        '<div class="ability-bar away-side">' +
+            '<span class="label">' + awayName + '</span>' +
+            '<span class="value">' + awayDef + '万</span>' +
+            '<div class="bar-wrap"><div class="bar-fill away" style="width:' + (awayDef/maxDef*100) + '%"></div></div>' +
+        '</div>' +
+    '</div>';
+    
+    document.getElementById('ability-content').innerHTML = html;
+}
+
+function renderLineup() {
+    const homeLineup = analysisData.homeLineup;
+    const awayLineup = analysisData.awayLineup;
+    
+    if (!homeLineup && !awayLineup) {
+        document.getElementById('lineup-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('lineup-card').style.display = 'block';
+    
+    function renderTeamLineup(lineup, teamName) {
+        if (!lineup) return '<div class="lineup-empty">暂无阵容数据</div>';
+        
+        let html = '<div class="lineup-team"><div class="team-title">' + teamName + '</div>';
+        
+        const sections = [
+            { key: 'starting', title: '首发', rowClass: '' },
+            { key: 'substitute', title: '替补', rowClass: '' },
+            { key: 'injured', title: '伤病', rowClass: 'injury-row' },
+            { key: 'suspended', title: '停赛', rowClass: 'suspended-row' }
+        ];
+        
+        sections.forEach(sec => {
+            const players = lineup[sec.key] || [];
+            if (players.length > 0) {
+                html += '<div class="lineup-section"><div class="section-title">' + sec.title + '</div>' +
+                    '<table class="lineup-table"><tr><th>号码</th><th>球员</th><th>位置</th></tr>';
+                players.forEach(p => {
+                    html += '<tr class="' + sec.rowClass + '">' +
+                        '<td class="num">' + (p.number || '-') + '</td>' +
+                        '<td class="name-col">' + (p.name || '-') + '</td>' +
+                        '<td>' + (p.position || '-') + '</td>' +
+                    '</tr>';
+                });
+                html += '</table></div>';
+            }
+        });
+        
+        html += '</div>';
+        return html;
+    }
+    
+    document.getElementById('home-lineup').innerHTML = renderTeamLineup(homeLineup, homeName);
+    document.getElementById('away-lineup').innerHTML = renderTeamLineup(awayLineup, awayName);
+}
+
+function renderRecommendation() {
+    const rec = analysisData.recommendation;
+    if (!rec) {
+        document.getElementById('recommend-card').style.display = 'none';
+        return;
+    }
+    
+    document.getElementById('recommend-card').style.display = 'block';
+    
+    let html = '';
+    
+    if (rec.homeForm || rec.awayForm) {
+        html += '<div class="form-section" style="margin-bottom:12px;">' +
+            '<div class="form-title">近况走势</div>';
+        if (rec.homeForm) {
+            html += '<div class="form-row">' +
+                '<span class="team-label">' + homeName + '</span>' +
+                '<span class="form-badges">' + renderFormBadges(rec.homeForm) + '</span>' +
+            '</div>';
+        }
+        if (rec.awayForm) {
+            html += '<div class="form-row">' +
+                '<span class="team-label">' + awayName + '</span>' +
+                '<span class="form-badges">' + renderFormBadges(rec.awayForm) + '</span>' +
+            '</div>';
+        }
+        html += '</div>';
+    }
+    
+    if (rec.homeAsian || rec.awayAsian) {
+        html += '<div class="form-section" style="margin-bottom:12px;">' +
+            '<div class="form-title">盘路赢输</div>';
+        if (rec.homeAsian) {
+            html += '<div class="form-row">' +
+                '<span class="team-label">' + homeName + '</span>' +
+                '<span class="form-badges">' + renderFormBadges(rec.homeAsian, true) + '</span>' +
+            '</div>';
+        }
+        if (rec.awayAsian) {
+            html += '<div class="form-row">' +
+                '<span class="team-label">' + awayName + '</span>' +
+                '<span class="form-badges">' + renderFormBadges(rec.awayAsian, true) + '</span>' +
+            '</div>';
+        }
+        html += '</div>';
+    }
+    
+    if (rec.pick) {
+        html += '<div class="rec-row"><span class="label">心水推介</span><span class="highlight">' + rec.pick + '</span></div>';
+    }
+    
+    if (rec.h2hRecord) {
+        html += '<div class="rec-row"><span class="label">对赛成绩</span><span>' + rec.h2hRecord + '</span></div>';
+    }
+    
+    if (rec.reason) {
+        html += '<div class="rec-reason">' + rec.reason + '</div>';
+    }
+    
+    document.getElementById('recommend-body').innerHTML = html;
+}
+
+function renderIntelligence() {
+    const intel = analysisData.intelligence;
+    const home = analysisData.home || '主队';
+    const away = analysisData.away || '客队';
+    
+    document.getElementById('intel-home-name').textContent = home;
+    document.getElementById('intel-away-name').textContent = away;
+    
+    if (intel) {
+        const hasIntelData = (intel.homeStrength && intel.homeStrength.length > 0) ||
+                              (intel.homeWeakness && intel.homeWeakness.length > 0) ||
+                              (intel.awayStrength && intel.awayStrength.length > 0) ||
+                              (intel.awayWeakness && intel.awayWeakness.length > 0);
+        
+        if (hasIntelData) {
+            renderSwotList('home-strength-list', intel.homeStrength);
+            renderSwotList('home-weakness-list', intel.homeWeakness);
+            renderSwotList('home-opportunity-list', intel.homeOpportunity);
+            renderSwotList('home-threat-list', intel.homeThreat);
+            renderSwotList('away-strength-list', intel.awayStrength);
+            renderSwotList('away-weakness-list', intel.awayWeakness);
+            renderSwotList('away-opportunity-list', intel.awayOpportunity);
+            renderSwotList('away-threat-list', intel.awayThreat);
+            
+            if (intel.summary) {
+                document.getElementById('intelligence-summary').style.display = 'block';
+                document.getElementById('summary-content').textContent = intel.summary;
+            }
+        }
+    }
+}
+
+function renderSwotList(elementId, items) {
+    const el = document.getElementById(elementId);
+    if (!items || items.length === 0) {
+        el.innerHTML = '<li style="color:#9ca3af;">暂无数据</li>';
+        return;
+    }
+    el.innerHTML = items.map(item => '<li>' + item + '</li>').join('');
+}
+
+function renderFormBadges(form, isAsian) {
+    if (!form) return '';
+    let html = '';
+    for (let i = 0; i < form.length; i++) {
+        const c = form[i];
+        if (isAsian) {
+            if (c === 'W' || c === '赢') {
+                html += '<span class="form-badge W">赢</span>';
+            } else if (c === 'D' || c === '走') {
+                html += '<span class="form-badge D">走</span>';
+            } else if (c === 'L' || c === '输') {
+                html += '<span class="form-badge L">输</span>';
+            }
+        } else {
+            if (c === 'W' || c === '胜') {
+                html += '<span class="form-badge W">胜</span>';
+            } else if (c === 'D' || c === '平') {
+                html += '<span class="form-badge D">平</span>';
+            } else if (c === 'L' || c === '负') {
+                html += '<span class="form-badge L">负</span>';
+            }
+        }
+    }
+    return html;
+}
+
+function renderBettingAnalysis() {
+    const betting = analysisData.bettingAnalysis;
+    if (!betting) return;
+    
+    const probs = betting.probabilities || [];
+    const bigDeals = betting.bigDeals || [];
+    const bookieProfit = betting.bookieProfit || [];
+    
+    if (probs.length > 0) {
+        const tbody = document.getElementById('betting-prob-tbody');
+        let html = '';
+        probs.forEach(p => {
+            html += '<tr>' +
+                '<td>' + (p.result || '-') + '</td>' +
+                '<td>' + (p.odds || '-') + '</td>' +
+                '<td>' + (p.probability || '-') + '</td>' +
+                '<td>' + (p.betfairRatio || '-') + '</td>' +
+                '<td>' + (p.volume || '-') + '</td>' +
+                '<td>' + (p.hotIndex || '-') + '</td>' +
+            '</tr>';
+        });
+        tbody.innerHTML = html;
+        
+        const validProbs = probs.filter(p => p.probability && parseFloat(p.probability) > 0);
+        if (validProbs.length === 3) {
+            const ctx = document.getElementById('prob-pie-chart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: validProbs.map(p => p.result),
+                    datasets: [{
+                        data: validProbs.map(p => parseFloat(p.probability)),
+                        backgroundColor: ['#22c55e', '#f59e0b', '#ef4444'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: '#6b7280' } }
+                    }
+                }
+            });
+        }
+    }
+    
+    if (bigDeals.length > 0) {
+        document.getElementById('big-deals-card').style.display = 'block';
+        const tbody = document.getElementById('big-deals-tbody');
+        let html = '';
+        bigDeals.slice(0, 10).forEach(d => {
+            html += '<tr>' +
+                '<td>' + (d.type || '-') + '</td>' +
+                '<td>' + (d.action || '-') + '</td>' +
+                '<td>' + (d.volume || '-') + '</td>' +
+                '<td>' + (d.time || '-') + '</td>' +
+                '<td>' + (d.ratio || '-') + '</td>' +
+            '</tr>';
+        });
+        tbody.innerHTML = html;
+        
+        const chartData = bigDeals.slice(0, 10).reverse();
+        const ctx2 = document.getElementById('deals-line-chart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: chartData.map(d => (d.time || '').split(' ')[1] || ''),
+                datasets: [{
+                    label: '成交量',
+                    data: chartData.map(d => parseFloat((d.volume || '0').replace(',', '')) || 0),
+                    borderColor: '#3b82f6',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { ticks: { color: '#6b7280', font: { size: 10 } }, grid: { display: false } },
+                    y: { ticks: { color: '#6b7280', font: { size: 10 } }, grid: { color: '#e5e7eb' } }
+                }
+            }
+        });
+    }
+    
+    if (bookieProfit.length > 0) {
+        document.getElementById('profit-card').style.display = 'block';
+        const tbody = document.getElementById('profit-tbody');
+        let html = '';
+        bookieProfit.forEach(p => {
+            html += '<tr>' +
+                '<td>' + (p.result || '-') + '</td>' +
+                '<td>' + (p.profit || '-') + '</td>' +
+                '<td>' + (p.index || '-') + '</td>' +
+            '</tr>';
+        });
+        tbody.innerHTML = html;
+    }
+    
+    if (betting.summary) {
+        document.getElementById('betting-summary-card').style.display = 'block';
+        document.getElementById('betting-summary').textContent = betting.summary;
+    }
+}
+
+initPage();
+loadData();
+</script>
+</body>
+</html>

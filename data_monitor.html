@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据监控面板</title>
+    <style>
+        :root {
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { font-size: 24px; margin-bottom: 8px; }
+        .subtitle { color: var(--text-muted); margin-bottom: 24px; }
+        
+        /* 统计卡片 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .stat-value.success { color: var(--success); }
+        .stat-value.warning { color: var(--warning); }
+        .stat-value.danger { color: var(--danger); }
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        
+        .status-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .status-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        
+        .status-badge {
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .status-badge.ok { background: #d1fae5; color: #065f46; }
+        .status-badge.warning { background: #fef3c7; color: #92400e; }
+        .status-badge.critical { background: #fee2e2; color: #991b1b; }
+        
+        .alert-banner {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #f59e0b;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .alert-banner .alert-icon { font-size: 24px; }
+        .alert-banner .alert-text { font-weight: 600; color: #92400e; }
+        
+        .countdown-label { color: var(--text-muted); }
+        .countdown-time {
+            font-weight: 600;
+            color: #3b82f6;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+        
+        .schedule-info { display: flex; gap: 16px; margin-top: 8px; }
+        .schedule-item {
+            font-size: 12px;
+            padding: 2px 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+        
+        .file-card {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .file-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .file-icon.fresh { background: #d1fae5; color: #065f46; }
+        .file-icon.stale { background: #fef3c7; color: #92400e; }
+        .file-icon.missing, .file-icon.error { background: #fee2e2; color: #991b1b; }
+        .file-icon.unknown { background: #e2e8f0; color: #64748b; }
+        
+        .file-info { flex: 1; }
+        .file-name { font-weight: 600; margin-bottom: 4px; }
+        .file-meta { font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between; }
+        .file-interval {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .file-interval.fast { background: #dcfce7; color: #166534; }
+        .file-interval.slow { background: #fef3c7; color: #92400e; }
+        
+        .match-card {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .match-card:hover { background: #e2e8f0; }
+        .match-teams { flex: 1; }
+        .match-league { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
+        .match-vs { font-weight: 600; }
+        .match-value { font-size: 12px; color: #3b82f6; margin-top: 4px; }
+        .match-link { 
+            padding: 6px 12px; 
+            background: #3b82f6; 
+            color: white; 
+            border-radius: 6px; 
+            font-size: 12px; 
+            text-decoration: none;
+        }
+        .match-link:hover { background: #2563eb; }
+        
+        .alerts-section { margin-top: 24px; }
+        .alert-item {
+            background: #fffbeb;
+            border-left: 4px solid var(--warning);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 8px;
+        }
+        .alert-item.critical { background: #fef2f2; border-color: var(--danger); }
+        
+        .actions { margin-top: 24px; display: flex; gap: 12px; }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .btn-primary { background: #3b82f6; color: white; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-primary:disabled { background: #93c5fd; cursor: not-allowed; }
+        .btn-secondary { background: #e2e8f0; color: #475569; }
+        .btn-secondary:hover { background: #cbd5e1; }
+        
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+        
+        /* 进度条 */
+        .progress-bar {
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-bar .progress {
+            height: 100%;
+            background: var(--success);
+            transition: width 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 数据监控面板</h1>
+        <p class="subtitle">实时监控彩票数据文件状态</p>
+        
+        <!-- 告警横幅 -->
+        <div class="alert-banner" id="alert-banner" style="display:none;">
+            <span class="alert-icon">⚠️</span>
+            <span class="alert-text" id="alert-banner-text">-</span>
+        </div>
+        
+        <!-- 统计概览 -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value success" id="stat-fresh">-</div>
+                <div class="stat-label">正常</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value warning" id="stat-stale">-</div>
+                <div class="stat-label">待更新</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value danger" id="stat-error">-</div>
+                <div class="stat-label">异常</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-alerts" style="color: var(--text);">0</div>
+                <div class="stat-label">告警</div>
+            </div>
+        </div>
+        
+        <!-- 系统状态 -->
+        <div class="status-card">
+            <div class="status-header">
+                <div>
+                    <h2>系统状态</h2>
+                    <div class="schedule-info">
+                        <span class="schedule-item">快: 5分钟</span>
+                        <span class="schedule-item">中: 10分钟</span>
+                        <span class="schedule-item">慢: 30分钟</span>
+                    </div>
+                </div>
+                <span class="status-badge" id="status-badge">检测中</span>
+            </div>
+        </div>
+        
+        <!-- 数据文件列表 -->
+        <div class="status-card">
+            <h3 style="margin-bottom: 16px;">数据文件状态</h3>
+            <div class="files-grid" id="files-grid">
+                <div class="loading">正在加载...</div>
+            </div>
+        </div>
+        
+        <!-- 比赛分析 -->
+        <div class="status-card">
+            <h3 style="margin-bottom: 16px;">⚽ 足球分析</h3>
+            <div id="matches-grid" class="files-grid">
+                <div class="loading">正在加载...</div>
+            </div>
+        </div>
+        
+        <!-- 篮球分析 -->
+        <div class="status-card">
+            <h3 style="margin-bottom: 16px;">🏀 篮球分析</h3>
+            <div id="basketball-matches-grid" class="files-grid">
+                <div class="loading">正在加载...</div>
+            </div>
+        </div>
+        
+        <!-- 告警信息 -->
+        <div class="alerts-section" id="alerts-section" style="display:none;">
+            <div class="status-card">
+                <h3 style="margin-bottom: 12px;">⚠️ 告警信息</h3>
+                <div id="alerts-list"></div>
+            </div>
+        </div>
+        
+        <!-- 操作按钮 -->
+        <div class="actions">
+            <button class="btn btn-primary" id="btn-refresh" onclick="refreshStatus()">🔄 刷新状态</button>
+            <button class="btn btn-secondary" id="btn-update" onclick="triggerUpdate()">▶️ 立即更新</button>
+        </div>
+    </div>
+    
+    <script>
+        const STATUS_ICONS = { fresh: '✓', stale: '⚠', missing: '✗', error: '!', unknown: '?' };
+        const STATUS_TEXTS = { fresh: '正常', stale: '待更新', missing: '缺失', error: '错误', unknown: '未知' };
+        const API_BASE = 'http://localhost:8081';
+        
+        function formatAge(minutes) {
+            if (minutes === null || minutes === undefined) return '-';
+            if (minutes < 1) return '1分钟内';
+            if (minutes < 60) return Math.floor(minutes) + '分钟';
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return hours + '小时';
+            return Math.floor(hours / 24) + '天';
+        }
+        
+        function getIntervalClass(interval) {
+            if (interval <= 5) return 'fast';
+            if (interval >= 30) return 'slow';
+            return '';
+        }
+        
+        async function loadStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status?t=` + Date.now());
+                if (!response.ok) throw new Error('无法获取状态');
+                const data = await response.json();
+                renderStatus(data);
+                return true;
+            } catch (error) {
+                document.getElementById('files-grid').innerHTML = 
+                    '<div class="loading">无法连接API服务 (端口8081)</div>';
+                return false;
+            }
+        }
+        
+        function renderStatus(data) {
+            let fresh = 0, stale = 0, error = 0, alertCount = 0;
+            data.files.forEach(f => {
+                if (f.status === 'fresh') fresh++;
+                else if (f.status === 'stale') stale++;
+                else error++;
+            });
+            
+            alertCount = (data.alerts || []).length;
+            
+            document.getElementById('stat-fresh').textContent = fresh;
+            document.getElementById('stat-stale').textContent = stale;
+            document.getElementById('stat-error').textContent = error;
+            document.getElementById('stat-alerts').textContent = alertCount;
+            
+            const alertBanner = document.getElementById('alert-banner');
+            if (alertCount > 0) {
+                alertBanner.style.display = 'flex';
+                document.getElementById('alert-banner-text').textContent = 
+                    `发现 ${alertCount} 个问题需要关注`;
+            } else {
+                alertBanner.style.display = 'none';
+            }
+            
+            const badge = document.getElementById('status-badge');
+            if (data.updateInProgress) {
+                badge.textContent = '更新中...';
+                badge.className = 'status-badge warning';
+            } else if (alertCount > 0) {
+                badge.textContent = '有告警';
+                badge.className = 'status-badge warning';
+            } else {
+                badge.textContent = data.status.toUpperCase();
+                badge.className = 'status-badge ' + data.status;
+            }
+            
+            const filesGrid = document.getElementById('files-grid');
+            filesGrid.innerHTML = data.files.map(f => {
+                const interval = f.updateInterval || 30;
+                const intervalClass = getIntervalClass(interval);
+                return `
+                <div class="file-card">
+                    <div class="file-icon ${f.status}">${STATUS_ICONS[f.status] || '?'}</div>
+                    <div class="file-info">
+                        <div class="file-name">${f.name}</div>
+                        <div class="file-meta">
+                            <span>${STATUS_TEXTS[f.status] || '未知'}</span>
+                            <span>${f.exists ? (f.updateTime ? f.updateTime.split(' ')[1] : formatAge(f.ageMinutes)) : '-'}</span>
+                        </div>
+                    </div>
+                    <span class="file-interval ${intervalClass}">${interval}分钟</span>
+                </div>
+            `}).join('');
+            
+            const alertsSection = document.getElementById('alerts-section');
+            const alertsList = document.getElementById('alerts-list');
+            
+            if (data.alerts && data.alerts.length > 0) {
+                alertsSection.style.display = 'block';
+                alertsList.innerHTML = data.alerts.map(a => `
+                    <div class="alert-item ${a.type === 'missing' ? 'critical' : ''}">
+                        <strong>${a.type === 'missing' ? '文件缺失' : '数据过期'}</strong>: ${a.message}
+                    </div>
+                `).join('');
+            } else {
+                alertsSection.style.display = 'none';
+            }
+        }
+        
+        async function loadMatches() {
+            try {
+                const response = await fetch(`${API_BASE}/api/matches?t=` + Date.now());
+                if (!response.ok) throw new Error('无法获取比赛');
+                const data = await response.json();
+                renderMatches(data.matches || []);
+            } catch (error) {
+                document.getElementById('matches-grid').innerHTML = 
+                    '<div class="loading">暂无比赛数据</div>';
+            }
+        }
+        
+        function renderMatches(matches) {
+            const grid = document.getElementById('matches-grid');
+            
+            if (matches.length === 0) {
+                grid.innerHTML = '<div class="loading">暂无比赛数据</div>';
+                return;
+            }
+            
+            grid.innerHTML = matches.map(m => `
+                <div class="match-card" onclick="window.open('match_analysis.html?id=${m.fixtureId}', '_blank')">
+                    <div class="match-teams">
+                        <div class="match-league">${m.league || ''} ${m.date || ''}</div>
+                        <div class="match-vs">${m.home} vs ${m.away}</div>
+                        ${m.homeValue || m.awayValue ? `<div class="match-value">💰 ${m.homeValue || '-'} vs ${m.awayValue || '-'}</div>` : ''}
+                    </div>
+                    <a class="match-link" href="match_analysis.html?id=${m.fixtureId}" target="_blank" onclick="event.stopPropagation()">分析</a>
+                </div>
+            `).join('');
+        }
+        
+        async function loadBasketballMatches() {
+            try {
+                const response = await fetch(`${API_BASE}/api/basketball_matches?t=` + Date.now());
+                if (!response.ok) throw new Error('无法获取篮球比赛');
+                const data = await response.json();
+                renderBasketballMatches(data.matches || []);
+            } catch (error) {
+                document.getElementById('basketball-matches-grid').innerHTML = 
+                    '<div class="loading">暂无篮球数据</div>';
+            }
+        }
+        
+        function renderBasketballMatches(matches) {
+            const grid = document.getElementById('basketball-matches-grid');
+            
+            if (matches.length === 0) {
+                grid.innerHTML = '<div class="loading">暂无篮球数据</div>';
+                return;
+            }
+            
+            grid.innerHTML = matches.map(m => `
+                <div class="match-card" onclick="window.open('basketball_analysis.html?id=${m.matchId}', '_blank')">
+                    <div class="match-teams">
+                        <div class="match-league">${m.league || ''} ${m.date || ''}</div>
+                        <div class="match-vs">${m.home} vs ${m.away}</div>
+                        ${m.homeValue || m.awayValue ? `<div class="match-value">💰 ${m.homeValue || '-'} vs ${m.awayValue || '-'}</div>` : ''}
+                    </div>
+                    <a class="match-link" href="basketball_analysis.html?id=${m.matchId}" target="_blank" onclick="event.stopPropagation()">分析</a>
+                </div>
+            `).join('');
+        }
+        
+        async function refreshStatus() {
+            const btn = document.getElementById('btn-refresh');
+            btn.disabled = true;
+            btn.textContent = '⏳ 刷新中...';
+            
+            const success = await loadStatus();
+            
+            btn.textContent = success ? '✓ 已刷新' : '✗ 失败';
+            setTimeout(() => {
+                btn.textContent = '🔄 刷新状态';
+                btn.disabled = false;
+            }, 1500);
+        }
+        
+        async function triggerUpdate() {
+            const btn = document.getElementById('btn-update');
+            btn.disabled = true;
+            btn.textContent = '⏳ 更新中...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/update`, { method: 'POST' });
+                const result = await response.json();
+                
+                const checkInterval = setInterval(async () => {
+                    const statusResp = await fetch(`${API_BASE}/api/status`);
+                    const statusData = await statusResp.json();
+                    if (!statusData.updateInProgress) {
+                        clearInterval(checkInterval);
+                        await loadStatus();
+                        btn.textContent = '✓ 更新完成';
+                        setTimeout(() => {
+                            btn.textContent = '▶️ 立即更新';
+                            btn.disabled = false;
+                        }, 2000);
+                    }
+                }, 2000);
+            } catch (error) {
+                btn.textContent = '✗ 连接失败';
+                setTimeout(() => {
+                    btn.textContent = '▶️ 立即更新';
+                    btn.disabled = false;
+                }, 2000);
+            }
+        }
+        
+        loadStatus();
+        loadMatches();
+        loadBasketballMatches();
+        setInterval(loadStatus, 60000);
+        setInterval(loadMatches, 60000);
+        setInterval(loadBasketballMatches, 60000);
+    </script>
+</body>
+</html>

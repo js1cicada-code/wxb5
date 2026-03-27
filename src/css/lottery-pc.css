@@ -1,0 +1,542 @@
+/* =====================================================
+   简约彩票选号UI - PC端专用
+   设计原则: Swiss Modernism 2.0 / Minimal & Direct
+   ===================================================== */
+
+/* ========== 设计系统变量 ========== */
+:root {
+  --lottery-primary: #c12a1f;
+  --lottery-primary-light: #e84336;
+  --lottery-selected: #fef2f2;
+  --lottery-selected-border: #dc2626;
+  
+  --lottery-bg: #ffffff;
+  --lottery-bg-page: #fafafa;
+  --lottery-border: #e5e5e5;
+  --lottery-border-light: #f0f0f0;
+  
+  --lottery-text: #1a1a1a;
+  --lottery-text-secondary: #666666;
+  --lottery-text-muted: #999999;
+  
+  --lottery-radius: 2px;
+  --lottery-radius-md: 4px;
+  --lottery-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  
+  --lottery-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ========== PC端专用样式 ========== */
+@media (min-width: 768px) {
+  
+  /* 页面背景 */
+  body {
+    background: var(--lottery-bg-page);
+    font-family: var(--lottery-font);
+    color: var(--lottery-text);
+    line-height: 1.5;
+  }
+  
+  /* ========== 主容器 ========== */
+  .lottery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  /* ========== 顶部导航 ==========
+         * position: sticky 用于固定导航栏在页面顶部
+         * 注意：需要配合 top: 0 和 z-index 使用
+         */
+  .lottery-header {
+    background: var(--lottery-bg);
+    border-bottom: 1px solid var(--lottery-border);
+    padding: 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .lottery-header-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--lottery-text);
+  }
+  
+  .lottery-header-time {
+    font-size: 13px;
+    color: var(--lottery-text-muted);
+  }
+  
+  /* ========== 标签导航 ========== */
+  .lottery-tabs {
+    background: var(--lottery-bg);
+    border-bottom: 1px solid var(--lottery-border);
+    display: flex;
+    height: 48px;
+  }
+  
+  .lottery-tab {
+    padding: 0 20px;
+    font-size: 14px;
+    color: var(--lottery-text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s ease;
+  }
+  
+  .lottery-tab:hover {
+    color: var(--lottery-text);
+  }
+  
+  .lottery-tab.active {
+    color: var(--lottery-primary);
+    border-bottom-color: var(--lottery-primary);
+    font-weight: 500;
+  }
+  
+  /* ========== 比赛表格 ========== */
+  .match-table-wrapper {
+    background: var(--lottery-bg);
+    border-radius: var(--lottery-radius-md);
+    box-shadow: var(--lottery-shadow);
+    overflow: hidden;
+  }
+  
+  .match-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .match-table thead {
+    background: var(--lottery-bg-page);
+  }
+  
+  .match-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--lottery-text-secondary);
+    font-size: 13px;
+    border-bottom: 1px solid var(--lottery-border);
+    white-space: nowrap;
+  }
+  
+  .match-table th.center {
+    text-align: center;
+  }
+  
+  .match-table tbody tr {
+    border-bottom: 1px solid var(--lottery-border-light);
+    transition: background 0.1s ease;
+  }
+  
+  .match-table tbody tr:hover {
+    background: #fafafa;
+  }
+  
+  .match-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .match-table td {
+    padding: 16px;
+    vertical-align: middle;
+  }
+  
+  .match-table td.center {
+    text-align: center;
+  }
+  
+  /* 场次编号 */
+  .match-number {
+    display: inline-block;
+    min-width: 40px;
+    padding: 2px 8px;
+    background: var(--lottery-primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: var(--lottery-radius);
+    text-align: center;
+  }
+  
+  /* 联赛和时间 */
+  .match-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .match-league {
+    font-size: 13px;
+    color: var(--lottery-text-secondary);
+  }
+  
+  .match-time {
+    font-size: 12px;
+    color: var(--lottery-text-muted);
+  }
+  
+  /* 球队名称 */
+  .team-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--lottery-text);
+  }
+  
+  .team-name.home {
+    text-align: right;
+  }
+  
+  .vs-text {
+    font-size: 12px;
+    color: var(--lottery-text-muted);
+    text-align: center;
+  }
+  
+  /* ========== 赔率选择 ========== */
+  .odds-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .odds-btn {
+    min-width: 56px;
+    padding: 8px 12px;
+    background: var(--lottery-bg);
+    border: 1px solid var(--lottery-border);
+    border-radius: var(--lottery-radius);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .odds-btn:hover {
+    border-color: var(--lottery-primary-light);
+    background: #fffafa;
+  }
+  
+  .odds-btn.selected {
+    background: var(--lottery-selected);
+    border-color: var(--lottery-selected-border);
+  }
+  
+  .odds-btn .label {
+    font-size: 11px;
+    color: var(--lottery-text-muted);
+  }
+  
+  .odds-btn .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--lottery-primary);
+  }
+  
+  .odds-btn.selected .value {
+    color: var(--lottery-selected-border);
+  }
+  
+  .odds-btn.disabled {
+    background: #f5f5f5;
+    border-color: #eee;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .odds-btn.disabled .value {
+    color: var(--lottery-text-muted);
+  }
+  
+  /* 让球标记 */
+  .handicap-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    background: #fff7ed;
+    color: #ea580c;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: var(--lottery-radius);
+    margin-left: 4px;
+  }
+  
+  /* ========== 底部投注栏 ========== */
+  .bet-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--lottery-bg);
+    border-top: 1px solid var(--lottery-border);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+    z-index: 100;
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+  }
+  
+  .bet-bar.show {
+    transform: translateY(0);
+  }
+  
+  .bet-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .bet-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .bet-count {
+    font-size: 14px;
+    color: var(--lottery-text-secondary);
+  }
+  
+  .bet-count strong {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--lottery-primary);
+    margin: 0 4px;
+  }
+  
+  .bet-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--lottery-text-secondary);
+  }
+  
+  .bet-summary strong {
+    color: var(--lottery-primary);
+    font-weight: 600;
+  }
+  
+  .bet-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .btn-clear {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid var(--lottery-border);
+    border-radius: var(--lottery-radius);
+    font-size: 13px;
+    color: var(--lottery-text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  
+  .btn-clear:hover {
+    border-color: var(--lottery-text-muted);
+    color: var(--lottery-text);
+  }
+  
+  .btn-submit {
+    padding: 10px 32px;
+    background: var(--lottery-primary);
+    border: none;
+    border-radius: var(--lottery-radius);
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  
+  .btn-submit:hover {
+    background: #a02319;
+  }
+  
+  .btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ========== 更多玩法按钮 ========== */
+  .more-plays-btn {
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid var(--lottery-border);
+    border-radius: var(--lottery-radius);
+    font-size: 12px;
+    color: var(--lottery-text-secondary);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.15s ease;
+  }
+  
+  .more-plays-btn:hover {
+    border-color: var(--lottery-primary-light);
+    color: var(--lottery-primary);
+  }
+  
+  .more-plays-btn .count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    background: var(--lottery-primary);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+  /* ========== 弹窗 ========== */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-overlay.show {
+    display: flex;
+  }
+  
+  .modal-content {
+    background: var(--lottery-bg);
+    border-radius: var(--lottery-radius-md);
+    width: 90%;
+    max-width: 480px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  .modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--lottery-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .modal-close {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: var(--lottery-text-muted);
+    cursor: pointer;
+    border-radius: var(--lottery-radius);
+  }
+  
+  .modal-close:hover {
+    background: var(--lottery-bg-page);
+  }
+  
+  .modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  /* ========== 选项网格 ========== */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  .options-grid.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .option-item {
+    padding: 10px 8px;
+    background: var(--lottery-bg);
+    border: 1px solid var(--lottery-border);
+    border-radius: var(--lottery-radius);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  
+  .option-item:hover {
+    border-color: var(--lottery-primary-light);
+  }
+  
+  .option-item.selected {
+    background: var(--lottery-selected);
+    border-color: var(--lottery-selected-border);
+  }
+  
+  .option-item .label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--lottery-text);
+  }
+  
+  .option-item .value {
+    font-size: 12px;
+    color: var(--lottery-primary);
+    margin-top: 2px;
+  }
+  
+  /* ========== 空状态 ========== */
+  .empty-state {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--lottery-text-muted);
+  }
+  
+  .empty-state svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    opacity: 0.4;
+  }
+  
+  /* ========== 加载状态 ========== */
+  .loading-skeleton {
+    background: linear-gradient(90deg, #f5f5f5 25%, #ebebeb 50%, #f5f5f5 75%);
+    background-size: 200% 100%;
+    animation: skeleton 1.5s ease-in-out infinite;
+    border-radius: var(--lottery-radius);
+  }
+  
+  @keyframes skeleton {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+}

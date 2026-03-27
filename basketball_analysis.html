@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>篮球比赛分析</title>
+    <script src="js/chart.umd.js"></script>
+    <style>
+        :root {
+            --primary: #f97316;
+            --primary-dark: #ea580c;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --info: #3b82f6;
+            --bg-main: #f0f2f5;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-light: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --radius: 8px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 0 12px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-back {
+            position: absolute;
+            left: 12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+        }
+        
+        .header h1 {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            max-width: 280px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .tabs {
+            display: flex;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 50px;
+            z-index: 99;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 12px 4px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        
+        .tab:hover {
+            color: var(--text-primary);
+            background: rgba(0, 0, 0, 0.02);
+        }
+        
+        .tab.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom-color: var(--primary);
+            background: rgba(249, 115, 22, 0.05);
+        }
+        
+        .content {
+            padding: 8px;
+        }
+        
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            animation: fadeInUp 0.3s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .card:nth-child(1) { animation-delay: 0s; }
+        .card:nth-child(2) { animation-delay: 0.05s; }
+        .card:nth-child(3) { animation-delay: 0.1s; }
+        .card:nth-child(4) { animation-delay: 0.15s; }
+        .card:nth-child(5) { animation-delay: 0.2s; }
+        .card:nth-child(6) { animation-delay: 0.25s; }
+        .card:nth-child(7) { animation-delay: 0.3s; }
+        .card:nth-child(8) { animation-delay: 0.35s; }
+        
+        .card-header {
+            padding: 12px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            background: #fafafa;
+        }
+        .card-header::before {
+            content: '';
+            width: 3px;
+            height: 14px;
+            background: var(--primary);
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+        
+        .card-body {
+            padding: 14px;
+        }
+        
+        .team-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+        
+        .team-block {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .team-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .team-rank {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .vs-text {
+            padding: 0 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        
+        .stats-table th {
+            background: #fafafa;
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .stats-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .stats-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .stats-table .win {
+            color: var(--danger);
+            font-weight: 600;
+        }
+        
+        .stats-table .loss {
+            color: var(--success);
+        }
+        
+        .stats-table .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .h2h-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        
+        .h2h-table th {
+            background: #fafafa;
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .h2h-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .h2h-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .h2h-table .win {
+            color: var(--danger);
+            font-weight: 600;
+        }
+        
+        .h2h-table .loss {
+            color: var(--success);
+        }
+        
+        .h2h-summary {
+            padding: 10px 12px;
+            background: #fffbeb;
+            font-size: 13px;
+            color: var(--text-primary);
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .odds-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        
+        .odds-table th {
+            background: #fafafa;
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .odds-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .odds-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            transition: opacity 0.2s ease;
+        }
+        
+        .empty {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        
+        .update-time {
+            text-align: center;
+            padding: 8px;
+            color: var(--text-secondary);
+            font-size: 11px;
+        }
+        
+        .match-header {
+            background: var(--bg-card);
+            padding: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .match-league-info {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        .match-league-info .league {
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .ranking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .ranking-team-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        
+        .standing-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        
+        .standing-table th {
+            background: #fafafa;
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .standing-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .standing-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .standing-table tr.highlight {
+            background: #fff7ed;
+        }
+        
+        .standing-table .rank-num {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: #e5e7eb;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        
+        .standing-table tr.highlight .rank-num {
+            background: var(--primary);
+            color: #fff;
+        }
+        
+        @media (max-width: 768px) {
+            .ranking-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()"></div>
+        <h1 id="page-title">篮球比赛分析</h1>
+    </div>
+    
+    <div class="match-header">
+        <div class="team-info">
+            <div class="team-block">
+                <div class="team-name" id="away-name">客队</div>
+                <div class="team-rank" id="away-rank"></div>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="team-block">
+                <div class="team-name" id="home-name">主队</div>
+                <div class="team-rank" id="home-rank"></div>
+            </div>
+        </div>
+        <div class="match-league-info">
+            <span class="league" id="match-league"></span>
+            <span id="match-time"></span>
+        </div>
+    </div>
+    
+    <div id="animation-container" style="background:#1a1a2e;height:280px;position:relative;overflow:hidden;display:none;">
+        <iframe id="animation-frame" style="width:100%;height:600px;border:none;position:absolute;top:-160px;left:0;" src="about:blank"></iframe>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active" data-tab="data">数据分析</div>
+        <div class="tab" data-tab="ouzhi">欧指</div>
+        <div class="tab" data-tab="rangfen">让分</div>
+        <div class="tab" data-tab="zongfen">总分</div>
+        <div class="tab" data-tab="betting">下单预测</div>
+    </div>
+    
+    <div class="content">
+        <div id="loading" class="loading">
+            <div>加载中...</div>
+        </div>
+        
+        <div class="tab-content active" id="tab-data" style="display:none;">
+            <div class="card" id="standing-card" style="display:none;">
+                <div class="card-header">联赛排名</div>
+                <div class="card-body">
+                    <table class="standing-table" id="standing-table"></table>
+                </div>
+            </div>
+            
+            <div class="card" id="ranking-card" style="display:none;">
+                <div class="card-header">球队战绩统计</div>
+                <div class="card-body">
+                    <div class="ranking-grid">
+                        <div id="away-ranking-table"></div>
+                        <div id="home-ranking-table"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" id="h2h-card" style="display:none;">
+                <div class="card-header">交战历史</div>
+                <div class="card-body">
+                    <div class="h2h-summary" id="h2h-summary"></div>
+                    <table class="h2h-table" id="h2h-table"></table>
+                </div>
+            </div>
+            
+            <div class="card" id="away-recent-card" style="display:none;">
+                <div class="card-header" id="away-recent-title">客队近期战绩</div>
+                <div class="card-body" id="away-recent-content"></div>
+            </div>
+            
+            <div class="card" id="home-recent-card" style="display:none;">
+                <div class="card-header" id="home-recent-title">主队近期战绩</div>
+                <div class="card-body" id="home-recent-content"></div>
+            </div>
+            
+            <div class="card" id="handicap-card" style="display:none;">
+                <div class="card-header">双方盘路比较</div>
+                <div class="card-body">
+                    <div class="ranking-grid">
+                        <div id="away-handicap-table"></div>
+                        <div id="home-handicap-table"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" id="future-card" style="display:none;">
+                <div class="card-header">未来赛事</div>
+                <div class="card-body">
+                    <div class="ranking-grid">
+                        <div id="away-future-table"></div>
+                        <div id="home-future-table"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" id="odds-card" style="display:none;">
+                <div class="card-header">赔率数据</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="odds-table" id="odds-table"></table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tab-zongfen" style="display:none;">
+            <div class="card">
+                <div class="card-header">总分盘对比</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="stats-table" id="zongfen-table"></table>
+                </div>
+            </div>
+            
+            <div class="card" id="zongfen-changes-card" style="display:none;">
+                <div class="card-header">主流公司总分盘变化</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="stats-table" id="zongfen-changes-table"></table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tab-rangfen" style="display:none;">
+            <div class="card">
+                <div class="card-header">让分盘对比</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="stats-table" id="rangfen-table"></table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tab-ouzhi" style="display:none;">
+            <div class="card">
+                <div class="card-header">欧赔指数</div>
+                <div class="card-body" style="padding:0;">
+                    <table class="stats-table" id="ouzhi-table"></table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="tab-betting" style="display:none;">
+            <div class="card">
+                <div class="card-header">投注概率分析</div>
+                <div class="card-body">
+                    <div id="betting-content">
+                        <div class="empty">暂无投注分析数据</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = '';
+        let analysisData = null;
+        
+        function getMatchId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id');
+        }
+        
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            // 去掉年份前面的20，例如 2026-03-24 -> 26-03-24
+            return dateStr.replace(/^20/, '');
+        }
+        
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.dataset.tab;
+                const targetContent = document.getElementById('tab-' + targetTab);
+                
+                // 如果已经激活，不做任何操作
+                if (this.classList.contains('active')) return;
+                
+                // 切换tab状态
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 淡出当前内容
+                const currentActive = document.querySelector('.tab-content.active');
+                if (currentActive) {
+                    currentActive.classList.remove('visible');
+                    setTimeout(() => {
+                        currentActive.classList.remove('active');
+                        currentActive.style.display = 'none';
+                        
+                        // 显示新内容
+                        targetContent.style.display = 'block';
+                        targetContent.classList.add('active');
+                        // 触发重绘后添加visible类
+                        requestAnimationFrame(() => {
+                            targetContent.classList.add('visible');
+                        });
+                    }, 200);
+                } else {
+                    targetContent.style.display = 'block';
+                    targetContent.classList.add('active');
+                    requestAnimationFrame(() => {
+                        targetContent.classList.add('visible');
+                    });
+                }
+            });
+        });
+        
+        async function loadData() {
+            const matchId = getMatchId();
+            if (!matchId) {
+                showError('缺少比赛ID');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE}/basketball_analysis_${matchId}.json?t=` + Date.now());
+                if (!response.ok) throw new Error('数据不存在');
+                analysisData = await response.json();
+                
+                // 隐藏loading
+                const loading = document.getElementById('loading');
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 200);
+                
+                // 显示内容带过渡
+                const tabData = document.getElementById('tab-data');
+                tabData.style.display = 'block';
+                tabData.classList.add('active');
+                requestAnimationFrame(() => {
+                    tabData.classList.add('visible');
+                });
+                
+                renderData();
+                
+                // 加载动画直播
+                loadAnimation(matchId);
+            } catch (e) {
+                showError('加载失败: ' + e.message);
+            }
+        }
+        
+        async function loadAnimation(matchId) {
+            try {
+                const response = await fetch('live_basketball_data.json?t=' + Date.now());
+                const data = await response.json();
+                
+                const match = data.matches.find(m => m.id == matchId);
+                if (match && match.namitiyuId) {
+                    const animContainer = document.getElementById('animation-container');
+                    const animFrame = document.getElementById('animation-frame');
+                    
+                    animContainer.style.display = 'block';
+                    animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/basketball?profile=q9vPIPuxxt3Hg&id=' + match.namitiyuId + '&reverse=1';
+                }
+            } catch (e) {
+                console.log('加载动画失败:', e);
+            }
+        }
+        
+        function showError(msg) {
+            document.getElementById('loading').innerHTML = '<div class="empty">' + msg + '</div>';
+        }
+        
+        function renderData() {
+            const home = analysisData.home || '主队';
+            const away = analysisData.away || '客队';
+            
+            document.getElementById('home-name').textContent = home;
+            document.getElementById('away-name').textContent = away;
+            document.getElementById('home-rank').textContent = analysisData.homeRank || '';
+            document.getElementById('away-rank').textContent = analysisData.awayRank || '';
+            document.getElementById('match-league').textContent = analysisData.league || '';
+            
+            document.getElementById('page-title').textContent = home + ' vs ' + away;
+            document.title = home + ' vs ' + away + ' - 篮球比赛分析';
+            
+            renderStanding();
+            renderRanking();
+            renderH2h();
+            renderRecentMatches();
+            renderHandicap();
+            renderFutureMatches();
+            renderOuzhi();
+            renderRangfen();
+            renderZongfen();
+            renderOdds();
+        }
+        
+        function renderStanding() {
+            const leagueRanking = analysisData.leagueRanking;
+            const card = document.getElementById('standing-card');
+            
+            if (!leagueRanking || !leagueRanking.standings || leagueRanking.standings.length === 0) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            const home = analysisData.home || '';
+            const away = analysisData.away || '';
+            
+            let html = `
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>球队</th>
+                        <th>胜</th>
+                        <th>负</th>
+                        <th>胜率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${leagueRanking.standings.slice(0, 10).map(s => {
+                        const isHomeTeam = home && s.team.includes(home);
+                        const isAwayTeam = away && s.team.includes(away);
+                        const highlight = isHomeTeam || isAwayTeam ? 'highlight' : '';
+                        return `
+                            <tr class="${highlight}">
+                                <td><span class="rank-num">${s.rank}</span></td>
+                                <td>${s.team}</td>
+                                <td>${s.wins}</td>
+                                <td>${s.losses}</td>
+                                <td>${s.winRate}</td>
+                            </tr>
+                        `;
+                    }).join('')}
+                </tbody>
+            `;
+            
+            document.getElementById('standing-table').innerHTML = html;
+        }
+        
+        function renderRanking() {
+            const homeStats = analysisData.homeStats;
+            const awayStats = analysisData.awayStats;
+            
+            const card = document.getElementById('ranking-card');
+            if (!homeStats && !awayStats) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            const home = analysisData.home || '主队';
+            const away = analysisData.away || '客队';
+            
+            function renderTeamStats(team, stats) {
+                if (!stats || !stats.total) return '<div class="empty">暂无数据</div>';
+                
+                function renderStatsRow(label, data) {
+                    if (!data) return '';
+                    return `
+                        <tr>
+                            <td><strong>${label}</strong></td>
+                            <td>${data.games || '-'}</td>
+                            <td>${data.wins || '-'}</td>
+                            <td>${data.losses || '-'}</td>
+                            <td>${data.pointsFor || '-'}</td>
+                            <td>${data.pointsAgainst || '-'}</td>
+                            <td class="${parseFloat(data.pointDiff) >= 0 ? 'win' : 'loss'}">${data.pointDiff || '-'}</td>
+                            <td class="highlight">${data.winRate || '-'}</td>
+                        </tr>
+                    `;
+                }
+                
+                return `
+                    <div class="ranking-team-title">${team}</div>
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>场次</th>
+                                <th>胜</th>
+                                <th>负</th>
+                                <th>得</th>
+                                <th>失</th>
+                                <th>净</th>
+                                <th>胜率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${renderStatsRow('总计', stats.total)}
+                            ${renderStatsRow('主场', stats.home)}
+                            ${renderStatsRow('客场', stats.away)}
+                            ${renderStatsRow('近10场', stats.recent10)}
+                        </tbody>
+                    </table>
+                `;
+            }
+            
+            document.getElementById('home-ranking-table').innerHTML = renderTeamStats(home, homeStats);
+            document.getElementById('away-ranking-table').innerHTML = renderTeamStats(away, awayStats);
+        }
+        
+        function renderH2h() {
+            const h2h = analysisData.h2h;
+            const card = document.getElementById('h2h-card');
+            
+            if (!h2h || (!h2h.summary && (!h2h.matches || h2h.matches.length === 0))) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            if (h2h.summary) {
+                document.getElementById('h2h-summary').textContent = h2h.summary;
+                document.getElementById('h2h-summary').style.display = 'block';
+            } else {
+                document.getElementById('h2h-summary').style.display = 'none';
+            }
+            
+            if (h2h.matches && h2h.matches.length > 0) {
+                let html = `
+                    <thead>
+                        <tr>
+                            <th>联赛</th>
+                            <th>日期</th>
+                            <th>客队</th>
+                            <th>比分</th>
+                            <th>主队</th>
+                            <th>胜负</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${h2h.matches.slice(0, 10).map(m => `
+                            <tr>
+                                <td>${m.league || ''}</td>
+                                <td>${formatDate(m.date)}</td>
+                                <td>${m.away || ''}</td>
+                                <td>${m.score || ''}</td>
+                                <td>${m.home || ''}</td>
+                                <td class="${m.result === '胜' ? 'win' : 'loss'}">${m.result || ''}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                `;
+                document.getElementById('h2h-table').innerHTML = html;
+            }
+        }
+        
+        function renderRecentMatches() {
+            const homeRecent = analysisData.homeRecent;
+            const awayRecent = analysisData.awayRecent;
+            const home = analysisData.home || '主队';
+            const away = analysisData.away || '客队';
+            
+            function renderRecent(title, recent) {
+                if (!recent || !recent.matches || recent.matches.length === 0) {
+                    return '';
+                }
+                
+                return `
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>联赛</th>
+                                <th>日期</th>
+                                <th>对手</th>
+                                <th>比分</th>
+                                <th>胜负</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${recent.matches.slice(0, 10).map(m => `
+                                <tr>
+                                    <td>${m.league || ''}</td>
+                                    <td>${formatDate(m.date)}</td>
+                                    <td>${m.opponent || ''}</td>
+                                    <td>${m.score || ''}</td>
+                                    <td class="${m.result === '胜' ? 'win' : 'loss'}">${m.result || ''}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                    ${recent.summary ? '<div class="h2h-summary" style="margin-top:8px;">' + recent.summary + '</div>' : ''}
+                `;
+            }
+            
+            const homeRecentHtml = renderRecent(home, homeRecent);
+            const awayRecentHtml = renderRecent(away, awayRecent);
+            
+            if (homeRecentHtml) {
+                document.getElementById('home-recent-card').style.display = 'block';
+                document.getElementById('home-recent-title').textContent = home + ' 近期战绩';
+                document.getElementById('home-recent-content').innerHTML = homeRecentHtml;
+            } else {
+                document.getElementById('home-recent-card').style.display = 'none';
+            }
+            
+            if (awayRecentHtml) {
+                document.getElementById('away-recent-card').style.display = 'block';
+                document.getElementById('away-recent-title').textContent = away + ' 近期战绩';
+                document.getElementById('away-recent-content').innerHTML = awayRecentHtml;
+            } else {
+                document.getElementById('away-recent-card').style.display = 'none';
+            }
+        }
+        
+        function renderOdds() {
+            const odds = analysisData.odds;
+            const card = document.getElementById('odds-card');
+            
+            if (!odds || Object.keys(odds).length === 0) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            let html = '<thead><tr><th>玩法</th><th>客队</th><th>主队</th></tr></thead><tbody>';
+            
+            if (odds.sf) {
+                html += `<tr><td>胜负</td><td>${odds.sf.away || '-'}</td><td>${odds.sf.home || '-'}</td></tr>`;
+            }
+            
+            if (odds.rfsf) {
+                html += `<tr><td>让分胜负 (${odds.rfsf.handicap || '-'})</td><td>${odds.rfsf.away || '-'}</td><td>${odds.rfsf.home || '-'}</td></tr>`;
+            }
+            
+            if (odds.dxf) {
+                html += `<tr><td>大小分 (${odds.dxf.line || '-'})</td><td>${odds.dxf.under || '-'}</td><td>${odds.dxf.over || '-'}</td></tr>`;
+            }
+            
+            html += '</tbody>';
+            document.getElementById('odds-table').innerHTML = html;
+        }
+        
+        function renderHandicap() {
+            const handicap = analysisData.handicapComparison;
+            const card = document.getElementById('handicap-card');
+            
+            if (!handicap || (!handicap.home && !handicap.away)) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            const home = analysisData.home || '主队';
+            const away = analysisData.away || '客队';
+            
+            function renderTeamHandicap(team, data) {
+                if (!data) return '<div class="empty">暂无数据</div>';
+                
+                function renderRow(label, row) {
+                    if (!row) return '';
+                    return `
+                        <tr>
+                            <td><strong>${label}</strong></td>
+                            <td>${row.games || '-'}</td>
+                            <td class="win">${row.winHandicap || '-'}</td>
+                            <td class="loss">${row.loseHandicap || '-'}</td>
+                            <td class="highlight">${row.winRate || '-'}</td>
+                            <td>${row.bigBall || '-'}</td>
+                            <td>${row.smallBall || '-'}</td>
+                            <td>${row.bigBallRate || '-'}</td>
+                        </tr>
+                    `;
+                }
+                
+                return `
+                    <div class="ranking-team-title">${team}</div>
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>场次</th>
+                                <th>赢盘</th>
+                                <th>输盘</th>
+                                <th>赢盘率</th>
+                                <th>大球</th>
+                                <th>小球</th>
+                                <th>大球率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${renderRow('总计', data.total)}
+                            ${renderRow('主场', data.home)}
+                            ${renderRow('客场', data.away)}
+                        </tbody>
+                    </table>
+                `;
+            }
+            
+            document.getElementById('home-handicap-table').innerHTML = renderTeamHandicap(home, handicap.home);
+            document.getElementById('away-handicap-table').innerHTML = renderTeamHandicap(away, handicap.away);
+        }
+        
+        function renderFutureMatches() {
+            const future = analysisData.futureMatches;
+            const card = document.getElementById('future-card');
+            
+            if (!future || ((!future.home || future.home.length === 0) && (!future.away || future.away.length === 0))) {
+                card.style.display = 'none';
+                return;
+            }
+            card.style.display = 'block';
+            
+            const home = analysisData.home || '主队';
+            const away = analysisData.away || '客队';
+            
+            function renderTeamFuture(team, matches) {
+                if (!matches || matches.length === 0) return '<div class="empty">暂无数据</div>';
+                
+                return `
+                    <div class="ranking-team-title">${team}</div>
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>赛事</th>
+                                <th>日期</th>
+                                <th>主客</th>
+                                <th>对手</th>
+                                <th>相隔</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${matches.slice(0, 5).map(m => `
+                                <tr>
+                                    <td>${m.league || ''}</td>
+                                    <td>${formatDate(m.date)}</td>
+                                    <td>${m.homeAway || ''}</td>
+                                    <td>${m.opponent || ''}</td>
+                                    <td>${m.daysApart || ''}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                `;
+            }
+            
+            document.getElementById('home-future-table').innerHTML = renderTeamFuture(home, future.home);
+            document.getElementById('away-future-table').innerHTML = renderTeamFuture(away, future.away);
+        }
+        
+        function renderOuzhi() {
+            const ouzhi = analysisData.ouzhi;
+            const table = document.getElementById('ouzhi-table');
+            
+            if (!ouzhi || !ouzhi.companies || ouzhi.companies.length === 0) {
+                table.innerHTML = '<tr><td colspan="6" class="empty">暂无欧赔数据</td></tr>';
+                return;
+            }
+            
+            function getOddsColor(instant, initial) {
+                const i = parseFloat(instant);
+                const init = parseFloat(initial);
+                if (isNaN(i) || isNaN(init)) return '';
+                if (i > init) return 'win';
+                if (i < init) return 'loss';
+                return '';
+            }
+            
+            let html = `
+                <thead>
+                    <tr>
+                        <th>公司</th>
+                        <th>状态</th>
+                        <th>客胜</th>
+                        <th>主胜</th>
+                        <th>客率</th>
+                        <th>胜率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${ouzhi.companies.map((item, index) => `
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td rowspan="2"><strong>${item.company}</strong></td>
+                            <td>初盘</td>
+                            <td>${item.initial.lose}</td>
+                            <td>${item.initial.win}</td>
+                            <td>${item.initial.loseRate}</td>
+                            <td>${item.initial.winRate}</td>
+                        </tr>
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td>即时</td>
+                            <td class="${getOddsColor(item.instant.lose, item.initial.lose)}">${item.instant.lose}</td>
+                            <td class="${getOddsColor(item.instant.win, item.initial.win)}">${item.instant.win}</td>
+                            <td>${item.instant.loseRate}</td>
+                            <td>${item.instant.winRate}</td>
+                        </tr>
+                    `).join('')}
+                    ${ouzhi.summary && Object.keys(ouzhi.summary).length > 0 ? `
+                        ${['最高值', '最低值', '平均值'].map(label => {
+                            const data = ouzhi.summary[label];
+                            if (!data) return '';
+                            return `
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td rowspan="2"><strong>${label}</strong></td>
+                                    <td>初盘</td>
+                                    <td>${data.initial.lose}</td>
+                                    <td>${data.initial.win}</td>
+                                    <td>${data.initial.loseRate}</td>
+                                    <td>${data.initial.winRate}</td>
+                                </tr>
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td>即时</td>
+                                    <td>${data.instant.lose}</td>
+                                    <td>${data.instant.win}</td>
+                                    <td>${data.instant.loseRate}</td>
+                                    <td>${data.instant.winRate}</td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    ` : ''}
+                </tbody>
+            `;
+            
+            table.innerHTML = html;
+        }
+        
+        function renderRangfen() {
+            const rangfen = analysisData.rangfen;
+            const table = document.getElementById('rangfen-table');
+            
+            if (!rangfen || !rangfen.comparison || rangfen.comparison.length === 0) {
+                table.innerHTML = '<tr><td colspan="6" class="empty">暂无让分盘数据</td></tr>';
+                return;
+            }
+            
+            function getOddsColor(instant, initial) {
+                const i = parseFloat(instant);
+                const init = parseFloat(initial);
+                if (isNaN(i) || isNaN(init)) return '';
+                if (i > init) return 'win';
+                if (i < init) return 'loss';
+                return '';
+            }
+            
+            let html = `
+                <thead>
+                    <tr>
+                        <th>公司</th>
+                        <th>状态</th>
+                        <th>客队</th>
+                        <th>盘口</th>
+                        <th>主队</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${rangfen.comparison.map((item, index) => `
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td rowspan="2"><strong>${item.company}</strong></td>
+                            <td>初盘</td>
+                            <td>${item.initial.guest}</td>
+                            <td>${item.initial.handicap}</td>
+                            <td>${item.initial.home}</td>
+                        </tr>
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td>即时</td>
+                            <td class="${getOddsColor(item.instant.guest, item.initial.guest)}">${item.instant.guest}</td>
+                            <td>${item.instant.handicap}</td>
+                            <td class="${getOddsColor(item.instant.home, item.initial.home)}">${item.instant.home}</td>
+                        </tr>
+                    `).join('')}
+                    ${rangfen.summary && Object.keys(rangfen.summary).length > 0 ? `
+                        ${['最大值', '最小值'].map(label => {
+                            const data = rangfen.summary[label];
+                            if (!data) return '';
+                            return `
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td rowspan="2"><strong>${label}</strong></td>
+                                    <td>初盘</td>
+                                    <td>${data.initial.guest}</td>
+                                    <td>${data.initial.handicap}</td>
+                                    <td>${data.initial.home}</td>
+                                </tr>
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td>即时</td>
+                                    <td>${data.instant.guest}</td>
+                                    <td>${data.instant.handicap}</td>
+                                    <td>${data.instant.home}</td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    ` : ''}
+                </tbody>
+            `;
+            
+            table.innerHTML = html;
+        }
+        
+        function renderZongfen() {
+            const zongfen = analysisData.zongfen;
+            const table = document.getElementById('zongfen-table');
+            
+            if (!zongfen || !zongfen.comparison || zongfen.comparison.length === 0) {
+                table.innerHTML = '<tr><td colspan="6" class="empty">暂无总分盘数据</td></tr>';
+                document.getElementById('zongfen-changes-card').style.display = 'none';
+                return;
+            }
+            
+            function getOddsColor(instant, initial) {
+                const i = parseFloat(instant);
+                const init = parseFloat(initial);
+                if (isNaN(i) || isNaN(init)) return '';
+                if (i > init) return 'win';
+                if (i < init) return 'loss';
+                return '';
+            }
+            
+            let html = `
+                <thead>
+                    <tr>
+                        <th>公司</th>
+                        <th>状态</th>
+                        <th>大球</th>
+                        <th>盘口</th>
+                        <th>小球</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${zongfen.comparison.map((item, index) => `
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td rowspan="2"><strong>${item.company}</strong></td>
+                            <td>初盘</td>
+                            <td>${item.initial.over}</td>
+                            <td>${item.initial.handicap}</td>
+                            <td>${item.initial.under}</td>
+                        </tr>
+                        <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                            <td>即时</td>
+                            <td class="${getOddsColor(item.instant.over, item.initial.over)}">${item.instant.over}</td>
+                            <td>${item.instant.handicap}</td>
+                            <td class="${getOddsColor(item.instant.under, item.initial.under)}">${item.instant.under}</td>
+                        </tr>
+                    `).join('')}
+                    ${zongfen.summary && Object.keys(zongfen.summary).length > 0 ? `
+                        ${['最大值', '最小值'].map(label => {
+                            const data = zongfen.summary[label];
+                            if (!data) return '';
+                            return `
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td rowspan="2"><strong>${label}</strong></td>
+                                    <td>初盘</td>
+                                    <td>${data.initial.over}</td>
+                                    <td>${data.initial.handicap}</td>
+                                    <td>${data.initial.under}</td>
+                                </tr>
+                                <tr style="background: #f0f0f0; font-weight: 600;">
+                                    <td>即时</td>
+                                    <td>${data.instant.over}</td>
+                                    <td>${data.instant.handicap}</td>
+                                    <td>${data.instant.under}</td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    ` : ''}
+                </tbody>
+            `;
+            
+            table.innerHTML = html;
+            
+            // 渲染主流公司总分盘变化
+            const changesCard = document.getElementById('zongfen-changes-card');
+            const changesTable = document.getElementById('zongfen-changes-table');
+            
+            if (!zongfen.changes || zongfen.changes.length === 0) {
+                changesCard.style.display = 'none';
+                return;
+            }
+            
+            changesCard.style.display = 'block';
+            
+            // 获取所有公司名称
+            const allCompanies = new Set();
+            zongfen.changes.forEach(change => {
+                change.companies.forEach(c => allCompanies.add(c.name));
+            });
+            const companyList = Array.from(allCompanies).slice(0, 5);
+            
+            // 格式化时间
+            function formatTime(timeStr) {
+                if (!timeStr) return '';
+                // 2026-03-24 12:10:17 -> 03-24<br/>12:10:17
+                const parts = timeStr.split(' ');
+                if (parts.length >= 2) {
+                    const date = parts[0].substring(5); // 去掉年份，保留月日
+                    const time = parts[1];
+                    return date + '<br/>' + time;
+                }
+                return timeStr;
+            }
+            
+            let changesHtml = `
+                <thead>
+                    <tr>
+                        <th>时间</th>
+                        ${companyList.map(name => `<th>${name}</th>`).join('')}
+                    </tr>
+                </thead>
+                <tbody>
+                    ${zongfen.changes.slice(0, 15).map((change, index) => {
+                        const companyMap = {};
+                        change.companies.forEach(c => {
+                            companyMap[c.name] = c;
+                        });
+                        
+                        return `
+                            <tr class="${index % 2 === 0 ? '' : 'tr2'}">
+                                <td style="font-size:11px; line-height:1.3;">${formatTime(change.time)}</td>
+                                ${companyList.map(name => {
+                                    const c = companyMap[name];
+                                    if (!c) return '<td>-</td>';
+                                    return `<td><strong>${c.handicap}</strong><br/><span class="${c.overColor}">${c.overOdds}</span> <span class="${c.underColor}">${c.underOdds}</span></td>`;
+                                }).join('')}
+                            </tr>
+                        `;
+                    }).join('')}
+                </tbody>
+            `;
+            
+            changesTable.innerHTML = changesHtml;
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>

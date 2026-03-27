@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>动画直播</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { background: #000; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; }
+        
+        .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(26,115,232,0.98); padding: 8px 12px; padding-top: calc(env(safe-area-inset-top) + 8px); display: flex; align-items: center; z-index: 100; }
+        .header-back { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; }
+        .header-back:active { background: rgba(255,255,255,0.2); }
+        .header-back svg { width: 22px; height: 22px; fill: #fff; }
+        .header-title { flex: 1; text-align: center; color: #fff; font-size: 15px; font-weight: 600; }
+        .header-right { width: 36px; }
+        
+        .animation-section { background: #000; height: 300px; position: relative; overflow: hidden; }
+        .animation-frame { width: 100%; height: 100%; border: none; position: absolute; top: 0; left: 0; transform: translateY(-260px); transform-origin: top left; }
+        
+        .score-bar { background: #fff; padding: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .team { display: flex; flex-direction: column; align-items: center; flex: 1; }
+        .team-logo { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #1d4ed8); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .team-name { font-size: 14px; font-weight: 600; color: #1f2937; }
+        .score-area { display: flex; align-items: center; gap: 12px; }
+        .score { font-size: 36px; font-weight: 700; color: #1f2937; min-width: 40px; text-align: center; }
+        .score-sep { font-size: 24px; color: #9ca3af; }
+        
+        .tabs { display: flex; background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 52px; z-index: 99; }
+        .tab { flex: 1; padding: 12px 4px; text-align: center; font-size: 13px; color: #6b7280; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; }
+        .tab.active { color: #1a73e8; border-bottom-color: #1a73e8; }
+        
+        .tab-content { display: none; padding: 12px; }
+        .tab-content.active { display: block; }
+        
+        .stats-card { background: #fff; border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+        .stats-header { padding: 12px; background: #f9fafb; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb; }
+        .stats-body { padding: 12px; }
+        
+        .stat-row { display: flex; align-items: center; padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-label { flex: 1; color: #6b7280; font-size: 13px; }
+        .stat-value { font-weight: 600; color: #1f2937; }
+        
+        .event-list { max-height: 300px; overflow-y: auto; }
+        .event-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #e5e7eb; }
+        .event-time { color: #6b7280; font-size: 12px; min-width: 40px; }
+        .event-icon { font-size: 16px; }
+        .event-text { flex: 1; font-size: 13px; color: #1f2937; }
+        
+        .loading { text-align: center; padding: 40px; color: #9ca3af; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()">
+            <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        </div>
+        <div class="header-title" id="header-title">动画直播</div>
+        <div class="header-right"></div>
+    </div>
+    
+    <div style="height: 52px;"></div>
+    
+    <div class="animation-section" id="animation-section">
+        <iframe id="animation-frame" class="animation-frame"></iframe>
+    </div>
+    
+    <div class="score-bar">
+        <div class="team">
+            <div class="team-logo" id="home-logo">主</div>
+            <div class="team-name" id="home-name">主队</div>
+        </div>
+        <div class="score-area">
+            <span class="score" id="home-score">0</span>
+            <span class="score-sep">-</span>
+            <span class="score" id="away-score">0</span>
+        </div>
+        <div class="team">
+            <div class="team-logo" id="away-logo">客</div>
+            <div class="team-name" id="away-name">客队</div>
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active" data-tab="stats">统计</div>
+        <div class="tab" data-tab="events">事件</div>
+    </div>
+    
+    <div class="tab-content active" id="tab-stats">
+        <div class="stats-card">
+            <div class="stats-header">比赛信息</div>
+            <div class="stats-body">
+                <div class="stat-row">
+                    <div class="stat-label">联赛</div>
+                    <div class="stat-value" id="match-league">-</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">时间</div>
+                    <div class="stat-value" id="match-time">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tab-content" id="tab-events">
+        <div class="event-list" id="event-list">
+            <div class="loading">加载中...</div>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const fid = params.get('fid');
+        const nid = params.get('nid') || params.get('namitiyuId');
+        const home = params.get('home') || '主队';
+        const away = params.get('away') || '客队';
+        const hs = params.get('hs') || '0';
+        const as = params.get('as') || '0';
+        const league = params.get('league') || '';
+        const time = params.get('time') || '';
+        
+        document.getElementById('header-title').textContent = decodeURIComponent(home) + ' vs ' + decodeURIComponent(away);
+        document.getElementById('home-name').textContent = decodeURIComponent(home);
+        document.getElementById('away-name').textContent = decodeURIComponent(away);
+        document.getElementById('home-logo').textContent = decodeURIComponent(home).charAt(0);
+        document.getElementById('away-logo').textContent = decodeURIComponent(away).charAt(0);
+        document.getElementById('home-score').textContent = hs;
+        document.getElementById('away-score').textContent = as;
+        document.getElementById('match-league').textContent = decodeURIComponent(league);
+        document.getElementById('match-time').textContent = time;
+        
+        // 加载动画
+        const animFrame = document.getElementById('animation-frame');
+        if (nid) {
+            animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + nid;
+        } else if (fid) {
+            animFrame.src = 'https://live.500.com/detail/flash_' + fid + '.html';
+        }
+        
+        // 标签切换
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

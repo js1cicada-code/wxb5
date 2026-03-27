@@ -1,0 +1,43 @@
+{
+  "name": "wxingbaoh5",
+  "version": "1.0.0",
+  "description": "微信H5应用",
+  "main": "src/js/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "lint": "eslint src/js/**/*.js",
+    "crawler": "python3 bjdc_crawler.py",
+    "start": "npm run crawler & npm run dev"
+  },
+  "keywords": [
+    "wechat",
+    "h5",
+    "webapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chart.js": "^4.5.1",
+    "jquery": "^3.7.1",
+    "uipro-cli": "^2.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-loader": "^9.1.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.50.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.0",
+    "style-loader": "^3.3.0",
+    "terser-webpack-plugin": "^5.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

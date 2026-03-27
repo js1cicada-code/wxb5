@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>推广数据统计</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .header-back {
+            position: absolute;
+            left: 16px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .header-back::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+            top: 6px;
+            left: 6px;
+        }
+
+        .header-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .main-content {
+            padding: 72px 16px 16px;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(74, 111, 227, 0.3);
+        }
+
+        .summary-title {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-value {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .summary-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            padding: 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .search-box {
+            padding: 12px 16px;
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .search-input {
+            width: 100%;
+            height: 40px;
+            padding: 0 16px 0 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #333;
+            background: #f5f5f5;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            background: #fff;
+            border-color: #4a6fe3;
+        }
+
+        .search-wrapper {
+            position: relative;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            pointer-events: none;
+        }
+
+        .search-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #999;
+        }
+
+        .rank-card {
+            padding: 16px;
+        }
+
+        .rank-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .rank-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .rank-tabs {
+            display: flex;
+            gap: 8px;
+        }
+
+        .rank-tab {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #666;
+            background: #f5f5f5;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .rank-tab.active {
+            background: #4a6fe3;
+            color: #fff;
+        }
+
+        .rank-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .rank-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rank-num {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .rank-num.top1 {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb700 100%);
+            color: #fff;
+        }
+
+        .rank-num.top2 {
+            background: linear-gradient(135deg, #c0c0c0 0%, #a8a8a8 100%);
+            color: #fff;
+        }
+
+        .rank-num.top3 {
+            background: linear-gradient(135deg, #cd7f32 0%, #b87333 100%);
+            color: #fff;
+        }
+
+        .rank-num.other {
+            background: #f0f0f0;
+            color: #999;
+        }
+
+        .rank-info {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rank-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .rank-name {
+            font-size: 14px;
+            color: #333;
+            flex: 1;
+        }
+
+        .rank-bar-wrapper {
+            flex: 1;
+            height: 8px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 12px;
+        }
+
+        .rank-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .rank-value {
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        .rank-value.highlight {
+            color: #4a6fe3;
+        }
+
+        .filter-bar {
+            padding: 12px 16px;
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+        }
+
+        .filter-btn {
+            padding: 6px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #666;
+            background: #fff;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            color: #fff;
+            border-color: transparent;
+        }
+
+        .filter-btn:active {
+            opacity: 0.9;
+        }
+
+        .promoter-list {
+        }
+
+        .list-row {
+            display: grid;
+            grid-template-columns: 1fr 90px 110px;
+            align-items: center;
+            padding: 0 16px;
+        }
+
+        .list-header {
+            background: #f8f9fc;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .list-header .list-row {
+            padding: 12px 16px;
+        }
+
+        .list-header-item {
+            font-size: 13px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .list-header-item.orders,
+        .list-header-item.amount {
+            text-align: right;
+        }
+
+        .promoter-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.2s;
+        }
+
+        .promoter-item:last-child {
+            border-bottom: none;
+        }
+
+        .promoter-item:active {
+            background-color: #f9f9f9;
+        }
+
+        .promoter-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .promoter-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4a6fe3 0%, #3b5dd4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        .promoter-name {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .stat-orders,
+        .stat-amount {
+            text-align: right;
+        }
+
+        .stat-value {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .stat-value.highlight {
+            color: #4a6fe3;
+        }
+
+        .empty-state {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .empty-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            background: #f5f5f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .empty-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: #ccc;
+        }
+
+        .empty-text {
+            font-size: 14px;
+            color: #999;
+        }
+
+        @media (max-width: 375px) {
+            .summary-value {
+                font-size: 20px;
+            }
+
+            .rank-bar-wrapper {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-back" onclick="goBack()"></div>
+        <h1 class="header-title">推广数据统计</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="summary-card">
+            <div class="summary-title">数据汇总</div>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-value" id="totalPromoters">0</div>
+                    <div class="summary-label">推广人数</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value" id="totalOrders">0</div>
+                    <div class="summary-label">总订单数</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value" id="totalAmount">¥0</div>
+                    <div class="summary-label">总金额</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">推广人列表</span>
+                <span class="card-count" id="listCount">共 0 人</span>
+            </div>
+
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <div class="search-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#999"/>
+                        </svg>
+                    </div>
+                    <input type="text" class="search-input" placeholder="搜索推广人姓名" id="searchInput" oninput="searchPromoter()">
+                </div>
+            </div>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterData('all')">全部</button>
+                <button class="filter-btn" onclick="filterData('orders')">按订单数</button>
+                <button class="filter-btn" onclick="filterData('amount')">按金额</button>
+            </div>
+
+            <div class="list-header">
+                <div class="list-row">
+                    <div class="list-header-item name">推广人姓名</div>
+                    <div class="list-header-item orders">订单数量</div>
+                    <div class="list-header-item amount">订单总金额</div>
+                </div>
+            </div>
+
+            <div class="promoter-list" id="promoterList">
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const mockData = [
+            { name: '张三', orderCount: 98, totalAmount: 28600.00 },
+            { name: '李四', orderCount: 156, totalAmount: 38900.50 },
+            { name: '王五', orderCount: 43, totalAmount: 45800.00 },
+            { name: '赵六', orderCount: 87, totalAmount: 15700.00 },
+            { name: '钱七', orderCount: 132, totalAmount: 9300.00 },
+            { name: '孙八', orderCount: 21, totalAmount: 22100.00 },
+            { name: '周九', orderCount: 76, totalAmount: 6100.00 },
+            { name: '吴十', orderCount: 54, totalAmount: 18900.00 },
+            { name: '郑十一', orderCount: 65, totalAmount: 12500.00 },
+            { name: '王十二', orderCount: 32, totalAmount: 25300.00 }
+        ];
+
+        let currentData = [...mockData];
+        let currentFilter = 'all';
+
+        function goBack() {
+            if (history.length > 1) {
+                history.back();
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+        function formatMoney(amount) {
+            return '¥' + amount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+
+        function getInitial(name) {
+            return name.charAt(0);
+        }
+
+        function updateSummary() {
+            const totalPromoters = currentData.length;
+            const totalOrders = currentData.reduce((sum, item) => sum + item.orderCount, 0);
+            const totalAmount = currentData.reduce((sum, item) => sum + item.totalAmount, 0);
+
+            document.getElementById('totalPromoters').textContent = totalPromoters;
+            document.getElementById('totalOrders').textContent = totalOrders;
+            document.getElementById('totalAmount').textContent = formatMoney(totalAmount);
+            document.getElementById('listCount').textContent = `共 ${totalPromoters} 人`;
+        }
+
+        function renderList(data) {
+            const container = document.getElementById('promoterList');
+            
+            if (data.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="#ccc"/>
+                            </svg>
+                        </div>
+                        <div class="empty-text">暂无推广数据</div>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = data.map(item => `
+                <div class="promoter-item">
+                    <div class="list-row">
+                        <div class="promoter-info">
+                            <div class="promoter-avatar">${getInitial(item.name)}</div>
+                            <div class="promoter-name">${item.name}</div>
+                        </div>
+                        <div class="stat-orders">
+                            <div class="stat-value">${item.orderCount}</div>
+                        </div>
+                        <div class="stat-amount">
+                            <div class="stat-value highlight">${formatMoney(item.totalAmount)}</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterData(type) {
+            currentFilter = type;
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            let sortedData = [...mockData];
+            
+            switch(type) {
+                case 'orders':
+                    sortedData.sort((a, b) => b.orderCount - a.orderCount);
+                    break;
+                case 'amount':
+                    sortedData.sort((a, b) => b.totalAmount - a.totalAmount);
+                    break;
+                default:
+                    break;
+            }
+
+            currentData = sortedData;
+            updateSummary();
+            renderList(currentData);
+        }
+
+        function searchPromoter() {
+            const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+            
+            if (!keyword) {
+                currentData = [...mockData];
+                applyCurrentFilter();
+                return;
+            }
+
+            const filtered = mockData.filter(item => 
+                item.name.toLowerCase().includes(keyword)
+            );
+            
+            currentData = filtered;
+            updateSummary();
+            renderList(currentData);
+        }
+
+        function applyCurrentFilter() {
+            let sortedData = [...mockData];
+            
+            switch(currentFilter) {
+                case 'orders':
+                    sortedData.sort((a, b) => b.orderCount - a.orderCount);
+                    break;
+                case 'amount':
+                    sortedData.sort((a, b) => b.totalAmount - b.totalAmount);
+                    break;
+                default:
+                    break;
+            }
+
+            currentData = sortedData;
+            updateSummary();
+            renderList(currentData);
+        }
+
+        window.onload = function() {
+            updateSummary();
+            renderList(currentData);
+        };
+    </script>
+</body>
+</html>

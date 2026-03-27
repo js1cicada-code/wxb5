@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大乐透走势图</title>
+    <style>
+        :root {
+            --primary: #e74c3c;
+            --primary-dark: #c0392b;
+            --secondary: #3498db;
+            --secondary-dark: #2980b9;
+            --bg-main: #f5f5f5;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border-light: #f0f0f0;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+            --radius-md: 8px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-main); color: var(--text-primary); min-height: 100vh; }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 0 12px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+        }
+        .header-back {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+        }
+        .header h1 {
+            flex: 1;
+            text-align: center;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .header-link {
+            color: #fff;
+            font-size: 13px;
+            padding: 6px 12px;
+            background: rgba(255,255,255,0.15);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+        }
+        
+        .tabs {
+            display: flex;
+            background: var(--bg-card);
+            height: 44px;
+            box-shadow: var(--shadow-sm);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .tab {
+            padding: 0 8px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .tab:hover { color: var(--text-primary); }
+        .tab.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .content {
+            padding-bottom: 20px;
+        }
+        
+        .chart-wrap {
+            background: var(--bg-card);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .chart-table {
+            border-collapse: collapse;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .chart-table th, .chart-table td {
+            padding: 0;
+            text-align: center;
+            min-width: 22px;
+            height: 28px;
+            line-height: 28px;
+            border-bottom: 1px solid #eee;
+        }
+        .chart-table th {
+            background: #f8f8f8;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 11px;
+            border-bottom: 2px solid #ddd;
+        }
+        .chart-table .col-period {
+            min-width: 60px;
+            position: sticky;
+            left: 0;
+            background: #fff;
+            z-index: 10;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .chart-table th.col-period {
+            background: #f0f0f0;
+        }
+        .chart-table .col-divider {
+            min-width: 2px;
+            background: #e5e5e5;
+            padding: 0;
+        }
+        .chart-table .ball {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .chart-table .ball.front {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+        }
+        .chart-table .ball.back {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+            color: #fff;
+        }
+        .chart-table .miss {
+            color: #ccc;
+            font-size: 11px;
+        }
+        .chart-table tr:nth-child(5n+1) td {
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .chart-table tr:hover td {
+            background: #fff9f9;
+        }
+        
+        .stats-bar {
+            background: var(--bg-card);
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .stats-bar-title {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .stats-bar-info {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            padding: 8px 12px;
+            background: #fafafa;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid #eee;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-ball {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+        .legend-ball.front { background: var(--primary); }
+        .legend-ball.back { background: var(--secondary); }
+        
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        
+        .external-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 12px;
+            padding: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .omit-section {
+            background: var(--bg-card);
+            margin-bottom: 8px;
+        }
+        .omit-header {
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+        }
+        .omit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+            padding: 8px;
+            gap: 4px;
+        }
+        .omit-item {
+            text-align: center;
+            padding: 8px 4px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .omit-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .omit-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .freq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+            padding: 8px;
+            gap: 4px;
+        }
+        .freq-item {
+            text-align: center;
+            padding: 8px 4px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .freq-bar {
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+            margin: 4px 0;
+            overflow: hidden;
+        }
+        .freq-bar-inner {
+            height: 100%;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        .freq-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .freq-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()"></div>
+        <h1>大乐透走势图</h1>
+        <a href="dlt.html" class="header-link">选号</a>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active" data-tab="basic">基本走势</div>
+        <div class="tab" data-tab="freq">号码频率</div>
+        <div class="tab" data-tab="omit">遗漏统计</div>
+    </div>
+    
+    <div class="content">
+        <div id="basic-panel" class="tab-panel active">
+            <div class="stats-bar">
+                <span class="stats-bar-title">最近30期开奖号码</span>
+                <span class="stats-bar-info">左右滑动查看更多</span>
+            </div>
+            <div class="legend">
+                <div class="legend-item"><span class="legend-ball front"></span>前区(01-35)</div>
+                <div class="legend-item"><span class="legend-ball back"></span>后区(01-12)</div>
+                <div class="legend-item">数字=遗漏期数</div>
+            </div>
+            <div class="chart-wrap">
+                <table class="chart-table" id="chart-table">
+                    <thead id="chart-thead"></thead>
+                    <tbody id="chart-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="freq-panel" class="tab-panel">
+            <div class="omit-section">
+                <div class="omit-header">前区号码出现频率 (最近30期)</div>
+                <div class="freq-grid" id="front-freq"></div>
+            </div>
+            <div class="omit-section">
+                <div class="omit-header">后区号码出现频率 (最近30期)</div>
+                <div class="freq-grid" id="back-freq"></div>
+            </div>
+        </div>
+        
+        <div id="omit-panel" class="tab-panel">
+            <div class="omit-section">
+                <div class="omit-header">前区当前遗漏</div>
+                <div class="omit-grid" id="front-omit"></div>
+            </div>
+            <div class="omit-section">
+                <div class="omit-header">后区当前遗漏</div>
+                <div class="omit-grid" id="back-omit"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let historyData = [];
+        
+        function init() {
+            setupTabs();
+            fetchData();
+        }
+        
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const target = this.dataset.tab;
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                    document.getElementById(target + '-panel').classList.add('active');
+                });
+            });
+        }
+        
+        async function fetchData() {
+            try {
+                const resp = await fetch('data/dlt_history.json');
+                if (resp.ok) {
+                    historyData = await resp.json();
+                    console.log(`加载大乐透历史数据: ${historyData.length} 期`);
+                }
+            } catch (e) {
+                console.log('加载历史数据失败，使用模拟数据');
+            }
+            
+            if (!historyData || historyData.length === 0) {
+                historyData = generateMockData();
+            }
+            
+            renderChart();
+            renderFreq();
+            renderOmit();
+        }
+        
+        function generateMockData() {
+            const data = [];
+            for (let i = 30; i >= 1; i--) {
+                const period = '260' + String(i).padStart(2, '0');
+                const front = [];
+                const used = new Set();
+                while (front.length < 5) {
+                    const n = Math.floor(Math.random() * 35) + 1;
+                    if (!used.has(n)) {
+                        used.add(n);
+                        front.push(n);
+                    }
+                }
+                front.sort((a, b) => a - b);
+                
+                const back = [];
+                const usedBack = new Set();
+                while (back.length < 2) {
+                    const n = Math.floor(Math.random() * 12) + 1;
+                    if (!usedBack.has(n)) {
+                        usedBack.add(n);
+                        back.push(n);
+                    }
+                }
+                back.sort((a, b) => a - b);
+                
+                data.push({ period, front, back });
+            }
+            return data;
+        }
+        
+        function renderChart() {
+            const thead = document.getElementById('chart-thead');
+            const tbody = document.getElementById('chart-tbody');
+            
+            let headerHtml = '<tr><th class="col-period">期号</th>';
+            for (let i = 1; i <= 35; i++) {
+                headerHtml += `<th>${String(i).padStart(2, '0')}</th>`;
+            }
+            headerHtml += '<th class="col-divider"></th>';
+            for (let i = 1; i <= 12; i++) {
+                headerHtml += `<th>${String(i).padStart(2, '0')}</th>`;
+            }
+            headerHtml += '</tr>';
+            thead.innerHTML = headerHtml;
+            
+            const missCount = { front: {}, back: {} };
+            for (let i = 1; i <= 35; i++) missCount.front[i] = 0;
+            for (let i = 1; i <= 12; i++) missCount.back[i] = 0;
+            
+            let bodyHtml = '';
+            historyData.slice(0, 30).forEach((row, idx) => {
+                bodyHtml += '<tr>';
+                bodyHtml += `<td class="col-period">${row.period}</td>`;
+                
+                const frontSet = new Set(row.front);
+                for (let i = 1; i <= 35; i++) {
+                    if (frontSet.has(i)) {
+                        bodyHtml += `<td><span class="ball front">${String(i).padStart(2, '0')}</span></td>`;
+                        missCount.front[i] = 0;
+                    } else {
+                        missCount.front[i]++;
+                        bodyHtml += `<td class="miss">${missCount.front[i]}</td>`;
+                    }
+                }
+                
+                bodyHtml += '<td class="col-divider"></td>';
+                
+                const backSet = new Set(row.back);
+                for (let i = 1; i <= 12; i++) {
+                    if (backSet.has(i)) {
+                        bodyHtml += `<td><span class="ball back">${String(i).padStart(2, '0')}</span></td>`;
+                        missCount.back[i] = 0;
+                    } else {
+                        missCount.back[i]++;
+                        bodyHtml += `<td class="miss">${missCount.back[i]}</td>`;
+                    }
+                }
+                
+                bodyHtml += '</tr>';
+            });
+            
+            tbody.innerHTML = bodyHtml;
+        }
+        
+        function renderFreq() {
+            const frontCount = {};
+            const backCount = {};
+            for (let i = 1; i <= 35; i++) frontCount[i] = 0;
+            for (let i = 1; i <= 12; i++) backCount[i] = 0;
+            
+            historyData.slice(0, 30).forEach(row => {
+                row.front.forEach(n => frontCount[n]++);
+                row.back.forEach(n => backCount[n]++);
+            });
+            
+            const maxFront = Math.max(...Object.values(frontCount));
+            const maxBack = Math.max(...Object.values(backCount));
+            
+let frontHtml = '';
+            Object.entries(frontCount).forEach(([num, count]) => {
+                const pct = maxFront > 0 ? (count / maxFront * 100) : 0;
+                frontHtml += `<div class="freq-item">
+                    <div class="freq-num">${String(num).padStart(2, '0')}</div>
+                    <div class="freq-bar"><div class="freq-bar-inner" style="width:${pct}%"></div></div>
+                    <div class="freq-label">${count}次</div>
+                </div>`;
+            });
+            document.getElementById('front-freq').innerHTML = frontHtml;
+            
+            let backHtml = '';
+            Object.entries(backCount).forEach(([num, count]) => {
+                const pct = maxBack > 0 ? (count / maxBack * 100) : 0;
+                backHtml += `<div class="freq-item">
+                    <div class="freq-num">${String(num).padStart(2, '0')}</div>
+                    <div class="freq-bar"><div class="freq-bar-inner" style="width:${pct}%;background:var(--secondary)"></div></div>
+                    <div class="freq-label">${count}次</div>
+                </div>`;
+            });
+            document.getElementById('back-freq').innerHTML = backHtml;
+        }
+        
+        function renderOmit() {
+            const frontOmit = {};
+            const backOmit = {};
+            for (let i = 1; i <= 35; i++) frontOmit[i] = i;
+            for (let i = 1; i <= 12; i++) backOmit[i] = i;
+            
+            for (let i = 0; i < historyData.length; i++) {
+                const row = historyData[i];
+                row.front.forEach(n => {
+                    if (frontOmit[n] === n || frontOmit[n] === undefined) frontOmit[n] = i;
+                });
+                row.back.forEach(n => {
+                    if (backOmit[n] === n || backOmit[n] === undefined) backOmit[n] = i;
+                });
+            }
+            
+            for (let i = 1; i <= 35; i++) {
+                if (frontOmit[i] === i) frontOmit[i] = historyData.length;
+            }
+            for (let i = 1; i <= 12; i++) {
+                if (backOmit[i] === i) backOmit[i] = historyData.length;
+            }
+            
+            let frontHtml = '';
+            Object.entries(frontOmit).forEach(([num, omit]) => {
+                frontHtml += `<div class="omit-item">
+                    <div class="omit-num">${String(num).padStart(2, '0')}</div>
+                    <div class="omit-label">${omit}期</div>
+                </div>`;
+            });
+            document.getElementById('front-omit').innerHTML = frontHtml;
+            
+            let backHtml = '';
+            Object.entries(backOmit).forEach(([num, omit]) => {
+                backHtml += `<div class="omit-item">
+                    <div class="omit-num">${String(num).padStart(2, '0')}</div>
+                    <div class="omit-label">${omit}期</div>
+                </div>`;
+            });
+            document.getElementById('back-omit').innerHTML = backHtml;
+        }
+        
+        init();
+    </script>
+</body>
+</html>

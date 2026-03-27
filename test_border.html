@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单关边框效果测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .play-type-label {
+            font-size: 10px;
+            color: #c41230;
+            margin: 4px 0 3px;
+            padding-left: 5px;
+            font-weight: 500;
+            border-left: 2px solid #c41230;
+        }
+        
+        .odds-row {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .odds-row.single-pass {
+            border: 1px solid #ffb3b3;
+            border-radius: 4px;
+            padding: 4px 4px;
+            margin: 1px 0 15px 0;
+            background: linear-gradient(to bottom, #fff8f8, #ffffff);
+        }
+        
+        .odds-item {
+            flex: 1;
+            background: #f8f8f8;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            padding: 8px 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .odds-item .label {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .odds-item .value {
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .single-pass-badge {
+            background: #ffe5e5;
+            color: #c41230;
+            font-size: 9px;
+            padding: 1px 3px;
+            border-radius: 2px;
+            margin-left: 4px;
+        }
+        
+        .test-case {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .description {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+            padding: 8px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 30px; color: #c41230;">单关边框效果展示</h1>
+    
+    <div class="test-case">
+        <h2>测试1: 不支持单关的玩法</h2>
+        <div class="description">✗ 普通显示，无红色边框</div>
+        <div class="play-type-label">胜平负</div>
+        <div class="odds-row">
+            <div class="odds-item">
+                <div class="label">主胜</div>
+                <div class="value">1.50</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">平</div>
+                <div class="value">4.20</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">客胜</div>
+                <div class="value">6.50</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-case">
+        <h2>测试2: 支持单关的玩法 ✓</h2>
+        <div class="description">✓ 显示红色边框，醒目标识</div>
+        <div class="play-type-label">胜平负 <span class="single-pass-badge">单关</span></div>
+        <div class="odds-row single-pass">
+            <div class="odds-item">
+                <div class="label">主胜</div>
+                <div class="value">1.50</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">平</div>
+                <div class="value">4.20</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">客胜</div>
+                <div class="value">6.50</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-case">
+        <h2>测试3: 让球胜平负 - 不支持单关</h2>
+        <div class="description">✗ 普通显示</div>
+        <div class="play-type-label">让球胜平负（让+1）</div>
+        <div class="odds-row">
+            <div class="odds-item">
+                <div class="label">让胜</div>
+                <div class="value">2.10</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">让平</div>
+                <div class="value">3.60</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">让负</div>
+                <div class="value">3.00</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-case">
+        <h2>测试4: 让球胜平负 - 支持单关 ✓</h2>
+        <div class="description">✓ 显示红色边框</div>
+        <div class="play-type-label">让球胜平负（让-1） <span class="single-pass-badge">单关</span></div>
+        <div class="odds-row single-pass">
+            <div class="odds-item">
+                <div class="label">让胜</div>
+                <div class="value">2.10</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">让平</div>
+                <div class="value">3.60</div>
+            </div>
+            <div class="odds-item">
+                <div class="label">让负</div>
+                <div class="value">3.00</div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #fff; border-radius: 8px;">
+        <h3 style="color: #c41230; margin-bottom: 15px;">效果说明</h3>
+        <div style="text-align: left; max-width: 400px; margin: 0 auto; line-height: 1.8; color: #666; font-size: 14px;">
+            <p><strong>适中边框：</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>边框颜色: #ffb3b3 (粉红色)</li>
+                <li>边框宽度: 1px (细线)</li>
+                <li>圆角: 4px</li>
+                <li>渐变背景: #fff8f8 到 #ffffff</li>
+                <li>内边距: 4px</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>视觉效果：</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>✓ 细线边框，清晰可见</li>
+                <li>✓ 适中的粉红色调</li>
+                <li>✓ 配合"单关"标签</li>
+                <li>✓ 不显眼但能看清</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

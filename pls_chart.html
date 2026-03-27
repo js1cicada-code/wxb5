@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排列三走势图</title>
+    <style>
+        :root {
+            --primary: #f97316;
+            --primary-dark: #ea580c;
+            --bg-main: #f5f5f5;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border-light: #f0f0f0;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+            --radius-md: 8px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-main); color: var(--text-primary); min-height: 100vh; }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 0 12px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-md);
+        }
+        .header-back {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+        }
+        .header h1 {
+            flex: 1;
+            text-align: center;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .header-link {
+            color: #fff;
+            font-size: 13px;
+            padding: 6px 12px;
+            background: rgba(255,255,255,0.15);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+        }
+        
+        .tabs {
+            display: flex;
+            background: var(--bg-card);
+            height: 44px;
+            box-shadow: var(--shadow-sm);
+        }
+        .tab {
+            padding: 0 8px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .tab:hover { color: var(--text-primary); }
+        .tab.active {
+            color: var(--primary);
+            font-weight: 600;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .content { padding-bottom: 20px; }
+        
+        .chart-wrap {
+            background: var(--bg-card);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .chart-table {
+            border-collapse: collapse;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .chart-table th, .chart-table td {
+            padding: 0;
+            text-align: center;
+            min-width: 24px;
+            height: 26px;
+            line-height: 26px;
+            border-bottom: 1px solid #eee;
+        }
+        .chart-table th {
+            background: #f8f8f8;
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 11px;
+            border-bottom: 2px solid #ddd;
+        }
+        .chart-table .col-period {
+            min-width: 60px;
+            position: sticky;
+            left: 0;
+            background: #fff;
+            z-index: 10;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .chart-table th.col-period {
+            background: #f0f0f0;
+        }
+        .chart-table .col-divider {
+            min-width: 2px;
+            background: #e5e5e5;
+            padding: 0;
+        }
+        .chart-table .ball {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+        }
+        .chart-table .miss {
+            color: #ccc;
+            font-size: 11px;
+        }
+        .chart-table tr:nth-child(5n+1) td {
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .chart-table tr:hover td {
+            background: #fffaf0;
+        }
+        
+        .stats-bar {
+            background: var(--bg-card);
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .stats-bar-title {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .stats-bar-info {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            padding: 8px 12px;
+            background: #fafafa;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid #eee;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-ball {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        
+        .pos-section {
+            background: var(--bg-card);
+            margin-bottom: 8px;
+        }
+        .pos-header {
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pos-header span {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        
+        .freq-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 8px;
+            gap: 6px;
+        }
+        .freq-item {
+            text-align: center;
+            padding: 8px 4px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .freq-bar {
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+            margin: 4px 0;
+            overflow: hidden;
+        }
+        .freq-bar-inner {
+            height: 100%;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        .freq-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .freq-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .omit-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 8px;
+            gap: 6px;
+        }
+        .omit-item {
+            text-align: center;
+            padding: 8px 4px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .omit-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .omit-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()"></div>
+        <h1>排列三走势图</h1>
+        <a href="pls.html" class="header-link">选号</a>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active" data-tab="basic">基本走势</div>
+        <div class="tab" data-tab="freq">号码频率</div>
+        <div class="tab" data-tab="omit">遗漏统计</div>
+    </div>
+    
+    <div class="content">
+        <div id="basic-panel" class="tab-panel active">
+            <div class="stats-bar">
+                <span class="stats-bar-title">最近30期开奖号码</span>
+                <span class="stats-bar-info">左右滑动查看更多</span>
+            </div>
+            <div class="legend">
+                <div class="legend-item"><span class="legend-ball"></span>开奖号码(0-9)</div>
+                <div class="legend-item">数字=遗漏期数</div>
+            </div>
+            <div class="chart-wrap">
+                <table class="chart-table" id="chart-table">
+                    <thead id="chart-thead"></thead>
+                    <tbody id="chart-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="freq-panel" class="tab-panel">
+            <div id="freq-container"></div>
+        </div>
+        
+        <div id="omit-panel" class="tab-panel">
+            <div id="omit-container"></div>
+        </div>
+    </div>
+    
+    <script>
+        let historyData = [];
+        const POSITIONS = ['百位', '十位', '个位'];
+        
+        function init() {
+            setupTabs();
+            fetchData();
+        }
+        
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const target = this.dataset.tab;
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                    document.getElementById(target + '-panel').classList.add('active');
+                });
+            });
+        }
+        
+        async function fetchData() {
+            try {
+                const resp = await fetch('data/pls_history.json');
+                if (resp.ok) {
+                    historyData = await resp.json();
+                    console.log(`加载排列三历史数据: ${historyData.length} 期`);
+                }
+            } catch (e) {
+                console.log('加载历史数据失败，使用模拟数据');
+            }
+            
+            if (!historyData || historyData.length === 0) {
+                historyData = generateMockData();
+            }
+            
+            renderChart();
+            renderFreq();
+            renderOmit();
+        }
+        
+        function generateMockData() {
+            const data = [];
+            for (let i = 30; i >= 1; i--) {
+                const period = '250' + String(i).padStart(2, '0');
+                const numbers = [];
+                for (let j = 0; j < 3; j++) {
+                    numbers.push(Math.floor(Math.random() * 10));
+                }
+                data.push({ period, numbers });
+            }
+            return data;
+        }
+        
+        function renderChart() {
+            const thead = document.getElementById('chart-thead');
+            const tbody = document.getElementById('chart-tbody');
+            
+            let headerHtml = '<tr><th class="col-period">期号</th>';
+            for (let p = 1; p <= 3; p++) {
+                for (let i = 0; i <= 9; i++) {
+                    headerHtml += `<th>${i}</th>`;
+                }
+                if (p < 3) {
+                    headerHtml += '<th class="col-divider"></th>';
+                }
+            }
+            headerHtml += '</tr>';
+            thead.innerHTML = headerHtml;
+            
+            const missCount = [];
+            for (let p = 0; p < 3; p++) {
+                missCount[p] = {};
+                for (let i = 0; i <= 9; i++) {
+                    missCount[p][i] = 0;
+                }
+            }
+            
+            let bodyHtml = '';
+            historyData.slice(0, 30).forEach((row) => {
+                bodyHtml += '<tr>';
+                bodyHtml += `<td class="col-period">${row.period}</td>`;
+                
+                for (let p = 0; p < 3; p++) {
+                    const drawnNum = row.numbers[p];
+                    
+                    for (let i = 0; i <= 9; i++) {
+                        if (i === drawnNum) {
+                            bodyHtml += `<td><span class="ball">${i}</span></td>`;
+                            missCount[p][i] = 0;
+                        } else {
+                            missCount[p][i]++;
+                            bodyHtml += `<td class="miss">${missCount[p][i]}</td>`;
+                        }
+                    }
+                    
+                    if (p < 2) {
+                        bodyHtml += '<td class="col-divider"></td>';
+                    }
+                }
+                
+                bodyHtml += '</tr>';
+            });
+            
+            tbody.innerHTML = bodyHtml;
+        }
+        
+        function renderFreq() {
+            const container = document.getElementById('freq-container');
+            let html = '';
+            
+            for (let p = 0; p < 3; p++) {
+                const count = {};
+                for (let i = 0; i <= 9; i++) count[i] = 0;
+                
+                historyData.slice(0, 30).forEach(row => {
+                    if (row.numbers[p] !== undefined) {
+                        count[row.numbers[p]]++;
+                    }
+                });
+                
+                const maxCount = Math.max(...Object.values(count));
+                
+                html += `<div class="pos-section">
+                    <div class="pos-header">${POSITIONS[p]} <span>最近30期出现次数</span></div>
+                    <div class="freq-grid">`;
+                
+                for (let i = 0; i <= 9; i++) {
+                    const pct = maxCount > 0 ? (count[i] / maxCount * 100) : 0;
+                    html += `<div class="freq-item">
+                        <div class="freq-num">${i}</div>
+                        <div class="freq-bar"><div class="freq-bar-inner" style="width:${pct}%"></div></div>
+                        <div class="freq-label">${count[i]}次</div>
+                    </div>`;
+                }
+                
+                html += '</div></div>';
+            }
+            
+            container.innerHTML = html;
+        }
+        
+        function renderOmit() {
+            const container = document.getElementById('omit-container');
+            const omit = [];
+            
+            for (let p = 0; p < 3; p++) {
+                omit[p] = {};
+                for (let i = 0; i <= 9; i++) {
+                    omit[p][i] = null;
+                }
+            }
+            
+            for (let i = 0; i < historyData.length; i++) {
+                const row = historyData[i];
+                for (let p = 0; p < 3; p++) {
+                    const num = row.numbers[p];
+                    if (omit[p][num] === null) {
+                        omit[p][num] = i;
+                    }
+                }
+            }
+            
+            for (let p = 0; p < 3; p++) {
+                for (let i = 0; i <= 9; i++) {
+                    if (omit[p][i] === null) {
+                        omit[p][i] = historyData.length;
+                    }
+                }
+            }
+            
+            let html = '';
+            for (let p = 0; p < 3; p++) {
+                html += `<div class="pos-section">
+                    <div class="pos-header">${POSITIONS[p]} <span>当前遗漏期数</span></div>
+                    <div class="omit-grid">`;
+                
+                for (let i = 0; i <= 9; i++) {
+                    html += `<div class="omit-item">
+                        <div class="omit-num">${i}</div>
+                        <div class="omit-label">${omit[p][i]}期</div>
+                    </div>`;
+                }
+                
+                html += '</div></div>';
+            }
+            
+            container.innerHTML = html;
+        }
+        
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>方案详情</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 44px;
+        }
+        
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .nav-title {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        
+        /* 方案状态区域 */
+        .status-section {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .status-left {
+            flex: 1;
+        }
+        
+        .status-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .status-title::after {
+            content: '>';
+            margin-left: 5px;
+            color: #999;
+            font-size: 18px;
+        }
+        
+        .bonus {
+            color: #e74c3c;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .qr-section {
+            text-align: center;
+        }
+        
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            position: relative;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .qr-code img {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .qr-text {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        /* 验证区域 */
+        .verify-section {
+            background: #fff;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .verify-left {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .verify-left .verified {
+            color: #7cb342;
+            font-weight: 500;
+        }
+        
+        .verify-right {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        /* 竞彩区域 */
+        .lottery-section {
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .lottery-header {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .lottery-type {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .lottery-type::before {
+            content: '☰';
+            margin-right: 8px;
+            color: #999;
+        }
+        
+        .lottery-info {
+            font-size: 14px;
+            color: #e74c3c;
+        }
+        
+        .match-list {
+            padding: 0 15px;
+        }
+        
+        .match-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #f5f5f5;
+            position: relative;
+        }
+        
+        .match-item:last-child {
+            border-bottom: none;
+        }
+        
+        .match-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .match-no {
+            color: #999;
+            font-size: 14px;
+            margin-right: 15px;
+            min-width: 40px;
+        }
+        
+        .match-teams {
+            flex: 1;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .match-time {
+            color: #999;
+        }
+        
+        .hong-stamp {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+            transform: rotate(-15deg);
+        }
+        
+        .match-bet {
+            display: flex;
+            align-items: center;
+        }
+        
+        .league {
+            color: #999;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        
+        .bet-options {
+            display: flex;
+            flex: 1;
+            gap: 8px;
+        }
+        
+        .bet-option {
+            flex: 1;
+            padding: 8px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .bet-option.active {
+            background: #e74c3c;
+            color: #fff;
+            border-color: #e74c3c;
+        }
+        
+        .bet-option .odds {
+            display: block;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        
+        /* 模拟拆票 */
+        .split-ticket {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .split-left {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .split-left::before {
+            content: '☰';
+            margin-right: 8px;
+            color: #999;
+        }
+        
+        .split-arrow {
+            color: #ccc;
+            font-size: 18px;
+        }
+        
+        /* 方案信息 */
+        .plan-info {
+            background: #fff;
+            padding: 15px;
+        }
+        
+        .plan-no {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .tips {
+            font-size: 13px;
+            color: #999;
+            line-height: 1.6;
+        }
+        
+        .tips-title {
+            color: #e74c3c;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="#" class="back-btn">&lt;</a>
+        <span class="nav-title">方案详情</span>
+    </div>
+    
+    <!-- 方案状态 -->
+    <div class="status-section">
+        <div class="status-left">
+            <div class="status-title">方案已完成</div>
+            <div class="bonus">奖金299.4</div>
+        </div>
+        <div class="qr-section">
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=2828849595969969797" alt="二维码">
+            </div>
+            <div class="qr-text">扫码验票</div>
+        </div>
+    </div>
+    
+    <!-- 验证区域 -->
+    <div class="verify-section">
+        <div class="verify-left">
+            已验证<span class="verified">赛果</span>
+        </div>
+        <div class="verify-right">扫码验票</div>
+    </div>
+    
+    <!-- 竞彩足球 -->
+    <div class="lottery-section">
+        <div class="lottery-header">
+            <div class="lottery-type">竞彩足球胜平负(2串1)</div>
+            <div class="lottery-info">2场1票10倍20元</div>
+        </div>
+        <div class="match-list">
+            <!-- 比赛1 -->
+            <div class="match-item">
+                <div class="hong-stamp">红</div>
+                <div class="match-header">
+                    <span class="match-no">4001</span>
+                    <span class="match-teams">穆拜征服 <span class="match-time">01/29 23:00</span> 吉达联合</span>
+                </div>
+                <div class="match-bet">
+                    <span class="league">沙职</span>
+                    <div class="bet-options">
+                        <div class="bet-option active">胜<span class="odds">5.65</span></div>
+                        <div class="bet-option">平</div>
+                        <div class="bet-option">负</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 比赛2 -->
+            <div class="match-item">
+                <div class="match-header">
+                    <span class="match-no">4002</span>
+                    <span class="match-teams">胡巴卡德 <span class="match-time">01/30 01:30</span> 利雅新月</span>
+                </div>
+                <div class="match-bet">
+                    <span class="league">沙职</span>
+                    <div class="bet-options">
+                        <div class="bet-option active">胜<span class="odds">2.65</span></div>
+                        <div class="bet-option">平</div>
+                        <div class="bet-option">负</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 模拟拆票 -->
+    <div class="split-ticket">
+        <div class="split-left">模拟拆票</div>
+        <div class="split-arrow">&gt;</div>
+    </div>
+    
+    <!-- 方案信息 -->
+    <div class="plan-info">
+        <div class="plan-no">方案编号：2828849595969969797</div>
+        <div class="tips">
+            <div class="tips-title">温馨提示：</div>
+            本方案为模拟试玩方案，仅用于验证赛果（保存期限为90天），非线上购彩！
+        </div>
+    </div>
+</body>
+</html>
