@@ -33,6 +33,11 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Copy data files
+        run: |
+          mkdir -p dist/data
+          cp -r data/*.json dist/data/
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
