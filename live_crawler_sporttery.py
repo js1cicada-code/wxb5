@@ -31,7 +31,7 @@ import json
 import os
 import urllib.request
 import ssl
-from datetime import datetime
+from datetime import datetime, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -136,8 +136,20 @@ def parse_match_data(data):
     matches = []
     now = datetime.now()
     
+    # 计算5天的日期范围：前天、昨天、今天、明天、后天
+    today = now.date()
+    date_range = []
+    for i in range(-2, 3):  # -2, -1, 0, 1, 2
+        d = today + timedelta(days=i)
+        date_range.append(d.strftime('%Y-%m-%d'))
+    
     for day_match in data['value'].get('matchInfoList', []):
         match_date = day_match.get('matchDate', '')
+        
+        # 只保留5天内的数据
+        if match_date not in date_range:
+            continue
+            
         for match in day_match.get('subMatchList', []):
             match_status = str(match.get('matchStatus', ''))
             
@@ -238,7 +250,20 @@ def parse_basketball_data(data):
     matches = []
     now = datetime.now()
     
+    # 计算5天的日期范围：前天、昨天、今天、明天、后天
+    today = now.date()
+    date_range = []
+    for i in range(-2, 3):  # -2, -1, 0, 1, 2
+        d = today + timedelta(days=i)
+        date_range.append(d.strftime('%Y-%m-%d'))
+    
     for day_match in data['value'].get('matchInfoList', []):
+        match_date = day_match.get('matchDate', '')
+        
+        # 只保留5天内的数据
+        if match_date not in date_range:
+            continue
+            
         for match in day_match.get('subMatchList', []):
             match_status = str(match.get('matchStatus', ''))
             
