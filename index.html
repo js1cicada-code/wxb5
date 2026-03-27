@@ -127,6 +127,21 @@
             color: var(--text-muted);
         }
         
+        .lottery-desc.loading {
+            color: transparent;
+            background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 4px;
+            min-width: 60px;
+            min-height: 16px;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
         .lottery-badge {
             font-size: 10px;
             padding: 2px 6px;
@@ -216,7 +231,7 @@
                     <div class="lottery-icon">📺</div>
                     <div class="lottery-info">
                         <div class="lottery-name">比分直播</div>
-                        <div class="lottery-desc" id="live-count">实时比分</div>
+                        <div class="lottery-desc loading" id="live-count"></div>
                     </div>
                 </div>
             </div>
@@ -229,28 +244,28 @@
                     <div class="lottery-icon">⚽</div>
                     <div class="lottery-info">
                         <div class="lottery-name">竞彩足球</div>
-                        <div class="lottery-desc" id="football-count">加载中...</div>
+                        <div class="lottery-desc loading" id="football-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card basketball" onclick="goTo('basketball.html')">
                     <div class="lottery-icon">🏀</div>
                     <div class="lottery-info">
                         <div class="lottery-name">竞彩篮球</div>
-                        <div class="lottery-desc" id="basketball-count">加载中...</div>
+                        <div class="lottery-desc loading" id="basketball-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card bjdc" onclick="goTo('bjdc.html')">
                     <div class="lottery-icon">⚡</div>
                     <div class="lottery-info">
                         <div class="lottery-name">北京单场</div>
-                        <div class="lottery-desc" id="bjdc-count">加载中...</div>
+                        <div class="lottery-desc loading" id="bjdc-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card sggg" onclick="goTo('sggg.html')">
                     <div class="lottery-icon">🎁</div>
                     <div class="lottery-info">
                         <div class="lottery-name">胜负过关</div>
-                        <div class="lottery-desc" id="sggg-count">加载中...</div>
+                        <div class="lottery-desc loading" id="sggg-count"></div>
                     </div>
                 </div>
             </div>
@@ -263,28 +278,28 @@
                     <div class="lottery-icon">🏆</div>
                     <div class="lottery-info">
                         <div class="lottery-name">胜负彩14场</div>
-                        <div class="lottery-desc" id="ctzc-count">加载中...</div>
+                        <div class="lottery-desc loading" id="ctzc-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card rx9" onclick="goTo('rx9.html')">
                     <div class="lottery-icon">9️⃣</div>
                     <div class="lottery-info">
                         <div class="lottery-name">任选9场</div>
-                        <div class="lottery-desc" id="rx9-count">加载中...</div>
+                        <div class="lottery-desc loading" id="rx9-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card bqc" onclick="goTo('bqc6.html')">
                     <div class="lottery-icon">⏱️</div>
                     <div class="lottery-info">
                         <div class="lottery-name">6场半全场</div>
-                        <div class="lottery-desc" id="bqc-count">加载中...</div>
+                        <div class="lottery-desc loading" id="bqc-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card zjq" onclick="goTo('zjq4.html')">
                     <div class="lottery-icon">⚽</div>
                     <div class="lottery-info">
                         <div class="lottery-name">4场总进球</div>
-                        <div class="lottery-desc" id="zjq-count">加载中...</div>
+                        <div class="lottery-desc loading" id="zjq-count"></div>
                     </div>
                 </div>
             </div>
@@ -297,28 +312,28 @@
                     <div class="lottery-icon">🎱</div>
                     <div class="lottery-info">
                         <div class="lottery-name">大乐透</div>
-                        <div class="lottery-desc" id="dlt-count">加载中...</div>
+                        <div class="lottery-desc loading" id="dlt-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card qxc" onclick="goTo('qxc.html')">
                     <div class="lottery-icon">🎲</div>
                     <div class="lottery-info">
                         <div class="lottery-name">七星彩</div>
-                        <div class="lottery-desc" id="qxc-count">加载中...</div>
+                        <div class="lottery-desc loading" id="qxc-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card pls" onclick="goTo('pls.html')">
                     <div class="lottery-icon">7️⃣</div>
                     <div class="lottery-info">
                         <div class="lottery-name">排列三</div>
-                        <div class="lottery-desc" id="pls-count">今日开奖</div>
+                        <div class="lottery-desc loading" id="pls-count"></div>
                     </div>
                 </div>
                 <div class="lottery-card plw" onclick="goTo('plw.html')">
                     <div class="lottery-icon">5️⃣</div>
                     <div class="lottery-info">
                         <div class="lottery-name">排列五</div>
-                        <div class="lottery-desc" id="plw-count">今日开奖</div>
+                        <div class="lottery-desc loading" id="plw-count"></div>
                     </div>
                 </div>
             </div>
@@ -416,6 +431,14 @@
             const dayMap = { '周一': 1, '周二': 2, '周三': 3, '周四': 4, '周五': 5, '周六': 6, '周日': 7 };
             const todayOfWeek = new Date().getDay() || 7;
             
+            function setText(id, text) {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.textContent = text;
+                    el.classList.remove('loading');
+                }
+            }
+            
             // 比分直播
             try {
                 const liveRes = await fetch('data/live_data.json?t=' + Date.now());
@@ -423,14 +446,14 @@
                 const liveCount = liveData.live || 0;
                 const totalCount = liveData.total || 0;
                 if (liveCount > 0) {
-                    document.getElementById('live-count').textContent = `${liveCount}场进行中`;
+                    setText('live-count', `${liveCount}场进行中`);
                 } else if (totalCount > 0) {
-                    document.getElementById('live-count').textContent = `今日${totalCount}场`;
+                    setText('live-count', `今日${totalCount}场`);
                 } else {
-                    document.getElementById('live-count').textContent = '暂无赛事';
+                    setText('live-count', '暂无赛事');
                 }
             } catch(e) {
-                document.getElementById('live-count').textContent = '实时比分';
+                setText('live-count', '实时比分');
             }
             
             // 竞彩足球 - 从API获取
@@ -479,14 +502,14 @@
                 }
                 
                 if (totalMatches === 0) {
-                    document.getElementById('football-count').textContent = '暂无赛事';
+                    setText('football-count', '暂无赛事');
                 } else if (footballCount === 0) {
-                    document.getElementById('football-count').textContent = '已停售';
+                    setText('football-count', '已停售');
                 } else {
-                    document.getElementById('football-count').textContent = `可选 ${footballCount} 场`;
+                    setText('football-count', `可选 ${footballCount} 场`);
                 }
             } catch(e) {
-                document.getElementById('football-count').textContent = '暂无赛事';
+                setText('football-count', '暂无赛事');
             }
             
             // 竞彩篮球
@@ -530,14 +553,14 @@
                 }
                 
                 if (totalMatches === 0) {
-                    document.getElementById('basketball-count').textContent = '暂无赛事';
+                    setText('basketball-count', '暂无赛事');
                 } else if (basketballCount === 0) {
-                    document.getElementById('basketball-count').textContent = '已停售';
+                    setText('basketball-count', '已停售');
                 } else {
-                    document.getElementById('basketball-count').textContent = `可选 ${basketballCount} 场`;
+                    setText('basketball-count', `可选 ${basketballCount} 场`);
                 }
             } catch(e) {
-                document.getElementById('basketball-count').textContent = '暂无赛事';
+                setText('basketball-count', '暂无赛事');
             }
             
             // 北京单场
@@ -556,14 +579,14 @@
                 }
                 
                 if (totalMatches === 0) {
-                    document.getElementById('bjdc-count').textContent = '暂无赛事';
+                    setText('bjdc-count', '暂无赛事');
                 } else if (bjdcCount === 0) {
-                    document.getElementById('bjdc-count').textContent = '已停售';
+                    setText('bjdc-count', '已停售');
                 } else {
-                    document.getElementById('bjdc-count').textContent = `可选 ${bjdcCount} 场`;
+                    setText('bjdc-count', `可选 ${bjdcCount} 场`);
                 }
             } catch(e) {
-                document.getElementById('bjdc-count').textContent = '暂无赛事';
+                setText('bjdc-count', '暂无赛事');
             }
             
             // 胜负过关
@@ -582,14 +605,14 @@
                 }
                 
                 if (totalMatches === 0) {
-                    document.getElementById('sggg-count').textContent = '暂无赛事';
+                    setText('sggg-count', '暂无赛事');
                 } else if (sgggCount === 0) {
-                    document.getElementById('sggg-count').textContent = '已停售';
+                    setText('sggg-count', '已停售');
                 } else {
-                    document.getElementById('sggg-count').textContent = `可选 ${sgggCount} 场`;
+                    setText('sggg-count', `可选 ${sgggCount} 场`);
                 }
             } catch(e) {
-                document.getElementById('sggg-count').textContent = '暂无赛事';
+                setText('sggg-count', '暂无赛事');
             }
             
             // 传统足彩14场
@@ -602,12 +625,12 @@
                     document.getElementById('ctzc-count').textContent = deadlineText;
                     document.getElementById('rx9-count').textContent = deadlineText;
                 } else {
-                    document.getElementById('ctzc-count').textContent = '已停售';
-                    document.getElementById('rx9-count').textContent = '已停售';
+                    setText('ctzc-count', '已停售');
+                    setText('rx9-count', '已停售');
                 }
             } catch(e) {
-                document.getElementById('ctzc-count').textContent = '暂无数据';
-                document.getElementById('rx9-count').textContent = '暂无数据';
+                setText('ctzc-count', '暂无数据');
+                setText('rx9-count', '暂无数据');
             }
             
             // 6场半全场
@@ -619,10 +642,10 @@
                     const deadlineText = getDeadlineText(activePeriod.deadline);
                     document.getElementById('bqc-count').textContent = deadlineText;
                 } else {
-                    document.getElementById('bqc-count').textContent = '已停售';
+                    setText('bqc-count', '已停售');
                 }
             } catch(e) {
-                document.getElementById('bqc-count').textContent = '暂无数据';
+                setText('bqc-count', '暂无数据');
             }
             
             // 4场总进球
@@ -634,10 +657,10 @@
                     const deadlineText = getDeadlineText(activePeriod.deadline);
                     document.getElementById('zjq-count').textContent = deadlineText;
                 } else {
-                    document.getElementById('zjq-count').textContent = '已停售';
+                    setText('zjq-count', '已停售');
                 }
             } catch(e) {
-                document.getElementById('zjq-count').textContent = '暂无数据';
+                setText('zjq-count', '暂无数据');
             }
             
             // 大乐透 - 周一、三、六开奖
@@ -654,7 +677,7 @@
                 }
                 document.getElementById('dlt-count').textContent = getWeekdayText(nextDay);
             } catch(e) {
-                document.getElementById('dlt-count').textContent = '暂无数据';
+                setText('dlt-count', '暂无数据');
             }
             
             // 七星彩 - 周二、五、日开奖
@@ -671,13 +694,13 @@
                 }
                 document.getElementById('qxc-count').textContent = getWeekdayText(nextDay);
             } catch(e) {
-                document.getElementById('qxc-count').textContent = '暂无数据';
+                setText('qxc-count', '暂无数据');
             }
         }
         
         loadCounts();
         
-        document.getElementById('update-time').textContent = '数据更新时间：' + new Date().toLocaleString('zh-CN', {
+        setText('update-time', '数据更新时间：') + new Date().toLocaleString('zh-CN', {
             month: '2-digit',
             day: '2-digit',
             hour: '2-digit',
