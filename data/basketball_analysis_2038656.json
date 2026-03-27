@@ -1,22 +1,94 @@
 {
   "matchId": 2038656,
-  "updateTime": "2026-03-28 01:18:07",
+  "updateTime": "2026-03-28 01:28:52",
   "home": "波士顿凯尔特人",
   "away": "亚特兰大老鹰",
   "league": "美职篮",
   "homeRank": "[美职篮2]",
   "awayRank": "[美职篮5]",
   "homeStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "72",
+      "wins": "41",
+      "losses": "31",
+      "pointsFor": "118.6",
+      "pointsAgainst": "116.7",
+      "pointDiff": "1.9",
+      "rank": "0",
+      "winRate": "56.9%"
+    },
+    "home": {
+      "games": "37",
+      "wins": "21",
+      "losses": "16",
+      "pointsFor": "118.0",
+      "pointsAgainst": "114.8",
+      "pointDiff": "3.2",
+      "rank": "0",
+      "winRate": "56.8%"
+    },
+    "away": {
+      "games": "35",
+      "wins": "20",
+      "losses": "15",
+      "pointsFor": "119.2",
+      "pointsAgainst": "118.6",
+      "pointDiff": "0.6",
+      "rank": "0",
+      "winRate": "57.1%"
+    },
+    "recent10": {
+      "games": "0",
+      "wins": "0",
+      "losses": "0",
+      "pointsFor": "0.0",
+      "pointsAgainst": "0.0",
+      "pointDiff": "0.0",
+      "rank": "",
+      "winRate": "0.0%"
+    }
   },
   "awayStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "72",
+      "wins": "48",
+      "losses": "24",
+      "pointsFor": "114.2",
+      "pointsAgainst": "107.0",
+      "pointDiff": "7.2",
+      "rank": "0",
+      "winRate": "66.7%"
+    },
+    "home": {
+      "games": "36",
+      "wins": "25",
+      "losses": "11",
+      "pointsFor": "114.3",
+      "pointsAgainst": "107.1",
+      "pointDiff": "7.2",
+      "rank": "0",
+      "winRate": "69.4%"
+    },
+    "away": {
+      "games": "36",
+      "wins": "23",
+      "losses": "13",
+      "pointsFor": "114.1",
+      "pointsAgainst": "106.9",
+      "pointDiff": "7.2",
+      "rank": "0",
+      "winRate": "63.9%"
+    },
+    "recent10": {
+      "games": "0",
+      "wins": "0",
+      "losses": "0",
+      "pointsFor": "0.0",
+      "pointsAgainst": "0.0",
+      "pointDiff": "0.0",
+      "rank": "",
+      "winRate": "0.0%"
+    }
   },
   "odds": {
     "sf": {
@@ -34,12 +106,370 @@
       "under": "1.74"
     }
   },
-  "h2h": null,
-  "homeRecent": null,
-  "awayRecent": null,
+  "h2h": {
+    "summary": "近10次交战：5胜5负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-01-29",
+        "away": "亚特兰大老鹰",
+        "score": "117-106 [223]",
+        "home": "波士顿凯尔特人",
+        "result": "负",
+        "diff": "-11"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-01-18",
+        "away": "波士顿凯尔特人",
+        "score": "132-106 [238]",
+        "home": "亚特兰大老鹰",
+        "result": "胜",
+        "diff": "26"
+      },
+      {
+        "league": "NBA",
+        "date": "2025-01-19",
+        "away": "亚特兰大老鹰",
+        "score": "119-115 [234]",
+        "home": "波士顿凯尔特人",
+        "result": "负",
+        "diff": "-4"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-11-13",
+        "away": "亚特兰大老鹰",
+        "score": "117-116 [233]",
+        "home": "波士顿凯尔特人",
+        "result": "负",
+        "diff": "-1"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-11-05",
+        "away": "波士顿凯尔特人",
+        "score": "123-93   [216]",
+        "home": "亚特兰大老鹰",
+        "result": "胜",
+        "diff": "30"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-03-29",
+        "away": "波士顿凯尔特人",
+        "score": "122-123 [245]",
+        "home": "亚特兰大老鹰",
+        "result": "负",
+        "diff": "-1"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-03-26",
+        "away": "波士顿凯尔特人",
+        "score": "118-120 [238]",
+        "home": "亚特兰大老鹰",
+        "result": "负",
+        "diff": "-2"
+      },
+      {
+        "league": "NBA",
+        "date": "2024-02-08",
+        "away": "亚特兰大老鹰",
+        "score": "117-125 [242]",
+        "home": "波士顿凯尔特人",
+        "result": "胜",
+        "diff": "8"
+      },
+      {
+        "league": "NBA",
+        "date": "2023-11-27",
+        "away": "亚特兰大老鹰",
+        "score": "103-113 [216]",
+        "home": "波士顿凯尔特人",
+        "result": "胜",
+        "diff": "10"
+      },
+      {
+        "league": "NBA",
+        "date": "2023-04-28",
+        "away": "波士顿凯尔特人",
+        "score": "128-120 [248]",
+        "home": "亚特兰大老鹰",
+        "result": "胜",
+        "diff": "8"
+      }
+    ]
+  },
+  "homeRecent": {
+    "summary": "近10场：7胜3负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-03-26",
+        "opponent": "雷霆",
+        "score": "109-119",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-23",
+        "opponent": "森林狼",
+        "score": "102-92",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-21",
+        "opponent": "灰熊",
+        "score": "117-112",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-19",
+        "opponent": "勇士",
+        "score": "99-120",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-17",
+        "opponent": "太阳",
+        "score": "112-120",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-15",
+        "opponent": "奇才",
+        "score": "100-111",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-13",
+        "opponent": "雷霆",
+        "score": "102-104",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-11",
+        "opponent": "马刺",
+        "score": "116-125",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-09",
+        "opponent": "骑士",
+        "score": "109-98",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-07",
+        "opponent": "独行侠",
+        "score": "100-120",
+        "result": "胜"
+      }
+    ]
+  },
+  "awayRecent": {
+    "summary": "近10场：9胜1负",
+    "matches": [
+      {
+        "league": "NBA",
+        "date": "2026-03-26",
+        "opponent": "活塞",
+        "score": "130-129",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-24",
+        "opponent": "灰熊",
+        "score": "107-146",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-22",
+        "opponent": "勇士",
+        "score": "110-126",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-21",
+        "opponent": "火箭",
+        "score": "95-117",
+        "result": "负"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-19",
+        "opponent": "独行侠",
+        "score": "135-120",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-17",
+        "opponent": "魔术",
+        "score": "112-124",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-15",
+        "opponent": "雄鹿",
+        "score": "99-122",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-13",
+        "opponent": "篮网",
+        "score": "97-108",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-11",
+        "opponent": "独行侠",
+        "score": "112-124",
+        "result": "胜"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-08",
+        "opponent": "76人",
+        "score": "116-125",
+        "result": "胜"
+      }
+    ]
+  },
   "leagueRanking": null,
-  "handicapComparison": null,
-  "futureMatches": null,
+  "handicapComparison": {
+    "home": {
+      "total": {
+        "games": "72",
+        "winHandicap": "41",
+        "loseHandicap": "31",
+        "winRate": "56.9%",
+        "bigBall": "26",
+        "smallBall": "46",
+        "bigBallRate": "36.1%"
+      },
+      "away": {
+        "games": "36",
+        "winHandicap": "23",
+        "loseHandicap": "13",
+        "winRate": "63.9%",
+        "bigBall": "12",
+        "smallBall": "24",
+        "bigBallRate": "33.3%"
+      }
+    },
+    "away": {
+      "total": {
+        "games": "72",
+        "winHandicap": "40",
+        "loseHandicap": "32",
+        "winRate": "55.6%",
+        "bigBall": "36",
+        "smallBall": "36",
+        "bigBallRate": "50.0%"
+      },
+      "away": {
+        "games": "35",
+        "winHandicap": "21",
+        "loseHandicap": "14",
+        "winRate": "60.0%",
+        "bigBall": "21",
+        "smallBall": "14",
+        "bigBallRate": "60.0%"
+      }
+    }
+  },
+  "futureMatches": {
+    "home": [
+      {
+        "league": "NBA",
+        "date": "2026-03-30",
+        "homeAway": "客",
+        "opponent": "凯尔特人黄蜂VS",
+        "daysApart": "2天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-31",
+        "homeAway": "客",
+        "opponent": "凯尔特人老鹰VS",
+        "daysApart": "3天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-02",
+        "homeAway": "客",
+        "opponent": "凯尔特人热火VS",
+        "daysApart": "5天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-04",
+        "homeAway": "客",
+        "opponent": "凯尔特人雄鹿VS",
+        "daysApart": "7天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-06",
+        "homeAway": "主",
+        "opponent": "猛龙凯尔特人VS",
+        "daysApart": "9天"
+      }
+    ],
+    "away": [
+      {
+        "league": "NBA",
+        "date": "2026-03-29",
+        "homeAway": "主",
+        "opponent": "国王老鹰VS",
+        "daysApart": "1天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-03-31",
+        "homeAway": "主",
+        "opponent": "凯尔特人老鹰VS",
+        "daysApart": "3天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-02",
+        "homeAway": "客",
+        "opponent": "老鹰魔术VS",
+        "daysApart": "5天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-04",
+        "homeAway": "客",
+        "opponent": "老鹰篮网VS",
+        "daysApart": "7天"
+      },
+      {
+        "league": "NBA",
+        "date": "2026-04-07",
+        "homeAway": "主",
+        "opponent": "尼克斯老鹰VS",
+        "daysApart": "10天"
+      }
+    ]
+  },
   "ouzhi": null,
   "rangfen": null,
   "zongfen": null

@@ -834,20 +834,14 @@
                                 
                                 const matchNumStr = match.matchNumStr || '';
                                 const dayMap = { '周一': 1, '周二': 2, '周三': 3, '周四': 4, '周五': 5, '周六': 6, '周日': 7 };
-                                let matchDayOfWeek = 1;
+                                let matchDayOfWeek = 0;
                                 for (const [day, num] of Object.entries(dayMap)) {
                                     if (matchNumStr.startsWith(day)) {
                                         matchDayOfWeek = num;
                                         break;
                                     }
                                 }
-                                const today = new Date().getDay() || 7;
-                                const isToday = matchDayOfWeek === today;
-                                const isSelling = isSellingTime();
-                                
-                                if (isToday && !isSelling) {
-                                    return;
-                                }
+                                item.dayOfWeek = matchDayOfWeek;
                                 
                                 matchData.push(item);
                                 matchDataMap.set(item.id, item);
@@ -872,10 +866,8 @@
         
         function isSellingTime() {
             const now = new Date();
-            const day = now.getDay();
+            const day = now.getDay() || 7;
             const hour = now.getHours();
-            // 周一至周五: 11:00 - 22:00
-            // 周六日: 11:00 - 23:00
             if (day === 0 || day === 6) {
                 return hour >= 11 && hour < 23;
             } else {
@@ -885,6 +877,28 @@
         
         function getSellingStatus() {
             return isSellingTime() ? '销售中' : '已停售';
+        }
+        
+        function isBeforeSellingTime() {
+            const now = new Date();
+            const day = now.getDay() || 7;
+            const hour = now.getHours();
+            if (day === 0 || day === 6) {
+                return hour < 11;
+            } else {
+                return hour < 11;
+            }
+        }
+        
+        function isAfterSellingTime() {
+            const now = new Date();
+            const day = now.getDay() || 7;
+            const hour = now.getHours();
+            if (day === 0 || day === 6) {
+                return hour >= 23;
+            } else {
+                return hour >= 22;
+            }
         }
         
         function getDayClass(matchNumStr) {
@@ -948,23 +962,27 @@
                 return;
             }
             
-            // 过滤：只显示今日和明日的赛事
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            const tomorrow = new Date(today);
-            tomorrow.setDate(tomorrow.getDate() + 1);
+            const todayDayOfWeek = new Date().getDay() || 7;
             
-            const filteredMatches = matchData.filter(m => {
-                const dateStr = m.date || '';
-                // 解析日期格式：2026年3月28日 或 2026-03-28
-                const match = dateStr.match(/(\d{4})[年-](\d{1,2})[月-](\d{1,2})/);
-                if (match) {
-                    const d = new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
-                    d.setHours(0, 0, 0, 0);
-                    return d.getTime() >= today.getTime() && d.getTime() <= tomorrow.getTime();
-                }
-                return true; // 没有日期的也显示
-            });
+            let filteredMatches;
+            if (isSellingTime()) {
+                const tomorrow = todayDayOfWeek === 7 ? 1 : todayDayOfWeek + 1;
+                filteredMatches = matchData.filter(m => {
+                    if (!m.dayOfWeek || m.dayOfWeek === 0) return true;
+                    return m.dayOfWeek === todayDayOfWeek || m.dayOfWeek === tomorrow;
+                });
+            } else if (isBeforeSellingTime()) {
+                filteredMatches = matchData.filter(m => {
+                    if (!m.dayOfWeek || m.dayOfWeek === 0) return true;
+                    return m.dayOfWeek >= todayDayOfWeek;
+                });
+            } else {
+                const tomorrow = todayDayOfWeek === 7 ? 1 : todayDayOfWeek + 1;
+                filteredMatches = matchData.filter(m => {
+                    if (!m.dayOfWeek || m.dayOfWeek === 0) return true;
+                    return m.dayOfWeek >= tomorrow;
+                });
+            }
             
             if (filteredMatches.length === 0) {
                 container.innerHTML = '<div style="text-align:center;padding:60px 20px;color:#9ca3af;font-size:14px;">暂无赛事</div>';
