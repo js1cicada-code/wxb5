@@ -518,20 +518,52 @@
             try {
                 const bjdcRes = await fetch('data/bjdc_data.json?t=' + Date.now());
                 const bjdcData = await bjdcRes.json();
-                const bjdcCount = bjdcData.matches ? bjdcData.matches.length : 0;
-                document.getElementById('bjdc-count').textContent = `可选 ${bjdcCount} 场`;
+                let bjdcCount = 0;
+                const totalMatches = bjdcData.matches ? bjdcData.matches.length : 0;
+                
+                if (bjdcData.matches) {
+                    bjdcData.matches.forEach(m => {
+                        if (m.status === 'selling') {
+                            bjdcCount++;
+                        }
+                    });
+                }
+                
+                if (totalMatches === 0) {
+                    document.getElementById('bjdc-count').textContent = '暂无赛事';
+                } else if (bjdcCount === 0) {
+                    document.getElementById('bjdc-count').textContent = '已停售';
+                } else {
+                    document.getElementById('bjdc-count').textContent = `可选 ${bjdcCount} 场`;
+                }
             } catch(e) {
-                document.getElementById('bjdc-count').textContent = '暂无场次';
+                document.getElementById('bjdc-count').textContent = '暂无赛事';
             }
             
             // 胜负过关
             try {
                 const sgggRes = await fetch('data/sggg_data.json?t=' + Date.now());
                 const sgggData = await sgggRes.json();
-                const sgggCount = sgggData.matches ? sgggData.matches.length : 0;
-                document.getElementById('sggg-count').textContent = `可选 ${sgggCount} 场`;
+                let sgggCount = 0;
+                const totalMatches = sgggData.matches ? sgggData.matches.length : 0;
+                
+                if (sgggData.matches) {
+                    sgggData.matches.forEach(m => {
+                        if (m.state === '销售中') {
+                            sgggCount++;
+                        }
+                    });
+                }
+                
+                if (totalMatches === 0) {
+                    document.getElementById('sggg-count').textContent = '暂无赛事';
+                } else if (sgggCount === 0) {
+                    document.getElementById('sggg-count').textContent = '已停售';
+                } else {
+                    document.getElementById('sggg-count').textContent = `可选 ${sgggCount} 场`;
+                }
             } catch(e) {
-                document.getElementById('sggg-count').textContent = '暂无场次';
+                document.getElementById('sggg-count').textContent = '暂无赛事';
             }
             
             // 传统足彩14场
