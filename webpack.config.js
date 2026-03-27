@@ -6,6 +6,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
+const publicPath = isProduction ? '/wxb5/' : '/';
 
 module.exports = {
   mode: isProduction ? 'production' : 'development',
@@ -17,7 +18,7 @@ module.exports = {
     clean: {
       keep: /\.json$/,
     },
-    publicPath: '/'
+    publicPath: publicPath
   },
   
   module: {

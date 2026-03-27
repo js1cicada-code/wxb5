@@ -1,6 +1,6 @@
 {
   "matchId": 2038650,
-  "updateTime": "2026-03-27 18:27:00",
+  "updateTime": "2026-03-27 18:48:43",
   "home": "波恩",
   "away": "路德维希堡",
   "league": "德篮联",
@@ -1294,9 +1294,9 @@
       {
         "company": "*冠",
         "instant": {
-          "over": "0.87",
+          "over": "0.85",
           "handicap": "165.50",
-          "under": "0.89"
+          "under": "0.91"
         },
         "initial": {
           "over": "0.86",
@@ -1397,6 +1397,19 @@
       }
     },
     "changes": [
+      {
+        "companies": [
+          {
+            "name": "*冠",
+            "handicap": "165.50",
+            "overOdds": "0.85",
+            "overColor": "loss",
+            "underOdds": "0.91",
+            "underColor": "win"
+          }
+        ],
+        "time": "2026-03-27 18:30:39"
+      },
       {
         "companies": [
           {

@@ -1,6 +1,6 @@
 {
   "matchId": 2038663,
-  "updateTime": "2026-03-27 18:27:16",
+  "updateTime": "2026-03-27 18:48:59",
   "home": "洛杉矶湖人",
   "away": "布鲁克林篮网",
   "league": "美职篮",
@@ -748,13 +748,13 @@
           "returnRate": "95.84%"
         },
         "instant": {
-          "lose": "10.00",
+          "lose": "10.50",
           "win": "1.06",
-          "loseRate": "9.58%",
-          "winRate": "90.42%",
-          "returnRate": "95.84%"
+          "loseRate": "9.17%",
+          "winRate": "90.83%",
+          "returnRate": "96.28%"
         },
-        "updateTime": "2026-03-27 12:00:48"
+        "updateTime": "2026-03-27 18:36:07"
       },
       {
         "company": "8*8S***t",
@@ -784,13 +784,13 @@
           "returnRate": "90.72%"
         },
         "instant": {
-          "lose": "12.00",
+          "lose": "11.50",
           "win": "1.08",
-          "loseRate": "8.26%",
-          "winRate": "91.74%",
-          "returnRate": "99.08%"
+          "loseRate": "8.59%",
+          "winRate": "91.41%",
+          "returnRate": "98.73%"
         },
-        "updateTime": "2026-03-27 18:17:21"
+        "updateTime": "2026-03-27 18:40:04"
       }
     ],
     "summary": {
@@ -803,11 +803,11 @@
           "returnRate": "98.56%"
         },
         "instant": {
-          "lose": "12.00",
+          "lose": "11.50",
           "win": "1.08",
           "loseRate": "12.24%",
-          "winRate": "91.74%",
-          "returnRate": "99.08%"
+          "winRate": "91.41%",
+          "returnRate": "98.73%"
         }
       },
       "最低值": {
@@ -821,7 +821,7 @@
         "instant": {
           "lose": "7.60",
           "win": "1.04",
-          "loseRate": "8.26%",
+          "loseRate": "8.59%",
           "winRate": "87.76%",
           "returnRate": "92.82%"
         }
@@ -1287,9 +1287,9 @@
       {
         "company": "I***rw**t*n",
         "instant": {
-          "over": "0.80",
-          "handicap": "221.50",
-          "under": "0.90"
+          "over": "0.85",
+          "handicap": "222.50",
+          "under": "0.85"
         },
         "initial": {
           "over": "0.80",
@@ -1300,9 +1300,9 @@
       {
         "company": "*冠",
         "instant": {
-          "over": "0.94",
+          "over": "0.88",
           "handicap": "222.50",
-          "under": "0.90"
+          "under": "0.96"
         },
         "initial": {
           "over": "0.90",
@@ -1313,9 +1313,9 @@
       {
         "company": "易*博",
         "instant": {
-          "over": "0.94",
+          "over": "0.88",
           "handicap": "222.50",
-          "under": "0.89"
+          "under": "0.95"
         },
         "initial": {
           "over": "0.86",
@@ -1352,9 +1352,9 @@
       {
         "company": "利*",
         "instant": {
-          "over": "0.88",
+          "over": "0.85",
           "handicap": "221.50",
-          "under": "0.98"
+          "under": "1.01"
         },
         "initial": {
           "over": "0.93",
@@ -1379,9 +1379,9 @@
     "summary": {
       "最大值": {
         "instant": {
-          "over": "0.94",
+          "over": "0.91",
           "handicap": "222.50",
-          "under": "0.98"
+          "under": "1.01"
         },
         "initial": {
           "over": "0.93",
@@ -1391,9 +1391,9 @@
       },
       "最小值": {
         "instant": {
-          "over": "0.80",
+          "over": "0.85",
           "handicap": "221.50",
-          "under": "0.86"
+          "under": "0.85"
         },
         "initial": {
           "over": "0.80",
@@ -1403,6 +1403,27 @@
       }
     },
     "changes": [
+      {
+        "companies": [
+          {
+            "name": "易*博",
+            "handicap": "222.50",
+            "overOdds": "0.88",
+            "overColor": "loss",
+            "underOdds": "0.95",
+            "underColor": "win"
+          },
+          {
+            "name": "*冠",
+            "handicap": "222.50",
+            "overOdds": "0.88",
+            "overColor": "loss",
+            "underOdds": "0.96",
+            "underColor": "win"
+          }
+        ],
+        "time": "2026-03-27 18:36:02"
+      },
       {
         "companies": [
           {
