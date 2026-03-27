@@ -1,0 +1,36 @@
+name: Update Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # 每30分钟运行一次
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests playwright
+          python -m playwright install chromium
+      
+      - name: Run crawlers
+        run: |
+          python live_crawler_final.py
+          python live_basketball_crawler.py
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ dist/data/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update data"
+          git push
