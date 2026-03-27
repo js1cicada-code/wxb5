@@ -1,6 +1,6 @@
 {
   "matchId": 2038663,
-  "updateTime": "2026-03-27 18:48:59",
+  "updateTime": "2026-03-27 18:59:50",
   "home": "洛杉矶湖人",
   "away": "布鲁克林篮网",
   "league": "美职篮",
@@ -640,13 +640,13 @@
           "returnRate": "94.20%"
         },
         "instant": {
-          "lose": "9.50",
-          "win": "1.05",
-          "loseRate": "9.95%",
-          "winRate": "90.05%",
-          "returnRate": "94.55%"
+          "lose": "10.00",
+          "win": "1.04",
+          "loseRate": "9.42%",
+          "winRate": "90.58%",
+          "returnRate": "94.20%"
         },
-        "updateTime": "2026-03-27 17:52:24"
+        "updateTime": "2026-03-27 18:51:53"
       },
       {
         "company": "Be*****",
@@ -835,11 +835,11 @@
           "returnRate": "94.68%"
         },
         "instant": {
-          "lose": "9.49",
+          "lose": "9.52",
           "win": "1.06",
-          "loseRate": "10.16%",
-          "winRate": "89.84%",
-          "returnRate": "95.33%"
+          "loseRate": "10.13%",
+          "winRate": "89.87%",
+          "returnRate": "95.32%"
         }
       }
     }
@@ -939,10 +939,10 @@
       {
         "company": "易*博",
         "instant": {
-          "guest": "0.89",
-          "handicap": "-16.50",
-          "home": "0.96",
-          "time": "2026-03-27 15:48:52"
+          "guest": "1.05",
+          "handicap": "-15.50",
+          "home": "0.80",
+          "time": "2026-03-27 18:50:06"
         },
         "initial": {
           "guest": "0.85",
@@ -1014,7 +1014,7 @@
         "instant": {
           "guest": "0.85",
           "handicap": "-16.50",
-          "home": "0.82"
+          "home": "0.80"
         },
         "initial": {
           "guest": "0.85",
@@ -1024,6 +1024,17 @@
       }
     },
     "changes": [
+      {
+        "companies": [
+          {
+            "name": "易*博",
+            "handicap": "-15.50",
+            "guestOdds": "1.05",
+            "homeOdds": "0.80"
+          }
+        ],
+        "time": "2026-03-27 18:50:06"
+      },
       {
         "companies": [
           {
@@ -1313,9 +1324,9 @@
       {
         "company": "易*博",
         "instant": {
-          "over": "0.88",
-          "handicap": "222.50",
-          "under": "0.95"
+          "over": "0.99",
+          "handicap": "223.50",
+          "under": "0.84"
         },
         "initial": {
           "over": "0.86",
@@ -1379,8 +1390,8 @@
     "summary": {
       "最大值": {
         "instant": {
-          "over": "0.91",
-          "handicap": "222.50",
+          "over": "0.99",
+          "handicap": "223.50",
           "under": "1.01"
         },
         "initial": {
@@ -1393,7 +1404,7 @@
         "instant": {
           "over": "0.85",
           "handicap": "221.50",
-          "under": "0.85"
+          "under": "0.84"
         },
         "initial": {
           "over": "0.80",
@@ -1403,6 +1414,19 @@
       }
     },
     "changes": [
+      {
+        "companies": [
+          {
+            "name": "易*博",
+            "handicap": "223.50",
+            "overOdds": "0.99",
+            "overColor": "win",
+            "underOdds": "0.84",
+            "underColor": "loss"
+          }
+        ],
+        "time": "2026-03-27 18:51:42"
+      },
       {
         "companies": [
           {
