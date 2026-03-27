@@ -601,6 +601,11 @@ if __name__ == '__main__':
     print(f">>> 支持namitiyu动画: {len([m for m in matches if m.get('namitiyuId')])}场")
     print(f">>> 进行中: {live_count}场, 已结束: {finished_count}场, 未开始: {upcoming_count}场")
     
+    # 如果没有数据，不覆盖现有数据
+    if len(matches) == 0:
+        print("⚠️ 未获取到比赛数据，保持现有数据不变")
+        return
+    
     # 构建输出数据
     output = {
         'updateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
