@@ -604,20 +604,19 @@ if __name__ == '__main__':
     # 如果没有数据，不覆盖现有数据
     if len(matches) == 0:
         print("⚠️ 未获取到比赛数据，保持现有数据不变")
-        return
-    
-    # 构建输出数据
-    output = {
-        'updateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'matches': matches,
-        'total': len(matches),
-        'live': live_count,
-        'upcoming': upcoming_count,
-        'finished': finished_count
-    }
-    
-    # 保存数据
-    save_data(output, 'live_basketball_data.json')
+    else:
+        # 构建输出数据
+        output = {
+            'updateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'matches': matches,
+            'total': len(matches),
+            'live': live_count,
+            'upcoming': upcoming_count,
+            'finished': finished_count
+        }
+        
+        # 保存数据
+        save_data(output, 'live_basketball_data.json')
     
     # 按开售日期统计
     by_date = {}

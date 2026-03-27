@@ -286,9 +286,28 @@ function updateStats(data) {
                 return isPastA ? -1 : 1;
             });
             
+            // 过滤：只显示今日和明日的赛事
+            const todayDate = new Date();
+            todayDate.setHours(0, 0, 0, 0);
+            const tomorrowDate = new Date(todayDate);
+            tomorrowDate.setDate(tomorrowDate.getDate() + 1);
+            
+            const filteredDates = sortedDates.filter(saleDateDisplay => {
+                // 解析日期
+                const match = saleDateDisplay.match(/(\d{4})-(\d{2})-(\d{2})/);
+                if (match) {
+                    const d = new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
+                    d.setHours(0, 0, 0, 0);
+                    // 只保留今天和明天
+                    return d.getTime() >= todayDate.getTime() && d.getTime() <= tomorrowDate.getTime();
+                }
+                // 未知日期也显示
+                return true;
+            });
+            
             let html = '';
             
-            sortedDates.forEach(saleDateDisplay => {
+            filteredDates.forEach(saleDateDisplay => {
                 const matches = bySaleDate[saleDateDisplay];
                 
                 // 统计状态
