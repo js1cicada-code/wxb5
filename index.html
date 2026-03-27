@@ -361,10 +361,8 @@
         
         function isSellingTime() {
             const now = new Date();
-            const day = now.getDay();
+            const day = now.getDay() || 7;
             const hour = now.getHours();
-            // 周一至周五: 11:00 - 22:00
-            // 周六日: 11:00 - 23:00
             if (day === 0 || day === 6) {
                 return hour >= 11 && hour < 23;
             } else {
@@ -372,8 +370,23 @@
             }
         }
         
+        function isBeforeSellingTime() {
+            const hour = new Date().getHours();
+            return hour < 11;
+        }
+        
+        function isAfterSellingTime() {
+            const now = new Date();
+            const day = now.getDay() || 7;
+            const hour = now.getHours();
+            if (day === 0 || day === 6) {
+                return hour >= 23;
+            } else {
+                return hour >= 22;
+            }
+        }
+        
         async function loadCounts() {
-            const isSelling = isSellingTime();
             const dayMap = { '周一': 1, '周二': 2, '周三': 3, '周四': 4, '周五': 5, '周六': 6, '周日': 7 };
             const todayOfWeek = new Date().getDay() || 7;
             
@@ -399,33 +412,39 @@
                 const footballRes = await fetch('https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1');
                 const footballData = await footballRes.json();
                 let footballCount = 0;
-                let hasFutureMatches = false;
                 
                 if (footballData.value && footballData.value.matchInfoList) {
                     footballData.value.matchInfoList.forEach(day => {
                         if (day.subMatchList) {
                             day.subMatchList.forEach(match => {
                                 const matchNumStr = match.matchNumStr || '';
-                                let matchDayOfWeek = 1;
+                                let matchDayOfWeek = 0;
                                 for (const [day, num] of Object.entries(dayMap)) {
                                     if (matchNumStr.startsWith(day)) {
                                         matchDayOfWeek = num;
                                         break;
                                     }
                                 }
-                                const isToday = matchDayOfWeek === todayOfWeek;
                                 
-                                // 如果是今日比赛且已停售，跳过
-                                if (isToday && !isSelling) {
+                                if (!matchDayOfWeek || matchDayOfWeek === 0) {
+                                    footballCount++;
                                     return;
                                 }
                                 
-                                // 如果是未来比赛
-                                if (!isToday) {
-                                    hasFutureMatches = true;
+                                let shouldShow = false;
+                                if (isSellingTime()) {
+                                    const tomorrow = todayOfWeek === 7 ? 1 : todayOfWeek + 1;
+                                    shouldShow = matchDayOfWeek === todayOfWeek || matchDayOfWeek === tomorrow;
+                                } else if (isBeforeSellingTime()) {
+                                    shouldShow = matchDayOfWeek >= todayOfWeek;
+                                } else {
+                                    const tomorrow = todayOfWeek === 7 ? 1 : todayOfWeek + 1;
+                                    shouldShow = matchDayOfWeek >= tomorrow;
                                 }
                                 
-                                footballCount++;
+                                if (shouldShow) {
+                                    footballCount++;
+                                }
                             });
                         }
                     });
@@ -449,21 +468,33 @@
                 if (basketballData.matches) {
                     basketballData.matches.forEach(m => {
                         const matchNumStr = m.matchNumStr || '';
-                        let matchDayOfWeek = 1;
+                        let matchDayOfWeek = 0;
                         for (const [day, num] of Object.entries(dayMap)) {
                             if (matchNumStr.startsWith(day)) {
                                 matchDayOfWeek = num;
                                 break;
                             }
                         }
-                        const isToday = matchDayOfWeek === todayOfWeek;
                         
-                        // 如果是今日比赛且已停售，跳过
-                        if (isToday && !isSelling) {
+                        if (!matchDayOfWeek || matchDayOfWeek === 0) {
+                            basketballCount++;
                             return;
                         }
                         
-                        basketballCount++;
+                        let shouldShow = false;
+                        if (isSellingTime()) {
+                            const tomorrow = todayOfWeek === 7 ? 1 : todayOfWeek + 1;
+                            shouldShow = matchDayOfWeek === todayOfWeek || matchDayOfWeek === tomorrow;
+                        } else if (isBeforeSellingTime()) {
+                            shouldShow = matchDayOfWeek >= todayOfWeek;
+                        } else {
+                            const tomorrow = todayOfWeek === 7 ? 1 : todayOfWeek + 1;
+                            shouldShow = matchDayOfWeek >= tomorrow;
+                        }
+                        
+                        if (shouldShow) {
+                            basketballCount++;
+                        }
                     });
                 }
                 
