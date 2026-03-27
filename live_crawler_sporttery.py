@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-比分直播数据爬虫 - 竞彩网官方API版
+比分直播数据爬虫 - 竞彩网官方API版 + 500.com动画数据
 
-使用竞彩网官方API获取比分直播数据
-API: https://webapi.sporttery.cn/gateway/uniform/fb/getMatchDataPageListV1.qry
+数据源：
+1. 竞彩网官方API - 比赛列表、状态、比分
+2. 500.com - fid（用于动画链接）
+3. namitiyu - 动画ID
 
 状态码说明：
 - 1: 待开售
@@ -20,46 +22,19 @@ API: https://webapi.sporttery.cn/gateway/uniform/fb/getMatchDataPageListV1.qry
 - 11: 已完成
 - 12: 销售取消
 - 13: 暂停兑奖
-
-状态分类：
-- 已结束: 10, 11, 12, 13
-- 进行中: 4, 5, 6, 7, 8, 9
-- 未开始: 1, 2, 3
 """
 
 import json
 import os
+import re
 import urllib.request
 import ssl
 from datetime import datetime, timedelta
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 状态分类
-STATUS_FINISHED = ['10', '11', '12', '13']
-STATUS_LIVE = ['4', '5', '6', '7', '8', '9']
-STATUS_UPCOMING = ['1', '2', '3']
-
 def get_status_category(status, match_date_str, match_time_str):
-    """根据状态码和时间返回状态分类
-    
-    状态码说明:
-    - 1: 待开售 - 未开始
-    - 2: 已开售 - 需要根据时间判断
-    - 3: 暂停销售 - 需要根据时间判断
-    - 4: 未开播 - 未开始
-    - 5: 直播中 - 进行中
-    - 6: 直播结束 - 已结束
-    - 7: 直播暂停 - 进行中
-    - 8: 直播推迟 - 进行中
-    - 9: 直播取消 - 进行中
-    - 10: 待开奖 - 已结束
-    - 11: 已完成 - 已结束
-    - 12: 销售取消 - 已结束
-    - 13: 暂停兑奖 - 已结束
-    """
-    from datetime import datetime, timedelta
-    
+    """根据状态码和时间返回状态分类"""
     # 明确已结束的状态
     if status in ['10', '11', '12', '13']:
         return 'finished'
@@ -75,24 +50,14 @@ def get_status_category(status, match_date_str, match_time_str):
     # 状态 2, 3 需要根据时间判断
     if status in ['2', '3']:
         now = datetime.now()
-        
-        # 解析比赛时间
         if match_date_str and match_time_str:
             try:
-                # match_date_str 格式: "2026-03-28"
-                # match_time_str 格式: "01:00" 或 "01:00:00"
                 time_parts = match_time_str.split(':')
                 hour = int(time_parts[0])
                 minute = int(time_parts[1]) if len(time_parts) > 1 else 0
-                
                 date_parts = match_date_str.split('-')
-                year = int(date_parts[0])
-                month = int(date_parts[1])
-                day = int(date_parts[2])
-                
-                match_dt = datetime(year, month, day, hour, minute)
-                match_end = match_dt + timedelta(minutes=120)  # 比赛结束时间(含补时)
-                
+                match_dt = datetime(int(date_parts[0]), int(date_parts[1]), int(date_parts[2]), hour, minute)
+                match_end = match_dt + timedelta(minutes=120)
                 if now < match_dt:
                     return 'upcoming'
                 elif now < match_end:
@@ -101,8 +66,6 @@ def get_status_category(status, match_date_str, match_time_str):
                     return 'finished'
             except:
                 pass
-        
-        # 无法解析时间，默认未开始
         return 'upcoming'
     
     return 'upcoming'
@@ -136,29 +99,24 @@ def parse_match_data(data):
     matches = []
     now = datetime.now()
     
-    # 计算5天的日期范围：前天、昨天、今天、明天、后天
+    # 计算5天的日期范围
     today = now.date()
     date_range = []
-    for i in range(-2, 3):  # -2, -1, 0, 1, 2
+    for i in range(-2, 3):
         d = today + timedelta(days=i)
         date_range.append(d.strftime('%Y-%m-%d'))
     
     for day_match in data['value'].get('matchInfoList', []):
         match_date = day_match.get('matchDate', '')
-        
-        # 只保留5天内的数据
         if match_date not in date_range:
             continue
             
         for match in day_match.get('subMatchList', []):
             match_status = str(match.get('matchStatus', ''))
-            
-            # 比赛日期和时间
             match_date_str = match.get('matchDate', '')
             match_time_full = match.get('matchTime', '')
             match_time = match_time_full[:5] if match_time_full else ''
             
-            # 根据状态和时间判断比赛状态
             status_category = get_status_category(match_status, match_date_str, match_time_full)
             
             # 解析比分
@@ -173,10 +131,7 @@ def parse_match_data(data):
                 except:
                     pass
             
-            # 半场比分
             half_score = match.get('sectionsNo1', '')
-            
-            # 计算开售日期显示
             sale_date_display = match_date_str if match_date_str else ''
             
             item = {
@@ -200,7 +155,7 @@ def parse_match_data(data):
                 'namitiyuId': ''
             }
             
-            # 如果是直播中，尝试计算分钟数
+            # 如果是直播中，计算分钟数
             if status_category == 'live' and match_date_str and match_time_full:
                 try:
                     time_parts = match_time_full.split(':')
@@ -216,9 +171,90 @@ def parse_match_data(data):
             
             matches.append(item)
     
-    # 按状态排序：进行中 -> 未开始 -> 已结束
     matches.sort(key=lambda x: (x['statusOrder'], x.get('matchNum', '')))
+    return matches
+
+def fetch_500_fid_map():
+    """从500.com获取fid映射（球队名 -> fid）"""
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
     
+    fid_map = {}
+    now = datetime.now()
+    
+    urls = [
+        'https://live.500.com/',
+        f'https://live.500.com/?e={(now - timedelta(days=1)).strftime("%Y-%m-%d")}'
+    ]
+    
+    for url in urls:
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, context=ctx, timeout=30) as response:
+                html = response.read().decode('gb2312', errors='ignore')
+                
+                pattern = r'<tr[^>]*fid=["\']?(\d+)["\']?[^>]*>(.*?)</tr>'
+                rows = re.findall(pattern, html, re.DOTALL | re.IGNORECASE)
+                
+                for fid, row in rows:
+                    team_pattern = r'<a[^>]*href="//liansai\.500\.com/team/\d+/"[^>]*>([^<]+)</a>'
+                    teams = re.findall(team_pattern, row)
+                    
+                    if len(teams) >= 2:
+                        home = teams[0].strip()
+                        away = teams[1].strip()
+                        key = f"{home}_{away}"
+                        fid_map[key] = fid
+        except Exception as e:
+            print(f"    获取500.com数据失败: {e}")
+    
+    print(f"    获取 {len(fid_map)} 个fid映射")
+    return fid_map
+
+def enrich_matches_with_fid(matches, fid_map):
+    """用500.com的fid补充比赛数据"""
+    count = 0
+    for m in matches:
+        # 尝试多种匹配方式
+        keys_to_try = [
+            f"{m.get('home', '')}_{m.get('away', '')}",
+            f"{m.get('home', '').replace(' ', '')}_{m.get('away', '').replace(' ', '')}",
+        ]
+        
+        for key in keys_to_try:
+            if key in fid_map:
+                m['fid'] = fid_map[key]
+                count += 1
+                break
+    
+    print(f"    匹配到 {count} 个fid")
+    return matches
+
+def fetch_namitiyu_ids(matches):
+    """获取namitiyu动画ID"""
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    
+    count = 0
+    for m in matches:
+        fid = m.get('fid')
+        if fid and not m.get('namitiyuId'):
+            url = f'https://odds.500.com/fenxi/stat-{fid}.shtml'
+            try:
+                req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req, context=ctx, timeout=10) as resp:
+                    html = resp.read().decode('gb2312', errors='ignore')
+                match = re.search(r'tracker\.namitiyu\.com[^"\']+id=(\d+)', html)
+                if match:
+                    m['namitiyuId'] = match.group(1)
+                    count += 1
+            except:
+                pass
+    
+    print(f"    获取 {count} 个namitiyu ID")
     return matches
 
 def fetch_basketball_data():
@@ -250,32 +286,25 @@ def parse_basketball_data(data):
     matches = []
     now = datetime.now()
     
-    # 计算5天的日期范围：前天、昨天、今天、明天、后天
     today = now.date()
     date_range = []
-    for i in range(-2, 3):  # -2, -1, 0, 1, 2
+    for i in range(-2, 3):
         d = today + timedelta(days=i)
         date_range.append(d.strftime('%Y-%m-%d'))
     
     for day_match in data['value'].get('matchInfoList', []):
         match_date = day_match.get('matchDate', '')
-        
-        # 只保留5天内的数据
         if match_date not in date_range:
             continue
             
         for match in day_match.get('subMatchList', []):
             match_status = str(match.get('matchStatus', ''))
-            
-            # 比赛日期和时间
             match_date_str = match.get('matchDate', '')
             match_time_full = match.get('matchTime', '')
             match_time = match_time_full[:5] if match_time_full else ''
             
-            # 根据状态和时间判断比赛状态
             status_category = get_status_category(match_status, match_date_str, match_time_full)
             
-            # 解析比分
             score_str = match.get('sectionsNo999', '')
             home_score = 0
             away_score = 0
@@ -307,9 +336,7 @@ def parse_basketball_data(data):
             
             matches.append(item)
     
-    # 按状态排序
     matches.sort(key=lambda x: (x['statusOrder'], x.get('matchNum', '')))
-    
     return matches
 
 def save_data(data, filename):
@@ -329,7 +356,7 @@ def save_data(data, filename):
 
 if __name__ == '__main__':
     print('=' * 50)
-    print('比分直播爬虫 - 竞彩网官方API版')
+    print('比分直播爬虫 - 竞彩网API + 500.com动画')
     print('=' * 50)
     
     # 获取足球数据
@@ -343,6 +370,18 @@ if __name__ == '__main__':
         upcoming_count = len([m for m in football_matches if m['status'] == 'upcoming'])
         
         print(f'>>> 足球: 已结束 {finished_count}场, 进行中 {live_count}场, 未开始 {upcoming_count}场')
+        
+        # 获取500.com fid
+        print('>>> 从500.com获取fid...')
+        fid_map = fetch_500_fid_map()
+        football_matches = enrich_matches_with_fid(football_matches, fid_map)
+        
+        # 获取namitiyu动画ID
+        print('>>> 获取动画ID...')
+        football_matches = fetch_namitiyu_ids(football_matches)
+        
+        animation_count = len([m for m in football_matches if m.get('namitiyuId')])
+        print(f'>>> 支持动画直播: {animation_count}场')
         
         data = {
             'updateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
