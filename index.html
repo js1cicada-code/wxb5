@@ -342,14 +342,20 @@
             if (!deadline) return '';
             // deadline格式: "03-26 22:00"
             const parts = deadline.split(' ');
-            if (parts.length < 1) return '';
+            if (parts.length < 2) return '';
             const dateStr = parts[0]; // "03-26"
+            const timeStr = parts[1]; // "22:00"
             const [month, day] = dateStr.split('-');
+            const [hour, minute] = timeStr.split(':');
             const now = new Date();
             const year = now.getFullYear();
-            const deadlineDate = new Date(year, parseInt(month) - 1, parseInt(day));
-            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const deadlineDate = new Date(year, parseInt(month) - 1, parseInt(day), parseInt(hour), parseInt(minute));
             
+            if (now > deadlineDate) {
+                return '已停售';
+            }
+            
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
             const diffDays = Math.floor((deadlineDate - today) / (1000 * 60 * 60 * 24));
             
             if (diffDays === 0) return '今日停售';
@@ -357,6 +363,26 @@
             
             const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
             return weekdays[deadlineDate.getDay()] + '停售';
+        }
+        
+        function findActivePeriod(periods, periodsList) {
+            const now = new Date();
+            for (const pItem of (periodsList || [])) {
+                const period = pItem.period;
+                const pData = periods[period];
+                if (pData && pData.deadline) {
+                    const parts = pData.deadline.split(' ');
+                    if (parts.length >= 2) {
+                        const [month, day] = parts[0].split('-');
+                        const [hour, minute] = parts[1].split(':');
+                        const deadlineDate = new Date(now.getFullYear(), parseInt(month) - 1, parseInt(day), parseInt(hour), parseInt(minute));
+                        if (now <= deadlineDate) {
+                            return { period, deadline: pData.deadline, matches: pData.matches };
+                        }
+                    }
+                }
+            }
+            return null;
         }
         
         function isSellingTime() {
@@ -570,13 +596,15 @@
             try {
                 const ctzcRes = await fetch('data/ctzc_data.json?t=' + Date.now());
                 const ctzcData = await ctzcRes.json();
-                const current = ctzcData.current || '';
-                const periodData = ctzcData.periods ? ctzcData.periods[current] : null;
-                const deadline = periodData ? periodData.deadline : '';
-                const deadlineText = getDeadlineText(deadline);
-                document.getElementById('ctzc-count').textContent = deadlineText || '暂无数据';
-                // 任选9场使用相同的停售时间
-                document.getElementById('rx9-count').textContent = deadlineText || '暂无数据';
+                const activePeriod = findActivePeriod(ctzcData.periods || {}, ctzcData.periods_list || []);
+                if (activePeriod) {
+                    const deadlineText = getDeadlineText(activePeriod.deadline);
+                    document.getElementById('ctzc-count').textContent = deadlineText;
+                    document.getElementById('rx9-count').textContent = deadlineText;
+                } else {
+                    document.getElementById('ctzc-count').textContent = '已停售';
+                    document.getElementById('rx9-count').textContent = '已停售';
+                }
             } catch(e) {
                 document.getElementById('ctzc-count').textContent = '暂无数据';
                 document.getElementById('rx9-count').textContent = '暂无数据';
@@ -586,11 +614,13 @@
             try {
                 const bqcRes = await fetch('data/bqc6_data.json?t=' + Date.now());
                 const bqcData = await bqcRes.json();
-                const current = bqcData.current || '';
-                const periodData = bqcData.periods ? bqcData.periods[current] : null;
-                const deadline = periodData ? periodData.deadline : '';
-                const deadlineText = getDeadlineText(deadline);
-                document.getElementById('bqc-count').textContent = deadlineText || '暂无数据';
+                const activePeriod = findActivePeriod(bqcData.periods || {}, bqcData.periods_list || []);
+                if (activePeriod) {
+                    const deadlineText = getDeadlineText(activePeriod.deadline);
+                    document.getElementById('bqc-count').textContent = deadlineText;
+                } else {
+                    document.getElementById('bqc-count').textContent = '已停售';
+                }
             } catch(e) {
                 document.getElementById('bqc-count').textContent = '暂无数据';
             }
@@ -599,8 +629,16 @@
             try {
                 const zjqRes = await fetch('data/zjq4_data.json?t=' + Date.now());
                 const zjqData = await zjqRes.json();
-                const current = zjqData.current || '';
-                const periodData = zjqData.periods ? zjqData.periods[current] : null;
+                const activePeriod = findActivePeriod(zjqData.periods || {}, zjqData.periods_list || []);
+                if (activePeriod) {
+                    const deadlineText = getDeadlineText(activePeriod.deadline);
+                    document.getElementById('zjq-count').textContent = deadlineText;
+                } else {
+                    document.getElementById('zjq-count').textContent = '已停售';
+                }
+            } catch(e) {
+                document.getElementById('zjq-count').textContent = '暂无数据';
+            }
                 const deadline = periodData ? periodData.deadline : '';
                 const deadlineText = getDeadlineText(deadline);
                 document.getElementById('zjq-count').textContent = deadlineText || '暂无数据';
