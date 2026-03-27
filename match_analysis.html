@@ -969,7 +969,7 @@ async function loadData() {
     document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
     
     try {
-        const response = await fetch('/analysis_' + fixtureId + '.json?t=' + Date.now());
+        const response = await fetch('data/analysis_' + fixtureId + '.json?t=' + Date.now());
         if (!response.ok) {
             showError('数据未加载，请稍后刷新');
             return;
