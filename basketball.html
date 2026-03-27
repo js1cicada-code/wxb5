@@ -557,8 +557,32 @@ function getSellingStatus() {
             container.innerHTML = '<div style="text-align:center;padding:60px 20px;color:#9ca3af;font-size:14px;">暂无赛事</div>';
             return;
         }
+        
+        // 过滤：只显示今日和明日的赛事
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        
+        const filteredMatches = matchData.filter(m => {
+            const dateStr = m.date || '';
+            // 解析日期格式：2026年3月28日 或 2026-03-28
+            const match = dateStr.match(/(\d{4})[年-](\d{1,2})[月-](\d{1,2})/);
+            if (match) {
+                const d = new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
+                d.setHours(0, 0, 0, 0);
+                return d.getTime() >= today.getTime() && d.getTime() <= tomorrow.getTime();
+            }
+            return true; // 没有日期的也显示
+        });
+        
+        if (filteredMatches.length === 0) {
+            container.innerHTML = '<div style="text-align:center;padding:60px 20px;color:#9ca3af;font-size:14px;">暂无赛事</div>';
+            return;
+        }
+        
         let html = '<div class="match-section">';
-        matchData.forEach(m => { html += renderMatchItem(m); });
+        filteredMatches.forEach(m => { html += renderMatchItem(m); });
         html += '</div>';
         container.innerHTML = html;
     }
