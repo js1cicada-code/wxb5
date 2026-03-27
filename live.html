@@ -194,9 +194,21 @@
             try {
                 const response = await fetch(file + '?t=' + Date.now());
                 const data = await response.json();
-                allMatches = data.matches || [];
+                // 只保留竞彩比赛（matchNum以"周"开头）
+                allMatches = (data.matches || []).filter(m => {
+                    const matchNum = m.matchNum || '';
+                    return matchNum.startsWith('周');
+                });
                 
-                updateStats(data);
+                // 重新计算统计数据
+                const stats = {
+                    total: allMatches.length,
+                    live: allMatches.filter(m => m.status === 'live').length,
+                    upcoming: allMatches.filter(m => m.status === 'upcoming').length,
+                    finished: allMatches.filter(m => m.status === 'finished').length
+                };
+                
+                updateStats(stats);
                 renderMatches();
             } catch (e) {
                 console.error('加载失败:', e);
