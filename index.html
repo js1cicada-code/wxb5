@@ -639,12 +639,6 @@
             } catch(e) {
                 document.getElementById('zjq-count').textContent = '暂无数据';
             }
-                const deadline = periodData ? periodData.deadline : '';
-                const deadlineText = getDeadlineText(deadline);
-                document.getElementById('zjq-count').textContent = deadlineText || '暂无数据';
-            } catch(e) {
-                document.getElementById('zjq-count').textContent = '暂无数据';
-            }
             
             // 大乐透 - 周一、三、六开奖
             try {
