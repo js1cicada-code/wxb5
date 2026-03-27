@@ -1,78 +1,215 @@
 {
-  "updateTime": "2026-03-28 03:31:43",
-  "count": 9,
   "mapping": {
     "荷兰_挪威": {
+      "matchId": "2038644",
       "fixtureId": "1393595",
-      "home": "荷兰",
-      "away": "挪威",
-      "league": "国际赛",
-      "date": "2026-03-28",
-      "time": "03:45"
+      "namitiyuId": "4512460",
+      "matchNum": "周五008",
+      "league": "国际赛"
     },
     "英格兰_乌拉圭": {
+      "matchId": "2038645",
       "fixtureId": "1393592",
-      "home": "英格兰",
-      "away": "乌拉圭",
-      "league": "国际赛",
-      "date": "2026-03-28",
-      "time": "03:45"
+      "namitiyuId": "4512433",
+      "matchNum": "周五009",
+      "league": "国际赛"
     },
     "瑞士_德国": {
+      "matchId": "2038646",
       "fixtureId": "1393600",
-      "home": "瑞士",
-      "away": "德国",
-      "league": "国际赛",
-      "date": "2026-03-28",
-      "time": "03:45"
+      "namitiyuId": "4512463",
+      "matchNum": "周五010",
+      "league": "国际赛"
     },
     "西班牙_塞尔维亚": {
+      "matchId": "2038647",
       "fixtureId": "1398386",
-      "home": "西班牙",
-      "away": "塞尔维亚",
-      "league": "国际赛",
-      "date": "2026-03-28",
-      "time": "04:00"
+      "namitiyuId": "4517779",
+      "matchNum": "周五011",
+      "league": "国际赛"
     },
     "摩洛哥_厄瓜多尔": {
+      "matchId": "2038648",
       "fixtureId": "1393603",
-      "home": "摩洛哥",
-      "away": "厄瓜多尔",
-      "league": "国际赛",
-      "date": "2026-03-28",
-      "time": "04:15"
+      "namitiyuId": "4512467",
+      "matchNum": "周五012",
+      "league": "国际赛"
     },
     "町田泽维_川崎前锋": {
+      "matchId": "2038664",
       "fixtureId": "1366260",
-      "home": "町田泽维",
-      "away": "川崎前锋",
-      "league": "日职",
-      "date": "2026-03-28",
-      "time": "13:00"
+      "namitiyuId": "4470665",
+      "matchNum": "周六001",
+      "league": "日职"
     },
     "浦项制铁_江原FC": {
+      "matchId": "2038665",
       "fixtureId": "1370534",
-      "home": "浦项制铁",
-      "away": "江原FC",
-      "league": "韩职",
-      "date": "2026-03-28",
-      "time": "14:00"
+      "namitiyuId": "4477088",
+      "matchNum": "周六002",
+      "league": "韩职"
     },
     "威廉二世_格拉夫": {
+      "matchId": "2038675",
       "fixtureId": "1390271",
-      "home": "威廉二世",
-      "away": "格拉夫",
-      "league": "荷乙",
-      "date": "2026-03-29",
-      "time": "01:45"
+      "namitiyuId": "4426469",
+      "matchNum": "周六012",
+      "league": "荷乙"
     },
     "埃因FC_埃门": {
+      "matchId": "2038677",
       "fixtureId": "1390270",
+      "namitiyuId": "4426468",
+      "matchNum": "周六014",
+      "league": "荷乙"
+    }
+  },
+  "byMatchId": {
+    "2038644": {
+      "fixtureId": "1393595",
+      "namitiyuId": "4512460",
+      "matchNum": "周五008",
+      "home": "荷兰",
+      "away": "挪威",
+      "league": "国际赛"
+    },
+    "2038645": {
+      "fixtureId": "1393592",
+      "namitiyuId": "4512433",
+      "matchNum": "周五009",
+      "home": "英格兰",
+      "away": "乌拉圭",
+      "league": "国际赛"
+    },
+    "2038646": {
+      "fixtureId": "1393600",
+      "namitiyuId": "4512463",
+      "matchNum": "周五010",
+      "home": "瑞士",
+      "away": "德国",
+      "league": "国际赛"
+    },
+    "2038647": {
+      "fixtureId": "1398386",
+      "namitiyuId": "4517779",
+      "matchNum": "周五011",
+      "home": "西班牙",
+      "away": "塞尔维亚",
+      "league": "国际赛"
+    },
+    "2038648": {
+      "fixtureId": "1393603",
+      "namitiyuId": "4512467",
+      "matchNum": "周五012",
+      "home": "摩洛哥",
+      "away": "厄瓜多尔",
+      "league": "国际赛"
+    },
+    "2038664": {
+      "fixtureId": "1366260",
+      "namitiyuId": "4470665",
+      "matchNum": "周六001",
+      "home": "町田泽维",
+      "away": "川崎前锋",
+      "league": "日职"
+    },
+    "2038665": {
+      "fixtureId": "1370534",
+      "namitiyuId": "4477088",
+      "matchNum": "周六002",
+      "home": "浦项制铁",
+      "away": "江原FC",
+      "league": "韩职"
+    },
+    "2038675": {
+      "fixtureId": "1390271",
+      "namitiyuId": "4426469",
+      "matchNum": "周六012",
+      "home": "威廉二世",
+      "away": "格拉夫",
+      "league": "荷乙"
+    },
+    "2038677": {
+      "fixtureId": "1390270",
+      "namitiyuId": "4426468",
+      "matchNum": "周六014",
       "home": "埃因FC",
       "away": "埃门",
-      "league": "荷乙",
-      "date": "2026-03-29",
-      "time": "04:00"
+      "league": "荷乙"
+    }
+  },
+  "byFixtureId": {
+    "1393595": {
+      "matchId": "2038644",
+      "namitiyuId": "4512460",
+      "matchNum": "周五008",
+      "home": "荷兰",
+      "away": "挪威",
+      "league": "国际赛"
+    },
+    "1393592": {
+      "matchId": "2038645",
+      "namitiyuId": "4512433",
+      "matchNum": "周五009",
+      "home": "英格兰",
+      "away": "乌拉圭",
+      "league": "国际赛"
+    },
+    "1393600": {
+      "matchId": "2038646",
+      "namitiyuId": "4512463",
+      "matchNum": "周五010",
+      "home": "瑞士",
+      "away": "德国",
+      "league": "国际赛"
+    },
+    "1398386": {
+      "matchId": "2038647",
+      "namitiyuId": "4517779",
+      "matchNum": "周五011",
+      "home": "西班牙",
+      "away": "塞尔维亚",
+      "league": "国际赛"
+    },
+    "1393603": {
+      "matchId": "2038648",
+      "namitiyuId": "4512467",
+      "matchNum": "周五012",
+      "home": "摩洛哥",
+      "away": "厄瓜多尔",
+      "league": "国际赛"
+    },
+    "1366260": {
+      "matchId": "2038664",
+      "namitiyuId": "4470665",
+      "matchNum": "周六001",
+      "home": "町田泽维",
+      "away": "川崎前锋",
+      "league": "日职"
+    },
+    "1370534": {
+      "matchId": "2038665",
+      "namitiyuId": "4477088",
+      "matchNum": "周六002",
+      "home": "浦项制铁",
+      "away": "江原FC",
+      "league": "韩职"
+    },
+    "1390271": {
+      "matchId": "2038675",
+      "namitiyuId": "4426469",
+      "matchNum": "周六012",
+      "home": "威廉二世",
+      "away": "格拉夫",
+      "league": "荷乙"
+    },
+    "1390270": {
+      "matchId": "2038677",
+      "namitiyuId": "4426468",
+      "matchNum": "周六014",
+      "home": "埃因FC",
+      "away": "埃门",
+      "league": "荷乙"
     }
   }
 }
