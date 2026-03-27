@@ -622,8 +622,8 @@
                 const activePeriod = findActivePeriod(ctzcData.periods || {}, ctzcData.periods_list || []);
                 if (activePeriod) {
                     const deadlineText = getDeadlineText(activePeriod.deadline);
-                    document.getElementById('ctzc-count').textContent = deadlineText;
-                    document.getElementById('rx9-count').textContent = deadlineText;
+                    setText('ctzc-count', deadlineText);
+                    setText('rx9-count', deadlineText);
                 } else {
                     setText('ctzc-count', '已停售');
                     setText('rx9-count', '已停售');
@@ -640,7 +640,7 @@
                 const activePeriod = findActivePeriod(bqcData.periods || {}, bqcData.periods_list || []);
                 if (activePeriod) {
                     const deadlineText = getDeadlineText(activePeriod.deadline);
-                    document.getElementById('bqc-count').textContent = deadlineText;
+                    setText('bqc-count', deadlineText);
                 } else {
                     setText('bqc-count', '已停售');
                 }
@@ -655,7 +655,7 @@
                 const activePeriod = findActivePeriod(zjqData.periods || {}, zjqData.periods_list || []);
                 if (activePeriod) {
                     const deadlineText = getDeadlineText(activePeriod.deadline);
-                    document.getElementById('zjq-count').textContent = deadlineText;
+                    setText('zjq-count', deadlineText);
                 } else {
                     setText('zjq-count', '已停售');
                 }
@@ -675,7 +675,7 @@
                         break;
                     }
                 }
-                document.getElementById('dlt-count').textContent = getWeekdayText(nextDay);
+                setText('dlt-count', getWeekdayText(nextDay));
             } catch(e) {
                 setText('dlt-count', '暂无数据');
             }
@@ -692,10 +692,16 @@
                         break;
                     }
                 }
-                document.getElementById('qxc-count').textContent = getWeekdayText(nextDay);
+                setText('qxc-count', getWeekdayText(nextDay));
             } catch(e) {
                 setText('qxc-count', '暂无数据');
             }
+            
+            // 排列三 - 每天开奖
+            setText('pls-count', '每日开奖');
+            
+            // 排列五 - 每天开奖
+            setText('plw-count', '每日开奖');
         }
         
         loadCounts();
