@@ -252,6 +252,34 @@ function hideLoading() {
 
 /* ========== 切换期次 ========== */
 /**
+ * 检查期次是否已过期
+ */
+function isPeriodExpired(deadline) {
+    if (!deadline) return true;
+    const parts = deadline.split(' ');
+    if (parts.length < 2) return true;
+    const [month, day] = parts[0].split('-');
+    const [hour, minute] = parts[1].split(':');
+    const now = new Date();
+    const deadlineDate = new Date(now.getFullYear(), parseInt(month) - 1, parseInt(day), parseInt(hour), parseInt(minute));
+    return now > deadlineDate;
+}
+
+/**
+ * 找到第一个未过期的期次
+ */
+function findActivePeriod(periodsList, periods) {
+    if (!periodsList || !periods) return null;
+    for (const p of periodsList) {
+        const pData = periods[p.period];
+        if (pData && !isPeriodExpired(pData.deadline)) {
+            return p.period;
+        }
+    }
+    return null;
+}
+
+/**
  * 切换到指定期次并更新界面
  * @param {string} expect - 期次号
  */
@@ -294,10 +322,17 @@ function switchPeriod(expect) {
  */
 function renderPeriodTabs() {
     const periodList = getCachedElement('period-list');
-    if (!allPeriodsData || !allPeriodsData.periods_list || allPeriodsData.periods_list.length <= 1) return;
+    if (!allPeriodsData || !allPeriodsData.periods_list) return;
     
-    // 生成期次标签HTML
-    periodList.innerHTML = allPeriodsData.periods_list.map(p => {
+    // 只显示未过期的期次
+    const activePeriods = allPeriodsData.periods_list.filter(p => {
+        const pData = allPeriodsData.periods[p.period];
+        return pData && !isPeriodExpired(pData.deadline);
+    });
+    
+    if (activePeriods.length <= 1) return;
+    
+    periodList.innerHTML = activePeriods.map(p => {
         const isActive = p.period === currentExpect;
         return '<span onclick="switchPeriod(\'' + p.period + '\')" style="background:' + (isActive ? '#1890ff' : '#fff') + ';padding:4px 10px;border-radius:4px;font-size:12px;color:' + (isActive ? '#fff' : '#333') + ';border:1px solid ' + (isActive ? '#1890ff' : '#d9d9d9') + ';cursor:pointer;transition:all 0.2s ease;">' + (p.label || p.period) + '</span>';
     }).join('');
@@ -320,8 +355,20 @@ async function fetchMatchData(expect = null) {
         // 保存全部期次数据
         allPeriodsData = data;
         
-        // 确定要显示的期次（兼容新旧格式）
-        let targetPeriod = expect || data.current || data.period;
+        // 过滤掉已过期的期次
+        let activePeriodsList = [];
+        if (data.periods_list && data.periods) {
+            activePeriodsList = data.periods_list.filter(p => {
+                const pData = data.periods[p.period];
+                return pData && !isPeriodExpired(pData.deadline);
+            });
+        }
+        
+        // 确定要显示的期次（优先选择未过期的）
+        let targetPeriod = findActivePeriod(activePeriodsList, data.periods);
+        if (!targetPeriod) {
+            targetPeriod = expect || data.current || data.period;
+        }
         let periodData = null;
         
         // 新格式：data.periods 是对象
