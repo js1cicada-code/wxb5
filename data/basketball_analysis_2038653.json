@@ -1,22 +1,94 @@
 {
   "matchId": 2038653,
-  "updateTime": "2026-03-27 18:16:12",
+  "updateTime": "2026-03-27 18:27:04",
   "home": "贝尔格莱德游击",
   "away": "巴伦西亚",
   "league": "欧篮联",
   "homeRank": "[欧篮联15]",
   "awayRank": "[欧篮联4]",
   "homeStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "33",
+      "wins": "21",
+      "losses": "12",
+      "pointsFor": "89.6",
+      "pointsAgainst": "85.6",
+      "pointDiff": "4.0",
+      "rank": "4",
+      "winRate": "63.6%"
+    },
+    "home": {
+      "games": "17",
+      "wins": "14",
+      "losses": "3",
+      "pointsFor": "88.2",
+      "pointsAgainst": "80.7",
+      "pointDiff": "7.5",
+      "rank": "3",
+      "winRate": "82.4%"
+    },
+    "away": {
+      "games": "16",
+      "wins": "7",
+      "losses": "9",
+      "pointsFor": "91.1",
+      "pointsAgainst": "90.8",
+      "pointDiff": "0.3",
+      "rank": "7",
+      "winRate": "43.8%"
+    },
+    "recent10": {
+      "games": "10",
+      "wins": "6",
+      "losses": "4",
+      "pointsFor": "88.4",
+      "pointsAgainst": "86.1",
+      "pointDiff": "2.3",
+      "rank": "",
+      "winRate": "60.0%"
+    }
   },
   "awayStats": {
-    "total": null,
-    "home": null,
-    "away": null,
-    "recent10": null
+    "total": {
+      "games": "33",
+      "wins": "13",
+      "losses": "20",
+      "pointsFor": "80.7",
+      "pointsAgainst": "86.7",
+      "pointDiff": "-6.0",
+      "rank": "14",
+      "winRate": "39.4%"
+    },
+    "home": {
+      "games": "16",
+      "wins": "9",
+      "losses": "7",
+      "pointsFor": "81.8",
+      "pointsAgainst": "85.9",
+      "pointDiff": "-4.1",
+      "rank": "16",
+      "winRate": "56.2%"
+    },
+    "away": {
+      "games": "17",
+      "wins": "4",
+      "losses": "13",
+      "pointsFor": "79.6",
+      "pointsAgainst": "87.5",
+      "pointDiff": "-7.9",
+      "rank": "16",
+      "winRate": "23.5%"
+    },
+    "recent10": {
+      "games": "10",
+      "wins": "6",
+      "losses": "4",
+      "pointsFor": "85.0",
+      "pointsAgainst": "81.6",
+      "pointDiff": "3.4",
+      "rank": "",
+      "winRate": "60.0%"
+    }
   },
   "odds": {
     "sf": {
@@ -34,183 +106,664 @@
       "under": "1.70"
     }
   },
-  "h2h": null,
-  "homeRecent": null,
-  "awayRecent": null,
-  "leagueRanking": null,
-  "handicapComparison": null,
-  "futureMatches": null,
+  "h2h": {
+    "summary": "近7次交战：2胜5负",
+    "matches": [
+      {
+        "league": "欧篮联",
+        "date": "2025-12-31",
+        "away": "贝尔格莱德游击",
+        "score": "73-86   [159]",
+        "home": "巴伦西亚",
+        "result": "负",
+        "diff": "-13"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2024-04-13",
+        "away": "巴伦西亚",
+        "score": "66-79   [145]",
+        "home": "贝尔格莱德游击",
+        "result": "胜",
+        "diff": "13"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2023-12-20",
+        "away": "贝尔格莱德游击",
+        "score": "72-67   [139]",
+        "home": "巴伦西亚",
+        "result": "胜",
+        "diff": "5"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2023-01-20",
+        "away": "贝尔格莱德游击",
+        "score": "81-89   [170]",
+        "home": "巴伦西亚",
+        "result": "负",
+        "diff": "-8"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2022-12-02",
+        "away": "巴伦西亚",
+        "score": "100-96   [196]",
+        "home": "贝尔格莱德游击",
+        "result": "负",
+        "diff": "-4"
+      },
+      {
+        "league": "欧联盟杯",
+        "date": "2018-11-22",
+        "away": "巴伦西亚",
+        "score": "69-61   [130]",
+        "home": "贝尔格莱德游击",
+        "result": "负",
+        "diff": "-8"
+      },
+      {
+        "league": "欧联盟杯",
+        "date": "2018-10-18",
+        "away": "贝尔格莱德游击",
+        "score": "71-79   [150]",
+        "home": "巴伦西亚",
+        "result": "负",
+        "diff": "-8"
+      }
+    ]
+  },
+  "homeRecent": {
+    "summary": "近10场：6胜4负",
+    "matches": [
+      {
+        "league": "欧篮联",
+        "date": "2026-03-25",
+        "opponent": "阿斯维尔",
+        "score": "78-79",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-20",
+        "opponent": "巴黎",
+        "score": "90-81",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-18",
+        "opponent": "迪拜",
+        "score": "74-88",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-12",
+        "opponent": "维图斯",
+        "score": "88-82",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-26",
+        "opponent": "费内巴",
+        "score": "78-81",
+        "result": "负"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-14",
+        "opponent": "皇家马德里",
+        "score": "77-73",
+        "result": "负"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-06",
+        "opponent": "帕纳辛纳",
+        "score": "62-78",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-04",
+        "opponent": "特马卡比",
+        "score": "93-95",
+        "result": "负"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-01-30",
+        "opponent": "米兰",
+        "score": "79-85",
+        "result": "负"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-01-24",
+        "opponent": "维夫夏普",
+        "score": "101-104",
+        "result": "胜"
+      }
+    ]
+  },
+  "awayRecent": {
+    "summary": "近10场：7胜3负",
+    "matches": [
+      {
+        "league": "欧篮联",
+        "date": "2026-03-25",
+        "opponent": "奥林匹亚",
+        "score": "84-85",
+        "result": "胜"
+      },
+      {
+        "league": "西篮甲",
+        "date": "2026-03-23",
+        "opponent": "哥瑞纳达",
+        "score": "91-107",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-20",
+        "opponent": "巴塞罗那",
+        "score": "66-62",
+        "result": "负"
+      },
+      {
+        "league": "西篮甲",
+        "date": "2026-03-15",
+        "opponent": "特内里费",
+        "score": "71-89",
+        "result": "负"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-13",
+        "opponent": "皇家马德里",
+        "score": "79-96",
+        "result": "负"
+      },
+      {
+        "league": "西篮甲",
+        "date": "2026-03-09",
+        "opponent": "穆尔西亚",
+        "score": "84-110",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-03-06",
+        "opponent": "萨基利斯",
+        "score": "87-91",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-27",
+        "opponent": "巴斯克",
+        "score": "108-79",
+        "result": "胜"
+      },
+      {
+        "league": "西篮甲",
+        "date": "2026-02-15",
+        "opponent": "安道尔BC",
+        "score": "107-75",
+        "result": "胜"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-02-13",
+        "opponent": "阿斯维尔",
+        "score": "67-82",
+        "result": "胜"
+      }
+    ]
+  },
+  "leagueRanking": {
+    "home": null,
+    "away": {
+      "rank": "4",
+      "team": "巴伦西亚",
+      "wins": "21",
+      "losses": "12",
+      "winRate": "64%"
+    },
+    "standings": [
+      {
+        "rank": "1",
+        "team": "费内巴",
+        "wins": "23",
+        "losses": "10",
+        "winRate": "70%"
+      },
+      {
+        "rank": "2",
+        "team": "皇家马德里",
+        "wins": "22",
+        "losses": "12",
+        "winRate": "65%"
+      },
+      {
+        "rank": "3",
+        "team": "奥林匹亚",
+        "wins": "22",
+        "losses": "12",
+        "winRate": "65%"
+      },
+      {
+        "rank": "4",
+        "team": "巴伦西亚",
+        "wins": "21",
+        "losses": "12",
+        "winRate": "64%"
+      },
+      {
+        "rank": "5",
+        "team": "维夫夏普",
+        "wins": "20",
+        "losses": "12",
+        "winRate": "63%"
+      },
+      {
+        "rank": "6",
+        "team": "贝红星",
+        "wins": "19",
+        "losses": "13",
+        "winRate": "59%"
+      },
+      {
+        "rank": "7",
+        "team": "巴塞罗那",
+        "wins": "19",
+        "losses": "14",
+        "winRate": "58%"
+      },
+      {
+        "rank": "8",
+        "team": "帕纳辛纳",
+        "wins": "19",
+        "losses": "14",
+        "winRate": "58%"
+      },
+      {
+        "rank": "9",
+        "team": "萨基利斯",
+        "wins": "19",
+        "losses": "14",
+        "winRate": "58%"
+      },
+      {
+        "rank": "10",
+        "team": "摩纳哥",
+        "wins": "19",
+        "losses": "14",
+        "winRate": "58%"
+      },
+      {
+        "rank": "11",
+        "team": "特马卡比",
+        "wins": "17",
+        "losses": "16",
+        "winRate": "52%"
+      },
+      {
+        "rank": "12",
+        "team": "迪拜",
+        "wins": "17",
+        "losses": "17",
+        "winRate": "50%"
+      },
+      {
+        "rank": "13",
+        "team": "米兰",
+        "wins": "17",
+        "losses": "17",
+        "winRate": "50%"
+      },
+      {
+        "rank": "14",
+        "team": "贝游击",
+        "wins": "13",
+        "losses": "20",
+        "winRate": "39%"
+      },
+      {
+        "rank": "15",
+        "team": "维图斯",
+        "wins": "13",
+        "losses": "20",
+        "winRate": "39%"
+      },
+      {
+        "rank": "16",
+        "team": "拜仁",
+        "wins": "13",
+        "losses": "20",
+        "winRate": "39%"
+      },
+      {
+        "rank": "17",
+        "team": "巴黎",
+        "wins": "12",
+        "losses": "21",
+        "winRate": "36%"
+      },
+      {
+        "rank": "18",
+        "team": "艾菲斯",
+        "wins": "10",
+        "losses": "24",
+        "winRate": "29%"
+      },
+      {
+        "rank": "19",
+        "team": "巴斯克",
+        "wins": "9",
+        "losses": "24",
+        "winRate": "27%"
+      },
+      {
+        "rank": "20",
+        "team": "阿斯维尔",
+        "wins": "8",
+        "losses": "26",
+        "winRate": "24%"
+      }
+    ]
+  },
+  "handicapComparison": {
+    "home": {
+      "total": {
+        "games": "20",
+        "winHandicap": "8",
+        "loseHandicap": "12",
+        "winRate": "40.0%",
+        "bigBall": "9",
+        "smallBall": "11",
+        "bigBallRate": "45.0%"
+      },
+      "away": {
+        "games": "10",
+        "winHandicap": "4",
+        "loseHandicap": "6",
+        "winRate": "40.0%",
+        "bigBall": "4",
+        "smallBall": "6",
+        "bigBallRate": "40.0%"
+      }
+    },
+    "away": {
+      "total": {
+        "games": "23",
+        "winHandicap": "12",
+        "loseHandicap": "11",
+        "winRate": "52.2%",
+        "bigBall": "8",
+        "smallBall": "15",
+        "bigBallRate": "34.8%"
+      },
+      "away": {
+        "games": "12",
+        "winHandicap": "6",
+        "loseHandicap": "6",
+        "winRate": "50.0%",
+        "bigBall": "5",
+        "smallBall": "7",
+        "bigBallRate": "41.7%"
+      }
+    }
+  },
+  "futureMatches": {
+    "home": [
+      {
+        "league": "欧篮联",
+        "date": "2026-04-03",
+        "homeAway": "客",
+        "opponent": "贝游击贝红星VS",
+        "daysApart": "6天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-09",
+        "homeAway": "客",
+        "opponent": "贝游击艾菲斯VS",
+        "daysApart": "12天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-11",
+        "homeAway": "主",
+        "opponent": "萨基利斯贝游击VS",
+        "daysApart": "14天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-17",
+        "homeAway": "主",
+        "opponent": "巴斯克贝游击VS",
+        "daysApart": "20天"
+      }
+    ],
+    "away": [
+      {
+        "league": "西篮甲",
+        "date": "2026-03-30",
+        "homeAway": "客",
+        "opponent": "巴伦西亚布尔戈斯VS",
+        "daysApart": "2天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-04",
+        "homeAway": "客",
+        "opponent": "巴伦西亚维图斯VS",
+        "daysApart": "7天"
+      },
+      {
+        "league": "西篮甲",
+        "date": "2026-04-05",
+        "homeAway": "主",
+        "opponent": "布雷奥干巴伦西亚VS",
+        "daysApart": "8天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-08",
+        "homeAway": "主",
+        "opponent": "米兰巴伦西亚VS",
+        "daysApart": "11天"
+      },
+      {
+        "league": "欧篮联",
+        "date": "2026-04-10",
+        "homeAway": "主",
+        "opponent": "帕纳辛纳巴伦西亚VS",
+        "daysApart": "13天"
+      }
+    ]
+  },
   "ouzhi": null,
-  "rangfen": null,
-  "zongfen": {
+  "rangfen": {
     "comparison": [
       {
         "company": "威**尔",
         "instant": {
-          "over": "0.91",
-          "handicap": "172.50",
-          "under": "0.83"
+          "guest": "0.91",
+          "handicap": "4.00",
+          "home": "0.83",
+          "time": "2026-03-27 17:38:34"
         },
         "initial": {
-          "over": "0.91",
-          "handicap": "173.50",
-          "under": "0.83"
+          "guest": "0.91",
+          "handicap": "5.50",
+          "home": "0.83",
+          "time": "2026-03-26 00:03:17"
         }
       },
       {
         "company": "立*",
         "instant": {
-          "over": "0.83",
-          "handicap": "173.50",
-          "under": "0.83"
+          "guest": "0.91",
+          "handicap": "4.50",
+          "home": "0.80",
+          "time": "2026-03-27 00:28:59"
         },
         "initial": {
-          "over": "0.83",
-          "handicap": "173.50",
-          "under": "0.83"
+          "guest": "0.83",
+          "handicap": "5.50",
+          "home": "0.83",
+          "time": "2026-03-26 00:03:17"
         }
       },
       {
         "company": "**t3*5",
         "instant": {
-          "over": "0.87",
-          "handicap": "172.50",
-          "under": "0.87"
+          "guest": "0.91",
+          "handicap": "4.00",
+          "home": "0.83",
+          "time": "2026-03-27 18:00:05"
         },
         "initial": {
-          "over": "0.87",
-          "handicap": "173.50",
-          "under": "0.87"
+          "guest": "0.87",
+          "handicap": "5.50",
+          "home": "0.87",
+          "time": "2026-03-26 00:03:17"
         }
       },
       {
         "company": "I***rw**t*n",
         "instant": {
-          "over": "0.85",
-          "handicap": "172.50",
-          "under": "0.85"
+          "guest": "0.80",
+          "handicap": "3.50",
+          "home": "0.90",
+          "time": "2026-03-27 00:04:37"
         },
         "initial": {
-          "over": "0.85",
-          "handicap": "173.50",
-          "under": "0.85"
+          "guest": "0.90",
+          "handicap": "5.50",
+          "home": "0.80",
+          "time": "2026-03-26 00:03:17"
         }
       },
       {
         "company": "*冠",
         "instant": {
-          "over": "0.89",
-          "handicap": "172.00",
-          "under": "0.87"
+          "guest": "0.94",
+          "handicap": "4.00",
+          "home": "0.86",
+          "time": "2026-03-27 05:38:39"
         },
         "initial": {
-          "over": "0.89",
-          "handicap": "172.00",
-          "under": "0.87"
+          "guest": "0.94",
+          "handicap": "4.00",
+          "home": "0.86",
+          "time": "2026-03-27 05:38:39"
         }
       },
       {
         "company": "易*博",
         "instant": {
-          "over": "0.92",
-          "handicap": "172.00",
-          "under": "0.88"
+          "guest": "0.95",
+          "handicap": "4.00",
+          "home": "0.89",
+          "time": "2026-03-27 12:21:55"
         },
         "initial": {
-          "over": "0.89",
-          "handicap": "172.50",
-          "under": "0.89"
+          "guest": "0.93",
+          "handicap": "4.00",
+          "home": "0.84",
+          "time": "2026-03-27 06:50:29"
         }
       },
       {
         "company": "伟*",
         "instant": {
-          "over": "0.85",
-          "handicap": "172.50",
-          "under": "0.83"
+          "guest": "0.80",
+          "handicap": "3.50",
+          "home": "0.91",
+          "time": "2026-03-27 09:37:46"
         },
         "initial": {
-          "over": "0.83",
-          "handicap": "173.50",
-          "under": "0.80"
+          "guest": "0.87",
+          "handicap": "5.50",
+          "home": "0.77",
+          "time": "2026-03-25 21:40:12"
         }
       },
       {
         "company": "B**n",
         "instant": {
-          "over": "0.91",
-          "handicap": "173.50",
-          "under": "0.90"
+          "guest": "0.95",
+          "handicap": "4.50",
+          "home": "0.85",
+          "time": "2026-03-27 00:28:59"
         },
         "initial": {
-          "over": "0.91",
-          "handicap": "173.50",
-          "under": "0.90"
+          "guest": "0.90",
+          "handicap": "5.50",
+          "home": "0.90",
+          "time": "2026-03-26 00:03:17"
         }
       },
       {
         "company": "利*",
         "instant": {
-          "over": "0.80",
-          "handicap": "171.00",
-          "under": "0.96"
+          "guest": "0.85",
+          "handicap": "3.50",
+          "home": "0.95",
+          "time": "2026-03-27 17:14:10"
         },
         "initial": {
-          "over": "0.83",
-          "handicap": "171.00",
-          "under": "0.93"
-        }
-      },
-      {
-        "company": "金*博",
-        "instant": {
-          "over": "0.90",
-          "handicap": "172.00",
-          "under": "0.86"
-        },
-        "initial": {
-          "over": "0.90",
-          "handicap": "172.00",
-          "under": "0.86"
+          "guest": "0.82",
+          "handicap": "3.50",
+          "home": "0.98",
+          "time": "2026-03-26 21:26:24"
         }
       },
       {
         "company": "12**t (壹*博)",
         "instant": {
-          "over": "0.85",
-          "handicap": "173.50",
-          "under": "0.85"
+          "guest": "0.88",
+          "handicap": "4.50",
+          "home": "0.88",
+          "time": "2026-03-26 13:40:33"
         },
         "initial": {
-          "over": "0.85",
-          "handicap": "173.50",
-          "under": "0.85"
+          "guest": "0.88",
+          "handicap": "4.50",
+          "home": "0.88",
+          "time": "2026-03-26 13:40:33"
         }
       }
     ],
     "summary": {
       "最大值": {
         "instant": {
-          "over": "0.92",
-          "handicap": "173.50",
-          "under": "0.96"
+          "guest": "0.95",
+          "handicap": "4.50",
+          "home": "0.95"
         },
         "initial": {
-          "over": "0.91",
-          "handicap": "173.50",
-          "under": "0.93"
+          "guest": "0.94",
+          "handicap": "5.50",
+          "home": "0.98"
         }
       },
       "最小值": {
         "instant": {
-          "over": "0.80",
-          "handicap": "171.00",
-          "under": "0.83"
+          "guest": "0.80",
+          "handicap": "3.50",
+          "home": "0.80"
         },
         "initial": {
-          "over": "0.83",
-          "handicap": "171.00",
-          "under": "0.80"
+          "guest": "0.82",
+          "handicap": "3.50",
+          "home": "0.77"
         }
       }
     },
@@ -218,158 +771,104 @@
       {
         "companies": [
           {
-            "name": "易*博",
-            "handicap": "172.00",
-            "overOdds": "0.92",
-            "overColor": "win",
-            "underOdds": "0.88",
-            "underColor": "loss"
-          },
-          {
-            "name": "*冠",
-            "handicap": "172.00",
-            "overOdds": "0.89",
-            "overColor": "win",
-            "underOdds": "0.87",
-            "underColor": "loss"
+            "name": "**t3*5",
+            "handicap": "4.00",
+            "guestOdds": "0.91",
+            "homeOdds": "0.83"
           }
         ],
-        "time": "2026-03-27 16:08:21"
-      },
-      {
-        "companies": [
-          {
-            "name": "*冠",
-            "handicap": "172.00",
-            "overOdds": "0.88",
-            "overColor": "loss",
-            "underOdds": "0.88",
-            "underColor": "win"
-          }
-        ],
-        "time": "2026-03-27 15:14:15"
+        "time": "2026-03-27 18:00:05"
       },
       {
         "companies": [
           {
             "name": "易*博",
-            "handicap": "172.00",
-            "overOdds": "0.91",
-            "overColor": "loss",
-            "underOdds": "0.89",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.95",
+            "homeOdds": "0.89"
           }
         ],
-        "time": "2026-03-27 14:38:54"
+        "time": "2026-03-27 12:21:55"
       },
       {
         "companies": [
           {
-            "name": "易*博",
-            "handicap": "172.00",
-            "overOdds": "0.92",
-            "overColor": "win",
-            "underOdds": "0.88",
-            "underColor": "loss"
-          },
-          {
-            "name": "*冠",
-            "handicap": "172.00",
-            "overOdds": "0.89",
-            "overColor": "win",
-            "underOdds": "0.87",
-            "underColor": "loss"
+            "name": "**t3*5",
+            "handicap": "4.00",
+            "guestOdds": "0.87",
+            "homeOdds": "0.87"
           }
         ],
-        "time": "2026-03-27 12:21:47"
+        "time": "2026-03-27 11:16:48"
       },
       {
         "companies": [
           {
-            "name": "*冠",
-            "handicap": "172.00",
-            "overOdds": "0.88",
-            "overColor": "loss",
-            "underOdds": "0.88",
-            "underColor": "win"
+            "name": "**t3*5",
+            "handicap": "4.00",
+            "guestOdds": "0.86",
+            "homeOdds": "0.86"
           }
         ],
-        "time": "2026-03-27 11:43:37"
+        "time": "2026-03-27 11:14:22"
       },
       {
         "companies": [
           {
             "name": "伟*",
-            "handicap": "172.50",
-            "overOdds": "0.85",
-            "overColor": "win",
-            "underOdds": "0.83",
-            "underColor": "loss"
+            "handicap": "3.50",
+            "guestOdds": "0.80",
+            "homeOdds": "0.91"
           }
         ],
-        "time": "2026-03-27 09:43:34"
+        "time": "2026-03-27 09:37:46"
       },
       {
         "companies": [
           {
             "name": "易*博",
-            "handicap": "172.50",
-            "overOdds": "0.90",
-            "overColor": "win",
-            "underOdds": "0.89",
-            "underColor": "loss"
+            "handicap": "4.00",
+            "guestOdds": "0.90",
+            "homeOdds": "0.85"
           }
         ],
-        "time": "2026-03-27 08:29:33"
+        "time": "2026-03-27 07:35:34"
       },
       {
         "companies": [
           {
             "name": "易*博",
-            "handicap": "172.50",
-            "overOdds": "0.89",
-            "overColor": "loss",
-            "underOdds": "0.89",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.90",
+            "homeOdds": "0.87"
           }
         ],
-        "time": "2026-03-27 08:02:28"
-      },
-      {
-        "companies": [
-          {
-            "name": "易*博",
-            "handicap": "172.50",
-            "overOdds": "0.90",
-            "overColor": "win",
-            "underOdds": "0.89",
-            "underColor": "loss"
-          }
-        ],
-        "time": "2026-03-27 07:25:18"
+        "time": "2026-03-27 07:31:54"
       },
       {
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.87",
-            "overColor": "loss",
-            "underOdds": "0.87",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.87",
+            "homeOdds": "0.87"
+          },
+          {
+            "name": "易*博",
+            "handicap": "4.00",
+            "guestOdds": "0.93",
+            "homeOdds": "0.85"
           }
         ],
-        "time": "2026-03-27 07:18:09"
+        "time": "2026-03-27 07:21:13"
       },
       {
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.86",
-            "overColor": "loss",
-            "underOdds": "0.86",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.86",
+            "homeOdds": "0.86"
           }
         ],
         "time": "2026-03-27 07:17:55"
@@ -378,11 +877,20 @@
         "companies": [
           {
             "name": "易*博",
-            "handicap": "172.50",
-            "overOdds": "0.89",
-            "overColor": "",
-            "underOdds": "0.89",
-            "underColor": ""
+            "handicap": "4.00",
+            "guestOdds": "0.94",
+            "homeOdds": "0.84"
+          }
+        ],
+        "time": "2026-03-27 07:17:40"
+      },
+      {
+        "companies": [
+          {
+            "name": "易*博",
+            "handicap": "4.00",
+            "guestOdds": "0.93",
+            "homeOdds": "0.84"
           }
         ],
         "time": "2026-03-27 06:50:29"
@@ -391,11 +899,9 @@
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.87",
-            "overColor": "loss",
-            "underOdds": "0.87",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.87",
+            "homeOdds": "0.87"
           }
         ],
         "time": "2026-03-27 05:46:29"
@@ -404,11 +910,9 @@
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.86",
-            "overColor": "loss",
-            "underOdds": "0.86",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.86",
+            "homeOdds": "0.86"
           }
         ],
         "time": "2026-03-27 05:39:20"
@@ -417,11 +921,9 @@
         "companies": [
           {
             "name": "*冠",
-            "handicap": "172.00",
-            "overOdds": "0.89",
-            "overColor": "",
-            "underOdds": "0.87",
-            "underColor": ""
+            "handicap": "4.00",
+            "guestOdds": "0.94",
+            "homeOdds": "0.86"
           }
         ],
         "time": "2026-03-27 05:38:39"
@@ -430,24 +932,20 @@
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.87",
-            "overColor": "loss",
-            "underOdds": "0.87",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.87",
+            "homeOdds": "0.87"
           }
         ],
-        "time": "2026-03-27 04:09:30"
+        "time": "2026-03-27 04:09:29"
       },
       {
         "companies": [
           {
             "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.86",
-            "overColor": "loss",
-            "underOdds": "0.86",
-            "underColor": "win"
+            "handicap": "4.00",
+            "guestOdds": "0.86",
+            "homeOdds": "0.86"
           }
         ],
         "time": "2026-03-27 04:05:47"
@@ -456,41 +954,47 @@
         "companies": [
           {
             "name": "伟*",
-            "handicap": "172.50",
-            "overOdds": "0.78",
-            "overColor": "",
-            "underOdds": "0.83",
-            "underColor": ""
+            "handicap": "3.50",
+            "guestOdds": "0.85",
+            "homeOdds": "0.80"
           }
         ],
-        "time": "2026-03-27 02:18:58"
-      },
-      {
-        "companies": [
-          {
-            "name": "**t3*5",
-            "handicap": "172.50",
-            "overOdds": "0.87",
-            "overColor": "",
-            "underOdds": "0.87",
-            "underColor": ""
-          }
-        ],
-        "time": "2026-03-26 23:58:18"
+        "time": "2026-03-27 01:30:32"
       },
       {
         "companies": [
           {
             "name": "伟*",
-            "handicap": "172.50",
-            "overOdds": "0.78",
-            "overColor": "",
-            "underOdds": "0.85",
-            "underColor": ""
+            "handicap": "4.50",
+            "guestOdds": "0.80",
+            "homeOdds": "0.85"
           }
         ],
-        "time": "2026-03-26 21:31:52"
+        "time": "2026-03-27 00:32:42"
+      },
+      {
+        "companies": [
+          {
+            "name": "伟*",
+            "handicap": "4.50",
+            "guestOdds": "0.87",
+            "homeOdds": "0.78"
+          }
+        ],
+        "time": "2026-03-27 00:28:59"
+      },
+      {
+        "companies": [
+          {
+            "name": "**t3*5",
+            "handicap": "4.00",
+            "guestOdds": "0.87",
+            "homeOdds": "0.87"
+          }
+        ],
+        "time": "2026-03-26 23:54:41"
       }
     ]
-  }
+  },
+  "zongfen": null
 }
