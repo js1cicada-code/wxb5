@@ -1,6 +1,6 @@
 {
   "matchId": 2038657,
-  "updateTime": "2026-03-28 03:27:13",
+  "updateTime": "2026-03-28 03:32:08",
   "home": "俄克拉荷马城雷霆",
   "away": "芝加哥公牛",
   "league": "美职篮",
@@ -1387,7 +1387,7 @@
         "company": "**t3*5",
         "instant": {
           "over": "0.91",
-          "handicap": "239.00",
+          "handicap": "239.50",
           "under": "0.91"
         },
         "initial": {
@@ -1451,9 +1451,9 @@
       {
         "company": "B**n",
         "instant": {
-          "over": "0.87",
-          "handicap": "238.50",
-          "under": "0.95"
+          "over": "0.91",
+          "handicap": "239.50",
+          "under": "0.91"
         },
         "initial": {
           "over": "0.87",
@@ -1528,6 +1528,19 @@
       }
     },
     "changes": [
+      {
+        "companies": [
+          {
+            "name": "**t3*5",
+            "handicap": "239.50",
+            "overOdds": "0.91",
+            "overColor": "",
+            "underOdds": "0.91",
+            "underColor": ""
+          }
+        ],
+        "time": "2026-03-28 03:23:58"
+      },
       {
         "companies": [
           {
@@ -1806,19 +1819,6 @@
           }
         ],
         "time": "2026-03-27 22:45:14"
-      },
-      {
-        "companies": [
-          {
-            "name": "**t3*5",
-            "handicap": "239.50",
-            "overOdds": "0.91",
-            "overColor": "loss",
-            "underOdds": "0.91",
-            "underColor": "win"
-          }
-        ],
-        "time": "2026-03-27 22:30:20"
       }
     ]
   }
