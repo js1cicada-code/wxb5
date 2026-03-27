@@ -412,10 +412,12 @@
                 const footballRes = await fetch('https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1');
                 const footballData = await footballRes.json();
                 let footballCount = 0;
+                let totalMatches = 0;
                 
                 if (footballData.value && footballData.value.matchInfoList) {
                     footballData.value.matchInfoList.forEach(day => {
                         if (day.subMatchList) {
+                            totalMatches += day.subMatchList.length;
                             day.subMatchList.forEach(match => {
                                 const matchNumStr = match.matchNumStr || '';
                                 let matchDayOfWeek = 0;
@@ -450,13 +452,15 @@
                     });
                 }
                 
-                if (footballCount === 0) {
+                if (totalMatches === 0) {
+                    document.getElementById('football-count').textContent = '暂无赛事';
+                } else if (footballCount === 0) {
                     document.getElementById('football-count').textContent = '已停售';
                 } else {
                     document.getElementById('football-count').textContent = `可选 ${footballCount} 场`;
                 }
             } catch(e) {
-                document.getElementById('football-count').textContent = '已停售';
+                document.getElementById('football-count').textContent = '暂无赛事';
             }
             
             // 竞彩篮球
@@ -464,6 +468,7 @@
                 const basketballRes = await fetch('data/basketball_matches.json?t=' + Date.now());
                 const basketballData = await basketballRes.json();
                 let basketballCount = 0;
+                const totalMatches = basketballData.matches ? basketballData.matches.length : 0;
                 
                 if (basketballData.matches) {
                     basketballData.matches.forEach(m => {
@@ -498,13 +503,15 @@
                     });
                 }
                 
-                if (basketballCount === 0) {
+                if (totalMatches === 0) {
+                    document.getElementById('basketball-count').textContent = '暂无赛事';
+                } else if (basketballCount === 0) {
                     document.getElementById('basketball-count').textContent = '已停售';
                 } else {
                     document.getElementById('basketball-count').textContent = `可选 ${basketballCount} 场`;
                 }
             } catch(e) {
-                document.getElementById('basketball-count').textContent = '已停售';
+                document.getElementById('basketball-count').textContent = '暂无赛事';
             }
             
             // 北京单场
