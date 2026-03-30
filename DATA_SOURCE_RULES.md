@@ -4,61 +4,106 @@
 
 **体育比赛赛程**必须从官方来源获取，**开奖数据**可从专业彩票网站获取，**比赛分析**可从第三方网站获取。
 
-## 数据类型说明
+## 彩票种类与数据源
 
-| 类型 | 说明 | 来源要求 |
-|-----|------|---------|
-| 体育比赛赛程 | 有具体比赛时间、对阵的 | 必须官方 |
-| 开奖数据 | 数字彩开奖结果 | 可用专业网站 |
-| 分析数据 | 赔率、排名、历史等 | 可用第三方 |
+### 竞彩足球 (sporttery.cn) ✅
 
-## 数据源规范表
+| 玩法 | 数据字段 | API |
+|-----|---------|-----|
+| 胜平负 | had | getMatchCalculatorV1.qry |
+| 让球胜平负 | hhad | getMatchCalculatorV1.qry |
+| 比分 | crs | getMatchCalculatorV1.qry |
+| 总进球 | ttg | getMatchCalculatorV1.qry |
+| 半全场 | hafu | getMatchCalculatorV1.qry |
 
-### 体育比赛类（必须官方来源）
+**API地址**: `https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1`
 
-| 彩种 | 主来源 | 备用来源 | 说明 |
-|-----|-------|---------|------|
-| 竞彩足球 | sporttery.cn | - | 足球比赛赛程 |
-| 竞彩篮球 | sporttery.cn | - | 篮球比赛赛程 |
-| 北京单场 | bjlot.com.cn | sporttery.cn | 足球/篮球比赛 |
-| 传统足彩 | bjlot.com.cn | sporttery.cn | 14场比赛 |
-| 4场总进球 | bjlot.com.cn | sporttery.cn | 4场比赛 |
-| 6场半全场 | bjlot.com.cn | sporttery.cn | 6场比赛 |
-| 胜负过关 | bjlot.com.cn | sporttery.cn | 多场比赛 |
+**结论**: 竞彩足球的所有玩法都在一个API中，无需单独爬取！
 
-### 开奖类（可用专业网站）
+### 竞彩篮球 (sporttery.cn) ✅
 
-| 彩种 | 推荐来源 | 说明 |
-|-----|---------|------|
-| 大乐透 | 500.com | 开奖数据 |
-| 七星彩 | 500.com | 开奖数据 |
-| 排列三 | 500.com | 开奖数据 |
-| 排列五 | 500.com | 开奖数据 |
+**API地址**: `https://webapi.sporttery.cn/gateway/uniform/basketball/getMatchCalculatorV1.qry?channel=1`
 
-### 分析数据（第三方来源）
+### 传统足彩（胜负彩14场、任选9场、6场半全场、4场总进球）
+
+| 彩种 | 说明 | 来源 |
+|-----|------|------|
+| 胜负彩14场 | 选14场 | 500.com/trade/sfc/ |
+| 任选9场 | 选9场 | 500.com/trade/sfc/ |
+| 6场半全场 | 选6场半全场 | 500.com/trade/bqc/ |
+| 4场总进球 | 选4场总进球 | 500.com/trade/jqc/ |
+
+**说明**: 传统足彩是"选场次"玩法，不是每场独立投注。500.com是传统足彩的权威数据来源。
+
+### 北京单场 (bjlot.com.cn) ✅
+
+| 玩法 | 页面 |
+|-----|------|
+| 单场胜平负 | /ssm/dc200_spf.shtml |
+| 单场比分 | /ssm/dc200_bf.shtml |
+| 单场总进球 | /ssm/dc200_tgg.shtml |
+| 单场半全场 | /ssm/dc200_bqc.shtml |
+
+### 开奖数据（大乐透、七星彩等）
+
+| 彩种 | 来源 |
+|-----|------|
+| 大乐透 | 500.com/datachart |
+| 七星彩 | 500.com/datachart |
+| 排列三/五 | 500.com/datachart |
+
+**说明**: 开奖数据可从专业彩票网站获取。
+
+### 分析数据
 
 | 数据类型 | 来源 |
 |---------|------|
-| 比赛分析 | 500.com, okooo.com |
-| 亚盘数据 | 500.com |
-| 欧赔数据 | 500.com |
+| 比赛分析 | 500.com/odds, okooo.com |
+| 亚盘数据 | 500.com/odds |
+| 欧赔数据 | 500.com/odds |
 | 球队排名 | 500.com, okooo.com |
-| 实时比分 | sporttery.cn, 500.com |
+| 实时比分 | sporttery.cn + 500.com补充 |
+
+## 现有爬虫状态
+
+| 爬虫 | 数据类型 | 当前来源 | 状态 |
+|-----|---------|---------|------|
+| live_crawler_final.py | 竞彩足球 | sporttery.cn | ✅ 正确 |
+| football.html | 竞彩足球 | sporttery.cn | ✅ 正确 |
+| basketball_analysis_crawler.py | 竞彩篮球 | sporttery.cn | ✅ 正确 |
+| bjdc_crawler.py | 北京单场 | bjlot.com.cn | ✅ 正确 |
+| sggg_crawler.py | 胜负过关 | bjlot.com.cn | ✅ 正确 |
+| bqc6_crawler.py | 6场半全场 | 500.com | ✅ 正确（传统足彩） |
+| ctzc_crawler.py | 胜负彩14场 | 500.com | ✅ 正确（传统足彩） |
+| zjq4_crawler.py | 4场总进球 | 500.com | ✅ 正确（传统足彩） |
+| dlt_crawler.py | 大乐透开奖 | 500.com | ✅ 正确（开奖数据） |
+| qxc_crawler.py | 七星彩开奖 | 500.com | ✅ 正确（开奖数据） |
 
 ## 官方API
 
 ### 竞彩官网 (sporttery.cn)
 ```
-足球比赛列表: https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1
-篮球比赛列表: https://webapi.sporttery.cn/gateway/uniform/basketball/getMatchCalculatorV1.qry?channel=1
-单关状态: https://webapi.sporttery.cn/gateway/uniform/football/getMatchListV1.qry?clientCode=3001
+足球比赛(含胜平负/让球/比分/总进球/半全场): 
+  https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1
+
+篮球比赛:
+  https://webapi.sporttery.cn/gateway/uniform/basketball/getMatchCalculatorV1.qry?channel=1
+
+单关状态:
+  https://webapi.sporttery.cn/gateway/uniform/football/getMatchListV1.qry?clientCode=3001
 ```
 
 ### 北京体彩网 (bjlot.com.cn)
 ```
 北京单场: https://www.bjlot.com.cn/ssm/dc200_spf.shtml
-胜负过关: https://www.bjlot.com.cn/ssm/270.shtml
-传统足彩: 需要查找具体页面
+胜负过关: 需要查找具体页面
+```
+
+### 传统足彩 (500.com)
+```
+胜负彩14场/任选9场: https://trade.500.com/sfc/
+4场总进球: https://trade.500.com/jqc/
+6场半全场: https://trade.500.com/bqc/
 ```
 
 ## 分析数据来源
@@ -75,39 +120,7 @@
 球队身价: https://www.okooo.com/match/{fid}/
 ```
 
-## 现有爬虫状态
-
-| 爬虫 | 数据类型 | 当前来源 | 状态 |
-|-----|---------|---------|------|
-| live_crawler_final.py | 足球赛程 | sporttery.cn + 500.com补充 | ✅ 符合 |
-| football.html | 足球赛程 | sporttery.cn | ✅ 符合 |
-| basketball_analysis_crawler.py | 篮球赛程 | sporttery.cn + 500.com补充 | ✅ 符合 |
-| bjdc_crawler.py | 北京单场 | bjlot.com.cn | ✅ 符合 |
-| sggg_crawler.py | 胜负过关 | bjlot.com.cn | ✅ 符合 |
-| bqc6_crawler.py | 6场半全场 | 500.com | ❌ 需修改 |
-| ctzc_crawler.py | 传统足彩 | 500.com | ❌ 需修改 |
-| zjq4_crawler.py | 4场总进球 | 500.com | ❌ 需修改 |
-| dlt_crawler.py | 大乐透开奖 | 500.com | ✅ 符合（开奖数据） |
-| qxc_crawler.py | 七星彩开奖 | 500.com | ✅ 符合（开奖数据） |
-
-## 北京体彩网页面发现
-
-```
-北京单场: https://www.bjlot.com.cn/ssm/dc200_spf.shtml ✅
-胜负过关: https://www.bjlot.com.cn/ssm/270.shtml ❌ (404)
-6场半全场: https://www.bjlot.com.cn/ssm/dc240_bqc.shtml ✅ (期号变化)
-传统足彩: 待查找
-4场总进球: 待查找
-```
-
-## 修改计划
-
-1. bqc6_crawler.py - 改为从 bjlot.com.cn/ssm/dc240_bqc.shtml 获取
-2. ctzc_crawler.py - 查找北京体彩网页面后修改
-3. zjq4_crawler.py - 查找北京体彩网页面后修改
-
-**注意**: 现有爬虫虽然使用500.com，但已正常工作。修改需谨慎。
-
 ## 修改记录
 
 - 2026-03-31: 创建规范文档
+- 2026-03-31: 确认竞彩足球API包含所有玩法，传统足彩500.com是正确来源
