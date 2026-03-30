@@ -1,77 +1,39 @@
 {
   "mapping": {
     "德国_加纳": {
-      "matchId": "2038681",
       "fixtureId": "1361594",
-      "namitiyuId": "4465423",
-      "matchNum": "周一002",
-      "league": "国际赛"
+      "matchId": "2038681",
+      "home": "德国",
+      "away": "加纳"
     },
     "神户胜利_清水鼓动": {
-      "matchId": "2038742",
       "fixtureId": "1366283",
-      "namitiyuId": "4470782",
-      "matchNum": "周三001",
-      "league": "日职"
+      "matchId": "2038742",
+      "home": "神户胜利",
+      "away": "清水鼓动"
     },
     "町田泽维_东京FC": {
-      "matchId": "2038743",
       "fixtureId": "1366341",
-      "namitiyuId": "4470691",
-      "matchNum": "周三002",
-      "league": "日职"
+      "matchId": "2038743",
+      "home": "町田泽维",
+      "away": "东京FC"
     }
   },
   "byMatchId": {
     "2038681": {
       "fixtureId": "1361594",
-      "namitiyuId": "4465423",
-      "matchNum": "周一002",
       "home": "德国",
-      "away": "加纳",
-      "league": "国际赛"
+      "away": "加纳"
     },
     "2038742": {
       "fixtureId": "1366283",
-      "namitiyuId": "4470782",
-      "matchNum": "周三001",
       "home": "神户胜利",
-      "away": "清水鼓动",
-      "league": "日职"
+      "away": "清水鼓动"
     },
     "2038743": {
       "fixtureId": "1366341",
-      "namitiyuId": "4470691",
-      "matchNum": "周三002",
       "home": "町田泽维",
-      "away": "东京FC",
-      "league": "日职"
-    }
-  },
-  "byFixtureId": {
-    "1361594": {
-      "matchId": "2038681",
-      "namitiyuId": "4465423",
-      "matchNum": "周一002",
-      "home": "德国",
-      "away": "加纳",
-      "league": "国际赛"
-    },
-    "1366283": {
-      "matchId": "2038742",
-      "namitiyuId": "4470782",
-      "matchNum": "周三001",
-      "home": "神户胜利",
-      "away": "清水鼓动",
-      "league": "日职"
-    },
-    "1366341": {
-      "matchId": "2038743",
-      "namitiyuId": "4470691",
-      "matchNum": "周三002",
-      "home": "町田泽维",
-      "away": "东京FC",
-      "league": "日职"
+      "away": "东京FC"
     }
   }
 }

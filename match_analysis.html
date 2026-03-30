@@ -869,6 +869,7 @@
 <script>
 const params = new URLSearchParams(window.location.search);
 const fixtureId = params.get('fixtureId') || params.get('id');
+const matchId = params.get('matchId');
 let nid = params.get('nid') || params.get('namitiyuId');
 const homeName = params.get('home') || '主队';
 const awayName = params.get('away') || '客队';
@@ -960,8 +961,51 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 async function loadData() {
-    if (!fixtureId) {
-        showError('缺少比赛ID');
+    let actualFixtureId = fixtureId;
+    
+    // 如果没有fixtureId，尝试用matchId查找
+    if (!actualFixtureId && matchId) {
+        try {
+            const response = await fetch('data/fixture_mapping.json?t=' + Date.now());
+            if (response.ok) {
+                const data = await response.json();
+                if (data.byMatchId && data.byMatchId[matchId]) {
+                    actualFixtureId = data.byMatchId[matchId].fixtureId;
+                }
+            }
+        } catch(e) {
+            console.log('查找fixtureId失败:', e);
+        }
+    }
+    
+    // 如果还是没有fixtureId，尝试用球队名查找
+    if (!actualFixtureId && homeName && awayName) {
+        try {
+            const response = await fetch('data/fixture_mapping.json?t=' + Date.now());
+            if (response.ok) {
+                const data = await response.json();
+                const key = `${homeName}_${awayName}`;
+                if (data.mapping && data.mapping[key]) {
+                    actualFixtureId = data.mapping[key].fixtureId;
+                }
+                // 模糊匹配
+                if (!actualFixtureId && data.mapping) {
+                    for (const k in data.mapping) {
+                        if (k.includes(homeName.substring(0, 2)) && k.includes(awayName.substring(0, 2))) {
+                            actualFixtureId = data.mapping[k].fixtureId;
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch(e) {
+            console.log('查找fixtureId失败:', e);
+        }
+    }
+    
+    if (!actualFixtureId) {
+        // 没有fixtureId，显示基本信息
+        showBasicInfo();
         return;
     }
     
@@ -969,9 +1013,9 @@ async function loadData() {
     document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
     
     try {
-        const response = await fetch('data/analysis_' + fixtureId + '.json?t=' + Date.now());
+        const response = await fetch('data/analysis_' + actualFixtureId + '.json?t=' + Date.now());
         if (!response.ok) {
-            showError('数据未加载，请稍后刷新');
+            showBasicInfo();
             return;
         }
         
@@ -992,8 +1036,22 @@ async function loadData() {
         });
         
     } catch (e) {
-        showError('加载失败: ' + e.message);
+        showBasicInfo();
     }
+}
+
+function showBasicInfo() {
+    const loading = document.getElementById('loading');
+    loading.innerHTML = `
+        <div style="text-align:center; padding:40px 20px;">
+            <div style="font-size:48px; margin-bottom:16px;">⚽</div>
+            <div style="font-size:18px; font-weight:600; margin-bottom:8px;">${homeName} vs ${awayName}</div>
+            <div style="color:#6b7280; margin-bottom:4px;">${league}</div>
+            <div style="color:#9ca3af; font-size:13px;">${matchTime}</div>
+            <div style="color:#9ca3af; font-size:12px; margin-top:16px;">暂无详细分析数据</div>
+        </div>
+    `;
+    loading.style.display = 'flex';
 }
 
 function showError(msg) {

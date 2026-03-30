@@ -389,11 +389,12 @@ function updateStats(data) {
                 item.addEventListener('click', function() {
                     const fid = this.dataset.fid;
                     const nid = this.dataset.namitiyu;
-                    const home = this.dataset.home;
-                    const away = this.dataset.away;
-                    const league = this.dataset.league || '';
+                    const home = decodeURIComponent(this.dataset.home || '');
+                    const away = decodeURIComponent(this.dataset.away || '');
+                    const league = decodeURIComponent(this.dataset.league || '');
                     const time = this.dataset.time || '';
                     const matchId = this.dataset.matchid || '';
+                    const matchNum = this.dataset.matchnum || '';
                     
                     if (currentSport === 'basketball') {
                         // 篮球跳转到篮球分析页
@@ -406,15 +407,14 @@ function updateStats(data) {
                         
                         // 如果没有fid，尝试从fixture_mapping获取
                         if (!fixtureId && window.fixtureMapping) {
-                            const key = `${decodeURIComponent(home)}_${decodeURIComponent(away)}`;
+                            const key = `${home}_${away}`;
                             if (window.fixtureMapping.mapping && window.fixtureMapping.mapping[key]) {
                                 fixtureId = window.fixtureMapping.mapping[key].fixtureId;
                             }
                             // 尝试模糊匹配
                             if (!fixtureId && window.fixtureMapping.mapping) {
                                 for (const k in window.fixtureMapping.mapping) {
-                                    if (k.includes(decodeURIComponent(home).substring(0, 3)) && 
-                                        k.includes(decodeURIComponent(away).substring(0, 3))) {
+                                    if (home && away && k.includes(home.substring(0, 2)) && k.includes(away.substring(0, 2))) {
                                         fixtureId = window.fixtureMapping.mapping[k].fixtureId;
                                         break;
                                     }
@@ -430,7 +430,10 @@ function updateStats(data) {
                         }
                         
                         if (fixtureId) {
-                            window.location.href = `match_analysis.html?fixtureId=${fixtureId}&nid=${nid || ''}&home=${home}&away=${away}&league=${league}&time=${time}`;
+                            window.location.href = `match_analysis.html?fixtureId=${fixtureId}&nid=${nid || ''}&home=${encodeURIComponent(home)}&away=${encodeURIComponent(away)}&league=${encodeURIComponent(league)}&time=${time}`;
+                        } else if (home && away) {
+                            // 没有fixtureId，用球队名和matchId跳转，match_analysis会尝试实时获取数据
+                            window.location.href = `match_analysis.html?matchId=${matchId}&home=${encodeURIComponent(home)}&away=${encodeURIComponent(away)}&league=${encodeURIComponent(league)}&time=${time}`;
                         } else {
                             alert('暂无此比赛的分析数据');
                         }
