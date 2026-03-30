@@ -83,8 +83,16 @@
 
 ### 竞彩官网 (sporttery.cn)
 ```
-足球比赛(含胜平负/让球/比分/总进球/半全场): 
+比分直播（包含已结束比赛）:
+  https://webapi.sporttery.cn/gateway/uniform/fb/getMatchDataPageListV1.qry?method=all&pageSize=200
+  - 比分字段: sectionsNo999 (格式: "2:1")
+  - 状态字段: matchStatus (1=待开售, 3=暂停销售, 11=已完成)
+  - 返回所有竞彩比赛（包括历史比赛）
+
+足球比赛计算器(当前可投注):
   https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1
+  - 包含胜平负、让球、比分、总进球、半全场赔率
+  - 只返回当前可投注的比赛
 
 篮球比赛:
   https://webapi.sporttery.cn/gateway/uniform/basketball/getMatchCalculatorV1.qry?channel=1
