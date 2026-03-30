@@ -1,0 +1,1247 @@
+/Users/bluekyo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+==================================================
+开始爬取: 英超 (ID: 36)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea36.js
+共 23 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_36.js
+数据已保存到: data/league/36_2025_2026.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 258
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_36.js
+数据已保存到: data/league/36_2024_2025.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 271
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_36.js
+数据已保存到: data/league/36_2023_2024.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 298
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_36.js
+数据已保存到: data/league/36_2022_2023.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 271
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_36.js
+数据已保存到: data/league/36_2021_2022.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 281
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_36.js
+数据已保存到: data/league/36_2020_2021.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 270
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_36.js
+数据已保存到: data/league/36_2019_2020.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 262
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_36.js
+数据已保存到: data/league/36_2018_2019.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 267
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_36.js
+数据已保存到: data/league/36_2017_2018.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 250
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_36.js
+数据已保存到: data/league/36_2016_2017.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 266
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_36.js
+数据已保存到: data/league/36_2015_2016.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 263
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_36.js
+数据已保存到: data/league/36_2014_2015.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 243
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_36.js
+数据已保存到: data/league/36_2013_2014.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_36.js
+数据已保存到: data/league/36_2012_2013.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_36.js
+数据已保存到: data/league/36_2011_2012.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_36.js
+数据已保存到: data/league/36_2010_2011.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_36.js
+数据已保存到: data/league/36_2009_2010.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_36.js
+数据已保存到: data/league/36_2008_2009.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007-2008/playerTech_36.js
+数据已保存到: data/league/36_2007_2008.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2006-2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006-2007/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006-2007/playerTech_36.js
+数据已保存到: data/league/36_2006_2007.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2005-2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005-2006/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005-2006/playerTech_36.js
+数据已保存到: data/league/36_2005_2006.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2004-2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004-2005/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004-2005/playerTech_36.js
+数据已保存到: data/league/36_2004_2005.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2003-2004
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2003-2004/s36.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2003-2004/playerTech_36.js
+数据已保存到: data/league/36_2003_2004.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+==================================================
+开始爬取: 西甲 (ID: 31)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea31.js
+共 23 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_31.js
+数据已保存到: data/league/31_2025_2026.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 255
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_31.js
+数据已保存到: data/league/31_2024_2025.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_31.js
+数据已保存到: data/league/31_2023_2024.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_31.js
+数据已保存到: data/league/31_2022_2023.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_31.js
+数据已保存到: data/league/31_2021_2022.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 280
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_31.js
+数据已保存到: data/league/31_2020_2021.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 271
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_31.js
+数据已保存到: data/league/31_2019_2020.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 270
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_31.js
+数据已保存到: data/league/31_2018_2019.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 265
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_31.js
+数据已保存到: data/league/31_2017_2018.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 252
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_31.js
+数据已保存到: data/league/31_2016_2017.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 282
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_31.js
+数据已保存到: data/league/31_2015_2016.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 250
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_31.js
+数据已保存到: data/league/31_2014_2015.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 250
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_31.js
+数据已保存到: data/league/31_2013_2014.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_31.js
+数据已保存到: data/league/31_2012_2013.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_31.js
+数据已保存到: data/league/31_2011_2012.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_31.js
+数据已保存到: data/league/31_2010_2011.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_31.js
+数据已保存到: data/league/31_2009_2010.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_31.js
+数据已保存到: data/league/31_2008_2009.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007-2008/playerTech_31.js
+数据已保存到: data/league/31_2007_2008.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2006-2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006-2007/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006-2007/playerTech_31.js
+数据已保存到: data/league/31_2006_2007.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2005-2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005-2006/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005-2006/playerTech_31.js
+数据已保存到: data/league/31_2005_2006.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2004-2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004-2005/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004-2005/playerTech_31.js
+数据已保存到: data/league/31_2004_2005.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2003-2004
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2003-2004/s31.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2003-2004/playerTech_31.js
+数据已保存到: data/league/31_2003_2004.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+==================================================
+开始爬取: 德甲 (ID: 8)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea8.js
+共 22 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_8.js
+数据已保存到: data/league/8_2025_2026.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 246
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_8.js
+数据已保存到: data/league/8_2024_2025.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 255
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_8.js
+数据已保存到: data/league/8_2023_2024.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 259
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_8.js
+数据已保存到: data/league/8_2022_2023.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 259
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_8.js
+数据已保存到: data/league/8_2021_2022.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 259
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_8.js
+数据已保存到: data/league/8_2020_2021.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 250
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_8.js
+数据已保存到: data/league/8_2019_2020.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 244
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_8.js
+数据已保存到: data/league/8_2018_2019.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 245
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_8.js
+数据已保存到: data/league/8_2017_2018.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 240
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_8.js
+数据已保存到: data/league/8_2016_2017.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 236
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_8.js
+数据已保存到: data/league/8_2015_2016.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 222
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_8.js
+数据已保存到: data/league/8_2014_2015.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 237
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_8.js
+数据已保存到: data/league/8_2013_2014.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_8.js
+数据已保存到: data/league/8_2012_2013.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_8.js
+数据已保存到: data/league/8_2011_2012.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_8.js
+数据已保存到: data/league/8_2010_2011.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_8.js
+数据已保存到: data/league/8_2009_2010.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_8.js
+数据已保存到: data/league/8_2008_2009.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007-2008/playerTech_8.js
+数据已保存到: data/league/8_2007_2008.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2006-2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006-2007/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006-2007/playerTech_8.js
+数据已保存到: data/league/8_2006_2007.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2005-2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005-2006/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005-2006/playerTech_8.js
+数据已保存到: data/league/8_2005_2006.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2004-2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004-2005/s8.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004-2005/playerTech_8.js
+数据已保存到: data/league/8_2004_2005.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+==================================================
+开始爬取: 意甲 (ID: 34)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea34.js
+共 22 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_34.js
+数据已保存到: data/league/34_2025_2026.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 274
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_34.js
+数据已保存到: data/league/34_2024_2025.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 291
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_34.js
+数据已保存到: data/league/34_2023_2024.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 284
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_34.js
+数据已保存到: data/league/34_2022_2023.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 282
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_34.js
+数据已保存到: data/league/34_2021_2022.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_34.js
+数据已保存到: data/league/34_2020_2021.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 284
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_34.js
+数据已保存到: data/league/34_2019_2020.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 271
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_34.js
+数据已保存到: data/league/34_2018_2019.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 258
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_34.js
+数据已保存到: data/league/34_2017_2018.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 252
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_34.js
+数据已保存到: data/league/34_2016_2017.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 259
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_34.js
+数据已保存到: data/league/34_2015_2016.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 267
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_34.js
+数据已保存到: data/league/34_2014_2015.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 258
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_34.js
+数据已保存到: data/league/34_2013_2014.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_34.js
+数据已保存到: data/league/34_2012_2013.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_34.js
+数据已保存到: data/league/34_2011_2012.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_34.js
+数据已保存到: data/league/34_2010_2011.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_34.js
+数据已保存到: data/league/34_2009_2010.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_34.js
+数据已保存到: data/league/34_2008_2009.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007-2008/playerTech_34.js
+数据已保存到: data/league/34_2007_2008.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2006-2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006-2007/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006-2007/playerTech_34.js
+数据已保存到: data/league/34_2006_2007.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2005-2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005-2006/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005-2006/playerTech_34.js
+数据已保存到: data/league/34_2005_2006.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2004-2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004-2005/s34.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004-2005/playerTech_34.js
+数据已保存到: data/league/34_2004_2005.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+==================================================
+开始爬取: 法甲 (ID: 11)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea11.js
+共 22 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_11.js
+数据已保存到: data/league/11_2025_2026.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 238
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_11.js
+数据已保存到: data/league/11_2024_2025.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 256
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_11.js
+数据已保存到: data/league/11_2023_2024.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 259
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_11.js
+数据已保存到: data/league/11_2022_2023.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 271
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_11.js
+数据已保存到: data/league/11_2021_2022.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_11.js
+数据已保存到: data/league/11_2020_2021.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_11.js
+数据已保存到: data/league/11_2019_2020.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 227
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_11.js
+数据已保存到: data/league/11_2018_2019.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 252
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_11.js
+数据已保存到: data/league/11_2017_2018.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 244
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_11.js
+数据已保存到: data/league/11_2016_2017.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 252
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_11.js
+数据已保存到: data/league/11_2015_2016.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 276
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_11.js
+数据已保存到: data/league/11_2014_2015.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 258
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_11.js
+数据已保存到: data/league/11_2013_2014.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_11.js
+数据已保存到: data/league/11_2012_2013.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_11.js
+数据已保存到: data/league/11_2011_2012.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_11.js
+数据已保存到: data/league/11_2010_2011.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_11.js
+数据已保存到: data/league/11_2009_2010.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_11.js
+数据已保存到: data/league/11_2008_2009.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007-2008/playerTech_11.js
+数据已保存到: data/league/11_2007_2008.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2006-2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006-2007/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006-2007/playerTech_11.js
+数据已保存到: data/league/11_2006_2007.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2005-2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005-2006/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005-2006/playerTech_11.js
+数据已保存到: data/league/11_2005_2006.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+爬取赛季: 2004-2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004-2005/s11.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004-2005/playerTech_11.js
+数据已保存到: data/league/11_2004_2005.json
+  球队数: 20, 比赛数: 380, 胜平负: 20, 让球: 20, 大小球: 20, 射手: 0
+
+==================================================
+开始爬取: 中超 (ID: 60)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea60.js
+共 23 个赛季
+
+爬取赛季: 2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2026/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2026/playerTech_60.js
+数据已保存到: data/league/60_2026.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 53
+
+爬取赛季: 2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025/playerTech_60.js
+数据已保存到: data/league/60_2025.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 192
+
+爬取赛季: 2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024/playerTech_60.js
+数据已保存到: data/league/60_2024.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 196
+
+爬取赛季: 2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023/playerTech_60.js
+数据已保存到: data/league/60_2023.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 172
+
+爬取赛季: 2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022/playerTech_60.js
+数据已保存到: data/league/60_2022.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 171
+
+爬取赛季: 2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021/playerTech_60.js
+数据已保存到: data/league/60_2021.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 80
+
+爬取赛季: 2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020/playerTech_60.js
+数据已保存到: data/league/60_2020.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 62
+
+爬取赛季: 2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019/playerTech_60.js
+数据已保存到: data/league/60_2019.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 67
+
+爬取赛季: 2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018/playerTech_60.js
+数据已保存到: data/league/60_2018.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017/playerTech_60.js
+数据已保存到: data/league/60_2017.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 74
+
+爬取赛季: 2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016/playerTech_60.js
+数据已保存到: data/league/60_2016.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 74
+
+爬取赛季: 2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015/playerTech_60.js
+数据已保存到: data/league/60_2015.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014/playerTech_60.js
+数据已保存到: data/league/60_2014.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013/playerTech_60.js
+数据已保存到: data/league/60_2013.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012/playerTech_60.js
+数据已保存到: data/league/60_2012.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011/playerTech_60.js
+数据已保存到: data/league/60_2011.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010/playerTech_60.js
+数据已保存到: data/league/60_2010.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009/playerTech_60.js
+数据已保存到: data/league/60_2009.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008/playerTech_60.js
+数据已保存到: data/league/60_2008.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+爬取赛季: 2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007/playerTech_60.js
+数据已保存到: data/league/60_2007.json
+  球队数: 15, 比赛数: 210, 胜平负: 15, 让球: 15, 大小球: 15, 射手: 0
+
+爬取赛季: 2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006/playerTech_60.js
+数据已保存到: data/league/60_2006.json
+  球队数: 15, 比赛数: 210, 胜平负: 15, 让球: 15, 大小球: 15, 射手: 0
+
+爬取赛季: 2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005/playerTech_60.js
+数据已保存到: data/league/60_2005.json
+  球队数: 14, 比赛数: 182, 胜平负: 14, 让球: 14, 大小球: 14, 射手: 0
+
+爬取赛季: 2004
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004/s60.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004/playerTech_60.js
+数据已保存到: data/league/60_2004.json
+  球队数: 12, 比赛数: 132, 胜平负: 12, 让球: 12, 大小球: 12, 射手: 0
+
+==================================================
+开始爬取: 日职联 (ID: 25)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea25.js
+共 23 个赛季
+
+爬取赛季: 2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2026/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2026/playerTech_25.js
+数据已保存到: data/league/25_2026.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025/playerTech_25.js
+数据已保存到: data/league/25_2025.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024/playerTech_25.js
+数据已保存到: data/league/25_2024.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023/playerTech_25.js
+数据已保存到: data/league/25_2023.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022/playerTech_25.js
+数据已保存到: data/league/25_2022.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 257
+
+爬取赛季: 2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021/playerTech_25.js
+数据已保存到: data/league/25_2021.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 290
+
+爬取赛季: 2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020/playerTech_25.js
+数据已保存到: data/league/25_2020.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 252
+
+爬取赛季: 2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019/playerTech_25.js
+数据已保存到: data/league/25_2019.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 234
+
+爬取赛季: 2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018/playerTech_25.js
+数据已保存到: data/league/25_2018.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 247
+
+爬取赛季: 2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017/playerTech_25.js
+数据已保存到: data/league/25_2017.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 237
+
+爬取赛季: 2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016/playerTech_25.js
+数据已保存到: data/league/25_2016.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 232
+
+爬取赛季: 2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015/playerTech_25.js
+数据已保存到: data/league/25_2015.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 203
+
+爬取赛季: 2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014/playerTech_25.js
+数据已保存到: data/league/25_2014.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 25
+
+爬取赛季: 2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013/playerTech_25.js
+数据已保存到: data/league/25_2013.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012/playerTech_25.js
+数据已保存到: data/league/25_2012.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011/playerTech_25.js
+数据已保存到: data/league/25_2011.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010/playerTech_25.js
+数据已保存到: data/league/25_2010.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009/playerTech_25.js
+数据已保存到: data/league/25_2009.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008/playerTech_25.js
+数据已保存到: data/league/25_2008.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007/playerTech_25.js
+数据已保存到: data/league/25_2007.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006/playerTech_25.js
+数据已保存到: data/league/25_2006.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005/playerTech_25.js
+数据已保存到: data/league/25_2005.json
+  球队数: 18, 比赛数: 306, 胜平负: 18, 让球: 18, 大小球: 18, 射手: 0
+
+爬取赛季: 2004
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2004/s25.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2004/playerTech_25.js
+数据已保存到: data/league/25_2004.json
+  球队数: 16, 比赛数: 240, 胜平负: 16, 让球: 16, 大小球: 16, 射手: 0
+
+==================================================
+开始爬取: 韩K联 (ID: 15)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea15.js
+共 22 个赛季
+
+爬取赛季: 2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2026/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2026/playerTech_15.js
+数据已保存到: data/league/15_2026.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025/playerTech_15.js
+数据已保存到: data/league/15_2025.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024/playerTech_15.js
+数据已保存到: data/league/15_2024.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023/playerTech_15.js
+数据已保存到: data/league/15_2023.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022/playerTech_15.js
+数据已保存到: data/league/15_2022.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 170
+
+爬取赛季: 2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021/playerTech_15.js
+数据已保存到: data/league/15_2021.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 182
+
+爬取赛季: 2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020/playerTech_15.js
+数据已保存到: data/league/15_2020.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019/playerTech_15.js
+数据已保存到: data/league/15_2019.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018/playerTech_15.js
+数据已保存到: data/league/15_2018.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 11
+
+爬取赛季: 2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017/playerTech_15.js
+数据已保存到: data/league/15_2017.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016/playerTech_15.js
+数据已保存到: data/league/15_2016.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015/playerTech_15.js
+数据已保存到: data/league/15_2015.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014/playerTech_15.js
+数据已保存到: data/league/15_2014.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013/playerTech_15.js
+数据已保存到: data/league/15_2013.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012/playerTech_15.js
+数据已保存到: data/league/15_2012.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011/playerTech_15.js
+数据已保存到: data/league/15_2011.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010/playerTech_15.js
+数据已保存到: data/league/15_2010.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009/playerTech_15.js
+数据已保存到: data/league/15_2009.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008/playerTech_15.js
+数据已保存到: data/league/15_2008.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2007
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2007/playerTech_15.js
+数据已保存到: data/league/15_2007.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2006
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2006/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2006/playerTech_15.js
+数据已保存到: data/league/15_2006.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2005
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2005/s15.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2005/playerTech_15.js
+数据已保存到: data/league/15_2005.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+==================================================
+开始爬取: 澳超 (ID: 273)
+==================================================
+获取赛季列表: https://zq.titan007.com/jsData/LeagueSeason/sea273.js
+共 21 个赛季
+
+爬取赛季: 2025-2026
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2025-2026/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2025-2026/playerTech_273.js
+数据已保存到: data/league/273_2025_2026.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2024-2025
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2024-2025/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2024-2025/playerTech_273.js
+数据已保存到: data/league/273_2024_2025.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2023-2024
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2023-2024/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2023-2024/playerTech_273.js
+数据已保存到: data/league/273_2023_2024.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2022-2023
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2022-2023/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2022-2023/playerTech_273.js
+数据已保存到: data/league/273_2022_2023.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 110
+
+爬取赛季: 2021-2022
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2021-2022/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2021-2022/playerTech_273.js
+数据已保存到: data/league/273_2021_2022.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 148
+
+爬取赛季: 2020-2021
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2020-2021/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2020-2021/playerTech_273.js
+数据已保存到: data/league/273_2020_2021.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 137
+
+爬取赛季: 2019-2020
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2019-2020/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2019-2020/playerTech_273.js
+数据已保存到: data/league/273_2019_2020.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 133
+
+爬取赛季: 2018-2019
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2018-2019/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2018-2019/playerTech_273.js
+数据已保存到: data/league/273_2018_2019.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 118
+
+爬取赛季: 2017-2018
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2017-2018/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2017-2018/playerTech_273.js
+数据已保存到: data/league/273_2017_2018.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 112
+
+爬取赛季: 2016-2017
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2016-2017/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2016-2017/playerTech_273.js
+数据已保存到: data/league/273_2016_2017.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 107
+
+爬取赛季: 2015-2016
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2015-2016/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2015-2016/playerTech_273.js
+数据已保存到: data/league/273_2015_2016.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 105
+
+爬取赛季: 2014-2015
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2014-2015/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2014-2015/playerTech_273.js
+数据已保存到: data/league/273_2014_2015.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 133
+
+爬取赛季: 2013-2014
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2013-2014/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2013-2014/playerTech_273.js
+数据已保存到: data/league/273_2013_2014.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2012-2013
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2012-2013/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2012-2013/playerTech_273.js
+数据已保存到: data/league/273_2012_2013.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2011-2012
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2011-2012/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2011-2012/playerTech_273.js
+数据已保存到: data/league/273_2011_2012.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2010-2011
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2010-2011/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2010-2011/playerTech_273.js
+数据已保存到: data/league/273_2010_2011.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2009-2010
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2009-2010/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2009-2010/playerTech_273.js
+数据已保存到: data/league/273_2009_2010.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2008-2009
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2008-2009/s273.js
+获取射手榜数据: https://zq.titan007.com/jsData/Count/2008-2009/playerTech_273.js
+数据已保存到: data/league/273_2008_2009.json
+  球队数: 0, 比赛数: 0, 胜平负: 0, 让球: 0, 大小球: 0, 射手: 0
+
+爬取赛季: 2007-2008
+获取比赛数据: https://zq.titan007.com/jsData/matchResult/2007-2008/s273.js

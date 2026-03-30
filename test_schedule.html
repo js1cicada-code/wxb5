@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+    <h1>欧罗巴杯赛程测试</h1>
+    <div id="result"></div>
+    <script>
+        async function test() {
+            try {
+                const resp = await fetch('data/league/113_2024_2025.json');
+                const data = await resp.json();
+                const matches = data.matches || [];
+                
+                const allRounds = [...new Set(matches.map(m => m.round))].sort((a, b) => String(a).localeCompare(String(b)));
+                
+                let html = '<p>总比赛数: ' + matches.length + '</p>';
+                html += '<p>轮次数: ' + allRounds.length + '</p>';
+                html += '<p>轮次: ' + allRounds.join(', ') + '</p>';
+                html += '<h3>第一轮比赛:</h3>';
+                
+                const firstRound = allRounds[0];
+                const roundMatches = matches.filter(m => m.round === firstRound);
+                html += '<p>第一轮比赛数: ' + roundMatches.length + '</p>';
+                
+                for (let m of roundMatches.slice(0, 5)) {
+                    html += '<p>' + m.home_name + ' ' + m.score + ' ' + m.away_name + '</p>';
+                }
+                
+                document.getElementById('result').innerHTML = html;
+            } catch (e) {
+                document.getElementById('result').innerHTML = '<p style="color:red">错误: ' + e.message + '</p>';
+            }
+        }
+        test();
+    </script>
+</body>
+</html>

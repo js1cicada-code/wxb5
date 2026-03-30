@@ -1896,8 +1896,6 @@ def fetch_all_analysis(limit=None):
     if not mapping:
         return
     
-    save_fixture_mapping(mapping)
-    
     print(f"\n开始爬取...")
     count = 0
     

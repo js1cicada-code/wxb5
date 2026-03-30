@@ -269,6 +269,15 @@ module.exports = {
         removeAttributeQuotes: true
       } : false
     }),
+    new HtmlWebpackPlugin({
+      template: './database.html',
+      filename: 'database.html',
+      minify: isProduction ? {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      } : false
+    }),
     new MiniCssExtractPlugin({
       filename: isProduction ? 'css/[name].[contenthash:8].css' : 'css/[name].css'
     })
@@ -303,6 +312,9 @@ module.exports = {
     port: 8082,
     hot: true,
     open: true,
+    client: {
+      webSocketURL: 'auto://0.0.0.0:0/ws'
+    },
     historyApiFallback: {
       disableDotRule: true
     },

@@ -1,8 +1,11 @@
 # Dependencies
 node_modules/
 
-# Build output (can be deleted and rebuilt)
-dist/
+# Build output - only ignore build artifacts, keep data files
+dist/*.html
+dist/css/
+dist/js/
+dist/data/.DS_Store
 
 # Data files (IMPORTANT: Do NOT ignore data directory)
 # Data is stored in data/ directory and is version controlled
@@ -44,10 +47,3 @@ coverage/
 
 # Temporary files
 *.tmp
-*.tempnode_modules/
-dist/
-*.log
-.DS_Store
-.env
-*.pyc
-__pycache__/

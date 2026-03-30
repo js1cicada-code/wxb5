@@ -35,6 +35,8 @@ DATA_DIR = PROJECT_DIR / "data"
 LOG_FILE = PROJECT_DIR / "update.log"
 
 CRAWLERS = [
+    ('比分直播-足球', 'live_crawler_final.py'),
+    ('比分直播-篮球', 'live_basketball_crawler.py'),
     ('比赛数据匹配', 'match_engine.py'),
     ('竞彩足球/篮球', 'data_fetcher.py'),
     ('北京单场', 'bjdc_crawler.py'),
