@@ -670,7 +670,19 @@
                 return;
             }
             console.log('match found:', match.home, 'vs', match.away);
-            const fixtureId = match.fixtureId || getFixtureId(match.home, match.away);
+            
+            let fixtureId = match.fixtureId;
+            if (!fixtureId && fixtureMapping.byMatchId) {
+                const mapping = fixtureMapping.byMatchId[String(matchId)] || fixtureMapping.byMatchId[parseInt(matchId)];
+                if (mapping) {
+                    fixtureId = mapping.fixtureId;
+                    console.log('got fixtureId from byMatchId:', fixtureId);
+                }
+            }
+            if (!fixtureId) {
+                fixtureId = getFixtureId(match.home, match.away);
+            }
+            
             console.log('fixtureId:', fixtureId);
             if (!fixtureId) {
                 alert('暂无此比赛的分析数据');

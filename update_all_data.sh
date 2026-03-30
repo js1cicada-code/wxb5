@@ -57,6 +57,8 @@ except:
     fi
 }
 
+run_crawler "足球直播数据" "live_crawler_final.py" "data/live_data.json"
+run_crawler "比赛匹配引擎" "match_engine.py" "data/fixture_mapping.json"
 run_crawler "北京单场" "bjdc_crawler.py" "dist/bjdc_data.json"
 run_crawler "胜负过关" "sggg_crawler.py" "dist/sggg_data.json"
 run_crawler "传统足彩14场/任选9场" "ctzc_crawler.py" "dist/ctzc_data.json"

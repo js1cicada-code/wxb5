@@ -1,25 +1,25 @@
 {
-  "checkTime": "2026-03-24T19:29:26.130762",
-  "status": "warning",
+  "checkTime": "2026-03-31T01:30:45.056739",
+  "status": "ok",
   "files": [
     {
       "file": "bjdc_data.json",
       "name": "北京单场",
       "exists": true,
-      "updateTime": "2026-03-24 18:08:33",
-      "ageMinutes": 80,
-      "ageHours": 1.35,
-      "isFresh": false,
-      "status": "stale",
+      "updateTime": "2026-03-31 01:30:13",
+      "ageMinutes": 0,
+      "ageHours": 0.01,
+      "isFresh": true,
+      "status": "fresh",
       "updateInterval": 5
     },
     {
       "file": "sggg_data.json",
       "name": "胜负过关",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:12",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:15",
+      "ageMinutes": 0,
+      "ageHours": 0.01,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -28,9 +28,9 @@
       "file": "ctzc_data.json",
       "name": "传统足彩/任选9场",
       "exists": true,
-      "updateTime": "2026-03-24 19:28:34",
+      "updateTime": "2026-03-31 01:30:38",
       "ageMinutes": 0,
-      "ageHours": 0.01,
+      "ageHours": 0.0,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -39,9 +39,9 @@
       "file": "bqc6_data.json",
       "name": "6场半全场",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:15",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:37",
+      "ageMinutes": 0,
+      "ageHours": 0.0,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -50,9 +50,9 @@
       "file": "zjq4_data.json",
       "name": "4场总进球",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:17",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:37",
+      "ageMinutes": 0,
+      "ageHours": 0.0,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -61,9 +61,9 @@
       "file": "dlt_data.json",
       "name": "大乐透",
       "exists": true,
-      "updateTime": "2026-03-24 19:29:25",
+      "updateTime": "2026-03-31 01:30:21",
       "ageMinutes": 0,
-      "ageHours": 0.0,
+      "ageHours": 0.01,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 30
@@ -72,9 +72,9 @@
       "file": "qxc_data.json",
       "name": "七星彩",
       "exists": true,
-      "updateTime": "2026-03-24 19:29:26",
+      "updateTime": "2026-03-31 01:30:23",
       "ageMinutes": 0,
-      "ageHours": 0.0,
+      "ageHours": 0.01,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 30
@@ -83,9 +83,9 @@
       "file": "single_pass.json",
       "name": "单关状态",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:19",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:24",
+      "ageMinutes": 0,
+      "ageHours": 0.01,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -94,9 +94,9 @@
       "file": "fixture_mapping.json",
       "name": "足球分析",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:20",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:02",
+      "ageMinutes": 0,
+      "ageHours": 0.01,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
@@ -105,22 +105,13 @@
       "file": "basketball_matches.json",
       "name": "篮球分析",
       "exists": true,
-      "updateTime": "2026-03-24 19:26:23",
-      "ageMinutes": 3,
-      "ageHours": 0.05,
+      "updateTime": "2026-03-31 01:30:35",
+      "ageMinutes": 0,
+      "ageHours": 0.0,
       "isFresh": true,
       "status": "fresh",
       "updateInterval": 10
     }
   ],
-  "alerts": [
-    {
-      "type": "stale",
-      "file": "bjdc_data.json",
-      "name": "北京单场",
-      "ageHours": 1.35,
-      "maxAgeHours": 1,
-      "message": "北京单场数据已过期 (1.35小时前)"
-    }
-  ]
+  "alerts": []
 }

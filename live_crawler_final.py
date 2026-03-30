@@ -211,6 +211,7 @@ def fetch_all_data():
             if key in live_data:
                 ld = live_data[key]
                 m['fid'] = ld['fid']
+                m['fixtureId'] = ld['fid']  # 同时保存fixtureId，便于前端使用
                 # 保留sporttery的matchNum，只在空时使用500.com的
                 if not m.get('matchNum') and ld.get('matchNum'):
                     m['matchNum'] = ld.get('matchNum', '')
@@ -230,6 +231,7 @@ def fetch_all_data():
                     m['league'] = ld['league']
             else:
                 m['fid'] = ''
+                m['fixtureId'] = ''
                 # 对于不在500.com中的比赛，使用比赛日期作为分组依据
                 if not m.get('saleDateDisplay'):
                     # 从date字段解析日期 (格式: "2026年3月28日 周六")
