@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>资料库</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-light: #eff6ff;
+            --accent: #f97316;
+            --accent-light: #fff7ed;
+            --bg-main: #f5f7fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border-light: #e5e7eb;
+            --shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 0 12px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-back {
+            position: absolute;
+            left: 12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #333;
+            border-bottom: 2px solid #333;
+            transform: rotate(45deg);
+        }
+        
+        .header-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .header-search {
+            position: absolute;
+            right: 12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .header-search svg {
+            width: 20px;
+            height: 20px;
+            stroke: #333;
+        }
+        
+        .league-scroll {
+            background: var(--bg-card);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .league-scroll::-webkit-scrollbar { display: none; }
+        
+        .league-tabs {
+            display: flex;
+            padding: 0 12px;
+        }
+        
+        .league-tab {
+            flex-shrink: 0;
+            padding: 14px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .league-tab.active {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .league-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .season-bar {
+            background: var(--bg-card);
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .season-select {
+            position: relative;
+            flex-shrink: 0;
+            width: 95px;
+        }
+        
+        .season-select select {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            padding: 6px 28px 6px 12px;
+            background: var(--bg-main);
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            color: var(--text-primary);
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .season-select::after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid var(--text-secondary);
+            pointer-events: none;
+        }
+        
+        .data-tabs {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex: 1;
+        }
+        
+        .data-tabs::-webkit-scrollbar { display: none; }
+        
+        .data-tab {
+            flex-shrink: 0;
+            padding: 5px 12px;
+            background: var(--bg-main);
+            border-radius: 6px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+        
+        .data-tab.active {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+        
+        .sub-tabs {
+            padding: 10px 12px;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .sub-tabs::-webkit-scrollbar { display: none; }
+        
+        .sub-tab {
+            flex-shrink: 0;
+            padding: 8px 16px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            box-shadow: var(--shadow);
+        }
+        
+        .sub-tab.active {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        
+        .table-container {
+            background: var(--bg-card);
+            margin: 8px 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .standings-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .standings-table th {
+            background: #fafafa;
+            padding: 10px 4px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        
+        .standings-table th:first-child {
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        .standings-table td {
+            padding: 10px 4px;
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        .standings-table td:first-child {
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        .standings-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .rank-num {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: #f3f4f6;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        .rank-num.top4 {
+            background: var(--primary);
+            color: #fff;
+        }
+        
+        .rank-num.europa {
+            background: #f59e0b;
+            color: #fff;
+        }
+        
+        .rank-num.relegation {
+            background: #ef4444;
+            color: #fff;
+        }
+        
+        .team-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        .team-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        
+        .points {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        .qualify-badge {
+            font-size: 10px;
+            padding: 2px 6px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        
+        .qualify-badge.europa {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+
+        .round-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: var(--bg-card);
+            margin: 8px 12px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .round-prev, .round-next {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 13px;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 4px 8px;
+        }
+
+        .round-prev.disabled, .round-next.disabled {
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+
+        .arrow-left, .arrow-right {
+            font-size: 16px;
+        }
+
+        .round-current {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .dropdown-arrow {
+            font-size: 10px;
+            color: var(--text-secondary);
+        }
+
+        .schedule-container {
+            background: var(--bg-card);
+            margin: 0 12px 8px 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .schedule-list {
+            padding: 0;
+        }
+
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-date {
+            width: 56px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .schedule-date .date {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .schedule-date .time {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .schedule-teams {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .schedule-home, .schedule-away {
+            flex: 1;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .schedule-home {
+            text-align: right;
+        }
+
+        .schedule-away {
+            text-align: left;
+        }
+
+        .schedule-vs {
+            font-size: 12px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .schedule-vs.has-score {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .schedule-half {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .rules-container {
+            background: var(--bg-card);
+            margin: 8px 12px;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .rules-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .rules-content {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .rules-content br {
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()"></div>
+        <div class="header-title">资料库</div>
+        <div class="header-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="M21 21l-4.35-4.35"/>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="league-scroll">
+        <div class="league-tabs" id="leagueTabs"></div>
+    </div>
+    
+    <div class="season-bar">
+        <div class="season-select">
+            <select id="seasonSelect" onchange="changeSeason()">
+            </select>
+        </div>
+        <div class="data-tabs">
+            <div class="data-tab active">积分</div>
+            <div class="data-tab">赛程</div>
+            <div class="data-tab">胜平负</div>
+            <div class="data-tab">让球</div>
+            <div class="data-tab">总进球</div>
+            <div class="data-tab">射手榜</div>
+        </div>
+    </div>
+    
+    <div class="sub-tabs" id="standingsSubTabs">
+        <div class="sub-tab active" data-type="total">总积分</div>
+        <div class="sub-tab" data-type="half">半场积分</div>
+        <div class="sub-tab" data-type="home">主场积分</div>
+        <div class="sub-tab" data-type="away">客场积分</div>
+    </div>
+
+    <div class="round-nav" id="roundNav" style="display: none;">
+        <div class="round-prev" onclick="prevRound()">
+            <span class="arrow-left">‹</span>
+            <span>上一轮</span>
+        </div>
+        <div class="round-current">
+            <span id="roundText">第1轮</span>
+            <span class="dropdown-arrow">▼</span>
+        </div>
+        <div class="round-next" onclick="nextRound()">
+            <span>下一轮</span>
+            <span class="arrow-right">›</span>
+        </div>
+    </div>
+
+    <div class="table-container" id="standingsContainer">
+        <table class="standings-table">
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>赛</th>
+                    <th>胜/平/负</th>
+                    <th>得/失</th>
+                    <th>净</th>
+                    <th>积分</th>
+                </tr>
+            </thead>
+            <tbody id="standingsBody">
+                <tr><td colspan="7" class="loading">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="rules-container" id="rulesContainer" style="display: none;">
+        <div class="rules-title">赛制说明</div>
+        <div class="rules-content" id="rulesContent"></div>
+    </div>
+
+    <div class="schedule-container" id="scheduleContainer" style="display: none;">
+        <div class="schedule-list" id="scheduleList"></div>
+    </div>
+
+    <div class="table-container" id="winDrawLoseContainer" style="display: none;">
+        <table class="standings-table">
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>赛</th>
+                    <th>胜</th>
+                    <th>平</th>
+                    <th>负</th>
+                    <th>胜%</th>
+                    <th>平%</th>
+                    <th>负%</th>
+                </tr>
+            </thead>
+            <tbody id="winDrawLoseBody">
+                <tr><td colspan="9" class="loading">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container" id="handicapContainer" style="display: none;">
+        <table class="standings-table">
+            <thead id="handicapHead">
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>赛</th>
+                    <th>赢</th>
+                    <th>走</th>
+                    <th>输</th>
+                    <th>赢%</th>
+                    <th>走%</th>
+                    <th>输%</th>
+                </tr>
+            </thead>
+            <tbody id="handicapBody">
+                <tr><td colspan="9" class="loading">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container" id="totalGoalsContainer" style="display: none;">
+        <table class="standings-table">
+            <thead id="totalGoalsHead">
+                <tr>
+                    <th>排名</th>
+                    <th>球队</th>
+                    <th>赛</th>
+                    <th>大</th>
+                    <th>走</th>
+                    <th>小</th>
+                    <th>大%</th>
+                    <th>走%</th>
+                    <th>小%</th>
+                </tr>
+            </thead>
+            <tbody id="totalGoalsBody">
+                <tr><td colspan="9" class="loading">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container" id="scorersContainer" style="display: none;">
+        <table class="standings-table">
+            <thead id="scorersHead">
+                <tr>
+                    <th>排名</th>
+                    <th>球员</th>
+                    <th>球队</th>
+                    <th>进球</th>
+                    <th>点球</th>
+                    <th>主进</th>
+                    <th>客进</th>
+                </tr>
+            </thead>
+            <tbody id="scorersBody">
+                <tr><td colspan="7" class="loading">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let leagueData = null;
+        let allSeasons = [];
+        let currentSeason = '2025-2026';
+        let currentLeague = '英超';
+        let currentStandingsType = 'total';
+        let currentTab = 'standings';
+        let currentRound = 1;
+        let maxRound = 38;
+        
+        const leagueIds = {
+            '英超': 36,
+            '西甲': 31,
+            '德甲': 8,
+            '意甲': 34,
+            '法甲': 11,
+            '中超': 60,
+            '日职联': 25,
+            '韩K联': 15,
+            '澳超': 273,
+            '亚冠精英': 192,
+            '世界杯': 75,
+            '欧冠杯': 103,
+            '欧罗巴': 113
+        };
+        
+        const leagues = ['英超', '西甲', '德甲', '意甲', '法甲', '中超', '日职联', '韩K联', '澳超', '亚冠精英', '世界杯', '欧冠杯', '欧罗巴'];
+        
+        function getRoundName(round, leagueId, matchCount, isLastRound, isSecondLast) {
+            if (typeof round === 'number') return `第${round}轮`;
+            const roundStr = String(round);
+            if (leagueId === 75) {
+                if (roundStr.match(/^G\d+[A-H]$/)) {
+                    const group = roundStr.slice(-1);
+                    return `小组赛${group}组`;
+                }
+                if (matchCount === 8) return '十六强';
+                if (matchCount === 4) return '八强';
+                if (matchCount === 2) return '四强';
+                if (matchCount === 1 && isLastRound) return '决赛';
+                if (matchCount === 1 && isSecondLast) return '三四名';
+            }
+            if (leagueId === 103 || leagueId === 113) {
+                if (roundStr.match(/^G\d+$/)) return '小组赛';
+            }
+            return roundStr;
+        }
+        
+        async function loadLeagueData(leagueId, season, silent = false) {
+            const seasonFile = season.replace(/-/g, '_');
+            try {
+                const response = await fetch(`data/league/${leagueId}_${seasonFile}.json?t=${Date.now()}`);
+                if (!response.ok) {
+                    if (!silent) console.log(`文件不存在: ${leagueId}_${seasonFile}.json`);
+                    return null;
+                }
+                return await response.json();
+            } catch(e) {
+                if (!silent) console.error('加载数据失败:', e);
+                return null;
+            }
+        }
+        
+        async function findValidSeason(leagueId) {
+            // 按联赛类型尝试不同赛季格式
+            const doubleYear = ['2025-2026', '2024-2025', '2023-2024', '2022-2023'];
+            const singleYear = ['2026', '2025', '2024', '2023', '2022'];
+            
+            // 先尝试双年格式（欧洲联赛）
+            for (const season of doubleYear) {
+                const data = await loadLeagueData(leagueId, season, true);
+                if (data && data.teams && data.teams.length > 0) {
+                    return { data, season };
+                }
+            }
+            
+            // 再尝试单年格式（亚洲联赛）
+            for (const season of singleYear) {
+                const data = await loadLeagueData(leagueId, season, true);
+                if (data && data.teams && data.teams.length > 0) {
+                    return { data, season };
+                }
+            }
+            
+            return null;
+        }
+        
+        function renderLeagueTabs() {
+            const container = document.getElementById('leagueTabs');
+            let html = '';
+            leagues.forEach(league => {
+                html += `<div class="league-tab ${league === currentLeague ? 'active' : ''}" onclick="switchLeague('${league}')">${league}</div>`;
+            });
+            container.innerHTML = html;
+        }
+        
+        function renderSeasons() {
+            const select = document.getElementById('seasonSelect');
+            select.innerHTML = allSeasons.map(s => {
+                const shortSeason = s.replace(/20(\d{2})-20(\d{2})/, '$1-$2');
+                return `<option value="${s}" ${s === currentSeason ? 'selected' : ''}>${shortSeason}</option>`;
+            }).join('');
+        }
+        
+        async function switchLeague(league) {
+            currentLeague = league;
+            renderLeagueTabs();
+            
+            const leagueId = leagueIds[league];
+            if (!leagueId) {
+                showNoData();
+                return;
+            }
+            
+            // 查找有效赛季
+            const result = await findValidSeason(leagueId);
+            
+            if (!result) {
+                showNoData();
+                return;
+            }
+            
+            leagueData = result.data;
+            currentSeason = result.season;
+            
+            allSeasons = leagueData.seasons || [];
+            // 确保使用有数据的赛季
+            for (const s of allSeasons) {
+                const test = await loadLeagueData(leagueId, s, true);
+                if (test && test.teams && test.teams.length > 0) {
+                    currentSeason = s;
+                    leagueData = test;
+                    break;
+                }
+            }
+            
+            renderSeasons();
+            renderCurrentTab();
+        }
+        
+        function showNoData() {
+            if (currentTab === 'standings') {
+                document.getElementById('standingsBody').innerHTML = '<tr><td colspan="7" class="loading">暂无数据</td></tr>';
+            } else if (currentTab === 'schedule') {
+                document.getElementById('scheduleList').innerHTML = '<div class="loading">暂无数据</div>';
+            } else if (currentTab === 'winDrawLose') {
+                document.getElementById('winDrawLoseBody').innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+            } else if (currentTab === 'handicap') {
+                document.getElementById('handicapBody').innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+            } else if (currentTab === 'goals') {
+                document.getElementById('totalGoalsBody').innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+            } else if (currentTab === 'scorers') {
+                document.getElementById('scorersBody').innerHTML = '<tr><td colspan="7" class="loading">暂无数据</td></tr>';
+            }
+        }
+        
+        function renderCurrentTab() {
+            if (currentTab === 'standings') {
+                document.getElementById('standingsBody').innerHTML = '<tr><td colspan="7" class="loading">加载中...</td></tr>';
+                renderStandings();
+            } else if (currentTab === 'schedule') {
+                initSchedule();
+            } else if (currentTab === 'winDrawLose') {
+                renderWinDrawLose();
+            } else if (currentTab === 'handicap') {
+                renderHandicap();
+            } else if (currentTab === 'goals') {
+                renderTotalGoals();
+            } else if (currentTab === 'scorers') {
+                renderScorers();
+            }
+        }
+        
+        async function changeSeason() {
+            currentSeason = document.getElementById('seasonSelect').value;
+            
+            const leagueId = leagueIds[currentLeague];
+            if (!leagueId) return;
+            
+            leagueData = await loadLeagueData(leagueId, currentSeason, true);
+            
+            if (!leagueData || !leagueData.teams || leagueData.teams.length === 0) {
+                showNoData();
+                return;
+            }
+            
+            renderCurrentTab();
+        }
+        
+        function getRankClass(rank) {
+            if (rank <= 4) return 'top4';
+            if (rank === 5) return 'europa';
+            return '';
+        }
+        
+        function getQualifyBadge(rank, qualify) {
+            if (qualify) {
+                const type = qualify.type === 'el' ? 'europa' : '';
+                return `<div><span class="qualify-badge ${type}">${qualify.text}</span></div>`;
+            }
+            if (rank <= 4) {
+                return `<div><span class="qualify-badge">欧冠杯小组赛资格</span></div>`;
+            }
+            if (rank === 5) {
+                return `<div><span class="qualify-badge europa">欧罗巴联赛杯小组赛</span></div>`;
+            }
+            return '';
+        }
+        
+        function renderStandings() {
+            const tbody = document.getElementById('standingsBody');
+            const rulesContainer = document.getElementById('rulesContainer');
+            const rulesContent = document.getElementById('rulesContent');
+            const standingsSubTabs = document.getElementById('standingsSubTabs');
+            
+            // 世界杯显示小组积分榜
+            if (leagueData && leagueData.group_standings && Object.keys(leagueData.group_standings).length > 0) {
+                standingsSubTabs.style.display = 'none';
+                
+                let html = '';
+                const groups = Object.keys(leagueData.group_standings).sort();
+                
+                groups.forEach(groupName => {
+                    const teams = leagueData.group_standings[groupName];
+                    html += `
+                        <tr><td colspan="7" style="background:#e0f2fe;font-weight:bold;padding:8px 12px;">${groupName}组</td></tr>
+                    `;
+                    teams.forEach(team => {
+                        html += `
+                            <tr>
+                                <td><span class="rank-num">${team.rank}</span></td>
+                                <td><div class="team-name"><span>${team.team_name}</span></div></td>
+                                <td>${team.played}</td>
+                                <td>${team.won}/${team.draw}/${team.lost}</td>
+                                <td>${team.goals_for}/${team.goals_against}</td>
+                                <td>${team.goal_diff}</td>
+                                <td class="points">${team.points}</td>
+                            </tr>
+                        `;
+                    });
+                });
+                
+                tbody.innerHTML = html;
+                rulesContainer.style.display = 'none';
+                return;
+            }
+            
+            // 杯赛没有积分榜
+            if (!leagueData || !leagueData.standings || !leagueData.standings[currentStandingsType] || leagueData.standings[currentStandingsType].length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="loading">杯赛无积分榜，请查看赛程或让球/大小球统计</td></tr>';
+                rulesContainer.style.display = 'none';
+                return;
+            }
+            
+            const standings = leagueData.standings[currentStandingsType];
+            let html = '';
+            
+            standings.forEach(team => {
+                const rankClass = getRankClass(team.rank);
+                html += `
+                    <tr>
+                        <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                        <td>
+                            <div class="team-name">
+                                <span>${team.team_name}</span>
+                            </div>
+                            ${getQualifyBadge(team.rank, team.qualify)}
+                        </td>
+                        <td>${team.played}</td>
+                        <td>${team.won}/${team.draw}/${team.lost}</td>
+                        <td>${team.goals_for}/${team.goals_against}</td>
+                        <td>${team.goal_diff}</td>
+                        <td class="points">${team.points}</td>
+                    </tr>
+                `;
+            });
+            
+            tbody.innerHTML = html;
+
+            // 显示赛制说明
+            if (leagueData.league && leagueData.league.rules) {
+                rulesContent.innerHTML = leagueData.league.rules;
+                rulesContainer.style.display = 'block';
+            } else {
+                rulesContainer.style.display = 'none';
+            }
+        }
+        
+        document.querySelectorAll('.data-tab').forEach((tab, index) => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.data-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                const tabs = ['standings', 'schedule', 'winDrawLose', 'handicap', 'goals', 'scorers'];
+                currentTab = tabs[index] || 'standings';
+                switchTab();
+            });
+        });
+
+        document.querySelectorAll('.sub-tab').forEach((tab, index) => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                const types = ['total', 'half', 'home', 'away'];
+                currentStandingsType = types[index] || 'total';
+                renderStandings();
+            });
+        });
+
+function switchTab() {
+            const standingsSubTabs = document.getElementById('standingsSubTabs');
+            const roundNav = document.getElementById('roundNav');
+            const standingsContainer = document.getElementById('standingsContainer');
+            const scheduleContainer = document.getElementById('scheduleContainer');
+            const rulesContainer = document.getElementById('rulesContainer');
+            const winDrawLoseContainer = document.getElementById('winDrawLoseContainer');
+            const handicapContainer = document.getElementById('handicapContainer');
+            const totalGoalsContainer = document.getElementById('totalGoalsContainer');
+            const scorersContainer = document.getElementById('scorersContainer');
+
+            if (currentTab === 'standings') {
+                standingsSubTabs.style.display = 'flex';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'block';
+                scheduleContainer.style.display = 'none';
+                winDrawLoseContainer.style.display = 'none';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'none';
+                renderStandings();
+            } else if (currentTab === 'schedule') {
+                standingsSubTabs.style.display = 'none';
+                standingsContainer.style.display = 'none';
+                scheduleContainer.style.display = 'block';
+                winDrawLoseContainer.style.display = 'none';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'none';
+                rulesContainer.style.display = 'none';
+                initSchedule();
+            } else if (currentTab === 'winDrawLose') {
+                standingsSubTabs.style.display = 'none';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'none';
+                scheduleContainer.style.display = 'none';
+                winDrawLoseContainer.style.display = 'block';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'none';
+                rulesContainer.style.display = 'none';
+                renderWinDrawLose();
+            } else if (currentTab === 'handicap') {
+                standingsSubTabs.style.display = 'none';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'none';
+                scheduleContainer.style.display = 'none';
+                winDrawLoseContainer.style.display = 'none';
+                handicapContainer.style.display = 'block';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'none';
+                rulesContainer.style.display = 'none';
+                renderHandicap();
+            } else if (currentTab === 'goals') {
+                standingsSubTabs.style.display = 'none';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'none';
+                scheduleContainer.style.display = 'none';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'block';
+                scorersContainer.style.display = 'none';
+                rulesContainer.style.display = 'none';
+                renderTotalGoals();
+            } else if (currentTab === 'scorers') {
+                standingsSubTabs.style.display = 'none';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'none';
+                scheduleContainer.style.display = 'none';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'block';
+                rulesContainer.style.display = 'none';
+                renderScorers();
+            } else {
+                standingsSubTabs.style.display = 'none';
+                roundNav.style.display = 'none';
+                standingsContainer.style.display = 'block';
+                scheduleContainer.style.display = 'none';
+                winDrawLoseContainer.style.display = 'none';
+                handicapContainer.style.display = 'none';
+                totalGoalsContainer.style.display = 'none';
+                scorersContainer.style.display = 'none';
+                rulesContainer.style.display = 'none';
+                document.getElementById('standingsBody').innerHTML = '<tr><td colspan="7" class="loading">功能开发中...</td></tr>';
+            }
+        }
+
+        function renderWinDrawLose() {
+            const tbody = document.getElementById('winDrawLoseBody');
+            
+            if (!leagueData || !leagueData.win_draw_lose_standings) {
+                tbody.innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+                return;
+            }
+            
+            const standings = leagueData.win_draw_lose_standings;
+            let html = '';
+            
+            standings.forEach(team => {
+                const rankClass = getRankClass(team.rank);
+                html += `
+                    <tr>
+                        <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                        <td>
+                            <div class="team-name">
+                                <span>${team.team_name}</span>
+                            </div>
+                        </td>
+                        <td>${team.played}</td>
+                        <td>${team.won}</td>
+                        <td>${team.draw}</td>
+                        <td>${team.lost}</td>
+                        <td class="points">${team.win_pct}%</td>
+                        <td>${team.draw_pct}%</td>
+                        <td>${team.lost_pct}%</td>
+                    </tr>
+                `;
+            });
+            
+            tbody.innerHTML = html;
+        }
+
+        function renderHandicap() {
+            const tbody = document.getElementById('handicapBody');
+            const thead = document.getElementById('handicapHead');
+            const leagueId = leagueIds[currentLeague];
+            const isWorldCup = leagueId === 75;
+            
+            if (!leagueData || !leagueData.handicap_standings) {
+                tbody.innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+                return;
+            }
+            
+            // 检查是否有让球数据（非0让球盘口）
+            const matches = leagueData.matches || [];
+            let hasHandicapData = false;
+            for (let m of matches) {
+                if (m.handicap !== 0 && m.handicap !== null && m.handicap !== undefined) {
+                    hasHandicapData = true;
+                    break;
+                }
+            }
+            
+            if (!hasHandicapData) {
+                tbody.innerHTML = '<tr><td colspan="9" class="loading">该赛季暂无让球盘口数据</td></tr>';
+                return;
+            }
+            
+            // 世界杯只显示赢/输，不显示走和%
+            if (isWorldCup) {
+                thead.innerHTML = '<tr><th>排名</th><th>球队</th><th>赛</th><th>赢</th><th>输</th></tr>';
+            } else {
+                thead.innerHTML = '<tr><th>排名</th><th>球队</th><th>赛</th><th>赢</th><th>走</th><th>输</th><th>赢%</th><th>走%</th><th>输%</th></tr>';
+            }
+            
+            const standings = leagueData.handicap_standings;
+            let html = '';
+            
+            standings.forEach(team => {
+                const rankClass = getRankClass(team.rank);
+                if (isWorldCup) {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                            <td><div class="team-name"><span>${team.team_name}</span></div></td>
+                            <td>${team.played}</td>
+                            <td>${team.won}</td>
+                            <td>${team.lost}</td>
+                        </tr>
+                    `;
+                } else {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                            <td><div class="team-name"><span>${team.team_name}</span></div></td>
+                            <td>${team.played}</td>
+                            <td>${team.won}</td>
+                            <td>${team.draw}</td>
+                            <td>${team.lost}</td>
+                            <td class="points">${team.win_pct}%</td>
+                            <td>${team.draw_pct}%</td>
+                            <td>${team.lost_pct}%</td>
+                        </tr>
+                    `;
+                }
+            });
+            
+            tbody.innerHTML = html;
+        }
+
+        function renderTotalGoals() {
+            const tbody = document.getElementById('totalGoalsBody');
+            const thead = document.getElementById('totalGoalsHead');
+            const leagueId = leagueIds[currentLeague];
+            const isWorldCup = leagueId === 75;
+            
+            if (!leagueData || !leagueData.total_goals_standings) {
+                tbody.innerHTML = '<tr><td colspan="9" class="loading">暂无数据</td></tr>';
+                return;
+            }
+            
+            // 检查是否有大小球数据
+            const standings = leagueData.total_goals_standings;
+            const hasData = standings.some(t => t.played > 0);
+            
+            if (!hasData) {
+                tbody.innerHTML = '<tr><td colspan="9" class="loading">该赛季暂无大小球盘口数据</td></tr>';
+                return;
+            }
+            
+            // 世界杯只显示大/小，不显示走和%
+            if (isWorldCup) {
+                thead.innerHTML = '<tr><th>排名</th><th>球队</th><th>赛</th><th>大</th><th>小</th></tr>';
+            } else {
+                thead.innerHTML = '<tr><th>排名</th><th>球队</th><th>赛</th><th>大</th><th>走</th><th>小</th><th>大%</th><th>走%</th><th>小%</th></tr>';
+            }
+            
+            let html = '';
+            
+            standings.forEach(team => {
+                const rankClass = getRankClass(team.rank);
+                if (isWorldCup) {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                            <td><div class="team-name"><span>${team.team_name}</span></div></td>
+                            <td>${team.played}</td>
+                            <td>${team.big}</td>
+                            <td>${team.small}</td>
+                        </tr>
+                    `;
+                } else {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
+                            <td>
+                                <div class="team-name">
+                                    <span>${team.team_name}</span>
+                                </div>
+                            </td>
+                            <td>${team.played}</td>
+                            <td>${team.big}</td>
+                            <td>${team.draw}</td>
+                            <td>${team.small}</td>
+                            <td class="points">${team.big_pct}%</td>
+                            <td>${team.draw_pct}%</td>
+                            <td>${team.small_pct}%</td>
+                        </tr>
+                    `;
+                }
+            });
+            
+            tbody.innerHTML = html;
+        }
+
+        function renderScorers() {
+            const tbody = document.getElementById('scorersBody');
+            const thead = document.getElementById('scorersHead');
+            const leagueId = leagueIds[currentLeague];
+            const isWorldCup = leagueId === 75;
+            
+            if (!leagueData || !leagueData.scorers || leagueData.scorers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="loading">暂无射手榜数据</td></tr>';
+                return;
+            }
+            
+            // 世界杯不显示主进/客进
+            if (isWorldCup) {
+                thead.innerHTML = '<tr><th>排名</th><th>球员</th><th>球队</th><th>进球</th><th>点球</th></tr>';
+            } else {
+                thead.innerHTML = '<tr><th>排名</th><th>球员</th><th>球队</th><th>进球</th><th>点球</th><th>主进</th><th>客进</th></tr>';
+            }
+            
+            const scorers = leagueData.scorers;
+            let html = '';
+            
+            scorers.forEach(player => {
+                const rankClass = getRankClass(player.rank);
+                const penaltyText = player.penalty > 0 ? `(${player.penalty})` : '';
+                if (isWorldCup) {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${player.rank}</span></td>
+                            <td>${player.name}</td>
+                            <td>${player.team_name}</td>
+                            <td class="points">${player.goals}${penaltyText}</td>
+                            <td>${player.penalty}</td>
+                        </tr>
+                    `;
+                } else {
+                    html += `
+                        <tr>
+                            <td><span class="rank-num ${rankClass}">${player.rank}</span></td>
+                            <td>${player.name}</td>
+                            <td>${player.team_name}</td>
+                            <td class="points">${player.goals}${penaltyText}</td>
+                            <td>${player.penalty}</td>
+                            <td>${player.home_goals}</td>
+                            <td>${player.away_goals}</td>
+                        </tr>
+                    `;
+                }
+            });
+            
+            tbody.innerHTML = html;
+        }
+
+        function initSchedule() {
+            document.getElementById('roundNav').style.display = 'flex';
+            
+            if (!leagueData || !leagueData.matches || leagueData.matches.length === 0) {
+                document.getElementById('scheduleList').innerHTML = '<div class="loading">暂无赛程数据</div>';
+                return;
+            }
+
+            const matches = leagueData.matches;
+            
+            // 获取所有不重复的round值（支持数字和字符串）
+            const allRounds = [...new Set(matches.map(m => m.round))].sort((a, b) => {
+                // 数字排序
+                if (typeof a === 'number' && typeof b === 'number') return a - b;
+                // 字符串排序
+                return String(a).localeCompare(String(b));
+            });
+            
+            // 存储所有轮次
+            window.allRounds = allRounds;
+            
+            // 找到最后一个有比分的轮次
+            const finishedMatches = matches.filter(m => m.score && m.score !== '-');
+            if (finishedMatches.length > 0) {
+                const lastFinishedRound = finishedMatches[finishedMatches.length - 1].round;
+                window.currentRoundIndex = allRounds.indexOf(lastFinishedRound);
+                if (window.currentRoundIndex < 0) window.currentRoundIndex = 0;
+            } else {
+                window.currentRoundIndex = 0;
+            }
+
+            renderSchedule();
+        }
+
+        function prevRound() {
+            if (window.currentRoundIndex > 0) {
+                window.currentRoundIndex--;
+                renderSchedule();
+            }
+        }
+
+        function nextRound() {
+            if (window.currentRoundIndex < window.allRounds.length - 1) {
+                window.currentRoundIndex++;
+                renderSchedule();
+            }
+        }
+
+        function renderSchedule() {
+            const currentRound = window.allRounds[window.currentRoundIndex];
+            const leagueId = leagueIds[currentLeague];
+            const roundMatches = leagueData.matches.filter(m => m.round === currentRound);
+            const isLastRound = window.currentRoundIndex === window.allRounds.length - 1;
+            const isSecondLast = window.currentRoundIndex === window.allRounds.length - 2;
+            const roundText = getRoundName(currentRound, leagueId, roundMatches.length, isLastRound, isSecondLast);
+            document.getElementById('roundText').textContent = roundText;
+
+            const prevBtn = document.querySelector('.round-prev');
+            const nextBtn = document.querySelector('.round-next');
+
+            prevBtn.classList.toggle('disabled', window.currentRoundIndex <= 0);
+            nextBtn.classList.toggle('disabled', window.currentRoundIndex >= window.allRounds.length - 1);
+
+            if (!leagueData || !leagueData.matches) {
+                document.getElementById('scheduleList').innerHTML = '<div class="loading">暂无赛程数据</div>';
+                return;
+            }
+
+            if (roundMatches.length === 0) {
+                document.getElementById('scheduleList').innerHTML = '<div class="loading">该轮次暂无比赛数据</div>';
+                return;
+            }
+
+            // 按日期排序
+            roundMatches.sort((a, b) => {
+                const dateA = parseDate(a.date);
+                const dateB = parseDate(b.date);
+                return dateA - dateB;
+            });
+
+            let html = '';
+            roundMatches.forEach(match => {
+                const dateTime = parseMatchDateTime(match.date);
+                const hasScore = match.score && match.score !== '-';
+                const scoreText = hasScore ? match.score : 'VS';
+                const vsClass = hasScore ? 'has-score' : '';
+                const halfScore = match.half_score && match.half_score !== '-' ? match.half_score : '';
+                const halfHtml = hasScore && halfScore ? `<div class="schedule-half">(${halfScore})</div>` : '';
+
+                html += `
+                    <div class="schedule-item">
+                        <div class="schedule-date">
+                            <div class="date">${dateTime.date}</div>
+                            <div class="time">${dateTime.time}</div>
+                        </div>
+                        <div class="schedule-teams">
+                            <div class="schedule-home">${match.home_name}</div>
+                            <div class="schedule-vs ${vsClass}">${scoreText}${halfHtml}</div>
+                            <div class="schedule-away">${match.away_name}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('scheduleList').innerHTML = html;
+        }
+
+        function parseDate(dateStr) {
+            if (!dateStr) return new Date(0);
+            // 格式: "25-04-11" 或 "2025-04-11"
+            const parts = dateStr.split('-');
+            if (parts.length === 3) {
+                const year = parts[0].length === 2 ? '20' + parts[0] : parts[0];
+                return new Date(`${year}-${parts[1]}-${parts[2]}`);
+            }
+            return new Date(0);
+        }
+
+        function parseMatchDateTime(dateStr) {
+            if (!dateStr) {
+                return { date: '-', time: '-' };
+            }
+
+            const parts = dateStr.split(' ');
+            const datePart = parts[0] || '';
+            const timePart = parts[1] || '';
+
+            // 处理日期 - 格式: "2024-08-17" 或 "24-08-17"
+            let dateFormatted = '-';
+            if (datePart) {
+                const dateParts = datePart.split('-');
+                if (dateParts.length === 3) {
+                    // 提取年月日，支持 2位或4位年份
+                    const year = dateParts[0];
+                    const month = dateParts[1];
+                    const day = dateParts[2];
+                    // 显示为 月-日 格式
+                    dateFormatted = `${month}-${day}`;
+                }
+            }
+
+            // 处理时间
+            let timeFormatted = '-';
+            if (timePart) {
+                timeFormatted = timePart.substring(0, 5); // 只显示 HH:MM
+            } else {
+                timeFormatted = '待定';
+            }
+
+            return { date: dateFormatted, time: timeFormatted };
+        }
+
+        renderLeagueTabs();
+        switchLeague('英超');
+    </script>
+</body>
+</html>

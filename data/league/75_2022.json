@@ -1,0 +1,3522 @@
+{
+  "league": {
+    "id": 75,
+    "name": "世界杯"
+  },
+  "seasons": [
+    "2026",
+    "2022",
+    "2018",
+    "2014",
+    "2010",
+    "2006"
+  ],
+  "current_season": "2022",
+  "teams": [
+    {
+      "id": 637,
+      "name": "波兰"
+    },
+    {
+      "id": 638,
+      "name": "丹麦"
+    },
+    {
+      "id": 642,
+      "name": "塞尔维亚"
+    },
+    {
+      "id": 645,
+      "name": "比利时"
+    },
+    {
+      "id": 646,
+      "name": "荷兰"
+    },
+    {
+      "id": 648,
+      "name": "瑞士"
+    },
+    {
+      "id": 649,
+      "name": "法国"
+    },
+    {
+      "id": 650,
+      "name": "德国"
+    },
+    {
+      "id": 744,
+      "name": "英格兰"
+    },
+    {
+      "id": 765,
+      "name": "葡萄牙"
+    },
+    {
+      "id": 766,
+      "name": "阿根廷"
+    },
+    {
+      "id": 767,
+      "name": "乌拉圭"
+    },
+    {
+      "id": 768,
+      "name": "克罗地亚"
+    },
+    {
+      "id": 772,
+      "name": "西班牙"
+    },
+    {
+      "id": 778,
+      "name": "巴西"
+    },
+    {
+      "id": 779,
+      "name": "厄瓜多尔"
+    },
+    {
+      "id": 783,
+      "name": "伊朗"
+    },
+    {
+      "id": 793,
+      "name": "喀麦隆"
+    },
+    {
+      "id": 795,
+      "name": "加拿大"
+    },
+    {
+      "id": 797,
+      "name": "美国"
+    },
+    {
+      "id": 810,
+      "name": "加纳"
+    },
+    {
+      "id": 813,
+      "name": "摩洛哥"
+    },
+    {
+      "id": 815,
+      "name": "塞内加尔"
+    },
+    {
+      "id": 819,
+      "name": "墨西哥"
+    },
+    {
+      "id": 823,
+      "name": "突尼斯"
+    },
+    {
+      "id": 891,
+      "name": "沙特阿拉伯"
+    },
+    {
+      "id": 898,
+      "name": "韩国"
+    },
+    {
+      "id": 903,
+      "name": "日本"
+    },
+    {
+      "id": 904,
+      "name": "卡塔尔"
+    },
+    {
+      "id": 913,
+      "name": "澳大利亚"
+    },
+    {
+      "id": 914,
+      "name": "哥斯达黎加"
+    },
+    {
+      "id": 7384,
+      "name": "威尔士"
+    }
+  ],
+  "group_standings": {
+    "A": [
+      {
+        "team_id": 646,
+        "team_name": "荷兰",
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goals_for": 5,
+        "goals_against": 1,
+        "points": 7,
+        "goal_diff": 4,
+        "rank": 1
+      },
+      {
+        "team_id": 815,
+        "team_name": "塞内加尔",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 5,
+        "goals_against": 4,
+        "points": 6,
+        "goal_diff": 1,
+        "rank": 2
+      },
+      {
+        "team_id": 779,
+        "team_name": "厄瓜多尔",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 4,
+        "goals_against": 3,
+        "points": 4,
+        "goal_diff": 1,
+        "rank": 3
+      },
+      {
+        "team_id": 904,
+        "team_name": "卡塔尔",
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goals_for": 1,
+        "goals_against": 7,
+        "points": 0,
+        "goal_diff": -6,
+        "rank": 4
+      }
+    ],
+    "B": [
+      {
+        "team_id": 744,
+        "team_name": "英格兰",
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goals_for": 9,
+        "goals_against": 2,
+        "points": 7,
+        "goal_diff": 7,
+        "rank": 1
+      },
+      {
+        "team_id": 797,
+        "team_name": "美国",
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goals_for": 2,
+        "goals_against": 1,
+        "points": 5,
+        "goal_diff": 1,
+        "rank": 2
+      },
+      {
+        "team_id": 783,
+        "team_name": "伊朗",
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goals_for": 4,
+        "goals_against": 7,
+        "points": 3,
+        "goal_diff": -3,
+        "rank": 3
+      },
+      {
+        "team_id": 7384,
+        "team_name": "威尔士",
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goals_for": 1,
+        "goals_against": 6,
+        "points": 1,
+        "goal_diff": -5,
+        "rank": 4
+      }
+    ],
+    "C": [
+      {
+        "team_id": 766,
+        "team_name": "阿根廷",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 5,
+        "goals_against": 2,
+        "points": 6,
+        "goal_diff": 3,
+        "rank": 1
+      },
+      {
+        "team_id": 819,
+        "team_name": "墨西哥",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 2,
+        "goals_against": 3,
+        "points": 4,
+        "goal_diff": -1,
+        "rank": 2
+      },
+      {
+        "team_id": 637,
+        "team_name": "波兰",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 4,
+        "goal_diff": 0,
+        "rank": 3
+      },
+      {
+        "team_id": 891,
+        "team_name": "沙特阿拉伯",
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goals_for": 3,
+        "goals_against": 5,
+        "points": 3,
+        "goal_diff": -2,
+        "rank": 4
+      }
+    ],
+    "D": [
+      {
+        "team_id": 913,
+        "team_name": "澳大利亚",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 3,
+        "goals_against": 4,
+        "points": 6,
+        "goal_diff": -1,
+        "rank": 1
+      },
+      {
+        "team_id": 649,
+        "team_name": "法国",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 6,
+        "goals_against": 3,
+        "points": 6,
+        "goal_diff": 3,
+        "rank": 2
+      },
+      {
+        "team_id": 823,
+        "team_name": "突尼斯",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 1,
+        "goals_against": 1,
+        "points": 4,
+        "goal_diff": 0,
+        "rank": 3
+      },
+      {
+        "team_id": 638,
+        "team_name": "丹麦",
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goals_for": 1,
+        "goals_against": 3,
+        "points": 1,
+        "goal_diff": -2,
+        "rank": 4
+      }
+    ],
+    "E": [
+      {
+        "team_id": 903,
+        "team_name": "日本",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 4,
+        "goals_against": 3,
+        "points": 6,
+        "goal_diff": 1,
+        "rank": 1
+      },
+      {
+        "team_id": 650,
+        "team_name": "德国",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 6,
+        "goals_against": 5,
+        "points": 4,
+        "goal_diff": 1,
+        "rank": 2
+      },
+      {
+        "team_id": 772,
+        "team_name": "西班牙",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 9,
+        "goals_against": 3,
+        "points": 4,
+        "goal_diff": 6,
+        "rank": 3
+      },
+      {
+        "team_id": 914,
+        "team_name": "哥斯达黎加",
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goals_for": 3,
+        "goals_against": 11,
+        "points": 3,
+        "goal_diff": -8,
+        "rank": 4
+      }
+    ],
+    "F": [
+      {
+        "team_id": 813,
+        "team_name": "摩洛哥",
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goals_for": 4,
+        "goals_against": 1,
+        "points": 7,
+        "goal_diff": 3,
+        "rank": 1
+      },
+      {
+        "team_id": 768,
+        "team_name": "克罗地亚",
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goals_for": 4,
+        "goals_against": 1,
+        "points": 5,
+        "goal_diff": 3,
+        "rank": 2
+      },
+      {
+        "team_id": 645,
+        "team_name": "比利时",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 1,
+        "goals_against": 2,
+        "points": 4,
+        "goal_diff": -1,
+        "rank": 3
+      },
+      {
+        "team_id": 795,
+        "team_name": "加拿大",
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goals_for": 2,
+        "goals_against": 7,
+        "points": 0,
+        "goal_diff": -5,
+        "rank": 4
+      }
+    ],
+    "G": [
+      {
+        "team_id": 648,
+        "team_name": "瑞士",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 4,
+        "goals_against": 3,
+        "points": 6,
+        "goal_diff": 1,
+        "rank": 1
+      },
+      {
+        "team_id": 778,
+        "team_name": "巴西",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 3,
+        "goals_against": 1,
+        "points": 6,
+        "goal_diff": 2,
+        "rank": 2
+      },
+      {
+        "team_id": 793,
+        "team_name": "喀麦隆",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 4,
+        "goals_against": 4,
+        "points": 4,
+        "goal_diff": 0,
+        "rank": 3
+      },
+      {
+        "team_id": 642,
+        "team_name": "塞尔维亚",
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goals_for": 5,
+        "goals_against": 8,
+        "points": 1,
+        "goal_diff": -3,
+        "rank": 4
+      }
+    ],
+    "H": [
+      {
+        "team_id": 765,
+        "team_name": "葡萄牙",
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goals_for": 6,
+        "goals_against": 4,
+        "points": 6,
+        "goal_diff": 2,
+        "rank": 1
+      },
+      {
+        "team_id": 898,
+        "team_name": "韩国",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 4,
+        "goals_against": 4,
+        "points": 4,
+        "goal_diff": 0,
+        "rank": 2
+      },
+      {
+        "team_id": 767,
+        "team_name": "乌拉圭",
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goals_for": 2,
+        "goals_against": 2,
+        "points": 4,
+        "goal_diff": 0,
+        "rank": 3
+      },
+      {
+        "team_id": 810,
+        "team_name": "加纳",
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goals_for": 5,
+        "goals_against": 7,
+        "points": 3,
+        "goal_diff": -2,
+        "rank": 4
+      }
+    ]
+  },
+  "matches": [
+    {
+      "round": "G21534A",
+      "match_id": 2185072,
+      "date": "2022-11-20 23:59",
+      "home_id": 904,
+      "home_name": "卡塔尔",
+      "away_id": 779,
+      "away_name": "厄瓜多尔",
+      "score": "0-2",
+      "half_score": "0-2",
+      "handicap": -0.25,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534A",
+      "match_id": 2185073,
+      "date": "2022-11-21 23:59",
+      "home_id": 815,
+      "home_name": "塞内加尔",
+      "away_id": 646,
+      "away_name": "荷兰",
+      "score": "0-2",
+      "half_score": "0-0",
+      "handicap": -0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534A",
+      "match_id": 2185071,
+      "date": "2022-11-25 21:00",
+      "home_id": 904,
+      "home_name": "卡塔尔",
+      "away_id": 815,
+      "away_name": "塞内加尔",
+      "score": "1-3",
+      "half_score": "0-1",
+      "handicap": -0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534A",
+      "match_id": 2185070,
+      "date": "2022-11-25 23:59",
+      "home_id": 646,
+      "home_name": "荷兰",
+      "away_id": 779,
+      "away_name": "厄瓜多尔",
+      "score": "1-1",
+      "half_score": "1-0",
+      "handicap": 0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534A",
+      "match_id": 2185068,
+      "date": "2022-11-29 23:00",
+      "home_id": 646,
+      "home_name": "荷兰",
+      "away_id": 904,
+      "away_name": "卡塔尔",
+      "score": "2-0",
+      "half_score": "1-0",
+      "handicap": 1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534A",
+      "match_id": 2185069,
+      "date": "2022-11-29 23:00",
+      "home_id": 779,
+      "home_name": "厄瓜多尔",
+      "away_id": 815,
+      "away_name": "塞内加尔",
+      "score": "1-2",
+      "half_score": "0-1",
+      "handicap": 0,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185076,
+      "date": "2022-11-21 21:00",
+      "home_id": 744,
+      "home_name": "英格兰",
+      "away_id": 783,
+      "away_name": "伊朗",
+      "score": "6-2",
+      "half_score": "3-0",
+      "handicap": 1.25,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185339,
+      "date": "2022-11-22 03:00",
+      "home_id": 797,
+      "home_name": "美国",
+      "away_id": 7384,
+      "away_name": "威尔士",
+      "score": "1-1",
+      "half_score": "1-0",
+      "handicap": 0,
+      "total_goals": "2"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185340,
+      "date": "2022-11-25 18:00",
+      "home_id": 7384,
+      "home_name": "威尔士",
+      "away_id": 783,
+      "away_name": "伊朗",
+      "score": "0-2",
+      "half_score": "0-0",
+      "handicap": 0.25,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185075,
+      "date": "2022-11-26 03:00",
+      "home_id": 744,
+      "home_name": "英格兰",
+      "away_id": 797,
+      "away_name": "美国",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": 0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185074,
+      "date": "2022-11-30 03:00",
+      "home_id": 783,
+      "home_name": "伊朗",
+      "away_id": 797,
+      "away_name": "美国",
+      "score": "0-1",
+      "half_score": "0-1",
+      "handicap": -0.25,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534B",
+      "match_id": 2185341,
+      "date": "2022-11-30 03:00",
+      "home_id": 7384,
+      "home_name": "威尔士",
+      "away_id": 744,
+      "away_name": "英格兰",
+      "score": "0-3",
+      "half_score": "0-0",
+      "handicap": -1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185082,
+      "date": "2022-11-22 18:00",
+      "home_id": 766,
+      "home_name": "阿根廷",
+      "away_id": 891,
+      "away_name": "沙特阿拉伯",
+      "score": "1-2",
+      "half_score": "1-0",
+      "handicap": 1.75,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185081,
+      "date": "2022-11-22 23:59",
+      "home_id": 819,
+      "home_name": "墨西哥",
+      "away_id": 637,
+      "away_name": "波兰",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": 0,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185080,
+      "date": "2022-11-26 21:00",
+      "home_id": 637,
+      "home_name": "波兰",
+      "away_id": 891,
+      "away_name": "沙特阿拉伯",
+      "score": "2-0",
+      "half_score": "1-0",
+      "handicap": 0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185079,
+      "date": "2022-11-27 03:00",
+      "home_id": 766,
+      "home_name": "阿根廷",
+      "away_id": 819,
+      "away_name": "墨西哥",
+      "score": "2-0",
+      "half_score": "0-0",
+      "handicap": 0.75,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185077,
+      "date": "2022-12-01 03:00",
+      "home_id": 891,
+      "home_name": "沙特阿拉伯",
+      "away_id": 819,
+      "away_name": "墨西哥",
+      "score": "1-2",
+      "half_score": "0-0",
+      "handicap": -1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534C",
+      "match_id": 2185078,
+      "date": "2022-12-01 03:00",
+      "home_id": 637,
+      "home_name": "波兰",
+      "away_id": 766,
+      "away_name": "阿根廷",
+      "score": "0-2",
+      "half_score": "0-0",
+      "handicap": -0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185086,
+      "date": "2022-11-22 21:00",
+      "home_id": 638,
+      "home_name": "丹麦",
+      "away_id": 823,
+      "away_name": "突尼斯",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": 1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185350,
+      "date": "2022-11-23 03:00",
+      "home_id": 649,
+      "home_name": "法国",
+      "away_id": 913,
+      "away_name": "澳大利亚",
+      "score": "4-1",
+      "half_score": "2-1",
+      "handicap": 1.75,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185351,
+      "date": "2022-11-26 18:00",
+      "home_id": 823,
+      "home_name": "突尼斯",
+      "away_id": 913,
+      "away_name": "澳大利亚",
+      "score": "0-1",
+      "half_score": "0-1",
+      "handicap": 0,
+      "total_goals": "2"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185085,
+      "date": "2022-11-26 23:59",
+      "home_id": 649,
+      "home_name": "法国",
+      "away_id": 638,
+      "away_name": "丹麦",
+      "score": "2-1",
+      "half_score": "0-0",
+      "handicap": 0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185083,
+      "date": "2022-11-30 23:00",
+      "home_id": 823,
+      "home_name": "突尼斯",
+      "away_id": 649,
+      "away_name": "法国",
+      "score": "1-0",
+      "half_score": "0-0",
+      "handicap": -1.5,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534D",
+      "match_id": 2185352,
+      "date": "2022-11-30 23:00",
+      "home_id": 913,
+      "home_name": "澳大利亚",
+      "away_id": 638,
+      "away_name": "丹麦",
+      "score": "1-0",
+      "half_score": "0-0",
+      "handicap": -1,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185089,
+      "date": "2022-11-23 21:00",
+      "home_id": 650,
+      "home_name": "德国",
+      "away_id": 903,
+      "away_name": "日本",
+      "score": "1-2",
+      "half_score": "1-0",
+      "handicap": 1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185357,
+      "date": "2022-11-23 23:59",
+      "home_id": 772,
+      "home_name": "西班牙",
+      "away_id": 914,
+      "away_name": "哥斯达黎加",
+      "score": "7-0",
+      "half_score": "3-0",
+      "handicap": 1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185359,
+      "date": "2022-11-27 18:00",
+      "home_id": 903,
+      "home_name": "日本",
+      "away_id": 914,
+      "away_name": "哥斯达黎加",
+      "score": "0-1",
+      "half_score": "0-0",
+      "handicap": 0.25,
+      "total_goals": "2"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185088,
+      "date": "2022-11-28 03:00",
+      "home_id": 772,
+      "home_name": "西班牙",
+      "away_id": 650,
+      "away_name": "德国",
+      "score": "1-1",
+      "half_score": "0-0",
+      "handicap": 0,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185087,
+      "date": "2022-12-02 03:00",
+      "home_id": 903,
+      "home_name": "日本",
+      "away_id": 772,
+      "away_name": "西班牙",
+      "score": "2-1",
+      "half_score": "0-1",
+      "handicap": -1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534E",
+      "match_id": 2185362,
+      "date": "2022-12-02 03:00",
+      "home_id": 914,
+      "home_name": "哥斯达黎加",
+      "away_id": 650,
+      "away_name": "德国",
+      "score": "2-4",
+      "half_score": "0-1",
+      "handicap": -1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185095,
+      "date": "2022-11-23 18:00",
+      "home_id": 813,
+      "home_name": "摩洛哥",
+      "away_id": 768,
+      "away_name": "克罗地亚",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": -0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185094,
+      "date": "2022-11-24 03:00",
+      "home_id": 645,
+      "home_name": "比利时",
+      "away_id": 795,
+      "away_name": "加拿大",
+      "score": "1-0",
+      "half_score": "1-0",
+      "handicap": 1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185093,
+      "date": "2022-11-27 21:00",
+      "home_id": 645,
+      "home_name": "比利时",
+      "away_id": 813,
+      "away_name": "摩洛哥",
+      "score": "0-2",
+      "half_score": "0-0",
+      "handicap": 1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185092,
+      "date": "2022-11-27 23:59",
+      "home_id": 768,
+      "home_name": "克罗地亚",
+      "away_id": 795,
+      "away_name": "加拿大",
+      "score": "4-1",
+      "half_score": "2-1",
+      "handicap": 0.75,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185090,
+      "date": "2022-12-01 23:00",
+      "home_id": 768,
+      "home_name": "克罗地亚",
+      "away_id": 645,
+      "away_name": "比利时",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": -0.5,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534F",
+      "match_id": 2185091,
+      "date": "2022-12-01 23:00",
+      "home_id": 795,
+      "home_name": "加拿大",
+      "away_id": 813,
+      "away_name": "摩洛哥",
+      "score": "1-2",
+      "half_score": "1-2",
+      "handicap": -0.25,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185101,
+      "date": "2022-11-24 18:00",
+      "home_id": 648,
+      "home_name": "瑞士",
+      "away_id": 793,
+      "away_name": "喀麦隆",
+      "score": "1-0",
+      "half_score": "0-0",
+      "handicap": 0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185100,
+      "date": "2022-11-25 03:00",
+      "home_id": 778,
+      "home_name": "巴西",
+      "away_id": 642,
+      "away_name": "塞尔维亚",
+      "score": "2-0",
+      "half_score": "0-0",
+      "handicap": 1,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185099,
+      "date": "2022-11-28 18:00",
+      "home_id": 793,
+      "home_name": "喀麦隆",
+      "away_id": 642,
+      "away_name": "塞尔维亚",
+      "score": "3-3",
+      "half_score": "1-2",
+      "handicap": -0.25,
+      "total_goals": "2"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185098,
+      "date": "2022-11-28 23:59",
+      "home_id": 778,
+      "home_name": "巴西",
+      "away_id": 648,
+      "away_name": "瑞士",
+      "score": "1-0",
+      "half_score": "0-0",
+      "handicap": 1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185096,
+      "date": "2022-12-03 03:00",
+      "home_id": 642,
+      "home_name": "塞尔维亚",
+      "away_id": 648,
+      "away_name": "瑞士",
+      "score": "2-3",
+      "half_score": "2-2",
+      "handicap": 0,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G21534G",
+      "match_id": 2185097,
+      "date": "2022-12-03 03:00",
+      "home_id": 793,
+      "home_name": "喀麦隆",
+      "away_id": 778,
+      "away_name": "巴西",
+      "score": "1-0",
+      "half_score": "0-0",
+      "handicap": -1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185107,
+      "date": "2022-11-24 21:00",
+      "home_id": 767,
+      "home_name": "乌拉圭",
+      "away_id": 898,
+      "away_name": "韩国",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": 0.75,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185106,
+      "date": "2022-11-24 23:59",
+      "home_id": 765,
+      "home_name": "葡萄牙",
+      "away_id": 810,
+      "away_name": "加纳",
+      "score": "3-2",
+      "half_score": "0-0",
+      "handicap": 1,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185105,
+      "date": "2022-11-28 21:00",
+      "home_id": 898,
+      "home_name": "韩国",
+      "away_id": 810,
+      "away_name": "加纳",
+      "score": "2-3",
+      "half_score": "0-2",
+      "handicap": 0,
+      "total_goals": "2"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185104,
+      "date": "2022-11-29 03:00",
+      "home_id": 765,
+      "home_name": "葡萄牙",
+      "away_id": 767,
+      "away_name": "乌拉圭",
+      "score": "2-0",
+      "half_score": "0-0",
+      "handicap": 0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185102,
+      "date": "2022-12-02 23:00",
+      "home_id": 810,
+      "home_name": "加纳",
+      "away_id": 767,
+      "away_name": "乌拉圭",
+      "score": "0-2",
+      "half_score": "0-2",
+      "handicap": -0.75,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G21534H",
+      "match_id": 2185103,
+      "date": "2022-12-02 23:00",
+      "home_id": 898,
+      "home_name": "韩国",
+      "away_id": 765,
+      "away_name": "葡萄牙",
+      "score": "2-1",
+      "half_score": "1-1",
+      "handicap": -1.25,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302610,
+      "date": "2022-12-03 23:00",
+      "home_id": 646,
+      "home_name": "荷兰",
+      "away_id": 797,
+      "away_name": "美国",
+      "score": "3-1",
+      "half_score": "2-0",
+      "handicap": 0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302683,
+      "date": "2022-12-04 03:00",
+      "home_id": 766,
+      "home_name": "阿根廷",
+      "away_id": 913,
+      "away_name": "澳大利亚",
+      "score": "2-1",
+      "half_score": "1-0",
+      "handicap": 2,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302879,
+      "date": "2022-12-04 23:00",
+      "home_id": 649,
+      "home_name": "法国",
+      "away_id": 637,
+      "away_name": "波兰",
+      "score": "3-1",
+      "half_score": "1-0",
+      "handicap": 1.5,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302878,
+      "date": "2022-12-05 03:00",
+      "home_id": 744,
+      "home_name": "英格兰",
+      "away_id": 815,
+      "away_name": "塞内加尔",
+      "score": "3-0",
+      "half_score": "2-0",
+      "handicap": 1,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302880,
+      "date": "2022-12-05 23:00",
+      "home_id": 903,
+      "home_name": "日本",
+      "away_id": 768,
+      "away_name": "克罗地亚",
+      "score": "1-1",
+      "half_score": "1-0",
+      "handicap": -0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302881,
+      "date": "2022-12-06 03:00",
+      "home_id": 778,
+      "home_name": "巴西",
+      "away_id": 898,
+      "away_name": "韩国",
+      "score": "4-1",
+      "half_score": "4-0",
+      "handicap": 1.75,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302882,
+      "date": "2022-12-06 23:00",
+      "home_id": 813,
+      "home_name": "摩洛哥",
+      "away_id": 772,
+      "away_name": "西班牙",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": -1,
+      "total_goals": "2.5"
+    },
+    {
+      "round": "G22465",
+      "match_id": 2302883,
+      "date": "2022-12-07 03:00",
+      "home_id": 765,
+      "home_name": "葡萄牙",
+      "away_id": 648,
+      "away_name": "瑞士",
+      "score": "6-1",
+      "half_score": "2-0",
+      "handicap": 0.5,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22466",
+      "match_id": 2302885,
+      "date": "2022-12-09 23:00",
+      "home_id": 768,
+      "home_name": "克罗地亚",
+      "away_id": 778,
+      "away_name": "巴西",
+      "score": "0-0",
+      "half_score": "0-0",
+      "handicap": -1.25,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G22466",
+      "match_id": 2302884,
+      "date": "2022-12-10 03:00",
+      "home_id": 646,
+      "home_name": "荷兰",
+      "away_id": 766,
+      "away_name": "阿根廷",
+      "score": "2-2",
+      "half_score": "0-1",
+      "handicap": -0.25,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22466",
+      "match_id": 2302887,
+      "date": "2022-12-10 23:00",
+      "home_id": 813,
+      "home_name": "摩洛哥",
+      "away_id": 765,
+      "away_name": "葡萄牙",
+      "score": "1-0",
+      "half_score": "1-0",
+      "handicap": -0.75,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22466",
+      "match_id": 2302886,
+      "date": "2022-12-11 03:00",
+      "home_id": 744,
+      "home_name": "英格兰",
+      "away_id": 649,
+      "away_name": "法国",
+      "score": "1-2",
+      "half_score": "0-1",
+      "handicap": 0,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22467",
+      "match_id": 2302888,
+      "date": "2022-12-14 03:00",
+      "home_id": 766,
+      "home_name": "阿根廷",
+      "away_id": 768,
+      "away_name": "克罗地亚",
+      "score": "3-0",
+      "half_score": "2-0",
+      "handicap": 0.5,
+      "total_goals": "2"
+    },
+    {
+      "round": "G22467",
+      "match_id": 2302889,
+      "date": "2022-12-15 03:00",
+      "home_id": 649,
+      "home_name": "法国",
+      "away_id": 813,
+      "away_name": "摩洛哥",
+      "score": "2-0",
+      "half_score": "1-0",
+      "handicap": 0.75,
+      "total_goals": "2/2.5"
+    },
+    {
+      "round": "G22468",
+      "match_id": 2302890,
+      "date": "2022-12-17 23:00",
+      "home_id": 768,
+      "home_name": "克罗地亚",
+      "away_id": 813,
+      "away_name": "摩洛哥",
+      "score": "2-1",
+      "half_score": "2-1",
+      "handicap": 0.25,
+      "total_goals": "2.5/3"
+    },
+    {
+      "round": "G22469",
+      "match_id": 2302891,
+      "date": "2022-12-18 23:00",
+      "home_id": 766,
+      "home_name": "阿根廷",
+      "away_id": 649,
+      "away_name": "法国",
+      "score": "2-2",
+      "half_score": "2-0",
+      "handicap": 0,
+      "total_goals": "2"
+    }
+  ],
+  "update_time": "2026-03-30 23:03:25",
+  "win_draw_lose_standings": [
+    {
+      "team_id": 649,
+      "team_name": "法国",
+      "played": 7,
+      "won": 5,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 71.4,
+      "draw_pct": 14.3,
+      "lost_pct": 14.3,
+      "rank": 1
+    },
+    {
+      "team_id": 778,
+      "team_name": "巴西",
+      "played": 5,
+      "won": 3,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 60.0,
+      "draw_pct": 20.0,
+      "lost_pct": 20.0,
+      "rank": 2
+    },
+    {
+      "team_id": 744,
+      "team_name": "英格兰",
+      "played": 5,
+      "won": 3,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 60.0,
+      "draw_pct": 20.0,
+      "lost_pct": 20.0,
+      "rank": 3
+    },
+    {
+      "team_id": 646,
+      "team_name": "荷兰",
+      "played": 5,
+      "won": 3,
+      "draw": 2,
+      "lost": 0,
+      "win_pct": 60.0,
+      "draw_pct": 40.0,
+      "lost_pct": 0.0,
+      "rank": 4
+    },
+    {
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "played": 5,
+      "won": 3,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 60.0,
+      "draw_pct": 0.0,
+      "lost_pct": 40.0,
+      "rank": 5
+    },
+    {
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "played": 7,
+      "won": 4,
+      "draw": 2,
+      "lost": 1,
+      "win_pct": 57.1,
+      "draw_pct": 28.6,
+      "lost_pct": 14.3,
+      "rank": 6
+    },
+    {
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "played": 4,
+      "won": 2,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 50.0,
+      "draw_pct": 0.0,
+      "lost_pct": 50.0,
+      "rank": 7
+    },
+    {
+      "team_id": 903,
+      "team_name": "日本",
+      "played": 4,
+      "won": 2,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 50.0,
+      "draw_pct": 25.0,
+      "lost_pct": 25.0,
+      "rank": 8
+    },
+    {
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "played": 4,
+      "won": 2,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 50.0,
+      "draw_pct": 0.0,
+      "lost_pct": 50.0,
+      "rank": 9
+    },
+    {
+      "team_id": 648,
+      "team_name": "瑞士",
+      "played": 4,
+      "won": 2,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 50.0,
+      "draw_pct": 0.0,
+      "lost_pct": 50.0,
+      "rank": 10
+    },
+    {
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "played": 7,
+      "won": 3,
+      "draw": 2,
+      "lost": 2,
+      "win_pct": 42.9,
+      "draw_pct": 28.6,
+      "lost_pct": 28.6,
+      "rank": 11
+    },
+    {
+      "team_id": 767,
+      "team_name": "乌拉圭",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 12
+    },
+    {
+      "team_id": 783,
+      "team_name": "伊朗",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "draw_pct": 0.0,
+      "lost_pct": 66.7,
+      "rank": 13
+    },
+    {
+      "team_id": 810,
+      "team_name": "加纳",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "draw_pct": 0.0,
+      "lost_pct": 66.7,
+      "rank": 14
+    },
+    {
+      "team_id": 779,
+      "team_name": "厄瓜多尔",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 15
+    },
+    {
+      "team_id": 914,
+      "team_name": "哥斯达黎加",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "draw_pct": 0.0,
+      "lost_pct": 66.7,
+      "rank": 16
+    },
+    {
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 17
+    },
+    {
+      "team_id": 819,
+      "team_name": "墨西哥",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 18
+    },
+    {
+      "team_id": 650,
+      "team_name": "德国",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 19
+    },
+    {
+      "team_id": 645,
+      "team_name": "比利时",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 20
+    },
+    {
+      "team_id": 891,
+      "team_name": "沙特阿拉伯",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "draw_pct": 0.0,
+      "lost_pct": 66.7,
+      "rank": 21
+    },
+    {
+      "team_id": 823,
+      "team_name": "突尼斯",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "draw_pct": 33.3,
+      "lost_pct": 33.3,
+      "rank": 22
+    },
+    {
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "played": 7,
+      "won": 2,
+      "draw": 4,
+      "lost": 1,
+      "win_pct": 28.6,
+      "draw_pct": 57.1,
+      "lost_pct": 14.3,
+      "rank": 23
+    },
+    {
+      "team_id": 637,
+      "team_name": "波兰",
+      "played": 4,
+      "won": 1,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 25.0,
+      "draw_pct": 25.0,
+      "lost_pct": 50.0,
+      "rank": 24
+    },
+    {
+      "team_id": 797,
+      "team_name": "美国",
+      "played": 4,
+      "won": 1,
+      "draw": 2,
+      "lost": 1,
+      "win_pct": 25.0,
+      "draw_pct": 50.0,
+      "lost_pct": 25.0,
+      "rank": 25
+    },
+    {
+      "team_id": 772,
+      "team_name": "西班牙",
+      "played": 4,
+      "won": 1,
+      "draw": 2,
+      "lost": 1,
+      "win_pct": 25.0,
+      "draw_pct": 50.0,
+      "lost_pct": 25.0,
+      "rank": 26
+    },
+    {
+      "team_id": 898,
+      "team_name": "韩国",
+      "played": 4,
+      "won": 1,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 25.0,
+      "draw_pct": 25.0,
+      "lost_pct": 50.0,
+      "rank": 27
+    },
+    {
+      "team_id": 638,
+      "team_name": "丹麦",
+      "played": 3,
+      "won": 0,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 0.0,
+      "draw_pct": 33.3,
+      "lost_pct": 66.7,
+      "rank": 28
+    },
+    {
+      "team_id": 795,
+      "team_name": "加拿大",
+      "played": 3,
+      "won": 0,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 0.0,
+      "draw_pct": 0.0,
+      "lost_pct": 100.0,
+      "rank": 29
+    },
+    {
+      "team_id": 904,
+      "team_name": "卡塔尔",
+      "played": 3,
+      "won": 0,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 0.0,
+      "draw_pct": 0.0,
+      "lost_pct": 100.0,
+      "rank": 30
+    },
+    {
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "played": 3,
+      "won": 0,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 0.0,
+      "draw_pct": 33.3,
+      "lost_pct": 66.7,
+      "rank": 31
+    },
+    {
+      "team_id": 7384,
+      "team_name": "威尔士",
+      "played": 3,
+      "won": 0,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 0.0,
+      "draw_pct": 33.3,
+      "lost_pct": 66.7,
+      "rank": 32
+    }
+  ],
+  "handicap_standings": [
+    {
+      "team_id": 779,
+      "team_name": "厄瓜多尔",
+      "played": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "win_pct": 100.0,
+      "rank": 1
+    },
+    {
+      "team_id": 823,
+      "team_name": "突尼斯",
+      "played": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "win_pct": 100.0,
+      "rank": 2
+    },
+    {
+      "team_id": 649,
+      "team_name": "法国",
+      "played": 5,
+      "won": 4,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 80.0,
+      "rank": 3
+    },
+    {
+      "team_id": 646,
+      "team_name": "荷兰",
+      "played": 5,
+      "won": 4,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 80.0,
+      "rank": 4
+    },
+    {
+      "team_id": 903,
+      "team_name": "日本",
+      "played": 4,
+      "won": 3,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 75.0,
+      "rank": 5
+    },
+    {
+      "team_id": 744,
+      "team_name": "英格兰",
+      "played": 4,
+      "won": 3,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 75.0,
+      "rank": 6
+    },
+    {
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "played": 7,
+      "won": 5,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 71.4,
+      "rank": 7
+    },
+    {
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "played": 3,
+      "won": 2,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 66.7,
+      "rank": 8
+    },
+    {
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "played": 3,
+      "won": 2,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 66.7,
+      "rank": 9
+    },
+    {
+      "team_id": 797,
+      "team_name": "美国",
+      "played": 3,
+      "won": 2,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 66.7,
+      "rank": 10
+    },
+    {
+      "team_id": 898,
+      "team_name": "韩国",
+      "played": 3,
+      "won": 2,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 66.7,
+      "rank": 11
+    },
+    {
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "played": 7,
+      "won": 4,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 57.1,
+      "rank": 12
+    },
+    {
+      "team_id": 650,
+      "team_name": "德国",
+      "played": 2,
+      "won": 1,
+      "draw": 0,
+      "lost": 1,
+      "win_pct": 50.0,
+      "rank": 13
+    },
+    {
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "played": 6,
+      "won": 3,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 50.0,
+      "rank": 14
+    },
+    {
+      "team_id": 778,
+      "team_name": "巴西",
+      "played": 5,
+      "won": 2,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 40.0,
+      "rank": 15
+    },
+    {
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "played": 5,
+      "won": 2,
+      "draw": 1,
+      "lost": 2,
+      "win_pct": 40.0,
+      "rank": 16
+    },
+    {
+      "team_id": 767,
+      "team_name": "乌拉圭",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 17
+    },
+    {
+      "team_id": 783,
+      "team_name": "伊朗",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 18
+    },
+    {
+      "team_id": 795,
+      "team_name": "加拿大",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 19
+    },
+    {
+      "team_id": 914,
+      "team_name": "哥斯达黎加",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 20
+    },
+    {
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 21
+    },
+    {
+      "team_id": 891,
+      "team_name": "沙特阿拉伯",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "rank": 22
+    },
+    {
+      "team_id": 637,
+      "team_name": "波兰",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 23
+    },
+    {
+      "team_id": 648,
+      "team_name": "瑞士",
+      "played": 3,
+      "won": 1,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 33.3,
+      "rank": 24
+    },
+    {
+      "team_id": 772,
+      "team_name": "西班牙",
+      "played": 3,
+      "won": 1,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 33.3,
+      "rank": 25
+    },
+    {
+      "team_id": 638,
+      "team_name": "丹麦",
+      "played": 3,
+      "won": 0,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 0.0,
+      "rank": 26
+    },
+    {
+      "team_id": 810,
+      "team_name": "加纳",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 0.0,
+      "rank": 27
+    },
+    {
+      "team_id": 904,
+      "team_name": "卡塔尔",
+      "played": 3,
+      "won": 0,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 0.0,
+      "rank": 28
+    },
+    {
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "played": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 0.0,
+      "rank": 29
+    },
+    {
+      "team_id": 819,
+      "team_name": "墨西哥",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "win_pct": 0.0,
+      "rank": 30
+    },
+    {
+      "team_id": 7384,
+      "team_name": "威尔士",
+      "played": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "win_pct": 0.0,
+      "rank": 31
+    },
+    {
+      "team_id": 645,
+      "team_name": "比利时",
+      "played": 3,
+      "won": 0,
+      "draw": 0,
+      "lost": 3,
+      "win_pct": 0.0,
+      "rank": 32
+    }
+  ],
+  "total_goals_standings": [
+    {
+      "team_id": 898,
+      "team_name": "韩国",
+      "played": 4,
+      "big": 3,
+      "draw": 0,
+      "small": 1,
+      "big_pct": 75.0,
+      "small_pct": 25.0,
+      "rank": 1
+    },
+    {
+      "team_id": 810,
+      "team_name": "加纳",
+      "played": 3,
+      "big": 2,
+      "draw": 0,
+      "small": 1,
+      "big_pct": 66.7,
+      "small_pct": 33.3,
+      "rank": 2
+    },
+    {
+      "team_id": 914,
+      "team_name": "哥斯达黎加",
+      "played": 3,
+      "big": 2,
+      "draw": 0,
+      "small": 1,
+      "big_pct": 66.7,
+      "small_pct": 33.3,
+      "rank": 3
+    },
+    {
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "played": 3,
+      "big": 2,
+      "draw": 0,
+      "small": 1,
+      "big_pct": 66.7,
+      "small_pct": 33.3,
+      "rank": 4
+    },
+    {
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "played": 5,
+      "big": 3,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 60.0,
+      "small_pct": 40.0,
+      "rank": 5
+    },
+    {
+      "team_id": 648,
+      "team_name": "瑞士",
+      "played": 4,
+      "big": 2,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 50.0,
+      "small_pct": 50.0,
+      "rank": 6
+    },
+    {
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "played": 7,
+      "big": 3,
+      "draw": 0,
+      "small": 4,
+      "big_pct": 42.9,
+      "small_pct": 57.1,
+      "rank": 7
+    },
+    {
+      "team_id": 744,
+      "team_name": "英格兰",
+      "played": 5,
+      "big": 2,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 40.0,
+      "small_pct": 60.0,
+      "rank": 8
+    },
+    {
+      "team_id": 646,
+      "team_name": "荷兰",
+      "played": 5,
+      "big": 2,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 40.0,
+      "small_pct": 60.0,
+      "rank": 9
+    },
+    {
+      "team_id": 783,
+      "team_name": "伊朗",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 10
+    },
+    {
+      "team_id": 795,
+      "team_name": "加拿大",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 11
+    },
+    {
+      "team_id": 904,
+      "team_name": "卡塔尔",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 12
+    },
+    {
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 13
+    },
+    {
+      "team_id": 819,
+      "team_name": "墨西哥",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 14
+    },
+    {
+      "team_id": 7384,
+      "team_name": "威尔士",
+      "played": 3,
+      "big": 1,
+      "draw": 1,
+      "small": 1,
+      "big_pct": 33.3,
+      "small_pct": 33.3,
+      "rank": 15
+    },
+    {
+      "team_id": 650,
+      "team_name": "德国",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 16
+    },
+    {
+      "team_id": 891,
+      "team_name": "沙特阿拉伯",
+      "played": 3,
+      "big": 1,
+      "draw": 0,
+      "small": 2,
+      "big_pct": 33.3,
+      "small_pct": 66.7,
+      "rank": 17
+    },
+    {
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "played": 7,
+      "big": 2,
+      "draw": 0,
+      "small": 5,
+      "big_pct": 28.6,
+      "small_pct": 71.4,
+      "rank": 18
+    },
+    {
+      "team_id": 649,
+      "team_name": "法国",
+      "played": 7,
+      "big": 2,
+      "draw": 1,
+      "small": 4,
+      "big_pct": 28.6,
+      "small_pct": 57.1,
+      "rank": 19
+    },
+    {
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "played": 4,
+      "big": 1,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 25.0,
+      "small_pct": 75.0,
+      "rank": 20
+    },
+    {
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "played": 4,
+      "big": 1,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 25.0,
+      "small_pct": 75.0,
+      "rank": 21
+    },
+    {
+      "team_id": 797,
+      "team_name": "美国",
+      "played": 4,
+      "big": 1,
+      "draw": 1,
+      "small": 2,
+      "big_pct": 25.0,
+      "small_pct": 50.0,
+      "rank": 22
+    },
+    {
+      "team_id": 772,
+      "team_name": "西班牙",
+      "played": 4,
+      "big": 1,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 25.0,
+      "small_pct": 75.0,
+      "rank": 23
+    },
+    {
+      "team_id": 778,
+      "team_name": "巴西",
+      "played": 5,
+      "big": 1,
+      "draw": 0,
+      "small": 4,
+      "big_pct": 20.0,
+      "small_pct": 80.0,
+      "rank": 24
+    },
+    {
+      "team_id": 638,
+      "team_name": "丹麦",
+      "played": 3,
+      "big": 0,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 25
+    },
+    {
+      "team_id": 767,
+      "team_name": "乌拉圭",
+      "played": 3,
+      "big": 0,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 26
+    },
+    {
+      "team_id": 779,
+      "team_name": "厄瓜多尔",
+      "played": 3,
+      "big": 0,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 27
+    },
+    {
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "played": 7,
+      "big": 0,
+      "draw": 0,
+      "small": 7,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 28
+    },
+    {
+      "team_id": 903,
+      "team_name": "日本",
+      "played": 4,
+      "big": 0,
+      "draw": 0,
+      "small": 4,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 29
+    },
+    {
+      "team_id": 645,
+      "team_name": "比利时",
+      "played": 3,
+      "big": 0,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 30
+    },
+    {
+      "team_id": 637,
+      "team_name": "波兰",
+      "played": 4,
+      "big": 0,
+      "draw": 1,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 75.0,
+      "rank": 31
+    },
+    {
+      "team_id": 823,
+      "team_name": "突尼斯",
+      "played": 3,
+      "big": 0,
+      "draw": 0,
+      "small": 3,
+      "big_pct": 0.0,
+      "small_pct": 100.0,
+      "rank": 32
+    }
+  ],
+  "scorers": [
+    {
+      "rank": 1,
+      "player_id": 144812,
+      "name": "姆巴佩",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 8,
+      "penalty": 2
+    },
+    {
+      "rank": 2,
+      "player_id": 24067,
+      "name": "梅西",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 7,
+      "penalty": 4
+    },
+    {
+      "rank": 3,
+      "player_id": 66461,
+      "name": "吉鲁",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 4,
+      "penalty": 0
+    },
+    {
+      "rank": 4,
+      "player_id": 170580,
+      "name": "阿尔瓦雷斯",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 4,
+      "penalty": 0
+    },
+    {
+      "rank": 5,
+      "player_id": 120428,
+      "name": "E.华伦西亚",
+      "team_id": 779,
+      "team_name": "厄瓜多尔",
+      "goals": 3,
+      "penalty": 1
+    },
+    {
+      "rank": 6,
+      "player_id": 170742,
+      "name": "G.拉莫斯",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 7,
+      "player_id": 156252,
+      "name": "加克波",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 8,
+      "player_id": 139273,
+      "name": "拉什福德",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 9,
+      "player_id": 138918,
+      "name": "理查利森",
+      "team_id": 778,
+      "team_name": "巴西",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 10,
+      "player_id": 79259,
+      "name": "莫拉塔",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 11,
+      "player_id": 171322,
+      "name": "萨卡",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 3,
+      "penalty": 0
+    },
+    {
+      "rank": 12,
+      "player_id": 48944,
+      "name": "B·费尔南德斯",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 13,
+      "player_id": 100087,
+      "name": "S.达萨里",
+      "team_id": 891,
+      "team_name": "沙特阿拉伯",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 14,
+      "player_id": 69569,
+      "name": "克拉马里奇",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 15,
+      "player_id": 80902,
+      "name": "内马尔",
+      "team_id": 778,
+      "team_name": "巴西",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 16,
+      "player_id": 69793,
+      "name": "凯恩",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 17,
+      "player_id": 147555,
+      "name": "哈弗茨",
+      "team_id": 650,
+      "team_name": "德国",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 18,
+      "player_id": 130833,
+      "name": "堂安律",
+      "team_id": 903,
+      "team_name": "日本",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 19,
+      "player_id": 132612,
+      "name": "塔罗米",
+      "team_id": 783,
+      "team_name": "伊朗",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 20,
+      "player_id": 119909,
+      "name": "布里尔·恩博洛",
+      "team_id": 648,
+      "team_name": "瑞士",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 21,
+      "player_id": 171424,
+      "name": "库杜斯",
+      "team_id": 810,
+      "team_name": "加纳",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 22,
+      "player_id": 109849,
+      "name": "德阿拉斯凯塔",
+      "team_id": 767,
+      "team_name": "乌拉圭",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 23,
+      "player_id": 146749,
+      "name": "恩尼西里",
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 24,
+      "player_id": 173441,
+      "name": "曹圭成",
+      "team_id": 898,
+      "team_name": "韩国",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 25,
+      "player_id": 102522,
+      "name": "米特罗维奇",
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 26,
+      "player_id": 60961,
+      "name": "莱万多夫斯基",
+      "team_id": 637,
+      "team_name": "波兰",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 27,
+      "player_id": 154646,
+      "name": "莱奥",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 28,
+      "player_id": 93910,
+      "name": "菲尔克鲁格",
+      "team_id": 650,
+      "team_name": "德国",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 29,
+      "player_id": 161804,
+      "name": "费兰·托雷斯",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 2,
+      "penalty": 1
+    },
+    {
+      "rank": 30,
+      "player_id": 78165,
+      "name": "阿布巴卡尔",
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 31,
+      "player_id": 103247,
+      "name": "韦格霍斯特",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 2,
+      "penalty": 0
+    },
+    {
+      "rank": 32,
+      "player_id": 26862,
+      "name": "A.阿尤",
+      "team_id": 810,
+      "team_name": "加纳",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 33,
+      "player_id": 144841,
+      "name": "A·戴维斯",
+      "team_id": 795,
+      "team_name": "加拿大",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 34,
+      "player_id": 212465,
+      "name": "A·达里",
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 35,
+      "player_id": 95319,
+      "name": "D.克拉森",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 36,
+      "player_id": 132234,
+      "name": "F.德容",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 37,
+      "player_id": 114760,
+      "name": "H.马丁梅斯",
+      "team_id": 819,
+      "team_name": "墨西哥",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 38,
+      "player_id": 145288,
+      "name": "I.萨尔",
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "goals": 1,
+      "penalty": 1
+    },
+    {
+      "rank": 39,
+      "player_id": 125994,
+      "name": "M·阿坎吉",
+      "team_id": 648,
+      "team_name": "瑞士",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 40,
+      "player_id": 85465,
+      "name": "R·弗雷勒",
+      "team_id": 648,
+      "team_name": "瑞士",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 41,
+      "player_id": 103915,
+      "name": "R·格雷罗",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 42,
+      "player_id": 173174,
+      "name": "S·帕夫洛维奇",
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 43,
+      "player_id": 140601,
+      "name": "T.埃尔南德斯",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 44,
+      "player_id": 29527,
+      "name": "亨德森",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 45,
+      "player_id": 39968,
+      "name": "京多安",
+      "team_id": 650,
+      "team_name": "德国",
+      "goals": 1,
+      "penalty": 1
+    },
+    {
+      "rank": 46,
+      "player_id": 3883,
+      "name": "佩佩",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 47,
+      "player_id": 110061,
+      "name": "佩特科维奇",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 48,
+      "player_id": 30957,
+      "name": "佩里西奇",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 49,
+      "player_id": 113160,
+      "name": "克里斯滕森",
+      "team_id": 638,
+      "team_name": "丹麦",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 50,
+      "player_id": 184564,
+      "name": "凯塞多",
+      "team_id": 779,
+      "team_name": "厄瓜多尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 51,
+      "player_id": 158102,
+      "name": "切什米",
+      "team_id": 783,
+      "team_name": "伊朗",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 52,
+      "player_id": 90066,
+      "name": "利瓦亚",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 53,
+      "player_id": 141324,
+      "name": "前田大然",
+      "team_id": 903,
+      "team_name": "日本",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 54,
+      "player_id": 218400,
+      "name": "加维",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 55,
+      "player_id": 91759,
+      "name": "卡塞米罗",
+      "team_id": 778,
+      "team_name": "巴西",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 56,
+      "player_id": 120661,
+      "name": "卡斯特雷托",
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 57,
+      "player_id": 96433,
+      "name": "古德温",
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 58,
+      "player_id": 87731,
+      "name": "哈兹里",
+      "team_id": 823,
+      "team_name": "突尼斯",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 59,
+      "player_id": 103939,
+      "name": "塞斯",
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 60,
+      "player_id": 110477,
+      "name": "奥尔塔",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 61,
+      "player_id": 135734,
+      "name": "奥尔默",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 62,
+      "player_id": 86050,
+      "name": "奥西奇",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 63,
+      "player_id": 88400,
+      "name": "巴舒亚伊",
+      "team_id": 645,
+      "team_name": "比利时",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 64,
+      "player_id": 166905,
+      "name": "布卡里",
+      "team_id": 810,
+      "team_name": "加纳",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 65,
+      "player_id": 30817,
+      "name": "布林德",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 66,
+      "player_id": 144762,
+      "name": "帕奎塔",
+      "team_id": 778,
+      "team_name": "巴西",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 67,
+      "player_id": 102100,
+      "name": "库利巴利",
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 68,
+      "player_id": 143279,
+      "name": "弗拉霍维奇",
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 69,
+      "player_id": 96453,
+      "name": "德佩",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 70,
+      "player_id": 153420,
+      "name": "怀特",
+      "team_id": 797,
+      "team_name": "美国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 71,
+      "player_id": 201501,
+      "name": "恩佐",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 72,
+      "player_id": 101663,
+      "name": "拉比奥特",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 73,
+      "player_id": 84385,
+      "name": "斯特林",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 74,
+      "player_id": 138803,
+      "name": "普利西奇",
+      "team_id": 797,
+      "team_name": "美国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 75,
+      "player_id": 99765,
+      "name": "杜克",
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 76,
+      "player_id": 97798,
+      "name": "格拉利什",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 77,
+      "player_id": 182461,
+      "name": "格瓦迪奥尔",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 78,
+      "player_id": 106101,
+      "name": "格纳布里",
+      "team_id": 650,
+      "team_name": "德国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 79,
+      "player_id": 162792,
+      "name": "楚阿梅尼",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 80,
+      "player_id": 65659,
+      "name": "沙奇里",
+      "team_id": 648,
+      "team_name": "瑞士",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 81,
+      "player_id": 103092,
+      "name": "泽林斯基",
+      "team_id": 637,
+      "team_name": "波兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 82,
+      "player_id": 110687,
+      "name": "浅野拓磨",
+      "team_id": 903,
+      "team_name": "日本",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 83,
+      "player_id": 121521,
+      "name": "特耶达",
+      "team_id": 914,
+      "team_name": "哥斯达黎加",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 84,
+      "player_id": 154266,
+      "name": "田中碧",
+      "team_id": 903,
+      "team_name": "日本",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 85,
+      "player_id": 149863,
+      "name": "白昇浩",
+      "team_id": 898,
+      "team_name": "韩国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 86,
+      "player_id": 172962,
+      "name": "福勒",
+      "team_id": 914,
+      "team_name": "哥斯达黎加",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 87,
+      "player_id": 150245,
+      "name": "福登",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 88,
+      "player_id": 151102,
+      "name": "穆阿尼",
+      "team_id": 649,
+      "team_name": "法国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 89,
+      "player_id": 119726,
+      "name": "米林科维奇",
+      "team_id": 642,
+      "team_name": "塞尔维亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 90,
+      "player_id": 142006,
+      "name": "索莱尔",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 91,
+      "player_id": 153244,
+      "name": "维尼修斯",
+      "team_id": 778,
+      "team_name": "巴西",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 92,
+      "player_id": 166839,
+      "name": "维阿",
+      "team_id": 797,
+      "team_name": "美国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 93,
+      "player_id": 1634,
+      "name": "罗纳尔多",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 1,
+      "penalty": 1
+    },
+    {
+      "rank": 94,
+      "player_id": 205291,
+      "name": "艾哈迈杜",
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 95,
+      "player_id": 97177,
+      "name": "莫利纳",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 96,
+      "player_id": 27008,
+      "name": "莫廷",
+      "team_id": 793,
+      "team_name": "喀麦隆",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 97,
+      "player_id": 67948,
+      "name": "莱基",
+      "team_id": 913,
+      "team_name": "澳大利亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 98,
+      "player_id": 163573,
+      "name": "菲利克斯",
+      "team_id": 765,
+      "team_name": "葡萄牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 99,
+      "player_id": 175416,
+      "name": "萨利苏",
+      "team_id": 810,
+      "team_name": "加纳",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 100,
+      "player_id": 119486,
+      "name": "蒙塔里",
+      "team_id": 904,
+      "team_name": "卡塔尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 101,
+      "player_id": 109703,
+      "name": "谢赫里",
+      "team_id": 891,
+      "team_name": "沙特阿拉伯",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 102,
+      "player_id": 25932,
+      "name": "贝尔",
+      "team_id": 7384,
+      "team_name": "威尔士",
+      "goals": 1,
+      "penalty": 1
+    },
+    {
+      "rank": 103,
+      "player_id": 178042,
+      "name": "贝林厄姆",
+      "team_id": 744,
+      "team_name": "英格兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 104,
+      "player_id": 137198,
+      "name": "路易斯·查韦斯",
+      "team_id": 819,
+      "team_name": "墨西哥",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 105,
+      "player_id": 170454,
+      "name": "迪亚",
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 106,
+      "player_id": 111417,
+      "name": "迪希奥",
+      "team_id": 815,
+      "team_name": "塞内加尔",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 107,
+      "player_id": 67900,
+      "name": "迪马利亚",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 108,
+      "player_id": 134285,
+      "name": "邓弗里斯",
+      "team_id": 646,
+      "team_name": "荷兰",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 109,
+      "player_id": 76109,
+      "name": "金英权",
+      "team_id": 898,
+      "team_name": "韩国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 110,
+      "player_id": 167233,
+      "name": "阿布克拉尔",
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 111,
+      "player_id": 119973,
+      "name": "阿森西奥",
+      "team_id": 772,
+      "team_name": "西班牙",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 112,
+      "player_id": 128749,
+      "name": "雷扎里安",
+      "team_id": 783,
+      "team_name": "伊朗",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 113,
+      "player_id": 148040,
+      "name": "马耶尔",
+      "team_id": 768,
+      "team_name": "克罗地亚",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 114,
+      "player_id": 158778,
+      "name": "麦卡利斯特",
+      "team_id": 766,
+      "team_name": "阿根廷",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 115,
+      "player_id": 131877,
+      "name": "黄喜灿",
+      "team_id": 898,
+      "team_name": "韩国",
+      "goals": 1,
+      "penalty": 0
+    },
+    {
+      "rank": 116,
+      "player_id": 102586,
+      "name": "齐耶赫",
+      "team_id": 813,
+      "team_name": "摩洛哥",
+      "goals": 1,
+      "penalty": 0
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "league": {},
+  "seasons": [],
+  "current_season": "2021",
+  "teams": [
+    {
+      "id": 37,
+      "name": "深圳队"
+    },
+    {
+      "id": 40,
+      "name": "山东泰山"
+    },
+    {
+      "id": 83,
+      "name": "重庆两江竞技"
+    },
+    {
+      "id": 535,
+      "name": "广州队"
+    },
+    {
+      "id": 541,
+      "name": "河南队"
+    },
+    {
+      "id": 16668,
+      "name": "广州城"
+    },
+    {
+      "id": 16967,
+      "name": "沧州雄狮"
+    },
+    {
+      "id": 21408,
+      "name": "青岛队"
+    }
+  ],
+  "standings": {
+    "total": []
+  },
+  "win_draw_lose_standings": [],
+  "handicap_standings": [],
+  "total_goals_standings": [],
+  "scorers": [],
+  "matches": [
+    {
+      "round": 1,
+      "date": "2021-04-20 20:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "0-2",
+      "handicap": -0.75
+    },
+    {
+      "round": 1,
+      "date": "2021-04-20 20:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "2-2",
+      "handicap": 1.75
+    },
+    {
+      "round": 1,
+      "date": "2021-04-21 18:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "2-1",
+      "handicap": 0.25
+    },
+    {
+      "round": 1,
+      "date": "2021-04-21 20:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "1-2",
+      "handicap": -0.25
+    },
+    {
+      "round": 2,
+      "date": "2021-04-26 18:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "0-0",
+      "handicap": 1.25
+    },
+    {
+      "round": 2,
+      "date": "2021-04-26 20:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "3-1",
+      "handicap": 0.25
+    },
+    {
+      "round": 2,
+      "date": "2021-04-27 15:40",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "1-0",
+      "handicap": -0.25
+    },
+    {
+      "round": 2,
+      "date": "2021-04-27 20:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "0-0",
+      "handicap": 0.5
+    },
+    {
+      "round": 3,
+      "date": "2021-05-02 18:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "1-1",
+      "handicap": -0.75
+    },
+    {
+      "round": 3,
+      "date": "2021-05-02 20:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "2-0",
+      "handicap": 0.75
+    },
+    {
+      "round": 3,
+      "date": "2021-05-03 18:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "0-1",
+      "handicap": -0.5
+    },
+    {
+      "round": 3,
+      "date": "2021-05-03 20:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "2-2",
+      "handicap": -0.25
+    },
+    {
+      "round": 4,
+      "date": "2021-05-08 18:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "2-0",
+      "handicap": 1.5
+    },
+    {
+      "round": 4,
+      "date": "2021-05-08 20:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "2-4",
+      "handicap": -0.25
+    },
+    {
+      "round": 4,
+      "date": "2021-05-09 18:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "3-2",
+      "handicap": -0.25
+    },
+    {
+      "round": 4,
+      "date": "2021-05-09 20:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "0-2",
+      "handicap": -0.75
+    },
+    {
+      "round": 5,
+      "date": "2021-05-14 18:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "2-2",
+      "handicap": -0.25
+    },
+    {
+      "round": 5,
+      "date": "2021-05-14 20:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "0-0",
+      "handicap": 0.25
+    },
+    {
+      "round": 5,
+      "date": "2021-05-15 18:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "1-0",
+      "handicap": -0.25
+    },
+    {
+      "round": 5,
+      "date": "2021-07-15 19:30",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "1-1",
+      "handicap": -1.25
+    },
+    {
+      "round": 6,
+      "date": "2021-07-18 18:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "3-1",
+      "handicap": 1.5
+    },
+    {
+      "round": 6,
+      "date": "2021-07-18 18:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "2-0",
+      "handicap": 0.25
+    },
+    {
+      "round": 6,
+      "date": "2021-07-18 20:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "0-0",
+      "handicap": 0.5
+    },
+    {
+      "round": 6,
+      "date": "2021-07-18 20:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "2-1",
+      "handicap": 0.5
+    },
+    {
+      "round": 7,
+      "date": "2021-07-21 18:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "0-2",
+      "handicap": -1
+    },
+    {
+      "round": 7,
+      "date": "2021-07-21 18:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "0-6",
+      "handicap": -1.75
+    },
+    {
+      "round": 7,
+      "date": "2021-07-21 20:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "0-3",
+      "handicap": -1
+    },
+    {
+      "round": 7,
+      "date": "2021-07-21 20:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "1-1",
+      "handicap": 0.5
+    },
+    {
+      "round": 8,
+      "date": "2021-07-24 18:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "3-1",
+      "handicap": 1.5
+    },
+    {
+      "round": 8,
+      "date": "2021-07-24 18:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "0-0",
+      "handicap": 0.75
+    },
+    {
+      "round": 8,
+      "date": "2021-07-24 20:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "2-0",
+      "handicap": 0.5
+    },
+    {
+      "round": 8,
+      "date": "2021-07-24 20:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "3-3",
+      "handicap": -1
+    },
+    {
+      "round": 9,
+      "date": "2021-07-27 18:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "4-0",
+      "handicap": -0.75
+    },
+    {
+      "round": 9,
+      "date": "2021-07-27 18:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "1-4",
+      "handicap": -1.25
+    },
+    {
+      "round": 9,
+      "date": "2021-07-27 20:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "2-1",
+      "handicap": 0.25
+    },
+    {
+      "round": 9,
+      "date": "2021-07-27 20:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "2-1",
+      "handicap": 0.25
+    },
+    {
+      "round": 10,
+      "date": "2021-07-30 18:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "2-0",
+      "handicap": 1
+    },
+    {
+      "round": 10,
+      "date": "2021-07-30 18:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "4-2",
+      "handicap": 0.75
+    },
+    {
+      "round": 10,
+      "date": "2021-07-30 20:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "1-1",
+      "handicap": 0.25
+    },
+    {
+      "round": 10,
+      "date": "2021-07-30 20:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "2-1",
+      "handicap": -0.5
+    },
+    {
+      "round": 11,
+      "date": "2021-08-02 18:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "5-2",
+      "handicap": 1.25
+    },
+    {
+      "round": 11,
+      "date": "2021-08-02 18:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "1-0",
+      "handicap": 0.25
+    },
+    {
+      "round": 11,
+      "date": "2021-08-02 20:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "0-5",
+      "handicap": -1.75
+    },
+    {
+      "round": 11,
+      "date": "2021-08-02 20:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "0-1",
+      "handicap": 0.75
+    },
+    {
+      "round": 12,
+      "date": "2021-08-05 18:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "4-2",
+      "handicap": 0.25
+    },
+    {
+      "round": 12,
+      "date": "2021-08-05 18:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "0-2",
+      "handicap": -0.25
+    },
+    {
+      "round": 12,
+      "date": "2021-08-05 20:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "2-0",
+      "handicap": 1.25
+    },
+    {
+      "round": 12,
+      "date": "2021-08-05 20:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "1-0",
+      "handicap": 0.5
+    },
+    {
+      "round": 13,
+      "date": "2021-08-08 18:00",
+      "home_id": 16668,
+      "home_name": "广州城",
+      "away_id": 40,
+      "away_name": "山东泰山",
+      "score": "1-3",
+      "handicap": -0.75
+    },
+    {
+      "round": 13,
+      "date": "2021-08-08 18:00",
+      "home_id": 16967,
+      "home_name": "沧州雄狮",
+      "away_id": 37,
+      "away_name": "深圳队",
+      "score": "2-1",
+      "handicap": -0.75
+    },
+    {
+      "round": 13,
+      "date": "2021-08-08 20:00",
+      "home_id": 83,
+      "home_name": "重庆两江竞技",
+      "away_id": 535,
+      "away_name": "广州队",
+      "score": "1-5",
+      "handicap": -1.5
+    },
+    {
+      "round": 13,
+      "date": "2021-08-08 20:00",
+      "home_id": 21408,
+      "home_name": "青岛队",
+      "away_id": 541,
+      "away_name": "河南队",
+      "score": "0-1",
+      "handicap": -0.75
+    },
+    {
+      "round": 14,
+      "date": "2021-08-11 18:00",
+      "home_id": 535,
+      "home_name": "广州队",
+      "away_id": 21408,
+      "away_name": "青岛队",
+      "score": "5-0",
+      "handicap": 2.25
+    },
+    {
+      "round": 14,
+      "date": "2021-08-11 18:00",
+      "home_id": 37,
+      "home_name": "深圳队",
+      "away_id": 83,
+      "away_name": "重庆两江竞技",
+      "score": "2-1",
+      "handicap": 1.25
+    },
+    {
+      "round": 14,
+      "date": "2021-08-11 20:00",
+      "home_id": 541,
+      "home_name": "河南队",
+      "away_id": 16668,
+      "away_name": "广州城",
+      "score": "1-1",
+      "handicap": 0
+    },
+    {
+      "round": 14,
+      "date": "2021-08-11 20:00",
+      "home_id": 40,
+      "home_name": "山东泰山",
+      "away_id": 16967,
+      "away_name": "沧州雄狮",
+      "score": "2-1",
+      "handicap": 1.25
+    }
+  ],
+  "update_time": "2026-03-30 22:15:22"
+}
