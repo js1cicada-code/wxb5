@@ -189,6 +189,18 @@
         let currentFilter = 'all';
         let currentSport = 'football';
         
+        async function loadFixtureMapping() {
+            try {
+                const response = await fetch('data/fixture_mapping.json?t=' + Date.now());
+                if (response.ok) {
+                    window.fixtureMapping = await response.json();
+                    console.log('已加载fixture_mapping:', Object.keys(window.fixtureMapping.mapping || {}).length, '场');
+                }
+            } catch (e) {
+                console.log('加载fixture_mapping失败:', e);
+            }
+        }
+        
         async function loadMatches() {
             const file = currentSport === 'football' ? 'live_data.json' : 'live_basketball_data.json';
             try {
@@ -390,8 +402,37 @@ function updateStats(data) {
                         }
                     } else {
                         // 足球跳转到足球分析页
-                        if (fid) {
-                            window.location.href = `match_analysis.html?fixtureId=${fid}&nid=${nid || ''}&home=${home}&away=${away}&league=${league}&time=${time}`;
+                        let fixtureId = fid;
+                        
+                        // 如果没有fid，尝试从fixture_mapping获取
+                        if (!fixtureId && window.fixtureMapping) {
+                            const key = `${decodeURIComponent(home)}_${decodeURIComponent(away)}`;
+                            if (window.fixtureMapping.mapping && window.fixtureMapping.mapping[key]) {
+                                fixtureId = window.fixtureMapping.mapping[key].fixtureId;
+                            }
+                            // 尝试模糊匹配
+                            if (!fixtureId && window.fixtureMapping.mapping) {
+                                for (const k in window.fixtureMapping.mapping) {
+                                    if (k.includes(decodeURIComponent(home).substring(0, 3)) && 
+                                        k.includes(decodeURIComponent(away).substring(0, 3))) {
+                                        fixtureId = window.fixtureMapping.mapping[k].fixtureId;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // 尝试用matchId查找
+                        if (!fixtureId && matchId && window.fixtureMapping && window.fixtureMapping.byMatchId) {
+                            if (window.fixtureMapping.byMatchId[matchId]) {
+                                fixtureId = window.fixtureMapping.byMatchId[matchId].fixtureId;
+                            }
+                        }
+                        
+                        if (fixtureId) {
+                            window.location.href = `match_analysis.html?fixtureId=${fixtureId}&nid=${nid || ''}&home=${home}&away=${away}&league=${league}&time=${time}`;
+                        } else {
+                            alert('暂无此比赛的分析数据');
                         }
                     }
                 });
@@ -485,7 +526,11 @@ function updateStats(data) {
             });
         });
         
-        loadMatches();
+        // 初始化
+        (async function init() {
+            await loadFixtureMapping();
+            await loadMatches();
+        })();
         
         // 预加载另一个运动的数据用于显示数量
         async function loadOtherSportCount() {
