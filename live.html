@@ -202,7 +202,7 @@
         }
         
         async function loadMatches() {
-            const file = currentSport === 'football' ? 'live_data.json' : 'live_basketball_data.json';
+            const file = currentSport === 'football' ? 'data/live_data.json' : 'data/live_basketball_data.json';
             try {
                 const response = await fetch(file + '?t=' + Date.now());
                 const data = await response.json();
@@ -537,7 +537,7 @@ function updateStats(data) {
         
         // 预加载另一个运动的数据用于显示数量
         async function loadOtherSportCount() {
-            const otherFile = currentSport === 'football' ? 'live_basketball_data.json' : 'live_data.json';
+            const otherFile = currentSport === 'football' ? 'data/live_basketball_data.json' : 'data/live_data.json';
             try {
                 const response = await fetch(otherFile + '?t=' + Date.now());
                 const data = await response.json();
