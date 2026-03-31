@@ -918,8 +918,14 @@ async function initPage() {
         }
     }
     
-    // 加载动画
-    if (nid) {
+    // 加载动画 - 直接使用fixtureId作为动画ID
+    if (fixtureId) {
+        const animContainer = document.getElementById('animation-container');
+        const animFrame = document.getElementById('animation-frame');
+        animContainer.style.display = 'block';
+        animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + fixtureId;
+    } else if (nid) {
+        // 兼容旧的namitiyuId参数
         const animContainer = document.getElementById('animation-container');
         const animFrame = document.getElementById('animation-frame');
         animContainer.style.display = 'block';

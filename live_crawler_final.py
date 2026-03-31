@@ -145,7 +145,7 @@ def filter_for_display(all_matches):
 
 
 def fetch_fixture_from_500():
-    """从500.com获取fixtureId和namitiyuId"""
+    """从500.com获取fixtureId"""
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
@@ -177,34 +177,6 @@ def fetch_fixture_from_500():
     except Exception as e:
         print(f"500.com获取fixtureId失败: {e}")
     
-    namitiyu_map = {}
-    fixture_ids = [v['fixtureId'] for v in fixture_map.values()]
-    
-    if fixture_ids:
-        for i in range(0, len(fixture_ids), 20):
-            batch = fixture_ids[i:i+20]
-            ids_str = ','.join(batch)
-            namitiyu_url = f'https://live.500.com/static/info/bifen/xml/namitiyu/{ids_str}.txt'
-            
-            try:
-                req = urllib.request.Request(namitiyu_url, headers=headers)
-                with urllib.request.urlopen(req, context=ctx, timeout=10) as response:
-                    content = response.read().decode('utf-8', errors='ignore')
-                    if content.startswith('namitiyuCallback'):
-                        json_str = content[content.index('(')+1:content.rindex(')')]
-                        data = json.loads(json_str)
-                        for fid, nid in data.items():
-                            namitiyu_map[fid] = nid
-            except:
-                pass
-        
-        print(f"获取到 {len(namitiyu_map)} 个namitiyuId")
-    
-    for key in fixture_map:
-        fid = fixture_map[key]['fixtureId']
-        if fid in namitiyu_map:
-            fixture_map[key]['namitiyuId'] = namitiyu_map[fid]
-    
     return fixture_map
 
 
@@ -222,8 +194,13 @@ def update_fixture_mapping(all_matches, fixture_map):
     
     # 从已有的分析文件中提取fixtureId
     analysis_dir = os.path.join(BASE_DIR, 'data')
-    analysis_files = [f for f in os.listdir(analysis_dir) if f.startswith('analysis_') and f.endswith('.json')]
+    analysis_files = []
+    try:
+        analysis_files = [f for f in os.listdir(analysis_dir) if f.startswith('analysis_') and f.endswith('.json')]
+    except:
+        pass
     
+    analysis_count = 0
     for af in analysis_files:
         try:
             fid = af.replace('analysis_', '').replace('.json', '')
@@ -240,18 +217,23 @@ def update_fixture_mapping(all_matches, fixture_map):
                             'home': home,
                             'away': away,
                         }
+                        analysis_count += 1
                     elif 'fixtureId' not in existing['mapping'][key]:
                         existing['mapping'][key]['fixtureId'] = fid
+                        analysis_count += 1
         except:
             pass
     
-    print(f"从 {len(analysis_files)} 个分析文件中提取fixtureId")
+    print(f"从 {len(analysis_files)} 个分析文件中提取 {analysis_count} 个fixtureId")
     
     new_count = 0
     
     for m in all_matches:
         match_id = m['id']
         key = f"{m['home']}_{m['away']}"
+        
+        # 保留已有的fixtureId
+        existing_entry = existing['mapping'].get(key, {})
         
         entry = {
             'matchId': match_id,
@@ -262,6 +244,14 @@ def update_fixture_mapping(all_matches, fixture_map):
             'date': m['date'],
         }
         
+        # 保留已有的fixtureId
+        if 'fixtureId' in existing_entry:
+            entry['fixtureId'] = existing_entry['fixtureId']
+            # 保存备用fixtureId（分析文件可能有不同的fixtureId）
+            if 'analysisFixtureId' in existing_entry:
+                entry['analysisFixtureId'] = existing_entry['analysisFixtureId']
+        
+        # 如果500.com有新的fixtureId，使用新的
         if key in fixture_map:
             entry['fixtureId'] = fixture_map[key]['fixtureId']
             if 'namitiyuId' in fixture_map[key]:
