@@ -124,7 +124,7 @@ def num(text):
 # ============================================================
 
 def fetch_fixture_mapping():
-    """获取fixtureId映射"""
+    """获取fixtureId映射（使用matchNum精确匹配）"""
     url = 'https://trade.500.com/jczq/index.php?playid=312&g=2'
     
     try:
@@ -132,28 +132,33 @@ def fetch_fixture_mapping():
         resp.encoding = 'gb2312'
         
         mapping = {}
-        for m in re.finditer(r'data-fixtureid="(\d+)"[^>]*data-homesxname="([^"]*)"[^>]*data-awaysxname="([^"]*)"', resp.text):
-            fixture_id, home, away = m.groups()
+        by_match_num = {}
+        for m in re.finditer(r'<tr[^>]*data-fixtureid="(\d+)"[^>]*data-homesxname="([^"]*)"[^>]*data-awaysxname="([^"]*)"[^>]*data-matchdate="([^"]*)"[^>]*data-matchtime="([^"]*)"[^>]*data-matchnum="([^"]*)"', resp.text):
+            fixture_id, home, away, match_date, match_time, match_num = m.groups()
             context = resp.text[max(0, m.start()-500):m.end()+500]
             league = re.search(r'data-simpleleague="([^"]*)"', context)
-            date = re.search(r'data-matchdate="([^"]*)"', context)
-            time = re.search(r'data-matchtime="([^"]*)"', context)
             
-            key = f"{home}_{away}"
-            mapping[key] = {
+            name_key = f"{home}_{away}"
+            info = {
                 'fixtureId': fixture_id,
                 'home': home,
                 'away': away,
                 'league': league.group(1) if league else '',
-                'date': date.group(1) if date else '',
-                'time': time.group(1) if time else ''
+                'date': match_date,
+                'time': match_time,
+                'matchNum': match_num
             }
+            
+            mapping[name_key] = info
+            
+            if match_num and match_num != '---':
+                by_match_num[match_num] = info
         
-        print(f"获取到 {len(mapping)} 场比赛")
-        return mapping
+        print(f"获取到 {len(mapping)} 场比赛 (byMatchNum: {len(by_match_num)} 场)")
+        return {'mapping': mapping, 'byMatchNum': by_match_num}
     except Exception as e:
         print(f"获取fixtureId失败: {e}")
-        return {}
+        return {'mapping': {}, 'byMatchNum': {}}
 
 
 # ============================================================
@@ -1892,24 +1897,27 @@ def save_football_rankings():
 
 def fetch_all_analysis(limit=None):
     """批量获取"""
-    mapping = fetch_fixture_mapping()
+    result = fetch_fixture_mapping()
+    mapping = result.get('mapping', {})
+    by_match_num = result.get('byMatchNum', {})
+    
     if not mapping:
         return
     
     print(f"\n开始爬取...")
     count = 0
     
-    for key, info in mapping.items():
+    for match_num, info in by_match_num.items():
         if limit is not None and count >= limit:
             break
         
-        print(f"\n[{count+1}] {info['home']} vs {info['away']}")
+        print(f"\n[{count+1}] {match_num}: {info['home']} vs {info['away']}")
         data = fetch_match_analysis(info['fixtureId'], info['home'], info['away'])
+        data['matchNum'] = match_num
         filepath = save_analysis_data(info['fixtureId'], data)
         print(f"已保存: {filepath}")
         count += 1
     
-    # 保存排名数据
     save_football_rankings()
     
     print(f"\n完成! 共 {count} 场")

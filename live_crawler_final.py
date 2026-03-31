@@ -145,7 +145,7 @@ def filter_for_display(all_matches):
 
 
 def fetch_fixture_from_500():
-    """从500.com获取fixtureId"""
+    """从500.com获取fixtureId（使用matchNum精确匹配）"""
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
@@ -162,17 +162,21 @@ def fetch_fixture_from_500():
         with urllib.request.urlopen(req, context=ctx, timeout=30) as response:
             html = response.read().decode('gb2312', errors='ignore')
             
-            pattern = r'data-fixtureid="(\d+)"[^>]*data-homesxname="([^"]*)"[^>]*data-awaysxname="([^"]*)"'
+            pattern = r'<tr[^>]*data-fixtureid="(\d+)"[^>]*data-homesxname="([^"]*)"[^>]*data-awaysxname="([^"]*)"[^>]*data-matchdate="([^"]*)"[^>]*data-matchtime="([^"]*)"[^>]*data-matchnum="([^"]*)"[^>]*>'
             for m in re.finditer(pattern, html):
-                fixture_id, home, away = m.groups()
-                key = f"{home}_{away}"
-                fixture_map[key] = {
-                    'fixtureId': fixture_id,
-                    'home': home,
-                    'away': away,
-                }
+                fixture_id, home, away, match_date, match_time, match_num = m.groups()
+                if match_num and match_num != '---':
+                    key = match_num
+                    fixture_map[key] = {
+                        'fixtureId': fixture_id,
+                        'home': home,
+                        'away': away,
+                        'date': match_date,
+                        'time': match_time,
+                        'matchNum': match_num,
+                    }
             
-            print(f"从500.com获取 {len(fixture_map)} 个fixtureId")
+            print(f"从500.com获取 {len(fixture_map)} 个fixtureId (按matchNum)")
             
     except Exception as e:
         print(f"500.com获取fixtureId失败: {e}")
@@ -180,19 +184,75 @@ def fetch_fixture_from_500():
     return fixture_map
 
 
+def fetch_namitiyu_id(fixture_id):
+    """从500.com的stat页面获取namitiyuId"""
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+    }
+    
+    url = f'https://odds.500.com/fenxi/stat-{fixture_id}.shtml?showAnimation=1'
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, context=ctx, timeout=15) as response:
+            html = response.read().decode('utf-8', errors='ignore')
+            
+            pattern = r'tracker\.namitiyu\.com[^"]*id=(\d+)'
+            match = re.search(pattern, html)
+            if match:
+                namitiyu_id = match.group(1)
+                print(f"  fixtureId={fixture_id} → namitiyuId={namitiyu_id}")
+                return namitiyu_id
+            
+    except Exception as e:
+        print(f"  fixtureId={fixture_id} 获取namitiyuId失败: {e}")
+    
+    return None
+
+
+def fetch_all_namitiyu_ids(fixture_map, existing_mapping):
+    """批量获取namitiyuId"""
+    namitiyu_map = {}
+    
+    for key, info in fixture_map.items():
+        fixture_id = info.get('fixtureId')
+        
+        if not fixture_id:
+            continue
+        
+        existing_entry = existing_mapping.get('byMatchNum', {}).get(key, {})
+        if existing_entry.get('namitiyuId'):
+            namitiyu_map[key] = existing_entry['namitiyuId']
+            continue
+        
+        namitiyu_id = fetch_namitiyu_id(fixture_id)
+        if namitiyu_id:
+            namitiyu_map[key] = namitiyu_id
+    
+    print(f"获取 {len(namitiyu_map)} 个namitiyuId")
+    return namitiyu_map
+
+
 def update_fixture_mapping(all_matches, fixture_map):
-    """更新fixture_mapping.json（累积保存）"""
+    """更新fixture_mapping.json（累积保存）- 使用matchNum作为主键"""
     mapping_file = os.path.join(BASE_DIR, 'data', 'fixture_mapping.json')
     
-    existing = {'mapping': {}, 'byMatchId': {}}
+    existing = {'mapping': {}, 'byMatchId': {}, 'byMatchNum': {}}
     if os.path.exists(mapping_file):
         try:
             with open(mapping_file, 'r', encoding='utf-8') as f:
                 existing = json.load(f)
+                if 'byMatchNum' not in existing:
+                    existing['byMatchNum'] = {}
         except:
             pass
     
-    # 从已有的分析文件中提取fixtureId
+    print("\n>>> 获取动画ID (namitiyuId)...")
+    namitiyu_map = fetch_all_namitiyu_ids(fixture_map, existing)
+    
     analysis_dir = os.path.join(BASE_DIR, 'data')
     analysis_files = []
     try:
@@ -209,17 +269,18 @@ def update_fixture_mapping(all_matches, fixture_map):
                 data = json.load(f)
                 home = data.get('home', '')
                 away = data.get('away', '')
+                match_num = data.get('matchNum', '')
                 if home and away:
-                    key = f"{home}_{away}"
-                    if key not in existing['mapping']:
-                        existing['mapping'][key] = {
+                    name_key = f"{home}_{away}"
+                    if name_key not in existing['mapping']:
+                        existing['mapping'][name_key] = {
                             'fixtureId': fid,
                             'home': home,
                             'away': away,
                         }
                         analysis_count += 1
-                    elif 'fixtureId' not in existing['mapping'][key]:
-                        existing['mapping'][key]['fixtureId'] = fid
+                    elif 'fixtureId' not in existing['mapping'][name_key]:
+                        existing['mapping'][name_key]['fixtureId'] = fid
                         analysis_count += 1
         except:
             pass
@@ -230,47 +291,61 @@ def update_fixture_mapping(all_matches, fixture_map):
     
     for m in all_matches:
         match_id = m['id']
-        key = f"{m['home']}_{m['away']}"
-        
-        # 保留已有的fixtureId
-        existing_entry = existing['mapping'].get(key, {})
+        match_num = m['matchNum']
+        name_key = f"{m['home']}_{m['away']}"
         
         entry = {
             'matchId': match_id,
             'home': m['home'],
             'away': m['away'],
-            'matchNum': m['matchNum'],
+            'matchNum': match_num,
             'league': m['league'],
             'date': m['date'],
         }
         
-        # 保留已有的fixtureId
-        if 'fixtureId' in existing_entry:
-            entry['fixtureId'] = existing_entry['fixtureId']
-            # 保存备用fixtureId（分析文件可能有不同的fixtureId）
-            if 'analysisFixtureId' in existing_entry:
-                entry['analysisFixtureId'] = existing_entry['analysisFixtureId']
+        if match_num in existing.get('byMatchNum', {}):
+            existing_num_entry = existing['byMatchNum'][match_num]
+            if 'fixtureId' in existing_num_entry:
+                entry['fixtureId'] = existing_num_entry['fixtureId']
+            if 'namitiyuId' in existing_num_entry:
+                entry['namitiyuId'] = existing_num_entry['namitiyuId']
         
-        # 如果500.com有新的fixtureId，使用新的
-        if key in fixture_map:
-            entry['fixtureId'] = fixture_map[key]['fixtureId']
-            if 'namitiyuId' in fixture_map[key]:
-                entry['namitiyuId'] = fixture_map[key]['namitiyuId']
+        if match_num in fixture_map:
+            entry['fixtureId'] = fixture_map[match_num]['fixtureId']
+            entry['home'] = fixture_map[match_num]['home']
+            entry['away'] = fixture_map[match_num]['away']
         
-        if key not in existing['mapping']:
+        if match_num in namitiyu_map:
+            entry['namitiyuId'] = namitiyu_map[match_num]
+        
+        if match_num and match_num not in existing.get('byMatchNum', {}):
             new_count += 1
-        existing['mapping'][key] = entry
+        existing['byMatchNum'][match_num] = entry
+        
+        if name_key not in existing['mapping']:
+            new_count += 1
+        existing['mapping'][name_key] = entry
         
         if match_id:
             if match_id not in existing['byMatchId']:
                 new_count += 1
             existing['byMatchId'][match_id] = entry
     
+    existing['byFixtureId'] = {}
+    for key, entry in existing['mapping'].items():
+        if 'fixtureId' in entry:
+            existing['byFixtureId'][entry['fixtureId']] = {
+                'namitiyuId': entry.get('namitiyuId'),
+                'home': entry.get('home'),
+                'away': entry.get('away'),
+                'matchNum': entry.get('matchNum'),
+                'matchKey': key
+            }
+    
     os.makedirs(os.path.dirname(mapping_file), exist_ok=True)
     with open(mapping_file, 'w', encoding='utf-8') as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
     
-    # 同步到其他位置
     for path in [
         os.path.join(BASE_DIR, 'dist', 'fixture_mapping.json'),
         os.path.join(BASE_DIR, 'dist', 'data', 'fixture_mapping.json'),
@@ -280,33 +355,45 @@ def update_fixture_mapping(all_matches, fixture_map):
             json.dump(existing, f, ensure_ascii=False, indent=2)
     
     fixture_count = len([v for v in existing['mapping'].values() if 'fixtureId' in v])
-    print(f"fixture_mapping: 总计 {len(existing['mapping'])} 条, 新增 {new_count} 条, 有fixtureId {fixture_count} 条")
+    num_fixture_count = len([v for v in existing['byMatchNum'].values() if 'fixtureId' in v])
+    print(f"fixture_mapping: 总计 {len(existing['mapping'])} 条, byMatchNum {len(existing['byMatchNum'])} 条")
+    print(f"  有fixtureId: mapping {fixture_count} 条, byMatchNum {num_fixture_count} 条, 新增 {new_count} 条")
     
     return existing
 
 
 def apply_fixture_to_matches(matches, mapping):
-    """将fixtureId应用到比赛数据"""
+    """将fixtureId应用到比赛数据 - 优先使用matchNum匹配"""
     matched = 0
     for m in matches:
-        key = f"{m['home']}_{m['away']}"
+        match_num = m.get('matchNum', '')
         
-        if key in mapping.get('mapping', {}):
-            entry = mapping['mapping'][key]
+        if match_num and match_num in mapping.get('byMatchNum', {}):
+            entry = mapping['byMatchNum'][match_num]
             if 'fixtureId' in entry:
                 m['fid'] = entry['fixtureId']
                 m['fixtureId'] = entry['fixtureId']
                 matched += 1
             if 'namitiyuId' in entry:
                 m['namitiyuId'] = entry['namitiyuId']
-        elif m['id'] in mapping.get('byMatchId', {}):
-            entry = mapping['byMatchId'][m['id']]
-            if 'fixtureId' in entry:
-                m['fid'] = entry['fixtureId']
-                m['fixtureId'] = entry['fixtureId']
-                matched += 1
-            if 'namitiyuId' in entry:
-                m['namitiyuId'] = entry['namitiyuId']
+        else:
+            key = f"{m['home']}_{m['away']}"
+            if key in mapping.get('mapping', {}):
+                entry = mapping['mapping'][key]
+                if 'fixtureId' in entry:
+                    m['fid'] = entry['fixtureId']
+                    m['fixtureId'] = entry['fixtureId']
+                    matched += 1
+                if 'namitiyuId' in entry:
+                    m['namitiyuId'] = entry['namitiyuId']
+            elif m['id'] in mapping.get('byMatchId', {}):
+                entry = mapping['byMatchId'][m['id']]
+                if 'fixtureId' in entry:
+                    m['fid'] = entry['fixtureId']
+                    m['fixtureId'] = entry['fixtureId']
+                    matched += 1
+                if 'namitiyuId' in entry:
+                    m['namitiyuId'] = entry['namitiyuId']
     
     print(f"匹配到 {matched} 场比赛的fixtureId")
 
