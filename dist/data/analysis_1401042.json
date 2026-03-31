@@ -2,434 +2,23 @@
   "fixtureId": "1401042",
   "home": "澳大利亚",
   "away": "库拉索",
-  "league": "26FIFA预赛",
-  "updateTime": "2026-03-31 12:15:40",
+  "league": "",
+  "updateTime": "2026-03-31 18:07:49",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
-  "homeLeagueRanking": [
-    {
-      "type": "总",
-      "matches": 1,
-      "win": 1,
-      "draw": 0,
-      "lose": 0,
-      "goals": 1,
-      "conceded": 0,
-      "diff": "1",
-      "points": 3,
-      "rank": 2,
-      "winRate": "100%"
-    },
-    {
-      "type": "主场",
-      "matches": 1,
-      "win": 1,
-      "draw": 0,
-      "lose": 0,
-      "goals": 1,
-      "conceded": 0,
-      "diff": "1",
-      "points": 3,
-      "rank": 2,
-      "winRate": "100%"
-    },
-    {
-      "type": "客场",
-      "matches": 0,
-      "win": 0,
-      "draw": 0,
-      "lose": 0,
-      "goals": 0,
-      "conceded": 0,
-      "diff": "0",
-      "points": 0,
-      "rank": 2,
-      "winRate": ""
-    }
-  ],
-  "awayLeagueRanking": [
-    {
-      "type": "总",
-      "matches": 1,
-      "win": 0,
-      "draw": 0,
-      "lose": 1,
-      "goals": 0,
-      "conceded": 2,
-      "diff": "-2",
-      "points": 0,
-      "rank": 4,
-      "winRate": "0%"
-    },
-    {
-      "type": "主场",
-      "matches": 0,
-      "win": 0,
-      "draw": 0,
-      "lose": 0,
-      "goals": 0,
-      "conceded": 0,
-      "diff": "0",
-      "points": 0,
-      "rank": 4,
-      "winRate": ""
-    },
-    {
-      "type": "客场",
-      "matches": 1,
-      "win": 0,
-      "draw": 0,
-      "lose": 1,
-      "goals": 0,
-      "conceded": 2,
-      "diff": "-2",
-      "points": 0,
-      "rank": 4,
-      "winRate": "0%"
-    }
-  ],
+  "homeLeagueRanking": null,
+  "awayLeagueRanking": null,
   "h2h": null,
   "h2hMatches": [],
-  "homeRecentStats": {
-    "team": "澳大利亚",
-    "win": 7,
-    "draw": 0,
-    "lose": 3,
-    "goals": 12,
-    "conceded": 8
-  },
-  "awayRecentStats": {
-    "team": "库拉索",
-    "win": 3,
-    "draw": 5,
-    "lose": 2,
-    "goals": 15,
-    "conceded": 8
-  },
-  "homeFutureMatches": [
-    {
-      "league": "友谊赛",
-      "date": "2026-05-31",
-      "homeTeam": "墨西哥",
-      "awayTeam": "澳大利亚",
-      "days": "61天"
-    },
-    {
-      "league": "世界杯",
-      "date": "2026-06-14",
-      "homeTeam": "澳大利亚",
-      "awayTeam": "土耳其/斯洛伐克/罗马尼亚/科索沃",
-      "days": "75天"
-    },
-    {
-      "league": "世界杯",
-      "date": "2026-06-20",
-      "homeTeam": "美国",
-      "awayTeam": "澳大利亚",
-      "days": "81天"
-    },
-    {
-      "league": "世界杯",
-      "date": "2026-06-26",
-      "homeTeam": "巴拉圭",
-      "awayTeam": "澳大利亚",
-      "days": "87天"
-    }
-  ],
-  "awayFutureMatches": [
-    {
-      "league": "世界杯",
-      "date": "2026-06-15",
-      "homeTeam": "德国",
-      "awayTeam": "库拉索",
-      "days": "76天"
-    },
-    {
-      "league": "世界杯",
-      "date": "2026-06-21",
-      "homeTeam": "厄瓜多尔",
-      "awayTeam": "库拉索",
-      "days": "82天"
-    },
-    {
-      "league": "世界杯",
-      "date": "2026-06-26",
-      "homeTeam": "库拉索",
-      "awayTeam": "科特迪瓦",
-      "days": "87天"
-    }
-  ],
-  "homeAverageStats": {
-    "avgGoals": "1.00",
-    "homeGoals": "1.00",
-    "awayGoals": "0.00",
-    "avgConceded": "0.00",
-    "homeConceded": "0.00",
-    "awayConceded": "0.00"
-  },
-  "awayAverageStats": {
-    "avgGoals": "0.00",
-    "homeGoals": "0.00",
-    "awayGoals": "0.00",
-    "avgConceded": "2.00",
-    "homeConceded": "0.00",
-    "awayConceded": "2.00"
-  },
-  "homeLineup": {
-    "starting": [
-      {
-        "number": "24",
-        "name": "丹尼・尤里奇",
-        "position": "前锋"
-      },
-      {
-        "number": "16",
-        "name": "阿齐兹・贝希奇",
-        "position": "后卫"
-      },
-      {
-        "number": "6",
-        "name": "马丁・博伊尔",
-        "position": "前锋"
-      },
-      {
-        "number": "17",
-        "name": "帕特里克・亚兹别克",
-        "position": "中场"
-      },
-      {
-        "number": "14",
-        "name": "莱利・麦克格里",
-        "position": "中场"
-      },
-      {
-        "number": "18",
-        "name": "帕特里克・比奇",
-        "position": "守门员"
-      },
-      {
-        "number": "13",
-        "name": "埃登・奥尼尔",
-        "position": "中场"
-      },
-      {
-        "number": "21",
-        "name": "卡梅伦・伯吉斯",
-        "position": "后卫"
-      },
-      {
-        "number": "8",
-        "name": "康纳・梅特卡夫",
-        "position": "前锋"
-      },
-      {
-        "number": "10",
-        "name": "艾迪尼・赫鲁斯蒂奇",
-        "position": "中场"
-      },
-      {
-        "number": "26",
-        "name": "卢卡斯・赫林顿",
-        "position": "后卫"
-      },
-      {
-        "number": "7",
-        "name": "内斯托里・伊兰昆达",
-        "position": "前锋"
-      },
-      {
-        "number": "23",
-        "name": "亚历山德罗・西卡蒂",
-        "position": "后卫"
-      },
-      {
-        "number": "12",
-        "name": "保罗・伊佐",
-        "position": "守门员"
-      },
-      {
-        "number": "5",
-        "name": "乔丹・博斯",
-        "position": "后卫"
-      },
-      {
-        "number": "11",
-        "name": "阿维・玛比",
-        "position": "前锋"
-      },
-      {
-        "number": "19",
-        "name": "贾森・杰里亚",
-        "position": "后卫"
-      },
-      {
-        "number": "20",
-        "name": "保罗・奥孔-恩斯特勒",
-        "position": "中场"
-      },
-      {
-        "number": "3",
-        "name": "雅各布・伊塔利亚诺",
-        "position": "中场"
-      },
-      {
-        "number": "22",
-        "name": "亚历山大・罗伯逊",
-        "position": "中场"
-      },
-      {
-        "number": "1",
-        "name": "马修・瑞恩",
-        "position": "守门员"
-      },
-      {
-        "number": "25",
-        "name": "安特・苏托",
-        "position": "前锋"
-      },
-      {
-        "number": "15",
-        "name": "凯・特里温",
-        "position": "后卫"
-      },
-      {
-        "number": "9",
-        "name": "尼山・韦卢皮莱",
-        "position": "前锋"
-      },
-      {
-        "number": "2",
-        "name": "米洛斯・德格内克",
-        "position": "中场"
-      }
-    ],
-    "substitute": [],
-    "injured": [],
-    "suspended": []
-  },
-  "awayLineup": {
-    "starting": [
-      {
-        "number": "9",
-        "name": "布兰德利・库瓦斯",
-        "position": "前锋"
-      },
-      {
-        "number": "17",
-        "name": "泰瑞斯・诺斯林",
-        "position": "后卫"
-      },
-      {
-        "number": "14",
-        "name": "肯伊・霍勒",
-        "position": "前锋"
-      },
-      {
-        "number": "22",
-        "name": "泰里克・波达克",
-        "position": "守门员"
-      },
-      {
-        "number": "7",
-        "name": "朱利尼奥・巴库纳",
-        "position": "中场"
-      },
-      {
-        "number": "16",
-        "name": "杰尔・马加里萨",
-        "position": "前锋"
-      },
-      {
-        "number": "12",
-        "name": "松吉・汉森",
-        "position": "前锋"
-      },
-      {
-        "number": "15",
-        "name": "阿贾尼・马萨",
-        "position": "后卫"
-      },
-      {
-        "number": "8",
-        "name": "利瓦诺・科梅内西亚",
-        "position": "中场"
-      },
-      {
-        "number": "21",
-        "name": "凯文・费利达",
-        "position": "中场"
-      },
-      {
-        "number": "10",
-        "name": "莱安德罗・巴库纳",
-        "position": "中场"
-      },
-      {
-        "number": "11",
-        "name": "杰里米・安东尼斯",
-        "position": "前锋"
-      },
-      {
-        "number": "5",
-        "name": "谢拉尔・弗洛拉努斯",
-        "position": "后卫"
-      },
-      {
-        "number": "2",
-        "name": "舒兰迪・桑博",
-        "position": "后卫"
-      },
-      {
-        "number": "24",
-        "name": "里赫德利・巴佐尔",
-        "position": "后卫"
-      },
-      {
-        "number": "23",
-        "name": "特雷弗・多恩布什",
-        "position": "守门员"
-      },
-      {
-        "number": "3",
-        "name": "朱利恩・加亚里",
-        "position": "后卫"
-      },
-      {
-        "number": "6",
-        "name": "戈弗里德・罗默拉托",
-        "position": "中场"
-      },
-      {
-        "number": "20",
-        "name": "约书亚・布雷内特",
-        "position": "后卫"
-      },
-      {
-        "number": "4",
-        "name": "罗森・范艾玛",
-        "position": "后卫"
-      },
-      {
-        "number": "1",
-        "name": "埃洛伊・罗姆",
-        "position": "守门员"
-      },
-      {
-        "number": "13",
-        "name": "陈达毅",
-        "position": "中场"
-      },
-      {
-        "number": "19",
-        "name": "赫尔瓦内・卡斯塔内尔",
-        "position": "前锋"
-      }
-    ],
-    "substitute": [],
-    "injured": [],
-    "suspended": []
-  },
+  "homeRecentStats": null,
+  "awayRecentStats": null,
+  "homeFutureMatches": [],
+  "awayFutureMatches": [],
+  "homeAverageStats": null,
+  "awayAverageStats": null,
+  "homeLineup": null,
+  "awayLineup": null,
   "homeAbility": {
     "totalValue": {
       "value": 5048.0,
@@ -437,19 +26,16 @@
       "raw": "5048万"
     },
     "attackValue": {
-      "value": 1696,
-      "unit": "万",
-      "count": 7
+      "value": 1767,
+      "unit": "万"
     },
     "midfieldValue": {
-      "value": 1777,
-      "unit": "万",
-      "count": 8
+      "value": 1514,
+      "unit": "万"
     },
     "defenseValue": {
-      "value": 1272,
-      "unit": "万",
-      "count": 7
+      "value": 1262,
+      "unit": "万"
     }
   },
   "awayAbility": {
@@ -459,63 +45,45 @@
       "raw": "2838万"
     },
     "attackValue": {
-      "value": 888,
-      "unit": "万",
-      "count": 6
+      "value": 993,
+      "unit": "万"
     },
     "midfieldValue": {
-      "value": 814,
-      "unit": "万",
-      "count": 6
+      "value": 851,
+      "unit": "万"
     },
     "defenseValue": {
-      "value": 888,
-      "unit": "万",
-      "count": 8
+      "value": 710,
+      "unit": "万"
     }
   },
-  "recommendation": {
-    "homeForm": "WLLLWW",
-    "awayForm": "LDWDWW",
-    "homeAsian": "WLLLWW",
-    "awayAsian": "LWWLWL",
-    "pick": "澳洲 胜",
-    "h2hRecord": "澳大利亚 0胜0平0负",
-    "reason": "库拉索是一个很小的国家，足球实力以及经验方面更是远不如澳洲，库拉索今场根本不是澳洲的对手。"
-  },
+  "recommendation": null,
   "intelligence": {
     "homeStrength": [
-      "近10场胜率70%，状态火热",
-      "场均失球0.8个，防守稳固",
       "球队身价5048.0万欧，远超对手"
     ],
-    "homeWeakness": [
-      "近期走势: 胜负负负胜胜，3连败"
-    ],
+    "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(1696万)优于对手防线(888万)"
+      "锋线身价(1767万)优于对手防线(710万)"
     ],
     "homeThreat": [],
-    "awayStrength": [
-      "场均失球0.8个，防守稳固"
-    ],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
     "awayThreat": [
-      "对手身价是对手1.8倍，实力差距明显",
-      "对手防线(1272万)优于己方锋线(888万)"
+      "对手身价是对手1.8倍，实力差距明显"
     ],
-    "summary": "澳大利亚近期状态更佳。推荐: 澳洲 胜"
+    "summary": ""
   },
   "asianOdds": [
     {
       "company": "威**尔",
       "instant": {
-        "homeWater": "0.810",
+        "homeWater": "0.760",
         "handicap": "一球/球半降",
-        "awayWater": "0.840",
-        "time": "03-31 12:01",
-        "trend": ""
+        "awayWater": "0.880",
+        "time": "03-31 16:58",
+        "trend": "降"
       },
       "initial": {
         "homeWater": "0.800",
@@ -527,11 +95,11 @@
     {
       "company": "*门",
       "instant": {
-        "homeWater": "0.800",
-        "handicap": "一球/球半",
-        "awayWater": "0.980",
-        "time": "03-31 11:48",
-        "trend": "降"
+        "homeWater": "0.980",
+        "handicap": "球半",
+        "awayWater": "0.800",
+        "time": "03-31 16:55",
+        "trend": "升"
       },
       "initial": {
         "homeWater": "1.010",
@@ -559,10 +127,10 @@
     {
       "company": "**t3*5",
       "instant": {
-        "homeWater": "0.800",
-        "handicap": "一球/球半降",
-        "awayWater": "1.000",
-        "time": "03-31 12:12",
+        "homeWater": "1.000",
+        "handicap": "球半",
+        "awayWater": "0.800",
+        "time": "03-31 17:08",
         "trend": ""
       },
       "initial": {
@@ -575,10 +143,10 @@
     {
       "company": "I***rw**t*n",
       "instant": {
-        "homeWater": "1.050",
+        "homeWater": "0.950",
         "handicap": "球半",
-        "awayWater": "0.700",
-        "time": "03-31 11:08",
+        "awayWater": "0.750",
+        "time": "03-31 16:44",
         "trend": ""
       },
       "initial": {
@@ -591,11 +159,11 @@
     {
       "company": "*冠",
       "instant": {
-        "homeWater": "0.850",
-        "handicap": "一球/球半降",
-        "awayWater": "0.970",
-        "time": "03-31 12:00",
-        "trend": "降"
+        "homeWater": "0.980",
+        "handicap": "球半",
+        "awayWater": "0.840",
+        "time": "03-31 17:09",
+        "trend": ""
       },
       "initial": {
         "homeWater": "0.950",
@@ -610,7 +178,7 @@
         "homeWater": "0.860",
         "handicap": "一球/球半",
         "awayWater": "0.990",
-        "time": "03-31 12:03",
+        "time": "03-31 17:09",
         "trend": "降"
       },
       "initial": {
@@ -621,12 +189,28 @@
       }
     },
     {
+      "company": "on**",
+      "instant": {
+        "homeWater": "0.960",
+        "handicap": "球半降",
+        "awayWater": "0.850",
+        "time": "03-31 17:08",
+        "trend": ""
+      },
+      "initial": {
+        "homeWater": "0.920",
+        "handicap": "球半/两球",
+        "awayWater": "0.740",
+        "time": "03-28 16:57"
+      }
+    },
+    {
       "company": "伟*",
       "instant": {
-        "homeWater": "0.790",
-        "handicap": "一球/球半降",
-        "awayWater": "0.940",
-        "time": "03-31 11:41",
+        "homeWater": "0.940",
+        "handicap": "球半降",
+        "awayWater": "0.790",
+        "time": "03-31 17:09",
         "trend": "降"
       },
       "initial": {
@@ -637,28 +221,12 @@
       }
     },
     {
-      "company": "on**",
-      "instant": {
-        "homeWater": "0.750",
-        "handicap": "一球/球半降",
-        "awayWater": "0.900",
-        "time": "03-31 12:07",
-        "trend": "降"
-      },
-      "initial": {
-        "homeWater": "0.920",
-        "handicap": "球半/两球",
-        "awayWater": "0.740",
-        "time": "03-28 16:57"
-      }
-    },
-    {
       "company": "Pi****le平*",
       "instant": {
-        "homeWater": "0.830",
-        "handicap": "一球/球半降",
-        "awayWater": "1.030",
-        "time": "03-31 12:04",
+        "homeWater": "1.040",
+        "handicap": "球半",
+        "awayWater": "0.820",
+        "time": "03-31 17:09",
         "trend": ""
       },
       "initial": {
@@ -671,11 +239,11 @@
     {
       "company": "利*",
       "instant": {
-        "homeWater": "0.830",
-        "handicap": "一球/球半",
-        "awayWater": "1.010",
-        "time": "03-31 12:06",
-        "trend": ""
+        "homeWater": "0.970",
+        "handicap": "球半",
+        "awayWater": "0.870",
+        "time": "03-31 16:44",
+        "trend": "升"
       },
       "initial": {
         "homeWater": "0.830",
@@ -687,10 +255,10 @@
     {
       "company": "M****on88 (明*)",
       "instant": {
-        "homeWater": "1.000",
+        "homeWater": "0.960",
         "handicap": "球半",
-        "awayWater": "0.800",
-        "time": "03-31 12:07",
+        "awayWater": "0.880",
+        "time": "03-31 17:07",
         "trend": ""
       },
       "initial": {
@@ -701,28 +269,12 @@
       }
     },
     {
-      "company": "香**会",
-      "instant": {
-        "homeWater": "0.810",
-        "handicap": "一球/球半",
-        "awayWater": "0.990",
-        "time": "03-31 12:08",
-        "trend": "降"
-      },
-      "initial": {
-        "homeWater": "0.960",
-        "handicap": "一球/球半",
-        "awayWater": "0.810",
-        "time": "03-30 02:55"
-      }
-    },
-    {
       "company": "金*博",
       "instant": {
-        "homeWater": "0.860",
+        "homeWater": "0.870",
         "handicap": "一球/球半降",
-        "awayWater": "0.980",
-        "time": "03-31 12:04",
+        "awayWater": "0.970",
+        "time": "03-31 17:06",
         "trend": "降"
       },
       "initial": {
@@ -733,12 +285,28 @@
       }
     },
     {
+      "company": "香**会",
+      "instant": {
+        "homeWater": "1.180",
+        "handicap": "球半/两球",
+        "awayWater": "0.670",
+        "time": "03-31 17:07",
+        "trend": "升"
+      },
+      "initial": {
+        "homeWater": "0.960",
+        "handicap": "一球/球半",
+        "awayWater": "0.810",
+        "time": "03-30 02:55"
+      }
+    },
+    {
       "company": "12**t (壹*博)",
       "instant": {
-        "homeWater": "1.000",
+        "homeWater": "0.970",
         "handicap": "球半",
-        "awayWater": "0.800",
-        "time": "03-31 12:05",
+        "awayWater": "0.870",
+        "time": "03-31 17:07",
         "trend": ""
       },
       "initial": {
@@ -751,11 +319,11 @@
     {
       "company": "18**t",
       "instant": {
-        "homeWater": "0.790",
-        "handicap": "一球/球半降",
-        "awayWater": "0.990",
-        "time": "03-31 12:11",
-        "trend": "降"
+        "homeWater": "0.970",
+        "handicap": "球半",
+        "awayWater": "0.800",
+        "time": "03-31 17:09",
+        "trend": ""
       },
       "initial": {
         "homeWater": "0.810",
@@ -767,11 +335,11 @@
     {
       "company": "W****t (盈*)",
       "instant": {
-        "homeWater": "0.820",
+        "homeWater": "0.900",
         "handicap": "一球/球半降",
-        "awayWater": "1.000",
-        "time": "03-31 11:27",
-        "trend": "降"
+        "awayWater": "0.920",
+        "time": "03-31 17:08",
+        "trend": ""
       },
       "initial": {
         "homeWater": "0.880",
@@ -794,13 +362,13 @@
         "returnRate": "88.55%"
       },
       "initial": {
-        "homeWin": "1.27",
-        "draw": "4.40",
-        "awayWin": "8.70",
-        "homeProb": "69.71%",
-        "drawProb": "20.12%",
-        "awayProb": "10.18%",
-        "returnRate": "88.53%"
+        "homeWin": "1.21",
+        "draw": "5.00",
+        "awayWin": "9.75",
+        "homeProb": "73.20%",
+        "drawProb": "17.71%",
+        "awayProb": "9.08%",
+        "returnRate": "88.57%"
       }
     },
     {
@@ -815,13 +383,13 @@
         "returnRate": "89.30%"
       },
       "initial": {
-        "homeWin": "1.29",
-        "draw": "4.60",
+        "homeWin": "1.25",
+        "draw": "5.00",
         "awayWin": "8.00",
-        "homeProb": "69.36%",
-        "drawProb": "19.45%",
-        "awayProb": "11.18%",
-        "returnRate": "89.48%"
+        "homeProb": "71.11%",
+        "drawProb": "17.78%",
+        "awayProb": "11.11%",
+        "returnRate": "88.89%"
       }
     },
     {
@@ -857,13 +425,13 @@
         "returnRate": "93.90%"
       },
       "initial": {
-        "homeWin": "1.35",
-        "draw": "4.80",
-        "awayWin": "8.50",
-        "homeProb": "69.44%",
-        "drawProb": "19.53%",
-        "awayProb": "11.03%",
-        "returnRate": "93.75%"
+        "homeWin": "1.36",
+        "draw": "5.25",
+        "awayWin": "7.50",
+        "homeProb": "69.43%",
+        "drawProb": "17.98%",
+        "awayProb": "12.59%",
+        "returnRate": "94.42%"
       }
     },
     {
@@ -879,12 +447,12 @@
       },
       "initial": {
         "homeWin": "1.33",
-        "draw": "4.50",
-        "awayWin": "8.00",
-        "homeProb": "68.41%",
-        "drawProb": "20.22%",
-        "awayProb": "11.37%",
-        "returnRate": "90.98%"
+        "draw": "5.00",
+        "awayWin": "7.50",
+        "homeProb": "69.28%",
+        "drawProb": "18.43%",
+        "awayProb": "12.29%",
+        "returnRate": "92.15%"
       }
     },
     {
@@ -899,13 +467,13 @@
         "returnRate": "94.59%"
       },
       "initial": {
-        "homeWin": "1.35",
-        "draw": "4.80",
+        "homeWin": "1.33",
+        "draw": "5.00",
         "awayWin": "9.00",
-        "homeProb": "69.87%",
-        "drawProb": "19.65%",
-        "awayProb": "10.48%",
-        "returnRate": "94.32%"
+        "homeProb": "70.73%",
+        "drawProb": "18.81%",
+        "awayProb": "10.45%",
+        "returnRate": "94.07%"
       }
     },
     {
@@ -921,12 +489,12 @@
       },
       "initial": {
         "homeWin": "1.30",
-        "draw": "4.75",
-        "awayWin": "8.75",
-        "homeProb": "70.31%",
-        "drawProb": "19.24%",
-        "awayProb": "10.45%",
-        "returnRate": "91.40%"
+        "draw": "4.90",
+        "awayWin": "8.50",
+        "homeProb": "70.51%",
+        "drawProb": "18.71%",
+        "awayProb": "10.78%",
+        "returnRate": "91.66%"
       }
     },
     {
@@ -941,13 +509,13 @@
         "returnRate": "92.36%"
       },
       "initial": {
-        "homeWin": "1.34",
-        "draw": "4.60",
-        "awayWin": "8.40",
-        "homeProb": "68.93%",
-        "drawProb": "20.08%",
-        "awayProb": "11.00%",
-        "returnRate": "92.36%"
+        "homeWin": "1.29",
+        "draw": "4.90",
+        "awayWin": "8.50",
+        "homeProb": "70.67%",
+        "drawProb": "18.60%",
+        "awayProb": "10.73%",
+        "returnRate": "91.16%"
       }
     },
     {
@@ -962,13 +530,13 @@
         "returnRate": "92.29%"
       },
       "initial": {
-        "homeWin": "1.34",
-        "draw": "4.60",
-        "awayWin": "8.40",
-        "homeProb": "68.93%",
-        "drawProb": "20.08%",
-        "awayProb": "11.00%",
-        "returnRate": "92.36%"
+        "homeWin": "1.29",
+        "draw": "4.90",
+        "awayWin": "8.50",
+        "homeProb": "70.67%",
+        "drawProb": "18.60%",
+        "awayProb": "10.73%",
+        "returnRate": "91.16%"
       }
     },
     {
@@ -984,12 +552,12 @@
       },
       "initial": {
         "homeWin": "1.30",
-        "draw": "4.50",
-        "awayWin": "9.50",
-        "homeProb": "70.14%",
-        "drawProb": "20.26%",
-        "awayProb": "9.60%",
-        "returnRate": "91.18%"
+        "draw": "4.75",
+        "awayWin": "9.00",
+        "homeProb": "70.52%",
+        "drawProb": "19.30%",
+        "awayProb": "10.19%",
+        "returnRate": "91.67%"
       }
     },
     {
@@ -1005,12 +573,12 @@
       },
       "initial": {
         "homeWin": "1.35",
-        "draw": "4.80",
-        "awayWin": "8.75",
-        "homeProb": "69.66%",
-        "drawProb": "19.59%",
-        "awayProb": "10.75%",
-        "returnRate": "94.04%"
+        "draw": "5.00",
+        "awayWin": "7.50",
+        "homeProb": "68.97%",
+        "drawProb": "18.62%",
+        "awayProb": "12.41%",
+        "returnRate": "93.10%"
       }
     },
     {
@@ -1025,13 +593,13 @@
         "returnRate": "94.91%"
       },
       "initial": {
-        "homeWin": "1.34",
-        "draw": "4.95",
-        "awayWin": "8.94",
-        "homeProb": "70.39%",
-        "drawProb": "19.06%",
-        "awayProb": "10.55%",
-        "returnRate": "94.33%"
+        "homeWin": "1.33",
+        "draw": "5.27",
+        "awayWin": "8.67",
+        "homeProb": "71.14%",
+        "drawProb": "17.95%",
+        "awayProb": "10.91%",
+        "returnRate": "94.61%"
       }
     },
     {
@@ -1046,13 +614,13 @@
         "returnRate": "94.15%"
       },
       "initial": {
-        "homeWin": "1.35",
-        "draw": "4.90",
-        "awayWin": "9.20",
-        "homeProb": "70.31%",
-        "drawProb": "19.37%",
-        "awayProb": "10.32%",
-        "returnRate": "94.92%"
+        "homeWin": "1.33",
+        "draw": "5.40",
+        "awayWin": "8.80",
+        "homeProb": "71.56%",
+        "drawProb": "17.62%",
+        "awayProb": "10.82%",
+        "returnRate": "95.17%"
       }
     },
     {
@@ -1069,11 +637,11 @@
       "initial": {
         "homeWin": "1.36",
         "draw": "5.00",
-        "awayWin": "9.00",
-        "homeProb": "70.27%",
-        "drawProb": "19.11%",
-        "awayProb": "10.62%",
-        "returnRate": "95.57%"
+        "awayWin": "8.00",
+        "homeProb": "69.35%",
+        "drawProb": "18.86%",
+        "awayProb": "11.79%",
+        "returnRate": "94.31%"
       }
     },
     {
@@ -1089,12 +657,12 @@
       },
       "initial": {
         "homeWin": "1.31",
-        "draw": "4.24",
-        "awayWin": "8.20",
-        "homeProb": "68.09%",
-        "drawProb": "21.04%",
-        "awayProb": "10.88%",
-        "returnRate": "89.19%"
+        "draw": "4.70",
+        "awayWin": "6.80",
+        "homeProb": "67.96%",
+        "drawProb": "18.94%",
+        "awayProb": "13.09%",
+        "returnRate": "89.03%"
       }
     },
     {
@@ -1132,11 +700,11 @@
       "initial": {
         "homeWin": "1.35",
         "draw": "4.80",
-        "awayWin": "8.75",
-        "homeProb": "69.66%",
-        "drawProb": "19.59%",
-        "awayProb": "10.75%",
-        "returnRate": "94.04%"
+        "awayWin": "8.25",
+        "homeProb": "69.21%",
+        "drawProb": "19.47%",
+        "awayProb": "11.33%",
+        "returnRate": "93.43%"
       }
     },
     {
@@ -1151,13 +719,13 @@
         "returnRate": "89.25%"
       },
       "initial": {
-        "homeWin": "1.30",
-        "draw": "4.45",
-        "awayWin": "8.20",
-        "homeProb": "68.93%",
-        "drawProb": "20.14%",
-        "awayProb": "10.93%",
-        "returnRate": "89.61%"
+        "homeWin": "1.31",
+        "draw": "4.60",
+        "awayWin": "7.10",
+        "homeProb": "68.06%",
+        "drawProb": "19.38%",
+        "awayProb": "12.56%",
+        "returnRate": "89.16%"
       }
     },
     {
@@ -1172,13 +740,13 @@
         "returnRate": "89.25%"
       },
       "initial": {
-        "homeWin": "1.29",
-        "draw": "4.50",
-        "awayWin": "8.40",
-        "homeProb": "69.43%",
-        "drawProb": "19.90%",
-        "awayProb": "10.66%",
-        "returnRate": "89.57%"
+        "homeWin": "1.32",
+        "draw": "4.80",
+        "awayWin": "6.50",
+        "homeProb": "67.66%",
+        "drawProb": "18.61%",
+        "awayProb": "13.74%",
+        "returnRate": "89.31%"
       }
     },
     {
@@ -1193,13 +761,13 @@
         "returnRate": "92.36%"
       },
       "initial": {
-        "homeWin": "1.34",
-        "draw": "4.60",
-        "awayWin": "8.40",
-        "homeProb": "68.93%",
-        "drawProb": "20.08%",
-        "awayProb": "11.00%",
-        "returnRate": "92.36%"
+        "homeWin": "1.29",
+        "draw": "4.90",
+        "awayWin": "8.50",
+        "homeProb": "70.67%",
+        "drawProb": "18.60%",
+        "awayProb": "10.73%",
+        "returnRate": "91.16%"
       }
     },
     {
@@ -1214,13 +782,13 @@
         "returnRate": "88.01%"
       },
       "initial": {
-        "homeWin": "1.24",
-        "draw": "4.45",
-        "awayWin": "9.50",
-        "homeProb": "70.96%",
-        "drawProb": "19.77%",
-        "awayProb": "9.26%",
-        "returnRate": "87.99%"
+        "homeWin": "1.21",
+        "draw": "4.90",
+        "awayWin": "9.75",
+        "homeProb": "72.94%",
+        "drawProb": "18.01%",
+        "awayProb": "9.05%",
+        "returnRate": "88.25%"
       }
     },
     {
@@ -1235,13 +803,13 @@
         "returnRate": "89.25%"
       },
       "initial": {
-        "homeWin": "1.29",
-        "draw": "4.50",
-        "awayWin": "8.40",
-        "homeProb": "69.43%",
-        "drawProb": "19.90%",
-        "awayProb": "10.66%",
-        "returnRate": "89.57%"
+        "homeWin": "1.33",
+        "draw": "4.75",
+        "awayWin": "6.30",
+        "homeProb": "67.06%",
+        "drawProb": "18.78%",
+        "awayProb": "14.16%",
+        "returnRate": "89.20%"
       }
     },
     {
@@ -1256,13 +824,13 @@
         "returnRate": "96.43%"
       },
       "initial": {
-        "homeWin": "1.37",
+        "homeWin": "1.36",
         "draw": "5.00",
         "awayWin": "9.40",
-        "homeProb": "70.44%",
-        "drawProb": "19.30%",
-        "awayProb": "10.27%",
-        "returnRate": "96.50%"
+        "homeProb": "70.59%",
+        "drawProb": "19.20%",
+        "awayProb": "10.21%",
+        "returnRate": "96.00%"
       }
     },
     {
@@ -1277,13 +845,13 @@
         "returnRate": "87.83%"
       },
       "initial": {
-        "homeWin": "1.33",
-        "draw": "4.75",
-        "awayWin": "8.50",
-        "homeProb": "69.62%",
-        "drawProb": "19.49%",
-        "awayProb": "10.89%",
-        "returnRate": "92.59%"
+        "homeWin": "1.35",
+        "draw": "5.50",
+        "awayWin": "10.50",
+        "homeProb": "72.78%",
+        "drawProb": "17.86%",
+        "awayProb": "9.36%",
+        "returnRate": "98.25%"
       }
     },
     {
@@ -1298,13 +866,13 @@
         "returnRate": "92.20%"
       },
       "initial": {
-        "homeWin": "1.36",
-        "draw": "4.60",
+        "homeWin": "1.33",
+        "draw": "4.90",
         "awayWin": "8.75",
-        "homeProb": "68.91%",
-        "drawProb": "20.37%",
-        "awayProb": "10.71%",
-        "returnRate": "93.72%"
+        "homeProb": "70.25%",
+        "drawProb": "19.07%",
+        "awayProb": "10.68%",
+        "returnRate": "93.44%"
       }
     },
     {
@@ -1319,13 +887,13 @@
         "returnRate": "95.04%"
       },
       "initial": {
-        "homeWin": "1.33",
-        "draw": "4.75",
-        "awayWin": "9.00",
-        "homeProb": "70.04%",
-        "drawProb": "19.61%",
-        "awayProb": "10.35%",
-        "returnRate": "93.15%"
+        "homeWin": "1.32",
+        "draw": "5.00",
+        "awayWin": "8.60",
+        "homeProb": "70.55%",
+        "drawProb": "18.62%",
+        "awayProb": "10.83%",
+        "returnRate": "93.12%"
       }
     },
     {
@@ -1342,11 +910,11 @@
       "initial": {
         "homeWin": "1.34",
         "draw": "4.45",
-        "awayWin": "9.30",
-        "homeProb": "69.19%",
-        "drawProb": "20.84%",
-        "awayProb": "9.97%",
-        "returnRate": "92.72%"
+        "awayWin": "8.80",
+        "homeProb": "68.80%",
+        "drawProb": "20.72%",
+        "awayProb": "10.48%",
+        "returnRate": "92.20%"
       }
     },
     {
@@ -1362,12 +930,12 @@
       },
       "initial": {
         "homeWin": "1.30",
-        "draw": "4.60",
-        "awayWin": "8.50",
-        "homeProb": "69.66%",
-        "drawProb": "19.69%",
-        "awayProb": "10.65%",
-        "returnRate": "90.56%"
+        "draw": "4.75",
+        "awayWin": "8.00",
+        "homeProb": "69.63%",
+        "drawProb": "19.06%",
+        "awayProb": "11.31%",
+        "returnRate": "90.52%"
       }
     },
     {
@@ -1382,13 +950,13 @@
         "returnRate": "91.37%"
       },
       "initial": {
-        "homeWin": "1.35",
-        "draw": "4.60",
+        "homeWin": "1.33",
+        "draw": "4.80",
         "awayWin": "8.50",
-        "homeProb": "68.86%",
-        "drawProb": "20.21%",
-        "awayProb": "10.94%",
-        "returnRate": "92.96%"
+        "homeProb": "69.76%",
+        "drawProb": "19.33%",
+        "awayProb": "10.91%",
+        "returnRate": "92.78%"
       }
     },
     {
@@ -1403,13 +971,13 @@
         "returnRate": "91.37%"
       },
       "initial": {
-        "homeWin": "1.32",
-        "draw": "4.70",
+        "homeWin": "1.30",
+        "draw": "4.85",
         "awayWin": "8.50",
-        "homeProb": "69.63%",
-        "drawProb": "19.56%",
-        "awayProb": "10.81%",
-        "returnRate": "91.91%"
+        "homeProb": "70.37%",
+        "drawProb": "18.86%",
+        "awayProb": "10.76%",
+        "returnRate": "91.49%"
       }
     }
   ],
@@ -1425,21 +993,21 @@
         "drawProb": "27.88",
         "awayProb": "31.44",
         "returnRate": "88.67",
-        "homeKelly": "0.96",
-        "drawKelly": "0.86",
-        "awayKelly": "0.81"
+        "homeKelly": "1.00",
+        "drawKelly": "0.83",
+        "awayKelly": "0.79"
       },
       "initial": {
-        "homeOdds": "1.99",
-        "drawOdds": "3.30",
-        "awayOdds": "3.09",
-        "homeProb": "44.50",
-        "drawProb": "26.84",
-        "awayProb": "28.66",
-        "returnRate": "88.56",
-        "homeKelly": "0.88",
-        "drawKelly": "0.89",
-        "awayKelly": "0.89"
+        "homeOdds": "1.80",
+        "drawOdds": "3.58",
+        "awayOdds": "3.40",
+        "homeProb": "49.21",
+        "drawProb": "24.74",
+        "awayProb": "26.05",
+        "returnRate": "88.57",
+        "homeKelly": "0.83",
+        "drawKelly": "0.93",
+        "awayKelly": "0.95"
       }
     },
     {
@@ -1453,21 +1021,21 @@
         "drawProb": "26.24",
         "awayProb": "27.04",
         "returnRate": "89.23",
-        "homeKelly": "0.84",
-        "drawKelly": "0.92",
-        "awayKelly": "0.95"
+        "homeKelly": "0.88",
+        "drawKelly": "0.88",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.05",
-        "drawOdds": "3.30",
+        "homeOdds": "1.95",
+        "drawOdds": "3.40",
         "awayOdds": "3.10",
-        "homeProb": "43.81",
-        "drawProb": "27.22",
-        "awayProb": "28.97",
-        "returnRate": "89.81",
-        "homeKelly": "0.91",
-        "drawKelly": "0.89",
-        "awayKelly": "0.89"
+        "homeProb": "45.40",
+        "drawProb": "26.04",
+        "awayProb": "28.56",
+        "returnRate": "88.53",
+        "homeKelly": "0.90",
+        "drawKelly": "0.88",
+        "awayKelly": "0.87"
       }
     },
     {
@@ -1481,21 +1049,21 @@
         "drawProb": "25.02",
         "awayProb": "21.90",
         "returnRate": "87.58",
-        "homeKelly": "0.73",
-        "drawKelly": "0.95",
-        "awayKelly": "1.15"
+        "homeKelly": "0.76",
+        "drawKelly": "0.91",
+        "awayKelly": "1.12"
       },
       "initial": {
-        "homeOdds": "2.00",
-        "drawOdds": "3.25",
-        "awayOdds": "3.10",
-        "homeProb": "44.24",
-        "drawProb": "27.22",
-        "awayProb": "28.54",
-        "returnRate": "88.47",
+        "homeOdds": "1.91",
+        "drawOdds": "3.40",
+        "awayOdds": "3.20",
+        "homeProb": "46.33",
+        "drawProb": "26.02",
+        "awayProb": "27.65",
+        "returnRate": "88.48",
         "homeKelly": "0.88",
         "drawKelly": "0.88",
-        "awayKelly": "0.89"
+        "awayKelly": "0.90"
       }
     },
     {
@@ -1509,21 +1077,21 @@
         "drawProb": "26.05",
         "awayProb": "26.84",
         "returnRate": "88.57",
-        "homeKelly": "0.83",
-        "drawKelly": "0.92",
-        "awayKelly": "0.95"
+        "homeKelly": "0.87",
+        "drawKelly": "0.88",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.00",
-        "drawOdds": "3.30",
+        "homeOdds": "1.93",
+        "drawOdds": "3.50",
         "awayOdds": "3.10",
-        "homeProb": "44.42",
-        "drawProb": "26.92",
-        "awayProb": "28.66",
-        "returnRate": "88.84",
-        "homeKelly": "0.88",
-        "drawKelly": "0.89",
-        "awayKelly": "0.89"
+        "homeProb": "46.00",
+        "drawProb": "25.36",
+        "awayProb": "28.64",
+        "returnRate": "88.78",
+        "homeKelly": "0.89",
+        "drawKelly": "0.91",
+        "awayKelly": "0.87"
       }
     },
     {
@@ -1537,20 +1105,20 @@
         "drawProb": "26.19",
         "awayProb": "25.05",
         "returnRate": "91.67",
-        "homeKelly": "0.83",
-        "drawKelly": "0.95",
-        "awayKelly": "1.06"
+        "homeKelly": "0.87",
+        "drawKelly": "0.91",
+        "awayKelly": "1.02"
       },
       "initial": {
-        "homeOdds": "2.09",
-        "drawOdds": "3.59",
-        "awayOdds": "3.28",
-        "homeProb": "45.06",
-        "drawProb": "26.23",
-        "awayProb": "28.71",
-        "returnRate": "94.17",
-        "homeKelly": "0.92",
-        "drawKelly": "0.97",
+        "homeOdds": "2.04",
+        "drawOdds": "3.61",
+        "awayOdds": "3.40",
+        "homeProb": "46.19",
+        "drawProb": "26.10",
+        "awayProb": "27.71",
+        "returnRate": "94.22",
+        "homeKelly": "0.94",
+        "drawKelly": "0.94",
         "awayKelly": "0.95"
       }
     },
@@ -1565,21 +1133,21 @@
         "drawProb": "26.27",
         "awayProb": "27.92",
         "returnRate": "89.33",
-        "homeKelly": "0.86",
-        "drawKelly": "0.92",
-        "awayKelly": "0.92"
+        "homeKelly": "0.90",
+        "drawKelly": "0.88",
+        "awayKelly": "0.90"
       },
       "initial": {
-        "homeOdds": "2.00",
-        "drawOdds": "3.30",
-        "awayOdds": "3.20",
-        "homeProb": "44.82",
-        "drawProb": "27.16",
-        "awayProb": "28.01",
-        "returnRate": "89.64",
-        "homeKelly": "0.88",
-        "drawKelly": "0.89",
-        "awayKelly": "0.92"
+        "homeOdds": "1.95",
+        "drawOdds": "3.35",
+        "awayOdds": "3.25",
+        "homeProb": "45.83",
+        "drawProb": "26.68",
+        "awayProb": "27.50",
+        "returnRate": "89.36",
+        "homeKelly": "0.90",
+        "drawKelly": "0.87",
+        "awayKelly": "0.91"
       }
     },
     {
@@ -1593,21 +1161,21 @@
         "drawProb": "26.24",
         "awayProb": "27.04",
         "returnRate": "89.23",
-        "homeKelly": "0.84",
-        "drawKelly": "0.92",
-        "awayKelly": "0.95"
+        "homeKelly": "0.88",
+        "drawKelly": "0.88",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.05",
-        "drawOdds": "3.30",
+        "homeOdds": "1.95",
+        "drawOdds": "3.40",
         "awayOdds": "3.10",
-        "homeProb": "43.81",
-        "drawProb": "27.22",
-        "awayProb": "28.97",
-        "returnRate": "89.81",
-        "homeKelly": "0.91",
-        "drawKelly": "0.89",
-        "awayKelly": "0.89"
+        "homeProb": "45.40",
+        "drawProb": "26.04",
+        "awayProb": "28.56",
+        "returnRate": "88.53",
+        "homeKelly": "0.90",
+        "drawKelly": "0.88",
+        "awayKelly": "0.87"
       }
     },
     {
@@ -1621,20 +1189,20 @@
         "drawProb": "25.90",
         "awayProb": "27.08",
         "returnRate": "89.35",
-        "homeKelly": "0.84",
-        "drawKelly": "0.93",
-        "awayKelly": "0.95"
+        "homeKelly": "0.87",
+        "drawKelly": "0.90",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.02",
-        "drawOdds": "3.35",
-        "awayOdds": "3.05",
-        "homeProb": "44.14",
-        "drawProb": "26.62",
-        "awayProb": "29.24",
-        "returnRate": "89.17",
-        "homeKelly": "0.89",
-        "drawKelly": "0.90",
+        "homeOdds": "1.91",
+        "drawOdds": "3.50",
+        "awayOdds": "3.15",
+        "homeProb": "46.47",
+        "drawProb": "25.36",
+        "awayProb": "28.18",
+        "returnRate": "88.75",
+        "homeKelly": "0.88",
+        "drawKelly": "0.91",
         "awayKelly": "0.88"
       }
     },
@@ -1649,21 +1217,21 @@
         "drawProb": "26.05",
         "awayProb": "26.84",
         "returnRate": "88.57",
-        "homeKelly": "0.83",
-        "drawKelly": "0.92",
-        "awayKelly": "0.95"
+        "homeKelly": "0.87",
+        "drawKelly": "0.88",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.00",
-        "drawOdds": "3.30",
+        "homeOdds": "1.95",
+        "drawOdds": "3.40",
         "awayOdds": "3.10",
-        "homeProb": "44.42",
-        "drawProb": "26.92",
-        "awayProb": "28.66",
-        "returnRate": "88.84",
-        "homeKelly": "0.88",
-        "drawKelly": "0.89",
-        "awayKelly": "0.89"
+        "homeProb": "45.40",
+        "drawProb": "26.04",
+        "awayProb": "28.56",
+        "returnRate": "88.53",
+        "homeKelly": "0.90",
+        "drawKelly": "0.88",
+        "awayKelly": "0.87"
       }
     },
     {
@@ -1677,21 +1245,21 @@
         "drawProb": "26.21",
         "awayProb": "22.85",
         "returnRate": "89.13",
-        "homeKelly": "0.77",
-        "drawKelly": "0.92",
-        "awayKelly": "1.12"
+        "homeKelly": "0.81",
+        "drawKelly": "0.88",
+        "awayKelly": "1.09"
       },
       "initial": {
-        "homeOdds": "2.05",
-        "drawOdds": "3.25",
-        "awayOdds": "3.00",
-        "homeProb": "43.21",
-        "drawProb": "27.26",
-        "awayProb": "29.53",
-        "returnRate": "88.59",
-        "homeKelly": "0.91",
+        "homeOdds": "1.95",
+        "drawOdds": "3.40",
+        "awayOdds": "3.20",
+        "homeProb": "45.81",
+        "drawProb": "26.27",
+        "awayProb": "27.92",
+        "returnRate": "89.33",
+        "homeKelly": "0.90",
         "drawKelly": "0.88",
-        "awayKelly": "0.86"
+        "awayKelly": "0.90"
       }
     },
     {
@@ -1705,21 +1273,21 @@
         "drawProb": "26.65",
         "awayProb": "30.20",
         "returnRate": "90.61",
-        "homeKelly": "0.93",
-        "drawKelly": "0.92",
-        "awayKelly": "0.86"
+        "homeKelly": "0.97",
+        "drawKelly": "0.88",
+        "awayKelly": "0.84"
       },
       "initial": {
-        "homeOdds": "2.05",
-        "drawOdds": "3.30",
+        "homeOdds": "1.95",
+        "drawOdds": "3.60",
         "awayOdds": "3.20",
-        "homeProb": "44.21",
-        "drawProb": "27.46",
-        "awayProb": "28.32",
-        "returnRate": "90.63",
-        "homeKelly": "0.91",
-        "drawKelly": "0.89",
-        "awayKelly": "0.92"
+        "homeProb": "46.49",
+        "drawProb": "25.18",
+        "awayProb": "28.33",
+        "returnRate": "90.65",
+        "homeKelly": "0.90",
+        "drawKelly": "0.93",
+        "awayKelly": "0.90"
       }
     },
     {
@@ -1733,21 +1301,21 @@
         "drawProb": "26.66",
         "awayProb": "22.88",
         "returnRate": "88.79",
-        "homeKelly": "0.78",
-        "drawKelly": "0.90",
-        "awayKelly": "1.12"
+        "homeKelly": "0.81",
+        "drawKelly": "0.86",
+        "awayKelly": "1.09"
       },
       "initial": {
-        "homeOdds": "2.06",
-        "drawOdds": "3.24",
-        "awayOdds": "3.08",
-        "homeProb": "43.39",
-        "drawProb": "27.59",
-        "awayProb": "29.02",
-        "returnRate": "89.39",
-        "homeKelly": "0.91",
-        "drawKelly": "0.88",
-        "awayKelly": "0.89"
+        "homeOdds": "1.99",
+        "drawOdds": "3.34",
+        "awayOdds": "3.13",
+        "homeProb": "44.81",
+        "drawProb": "26.70",
+        "awayProb": "28.49",
+        "returnRate": "89.17",
+        "homeKelly": "0.92",
+        "drawKelly": "0.87",
+        "awayKelly": "0.88"
       }
     },
     {
@@ -1761,21 +1329,21 @@
         "drawProb": "25.68",
         "awayProb": "30.47",
         "returnRate": "89.89",
-        "homeKelly": "0.91",
-        "drawKelly": "0.95",
-        "awayKelly": "0.85"
+        "homeKelly": "0.94",
+        "drawKelly": "0.91",
+        "awayKelly": "0.83"
       },
       "initial": {
         "homeOdds": "2.00",
-        "drawOdds": "3.40",
+        "drawOdds": "3.50",
         "awayOdds": "3.10",
-        "homeProb": "44.77",
-        "drawProb": "26.34",
-        "awayProb": "28.89",
-        "returnRate": "89.55",
-        "homeKelly": "0.88",
-        "drawKelly": "0.92",
-        "awayKelly": "0.89"
+        "homeProb": "45.11",
+        "drawProb": "25.78",
+        "awayProb": "29.11",
+        "returnRate": "90.23",
+        "homeKelly": "0.92",
+        "drawKelly": "0.91",
+        "awayKelly": "0.87"
       }
     },
     {
@@ -1789,20 +1357,20 @@
         "drawProb": "25.90",
         "awayProb": "28.78",
         "returnRate": "90.65",
-        "homeKelly": "0.88",
-        "drawKelly": "0.95",
-        "awayKelly": "0.91"
+        "homeKelly": "0.92",
+        "drawKelly": "0.91",
+        "awayKelly": "0.88"
       },
       "initial": {
-        "homeOdds": "2.05",
-        "drawOdds": "3.40",
-        "awayOdds": "3.15",
-        "homeProb": "44.37",
-        "drawProb": "26.75",
-        "awayProb": "28.88",
-        "returnRate": "90.96",
-        "homeKelly": "0.91",
-        "drawKelly": "0.92",
+        "homeOdds": "1.95",
+        "drawOdds": "3.65",
+        "awayOdds": "3.25",
+        "homeProb": "46.85",
+        "drawProb": "25.03",
+        "awayProb": "28.11",
+        "returnRate": "91.37",
+        "homeKelly": "0.90",
+        "drawKelly": "0.95",
         "awayKelly": "0.91"
       }
     },
@@ -1817,21 +1385,21 @@
         "drawProb": "26.69",
         "awayProb": "26.69",
         "returnRate": "88.09",
-        "homeKelly": "0.83",
-        "drawKelly": "0.89",
-        "awayKelly": "0.95"
+        "homeKelly": "0.87",
+        "drawKelly": "0.86",
+        "awayKelly": "0.92"
       },
       "initial": {
-        "homeOdds": "2.02",
-        "drawOdds": "3.25",
+        "homeOdds": "2.00",
+        "drawOdds": "3.20",
         "awayOdds": "3.05",
-        "homeProb": "43.79",
-        "drawProb": "27.21",
-        "awayProb": "29.00",
-        "returnRate": "88.45",
-        "homeKelly": "0.89",
-        "drawKelly": "0.88",
-        "awayKelly": "0.88"
+        "homeProb": "43.85",
+        "drawProb": "27.40",
+        "awayProb": "28.75",
+        "returnRate": "87.69",
+        "homeKelly": "0.92",
+        "drawKelly": "0.83",
+        "awayKelly": "0.85"
       }
     }
   ],
@@ -1840,145 +1408,145 @@
     "probabilities": [
       {
         "result": "澳大利亚",
-        "odds": "1.33",
-        "probability": "69.2%",
-        "betfairRatio": "86.7%",
-        "betfairPrice": "1.39",
-        "volume": "18,558",
-        "bookieProfit": "-4,383",
-        "hotIndex": "25",
-        "profitIndex": "-21"
+        "odds": "1.32",
+        "probability": "69.8%",
+        "betfairRatio": "87.1%",
+        "betfairPrice": "1.36",
+        "volume": "140,032",
+        "bookieProfit": "-29,639",
+        "hotIndex": "24",
+        "profitIndex": "-19"
       },
       {
         "result": "平局",
-        "odds": "4.58",
-        "probability": "20.1%",
-        "betfairRatio": "6.1%",
-        "betfairPrice": "4.9",
-        "volume": "1,314",
-        "bookieProfit": "14,974",
-        "hotIndex": "-70",
-        "profitIndex": "69"
+        "odds": "4.81",
+        "probability": "19.1%",
+        "betfairRatio": "7.7%",
+        "betfairPrice": "5.8",
+        "volume": "12,424",
+        "bookieProfit": "88,746",
+        "hotIndex": "-60",
+        "profitIndex": "55"
       },
       {
         "result": "库拉索",
-        "odds": "8.63",
-        "probability": "10.7%",
-        "betfairRatio": "7.2%",
-        "betfairPrice": "13.0",
-        "volume": "1,541",
-        "bookieProfit": "1,380",
-        "hotIndex": "-33",
-        "profitIndex": "6"
+        "odds": "8.41",
+        "probability": "11.0%",
+        "betfairRatio": "5.2%",
+        "betfairPrice": "11.0",
+        "volume": "8,349",
+        "bookieProfit": "68,966",
+        "hotIndex": "-53",
+        "profitIndex": "42"
       }
     ],
     "bigDeals": [
       {
+        "type": "主",
+        "action": "卖",
+        "volume": "783.0",
+        "time": "2026-03-31 17:09",
+        "ratio": "86.7%"
+      },
+      {
         "type": "客",
-        "action": "卖",
-        "volume": "149.0",
-        "time": "2026-03-31 11:49",
-        "ratio": "10.6%"
+        "action": "买",
+        "volume": "146.0",
+        "time": "2026-03-31 17:09",
+        "ratio": "5.7%"
       },
       {
-        "type": "主",
+        "type": "平",
         "action": "卖",
-        "volume": "2592.0",
-        "time": "2026-03-31 11:49",
-        "ratio": "83.5%"
+        "volume": "404.0",
+        "time": "2026-03-31 17:07",
+        "ratio": "7.7%"
       },
       {
         "type": "主",
         "action": "买",
-        "volume": "165.0",
-        "time": "2026-03-31 11:45",
-        "ratio": "82.0%"
-      },
-      {
-        "type": "主",
-        "action": "买",
-        "volume": "1020.0",
-        "time": "2026-03-31 11:35",
-        "ratio": "81.9%"
-      },
-      {
-        "type": "主",
-        "action": "卖",
-        "volume": "1079.0",
-        "time": "2026-03-31 11:31",
-        "ratio": "80.9%"
-      },
-      {
-        "type": "主",
-        "action": "买",
-        "volume": "710.0",
-        "time": "2026-03-31 11:26",
-        "ratio": "79.8%"
-      },
-      {
-        "type": "主",
-        "action": "卖",
-        "volume": "1670.0",
-        "time": "2026-03-31 11:16",
-        "ratio": "79.1%"
+        "volume": "2347.0",
+        "time": "2026-03-31 17:07",
+        "ratio": "86.7%"
       },
       {
         "type": "客",
         "action": "卖",
-        "volume": "361.0",
-        "time": "2026-03-31 11:12",
-        "ratio": "14.4%"
+        "volume": "529.0",
+        "time": "2026-03-31 17:07",
+        "ratio": "5.6%"
+      },
+      {
+        "type": "平",
+        "action": "买",
+        "volume": "1075.0",
+        "time": "2026-03-31 17:06",
+        "ratio": "7.6%"
+      },
+      {
+        "type": "主",
+        "action": "卖",
+        "volume": "707.0",
+        "time": "2026-03-31 17:06",
+        "ratio": "87.0%"
       },
       {
         "type": "主",
         "action": "买",
-        "volume": "1470.0",
-        "time": "2026-03-31 11:12",
-        "ratio": "76.7%"
+        "volume": "3996.0",
+        "time": "2026-03-31 17:05",
+        "ratio": "87.5%"
       },
       {
-        "type": "主",
-        "action": "买",
-        "volume": "442.0",
-        "time": "2026-03-31 10:57",
-        "ratio": "76.2%"
+        "type": "平",
+        "action": "卖",
+        "volume": "532.0",
+        "time": "2026-03-31 17:05",
+        "ratio": "7.0%"
+      },
+      {
+        "type": "客",
+        "action": "卖",
+        "volume": "391.0",
+        "time": "2026-03-31 17:04",
+        "ratio": "5.6%"
       }
     ],
     "betfairVolume": [
       {
         "result": "主胜",
-        "volume": "18,558",
-        "price": "1.39"
+        "volume": "140,032",
+        "price": "1.36"
       },
       {
         "result": "平局",
-        "volume": "1,314",
-        "price": "4.9"
+        "volume": "12,424",
+        "price": "5.8"
       },
       {
         "result": "客胜",
-        "volume": "1,541",
-        "price": "13.0"
+        "volume": "8,349",
+        "price": "11.0"
       }
     ],
     "bookieProfit": [
       {
         "result": "主胜",
-        "profit": "-4,383",
-        "index": "-21"
+        "profit": "-29,639",
+        "index": "-19"
       },
       {
         "result": "平局",
-        "profit": "14,974",
-        "index": "69"
+        "profit": "88,746",
+        "index": "55"
       },
       {
         "result": "客胜",
-        "profit": "1,380",
-        "index": "6"
+        "profit": "68,966",
+        "index": "42"
       }
     ],
-    "summary": "本场比赛必发交易规模较小，"
+    "summary": ""
   },
   "homeRecentMatches": [],
   "awayRecentMatches": [],
@@ -1986,11 +1554,11 @@
     {
       "company": "威**尔",
       "instant": {
-        "bigWater": "0.95",
+        "bigWater": "0.62",
         "handicap": "2.5",
-        "smallWater": "0.80",
-        "time": "03-31 10:45",
-        "trend": "升"
+        "smallWater": "1.20",
+        "time": "03-31 17:07",
+        "trend": "降"
       },
       "initial": {
         "bigWater": "0.80",
@@ -2002,11 +1570,11 @@
     {
       "company": "*门",
       "instant": {
-        "bigWater": "0.96",
-        "handicap": "2.5↑",
-        "smallWater": "0.76",
-        "time": "03-31 09:41",
-        "trend": "升"
+        "bigWater": "0.70",
+        "handicap": "2.5/3↑",
+        "smallWater": "1.02",
+        "time": "03-31 17:09",
+        "trend": "降"
       },
       "initial": {
         "bigWater": "0.86",
@@ -2018,11 +1586,11 @@
     {
       "company": "立*",
       "instant": {
-        "bigWater": "0.95",
+        "bigWater": "0.61",
         "handicap": "2.5",
-        "smallWater": "0.75",
-        "time": "03-31 04:37",
-        "trend": "升"
+        "smallWater": "1.15",
+        "time": "03-31 17:07",
+        "trend": "降"
       },
       "initial": {
         "bigWater": "0.85",
@@ -2034,11 +1602,11 @@
     {
       "company": "**t3*5",
       "instant": {
-        "bigWater": "0.78",
-        "handicap": "2/2.5↓",
-        "smallWater": "1.03",
-        "time": "03-31 12:12",
-        "trend": "降"
+        "bigWater": "0.97",
+        "handicap": "3↑",
+        "smallWater": "0.82",
+        "time": "03-31 17:07",
+        "trend": "升"
       },
       "initial": {
         "bigWater": "0.85",
@@ -2050,11 +1618,11 @@
     {
       "company": "I***rw**t*n",
       "instant": {
-        "bigWater": "0.95",
+        "bigWater": "0.65",
         "handicap": "2.5",
-        "smallWater": "0.75",
-        "time": "03-31 04:02",
-        "trend": "升"
+        "smallWater": "1.10",
+        "time": "03-31 17:08",
+        "trend": "降"
       },
       "initial": {
         "bigWater": "0.80",
@@ -2066,10 +1634,10 @@
     {
       "company": "*冠",
       "instant": {
-        "bigWater": "1.06",
-        "handicap": "2.5",
-        "smallWater": "0.74",
-        "time": "03-31 12:01",
+        "bigWater": "0.97",
+        "handicap": "3↑",
+        "smallWater": "0.83",
+        "time": "03-31 17:07",
         "trend": "升"
       },
       "initial": {
@@ -2082,10 +1650,10 @@
     {
       "company": "易*博",
       "instant": {
-        "bigWater": "0.77",
-        "handicap": "2/2.5↓",
-        "smallWater": "1.06",
-        "time": "03-31 11:05",
+        "bigWater": "0.75",
+        "handicap": "2.5/3↑",
+        "smallWater": "1.08",
+        "time": "03-31 17:06",
         "trend": "降"
       },
       "initial": {
@@ -2098,10 +1666,10 @@
     {
       "company": "on**",
       "instant": {
-        "bigWater": "0.95",
-        "handicap": "2.5",
-        "smallWater": "0.81",
-        "time": "03-31 12:07",
+        "bigWater": "1.00",
+        "handicap": "3↑",
+        "smallWater": "0.82",
+        "time": "03-31 17:09",
         "trend": "升"
       },
       "initial": {
@@ -2114,10 +1682,10 @@
     {
       "company": "伟*",
       "instant": {
-        "bigWater": "0.99",
-        "handicap": "2.5",
-        "smallWater": "0.80",
-        "time": "03-31 12:11",
+        "bigWater": "0.88",
+        "handicap": "2.5/3↑",
+        "smallWater": "0.89",
+        "time": "03-31 17:07",
         "trend": "升"
       },
       "initial": {
@@ -2130,10 +1698,10 @@
     {
       "company": "Pi****le平*",
       "instant": {
-        "bigWater": "0.97",
-        "handicap": "2.5",
-        "smallWater": "0.87",
-        "time": "03-31 12:04",
+        "bigWater": "0.88",
+        "handicap": "2.5/3↑",
+        "smallWater": "0.95",
+        "time": "03-31 17:09",
         "trend": "升"
       },
       "initial": {
@@ -2146,10 +1714,10 @@
     {
       "company": "10**t",
       "instant": {
-        "bigWater": "0.98",
-        "handicap": "2.5",
-        "smallWater": "0.80",
-        "time": "03-31 12:07",
+        "bigWater": "0.85",
+        "handicap": "2.5/3↑",
+        "smallWater": "0.93",
+        "time": "03-31 17:09",
         "trend": "升"
       },
       "initial": {
@@ -2162,10 +1730,10 @@
     {
       "company": "利*",
       "instant": {
-        "bigWater": "1.00",
-        "handicap": "2.5",
-        "smallWater": "0.82",
-        "time": "03-31 12:06",
+        "bigWater": "1.04",
+        "handicap": "3↑",
+        "smallWater": "0.78",
+        "time": "03-31 17:07",
         "trend": "升"
       },
       "initial": {
@@ -2178,11 +1746,11 @@
     {
       "company": "M****on88 (明*)",
       "instant": {
-        "bigWater": "0.99",
-        "handicap": "2.5",
-        "smallWater": "0.81",
-        "time": "03-31 12:07",
-        "trend": "升"
+        "bigWater": "0.78",
+        "handicap": "2.5/3↑",
+        "smallWater": "1.04",
+        "time": "03-31 17:07",
+        "trend": "降"
       },
       "initial": {
         "bigWater": "0.86",
@@ -2194,11 +1762,11 @@
     {
       "company": "金*博",
       "instant": {
-        "bigWater": "0.77",
-        "handicap": "2/2.5↓",
-        "smallWater": "1.05",
-        "time": "03-31 12:04",
-        "trend": "降"
+        "bigWater": "1.03",
+        "handicap": "3↑",
+        "smallWater": "0.79",
+        "time": "03-31 17:06",
+        "trend": "升"
       },
       "initial": {
         "bigWater": "0.89",
@@ -2210,10 +1778,10 @@
     {
       "company": "香**会",
       "instant": {
-        "bigWater": "0.89",
-        "handicap": "2.5",
-        "smallWater": "0.81",
-        "time": "03-31 09:52",
+        "bigWater": "0.85",
+        "handicap": "2.5/3↑",
+        "smallWater": "0.85",
+        "time": "03-31 17:07",
         "trend": "降"
       },
       "initial": {
@@ -2226,10 +1794,10 @@
     {
       "company": "12**t (壹*博)",
       "instant": {
-        "bigWater": "0.99",
-        "handicap": "2.5",
-        "smallWater": "0.81",
-        "time": "03-31 12:03",
+        "bigWater": "1.06",
+        "handicap": "3↑",
+        "smallWater": "0.76",
+        "time": "03-31 17:08",
         "trend": "升"
       },
       "initial": {
@@ -2242,10 +1810,10 @@
     {
       "company": "18**t",
       "instant": {
-        "bigWater": "0.98",
-        "handicap": "2.5",
-        "smallWater": "0.79",
-        "time": "03-31 12:10",
+        "bigWater": "0.85",
+        "handicap": "2.5/3↑",
+        "smallWater": "0.91",
+        "time": "03-31 17:09",
         "trend": "升"
       },
       "initial": {
@@ -2258,10 +1826,10 @@
     {
       "company": "W****t (盈*)",
       "instant": {
-        "bigWater": "1.00",
-        "handicap": "2.5",
-        "smallWater": "0.80",
-        "time": "03-31 12:06",
+        "bigWater": "0.94",
+        "handicap": "3↑",
+        "smallWater": "0.86",
+        "time": "03-31 17:08",
         "trend": "升"
       },
       "initial": {
@@ -2273,5 +1841,6 @@
     }
   ],
   "homeRank": "",
-  "awayRank": ""
+  "awayRank": "",
+  "matchNum": "周二002"
 }
