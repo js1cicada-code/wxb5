@@ -41,9 +41,25 @@ def save_json(data, filename):
     print(f"保存: {filename}")
 
 
+def load_fixture_mapping():
+    """加载fixture映射"""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    mapping_file = os.path.join(base_dir, 'data', 'fixture_mapping.json')
+    if os.path.exists(mapping_file):
+        try:
+            with open(mapping_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            pass
+    return {}
+
+
 def fetch_jczq_data():
-    """竞彩足球 - 使用竞彩网API"""
+    """竞彩足球 - 使用竞彩网API + 500.com fixtureId"""
     url = 'https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=1'
+    
+    fixture_mapping = load_fixture_mapping()
+    by_match_num = fixture_mapping.get('byMatchNum', {})
     
     try:
         resp = requests.get(url, headers=HEADERS, timeout=10)
@@ -55,16 +71,24 @@ def fetch_jczq_data():
         matches = []
         for day_match in data.get('value', {}).get('matchInfoList', []):
             for m in day_match.get('subMatchList', []):
+                match_num = m.get('matchNumStr', '')
+                
                 item = {
                     'id': m.get('matchId'),
-                    'matchNumStr': m.get('matchNumStr'),
+                    'matchNumStr': match_num,
                     'home': m.get('homeTeamAbbName'),
                     'away': m.get('awayTeamAbbName'),
                     'league': m.get('leagueAbbName'),
                     'time': m.get('matchTime', '')[:5],
                     'date': m.get('matchDate'),
-                    'fixtureId': m.get('matchId'),
+                    'fixtureId': '',
+                    'namitiyuId': '',
                 }
+                
+                if match_num in by_match_num:
+                    entry = by_match_num[match_num]
+                    item['fixtureId'] = entry.get('fixtureId', '')
+                    item['namitiyuId'] = entry.get('namitiyuId', '')
                 
                 if m.get('had'):
                     item['spf'] = [
@@ -95,8 +119,11 @@ def fetch_jczq_data():
 
 
 def fetch_jclq_data():
-    """竞彩篮球 - 使用竞彩网API"""
+    """竞彩篮球 - 使用竞彩网API + 500.com fixtureId"""
     url = 'https://webapi.sporttery.cn/gateway/uniform/basketball/getMatchCalculatorV1.qry?channel=1'
+    
+    fixture_mapping = load_fixture_mapping()
+    by_match_num = fixture_mapping.get('byMatchNum', {})
     
     try:
         resp = requests.get(url, headers=HEADERS, timeout=10)
@@ -108,14 +135,23 @@ def fetch_jclq_data():
         matches = []
         for day_match in data.get('value', {}).get('matchInfoList', []):
             for m in day_match.get('subMatchList', []):
+                match_num = m.get('matchNumStr', '')
+                
                 item = {
                     'id': m.get('matchId'),
-                    'matchNumStr': m.get('matchNumStr'),
+                    'matchNumStr': match_num,
                     'home': m.get('homeTeamAbbName'),
                     'away': m.get('awayTeamAbbName'),
                     'league': m.get('leagueAbbName'),
                     'time': m.get('matchTime', '')[:5],
+                    'fixtureId': '',
+                    'namitiyuId': '',
                 }
+                
+                if match_num in by_match_num:
+                    entry = by_match_num[match_num]
+                    item['fixtureId'] = entry.get('fixtureId', '')
+                    item['namitiyuId'] = entry.get('namitiyuId', '')
                 
                 if m.get('mnl'):
                     item['sf'] = [
