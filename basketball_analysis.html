@@ -648,7 +648,24 @@
                     const animFrame = document.getElementById('animation-frame');
                     
                     animContainer.style.display = 'block';
-                    animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/basketball?profile=q9vPIPuxxt3Hg&id=' + match.namitiyuId + '&reverse=1';
+                    
+                    // 检测是否在 GitHub Pages 上
+                    const isGitHubPages = window.location.hostname.includes('github.io');
+                    const namitiyuUrl = 'https://tracker.namitiyu.com/zh/version_3d/basketball?profile=q9vPIPuxxt3Hg&id=' + match.namitiyuId + '&reverse=1';
+                    
+                    if (isGitHubPages) {
+                        // GitHub Pages 可能被阻止，尝试使用 500.com
+                        if (match.fid) {
+                            animFrame.src = 'https://odds.500.com/lq/shuju.php?id=' + match.fid + '&r=1';
+                            console.log('Using 500.com animation (GitHub Pages mode)');
+                        } else {
+                            animFrame.src = namitiyuUrl;
+                            console.log('Trying namitiyu animation on GitHub Pages');
+                        }
+                    } else {
+                        animFrame.src = namitiyuUrl;
+                        console.log('Animation loaded with namitiyuId:', match.namitiyuId);
+                    }
                 }
             } catch (e) {
                 console.log('加载动画失败:', e);

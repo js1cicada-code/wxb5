@@ -918,18 +918,45 @@ async function initPage() {
         }
     }
     
-    // 加载动画 - 直接使用fixtureId作为动画ID
-    if (fixtureId) {
+    // 加载动画 - 使用namitiyuId（不是fixtureId）
+    // 注意：namitiyu.com 可能限制某些域名的访问（GitHub Pages 可能被阻止）
+    if (nid) {
         const animContainer = document.getElementById('animation-container');
         const animFrame = document.getElementById('animation-frame');
         animContainer.style.display = 'block';
-        animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + fixtureId;
-    } else if (nid) {
-        // 兼容旧的namitiyuId参数
+        
+        // 主动画源
+        const namitiyuUrl = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + nid;
+        
+        // 检测是否在 GitHub Pages 上（可能被 namitiyu.com 阻止）
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        
+        if (isGitHubPages) {
+            // GitHub Pages 上使用 500.com 的动画页面
+            const fixtureId = params.get('fixtureId');
+            if (fixtureId) {
+                animFrame.src = 'https://odds.500.com/fenxi/stat-' + fixtureId + '.shtml?showAnimation=1';
+                console.log('Using 500.com animation (GitHub Pages mode)');
+            } else {
+                // 尝试 namitiyu，但可能不工作
+                animFrame.src = namitiyuUrl;
+                console.log('Trying namitiyu animation on GitHub Pages (may not work)');
+            }
+        } else {
+            // 本地或其他域名，使用 namitiyu
+            animFrame.src = namitiyuUrl;
+            console.log('Animation loaded with namitiyuId:', nid);
+        }
+        
+        // 监听 iframe 加载错误
+        animFrame.onerror = function() {
+            console.log('Animation failed to load');
+            animContainer.style.display = 'none';
+        };
+    } else {
+        console.log('No namitiyuId available for animation');
         const animContainer = document.getElementById('animation-container');
-        const animFrame = document.getElementById('animation-frame');
-        animContainer.style.display = 'block';
-        animFrame.src = 'https://tracker.namitiyu.com/zh/version_3d/football?profile=KmdQcjHO9I0H8&id=' + nid;
+        animContainer.style.display = 'none';
     }
 }
 
