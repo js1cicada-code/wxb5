@@ -4,10 +4,10 @@
 比赛分析数据爬虫模块（完整版）
 ============================
 
-功能说明：
+功能说明:
     从500彩票网爬取足球比赛的完整分析数据
 
-数据模块：
+数据模块:
     1. 球队排名信息 - 赛前排名、上赛季排名
     2. 赛前积分榜 - 联赛积分排名表、主客队详细排名
     3. 交战历史 - 统计+比赛列表
@@ -19,8 +19,9 @@
     9. 亚盘数据
     10. 欧赔数据
 
-作者：自动生成
-日期：2026-03
+输出文件:
+- analysis_{fixtureId}.json -> dist/data/, dist/, data/
+- football_rankings.json -> dist/data/, dist/, data/
 """
 
 import json
@@ -30,12 +31,7 @@ import time
 import requests
 from datetime import datetime
 
-# ============================================================
-# 配置
-# ============================================================
-
-DIST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist', 'data')
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist', 'data')
+from path_config import save_json, load_json, get_data_paths, ensure_dir, DATA_DIR, DIST_DATA_DIR
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -1771,20 +1767,13 @@ def save_fixture_mapping(mapping):
 
 
 def save_analysis_data(fixture_id, data):
-    """保存分析数据到多个位置"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    paths = [
-        os.path.join(base_dir, 'dist', f'analysis_{fixture_id}.json'),
-        os.path.join(base_dir, 'dist', 'data', f'analysis_{fixture_id}.json'),
-        os.path.join(base_dir, 'data', f'analysis_{fixture_id}.json')
-    ]
+    """保存分析数据到所有位置
     
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    return paths[0]
+    输出: dist/data/analysis_{fixture_id}.json, dist/analysis_{fixture_id}.json, data/analysis_{fixture_id}.json
+    """
+    filename = f'analysis_{fixture_id}.json'
+    save_json(data, filename)
+    return os.path.join(DIST_DATA_DIR, filename)
 
 
 def save_football_rankings():
@@ -1878,20 +1867,8 @@ def save_football_rankings():
         'rankings': rankings
     }
     
-    # 保存数据到多个位置
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    paths = [
-        os.path.join(base_dir, 'dist', 'football_rankings.json'),
-        os.path.join(base_dir, 'dist', 'data', 'football_rankings.json'),
-        os.path.join(base_dir, 'data', 'football_rankings.json')
-    ]
-    
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(output, f, ensure_ascii=False, indent=2)
-    
-    print(f"排名数据已保存到 {len(paths)} 个位置")
+    count = save_json(output, 'football_rankings.json')
+    print(f"排名数据已保存到 {count} 个位置")
     print(f"共 {len(rankings)} 场比赛有排名数据")
 
 

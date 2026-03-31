@@ -2,12 +2,18 @@
 # -*- coding: utf-8 -*-
 """
 篮球比分直播数据爬虫 - 完整版
-支持实时比分、状态判断、虚拟倒计时
+============================
 
-重要规则：
-1. 只保留竞彩比赛（有matchNum的比赛）
-2. 500.com数据仅用于补充比分、状态、namitiyuId等信息
-3. 不添加500.com独有的非竞彩比赛
+功能说明:
+    支持实时比分、状态判断、虚拟倒计时
+
+重要规则:
+    1. 只保留竞彩比赛（有matchNum的比赛）
+    2. 500.com数据仅用于补充比分、状态、namitiyuId等信息
+    3. 不添加500.com独有的非竞彩比赛
+
+输出文件:
+- live_basketball_data.json -> dist/data/, dist/, data/
 """
 
 import json
@@ -18,7 +24,7 @@ import urllib.request
 import ssl
 import gzip
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from path_config import save_json, load_json, get_data_paths, ensure_dir, DATA_DIR, DIST_DATA_DIR
 
 # 球队名别名映射
 TEAM_ALIASES = {
@@ -526,19 +532,12 @@ def match_teams_flexible(sporttery_home, sporttery_away, matches_500):
 
 
 def save_data(data, filename):
-    """保存数据到多个位置"""
-    paths = [
-        os.path.join(BASE_DIR, 'dist', filename),
-        os.path.join(BASE_DIR, 'dist', 'data', filename),
-        os.path.join(BASE_DIR, 'data', filename)
-    ]
+    """保存数据到所有位置
     
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    print(f'数据已保存到 {len(paths)} 个位置')
+    输出: dist/data/{filename}, dist/{filename}, data/{filename}
+    """
+    count = save_json(data, filename)
+    print(f'数据已保存到 {count} 个位置')
 
 
 if __name__ == '__main__':

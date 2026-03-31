@@ -2,16 +2,20 @@
 # -*- coding: utf-8 -*-
 """
 篮球比赛分析数据爬虫模块
-============================
+========================
 
-功能说明：
+功能说明:
     从竞彩网和500.com爬取篮球比赛的完整分析数据
 
-数据模块：
+数据模块:
     1. 球队排名信息
     2. 近期战绩
     3. 交战历史
     4. 让分/大小分赔率
+
+输出文件:
+- basketball_analysis_{matchId}.json -> dist/data/, dist/, data/
+- basketball_matches.json -> dist/data/, dist/, data/
 """
 
 import json
@@ -21,8 +25,7 @@ import time
 import requests
 from datetime import datetime
 
-DIST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist', 'data')
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist', 'data')
+from path_config import save_json, load_json, get_data_paths, ensure_dir, DATA_DIR, DIST_DATA_DIR
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X_10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -1113,43 +1116,28 @@ def fetch_basketball_analysis(match_id, match_num_str=None):
 
 
 def save_basketball_matches(matches):
-    """保存篮球比赛列表到多个位置"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    """保存篮球比赛列表到所有位置
+    
+    输出: dist/data/basketball_matches.json, dist/basketball_matches.json, data/basketball_matches.json
+    """
     output = {
         'updateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         'count': len(matches),
         'matches': matches
     }
     
-    paths = [
-        os.path.join(base_dir, 'dist', 'basketball_matches.json'),
-        os.path.join(base_dir, 'dist', 'data', 'basketball_matches.json'),
-        os.path.join(base_dir, 'data', 'basketball_matches.json')
-    ]
-    
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(output, f, ensure_ascii=False, indent=2)
-    
-    print(f"篮球比赛列表已保存到 {len(paths)} 个位置")
+    count = save_json(output, 'basketball_matches.json')
+    print(f"篮球比赛列表已保存到 {count} 个位置")
 
 
 def save_basketball_analysis(match_id, data):
-    """保存篮球分析数据到多个位置"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    paths = [
-        os.path.join(base_dir, 'dist', f'basketball_analysis_{match_id}.json'),
-        os.path.join(base_dir, 'dist', 'data', f'basketball_analysis_{match_id}.json'),
-        os.path.join(base_dir, 'data', f'basketball_analysis_{match_id}.json')
-    ]
+    """保存篮球分析数据到所有位置
     
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    return paths[0]
+    输出: dist/data/basketball_analysis_{match_id}.json, dist/basketball_analysis_{match_id}.json, data/basketball_analysis_{match_id}.json
+    """
+    filename = f'basketball_analysis_{match_id}.json'
+    save_json(data, filename)
+    return os.path.join(DIST_DATA_DIR, filename)
 
 
 def fetch_all_basketball_analysis(limit=None):

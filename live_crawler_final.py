@@ -2,16 +2,19 @@
 # -*- coding: utf-8 -*-
 """
 比分直播数据爬虫 - 竞彩官网版
+============================
 
-数据来源：
+数据来源:
 1. sporttery.cn - 比赛列表、比分、状态（主数据源）
 2. 500.com - fixtureId、namitiyuId（用于动画链接）
 
-规则：
-1. 只保留竞彩比赛（有matchNum的比赛）
-2. 已结束的比赛只保留过去3天（live_data.json）
-3. 所有比赛映射保存到fixture_mapping.json（累积）
-4. 定时任务会累积历史数据
+输出文件:
+- live_data.json -> dist/data/, dist/, data/
+- fixture_mapping.json -> dist/data/, dist/, data/
+
+匹配规则:
+- 使用 matchNum (如"周二003") 作为主键匹配竞彩和500.com数据
+- 同时保存 byMatchNum 索引便于快速查找
 """
 
 import json
@@ -21,7 +24,7 @@ from datetime import datetime, timedelta
 import urllib.request
 import ssl
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from path_config import save_json, load_json, get_data_paths, ensure_dir, DATA_DIR, DIST_DATA_DIR
 
 def fetch_all_from_sporttery():
     """从竞彩官网获取所有比赛数据（包括历史）"""
@@ -237,26 +240,21 @@ def fetch_all_namitiyu_ids(fixture_map, existing_mapping):
 
 
 def update_fixture_mapping(all_matches, fixture_map):
-    """更新fixture_mapping.json（累积保存）- 使用matchNum作为主键"""
-    mapping_file = os.path.join(BASE_DIR, 'data', 'fixture_mapping.json')
+    """更新fixture_mapping.json（累积保存）- 使用matchNum作为主键
     
-    existing = {'mapping': {}, 'byMatchId': {}, 'byMatchNum': {}}
-    if os.path.exists(mapping_file):
-        try:
-            with open(mapping_file, 'r', encoding='utf-8') as f:
-                existing = json.load(f)
-                if 'byMatchNum' not in existing:
-                    existing['byMatchNum'] = {}
-        except:
-            pass
+    输出: dist/data/fixture_mapping.json, dist/fixture_mapping.json, data/fixture_mapping.json
+    """
+    mapping_data = load_json('fixture_mapping.json') or {'mapping': {}, 'byMatchId': {}, 'byMatchNum': {}}
+    
+    if 'byMatchNum' not in mapping_data:
+        mapping_data['byMatchNum'] = {}
     
     print("\n>>> 获取动画ID (namitiyuId)...")
-    namitiyu_map = fetch_all_namitiyu_ids(fixture_map, existing)
+    namitiyu_map = fetch_all_namitiyu_ids(fixture_map, mapping_data)
     
-    analysis_dir = os.path.join(BASE_DIR, 'data')
     analysis_files = []
     try:
-        analysis_files = [f for f in os.listdir(analysis_dir) if f.startswith('analysis_') and f.endswith('.json')]
+        analysis_files = [f for f in os.listdir(DATA_DIR) if f.startswith('analysis_') and f.endswith('.json')]
     except:
         pass
     
@@ -264,7 +262,7 @@ def update_fixture_mapping(all_matches, fixture_map):
     for af in analysis_files:
         try:
             fid = af.replace('analysis_', '').replace('.json', '')
-            af_path = os.path.join(analysis_dir, af)
+            af_path = os.path.join(DATA_DIR, af)
             with open(af_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 home = data.get('home', '')
@@ -272,15 +270,15 @@ def update_fixture_mapping(all_matches, fixture_map):
                 match_num = data.get('matchNum', '')
                 if home and away:
                     name_key = f"{home}_{away}"
-                    if name_key not in existing['mapping']:
-                        existing['mapping'][name_key] = {
+                    if name_key not in mapping_data['mapping']:
+                        mapping_data['mapping'][name_key] = {
                             'fixtureId': fid,
                             'home': home,
                             'away': away,
                         }
                         analysis_count += 1
-                    elif 'fixtureId' not in existing['mapping'][name_key]:
-                        existing['mapping'][name_key]['fixtureId'] = fid
+                    elif 'fixtureId' not in mapping_data['mapping'][name_key]:
+                        mapping_data['mapping'][name_key]['fixtureId'] = fid
                         analysis_count += 1
         except:
             pass
@@ -303,8 +301,8 @@ def update_fixture_mapping(all_matches, fixture_map):
             'date': m['date'],
         }
         
-        if match_num in existing.get('byMatchNum', {}):
-            existing_num_entry = existing['byMatchNum'][match_num]
+        if match_num in mapping_data.get('byMatchNum', {}):
+            existing_num_entry = mapping_data['byMatchNum'][match_num]
             if 'fixtureId' in existing_num_entry:
                 entry['fixtureId'] = existing_num_entry['fixtureId']
             if 'namitiyuId' in existing_num_entry:
@@ -318,23 +316,23 @@ def update_fixture_mapping(all_matches, fixture_map):
         if match_num in namitiyu_map:
             entry['namitiyuId'] = namitiyu_map[match_num]
         
-        if match_num and match_num not in existing.get('byMatchNum', {}):
+        if match_num and match_num not in mapping_data.get('byMatchNum', {}):
             new_count += 1
-        existing['byMatchNum'][match_num] = entry
+        mapping_data['byMatchNum'][match_num] = entry
         
-        if name_key not in existing['mapping']:
+        if name_key not in mapping_data['mapping']:
             new_count += 1
-        existing['mapping'][name_key] = entry
+        mapping_data['mapping'][name_key] = entry
         
         if match_id:
-            if match_id not in existing['byMatchId']:
+            if match_id not in mapping_data['byMatchId']:
                 new_count += 1
-            existing['byMatchId'][match_id] = entry
+            mapping_data['byMatchId'][match_id] = entry
     
-    existing['byFixtureId'] = {}
-    for key, entry in existing['mapping'].items():
+    mapping_data['byFixtureId'] = {}
+    for key, entry in mapping_data['mapping'].items():
         if 'fixtureId' in entry:
-            existing['byFixtureId'][entry['fixtureId']] = {
+            mapping_data['byFixtureId'][entry['fixtureId']] = {
                 'namitiyuId': entry.get('namitiyuId'),
                 'home': entry.get('home'),
                 'away': entry.get('away'),
@@ -342,24 +340,15 @@ def update_fixture_mapping(all_matches, fixture_map):
                 'matchKey': key
             }
     
-    os.makedirs(os.path.dirname(mapping_file), exist_ok=True)
-    with open(mapping_file, 'w', encoding='utf-8') as f:
-        json.dump(existing, f, ensure_ascii=False, indent=2)
+    count = save_json(mapping_data, 'fixture_mapping.json')
     
-    for path in [
-        os.path.join(BASE_DIR, 'dist', 'fixture_mapping.json'),
-        os.path.join(BASE_DIR, 'dist', 'data', 'fixture_mapping.json'),
-    ]:
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as f:
-            json.dump(existing, f, ensure_ascii=False, indent=2)
-    
-    fixture_count = len([v for v in existing['mapping'].values() if 'fixtureId' in v])
-    num_fixture_count = len([v for v in existing['byMatchNum'].values() if 'fixtureId' in v])
-    print(f"fixture_mapping: 总计 {len(existing['mapping'])} 条, byMatchNum {len(existing['byMatchNum'])} 条")
+    fixture_count = len([v for v in mapping_data['mapping'].values() if 'fixtureId' in v])
+    num_fixture_count = len([v for v in mapping_data['byMatchNum'].values() if 'fixtureId' in v])
+    print(f"fixture_mapping: 总计 {len(mapping_data['mapping'])} 条, byMatchNum {len(mapping_data['byMatchNum'])} 条")
     print(f"  有fixtureId: mapping {fixture_count} 条, byMatchNum {num_fixture_count} 条, 新增 {new_count} 条")
+    print(f"  已保存到 {count} 个位置")
     
-    return existing
+    return mapping_data
 
 
 def apply_fixture_to_matches(matches, mapping):
@@ -399,19 +388,12 @@ def apply_fixture_to_matches(matches, mapping):
 
 
 def save_data(data):
-    """保存数据到多个位置"""
-    paths = [
-        os.path.join(BASE_DIR, 'data', 'live_data.json'),
-        os.path.join(BASE_DIR, 'dist', 'live_data.json'),
-        os.path.join(BASE_DIR, 'dist', 'data', 'live_data.json'),
-    ]
+    """保存数据到所有位置
     
-    for path in paths:
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    print(f"数据已保存到 {len(paths)} 个位置")
+    输出: dist/data/live_data.json, dist/live_data.json, data/live_data.json
+    """
+    count = save_json(data, 'live_data.json')
+    print(f"数据已保存到 {count} 个位置")
 
 
 def main():

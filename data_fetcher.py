@@ -2,8 +2,18 @@
 # -*- coding: utf-8 -*-
 """
 统一数据获取模块
+================
+
+数据来源:
 - 竞彩足球/篮球：使用竞彩网API
 - 传统足彩相关：使用500网
+
+输出文件 (保存到 dist/data/, dist/, data/):
+- jczq_data.json - 竞彩足球比赛列表
+- jclq_data.json - 竞彩篮球比赛列表
+- bqc6_data.json - 6场半全场
+- zjq4_data.json - 4场总进球
+- ctzc_data.json - 传统足彩14场
 """
 
 import json
@@ -14,8 +24,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-DIST_DIR = 'dist'
-os.makedirs(DIST_DIR, exist_ok=True)
+from path_config import save_json, load_json, DIST_DATA_DIR
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -24,34 +33,12 @@ HEADERS = {
 }
 
 
-def save_json(data, filename):
-    """保存到多个位置"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    paths = [
-        os.path.join(base_dir, 'dist', filename),
-        os.path.join(base_dir, 'dist', 'data', filename),
-        os.path.join(base_dir, 'data', filename)
-    ]
-    
-    for filepath in paths:
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    print(f"保存: {filename}")
-
-
 def load_fixture_mapping():
-    """加载fixture映射"""
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    mapping_file = os.path.join(base_dir, 'data', 'fixture_mapping.json')
-    if os.path.exists(mapping_file):
-        try:
-            with open(mapping_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except:
-            pass
-    return {}
+    """加载fixture映射
+    
+    从 dist/data/fixture_mapping.json 读取
+    """
+    return load_json('fixture_mapping.json') or {}
 
 
 def fetch_jczq_data():
@@ -339,7 +326,10 @@ def fetch_ctzc_data():
 
 
 def update_all_data():
-    """更新所有数据"""
+    """更新所有数据
+    
+    输出: 所有数据文件保存到 dist/data/, dist/, data/
+    """
     print(f"\n{'='*50}")
     print(f"开始更新数据 - {datetime.now().strftime('%H:%M:%S')}")
     print('='*50)
