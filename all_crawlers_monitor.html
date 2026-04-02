@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爬虫综合监控面板</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .header .time {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .status-item:last-child {
+            border-bottom: none;
+        }
+        
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .status-dot.success { background: #22c55e; }
+        .status-dot.error { background: #ef4444; }
+        .status-dot.warning { background: #f59e0b; }
+        .status-dot.info { background: #3b82f6; }
+        
+        .process-item {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .process-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .process-detail {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .stat-box {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 5px;
+        }
+        
+        .refresh-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            float: right;
+        }
+        
+        .refresh-btn:hover {
+            background: #2563eb;
+        }
+        
+        .category-title {
+            font-weight: 600;
+            color: #374151;
+            margin: 10px 0 5px 0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>爬虫综合监控面板</h1>
+        <div class="time" id="updateTime">加载中...</div>
+    </div>
+    
+    <div class="container">
+        <!-- 进程状态 -->
+        <div class="grid">
+            <div class="card">
+                <h2>运行中的进程</h2>
+                <div id="processList">加载中...</div>
+            </div>
+            
+            <!-- 数据统计 -->
+            <div class="card">
+                <h2>数据统计</h2>
+                <div class="stat-grid" id="statsGrid">加载中...</div>
+            </div>
+        </div>
+        
+        <!-- 数据状态详情 -->
+        <div class="grid">
+            <div class="card">
+                <h2>赛事数据</h2>
+                <div id="eventStatus">加载中...</div>
+            </div>
+            
+            <div class="card">
+                <h2>数字彩</h2>
+                <div id="lotteryStatus">加载中...</div>
+            </div>
+            
+            <div class="card">
+                <h2>传统足彩</h2>
+                <div id="footballStatus">加载中...</div>
+            </div>
+            
+            <div class="card">
+                <h2>直播与分析</h2>
+                <div id="liveStatus">加载中...</div>
+            </div>
+        </div>
+        
+        <!-- 球队爬虫进度 -->
+        <div class="card">
+            <h2>
+                数据更新日志
+                <button class="refresh-btn" onclick="loadAll()">刷新</button>
+            </h2>
+            <div id="teamProgress">加载中...</div>
+        </div>
+    </div>
+    
+    <script>
+        function loadAll() {
+            try {
+                loadProcessStatus();
+                loadStats();
+                loadEventStatus();
+                loadLotteryStatus();
+                loadFootballStatus();
+                loadLiveStatus();
+                loadTeamProgress();
+                
+                document.getElementById('updateTime').textContent = 
+                    '最后更新: ' + new Date().toLocaleString('zh-CN');
+            } catch(e) {
+                console.error('loadAll error:', e);
+            }
+        }
+        
+        function loadProcessStatus() {
+            fetch('update.log')
+                .then(r => r.text())
+                .then(text => {
+                    try {
+                        const lines = text.split('\n').filter(l => l.trim());
+                        const lastLine = lines[lines.length - 1] || '';
+                        const lastUpdateLine = lines.filter(l => l.includes('下次更新时间')).slice(-1)[0] || '';
+                        
+                        let isRunning = false;
+                        let nextUpdate = '';
+                        if (lastUpdateLine) {
+                            const match = lastUpdateLine.match(/下次更新时间: (\d{2}:\d{2}:\d{2})/);
+                            if (match) {
+                                nextUpdate = match[1];
+                                const now = new Date();
+                                const next = new Date();
+                                const [h, m, s] = match[1].split(':').map(Number);
+                                next.setHours(h, m, s, 0);
+                                isRunning = next > now;
+                            }
+                        }
+                        
+                        const html = `
+                            <div class="process-item">
+                                <div class="process-name">
+                                    <span class="status-dot ${isRunning ? 'success' : 'error'}"></span>
+                                    定时更新服务
+                                </div>
+                                <div class="process-detail">
+                                    状态: ${isRunning ? '运行中' : '已停止'}<br>
+                                    ${nextUpdate ? '下次更新: ' + nextUpdate + '<br>' : ''}
+                                    最后活动: ${lastLine.substring(0, 60)}
+                                </div>
+                            </div>
+                        `;
+                        document.getElementById('processList').innerHTML = html;
+                    } catch(e) {
+                        document.getElementById('processList').innerHTML = '<div class="process-item">解析错误: ' + e.message + '</div>';
+                    }
+                })
+                .catch(e => {
+                    document.getElementById('processList').innerHTML = '<div class="process-item">加载失败: ' + e.message + '</div>';
+                });
+        }
+        
+        function loadStats() {
+            Promise.all([
+                fetch('data/all_team_ids.json').then(r => r.json()).catch(() => []),
+                fetch('data/completed_teams.json').then(r => r.json()).catch(() => [])
+            ])
+            .then(([allIds, completed]) => {
+                try {
+                    const total = allIds.length || 0;
+                    const done = completed.length || 0;
+                    const remain = total - done;
+                    const rate = total > 0 ? (done / total * 100).toFixed(1) : 0;
+                    
+                    const html = `
+                        <div class="stat-box">
+                            <div class="stat-value">${total}</div>
+                            <div class="stat-label">总球队数</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" style="color: #22c55e;">${done}</div>
+                            <div class="stat-label">已完成</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" style="color: #ef4444;">${remain}</div>
+                            <div class="stat-label">剩余</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" style="color: #8b5cf6;">${rate}%</div>
+                            <div class="stat-label">完成率</div>
+                        </div>
+                    `;
+                    document.getElementById('statsGrid').innerHTML = html;
+                } catch(e) {
+                    document.getElementById('statsGrid').innerHTML = '<div class="stat-box">解析错误</div>';
+                }
+            })
+            .catch(e => {
+                document.getElementById('statsGrid').innerHTML = '<div class="stat-box">加载失败</div>';
+            });
+        }
+        
+        function loadEventStatus() {
+            Promise.all([
+                fetch('data/jczq_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/jclq_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/bjdc_data.json').then(r => r.json()).catch(() => ({}))
+            ])
+            .then(([jczq, jclq, bjdc]) => {
+                try {
+                    const jczqCount = (jczq && jczq.matches) ? jczq.matches.length : 0;
+                    const jclqCount = (jclq && jclq.matches) ? jclq.matches.length : 0;
+                    const bjdcCount = (bjdc && bjdc.matches) ? bjdc.matches.length : 0;
+                    
+                    const html = `
+                        <div class="status-item">
+                            <span><span class="status-dot ${jczqCount > 0 ? 'success' : 'error'}"></span>竞彩足球</span>
+                            <span>${jczqCount} 场</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${jclqCount > 0 ? 'success' : 'error'}"></span>竞彩篮球</span>
+                            <span>${jclqCount} 场</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${bjdcCount > 0 ? 'success' : 'error'}"></span>北京单场</span>
+                            <span>${bjdcCount} 场</span>
+                        </div>
+                    `;
+                    document.getElementById('eventStatus').innerHTML = html;
+                } catch(e) {
+                    document.getElementById('eventStatus').innerHTML = '<div class="status-item">解析错误</div>';
+                }
+            })
+            .catch(e => {
+                document.getElementById('eventStatus').innerHTML = '<div class="status-item">加载失败</div>';
+            });
+        }
+        
+        function loadLotteryStatus() {
+            Promise.all([
+                fetch('data/pls_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/plw_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/dlt_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/qxc_data.json').then(r => r.json()).catch(() => ({}))
+            ])
+            .then(([pls, plw, dlt, qxc]) => {
+                try {
+                    const html = `
+                        <div class="status-item">
+                            <span><span class="status-dot ${pls && pls.currentPeriod ? 'success' : 'error'}"></span>排列三</span>
+                            <span>当前期: ${pls && pls.currentPeriod || '-'}</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${plw && plw.currentPeriod ? 'success' : 'error'}"></span>排列五</span>
+                            <span>当前期: ${plw && plw.currentPeriod || '-'}</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${dlt && dlt.currentPeriod ? 'success' : 'error'}"></span>大乐透</span>
+                            <span>当前期: ${dlt && dlt.currentPeriod || '-'}</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${qxc && qxc.currentPeriod ? 'success' : 'error'}"></span>七星彩</span>
+                            <span>当前期: ${qxc && qxc.currentPeriod || '-'}</span>
+                        </div>
+                    `;
+                    document.getElementById('lotteryStatus').innerHTML = html;
+                } catch(e) {
+                    document.getElementById('lotteryStatus').innerHTML = '<div class="status-item">解析错误</div>';
+                }
+            })
+            .catch(e => {
+                document.getElementById('lotteryStatus').innerHTML = '<div class="status-item">加载失败</div>';
+            });
+        }
+        
+        function loadFootballStatus() {
+            Promise.all([
+                fetch('data/ctzc_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/bqc6_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/zjq4_data.json').then(r => r.json()).catch(() => ({}))
+            ])
+            .then(([ctzc, bqc6, zjq4]) => {
+                try {
+                    const ctzcPeriod = ctzc && ctzc.current || '-';
+                    const bqc6Period = bqc6 && bqc6.current || '-';
+                    const zjq4Period = zjq4 && zjq4.current || '-';
+                    
+                    const html = `
+                        <div class="status-item">
+                            <span><span class="status-dot ${ctzcPeriod !== '-' ? 'success' : 'error'}"></span>胜负彩/任选9</span>
+                            <span>当前期: ${ctzcPeriod}</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${bqc6Period !== '-' ? 'success' : 'error'}"></span>6场半全场</span>
+                            <span>当前期: ${bqc6Period}</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${zjq4Period !== '-' ? 'success' : 'error'}"></span>4场总进球</span>
+                            <span>当前期: ${zjq4Period}</span>
+                        </div>
+                    `;
+                    document.getElementById('footballStatus').innerHTML = html;
+                } catch(e) {
+                    document.getElementById('footballStatus').innerHTML = '<div class="status-item">解析错误</div>';
+                }
+            })
+            .catch(e => {
+                document.getElementById('footballStatus').innerHTML = '<div class="status-item">加载失败</div>';
+            });
+        }
+        
+        function loadLiveStatus() {
+            Promise.all([
+                fetch('data/live_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/live_basketball_data.json').then(r => r.json()).catch(() => ({})),
+                fetch('data/stats.json').then(r => r.json()).catch(() => ({analysis: {football: {count: 0}, basketball: {count: 0}}}))
+            ])
+            .then(([football, basketball, stats]) => {
+                try {
+                    const footballTotal = football && (football.total || (football.matches ? football.matches.length : 0)) || 0;
+                    const basketballTotal = basketball && (basketball.total || (basketball.matches ? basketball.matches.length : 0)) || 0;
+                    
+                    const footballAnalysisCount = stats && stats.analysis && stats.analysis.football && stats.analysis.football.count || 0;
+                    const basketballAnalysisCount = stats && stats.analysis && stats.analysis.basketball && stats.analysis.basketball.count || 0;
+                    
+                    const html = `
+                        <div class="status-item">
+                            <span><span class="status-dot ${footballTotal > 0 ? 'success' : 'error'}"></span>足球直播</span>
+                            <span>${footballTotal} 场</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot ${basketballTotal > 0 ? 'success' : 'error'}"></span>篮球直播</span>
+                            <span>${basketballTotal} 场</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot info"></span>足球分析</span>
+                            <span>${footballAnalysisCount} 场</span>
+                        </div>
+                        <div class="status-item">
+                            <span><span class="status-dot info"></span>篮球分析</span>
+                            <span>${basketballAnalysisCount} 场</span>
+                        </div>
+                    `;
+                    document.getElementById('liveStatus').innerHTML = html;
+                } catch(e) {
+                    document.getElementById('liveStatus').innerHTML = '<div class="status-item">解析错误</div>';
+                }
+            })
+            .catch(e => {
+                document.getElementById('liveStatus').innerHTML = '<div class="status-item">加载失败</div>';
+            });
+        }
+        
+        function loadTeamProgress() {
+            fetch('update.log')
+                .then(r => r.text())
+                .then(text => {
+                    try {
+                        const lines = text.split('\n').filter(l => l.trim());
+                        const recentLogs = lines.slice(-30);
+                        
+                        const html = `
+                            <div style="background:#1f2937;color:#10b981;font-family:Monaco,Consolas,monospace;
+                                        font-size:11px;padding:15px;border-radius:6px;max-height:300px;overflow-y:auto;">
+                                ${recentLogs.map(line => '<div style="margin:2px 0;">' + line + '</div>').join('')}
+                            </div>
+                        `;
+                        document.getElementById('teamProgress').innerHTML = html;
+                    } catch(e) {
+                        document.getElementById('teamProgress').innerHTML = '<div style="padding:15px;">解析错误</div>';
+                    }
+                })
+                .catch(e => {
+                    document.getElementById('teamProgress').innerHTML = '<div style="padding:15px;">加载失败</div>';
+                });
+        }
+        
+        // 初始加载
+        loadAll();
+        
+        // 自动刷新
+        setInterval(loadAll, 10000);
+    </script>
+</body>
+</html>
