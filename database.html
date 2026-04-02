@@ -298,6 +298,17 @@
             font-weight: 500;
         }
         
+        .team-link {
+            cursor: pointer;
+            color: var(--primary);
+            transition: color 0.2s;
+        }
+        
+        .team-link:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
         .team-dot {
             width: 8px;
             height: 8px;
@@ -677,6 +688,14 @@
         
         const leagues = ['英超', '西甲', '德甲', '意甲', '法甲', '中超', '日职联', '韩K联', '澳超', '亚冠精英', '世界杯', '欧冠杯', '欧罗巴'];
         
+        function goToTeam(teamId, teamName) {
+            if (teamId) {
+                window.location.href = `team_detail.html?id=${teamId}`;
+            } else {
+                alert('暂无该球队详情数据');
+            }
+        }
+        
         function getRoundName(round, leagueId, matchCount, isLastRound, isSecondLast) {
             if (typeof round === 'number') return `第${round}轮`;
             const roundStr = String(round);
@@ -877,10 +896,11 @@
                         <tr><td colspan="7" style="background:#e0f2fe;font-weight:bold;padding:8px 12px;">${groupName}组</td></tr>
                     `;
                     teams.forEach(team => {
+                        const teamId = team.team_id || '';
                         html += `
                             <tr>
                                 <td><span class="rank-num">${team.rank}</span></td>
-                                <td><div class="team-name"><span>${team.team_name}</span></div></td>
+                                <td><div class="team-name"><span class="team-link" onclick="goToTeam('${teamId}', '${team.team_name}')">${team.team_name}</span></div></td>
                                 <td>${team.played}</td>
                                 <td>${team.won}/${team.draw}/${team.lost}</td>
                                 <td>${team.goals_for}/${team.goals_against}</td>
@@ -908,12 +928,13 @@
             
             standings.forEach(team => {
                 const rankClass = getRankClass(team.rank);
+                const teamId = team.team_id || '';
                 html += `
                     <tr>
                         <td><span class="rank-num ${rankClass}">${team.rank}</span></td>
                         <td>
                             <div class="team-name">
-                                <span>${team.team_name}</span>
+                                <span class="team-link" onclick="goToTeam('${teamId}', '${team.team_name}')">${team.team_name}</span>
                             </div>
                             ${getQualifyBadge(team.rank, team.qualify)}
                         </td>
@@ -1361,9 +1382,9 @@ function switchTab() {
                             <div class="time">${dateTime.time}</div>
                         </div>
                         <div class="schedule-teams">
-                            <div class="schedule-home">${match.home_name}</div>
+                            <div class="schedule-home team-link" onclick="goToTeam('${match.home_id}', '${match.home_name}')">${match.home_name}</div>
                             <div class="schedule-vs ${vsClass}">${scoreText}${halfHtml}</div>
-                            <div class="schedule-away">${match.away_name}</div>
+                            <div class="schedule-away team-link" onclick="goToTeam('${match.away_id}', '${match.away_name}')">${match.away_name}</div>
                         </div>
                     </div>
                 `;

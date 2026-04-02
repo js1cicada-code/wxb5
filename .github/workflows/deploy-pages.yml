@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install chromium
+      
+      - name: Run all crawlers
+        run: |
+          python live_crawler_final.py || true
+          python live_basketball_crawler.py || true
+          python data_fetcher.py || true
+          python bjdc_crawler.py || true
+          python dlt_crawler.py || true
+          python qxc_crawler.py || true
+          python ctzc_crawler.py || true
+          python bqc6_crawler.py || true
+          python zjq4_crawler.py || true
+          python basketball_analysis_crawler.py || true
+      
+      - name: Commit data changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ update.log 2>/dev/null || true
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto update data - $(date '+%Y-%m-%d %H:%M')"
+          git push
+
+  deploy-pages:
+    needs: update-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Prepare pages
+        run: |
+          mkdir -p _site
+          cp all_crawlers_monitor.html _site/index.html
+          cp update.log _site/ 2>/dev/null || true
+          mkdir -p _site/data
+          cp data/*.json _site/data/ 2>/dev/null || true
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
+      
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

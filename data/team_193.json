@@ -1,0 +1,6453 @@
+{
+  "team_id": "193",
+  "update_time": "2026-04-02 17:25:07",
+  "detail": {
+    "team_id": "193",
+    "name_cn": "大阪樱花",
+    "name_hk": "大阪櫻花",
+    "name_en": "Cerezo Osaka",
+    "logo": "images/team/193.png",
+    "logo_original": "https://zq.titan007.com/images/193/1gtzcts26h14.png",
+    "city_cn": "日本-大阪府大阪市",
+    "city_hk": "日本-大阪府大阪市",
+    "city_en": "Osaka",
+    "stadium_cn": "洋马长居体育场",
+    "stadium_hk": "洋馬長居體育場",
+    "stadium_en": "Yanmar Stadium Nagai",
+    "capacity": "50000",
+    "founded": "1993-12-9",
+    "website": "https://www.cerezo.co.jp/",
+    "intro": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2010年12月04日，大阪樱花队主场6：2狂胜磐田喜悦，最终成功逆转联赛积分的不利局面，反超几届日职联霸主鹿岛鹿角，以联赛季军的成绩获得了2011年亚洲冠军联赛的入场券，创造了又一个升班球队的奇迹。",
+    "stadium_address": "〒558-0004　大阪府大阪市住吉区長居東2-2-19",
+    "avg_age": "26.2",
+    "total_value": "17.45万欧元"
+  },
+  "lineup": {
+    "goalkeeper": [
+      {
+        "player_id": "849772",
+        "number": "1",
+        "name_cn": "福井光辉",
+        "name_hk": "福井光輝",
+        "name_en": "Koki Fukui",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "16767",
+        "number": "21",
+        "name_cn": "金镇铉",
+        "name_hk": "金鎮鉉",
+        "name_en": "Kim Jin Hyeon",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "897453",
+        "number": "23",
+        "name_cn": "中村航辅",
+        "name_hk": "中村航輔",
+        "name_en": "Nakamura Kosuke",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "838297",
+        "number": "45",
+        "name_cn": "上林豪",
+        "name_hk": "上林豪",
+        "name_en": "Go Kambayashi",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "567019",
+        "number": "47",
+        "name_cn": "牧口一真",
+        "name_hk": "牧口一真",
+        "name_en": "Kazuma Makiguchi",
+        "is_captain": false,
+        "position": "守门员"
+      }
+    ],
+    "defender": [
+      {
+        "player_id": "819514",
+        "number": "2",
+        "name_cn": "中村 拓海",
+        "name_hk": "中村 拓海",
+        "name_en": "Takumi Nakamura",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "576826",
+        "number": "3",
+        "name_cn": "田中隼人",
+        "name_hk": "田中隼人",
+        "name_en": "Hayato Tanaka",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "841198",
+        "number": "4",
+        "name_cn": "井上黎生人",
+        "name_hk": "井上黎生人",
+        "name_en": "Rikito Inoue",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "11734",
+        "number": "6",
+        "name_cn": "登里享平",
+        "name_hk": "登里享平",
+        "name_en": "Kyohei Noborizato",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "809841",
+        "number": "10",
+        "name_cn": "田中 骏汰",
+        "name_hk": "田中 駿汰",
+        "name_en": "Shunta Tanaka",
+        "is_captain": true,
+        "position": "后卫"
+      },
+      {
+        "player_id": "596341",
+        "number": "16",
+        "name_cn": "奥田勇斗",
+        "name_hk": "奧田勇鬥",
+        "name_en": "Hayato Okuda",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "851870",
+        "number": "27",
+        "name_cn": "库尔斯",
+        "name_hk": "迪安古斯",
+        "name_en": "Dion Cools",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "958111",
+        "number": "43",
+        "name_cn": "柴姆兹凯",
+        "name_hk": "柴姆兹凯",
+        "name_en": "Ezemoukuwe Chimeziekai",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "883688",
+        "number": "44",
+        "name_cn": "町中槙之辅",
+        "name_hk": "町中槙之輔",
+        "name_en": "Shinnosuke Hatanaka",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "804435",
+        "number": "66",
+        "name_cn": "大田步梦",
+        "name_hk": "大畑歩夢",
+        "name_en": "Ayumu Ohata",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "970003",
+        "number": "97",
+        "name_cn": "特拉维斯·高桥",
+        "name_hk": "特拉維斯·高橋",
+        "name_en": "Travis Takahashi",
+        "is_captain": false,
+        "position": "后卫"
+      }
+    ],
+    "midfielder": [
+      {
+        "player_id": "849461",
+        "number": "5",
+        "name_cn": "喜田阳",
+        "name_hk": "喜田陽",
+        "name_en": "Hinata Kida",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "815634",
+        "number": "7",
+        "name_cn": "上门知树",
+        "name_hk": "上門知樹",
+        "name_en": "Satoki Uejo",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "23241",
+        "number": "8",
+        "name_cn": "香川真司",
+        "name_hk": "香川真司",
+        "name_en": "Shinji Kagawa",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "502714",
+        "number": "14",
+        "name_cn": "横山 梦树",
+        "name_hk": "横山 夢樹",
+        "name_en": "Yumeki Yokoyama",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "595467",
+        "number": "17",
+        "name_cn": "坂田澪哉",
+        "name_hk": "阪田澪哉",
+        "name_en": "Reiya Sakata",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "551923",
+        "number": "18",
+        "name_cn": "石渡·纳尔逊",
+        "name_hk": "石渡·納爾遜",
+        "name_en": "Nelson Ishiwatari",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "849462",
+        "number": "19",
+        "name_cn": "本间至恩",
+        "name_hk": "本間至恩",
+        "name_en": "Shion Homma",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "947445",
+        "number": "26",
+        "name_cn": "久保英二",
+        "name_hk": "久保英二",
+        "name_en": "Eiji Kubo",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "887050",
+        "number": "35",
+        "name_cn": "吉野恭平",
+        "name_hk": "吉野恭平",
+        "name_en": "Kyohei Yoshino",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "575742",
+        "number": "48",
+        "name_cn": "柴山昌也",
+        "name_hk": "柴山昌也",
+        "name_en": "Masaya Shibayama",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "893679",
+        "number": "77",
+        "name_cn": "费尔南德斯",
+        "name_hk": "L.費南迪斯",
+        "name_en": "Lucas Fernandes",
+        "is_captain": false,
+        "position": "中场"
+      }
+    ],
+    "forward": [
+      {
+        "player_id": "802698",
+        "number": "9",
+        "name_cn": "樱川所罗门",
+        "name_hk": "櫻川所羅門",
+        "name_en": "Solomon Sakuragawa",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "573491",
+        "number": "11",
+        "name_cn": "蒂亚戈·安德拉德",
+        "name_hk": "蒂亞戈·安德拉德",
+        "name_en": "Thiago Andrade",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "844512",
+        "number": "13",
+        "name_cn": "中岛元彦",
+        "name_hk": "中島元彥",
+        "name_en": "Motohiko Nakajima",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "956504",
+        "number": "39",
+        "name_cn": "金本优辉",
+        "name_hk": "金本優輝",
+        "name_en": "Uiki Kanemoto",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "808512",
+        "number": "99",
+        "name_cn": "库西尼·延吉",
+        "name_hk": "K.耶基",
+        "name_en": "Kusini Yengi",
+        "is_captain": false,
+        "position": "前锋"
+      }
+    ],
+    "coach": [
+      {
+        "player_id": "583908",
+        "number": "",
+        "name_cn": "亚瑟·帕帕斯",
+        "name_hk": "亞瑟·帕帕斯",
+        "name_en": "Arthur Papas",
+        "is_captain": false,
+        "position": "教练"
+      }
+    ]
+  },
+  "lineup_detail": [
+    {
+      "player_id": "219381",
+      "number": "",
+      "name_cn": "亚瑟·帕帕斯",
+      "name_hk": "亞瑟·帕帕斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "主教练",
+      "position": "澳大利亚",
+      "country_cn": "澳洲",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "209537",
+      "number": "11",
+      "name_cn": "蒂亚戈·安德拉德",
+      "name_hk": "蒂亞戈·安德拉德",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "179",
+      "height": "",
+      "weight": "前锋",
+      "position": "巴西",
+      "country_cn": "巴西",
+      "country_en": "100",
+      "value": "2027-06-30万欧元",
+      "contract_end": "38",
+      "total_matches": "7",
+      "goals": "10",
+      "assists": "1",
+      "yellow_cards": "4",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "155274",
+      "number": "13",
+      "name_cn": "中岛元彦",
+      "name_hk": "中島元彥",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "170",
+      "height": "",
+      "weight": "前锋",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "85",
+      "value": "2026-01-31万欧元",
+      "contract_end": "39",
+      "total_matches": "4",
+      "goals": "31",
+      "assists": "4",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "326285",
+      "number": "39",
+      "name_cn": "金本优辉",
+      "name_hk": "金本優輝",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "前锋",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "181274",
+      "number": "99",
+      "name_cn": "库西尼·延吉",
+      "name_hk": "K.耶基",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "190",
+      "height": "90",
+      "weight": "前锋",
+      "position": "澳大利亚",
+      "country_cn": "澳洲",
+      "country_en": "50",
+      "value": "2028-05-31万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "4",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "184631",
+      "number": "9",
+      "name_cn": "樱川所罗门",
+      "name_hk": "櫻川所羅門",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "191",
+      "height": "",
+      "weight": "中锋",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "65",
+      "value": "",
+      "contract_end": "7",
+      "total_matches": "3",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "153567",
+      "number": "5",
+      "name_cn": "喜田阳",
+      "name_hk": "喜田陽",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "171",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "25",
+      "value": "2026-01-31万欧元",
+      "contract_end": "62",
+      "total_matches": "1",
+      "goals": "22",
+      "assists": "0",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "172695",
+      "number": "7",
+      "name_cn": "上门知树",
+      "name_hk": "上門知樹",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "166",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "45",
+      "value": "2026-01-31万欧元",
+      "contract_end": "48",
+      "total_matches": "7",
+      "goals": "61",
+      "assists": "4",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "49457",
+      "number": "8",
+      "name_cn": "香川真司",
+      "name_hk": "香川真司",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "175",
+      "height": "63",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "30",
+      "value": "2026-01-31万欧元",
+      "contract_end": "65",
+      "total_matches": "8",
+      "goals": "28",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "232560",
+      "number": "17",
+      "name_cn": "坂田澪哉",
+      "name_hk": "阪田澪哉",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "170",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "27.5",
+      "value": "2026-01-31万欧元",
+      "contract_end": "21",
+      "total_matches": "0",
+      "goals": "30",
+      "assists": "1",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "227349",
+      "number": "18",
+      "name_cn": "石渡·纳尔逊",
+      "name_hk": "石渡·納爾遜",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "50",
+      "value": "2026-06-30万欧元",
+      "contract_end": "4",
+      "total_matches": "0",
+      "goals": "5",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "153564",
+      "number": "19",
+      "name_cn": "本间至恩",
+      "name_hk": "本間至恩",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "164",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "60",
+      "value": "2026-01-31万欧元",
+      "contract_end": "8",
+      "total_matches": "0",
+      "goals": "17",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "350552",
+      "number": "26",
+      "name_cn": "久保英二",
+      "name_hk": "久保英二",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "110828",
+      "number": "35",
+      "name_cn": "吉野恭平",
+      "name_hk": "吉野恭平",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "182",
+      "height": "74",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "45",
+      "value": "",
+      "contract_end": "6",
+      "total_matches": "0",
+      "goals": "8",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "202054",
+      "number": "48",
+      "name_cn": "柴山昌也",
+      "name_hk": "柴山昌也",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "161",
+      "height": "",
+      "weight": "中场",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "55",
+      "value": "2026-01-31万欧元",
+      "contract_end": "31",
+      "total_matches": "2",
+      "goals": "49",
+      "assists": "3",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "139603",
+      "number": "77",
+      "name_cn": "费尔南德斯",
+      "name_hk": "L.費南迪斯",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "174",
+      "height": "",
+      "weight": "中场",
+      "position": "巴西",
+      "country_cn": "巴西",
+      "country_en": "120",
+      "value": "2025-12-31万欧元",
+      "contract_end": "67",
+      "total_matches": "12",
+      "goals": "8",
+      "assists": "0",
+      "yellow_cards": "24",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "284075",
+      "number": "14",
+      "name_cn": "横山 梦树",
+      "name_hk": "横山 夢樹",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "172",
+      "height": "",
+      "weight": "前腰",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "70",
+      "value": "",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "4",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "173275",
+      "number": "2",
+      "name_cn": "中村 拓海",
+      "name_hk": "中村 拓海",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "179",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "35",
+      "value": "2026-01-31万欧元",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "157731",
+      "number": "4",
+      "name_cn": "井上黎生人",
+      "name_hk": "井上黎生人",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "38",
+      "value": "2027-01-31万欧元",
+      "contract_end": "15",
+      "total_matches": "1",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "77095",
+      "number": "6",
+      "name_cn": "登里享平",
+      "name_hk": "登里享平",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "168",
+      "height": "63",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "20",
+      "value": "2026-01-31万欧元",
+      "contract_end": "33",
+      "total_matches": "0",
+      "goals": "8",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "183157",
+      "number": "10",
+      "name_cn": "田中 骏汰",
+      "name_hk": "田中 駿汰",
+      "name_en": "1",
+      "is_captain": false,
+      "birthday": "183",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "130",
+      "value": "2028-06-30万欧元",
+      "contract_end": "72",
+      "total_matches": "6",
+      "goals": "7",
+      "assists": "1",
+      "yellow_cards": "4",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "236957",
+      "number": "16",
+      "name_cn": "奥田勇斗",
+      "name_hk": "奧田勇鬥",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "174",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "25",
+      "value": "2026-01-31万欧元",
+      "contract_end": "51",
+      "total_matches": "1",
+      "goals": "14",
+      "assists": "1",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "127108",
+      "number": "27",
+      "name_cn": "库尔斯",
+      "name_hk": "迪安古斯",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "",
+      "weight": "后卫",
+      "position": "马来西亚",
+      "country_cn": "馬來西亞",
+      "country_en": "100",
+      "value": "2026-06-30万欧元",
+      "contract_end": "18",
+      "total_matches": "2",
+      "goals": "6",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "321777",
+      "number": "43",
+      "name_cn": "柴姆兹凯",
+      "name_hk": "柴姆兹凯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "119611",
+      "number": "44",
+      "name_cn": "町中槙之辅",
+      "name_hk": "町中槙之輔",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "79",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "85",
+      "value": "2026-01-31万欧元",
+      "contract_end": "42",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "185592",
+      "number": "66",
+      "name_cn": "大田步梦",
+      "name_hk": "大畑歩夢",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "168",
+      "height": "",
+      "weight": "后卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "50",
+      "value": "",
+      "contract_end": "14",
+      "total_matches": "0",
+      "goals": "4",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "206146",
+      "number": "3",
+      "name_cn": "田中隼人",
+      "name_hk": "田中隼人",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "",
+      "weight": "中卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "90",
+      "value": "",
+      "contract_end": "1",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "308889",
+      "number": "97",
+      "name_cn": "特拉维斯·高桥",
+      "name_hk": "特拉維斯·高橋",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "",
+      "weight": "中卫",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "22",
+      "value": "2027-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "153004",
+      "number": "1",
+      "name_cn": "福井光辉",
+      "name_hk": "福井光輝",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "184",
+      "height": "",
+      "weight": "守门员",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "22.5",
+      "value": "2026-01-31万欧元",
+      "contract_end": "31",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "76060",
+      "number": "21",
+      "name_cn": "金镇铉",
+      "name_hk": "金鎮鉉",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "193",
+      "height": "78",
+      "weight": "守门员",
+      "position": "韩国",
+      "country_cn": "南韓",
+      "country_en": "20",
+      "value": "2026-01-31万欧元",
+      "contract_end": "358",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "130529",
+      "number": "23",
+      "name_cn": "中村航辅",
+      "name_hk": "中村航輔",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "72",
+      "weight": "守门员",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "80",
+      "value": "2026-06-30万欧元",
+      "contract_end": "7",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "191430",
+      "number": "45",
+      "name_cn": "上林豪",
+      "name_hk": "上林豪",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "187",
+      "height": "74",
+      "weight": "守门员",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "",
+      "value": "2027-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "260873",
+      "number": "47",
+      "name_cn": "牧口一真",
+      "name_hk": "牧口一真",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "75",
+      "weight": "守门员",
+      "position": "日本",
+      "country_cn": "日本",
+      "country_en": "2",
+      "value": "2026-01-31万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    }
+  ],
+  "league_stats": [
+    {
+      "type": "主场",
+      "matches": "5",
+      "wins": "0",
+      "draws": "3",
+      "losses": "2",
+      "goals": "3",
+      "conceded": "5",
+      "goal_diff": "-2",
+      "win_rate": "0.0",
+      "draw_rate": "60.0",
+      "loss_rate": "40.0",
+      "avg_goals": "0.60",
+      "avg_conceded": "1.00"
+    },
+    {
+      "type": "客场",
+      "matches": "3",
+      "wins": "2",
+      "draws": "0",
+      "losses": "1",
+      "goals": "4",
+      "conceded": "2",
+      "goal_diff": "2",
+      "win_rate": "66.7",
+      "draw_rate": "0.0",
+      "loss_rate": "33.3",
+      "avg_goals": "1.33",
+      "avg_conceded": "0.67"
+    },
+    {
+      "type": "总",
+      "matches": "8",
+      "wins": "2",
+      "draws": "3",
+      "losses": "3",
+      "goals": "7",
+      "conceded": "7",
+      "goal_diff": "0",
+      "win_rate": "25.0",
+      "draw_rate": "37.5",
+      "loss_rate": "37.5",
+      "avg_goals": "0.88",
+      "avg_conceded": "0.88"
+    },
+    {
+      "type": "上半场主场",
+      "matches": "5",
+      "wins": "1",
+      "draws": "4",
+      "losses": "0",
+      "goals": "2",
+      "conceded": "1",
+      "goal_diff": "1",
+      "win_rate": "20.0",
+      "draw_rate": "80.0",
+      "loss_rate": "0.0",
+      "avg_goals": "0.40",
+      "avg_conceded": "0.20"
+    },
+    {
+      "type": "上半场客场",
+      "matches": "3",
+      "wins": "1",
+      "draws": "1",
+      "losses": "1",
+      "goals": "2",
+      "conceded": "1",
+      "goal_diff": "1",
+      "win_rate": "33.3",
+      "draw_rate": "33.3",
+      "loss_rate": "33.3",
+      "avg_goals": "0.67",
+      "avg_conceded": "0.33"
+    },
+    {
+      "type": "上半场总",
+      "matches": "8",
+      "wins": "2",
+      "draws": "5",
+      "losses": "1",
+      "goals": "4",
+      "conceded": "2",
+      "goal_diff": "2",
+      "win_rate": "25.0",
+      "draw_rate": "62.5",
+      "loss_rate": "12.5",
+      "avg_goals": "0.50",
+      "avg_conceded": "0.25"
+    }
+  ],
+  "cup_stats": [],
+  "tech_stats": [
+    {
+      "league_id": "0",
+      "league_name_cn": "全部",
+      "league_name_hk": "全部",
+      "total_matches": "245",
+      "wins": "149",
+      "draws": "179",
+      "total_goals": "2510",
+      "conceded": "582",
+      "clean_sheets": "19",
+      "win_rate": "41.89"
+    },
+    {
+      "league_id": "25",
+      "league_name_cn": "日本职业联赛J1",
+      "league_name_hk": "日本職業聯賽J1",
+      "total_matches": "145",
+      "wins": "89",
+      "draws": "126",
+      "total_goals": "2308",
+      "conceded": "347",
+      "clean_sheets": "12",
+      "win_rate": "45.86"
+    },
+    {
+      "league_id": "41",
+      "league_name_cn": "球会友谊赛",
+      "league_name_hk": "球會友誼賽",
+      "total_matches": "2",
+      "wins": "2",
+      "draws": "5",
+      "total_goals": "16",
+      "conceded": "5",
+      "clean_sheets": "0",
+      "win_rate": "35"
+    },
+    {
+      "league_id": "71",
+      "league_name_cn": "日本超级杯",
+      "league_name_hk": "日本超級盃",
+      "total_matches": "1",
+      "wins": "0",
+      "draws": "0",
+      "total_goals": "0",
+      "conceded": "2",
+      "clean_sheets": "0",
+      "win_rate": "38"
+    },
+    {
+      "league_id": "72",
+      "league_name_cn": "日本职业联赛杯",
+      "league_name_hk": "日本職業聯賽盃",
+      "total_matches": "29",
+      "wins": "19",
+      "draws": "14",
+      "total_goals": "0",
+      "conceded": "59",
+      "clean_sheets": "3",
+      "win_rate": "47.44"
+    },
+    {
+      "league_id": "162",
+      "league_name_cn": "日本天皇杯",
+      "league_name_hk": "日本天皇盃",
+      "total_matches": "17",
+      "wins": "7",
+      "draws": "7",
+      "total_goals": "24",
+      "conceded": "43",
+      "clean_sheets": "0",
+      "win_rate": "39"
+    },
+    {
+      "league_id": "192",
+      "league_name_cn": "亚冠精英联赛",
+      "league_name_hk": "亞冠精英聯賽",
+      "total_matches": "9",
+      "wins": "6",
+      "draws": "6",
+      "total_goals": "162",
+      "conceded": "15",
+      "clean_sheets": "0",
+      "win_rate": "34.52"
+    },
+    {
+      "league_id": "284",
+      "league_name_cn": "日本职业联赛J2",
+      "league_name_hk": "日本職業聯賽J2",
+      "total_matches": "42",
+      "wins": "25",
+      "draws": "21",
+      "total_goals": "0",
+      "conceded": "111",
+      "clean_sheets": "4",
+      "win_rate": "25.74"
+    },
+    {
+      "league_id": "1366",
+      "league_name_cn": "国际友谊赛",
+      "league_name_hk": "國際友誼賽",
+      "total_matches": "0",
+      "wins": "1",
+      "draws": "0",
+      "total_goals": "0",
+      "conceded": "0",
+      "clean_sheets": "0",
+      "win_rate": "0"
+    }
+  ],
+  "history_ranking": [
+    {
+      "season": "2004",
+      "rank": 15,
+      "wins": 6,
+      "draws": 8,
+      "losses": 16,
+      "points": 26
+    },
+    {
+      "season": "2005",
+      "rank": 5,
+      "wins": 16,
+      "draws": 11,
+      "losses": 7,
+      "points": 59
+    },
+    {
+      "season": "2006",
+      "rank": 17,
+      "wins": 6,
+      "draws": 9,
+      "losses": 19,
+      "points": 27
+    },
+    {
+      "season": "2007",
+      "rank": 5,
+      "wins": 24,
+      "draws": 8,
+      "losses": 16,
+      "points": 80
+    },
+    {
+      "season": "2008",
+      "rank": 4,
+      "wins": 21,
+      "draws": 6,
+      "losses": 15,
+      "points": 69
+    },
+    {
+      "season": "2009",
+      "rank": 2,
+      "wins": 31,
+      "draws": 11,
+      "losses": 9,
+      "points": 104
+    },
+    {
+      "season": "2010",
+      "rank": 3,
+      "wins": 17,
+      "draws": 10,
+      "losses": 7,
+      "points": 61
+    },
+    {
+      "season": "2011",
+      "rank": 12,
+      "wins": 11,
+      "draws": 10,
+      "losses": 13,
+      "points": 43
+    },
+    {
+      "season": "2012",
+      "rank": 14,
+      "wins": 11,
+      "draws": 9,
+      "losses": 14,
+      "points": 42
+    },
+    {
+      "season": "2013",
+      "rank": 4,
+      "wins": 16,
+      "draws": 11,
+      "losses": 7,
+      "points": 59
+    },
+    {
+      "season": "2014",
+      "rank": 17,
+      "wins": 7,
+      "draws": 10,
+      "losses": 17,
+      "points": 31
+    },
+    {
+      "season": "2015",
+      "rank": 4,
+      "wins": 18,
+      "draws": 13,
+      "losses": 11,
+      "points": 67
+    },
+    {
+      "season": "2016",
+      "rank": 4,
+      "wins": 23,
+      "draws": 9,
+      "losses": 10,
+      "points": 78
+    },
+    {
+      "season": "2017",
+      "rank": 3,
+      "wins": 19,
+      "draws": 6,
+      "losses": 9,
+      "points": 63
+    },
+    {
+      "season": "2018",
+      "rank": 7,
+      "wins": 13,
+      "draws": 11,
+      "losses": 10,
+      "points": 50
+    },
+    {
+      "season": "2019",
+      "rank": 5,
+      "wins": 18,
+      "draws": 5,
+      "losses": 11,
+      "points": 59
+    },
+    {
+      "season": "2020",
+      "rank": 4,
+      "wins": 18,
+      "draws": 6,
+      "losses": 10,
+      "points": 60
+    },
+    {
+      "season": "2021",
+      "rank": 12,
+      "wins": 13,
+      "draws": 9,
+      "losses": 16,
+      "points": 48
+    },
+    {
+      "season": "2022",
+      "rank": 5,
+      "wins": 13,
+      "draws": 12,
+      "losses": 9,
+      "points": 51
+    },
+    {
+      "season": "2023",
+      "rank": 9,
+      "wins": 15,
+      "draws": 4,
+      "losses": 15,
+      "points": 49
+    },
+    {
+      "season": "2024",
+      "rank": 10,
+      "wins": 13,
+      "draws": 13,
+      "losses": 12,
+      "points": 52
+    },
+    {
+      "season": "2025",
+      "rank": 10,
+      "wins": 14,
+      "draws": 10,
+      "losses": 14,
+      "points": 52
+    },
+    {
+      "season": "2026",
+      "rank": 9,
+      "wins": 2,
+      "draws": 3,
+      "losses": 3,
+      "points": 9
+    }
+  ],
+  "transfers": {
+    "2003-2004": {
+      "in": [
+        {
+          "date": "2004-06-29",
+          "player": "小林伸二",
+          "player_id": "111157",
+          "position": "主教练",
+          "club": "大分三神",
+          "type": "完全所有"
+        }
+      ],
+      "out": []
+    },
+    "2004-2005": {
+      "in": [
+        {
+          "date": "2004-07-01",
+          "player": "德重健太",
+          "player_id": "64267",
+          "position": "守门员",
+          "club": "浦和红钻",
+          "type": "租借"
+        },
+        {
+          "date": "2005-01-01",
+          "player": "藤本康太",
+          "player_id": "49463",
+          "position": "",
+          "club": "熊本学园大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2005-01-01",
+          "player": "小松照",
+          "player_id": "49448",
+          "position": "",
+          "club": "关西学院大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2005-01-01",
+          "player": "前田和哉",
+          "player_id": "49464",
+          "position": "",
+          "club": "大阪体育大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2005-02-01",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "FC宫城青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2005-06-30",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "马洛卡",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2005-01-01",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "马洛卡",
+          "type": "租借"
+        },
+        {
+          "date": "2005-01-31",
+          "player": "德重健太",
+          "player_id": "64267",
+          "position": "守门员",
+          "club": "浦和红钻",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2005-2006": {
+      "in": [
+        {
+          "date": "2005-12-31",
+          "player": "滨田武",
+          "player_id": "49450",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2006-01-01",
+          "player": "波维.贾帕",
+          "player_id": "124853",
+          "position": "",
+          "club": "塞卡西亚斯",
+          "type": "租借"
+        },
+        {
+          "date": "2006-01-01",
+          "player": "山下达也",
+          "player_id": "49468",
+          "position": "后卫",
+          "club": "麦卡职高足球队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2006-01-01",
+          "player": "安德烈·内茨克",
+          "player_id": "49519",
+          "position": "后卫",
+          "club": "塞卡西亚斯 U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2006-02-01",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2006-02-01",
+          "player": "香川真司",
+          "player_id": "49457",
+          "position": "中场",
+          "club": "FC宫城青年队",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2005-08-01",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "马洛卡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2005-09-01",
+          "player": "滨田武",
+          "player_id": "49450",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "租借"
+        },
+        {
+          "date": "2005-11-30",
+          "player": "曹贵裁",
+          "player_id": "110693",
+          "position": "",
+          "club": "湘南比马青年队",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2006-2007": {
+      "in": [
+        {
+          "date": "2006-07-01",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "马洛卡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2006-12-31",
+          "player": "小松照",
+          "player_id": "49448",
+          "position": "",
+          "club": "长崎成功丸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "丹羽龙平",
+          "player_id": "64254",
+          "position": "中场",
+          "club": "神户胜利船",
+          "type": "租借"
+        },
+        {
+          "date": "2007-05-08",
+          "player": "L.库尔皮",
+          "player_id": "110628",
+          "position": "",
+          "club": "米内罗竞技",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2006-07-24",
+          "player": "内兹克安德烈路易斯",
+          "player_id": "125439",
+          "position": "后卫",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2006-07-24",
+          "player": "安德烈·内茨克",
+          "player_id": "49519",
+          "position": "后卫",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2006-09-01",
+          "player": "小松照",
+          "player_id": "49448",
+          "position": "",
+          "club": "长崎成功丸",
+          "type": "租借"
+        },
+        {
+          "date": "2006-12-31",
+          "player": "波维.贾帕",
+          "player_id": "124853",
+          "position": "",
+          "club": "塞卡西亚斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "下村东美",
+          "player_id": "63928",
+          "position": "",
+          "club": "千叶市原",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-02-01",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "神户胜利船",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2007-2008": {
+      "in": [
+        {
+          "date": "2007-08-01",
+          "player": "热尔马诺",
+          "player_id": "99144",
+          "position": "",
+          "club": "小飞马",
+          "type": "租借"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "相泽贵志",
+          "player_id": "49472",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "租借"
+        },
+        {
+          "date": "2008-01-31",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "长崎成功丸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-02-01",
+          "player": "卡列卡",
+          "player_id": "119954",
+          "position": "中场",
+          "club": "群马草津温泉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-02-01",
+          "player": "黑木圣仁",
+          "player_id": "49456",
+          "position": "",
+          "club": "日章学园高校U18",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2007-07-01",
+          "player": "金信泳",
+          "player_id": "84512",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "租借"
+        },
+        {
+          "date": "2007-08-01",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "长崎成功丸",
+          "type": "租借"
+        },
+        {
+          "date": "2008-02-01",
+          "player": "小林伸二",
+          "player_id": "111157",
+          "position": "主教练",
+          "club": "山形山神",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2008-2009": {
+      "in": [
+        {
+          "date": "2008-07-01",
+          "player": "青山隼",
+          "player_id": "99162",
+          "position": "",
+          "club": "名古屋鲸八",
+          "type": "租借"
+        },
+        {
+          "date": "2008-07-15",
+          "player": "内兹克安德烈路易斯",
+          "player_id": "125439",
+          "position": "后卫",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-08-01",
+          "player": "吉尔顿.里贝罗",
+          "player_id": "63857",
+          "position": "后卫",
+          "club": "积安维尔",
+          "type": "租借"
+        },
+        {
+          "date": "2008-12-01",
+          "player": "森岛康仁",
+          "player_id": "64010",
+          "position": "",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-12-01",
+          "player": "金信泳",
+          "player_id": "84512",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "石神直哉",
+          "player_id": "47840",
+          "position": "",
+          "club": "鹿岛鹿角",
+          "type": "租借"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "金镇铉",
+          "player_id": "76060",
+          "position": "守门员",
+          "club": "东国大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-02-01",
+          "player": "乾贵士",
+          "player_id": "49459",
+          "position": "左边锋",
+          "club": "横滨水手",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-02-01",
+          "player": "丸桥祐介",
+          "player_id": "76058",
+          "position": "左后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-02-01",
+          "player": "山口萤",
+          "player_id": "76057",
+          "position": "后腰",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2008-07-01",
+          "player": "卡列卡",
+          "player_id": "119954",
+          "position": "中场",
+          "club": "湘南海洋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-07-16",
+          "player": "内兹克安德烈路易斯",
+          "player_id": "125439",
+          "position": "后卫",
+          "club": "自由球员",
+          "type": "自由转会"
+        },
+        {
+          "date": "2008-12-01",
+          "player": "青山隼",
+          "player_id": "99162",
+          "position": "",
+          "club": "名古屋鲸八",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-12-01",
+          "player": "相泽贵志",
+          "player_id": "49472",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-12-01",
+          "player": "热尔马诺",
+          "player_id": "99144",
+          "position": "",
+          "club": "小飞马",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-12-31",
+          "player": "吉尔顿.里贝罗",
+          "player_id": "63857",
+          "position": "后卫",
+          "club": "积安维尔",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-12-31",
+          "player": "丹羽龙平",
+          "player_id": "64254",
+          "position": "中场",
+          "club": "神户胜利船",
+          "type": "租借结束"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "金信泳",
+          "player_id": "84512",
+          "position": "",
+          "club": "甲府风林",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "森岛康仁",
+          "player_id": "64010",
+          "position": "",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "阪田章裕",
+          "player_id": "49462",
+          "position": "",
+          "club": "湘南海洋",
+          "type": "租借"
+        },
+        {
+          "date": "2009-01-31",
+          "player": "乾贵士",
+          "player_id": "49459",
+          "position": "左边锋",
+          "club": "横滨水手",
+          "type": "租借结束"
+        },
+        {
+          "date": "2009-06-18",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "德岛漩涡",
+          "type": "租借"
+        }
+      ]
+    },
+    "2009-2010": {
+      "in": [
+        {
+          "date": "2009-07-01",
+          "player": "船山祐二",
+          "player_id": "63988",
+          "position": "",
+          "club": "鹿岛鹿角",
+          "type": "租借"
+        },
+        {
+          "date": "2009-12-01",
+          "player": "阪田章裕",
+          "player_id": "49462",
+          "position": "",
+          "club": "湘南海洋",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "播户龙二",
+          "player_id": "64106",
+          "position": "",
+          "club": "大阪钢巴",
+          "type": "自由转会"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "茂庭照幸",
+          "player_id": "63758",
+          "position": "",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "上本大海",
+          "player_id": "64031",
+          "position": "",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "金甫炅",
+          "player_id": "76351",
+          "position": "前腰",
+          "club": "弘益大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2010-01-06",
+          "player": "清武弘嗣",
+          "player_id": "64024",
+          "position": "中场",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "家长昭博",
+          "player_id": "64021",
+          "position": "中场",
+          "club": "大阪钢巴",
+          "type": "租借"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "磐田喜悦",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "阿德里亚诺.马丁斯",
+          "player_id": "31030",
+          "position": "",
+          "club": "巴西国际",
+          "type": "租借"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "石神直哉",
+          "player_id": "47840",
+          "position": "",
+          "club": "鹿岛鹿角",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "扇原贵宏",
+          "player_id": "76059",
+          "position": "后腰",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2009-12-31",
+          "player": "船山祐二",
+          "player_id": "63988",
+          "position": "",
+          "club": "鹿岛鹿角",
+          "type": "租借结束"
+        },
+        {
+          "date": "2009-12-31",
+          "player": "石神直哉",
+          "player_id": "47840",
+          "position": "",
+          "club": "鹿岛鹿角",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "阪田章裕",
+          "player_id": "49462",
+          "position": "",
+          "club": "湘南海洋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "滨田武",
+          "player_id": "49450",
+          "position": "",
+          "club": "德岛漩涡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-02-01",
+          "player": "金甫炅",
+          "player_id": "76351",
+          "position": "前腰",
+          "club": "大分三神",
+          "type": "租借"
+        }
+      ]
+    },
+    "2010-2011": {
+      "in": [
+        {
+          "date": "2010-07-01",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "高桥佑太郎",
+          "player_id": "76089",
+          "position": "",
+          "club": "神户胜利船",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "中后雅喜",
+          "player_id": "63929",
+          "position": "主教练",
+          "club": "千叶市原",
+          "type": "租借"
+        },
+        {
+          "date": "2011-01-31",
+          "player": "金甫炅",
+          "player_id": "76351",
+          "position": "前腰",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2011-02-01",
+          "player": "仓田秋",
+          "player_id": "64119",
+          "position": "中场",
+          "club": "大阪钢巴",
+          "type": "租借"
+        },
+        {
+          "date": "2011-02-01",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-02-01",
+          "player": "平彭",
+          "player_id": "84509",
+          "position": "",
+          "club": "瓦斯科达伽马",
+          "type": "租借"
+        },
+        {
+          "date": "2011-02-01",
+          "player": "村田和哉",
+          "player_id": "93039",
+          "position": "",
+          "club": "大阪体育大学",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2010-07-01",
+          "player": "前田和哉",
+          "player_id": "49464",
+          "position": "",
+          "club": "山形山神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-07-01",
+          "player": "香川真司",
+          "player_id": "49457",
+          "position": "中场",
+          "club": "多特蒙德",
+          "type": "自由转会"
+        },
+        {
+          "date": "2010-12-01",
+          "player": "阿德里亚诺.马丁斯",
+          "player_id": "31030",
+          "position": "",
+          "club": "巴西国际",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-12-31",
+          "player": "家长昭博",
+          "player_id": "64021",
+          "position": "中场",
+          "club": "大阪钢巴",
+          "type": "租借结束"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "山下达也",
+          "player_id": "49468",
+          "position": "后卫",
+          "club": "札幌冈萨多",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "石神直哉",
+          "player_id": "47840",
+          "position": "",
+          "club": "湘南海洋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-06-30",
+          "player": "平彭",
+          "player_id": "84509",
+          "position": "",
+          "club": "瓦斯科达伽马",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2011-2012": {
+      "in": [
+        {
+          "date": "2011-08-01",
+          "player": "大竹洋平",
+          "player_id": "63754",
+          "position": "中场",
+          "club": "FC东京",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "山下达也",
+          "player_id": "49468",
+          "position": "后卫",
+          "club": "札幌冈萨多",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "吉野峻光",
+          "player_id": "97258",
+          "position": "",
+          "club": "国士馆大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "舩津彻也",
+          "player_id": "60347",
+          "position": "",
+          "club": "富山胜利",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "肯佩斯",
+          "player_id": "74855",
+          "position": "",
+          "club": "葡萄牙人",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "横山知伸",
+          "player_id": "77103",
+          "position": "中场",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-31",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-01-31",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "井上翔太",
+          "player_id": "97259",
+          "position": "",
+          "club": "阪南大学",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2011-08-01",
+          "player": "乾贵士",
+          "player_id": "49459",
+          "position": "左边锋",
+          "club": "波鸿",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-12-01",
+          "player": "中后雅喜",
+          "player_id": "63929",
+          "position": "主教练",
+          "club": "千叶市原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "小松照",
+          "player_id": "49448",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "上本大海",
+          "player_id": "64031",
+          "position": "",
+          "club": "仙台维加泰",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "高桥佑太郎",
+          "player_id": "76089",
+          "position": "",
+          "club": "熊本深红",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-31",
+          "player": "大竹洋平",
+          "player_id": "63754",
+          "position": "中场",
+          "club": "FC东京",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-01-31",
+          "player": "仓田秋",
+          "player_id": "64119",
+          "position": "中场",
+          "club": "大阪钢巴",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "金昶训",
+          "player_id": "97202",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "租借"
+        },
+        {
+          "date": "2012-03-28",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "东京绿茵",
+          "type": "租借"
+        }
+      ]
+    },
+    "2012-2013": {
+      "in": [
+        {
+          "date": "2012-07-17",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "东京绿茵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-07-19",
+          "player": "枝村匠马",
+          "player_id": "77119",
+          "position": "",
+          "club": "清水鼓动",
+          "type": "租借"
+        },
+        {
+          "date": "2012-08-05",
+          "player": "赫博尔蒂",
+          "player_id": "83720",
+          "position": "前锋",
+          "club": "群马草津温泉",
+          "type": "租借"
+        },
+        {
+          "date": "2012-08-27",
+          "player": "L.库尔皮",
+          "player_id": "110628",
+          "position": "",
+          "club": "大阪樱花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "具圣润",
+          "player_id": "110630",
+          "position": "守门员",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "秋山大地",
+          "player_id": "110634",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "冈田 武瑠",
+          "player_id": "110636",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-08",
+          "player": "金昶训",
+          "player_id": "97202",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-01-08",
+          "player": "楠神顺平",
+          "player_id": "77090",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-17",
+          "player": "R·埃德诺",
+          "player_id": "81424",
+          "position": "",
+          "club": "老虎大学",
+          "type": "租借"
+        },
+        {
+          "date": "2013-01-31",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "椋原健太",
+          "player_id": "63767",
+          "position": "",
+          "club": "FC东京",
+          "type": "租借"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "武田洋平",
+          "player_id": "77140",
+          "position": "守门员",
+          "club": "清水鼓动",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "小暮大器",
+          "player_id": "110635",
+          "position": "右中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "南野拓实",
+          "player_id": "109312",
+          "position": "左边锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-04-30",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "珀斯光荣",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2012-07-01",
+          "player": "清武弘嗣",
+          "player_id": "64024",
+          "position": "中场",
+          "club": "纽伦堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-08-01",
+          "player": "金甫炅",
+          "player_id": "76351",
+          "position": "前腰",
+          "club": "卡迪夫城",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-08-27",
+          "player": "L.库尔皮",
+          "player_id": "110628",
+          "position": "",
+          "club": "大阪樱花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-10-01",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "珀斯光荣",
+          "type": "租借"
+        },
+        {
+          "date": "2012-12-01",
+          "player": "肯佩斯",
+          "player_id": "74855",
+          "position": "",
+          "club": "葡萄牙人",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-12-31",
+          "player": "赫博尔蒂",
+          "player_id": "83720",
+          "position": "前锋",
+          "club": "群马草津温泉",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "舩津彻也",
+          "player_id": "60347",
+          "position": "",
+          "club": "富山胜利",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-01-31",
+          "player": "金昶训",
+          "player_id": "97202",
+          "position": "后卫",
+          "club": "蔚山海豚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "村田和哉",
+          "player_id": "93039",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "德岛漩涡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "群马草津温泉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-03-14",
+          "player": "金圣基",
+          "player_id": "93041",
+          "position": "",
+          "club": "神户胜利船",
+          "type": "租借"
+        },
+        {
+          "date": "2013-05-13",
+          "player": "冈田 武瑠",
+          "player_id": "110636",
+          "position": "中场",
+          "club": "长野琶扼搂",
+          "type": "租借"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "井上翔太",
+          "player_id": "97259",
+          "position": "",
+          "club": "北九州向日葵",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2013-2014": {
+      "in": [
+        {
+          "date": "2013-12-31",
+          "player": "金圣基",
+          "player_id": "93041",
+          "position": "",
+          "club": "神户胜利船",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "冈田 武瑠",
+          "player_id": "110636",
+          "position": "中场",
+          "club": "长野琶扼搂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "播户龙二",
+          "player_id": "64106",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "武田博行",
+          "player_id": "61827",
+          "position": "",
+          "club": "北九州向日葵",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-07",
+          "player": "安藤淳",
+          "player_id": "63786",
+          "position": "",
+          "club": "京都不死鸟",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-07",
+          "player": "染谷悠太",
+          "player_id": "63793",
+          "position": "",
+          "club": "京都不死鸟",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-11",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "珀斯光荣",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-21",
+          "player": "尼卓尔斯",
+          "player_id": "33905",
+          "position": "中场",
+          "club": "墨尔本胜利",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-22",
+          "player": "迭戈·弗兰",
+          "player_id": "77599",
+          "position": "",
+          "club": "巴西国际",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-01-31",
+          "player": "井上翔太",
+          "player_id": "97259",
+          "position": "",
+          "club": "北九州向日葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-31",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-31",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "群马草津温泉",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "长谷川阿利亚",
+          "player_id": "63815",
+          "position": "中前卫",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "波波维奇",
+          "player_id": "110667",
+          "position": "主教练",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "关西大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-02-14",
+          "player": "戈伊科·卡查尔",
+          "player_id": "27625",
+          "position": "",
+          "club": "汉堡",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2013-07-01",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "珀斯光荣",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-19",
+          "player": "井上翔太",
+          "player_id": "97259",
+          "position": "",
+          "club": "北九州向日葵",
+          "type": "租借"
+        },
+        {
+          "date": "2013-12-01",
+          "player": "茂庭照幸",
+          "player_id": "63758",
+          "position": "",
+          "club": "巴吞联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "R·埃德诺",
+          "player_id": "81424",
+          "position": "",
+          "club": "老虎大学",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "金圣基",
+          "player_id": "93041",
+          "position": "",
+          "club": "水户蜀葵",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "播户龙二",
+          "player_id": "64106",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "横山知伸",
+          "player_id": "77103",
+          "position": "中场",
+          "club": "RB大宫松鼠",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-04",
+          "player": "武田洋平",
+          "player_id": "77140",
+          "position": "守门员",
+          "club": "大分三神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-06",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "多蒙特业余队",
+          "type": "租借"
+        },
+        {
+          "date": "2014-01-14",
+          "player": "枝村匠马",
+          "player_id": "77119",
+          "position": "",
+          "club": "清水鼓动",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-31",
+          "player": "椋原健太",
+          "player_id": "63767",
+          "position": "",
+          "club": "FC东京",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "德岛漩涡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "小暮大器",
+          "player_id": "110635",
+          "position": "右中场",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "多田凌辅",
+          "player_id": "93042",
+          "position": "后卫",
+          "club": "群马草津温泉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-03-10",
+          "player": "黑木圣仁",
+          "player_id": "49456",
+          "position": "",
+          "club": "长崎成功丸",
+          "type": "租借"
+        },
+        {
+          "date": "2014-04-25",
+          "player": "L.库尔皮",
+          "player_id": "110628",
+          "position": "",
+          "club": "米内罗竞技",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "戈伊科·卡查尔",
+          "player_id": "27625",
+          "position": "",
+          "club": "汉堡",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2014-2015": {
+      "in": [
+        {
+          "date": "2014-07-01",
+          "player": "金圣埈",
+          "player_id": "75682",
+          "position": "中前卫",
+          "club": "城南FC",
+          "type": "租借"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "帕布罗",
+          "player_id": "109972",
+          "position": "前锋",
+          "club": "SD巴拉纳",
+          "type": "租借"
+        },
+        {
+          "date": "2015-01-05",
+          "player": "関口训充",
+          "player_id": "49733",
+          "position": "",
+          "club": "浦和红钻",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-06",
+          "player": "玉田圭司",
+          "player_id": "64040",
+          "position": "",
+          "club": "名古屋鲸八",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-09",
+          "player": "椋原健太",
+          "player_id": "63767",
+          "position": "",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-14",
+          "player": "桥本英郎",
+          "player_id": "64121",
+          "position": "",
+          "club": "神户胜利船",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-15",
+          "player": "茂庭照幸",
+          "player_id": "63758",
+          "position": "",
+          "club": "巴吞联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-31",
+          "player": "黑木圣仁",
+          "player_id": "49456",
+          "position": "",
+          "club": "长崎成功丸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-01-31",
+          "player": "小暮大器",
+          "player_id": "110635",
+          "position": "右中场",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "冲野将基",
+          "player_id": "130487",
+          "position": "",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "保罗.奥图奥里",
+          "player_id": "121693",
+          "position": "主教练",
+          "club": "米内罗竞技",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "温井骏斗",
+          "player_id": "130490",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "池田树雷人",
+          "player_id": "130491",
+          "position": "中卫",
+          "club": "三菱养和SC青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "西本雅崇",
+          "player_id": "130486",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "神户胜利船青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "中泽聪太",
+          "player_id": "64124",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "租借"
+        },
+        {
+          "date": "2015-04-10",
+          "player": "尼卓尔斯",
+          "player_id": "33905",
+          "position": "中场",
+          "club": "珀斯光荣",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2014-07-01",
+          "player": "尼卓尔斯",
+          "player_id": "33905",
+          "position": "中场",
+          "club": "珀斯光荣",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-07",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "巴塞尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-11-24",
+          "player": "波波维奇",
+          "player_id": "110667",
+          "position": "主教练",
+          "club": "萨拉戈萨",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-12-31",
+          "player": "金圣埈",
+          "player_id": "75682",
+          "position": "中前卫",
+          "club": "城南FC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-01-06",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-07",
+          "player": "南野拓实",
+          "player_id": "109312",
+          "position": "左边锋",
+          "club": "萨尔茨堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-21",
+          "player": "具圣润",
+          "player_id": "110630",
+          "position": "守门员",
+          "club": "札幌冈萨多",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "SC相模原",
+          "type": "租借"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "黑木圣仁",
+          "player_id": "49456",
+          "position": "",
+          "club": "长崎成功丸",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-03-23",
+          "player": "秋山大地",
+          "player_id": "110634",
+          "position": "中场",
+          "club": "FC爱媛",
+          "type": "租借"
+        },
+        {
+          "date": "2015-03-23",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "大分三神",
+          "type": "租借"
+        },
+        {
+          "date": "2015-05-08",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "秋田蓝色闪电",
+          "type": "租借"
+        },
+        {
+          "date": "2015-06-16",
+          "player": "安藤淳",
+          "player_id": "63786",
+          "position": "",
+          "club": "松本山雅",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2015-2016": {
+      "in": [
+        {
+          "date": "2015-07-09",
+          "player": "田中裕介",
+          "player_id": "63819",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-13",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-07-13",
+          "player": "秋山大地",
+          "player_id": "110634",
+          "position": "中场",
+          "club": "FC爱媛",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-07-16",
+          "player": "埃德米尔森",
+          "player_id": "64138",
+          "position": "中场",
+          "club": "沙佩科恩斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-28",
+          "player": "马格诺·克鲁斯",
+          "player_id": "81070",
+          "position": "前锋",
+          "club": "突尼斯希望",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-11-30",
+          "player": "温井骏斗",
+          "player_id": "130490",
+          "position": "后卫",
+          "club": "铃鹿拉姆普勒",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-12-23",
+          "player": "中泽聪太",
+          "player_id": "64124",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "多蒙特业余队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "安俊洙",
+          "player_id": "151109",
+          "position": "守门员",
+          "club": "议政府FCU18",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-04",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "巴塞尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-08",
+          "player": "松田陸",
+          "player_id": "173149",
+          "position": "后卫",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-08",
+          "player": "清原翔平",
+          "player_id": "90754",
+          "position": "前锋",
+          "club": "金泽",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-11",
+          "player": "山村 和也",
+          "player_id": "97239",
+          "position": "后卫",
+          "club": "鹿岛鹿角",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-14",
+          "player": "里卡多·桑托斯",
+          "player_id": "40893",
+          "position": "前锋",
+          "club": "北京人和",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-31",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "秋田蓝色闪电",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-01-31",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "SC相模原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "埃利塞.巴尔博萨",
+          "player_id": "81305",
+          "position": "中场",
+          "club": "克鲁塞罗",
+          "type": "租借"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "木本恭生",
+          "player_id": "142125",
+          "position": "后卫",
+          "club": "褔冈大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "大阪体育大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2015-07-03",
+          "player": "尼卓尔斯",
+          "player_id": "33905",
+          "position": "中场",
+          "club": "西悉尼流浪者",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-05",
+          "player": "长谷川阿利亚",
+          "player_id": "63815",
+          "position": "中前卫",
+          "club": "萨拉戈萨",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-08",
+          "player": "温井骏斗",
+          "player_id": "130490",
+          "position": "后卫",
+          "club": "铃鹿拉姆普勒",
+          "type": "租借"
+        },
+        {
+          "date": "2015-12-23",
+          "player": "中泽聪太",
+          "player_id": "64124",
+          "position": "",
+          "club": "川崎前锋",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-12-31",
+          "player": "帕布罗",
+          "player_id": "109972",
+          "position": "前锋",
+          "club": "SD巴拉纳",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "山口萤",
+          "player_id": "76057",
+          "position": "后腰",
+          "club": "汉诺威96",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "吉野峻光",
+          "player_id": "97258",
+          "position": "",
+          "club": "甲府风林",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-04",
+          "player": "楠神顺平",
+          "player_id": "77090",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-06",
+          "player": "染谷悠太",
+          "player_id": "63793",
+          "position": "",
+          "club": "京都不死鸟",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-08",
+          "player": "永井龙",
+          "player_id": "76056",
+          "position": "前锋",
+          "club": "长崎成功丸",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-29",
+          "player": "马格诺·克鲁斯",
+          "player_id": "81070",
+          "position": "前锋",
+          "club": "戈亚尼亚竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-01",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2016-03-07",
+          "player": "保罗.奥图奥里",
+          "player_id": "121693",
+          "position": "主教练",
+          "club": "巴拉纳竞技",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-17",
+          "player": "桥本英郎",
+          "player_id": "64121",
+          "position": "",
+          "club": "长野琶扼搂",
+          "type": "租借"
+        },
+        {
+          "date": "2016-07-26",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "熊本深红",
+          "type": "租借"
+        }
+      ]
+    },
+    "2016-2017": {
+      "in": [
+        {
+          "date": "2016-07-01",
+          "player": "山口萤",
+          "player_id": "76057",
+          "position": "后腰",
+          "club": "汉诺威96",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-26",
+          "player": "阿布杜拉希米",
+          "player_id": "86221",
+          "position": "前锋",
+          "club": "洛克伦",
+          "type": "租借"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "马蒂亚·乔基奇",
+          "player_id": "78688",
+          "position": "后卫",
+          "club": "仁川联队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "埃利塞.巴尔博萨",
+          "player_id": "81305",
+          "position": "中场",
+          "club": "克鲁塞罗",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-07",
+          "player": "围谦太朗",
+          "player_id": "129861",
+          "position": "守门员",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-31",
+          "player": "桥本英郎",
+          "player_id": "64121",
+          "position": "",
+          "club": "长野琶扼搂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-01-31",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "熊本深红",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "舩木翔",
+          "player_id": "151111",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "斧泽隼辉",
+          "player_id": "151112",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "山内宽史",
+          "player_id": "153457",
+          "position": "左边锋",
+          "club": "早稻田大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "水沼 宏太",
+          "player_id": "63814",
+          "position": "右边锋",
+          "club": "FC东京",
+          "type": "租借"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "广岛三箭青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "福满隆贵",
+          "player_id": "97203",
+          "position": "",
+          "club": "山口雷法",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "大山武蔵",
+          "player_id": "155378",
+          "position": "后卫",
+          "club": "日本高校",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "桐光学园高校U18",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "清武弘嗣",
+          "player_id": "64024",
+          "position": "中场",
+          "club": "塞维利亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "尹晶焕",
+          "player_id": "110697",
+          "position": "",
+          "club": "蔚山HD",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2016-07-01",
+          "player": "扇原贵宏",
+          "player_id": "76059",
+          "position": "后腰",
+          "club": "名古屋鲸八",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-12-31",
+          "player": "埃利塞.巴尔博萨",
+          "player_id": "81305",
+          "position": "中场",
+          "club": "克鲁塞罗",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "阿布杜拉希米",
+          "player_id": "86221",
+          "position": "前锋",
+          "club": "洛克伦",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-01-06",
+          "player": "玉田圭司",
+          "player_id": "64040",
+          "position": "",
+          "club": "名古屋鲸八",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-10",
+          "player": "池田树雷人",
+          "player_id": "130491",
+          "position": "中卫",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "小暮大器",
+          "player_id": "110635",
+          "position": "右中场",
+          "club": "FC爱媛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "武田博行",
+          "player_id": "61827",
+          "position": "",
+          "club": "东京绿茵",
+          "type": "租借"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "桥本英郎",
+          "player_id": "64121",
+          "position": "",
+          "club": "东京绿茵",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "小谷祐喜",
+          "player_id": "142123",
+          "position": "中卫",
+          "club": "熊本深红",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-01",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "山口雷法",
+          "type": "租借"
+        },
+        {
+          "date": "2017-06-14",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "金泽",
+          "type": "租借"
+        }
+      ]
+    },
+    "2017-2018": {
+      "in": [
+        {
+          "date": "2017-09-11",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "山口雷法",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-06",
+          "player": "梁东炫",
+          "player_id": "75997",
+          "position": "",
+          "club": "浦项制铁",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-06",
+          "player": "田中亚土梦",
+          "player_id": "63847",
+          "position": "中场",
+          "club": "赫尔辛基",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-01-06",
+          "player": "高木俊幸",
+          "player_id": "77373",
+          "position": "前锋",
+          "club": "浦和红钻",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "长崎成功丸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "武田博行",
+          "player_id": "61827",
+          "position": "",
+          "club": "东京绿茵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "椋原健太",
+          "player_id": "63767",
+          "position": "",
+          "club": "广岛三箭",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "池田树雷人",
+          "player_id": "130491",
+          "position": "中卫",
+          "club": "巴吞联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "清原翔平",
+          "player_id": "90754",
+          "position": "前锋",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "中岛元彦",
+          "player_id": "155274",
+          "position": "前锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "水沼 宏太",
+          "player_id": "63814",
+          "position": "右边锋",
+          "club": "FC东京",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "片山瑛一",
+          "player_id": "120036",
+          "position": "前锋",
+          "club": "冈山绿雉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "安藤瑞季",
+          "player_id": "162817",
+          "position": "中锋",
+          "club": "长崎综合科学大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "鱼里直哉",
+          "player_id": "162816",
+          "position": "左中场",
+          "club": "关西学院大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "褔冈大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "曹瓦",
+          "player_id": "129866",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2018-02-21",
+          "player": "奥斯马尔·巴尔巴",
+          "player_id": "70174",
+          "position": "中卫",
+          "club": "FC首尔",
+          "type": "租借"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "金泽",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2018-01-04",
+          "player": "温井骏斗",
+          "player_id": "130490",
+          "position": "后卫",
+          "club": "枥木SC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-06",
+          "player": "阪本将基",
+          "player_id": "130488",
+          "position": "",
+          "club": "鹿儿岛联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "水沼 宏太",
+          "player_id": "63814",
+          "position": "右边锋",
+          "club": "FC东京",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "清原翔平",
+          "player_id": "90754",
+          "position": "前锋",
+          "club": "金泽",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "围谦太朗",
+          "player_id": "129861",
+          "position": "守门员",
+          "club": "福冈黄蜂",
+          "type": "租借"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "山口雷法",
+          "type": "租借"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "安俊洙",
+          "player_id": "151109",
+          "position": "守门员",
+          "club": "鹿儿岛联",
+          "type": "租借"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "関口训充",
+          "player_id": "49733",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "池田树雷人",
+          "player_id": "130491",
+          "position": "中卫",
+          "club": "FC爱媛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "水户蜀葵",
+          "type": "租借"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "椋原健太",
+          "player_id": "63767",
+          "position": "",
+          "club": "冈山绿雉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-01",
+          "player": "武田博行",
+          "player_id": "61827",
+          "position": "",
+          "club": "东京绿茵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-04-05",
+          "player": "里卡多·桑托斯",
+          "player_id": "40893",
+          "position": "前锋",
+          "club": "冈山绿雉",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2018-2019": {
+      "in": [
+        {
+          "date": "2018-08-31",
+          "player": "喜田阳",
+          "player_id": "153567",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-04",
+          "player": "都仓贤",
+          "player_id": "49385",
+          "position": "前锋",
+          "club": "札幌冈萨多",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-04",
+          "player": "奥埜博亮",
+          "player_id": "110741",
+          "position": "中场",
+          "club": "仙台维加泰",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-07",
+          "player": "藤田直之",
+          "player_id": "77301",
+          "position": "中前卫",
+          "club": "神户胜利船",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-10",
+          "player": "德萨巴托",
+          "player_id": "105306",
+          "position": "后腰",
+          "club": "瓦斯科达伽马",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-10",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "山口雷法",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "水户蜀葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "围谦太朗",
+          "player_id": "129861",
+          "position": "守门员",
+          "club": "福冈黄蜂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "濑古步梦",
+          "player_id": "153568",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-03-29",
+          "player": "彭格瑞特詹塔旺",
+          "player_id": "185574",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2019-03-29",
+          "player": "塔旺.科苏波",
+          "player_id": "185576",
+          "position": "左边锋",
+          "club": "巴吞联",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2018-08-12",
+          "player": "鱼里直哉",
+          "player_id": "162816",
+          "position": "左中场",
+          "club": "鸟取飞翔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-09-08",
+          "player": "山内宽史",
+          "player_id": "153457",
+          "position": "左边锋",
+          "club": "町田泽维亚",
+          "type": "租借"
+        },
+        {
+          "date": "2018-12-31",
+          "player": "奥斯马尔·巴尔巴",
+          "player_id": "70174",
+          "position": "中卫",
+          "club": "FC首尔",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "酒本宪幸",
+          "player_id": "49454",
+          "position": "",
+          "club": "鹿儿岛联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "杉本健勇",
+          "player_id": "89664",
+          "position": "前锋",
+          "club": "浦和红钻",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-04",
+          "player": "冲野将基",
+          "player_id": "130487",
+          "position": "",
+          "club": "秋田蓝色闪电",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-04",
+          "player": "田中裕介",
+          "player_id": "63819",
+          "position": "",
+          "club": "冈山绿雉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-05",
+          "player": "米泽令衣",
+          "player_id": "130485",
+          "position": "前锋",
+          "club": "鹿儿岛联",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-05",
+          "player": "山村 和也",
+          "player_id": "97239",
+          "position": "后卫",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-07",
+          "player": "山口萤",
+          "player_id": "76057",
+          "position": "后腰",
+          "club": "神户胜利船",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "曹瓦",
+          "player_id": "129866",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "山口雷法",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "枥木SC",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "福冈黄蜂",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "喜田阳",
+          "player_id": "153567",
+          "position": "中场",
+          "club": "福冈黄蜂",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2019-03-11",
+          "player": "梁东炫",
+          "player_id": "75997",
+          "position": "",
+          "club": "福冈黄蜂",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-04-08",
+          "player": "尹晶焕",
+          "player_id": "110697",
+          "position": "",
+          "club": "蒙通联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-06-27",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "金泽",
+          "type": "租借"
+        }
+      ]
+    },
+    "2019-2020": {
+      "in": [
+        {
+          "date": "2019-08-13",
+          "player": "铃木孝司",
+          "player_id": "100082",
+          "position": "前锋",
+          "club": "FC琉球",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-08-14",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-04",
+          "player": "丰川雄太",
+          "player_id": "110623",
+          "position": "前锋",
+          "club": "欧本",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-01-06",
+          "player": "坂元 达裕",
+          "player_id": "172611",
+          "position": "右边锋",
+          "club": "山形山神",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-11",
+          "player": "小池 裕太",
+          "player_id": "131084",
+          "position": "后卫",
+          "club": "圣图尔登",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "山内宽史",
+          "player_id": "153457",
+          "position": "左边锋",
+          "club": "町田泽维亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "安俊洙",
+          "player_id": "151109",
+          "position": "守门员",
+          "club": "鹿儿岛联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "山口雷法",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "福满隆贵",
+          "player_id": "97203",
+          "position": "",
+          "club": "水户蜀葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "福冈黄蜂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "大分三神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "枥木SC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "秋山大地",
+          "player_id": "110634",
+          "position": "中场",
+          "club": "山形山神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "喜田阳",
+          "player_id": "153567",
+          "position": "中场",
+          "club": "福冈黄蜂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "FC琉球",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "岛村拓弥",
+          "player_id": "154056",
+          "position": "中场",
+          "club": "京都不死鸟",
+          "type": "租借"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "西尾隆矢",
+          "player_id": "185571",
+          "position": "中卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "吉野高哉",
+          "player_id": "185572",
+          "position": "后卫",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "桐光学园高校U18",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-02-05",
+          "player": "卢卡斯·米内罗",
+          "player_id": "150243",
+          "position": "后腰",
+          "club": "沙佩科恩斯",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2019-07-15",
+          "player": "秋山大地",
+          "player_id": "110634",
+          "position": "中场",
+          "club": "山形山神",
+          "type": "租借"
+        },
+        {
+          "date": "2019-08-12",
+          "player": "山下达也",
+          "player_id": "49468",
+          "position": "后卫",
+          "club": "柏太阳神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-08-15",
+          "player": "岸本武流",
+          "player_id": "142126",
+          "position": "前锋",
+          "club": "德岛漩涡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-01-01",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-01-04",
+          "player": "斧泽隼辉",
+          "player_id": "151112",
+          "position": "中场",
+          "club": "北九州向日葵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-04",
+          "player": "水沼 宏太",
+          "player_id": "63814",
+          "position": "右边锋",
+          "club": "横滨水手",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-04",
+          "player": "丹野 研太",
+          "player_id": "49475",
+          "position": "守门员",
+          "club": "川崎前锋",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-08",
+          "player": "围谦太朗",
+          "player_id": "129861",
+          "position": "守门员",
+          "club": "松本山雅",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-14",
+          "player": "埃利塞.巴尔博萨",
+          "player_id": "81305",
+          "position": "中场",
+          "club": "达曼协作",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-01-31",
+          "player": "彭格瑞特詹塔旺",
+          "player_id": "185574",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "丸冈满",
+          "player_id": "123981",
+          "position": "中场",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "大山武蔵",
+          "player_id": "155378",
+          "position": "后卫",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "福满隆贵",
+          "player_id": "97203",
+          "position": "",
+          "club": "福冈黄蜂",
+          "type": "租借"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "舩木翔",
+          "player_id": "151111",
+          "position": "后卫",
+          "club": "磐田喜悦",
+          "type": "租借"
+        },
+        {
+          "date": "2020-02-01",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "松本山雅",
+          "type": "租借"
+        },
+        {
+          "date": "2020-02-07",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "仙台维加泰",
+          "type": "租借"
+        },
+        {
+          "date": "2020-03-02",
+          "player": "田中亚土梦",
+          "player_id": "63847",
+          "position": "中场",
+          "club": "赫尔辛基",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-04-01",
+          "player": "安藤瑞季",
+          "player_id": "162817",
+          "position": "中锋",
+          "club": "町田泽维亚",
+          "type": "租借"
+        }
+      ]
+    },
+    "2020-2021": {
+      "in": [
+        {
+          "date": "2021-01-09",
+          "player": "原川力",
+          "player_id": "99133",
+          "position": "中场",
+          "club": "鸟栖沙岩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "进藤亮佑",
+          "player_id": "130513",
+          "position": "中卫",
+          "club": "札幌冈萨多",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "鸟海晃司",
+          "player_id": "162532",
+          "position": "后卫",
+          "club": "千叶市原",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "为田大贵",
+          "player_id": "83815",
+          "position": "中场",
+          "club": "千叶市原",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "松田力",
+          "player_id": "114151",
+          "position": "前锋",
+          "club": "甲府风林",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "亚当·塔加特",
+          "player_id": "79449",
+          "position": "中锋",
+          "club": "水原三星",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "大久保嘉人",
+          "player_id": "17433",
+          "position": "",
+          "club": "东京绿茵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "水户蜀葵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "加藤陆次树",
+          "player_id": "184347",
+          "position": "中锋",
+          "club": "金泽",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "新井直人",
+          "player_id": "172489",
+          "position": "右后卫",
+          "club": "新泻天鹅",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-30",
+          "player": "邓文林",
+          "player_id": "101350",
+          "position": "守门员",
+          "club": "蒙通联",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "中岛元彦",
+          "player_id": "155274",
+          "position": "前锋",
+          "club": "新泻天鹅",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "仙台维加泰",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "今治",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "金泽",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "安藤瑞季",
+          "player_id": "162817",
+          "position": "中锋",
+          "club": "町田泽维亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "舩木翔",
+          "player_id": "151111",
+          "position": "后卫",
+          "club": "磐田喜悦",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "福满隆贵",
+          "player_id": "97203",
+          "position": "",
+          "club": "福冈黄蜂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "山形山神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "长崎成功丸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "松本山雅",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "山内宽史",
+          "player_id": "153457",
+          "position": "左边锋",
+          "club": "山形山神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "松本泰志",
+          "player_id": "152973",
+          "position": "后腰",
+          "club": "广岛三箭",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-16",
+          "player": "丹克尔",
+          "player_id": "117313",
+          "position": "中卫",
+          "club": "神户胜利船",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-02",
+          "player": "帕格努萨特",
+          "player_id": "127017",
+          "position": "中卫",
+          "club": "塞阿拉",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2020-07-20",
+          "player": "中岛元彦",
+          "player_id": "155274",
+          "position": "前锋",
+          "club": "新泻天鹅",
+          "type": "租借"
+        },
+        {
+          "date": "2020-08-12",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "今治",
+          "type": "租借"
+        },
+        {
+          "date": "2020-09-01",
+          "player": "卢卡斯·米内罗",
+          "player_id": "150243",
+          "position": "后腰",
+          "club": "沙佩科恩斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-12-31",
+          "player": "塔旺.科苏波",
+          "player_id": "185576",
+          "position": "左边锋",
+          "club": "巴吞联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-08",
+          "player": "安俊洙",
+          "player_id": "151109",
+          "position": "守门员",
+          "club": "釜山偶像",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "木本恭生",
+          "player_id": "142125",
+          "position": "后卫",
+          "club": "名古屋鲸八",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "铃木孝司",
+          "player_id": "100082",
+          "position": "前锋",
+          "club": "新泻天鹅",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "柿谷曜一朗",
+          "player_id": "49447",
+          "position": "影锋",
+          "club": "名古屋鲸八",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "都仓贤",
+          "player_id": "49385",
+          "position": "前锋",
+          "club": "长崎成功丸",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-09",
+          "player": "片山瑛一",
+          "player_id": "120036",
+          "position": "前锋",
+          "club": "清水鼓动",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-21",
+          "player": "马蒂亚·乔基奇",
+          "player_id": "78688",
+          "position": "后卫",
+          "club": "上海申花",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "岛村拓弥",
+          "player_id": "154056",
+          "position": "中场",
+          "club": "京都不死鸟",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-01-31",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "山内宽史",
+          "player_id": "153457",
+          "position": "左边锋",
+          "club": "FC岐阜",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "田平起也",
+          "player_id": "185573",
+          "position": "中卫",
+          "club": "岩手盛冈仙鹤",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "水户蜀葵",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "安藤瑞季",
+          "player_id": "162817",
+          "position": "中锋",
+          "club": "水户蜀葵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "枥木SC",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "舩木翔",
+          "player_id": "151111",
+          "position": "后卫",
+          "club": "SC相模原",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "福满隆贵",
+          "player_id": "97203",
+          "position": "",
+          "club": "千叶市原",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "德萨巴托",
+          "player_id": "105306",
+          "position": "后腰",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "福冈黄蜂",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "前川大河",
+          "player_id": "130489",
+          "position": "中场",
+          "club": "北九州向日葵",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "金泽",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "町田泽维亚",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "町田泽维亚",
+          "type": "租借"
+        },
+        {
+          "date": "2021-06-12",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "水户蜀葵",
+          "type": "租借"
+        }
+      ]
+    },
+    "2021-2022": {
+      "in": [
+        {
+          "date": "2021-07-01",
+          "player": "新井晴树",
+          "player_id": "217940",
+          "position": "左中场",
+          "club": "平田町",
+          "type": "租借"
+        },
+        {
+          "date": "2021-08-26",
+          "player": "小菊昭夫",
+          "player_id": "219888",
+          "position": "",
+          "club": "大阪樱花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-08-31",
+          "player": "乾贵士",
+          "player_id": "49459",
+          "position": "左边锋",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-09-28",
+          "player": "松原飒汰",
+          "player_id": "206181",
+          "position": "守门员",
+          "club": "千叶市原",
+          "type": "租借"
+        },
+        {
+          "date": "2022-01-05",
+          "player": "让·帕特里克",
+          "player_id": "199708",
+          "position": "左边锋",
+          "club": "圣克拉拉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "毎熊晟矢",
+          "player_id": "184321",
+          "position": "右后卫",
+          "club": "长崎成功丸",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "中原辉",
+          "player_id": "189903",
+          "position": "右中场",
+          "club": "山形山神",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "铃木德真",
+          "player_id": "172479",
+          "position": "中场",
+          "club": "德岛漩涡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "山中 亮辅",
+          "player_id": "97410",
+          "position": "后卫",
+          "club": "浦和红钻",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "上门知树",
+          "player_id": "172695",
+          "position": "中场",
+          "club": "冈山绿雉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "清水圭介",
+          "player_id": "64038",
+          "position": "守门员",
+          "club": "京都不死鸟",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-12",
+          "player": "槙浩平",
+          "player_id": "151184",
+          "position": "守门员",
+          "club": "SC相模原",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-12",
+          "player": "山下达也",
+          "player_id": "49468",
+          "position": "后卫",
+          "club": "柏太阳神",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "福冈黄蜂",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "田平起也",
+          "player_id": "185573",
+          "position": "中卫",
+          "club": "岩手盛冈仙鹤",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "SC相模原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "舩木翔",
+          "player_id": "151111",
+          "position": "后卫",
+          "club": "SC相模原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "町田泽维亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "水户蜀葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "水户蜀葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "金泽",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "枥木SC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借"
+        },
+        {
+          "date": "2022-02-17",
+          "player": "马蒂亚·乔基奇",
+          "player_id": "78688",
+          "position": "后卫",
+          "club": "上海申花",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-05-25",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "水户蜀葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-06-30",
+          "player": "坂元 达裕",
+          "player_id": "172611",
+          "position": "右边锋",
+          "club": "奥斯坦德",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2021-07-01",
+          "player": "丹克尔",
+          "player_id": "117313",
+          "position": "中卫",
+          "club": "吉达国民",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-27",
+          "player": "松本泰志",
+          "player_id": "152973",
+          "position": "后腰",
+          "club": "广岛三箭",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-08-26",
+          "player": "小菊昭夫",
+          "player_id": "219888",
+          "position": "",
+          "club": "大阪樱花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-05",
+          "player": "坂元 达裕",
+          "player_id": "172611",
+          "position": "右边锋",
+          "club": "奥斯坦德",
+          "type": "租借"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "丰川雄太",
+          "player_id": "110623",
+          "position": "前锋",
+          "club": "京都不死鸟",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "藤田直之",
+          "player_id": "77301",
+          "position": "中前卫",
+          "club": "鸟栖沙岩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "高木俊幸",
+          "player_id": "77373",
+          "position": "前锋",
+          "club": "千叶市原",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "松井谦弥",
+          "player_id": "63803",
+          "position": "守门员",
+          "club": "秋田蓝色闪电",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-09",
+          "player": "小池 裕太",
+          "player_id": "131084",
+          "position": "后卫",
+          "club": "横滨水手",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-18",
+          "player": "濑古步梦",
+          "player_id": "153568",
+          "position": "后卫",
+          "club": "草蜢",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-01-20",
+          "player": "松田力",
+          "player_id": "114151",
+          "position": "前锋",
+          "club": "FC爱媛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "松原飒汰",
+          "player_id": "206181",
+          "position": "守门员",
+          "club": "千叶市原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-01-31",
+          "player": "帕格努萨特",
+          "player_id": "127017",
+          "position": "中卫",
+          "club": "名古屋鲸八",
+          "type": "租借"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "鸟栖沙岩",
+          "type": "租借"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "森下怜哉",
+          "player_id": "151110",
+          "position": "后卫",
+          "club": "FC爱媛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "田平起也",
+          "player_id": "185573",
+          "position": "中卫",
+          "club": "岩手盛冈仙鹤",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "永石拓海",
+          "player_id": "134129",
+          "position": "守门员",
+          "club": "福冈黄蜂",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "山根永远",
+          "player_id": "153458",
+          "position": "左中场",
+          "club": "群马草津温泉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "庄司朋乃也",
+          "player_id": "142124",
+          "position": "后卫",
+          "club": "金泽",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "甲府风林",
+          "type": "租借"
+        },
+        {
+          "date": "2022-02-01",
+          "player": "新井直人",
+          "player_id": "172489",
+          "position": "右后卫",
+          "club": "德岛漩涡",
+          "type": "租借"
+        },
+        {
+          "date": "2022-03-29",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "鸟取飞翔",
+          "type": "租借"
+        },
+        {
+          "date": "2022-04-06",
+          "player": "中岛元彦",
+          "player_id": "155274",
+          "position": "前锋",
+          "club": "仙台维加泰",
+          "type": "租借"
+        },
+        {
+          "date": "2022-05-26",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "今治",
+          "type": "租借"
+        }
+      ]
+    },
+    "2022-2023": {
+      "in": [
+        {
+          "date": "2022-07-01",
+          "player": "曹瓦",
+          "player_id": "129866",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2023-01-01",
+          "player": "帕格努萨特",
+          "player_id": "127017",
+          "position": "中卫",
+          "club": "名古屋鲸八",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-09",
+          "player": "卡皮萨巴",
+          "player_id": "144269",
+          "position": "前锋",
+          "club": "尤文图德",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-01-09",
+          "player": "莱奥·塞阿拉",
+          "player_id": "121785",
+          "position": "前锋",
+          "club": "横滨水手",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-01-09",
+          "player": "乔迪·克劳克斯",
+          "player_id": "102098",
+          "position": "右边锋",
+          "club": "福冈黄蜂",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-01-09",
+          "player": "梁韩彬",
+          "player_id": "75746",
+          "position": "守门员",
+          "club": "FC首尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-01-31",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "今治",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-31",
+          "player": "新井直人",
+          "player_id": "172489",
+          "position": "右后卫",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-31",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "德岛漩涡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-31",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "布拉干蒂诺RB PAU23",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "大迫塁",
+          "player_id": "232561",
+          "position": "中场",
+          "club": "神村学园高等部",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "坂田澪哉",
+          "player_id": "232560",
+          "position": "中场",
+          "club": "东山中学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "木下慎之辅",
+          "player_id": "231494",
+          "position": "中锋",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "香川真司",
+          "player_id": "49457",
+          "position": "中场",
+          "club": "圣图尔登",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "石渡·纳尔逊",
+          "player_id": "227349",
+          "position": "后腰",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "北野飒太",
+          "player_id": "223029",
+          "position": "前腰",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-05-31",
+          "player": "丸桥祐介",
+          "player_id": "76058",
+          "position": "左后卫",
+          "club": "巴吞联",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2022-06-15",
+          "player": "新井晴树",
+          "player_id": "217940",
+          "position": "左中场",
+          "club": "平田町",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "坂元 达裕",
+          "player_id": "172611",
+          "position": "右边锋",
+          "club": "奥斯坦德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-07-22",
+          "player": "乾贵士",
+          "player_id": "49459",
+          "position": "左边锋",
+          "club": "清水鼓动",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-15",
+          "player": "邓文林",
+          "player_id": "101350",
+          "position": "守门员",
+          "club": "归仁联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-08-23",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "布拉干蒂诺RB PAU23",
+          "type": "租借"
+        },
+        {
+          "date": "2022-12-01",
+          "player": "曹瓦",
+          "player_id": "129866",
+          "position": "中前卫",
+          "club": "巴吞联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-01",
+          "player": "亚当·塔加特",
+          "player_id": "79449",
+          "position": "中锋",
+          "club": "珀斯光荣",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-01-01",
+          "player": "丸桥祐介",
+          "player_id": "76058",
+          "position": "左后卫",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2023-01-09",
+          "player": "让·帕特里克",
+          "player_id": "199708",
+          "position": "左边锋",
+          "club": "神户胜利船",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-01-10",
+          "player": "帕格努萨特",
+          "player_id": "127017",
+          "position": "中卫",
+          "club": "塞阿拉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-01-31",
+          "player": "门德斯",
+          "player_id": "107413",
+          "position": "中锋",
+          "club": "马尔多纳多",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "仙台维加泰",
+          "type": "租借"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "茂木秀",
+          "player_id": "162815",
+          "position": "守门员",
+          "club": "FC岐阜",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-01",
+          "player": "新井直人",
+          "player_id": "172489",
+          "position": "右后卫",
+          "club": "新泻天鹅",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-03-06",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "町田泽维亚",
+          "type": "租借"
+        }
+      ]
+    },
+    "2023-2024": {
+      "in": [
+        {
+          "date": "2023-07-17",
+          "player": "新井晴树",
+          "player_id": "217940",
+          "position": "左中场",
+          "club": "平田町",
+          "type": "租借"
+        },
+        {
+          "date": "2023-07-22",
+          "player": "渡边亮",
+          "player_id": "189768",
+          "position": "前锋",
+          "club": "藤枝MYFC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-07-28",
+          "player": "柴山昌也",
+          "player_id": "202054",
+          "position": "中场",
+          "club": "RB大宫松鼠",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-08",
+          "player": "登里享平",
+          "player_id": "77095",
+          "position": "后卫",
+          "club": "川崎前锋",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-08",
+          "player": "田中 骏汰",
+          "player_id": "183157",
+          "position": "后卫",
+          "club": "札幌冈萨多",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-10",
+          "player": "费尔南德斯",
+          "player_id": "139603",
+          "position": "中场",
+          "club": "札幌冈萨多",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-01-11",
+          "player": "维克托·布埃诺",
+          "player_id": "123730",
+          "position": "中场",
+          "club": "巴拉纳竞技",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-12",
+          "player": "平野佑一",
+          "player_id": "162662",
+          "position": "中场",
+          "club": "浦和红钻",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "福岛FC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "松田陸",
+          "player_id": "173149",
+          "position": "后卫",
+          "club": "甲府风林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "町田泽维亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "甲府风林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "仙台维加泰",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "中原辉",
+          "player_id": "189903",
+          "position": "右中场",
+          "club": "东京绿茵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-31",
+          "player": "原川力",
+          "player_id": "99133",
+          "position": "中场",
+          "club": "FC东京",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "奥田勇斗",
+          "player_id": "236957",
+          "position": "后卫",
+          "club": "桃山谷仓大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-03-12",
+          "player": "贾斯汀·胡布纳",
+          "player_id": "251153",
+          "position": "中卫",
+          "club": "狼队U21",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2023-07-21",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "FC琉球",
+          "type": "租借"
+        },
+        {
+          "date": "2023-07-21",
+          "player": "加藤陆次树",
+          "player_id": "184347",
+          "position": "中锋",
+          "club": "广岛三箭",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "新井晴树",
+          "player_id": "217940",
+          "position": "左中场",
+          "club": "平田町",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-08",
+          "player": "槙浩平",
+          "player_id": "151184",
+          "position": "守门员",
+          "club": "群马草津温泉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-01-08",
+          "player": "山中 亮辅",
+          "player_id": "97410",
+          "position": "后卫",
+          "club": "名古屋鲸八",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-08",
+          "player": "丸桥祐介",
+          "player_id": "76058",
+          "position": "左后卫",
+          "club": "鸟栖沙岩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-01-11",
+          "player": "铃木德真",
+          "player_id": "172479",
+          "position": "中场",
+          "club": "大阪钢巴",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-24",
+          "player": "马蒂亚·乔基奇",
+          "player_id": "78688",
+          "position": "后卫",
+          "club": "仁川联队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "藤尾翔太",
+          "player_id": "185577",
+          "position": "中锋",
+          "club": "町田泽维亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "原川力",
+          "player_id": "99133",
+          "position": "中场",
+          "club": "FC东京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "中原辉",
+          "player_id": "189903",
+          "position": "右中场",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "石渡·纳尔逊",
+          "player_id": "227349",
+          "position": "后腰",
+          "club": "FC爱媛",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "山形山神",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "磐城FC",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "大迫塁",
+          "player_id": "232561",
+          "position": "中场",
+          "club": "磐城FC",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "松田陸",
+          "player_id": "173149",
+          "position": "后卫",
+          "club": "大阪钢巴",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "泽上龙二",
+          "player_id": "141711",
+          "position": "前锋",
+          "club": "福岛FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-04-29",
+          "player": "木下慎之辅",
+          "player_id": "231494",
+          "position": "中锋",
+          "club": "鸟取飞翔",
+          "type": "租借"
+        }
+      ]
+    },
+    "2024-2025": {
+      "in": [
+        {
+          "date": "2024-07-12",
+          "player": "山崎凌吾",
+          "player_id": "141337",
+          "position": "中锋",
+          "club": "京都不死鸟",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-17",
+          "player": "高桥仁胡",
+          "player_id": "307173",
+          "position": "",
+          "club": "巴塞罗那U19",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-01",
+          "player": "亚瑟·帕帕斯",
+          "player_id": "219381",
+          "position": "主教练",
+          "club": "武里南联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "中村 拓海",
+          "player_id": "173275",
+          "position": "后卫",
+          "club": "横滨FC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "福井光辉",
+          "player_id": "153004",
+          "position": "守门员",
+          "club": "町田泽维亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "扎伦萨克·翁功",
+          "player_id": "165484",
+          "position": "右边锋",
+          "club": "巴吞联",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "蒂亚戈·安德拉德",
+          "player_id": "209537",
+          "position": "前锋",
+          "club": "多伦多FC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "拉斐尔·拉达奥",
+          "player_id": "117280",
+          "position": "前锋",
+          "club": "巴伊亚",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "町中槙之辅",
+          "player_id": "119611",
+          "position": "后卫",
+          "club": "横滨水手",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "FC琉球",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "木下慎之辅",
+          "player_id": "231494",
+          "position": "中锋",
+          "club": "鸟取飞翔",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "中岛元彦",
+          "player_id": "155274",
+          "position": "前锋",
+          "club": "仙台维加泰",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "石渡·纳尔逊",
+          "player_id": "227349",
+          "position": "后腰",
+          "club": "FC爱媛",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "松本止生",
+          "player_id": "185575",
+          "position": "中场",
+          "club": "山形山神",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "磐城FC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "大迫塁",
+          "player_id": "232561",
+          "position": "中场",
+          "club": "磐城FC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "渡边亮",
+          "player_id": "189768",
+          "position": "前锋",
+          "club": "磐田喜悦",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "清武弘嗣",
+          "player_id": "64024",
+          "position": "中场",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "木实 快斗",
+          "player_id": "307174",
+          "position": "中场",
+          "club": "大阪樱花青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "上林豪",
+          "player_id": "191430",
+          "position": "守门员",
+          "club": "明治大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "古山健吾",
+          "player_id": "279083",
+          "position": "前锋",
+          "club": "大阪体育大学",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-03-26",
+          "player": "本间至恩",
+          "player_id": "153564",
+          "position": "中场",
+          "club": "浦和红钻",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2024-07-01",
+          "player": "毎熊晟矢",
+          "player_id": "184321",
+          "position": "右后卫",
+          "club": "阿尔克马尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-16",
+          "player": "乔迪·克劳克斯",
+          "player_id": "102098",
+          "position": "右边锋",
+          "club": "磐田喜悦",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-16",
+          "player": "贾斯汀·胡布纳",
+          "player_id": "251153",
+          "position": "中卫",
+          "club": "狼队U21",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "为田大贵",
+          "player_id": "83815",
+          "position": "中场",
+          "club": "磐田喜悦",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "山田寛人",
+          "player_id": "163291",
+          "position": "中锋",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "山崎凌吾",
+          "player_id": "141337",
+          "position": "中锋",
+          "club": "长崎成功丸",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "莱奥·塞阿拉",
+          "player_id": "121785",
+          "position": "前锋",
+          "club": "鹿岛鹿角",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "卡皮萨巴",
+          "player_id": "144269",
+          "position": "前锋",
+          "club": "清水鼓动",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "鸟海晃司",
+          "player_id": "162532",
+          "position": "后卫",
+          "club": "千叶市原",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-20",
+          "player": "梁韩彬",
+          "player_id": "75746",
+          "position": "守门员",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "小菊昭夫",
+          "player_id": "219888",
+          "position": "",
+          "club": "鸟栖沙岩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "石渡·纳尔逊",
+          "player_id": "227349",
+          "position": "后腰",
+          "club": "磐城FC",
+          "type": "租借"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "鸟栖沙岩",
+          "type": "租借"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "清武弘嗣",
+          "player_id": "64024",
+          "position": "中场",
+          "club": "大分三神",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "藤枝MYFC",
+          "type": "租借"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "渡边亮",
+          "player_id": "189768",
+          "position": "前锋",
+          "club": "磐田喜悦",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-02",
+          "player": "木实 快斗",
+          "player_id": "307174",
+          "position": "中场",
+          "club": "北九州向日葵",
+          "type": "租借"
+        },
+        {
+          "date": "2025-03-03",
+          "player": "大迫塁",
+          "player_id": "232561",
+          "position": "中场",
+          "club": "SC相模原",
+          "type": "租借"
+        },
+        {
+          "date": "2025-07-01",
+          "player": "扎伦萨克·翁功",
+          "player_id": "165484",
+          "position": "右边锋",
+          "club": "巴吞联",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2025-2026": {
+      "in": [
+        {
+          "date": "2025-06-03",
+          "player": "库尔斯",
+          "player_id": "127108",
+          "position": "右后卫",
+          "club": "武里南联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-08-11",
+          "player": "大田步梦",
+          "player_id": "185592",
+          "position": "后卫",
+          "club": "旧海弗莱鲁汶",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "横山 梦树",
+          "player_id": "284075",
+          "position": "前腰",
+          "club": "今治",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "樱川所罗门",
+          "player_id": "184631",
+          "position": "中锋",
+          "club": "横滨FC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "大迫塁",
+          "player_id": "232561",
+          "position": "中场",
+          "club": "SC相模原",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "木实 快斗",
+          "player_id": "307174",
+          "position": "中场",
+          "club": "北九州向日葵",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "石渡·纳尔逊",
+          "player_id": "227349",
+          "position": "后腰",
+          "club": "磐城FC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "冈泽康生",
+          "player_id": "221458",
+          "position": "中场",
+          "club": "藤枝MYFC",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "鸟栖沙岩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-02-01",
+          "player": "田中隼人",
+          "player_id": "206146",
+          "position": "中卫",
+          "club": "柏太阳神",
+          "type": "租借"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "高桥仁胡",
+          "player_id": "307173",
+          "position": "",
+          "club": "阿尔梅勒城",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2025-06-09",
+          "player": "北野飒太",
+          "player_id": "223029",
+          "position": "前腰",
+          "club": "萨尔茨堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "拉斐尔·拉达奥",
+          "player_id": "117280",
+          "position": "前锋",
+          "club": "巴伊亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-05",
+          "player": "高桥仁胡",
+          "player_id": "307173",
+          "position": "",
+          "club": "阿尔梅勒城",
+          "type": "租借"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "进藤亮佑",
+          "player_id": "130513",
+          "position": "中卫",
+          "club": "长崎成功丸",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "西尾隆矢",
+          "player_id": "185571",
+          "position": "中卫",
+          "club": "RB大宫松鼠",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-27",
+          "player": "维克托·布埃诺",
+          "player_id": "123730",
+          "position": "中场",
+          "club": "瑞模贝雷",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "本间至恩",
+          "player_id": "153564",
+          "position": "中场",
+          "club": "浦和红钻",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-02-01",
+          "player": "西川 润",
+          "player_id": "173633",
+          "position": "右边锋",
+          "club": "冈山绿雉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "田中隼人",
+          "player_id": "206146",
+          "position": "中卫",
+          "club": "柏太阳神",
+          "type": "租借结束"
+        }
+      ]
+    }
+  }
+}

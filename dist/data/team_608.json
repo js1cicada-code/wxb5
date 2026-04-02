@@ -1,0 +1,2616 @@
+{
+  "team_id": "608",
+  "update_time": "2026-04-01 22:25:42",
+  "detail": null,
+  "lineup": {
+    "goalkeeper": [],
+    "defender": [
+      {
+        "player_id": "20489",
+        "number": "14",
+        "name_cn": "车贝雅克科",
+        "name_hk": "卓比耶捷高",
+        "name_en": "Yevgen Cheberyachko",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "20275",
+        "number": "",
+        "name_cn": "曼久克",
+        "name_hk": "文迪茲約克",
+        "name_en": "Vitaliy Mandzyuk",
+        "is_captain": false,
+        "position": "后卫"
+      }
+    ],
+    "midfielder": [
+      {
+        "player_id": "21306",
+        "number": "8",
+        "name_cn": "埃德马",
+        "name_hk": "艾特馬",
+        "name_en": "Edmar Aparecido De Laserda",
+        "is_captain": false,
+        "position": "中场"
+      }
+    ],
+    "forward": [],
+    "coach": [
+      {
+        "player_id": "892445",
+        "number": "",
+        "name_cn": "迈朗·马基域",
+        "name_hk": "邁朗·馬基域",
+        "name_en": "Myron Markevych",
+        "is_captain": false,
+        "position": "教练"
+      }
+    ]
+  },
+  "lineup_detail": [
+    {
+      "player_id": "134552",
+      "number": "",
+      "name_cn": "迈朗·马基域",
+      "name_hk": "邁朗·馬基域",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "主教练",
+      "position": "乌克兰",
+      "country_cn": "烏克蘭",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "47986",
+      "number": "8",
+      "name_cn": "埃德马",
+      "name_hk": "艾特馬",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "177",
+      "height": "71",
+      "weight": "中场",
+      "position": "巴西",
+      "country_cn": "巴西",
+      "country_en": "",
+      "value": "",
+      "contract_end": "5",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "48513",
+      "number": "14",
+      "name_cn": "车贝雅克科",
+      "name_hk": "卓比耶捷高",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "75",
+      "weight": "中卫",
+      "position": "乌克兰",
+      "country_cn": "烏克蘭",
+      "country_en": "42.5",
+      "value": "",
+      "contract_end": "14",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "48402",
+      "number": "",
+      "name_cn": "曼久克",
+      "name_hk": "文迪茲約克",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "74",
+      "weight": "右后卫",
+      "position": "乌克兰",
+      "country_cn": "烏克蘭",
+      "country_en": "70",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    }
+  ],
+  "league_stats": [],
+  "cup_stats": [],
+  "tech_stats": [
+    {
+      "league_id": "0",
+      "league_name_cn": "全部",
+      "league_name_hk": "全部",
+      "total_matches": "82",
+      "wins": "41",
+      "draws": "50",
+      "total_goals": "509",
+      "conceded": "388",
+      "clean_sheets": "17",
+      "win_rate": "25.32"
+    },
+    {
+      "league_id": "41",
+      "league_name_cn": "球会友谊赛",
+      "league_name_hk": "球會友誼賽",
+      "total_matches": "10",
+      "wins": "6",
+      "draws": "7",
+      "total_goals": "0",
+      "conceded": "30",
+      "clean_sheets": "1",
+      "win_rate": "7.04"
+    },
+    {
+      "league_id": "103",
+      "league_name_cn": "欧洲联赛冠军杯赛",
+      "league_name_hk": "歐洲聯賽冠軍盃賽",
+      "total_matches": "0",
+      "wins": "1",
+      "draws": "1",
+      "total_goals": "0",
+      "conceded": "3",
+      "clean_sheets": "0",
+      "win_rate": "0"
+    },
+    {
+      "league_id": "113",
+      "league_name_cn": "欧罗巴联赛杯",
+      "league_name_hk": "歐霸盃",
+      "total_matches": "13",
+      "wins": "6",
+      "draws": "11",
+      "total_goals": "455",
+      "conceded": "84",
+      "clean_sheets": "2",
+      "win_rate": "44.33"
+    },
+    {
+      "league_id": "119",
+      "league_name_cn": "乌克兰超级联赛",
+      "league_name_hk": "烏克蘭超級聯賽",
+      "total_matches": "47",
+      "wins": "24",
+      "draws": "22",
+      "total_goals": "54",
+      "conceded": "199",
+      "clean_sheets": "9",
+      "win_rate": "27.22"
+    },
+    {
+      "league_id": "154",
+      "league_name_cn": "乌克兰杯",
+      "league_name_hk": "烏克蘭盃",
+      "total_matches": "10",
+      "wins": "2",
+      "draws": "4",
+      "total_goals": "0",
+      "conceded": "35",
+      "clean_sheets": "2",
+      "win_rate": "22.38"
+    },
+    {
+      "league_id": "1658",
+      "league_name_cn": "乌克兰乙组联赛",
+      "league_name_hk": "烏克蘭乙組聯賽",
+      "total_matches": "2",
+      "wins": "2",
+      "draws": "5",
+      "total_goals": "0",
+      "conceded": "37",
+      "clean_sheets": "3",
+      "win_rate": "0"
+    }
+  ],
+  "history_ranking": [],
+  "transfers": {
+    "2003-2004": {
+      "in": [],
+      "out": [
+        {
+          "date": "2004-01-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        }
+      ]
+    },
+    "2004-2005": {
+      "in": [
+        {
+          "date": "2004-07-01",
+          "player": "亚切斯拉夫·舍辅楚克",
+          "player_id": "48106",
+          "position": "",
+          "club": "辛历克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2004-07-01",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "查诺莫斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2005-01-01",
+          "player": "谢尔盖.科尔尼伦科",
+          "player_id": "46547",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2005-03-01",
+          "player": "亚米苏拉斯威利",
+          "player_id": "46534",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "租借"
+        },
+        {
+          "date": "2005-06-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "塔夫里亚",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2005-01-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "塔夫里亚",
+          "type": "租借"
+        },
+        {
+          "date": "2005-06-30",
+          "player": "亚米苏拉斯威利",
+          "player_id": "46534",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2005-06-30",
+          "player": "谢尔盖.科尔尼伦科",
+          "player_id": "46547",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2005-2006": {
+      "in": [
+        {
+          "date": "2005-07-01",
+          "player": "库琴科",
+          "player_id": "85291",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2005-08-01",
+          "player": "谢尔盖.科尔尼伦科",
+          "player_id": "46547",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2006-01-01",
+          "player": "乔治.佩伊夫",
+          "player_id": "46264",
+          "position": "",
+          "club": "基辅迪纳摩",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2005-07-01",
+          "player": "亚切斯拉夫·舍辅楚克",
+          "player_id": "48106",
+          "position": "",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2005-07-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2006-06-30",
+          "player": "乔治.佩伊夫",
+          "player_id": "46264",
+          "position": "",
+          "club": "基辅迪纳摩B队",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2006-2007": {
+      "in": [
+        {
+          "date": "2006-07-01",
+          "player": "丹尼斯·格拉维拿",
+          "player_id": "48050",
+          "position": "",
+          "club": "基辅迪纳摩B队",
+          "type": "租借"
+        },
+        {
+          "date": "2006-07-01",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "迪尼普U17",
+          "type": "完全所有"
+        },
+        {
+          "date": "2006-12-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "J.简卡华",
+          "player_id": "48154",
+          "position": "后腰",
+          "club": "基辅阿森纳",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "萨莫丁",
+          "player_id": "48146",
+          "position": "前锋",
+          "club": "莫斯科中央陆军",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "德尼索夫",
+          "player_id": "48169",
+          "position": "",
+          "club": "莫斯科中央陆军青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "奥列克西·齐奇科夫",
+          "player_id": "48051",
+          "position": "中场",
+          "club": "卡赞卡莫斯科",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2006-07-01",
+          "player": "库琴科",
+          "player_id": "85291",
+          "position": "",
+          "club": "奥博隆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2006-12-01",
+          "player": "丹尼斯·格拉维拿",
+          "player_id": "48050",
+          "position": "",
+          "club": "基辅迪纳摩B队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2007-06-30",
+          "player": "奥列克西·齐奇科夫",
+          "player_id": "48051",
+          "position": "中场",
+          "club": "卡赞卡莫斯科",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2007-2008": {
+      "in": [
+        {
+          "date": "2007-07-01",
+          "player": "米科拉·莫罗兹尤克",
+          "player_id": "47940",
+          "position": "后卫",
+          "club": "基辅迪纳摩B队",
+          "type": "租借"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "利纳斯·克利马维丘斯",
+          "player_id": "48164",
+          "position": "后卫",
+          "club": "苏杜瓦",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "马里奥贺历",
+          "player_id": "48155",
+          "position": "",
+          "club": "布尔诺",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "第比利斯迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "奥斯马尔·费雷拉",
+          "player_id": "48153",
+          "position": "中场",
+          "club": "莫斯科中央陆军",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-06-30",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2007-07-01",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2007-12-31",
+          "player": "米科拉·莫罗兹尤克",
+          "player_id": "47940",
+          "position": "后卫",
+          "club": "基辅迪纳摩B队",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2008-2009": {
+      "in": [
+        {
+          "date": "2008-07-01",
+          "player": "卡尼布洛茨基",
+          "player_id": "105863",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-07-01",
+          "player": "卡维林",
+          "player_id": "100890",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-07-01",
+          "player": "科诺普良卡",
+          "player_id": "48149",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-08-01",
+          "player": "伊戈.洛洛",
+          "player_id": "48172",
+          "position": "",
+          "club": "顿涅冶金",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "德里克.科尔曼耶克",
+          "player_id": "43684",
+          "position": "",
+          "club": "塔夫里亚",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2008-08-25",
+          "player": "谢尔盖.科尔尼伦科",
+          "player_id": "46547",
+          "position": "",
+          "club": "托木斯克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "伊戈.洛洛",
+          "player_id": "48172",
+          "position": "",
+          "club": "摩纳哥",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "史达锡夫",
+          "player_id": "48174",
+          "position": "守门员",
+          "club": "塔夫里亚",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2009-2010": {
+      "in": [
+        {
+          "date": "2009-07-01",
+          "player": "车贝雅克科",
+          "player_id": "48513",
+          "position": "后卫",
+          "club": "克夏基夫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-07-01",
+          "player": "卡莫扎",
+          "player_id": "114300",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-07-24",
+          "player": "耶夫根·塞莱兹诺夫",
+          "player_id": "48088",
+          "position": "中锋",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-08-01",
+          "player": "拉楚夫卡",
+          "player_id": "15918",
+          "position": "",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "曼久克",
+          "player_id": "48402",
+          "position": "后卫",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "泽斯塔弗尼",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "塞吉·克拉夫琴科",
+          "player_id": "85008",
+          "position": "中前卫",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-06-30",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-06-30",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "基辅阿森纳",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-06-30",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-06-30",
+          "player": "卡尼布洛茨基",
+          "player_id": "105863",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2009-07-01",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "卡尼布洛茨基",
+          "player_id": "105863",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2010-03-01",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2010-03-01",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "基辅阿森纳",
+          "type": "租借"
+        }
+      ]
+    },
+    "2010-2011": {
+      "in": [
+        {
+          "date": "2010-08-01",
+          "player": "卡拉绍克斯",
+          "player_id": "89271",
+          "position": "前锋",
+          "club": "斯孔托",
+          "type": "租借"
+        },
+        {
+          "date": "2010-08-17",
+          "player": "格拉基",
+          "player_id": "48090",
+          "position": "中锋",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-12-01",
+          "player": "卡维林",
+          "player_id": "100890",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-12-01",
+          "player": "利纳斯·克利马维丘斯",
+          "player_id": "48164",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2010-12-31",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "马修斯",
+          "player_id": "35580",
+          "position": "",
+          "club": "布拉加",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "R.巴真高",
+          "player_id": "85824",
+          "position": "中前卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "里瓦斯",
+          "player_id": "26846",
+          "position": "",
+          "club": "国际米兰",
+          "type": "租借"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "古利安奴",
+          "player_id": "81268",
+          "position": "中场",
+          "club": "巴西国际",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-26",
+          "player": "因库姆",
+          "player_id": "65671",
+          "position": "后卫",
+          "club": "巴塞尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-27",
+          "player": "伊万·斯特里尼奇",
+          "player_id": "78477",
+          "position": "后卫",
+          "club": "斯普利特海杜克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-06-30",
+          "player": "萨莫丁",
+          "player_id": "48146",
+          "position": "前锋",
+          "club": "基辅阿森纳",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2010-07-01",
+          "player": "卡莫扎",
+          "player_id": "114300",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-07-01",
+          "player": "萨莫丁",
+          "player_id": "48146",
+          "position": "前锋",
+          "club": "基辅阿森纳",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-12-01",
+          "player": "卡拉绍克斯",
+          "player_id": "89271",
+          "position": "前锋",
+          "club": "斯孔托",
+          "type": "租借结束"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "利纳斯·克利马维丘斯",
+          "player_id": "48164",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "卡维林",
+          "player_id": "100890",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-02-01",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2011-02-28",
+          "player": "J.简卡华",
+          "player_id": "48154",
+          "position": "后腰",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2011-03-01",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "基辅阿森纳",
+          "type": "租借"
+        },
+        {
+          "date": "2011-06-30",
+          "player": "里瓦斯",
+          "player_id": "26846",
+          "position": "",
+          "club": "国际米兰",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2011-2012": {
+      "in": [
+        {
+          "date": "2011-07-01",
+          "player": "德雷克·博阿滕",
+          "player_id": "18350",
+          "position": "",
+          "club": "赫塔菲",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "安东洛夫",
+          "player_id": "101383",
+          "position": "中场",
+          "club": "马里乌波尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "丹尼斯·古拉科夫",
+          "player_id": "100893",
+          "position": "右后卫",
+          "club": "禾斯克拉",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-10",
+          "player": "奥利尼克",
+          "player_id": "85811",
+          "position": "左边锋",
+          "club": "梅塔利斯特(bis 2016)",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-11",
+          "player": "佐祖利亚",
+          "player_id": "47933",
+          "position": "前锋",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-08-12",
+          "player": "卡利尼奇",
+          "player_id": "28304",
+          "position": "前锋",
+          "club": "布莱克本",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-12-31",
+          "player": "萨莫丁",
+          "player_id": "48146",
+          "position": "前锋",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2011-12-31",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-01-20",
+          "player": "翁德雷伊·马祖赫",
+          "player_id": "66165",
+          "position": "",
+          "club": "安德莱赫特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-03-01",
+          "player": "卡维林",
+          "player_id": "100890",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-03-01",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-06-30",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-06-30",
+          "player": "安东尼奥·贾科利斯",
+          "player_id": "86367",
+          "position": "右边锋",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2011-07-01",
+          "player": "瑟基亚.纳扎伦科",
+          "player_id": "48158",
+          "position": "中场",
+          "club": "塔夫里亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "德里克.科尔曼耶克",
+          "player_id": "43684",
+          "position": "",
+          "club": "基辅阿森纳",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "耶夫根·塞莱兹诺夫",
+          "player_id": "48088",
+          "position": "中锋",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "奥斯马尔·费雷拉",
+          "player_id": "48153",
+          "position": "中场",
+          "club": "阿根廷独立",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "萨莫丁",
+          "player_id": "48146",
+          "position": "前锋",
+          "club": "克里夫巴斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "马里奥贺历",
+          "player_id": "48155",
+          "position": "",
+          "club": "布拉格斯巴达",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "安东洛夫",
+          "player_id": "101383",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "利斯特斯基",
+          "player_id": "98202",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "安东尼奥·贾科利斯",
+          "player_id": "86367",
+          "position": "右边锋",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2012-02-01",
+          "player": "格拉基",
+          "player_id": "48090",
+          "position": "中锋",
+          "club": "卡帕迪",
+          "type": "租借"
+        }
+      ]
+    },
+    "2012-2013": {
+      "in": [
+        {
+          "date": "2012-07-01",
+          "player": "D.舍利科夫",
+          "player_id": "85823",
+          "position": "守门员",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-08-10",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-08-29",
+          "player": "耶夫根·塞莱兹诺夫",
+          "player_id": "48088",
+          "position": "中锋",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-08-30",
+          "player": "J.简卡华",
+          "player_id": "48154",
+          "position": "后腰",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-08-31",
+          "player": "阿特姆.费德茨基",
+          "player_id": "48091",
+          "position": "后卫",
+          "club": "顿涅茨克矿工",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-12-31",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "基辅阿森纳",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-12-31",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "基辅阿森纳",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-01-31",
+          "player": "巴塞拉尔",
+          "player_id": "82216",
+          "position": "后卫",
+          "club": "瓦斯科达伽马",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "安东洛夫",
+          "player_id": "101383",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "因库姆",
+          "player_id": "65671",
+          "position": "后卫",
+          "club": "巴斯蒂亚",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "克里夫巴斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2012-07-01",
+          "player": "卡维林",
+          "player_id": "100890",
+          "position": "中场",
+          "club": "基辅迪纳摩B队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-07-01",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "基辅阿森纳",
+          "type": "租借"
+        },
+        {
+          "date": "2012-07-01",
+          "player": "安东尼奥·贾科利斯",
+          "player_id": "86367",
+          "position": "右边锋",
+          "club": "克里夫巴斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-07-12",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2012-07-12",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2012-07-30",
+          "player": "卡尼布洛茨基",
+          "player_id": "105863",
+          "position": "中场",
+          "club": "顿涅茨克矿工",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-08-30",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "克里夫巴斯",
+          "type": "租借"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "德尼索夫",
+          "player_id": "48169",
+          "position": "",
+          "club": "莫斯科火车头",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-01-31",
+          "player": "因库姆",
+          "player_id": "65671",
+          "position": "后卫",
+          "club": "巴斯蒂亚",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2013-2014": {
+      "in": [
+        {
+          "date": "2013-07-01",
+          "player": "I.瓦特萨巴",
+          "player_id": "100894",
+          "position": "守门员",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "波利提洛",
+          "player_id": "101115",
+          "position": "中前卫",
+          "club": "查诺莫斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "博伊科",
+          "player_id": "78607",
+          "position": "守门员",
+          "club": "基辅迪纳摩",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-04",
+          "player": "弗拉德",
+          "player_id": "106710",
+          "position": "后卫",
+          "club": "潘杜里",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-08-18",
+          "player": "加马",
+          "player_id": "96658",
+          "position": "前锋",
+          "club": "拉科鲁尼亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "D.舍利科夫",
+          "player_id": "85823",
+          "position": "守门员",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-02-27",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "卡帕迪",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "卡帕迪",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "卡帕迪",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "卡帕迪",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "格拉基",
+          "player_id": "48090",
+          "position": "中锋",
+          "club": "卡帕迪",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2013-07-01",
+          "player": "安东洛夫",
+          "player_id": "101383",
+          "position": "中场",
+          "club": "查诺莫斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "卡帕迪",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "卡帕迪",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "德雷克·博阿滕",
+          "player_id": "18350",
+          "position": "",
+          "club": "富勒姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "卡帕迪",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-11",
+          "player": "因库姆",
+          "player_id": "65671",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-18",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "卡帕迪",
+          "type": "租借"
+        },
+        {
+          "date": "2013-08-30",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-09-02",
+          "player": "D.舍利科夫",
+          "player_id": "85823",
+          "position": "守门员",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "博伊科",
+          "player_id": "78607",
+          "position": "守门员",
+          "club": "基辅迪纳摩",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2014-2015": {
+      "in": [
+        {
+          "date": "2014-07-01",
+          "player": "莱奥·马托斯",
+          "player_id": "75323",
+          "position": "",
+          "club": "查诺莫斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "博伊科",
+          "player_id": "78607",
+          "position": "守门员",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-23",
+          "player": "伏罗迪米尔·波里奥维",
+          "player_id": "101122",
+          "position": "后卫",
+          "club": "顿涅冶金",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-09-01",
+          "player": "V.盧赫科維赫",
+          "player_id": "125352",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-12-31",
+          "player": "奥列克山德·斯瓦托克",
+          "player_id": "118244",
+          "position": "后卫",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-12-31",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-12-31",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "布利兹尼琴科",
+          "player_id": "118246",
+          "position": "右边锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-07",
+          "player": "埃吉迪奥",
+          "player_id": "83727",
+          "position": "左后卫",
+          "club": "克鲁塞罗",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-11",
+          "player": "罗曼·贝祖斯",
+          "player_id": "85729",
+          "position": "中场",
+          "club": "基辅迪纳摩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-09",
+          "player": "齐格林斯基",
+          "player_id": "48108",
+          "position": "后卫",
+          "club": "顿涅茨克矿工",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-03-02",
+          "player": "帕帕·古耶",
+          "player_id": "48014",
+          "position": "",
+          "club": "梅塔利斯特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "I.瓦特萨巴",
+          "player_id": "100894",
+          "position": "守门员",
+          "club": "那夫托维克",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "R.巴真高",
+          "player_id": "85824",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2014-07-01",
+          "player": "卢真尼迪斯",
+          "player_id": "82326",
+          "position": "",
+          "club": "奥莫尼亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "P.帕沙尔夫",
+          "player_id": "126320",
+          "position": "后卫",
+          "club": "扎波罗热米塔路",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "古利安奴",
+          "player_id": "81268",
+          "position": "中场",
+          "club": "格雷米奥",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "丹尼斯·古拉科夫",
+          "player_id": "100893",
+          "position": "右后卫",
+          "club": "梅塔利斯特(bis 2016)",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "德米特罗·雷巴",
+          "player_id": "126318",
+          "position": "中场",
+          "club": "扎波罗热米塔路",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "格拉基",
+          "player_id": "48090",
+          "position": "中锋",
+          "club": "顿涅茨克矿工",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "奥利尼克",
+          "player_id": "85811",
+          "position": "左边锋",
+          "club": "维迪斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-24",
+          "player": "R.巴真高",
+          "player_id": "85824",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-25",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-25",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-25",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-08-15",
+          "player": "奥列克山德·斯瓦托克",
+          "player_id": "118244",
+          "position": "后卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2014-08-31",
+          "player": "因库姆",
+          "player_id": "65671",
+          "position": "后卫",
+          "club": "华盛顿联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-05",
+          "player": "伊万·斯特里尼奇",
+          "player_id": "78477",
+          "position": "后卫",
+          "club": "那不勒斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-19",
+          "player": "波利提洛",
+          "player_id": "101115",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2015-02-23",
+          "player": "伏罗迪米尔·波里奥维",
+          "player_id": "101122",
+          "position": "后卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2015-02-25",
+          "player": "I.瓦特萨巴",
+          "player_id": "100894",
+          "position": "守门员",
+          "club": "那夫托维克",
+          "type": "租借"
+        },
+        {
+          "date": "2015-03-31",
+          "player": "埃吉迪奥",
+          "player_id": "83727",
+          "position": "左后卫",
+          "club": "帕尔梅拉斯",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2015-2016": {
+      "in": [
+        {
+          "date": "2015-08-07",
+          "player": "坎波斯·达尼洛",
+          "player_id": "88388",
+          "position": "",
+          "club": "顿涅冶金",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-08-13",
+          "player": "M.巴巴杜迪",
+          "player_id": "85288",
+          "position": "前锋",
+          "club": "沃林",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-08-20",
+          "player": "约翰·鲁伊斯",
+          "player_id": "179012",
+          "position": "前锋",
+          "club": "里尔",
+          "type": "租借"
+        },
+        {
+          "date": "2015-08-31",
+          "player": "安迪臣比高",
+          "player_id": "100629",
+          "position": "",
+          "club": "弗拉门戈",
+          "type": "租借"
+        },
+        {
+          "date": "2015-09-01",
+          "player": "托梅卡克",
+          "player_id": "67847",
+          "position": "后卫",
+          "club": "里耶卡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-12-31",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-12-31",
+          "player": "波利提洛",
+          "player_id": "101115",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-02-18",
+          "player": "弗拉基米尔·阿达缪克",
+          "player_id": "134713",
+          "position": "右后卫",
+          "club": "D.斯塔尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "塞吉·克拉夫琴科",
+          "player_id": "85008",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "那夫托维克",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "伏罗迪米尔·波里奥维",
+          "player_id": "101122",
+          "position": "后卫",
+          "club": "沃林",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "阿尔乔姆·多夫比克",
+          "player_id": "151464",
+          "position": "前锋",
+          "club": "奥林匹亚巴尔蒂",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2015-07-01",
+          "player": "翁德雷伊·马祖赫",
+          "player_id": "66165",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-09",
+          "player": "科诺普良卡",
+          "player_id": "48149",
+          "position": "",
+          "club": "塞维利亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-07-17",
+          "player": "塞吉·克拉夫琴科",
+          "player_id": "85008",
+          "position": "中前卫",
+          "club": "沃林",
+          "type": "租借"
+        },
+        {
+          "date": "2015-08-12",
+          "player": "R.巴真高",
+          "player_id": "85824",
+          "position": "中前卫",
+          "club": "D.斯塔尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-08-14",
+          "player": "卡利尼奇",
+          "player_id": "28304",
+          "position": "前锋",
+          "club": "佛罗伦萨",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-08-16",
+          "player": "J.简卡华",
+          "player_id": "48154",
+          "position": "后腰",
+          "club": "兰斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-12-13",
+          "player": "M.巴巴杜迪",
+          "player_id": "85288",
+          "position": "前锋",
+          "club": "拉加竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-01-20",
+          "player": "坎波斯·达尼洛",
+          "player_id": "88388",
+          "position": "",
+          "club": "安塔利亚体育",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-01-22",
+          "player": "博伊科",
+          "player_id": "78607",
+          "position": "守门员",
+          "club": "贝西克塔斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-02-04",
+          "player": "瓦列里",
+          "player_id": "117128",
+          "position": "中前卫",
+          "club": "基辅迪纳摩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-25",
+          "player": "耶夫根·塞莱兹诺夫",
+          "player_id": "48088",
+          "position": "中锋",
+          "club": "库班",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-26",
+          "player": "Y.波哈希里",
+          "player_id": "85822",
+          "position": "前锋",
+          "club": "那夫托维克",
+          "type": "租借"
+        },
+        {
+          "date": "2016-04-09",
+          "player": "阿尔乔姆·多夫比克",
+          "player_id": "151464",
+          "position": "前锋",
+          "club": "奥林匹亚巴尔蒂",
+          "type": "租借"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "约翰·鲁伊斯",
+          "player_id": "179012",
+          "position": "前锋",
+          "club": "里尔",
+          "type": "租借结束"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "安迪臣比高",
+          "player_id": "100629",
+          "position": "",
+          "club": "弗拉门戈",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2016-2017": {
+      "in": [
+        {
+          "date": "2016-06-30",
+          "player": "迈赫伦高",
+          "player_id": "43074",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "奥尔克西.拉林",
+          "player_id": "153369",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "德米特里纳吉耶夫",
+          "player_id": "205601",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "伊戈尔·科古特",
+          "player_id": "145221",
+          "position": "中前卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "那吉夫",
+          "player_id": "152453",
+          "position": "",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "马克西姆·洛皮尤诺克",
+          "player_id": "183838",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "丹尼斯·巴兰尤克",
+          "player_id": "159729",
+          "position": "中锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "尤里·瓦库尔科",
+          "player_id": "147859",
+          "position": "中前卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "弗拉德斯拉夫·科切尔金",
+          "player_id": "148327",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-08-18",
+          "player": "安迪臣比高",
+          "player_id": "100629",
+          "position": "",
+          "club": "弗拉门戈",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-10-01",
+          "player": "安德烈·卢宁",
+          "player_id": "150290",
+          "position": "守门员",
+          "club": "迪尼普U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "亚历山大·萨弗罗诺夫",
+          "player_id": "177997",
+          "position": "中卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "丹尼斯·克斯特辛",
+          "player_id": "176453",
+          "position": "前腰",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "马克西姆·卢诺夫",
+          "player_id": "150285",
+          "position": "左边锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "奥列赫·科朱什科",
+          "player_id": "150017",
+          "position": "中锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "叶夫根·切伯克",
+          "player_id": "153046",
+          "position": "后卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2016-07-01",
+          "player": "马修斯",
+          "player_id": "35580",
+          "position": "",
+          "club": "沧州雄狮",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "齐格林斯基",
+          "player_id": "48108",
+          "position": "后卫",
+          "club": "AEK雅典",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "沙科霍夫",
+          "player_id": "85020",
+          "position": "中前卫",
+          "club": "塞萨洛尼基",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "莱奥·马托斯",
+          "player_id": "75323",
+          "position": "",
+          "club": "塞萨洛尼基",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "加马",
+          "player_id": "96658",
+          "position": "前锋",
+          "club": "拉科鲁尼亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-03",
+          "player": "亚历山大.科巴基德",
+          "player_id": "48152",
+          "position": "中场",
+          "club": "禾斯克拉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-12",
+          "player": "罗曼·贝祖斯",
+          "player_id": "85729",
+          "position": "中场",
+          "club": "圣图尔登",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-15",
+          "player": "托梅卡克",
+          "player_id": "67847",
+          "position": "后卫",
+          "club": "利雅得胜利",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-19",
+          "player": "巴塞拉尔",
+          "player_id": "82216",
+          "position": "后卫",
+          "club": "圣保罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-27",
+          "player": "阿特姆.费德茨基",
+          "player_id": "48091",
+          "position": "后卫",
+          "club": "达姆施塔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-27",
+          "player": "佐祖利亚",
+          "player_id": "47933",
+          "position": "前锋",
+          "club": "皇家贝蒂斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-08-01",
+          "player": "拉楚夫卡",
+          "player_id": "15918",
+          "position": "",
+          "club": "卡尔维纳",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-08-31",
+          "player": "帕帕·古耶",
+          "player_id": "48014",
+          "position": "",
+          "club": "罗斯托夫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "安迪臣比高",
+          "player_id": "100629",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-16",
+          "player": "布利兹尼琴科",
+          "player_id": "118246",
+          "position": "右边锋",
+          "club": "卡拉比克体育",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-29",
+          "player": "奥尔克西.拉林",
+          "player_id": "153369",
+          "position": "",
+          "club": "多瑙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-01-30",
+          "player": "V.盧赫科維赫",
+          "player_id": "125352",
+          "position": "中场",
+          "club": "标准列日",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-11",
+          "player": "波利提洛",
+          "player_id": "101115",
+          "position": "中前卫",
+          "club": "奥肯咸特普斯",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2017-2018": {
+      "in": [
+        {
+          "date": "2017-07-01",
+          "player": "阿森蒂·多罗申科",
+          "player_id": "215580",
+          "position": "中场",
+          "club": "迪尼普U17",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "奥列格·艾林",
+          "player_id": "177763",
+          "position": "右中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "伊凡·波诺马伦科",
+          "player_id": "186515",
+          "position": "守门员",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "Y.纳扎里纳",
+          "player_id": "201181",
+          "position": "中场",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "丹尼斯·塔拉杜达",
+          "player_id": "208172",
+          "position": "后卫",
+          "club": "迪尼普U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "亚历山大·纳扎连科",
+          "player_id": "177783",
+          "position": "前锋",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-07",
+          "player": "德米特罗·塞门诺夫",
+          "player_id": "190968",
+          "position": "中卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-07",
+          "player": "沃伊蒂霍夫斯基",
+          "player_id": "191121",
+          "position": "中卫",
+          "club": "迪尼普U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "阿瑟尼巴塔戈夫",
+          "player_id": "186706",
+          "position": "中卫",
+          "club": "迪尼普U17",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "瓦伦丁·鲁布钦斯基",
+          "player_id": "229337",
+          "position": "中场",
+          "club": "迪尼普U17",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2017-07-01",
+          "player": "奥列克山德·斯瓦托克",
+          "player_id": "118244",
+          "position": "后卫",
+          "club": "柔亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "D.舍利科夫",
+          "player_id": "85823",
+          "position": "守门员",
+          "club": "伊斯洛奇明斯克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "弗拉德",
+          "player_id": "106710",
+          "position": "后卫",
+          "club": "克卢日",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "叶夫根·切伯克",
+          "player_id": "153046",
+          "position": "后卫",
+          "club": "柔亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "弗拉德斯拉夫·科切尔金",
+          "player_id": "148327",
+          "position": "中场",
+          "club": "柔亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "马克西姆·卢诺夫",
+          "player_id": "150285",
+          "position": "左边锋",
+          "club": "柔亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "亚历山大·萨弗罗诺夫",
+          "player_id": "177997",
+          "position": "中卫",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "安德烈·卢宁",
+          "player_id": "150290",
+          "position": "守门员",
+          "club": "柔亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "奥列赫·科朱什科",
+          "player_id": "150017",
+          "position": "中锋",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "塞吉·克拉夫琴科",
+          "player_id": "85008",
+          "position": "中前卫",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "迈赫伦高",
+          "player_id": "43074",
+          "position": "",
+          "club": "第聂伯罗",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "伏罗迪米尔·波里奥维",
+          "player_id": "101122",
+          "position": "后卫",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "马克西姆·洛皮尤诺克",
+          "player_id": "183838",
+          "position": "后卫",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-06",
+          "player": "伊戈尔·科古特",
+          "player_id": "145221",
+          "position": "中前卫",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-12",
+          "player": "弗拉基米尔·阿达缪克",
+          "player_id": "134713",
+          "position": "右后卫",
+          "club": "维勒斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-08-01",
+          "player": "德米特里纳吉耶夫",
+          "player_id": "205601",
+          "position": "后卫",
+          "club": "马鲁维克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-09-09",
+          "player": "丹尼斯·巴兰尤克",
+          "player_id": "159729",
+          "position": "中锋",
+          "club": "克拉科夫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-01-08",
+          "player": "Y.纳扎里纳",
+          "player_id": "201181",
+          "position": "中场",
+          "club": "安特卫普",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-23",
+          "player": "尤里·瓦库尔科",
+          "player_id": "147859",
+          "position": "中前卫",
+          "club": "贝尔格莱德游击",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-31",
+          "player": "阿尔乔姆·多夫比克",
+          "player_id": "151464",
+          "position": "前锋",
+          "club": "中日德兰",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-28",
+          "player": "奥列格·艾林",
+          "player_id": "177763",
+          "position": "右中场",
+          "club": "高华尤夫卡",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2018-2019": {
+      "in": [
+        {
+          "date": "2018-07-01",
+          "player": "米罗斯拉夫·佐诺维科",
+          "player_id": "212760",
+          "position": "守门员",
+          "club": "迪尼普U17",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2018-07-01",
+          "player": "沃伊蒂霍夫斯基",
+          "player_id": "191121",
+          "position": "中卫",
+          "club": "查诺莫斯U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "丹尼斯·塔拉杜达",
+          "player_id": "208172",
+          "position": "后卫",
+          "club": "沃斯卡拉U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "阿瑟尼巴塔戈夫",
+          "player_id": "186706",
+          "position": "中卫",
+          "club": "SK迪尼普U19",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "阿森蒂·多罗申科",
+          "player_id": "215580",
+          "position": "中场",
+          "club": "高华尤夫卡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "伊凡·波诺马伦科",
+          "player_id": "186515",
+          "position": "守门员",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "亚历山大·纳扎连科",
+          "player_id": "177783",
+          "position": "前锋",
+          "club": "第聂伯罗",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "德米特罗·塞门诺夫",
+          "player_id": "190968",
+          "position": "中卫",
+          "club": "FK亚历山德里亚B队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-19",
+          "player": "丹尼斯·克斯特辛",
+          "player_id": "176453",
+          "position": "前腰",
+          "club": "高华尤夫卡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-25",
+          "player": "瓦伦丁·鲁布钦斯基",
+          "player_id": "229337",
+          "position": "中场",
+          "club": "SK迪尼普U19",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2019-2020": {
+      "in": [],
+      "out": [
+        {
+          "date": "2019-08-01",
+          "player": "米罗斯拉夫·佐诺维科",
+          "player_id": "212760",
+          "position": "守门员",
+          "club": "SK迪尼普B队",
+          "type": "完全所有"
+        }
+      ]
+    }
+  }
+}

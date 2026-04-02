@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爬虫监控面板</title>
+    <style>
+        :root {
+            --primary: #d43c33;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #3b82f6;
+            --bg-main: #f0f2f5;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-light: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), #b8342c);
+            color: white;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .header-info {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            padding: 16px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .stat-value.success { color: var(--success); }
+        .stat-value.warning { color: var(--warning); }
+        .stat-value.danger { color: var(--danger); }
+        .stat-value.info { color: var(--info); }
+        
+        .stat-progress {
+            margin-top: 8px;
+            height: 4px;
+            background: #e5e7eb;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .stat-progress-bar {
+            height: 100%;
+            background: var(--success);
+            transition: width 0.3s;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        .card-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-light);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .card-body {
+            padding: 16px;
+        }
+        
+        .process-status {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #f9fafb;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-indicator.running { background: var(--success); }
+        .status-indicator.stopped { background: var(--danger); }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .process-info {
+            flex: 1;
+        }
+        
+        .process-name {
+            font-weight: 500;
+        }
+        
+        .process-detail {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-success { background: var(--success); color: white; }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn:hover { opacity: 0.9; }
+        
+        .log-container {
+            background: #1f2937;
+            color: #10b981;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 12px;
+            padding: 12px;
+            border-radius: 6px;
+            max-height: 400px;
+            overflow-y: auto;
+            line-height: 1.6;
+        }
+        
+        .log-line {
+            padding: 2px 0;
+        }
+        
+        .log-line.error { color: #ef4444; }
+        .log-line.warning { color: #f59e0b; }
+        .log-line.success { color: #10b981; }
+        .log-line.info { color: #3b82f6; }
+        
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .team-item {
+            padding: 8px;
+            background: #f9fafb;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        .team-item.success { border-left: 3px solid var(--success); }
+        .team-item.failed { border-left: 3px solid var(--danger); }
+        
+        .progress-bar-large {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 16px 0;
+        }
+        
+        .progress-bar-large .bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--success), #10b981);
+            transition: width 0.3s;
+        }
+        
+        .refresh-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary);
+            font-size: 13px;
+        }
+        
+        .refresh-btn:hover {
+            text-decoration: underline;
+        }
+        
+        .last-update {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>爬虫监控面板</h1>
+            <div class="header-info">实时监控爬虫运行状态和数据获取进度</div>
+        </div>
+        <div>
+            <button class="btn btn-primary" onclick="refreshAll()">刷新数据</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- 统计卡片 -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">总球队数</div>
+                <div class="stat-value" id="totalTeams">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">已完成</div>
+                <div class="stat-value success" id="completedTeams">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">失败</div>
+                <div class="stat-value danger" id="failedTeams">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">完成率</div>
+                <div class="stat-value info" id="progressPercent">-</div>
+                <div class="stat-progress">
+                    <div class="stat-progress-bar" id="progressBar" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 进度条 -->
+        <div class="card">
+            <div class="card-body">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <span>整体进度</span>
+                    <span id="progressText">0 / 0</span>
+                </div>
+                <div class="progress-bar-large">
+                    <div class="bar" id="largeProgressBar" style="width: 0%"></div>
+                </div>
+                <div class="last-update" id="lastUpdate">最后更新: -</div>
+            </div>
+        </div>
+        
+        <!-- 进程状态 -->
+        <div class="card">
+            <div class="card-header">
+                <span>爬虫进程状态</span>
+                <button class="refresh-btn" onclick="checkProcess()">检查进程</button>
+            </div>
+            <div class="card-body">
+                <div id="processList">
+                    <div class="process-status">
+                        <div class="status-indicator stopped"></div>
+                        <div class="process-info">
+                            <div class="process-name">球队数据爬虫</div>
+                            <div class="process-detail">状态: 检查中...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 实时日志 -->
+        <div class="card">
+            <div class="card-header">
+                <span>实时日志</span>
+                <button class="refresh-btn" onclick="loadLogs()">刷新日志</button>
+            </div>
+            <div class="card-body">
+                <div class="log-container" id="logContainer">
+                    加载中...
+                </div>
+            </div>
+        </div>
+        
+        <!-- 最近完成的球队 -->
+        <div class="card">
+            <div class="card-header">
+                <span>已完成的球队 (最近100个)</span>
+            </div>
+            <div class="card-body">
+                <div class="team-list" id="completedList">
+                    加载中...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let autoRefresh = true;
+        let refreshInterval;
+        const API_BASE = window.location.port === '5555' ? '' : 'http://localhost:5555';
+        
+        // 加载统计信息
+        async function loadStats() {
+            try {
+                // 先尝试API
+                try {
+                    const response = await fetch(`${API_BASE}/api/stats`);
+                    const data = await response.json();
+                    
+                    document.getElementById('totalTeams').textContent = data.total;
+                    document.getElementById('completedTeams').textContent = data.completed;
+                    document.getElementById('failedTeams').textContent = data.failed || 0;
+                    document.getElementById('progressPercent').textContent = data.progress + '%';
+                    document.getElementById('progressBar').style.width = data.progress + '%';
+                    document.getElementById('largeProgressBar').style.width = data.progress + '%';
+                    document.getElementById('progressText').textContent = `${data.completed} / ${data.total}`;
+                    
+                } catch {
+                    // 降级到直接读取文件
+                    const response = await fetch('data/all_team_ids.json');
+                    const allIds = await response.json();
+                    document.getElementById('totalTeams').textContent = allIds.length;
+                    
+                    try {
+                        const completedResp = await fetch('data/completed_teams.json');
+                        const completed = await completedResp.json();
+                        
+                        const completedCount = completed.length;
+                        const total = allIds.length;
+                        const percent = total > 0 ? ((completedCount / total) * 100).toFixed(1) : 0;
+                        
+                        document.getElementById('completedTeams').textContent = completedCount;
+                        document.getElementById('progressPercent').textContent = percent + '%';
+                        document.getElementById('progressBar').style.width = percent + '%';
+                        document.getElementById('largeProgressBar').style.width = percent + '%';
+                        document.getElementById('progressText').textContent = `${completedCount} / ${total}`;
+                        
+                        renderCompletedList(completed.slice(-100).reverse());
+                    } catch {
+                        document.getElementById('completedTeams').textContent = '0';
+                        document.getElementById('progressPercent').textContent = '0%';
+                    }
+                }
+                
+            } catch (e) {
+                console.error('加载统计信息失败:', e);
+            }
+        }
+        
+        // 渲染已完成列表
+        function renderCompletedList(teams) {
+            const container = document.getElementById('completedList');
+            if (teams.length === 0) {
+                container.innerHTML = '<div style="text-align:center;color:var(--text-secondary);padding:20px;">暂无数据</div>';
+                return;
+            }
+            
+            container.innerHTML = teams.map(tid => 
+                `<div class="team-item success">球队 ${tid}</div>`
+            ).join('');
+        }
+        
+        // 检查进程状态
+        async function checkProcess() {
+            try {
+                // 尝试API
+                try {
+                    const response = await fetch(`${API_BASE}/api/process`);
+                    const data = await response.json();
+                    
+                    const processList = document.getElementById('processList');
+                    
+                    if (data.running && data.processes.length > 0) {
+                        const proc = data.processes[0];
+                        processList.innerHTML = `
+                            <div class="process-status">
+                                <div class="status-indicator running"></div>
+                                <div class="process-info">
+                                    <div class="process-name">球队数据爬虫</div>
+                                    <div class="process-detail">
+                                        PID: ${proc.pid} | CPU: ${proc.cpu}% | 内存: ${proc.mem}% | 运行时间: ${proc.time}
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger" onclick="stopProcess(${proc.pid})">停止</button>
+                            </div>
+                        `;
+                    } else {
+                        processList.innerHTML = `
+                            <div class="process-status">
+                                <div class="status-indicator stopped"></div>
+                                <div class="process-info">
+                                    <div class="process-name">球队数据爬虫</div>
+                                    <div class="process-detail">状态: 已停止</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return;
+                } catch {}
+                
+                // 降级方案：读取日志判断
+                const logResp = await fetch('batch_update_full.log');
+                if (logResp.ok) {
+                    const logText = await logResp.text();
+                    const lastLine = logText.split('\n').filter(l => l.trim()).slice(-1)[0];
+                    
+                    const hasRecentActivity = logText.includes('正在更新球队') || 
+                                              logText.includes('数据已保存');
+                    
+                    const processList = document.getElementById('processList');
+                    processList.innerHTML = `
+                        <div class="process-status">
+                            <div class="status-indicator ${hasRecentActivity ? 'running' : 'stopped'}"></div>
+                            <div class="process-info">
+                                <div class="process-name">球队数据爬虫</div>
+                                <div class="process-detail">
+                                    状态: ${hasRecentActivity ? '运行中' : '已停止'}
+                                    ${lastLine ? '<br>最后活动: ' + lastLine.substring(0, 80) : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            } catch (e) {
+                console.error('检查进程失败:', e);
+            }
+        }
+        
+        // 加载日志
+        async function loadLogs() {
+            try {
+                // 尝试API
+                try {
+                    const response = await fetch(`${API_BASE}/api/logs`);
+                    const data = await response.json();
+                    
+                    const container = document.getElementById('logContainer');
+                    container.innerHTML = data.logs.map(line => {
+                        let className = '';
+                        if (line.includes('失败') || line.includes('错误') || line.includes('Error')) {
+                            className = 'error';
+                        } else if (line.includes('成功') || line.includes('保存')) {
+                            className = 'success';
+                        } else if (line.includes('警告')) {
+                            className = 'warning';
+                        }
+                        return `<div class="log-line ${className}">${escapeHtml(line)}</div>`;
+                    }).join('');
+                    
+                    container.scrollTop = container.scrollHeight;
+                    
+                    document.getElementById('lastUpdate').textContent = 
+                        '最后更新: ' + new Date().toLocaleString('zh-CN');
+                    return;
+                } catch {}
+                
+                // 降级方案
+                const response = await fetch('batch_update_full.log');
+                const text = await response.text();
+                const lines = text.split('\n').filter(l => l.trim()).slice(-100);
+                
+                const container = document.getElementById('logContainer');
+                container.innerHTML = lines.map(line => {
+                    let className = '';
+                    if (line.includes('失败') || line.includes('错误') || line.includes('Error')) {
+                        className = 'error';
+                    } else if (line.includes('成功') || line.includes('保存')) {
+                        className = 'success';
+                    } else if (line.includes('警告')) {
+                        className = 'warning';
+                    }
+                    return `<div class="log-line ${className}">${escapeHtml(line)}</div>`;
+                }).join('');
+                
+                container.scrollTop = container.scrollHeight;
+                
+                document.getElementById('lastUpdate').textContent = 
+                    '最后更新: ' + new Date().toLocaleString('zh-CN');
+            } catch (e) {
+                document.getElementById('logContainer').textContent = '加载日志失败';
+            }
+        }
+        
+        // 停止进程
+        function stopProcess(pid) {
+            if (confirm(`确定要停止爬虫进程 (PID: ${pid}) 吗？`)) {
+                alert(`请在终端运行命令停止进程:\nkill ${pid}`);
+            }
+        }
+        
+        // HTML转义
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // 刷新所有数据
+        function refreshAll() {
+            loadStats();
+            checkProcess();
+            loadLogs();
+        }
+        
+        // 自动刷新
+        function startAutoRefresh() {
+            refreshAll();
+            refreshInterval = setInterval(refreshAll, 5000); // 每5秒刷新
+        }
+        
+        // 初始化
+        startAutoRefresh();
+    </script>
+</body>
+</html>

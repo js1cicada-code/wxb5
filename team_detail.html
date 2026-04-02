@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>球队详情</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-light: #eff6ff;
+            --accent: #f97316;
+            --accent-light: #fff7ed;
+            --bg-main: #f5f7fa;
+            --bg-card: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
+            --border-light: #e5e7eb;
+            --shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 0 12px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-back {
+            position: absolute;
+            left: 12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .header-back::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid #333;
+            border-bottom: 2px solid #333;
+            transform: rotate(45deg);
+        }
+        
+        .header-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .team-header {
+            background: var(--bg-card);
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .team-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            object-fit: contain;
+            background: #f5f5f5;
+        }
+        
+        .team-info {
+            flex: 1;
+        }
+        
+        .team-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .team-name-en {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        
+        .team-meta {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .team-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .nav-tabs {
+            background: var(--bg-card);
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .nav-tabs::-webkit-scrollbar { display: none; }
+        
+        .nav-tab {
+            flex-shrink: 0;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        .nav-tab.active {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .content-section {
+            padding: 12px;
+        }
+        
+        .section-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .info-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        
+        .info-value {
+            color: var(--text-primary);
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        .intro-text {
+            font-size: 13px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        
+        .intro-text p {
+            margin-bottom: 8px;
+        }
+        
+        .character-section {
+            margin-bottom: 16px;
+        }
+        
+        .character-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .character-title::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+        }
+        
+        .character-title.advantage::before {
+            background: #22c55e;
+        }
+        
+        .character-title.style::before {
+            background: #3b82f6;
+        }
+        
+        .character-title.weakness::before {
+            background: #ef4444;
+        }
+        
+        .character-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .character-tag {
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .character-tag.advantage {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .character-tag.style {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .character-tag.weakness {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        
+        .section-header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-left: auto;
+        }
+        
+        .tech-select {
+            padding: 4px 8px;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            font-size: 12px;
+            background: white;
+            color: var(--text-primary);
+        }
+        
+        .tech-toggle {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .tech-btn {
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            background: #f3f4f6;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+        
+        .tech-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .tech-btn:hover {
+            background: #e5e7eb;
+        }
+        
+        .tech-btn.active:hover {
+            background: #2563eb;
+        }
+        
+        .data-table th.tech-attack,
+        .data-table td.tech-attack {
+            display: table-cell;
+        }
+        
+        .data-table th.tech-defend,
+        .data-table td.tech-defend {
+            display: none;
+        }
+        
+        .data-table.show-defend th.tech-attack,
+        .data-table.show-defend td.tech-attack {
+            display: none;
+        }
+        
+        .data-table.show-defend th.tech-defend,
+        .data-table.show-defend td.tech-defend {
+            display: table-cell;
+        }
+        
+        .tech-stats-container {
+            margin-bottom: 12px;
+        }
+        
+        .tech-card {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .tech-card-header {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 10px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .tech-card-league {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .tech-card-winrate {
+            font-size: 12px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .tech-card-body {
+            padding: 12px;
+        }
+        
+        .tech-card-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .tech-card-row:last-child {
+            border-bottom: none;
+        }
+        
+        .tech-card-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .tech-card-value {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .tech-card-value.positive {
+            color: #10b981;
+        }
+        
+        .tech-card-value.negative {
+            color: #ef4444;
+        }
+        
+        .tech-card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .tech-card-item {
+            text-align: center;
+            padding: 8px;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+        
+        .tech-card-item-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 2px;
+        }
+        
+        .tech-card-item-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .table-container {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .data-table th {
+            background: #fafafa;
+            padding: 10px 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        
+        .data-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .player-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .player-number {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .player-number.captain {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        
+        .player-info {
+            flex: 1;
+        }
+        
+        .player-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .player-name-en {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+        
+        .player-position {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        
+        .player-stats {
+            text-align: right;
+            font-size: 12px;
+        }
+        
+        .player-stats-row {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .stat-label {
+            font-size: 10px;
+            color: var(--text-secondary);
+        }
+        
+        .position-section {
+            margin-bottom: 16px;
+        }
+        
+        .position-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .position-count {
+            font-size: 12px;
+            color: var(--text-secondary);
+            background: var(--bg-main);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .stat-box {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-box-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        .stat-box-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        
+        .stat-box-rate {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        
+        .hidden { display: none; }
+        
+        .honor-container {
+            padding: 0;
+        }
+        
+        .honor-card {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .honor-card-header {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .honor-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .honor-count {
+            background: #f59e0b;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: auto;
+        }
+        
+        .honor-years {
+            padding: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .honor-year {
+            background: #f3f4f6;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .honor-card.major .honor-card-header {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+        
+        .honor-card.major .honor-count {
+            background: #f59e0b;
+        }
+        
+        .honor-card.domestic .honor-card-header {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        }
+        
+        .honor-card.domestic .honor-count {
+            background: #3b82f6;
+        }
+        
+        .honor-card.european .honor-card-header {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+        
+        .honor-card.european .honor-count {
+            background: #10b981;
+        }
+        
+        .honor-card.other .honor-card-header {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+        }
+        
+        .honor-card.other .honor-count {
+            background: #8b5cf6;
+        }
+        
+        .cup-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 4px;
+        }
+        
+        .rank-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        
+        .rank-badge.top {
+            background: #10b981;
+            color: white;
+        }
+        
+        .rank-badge.bottom {
+            background: #ef4444;
+            color: white;
+        }
+        
+        .transfer-section {
+            margin-bottom: 12px;
+        }
+        
+        .transfer-card {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .transfer-header {
+            padding: 10px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .transfer-header.in {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+        }
+        
+        .transfer-header.out {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            color: #991b1b;
+        }
+        
+        .transfer-header .count {
+            margin-left: auto;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .transfer-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-bottom: 1px solid #f3f4f6;
+            gap: 8px;
+            font-size: 13px;
+        }
+        
+        .transfer-item:last-child {
+            border-bottom: none;
+        }
+        
+        .transfer-date {
+            color: var(--text-muted);
+            font-size: 11px;
+            min-width: 42px;
+            flex-shrink: 0;
+        }
+        
+        .transfer-player {
+            font-weight: 500;
+            color: var(--text-primary);
+            min-width: 60px;
+            flex-shrink: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .transfer-position {
+            font-size: 11px;
+            color: var(--text-muted);
+            min-width: 36px;
+            flex-shrink: 0;
+        }
+        
+        .transfer-club {
+            flex: 1;
+            color: var(--text-secondary);
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: right;
+        }
+        
+        .transfer-type {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        .transfer-type.loan {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .transfer-type.free {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .transfer-type.transfer {
+            background: #f3e8ff;
+            color: #6b21a8;
+        }
+        
+        .transfer-type.other {
+            background: #f3f4f6;
+            color: #4b5563;
+        }
+        
+        .players-list {
+            padding: 0;
+        }
+        
+        .player-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-bottom: 1px solid #f3f4f6;
+            gap: 8px;
+            font-size: 13px;
+        }
+        
+        .player-item:last-child {
+            border-bottom: none;
+        }
+        
+        .player-number {
+            font-weight: 600;
+            color: var(--text-muted);
+            min-width: 24px;
+            font-size: 12px;
+        }
+        
+        .player-name {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .player-stats {
+            display: flex;
+            gap: 8px;
+            font-size: 11px;
+        }
+        
+        .player-stats .stat {
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+        
+        .player-value {
+            font-size: 11px;
+            color: var(--success);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-back" onclick="history.back()"></div>
+        <div class="header-title" id="headerTitle">球队详情</div>
+    </div>
+    
+    <div class="team-header" id="teamHeader">
+        <img class="team-logo" id="teamLogo" src="" alt="">
+        <div class="team-info">
+            <div class="team-name" id="teamName">-</div>
+            <div class="team-name-en" id="teamNameEn">-</div>
+            <div class="team-meta" id="teamMeta"></div>
+        </div>
+    </div>
+    
+    <div class="nav-tabs" id="navTabs">
+        <div class="nav-tab active" data-tab="detail">球队数据</div>
+        <div class="nav-tab" data-tab="league">联赛统计</div>
+        <div class="nav-tab" data-tab="cup">杯赛统计</div>
+        <div class="nav-tab" data-tab="honor">球队荣誉</div>
+        <div class="nav-tab" data-tab="lineup">球队阵容</div>
+        <div class="nav-tab" data-tab="players">球员数据</div>
+        <div class="nav-tab" data-tab="history">球队走势</div>
+        <div class="nav-tab" data-tab="transfer">球员转会</div>
+    </div>
+    
+    <div class="content-section" id="detailSection">
+        <div class="section-title">球队特点</div>
+        <div class="info-card" id="teamCharacter"></div>
+        
+        <div class="section-title">
+            数据统计
+            <div class="section-header-right">
+                <select id="techLeagueSelect" class="tech-select"></select>
+            </div>
+        </div>
+        <div class="tech-stats-container" id="techStatsContainer"></div>
+        
+        <div class="section-title">基本信息</div>
+        <div class="info-card" id="basicInfo"></div>
+        
+        <div class="section-title">球队介绍</div>
+        <div class="info-card">
+            <div class="intro-text" id="teamIntro"></div>
+        </div>
+    </div>
+    
+    <div class="content-section hidden" id="leagueSection">
+        <div class="section-title">联赛统计</div>
+        <div class="stats-grid" id="leagueStatsGrid"></div>
+        <div class="table-container">
+            <table class="data-table" id="leagueTable">
+                <thead>
+                    <tr>
+                        <th>类型</th>
+                        <th>场次</th>
+                        <th>胜</th>
+                        <th>平</th>
+                        <th>负</th>
+                        <th>进球</th>
+                        <th>失球</th>
+                        <th>胜率</th>
+                    </tr>
+                </thead>
+                <tbody id="leagueTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="content-section hidden" id="cupSection">
+        <div class="section-title">杯赛统计</div>
+        <div id="cupStats"></div>
+        <div class="table-container">
+            <table class="data-table" id="cupTable">
+                <thead>
+                    <tr>
+                        <th>赛事</th>
+                        <th>场次</th>
+                        <th>胜</th>
+                        <th>平</th>
+                        <th>负</th>
+                        <th>进球</th>
+                        <th>胜率</th>
+                    </tr>
+                </thead>
+                <tbody id="cupTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="content-section hidden" id="honorSection">
+        <div class="section-title">球队荣誉</div>
+        <div class="info-card" id="honorList"></div>
+    </div>
+    
+    <div class="content-section hidden" id="lineupSection">
+        <div class="section-title">球队阵容</div>
+        <div id="lineupContainer"></div>
+    </div>
+    
+    <div class="content-section hidden" id="playersSection">
+        <div class="section-title">
+            球员数据
+            <div class="section-header-right">
+                <select id="playerPositionSelect" class="tech-select">
+                    <option value="all">全部位置</option>
+                    <option value="守门员">守门员</option>
+                    <option value="后卫">后卫</option>
+                    <option value="中场">中场</option>
+                    <option value="前锋">前锋</option>
+                </select>
+            </div>
+        </div>
+        <div id="playersContainer"></div>
+    </div>
+    
+    <div class="content-section hidden" id="historySection">
+        <div class="section-title">历史排名走势</div>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>赛季</th>
+                        <th>排名</th>
+                        <th>胜</th>
+                        <th>平</th>
+                        <th>负</th>
+                        <th>积分</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="content-section hidden" id="transferSection">
+        <div class="section-title">
+            球员转会
+            <div class="section-header-right">
+                <select id="transferSeasonSelect" class="tech-select"></select>
+            </div>
+        </div>
+        
+        <div class="transfer-section">
+            <div class="transfer-card" id="transferInCard">
+                <div class="transfer-header in">
+                    <span>转入球员</span>
+                    <span class="count" id="transferInCount">0人</span>
+                </div>
+                <div id="transferInList"></div>
+            </div>
+        </div>
+        
+        <div class="transfer-section">
+            <div class="transfer-card" id="transferOutCard">
+                <div class="transfer-header out">
+                    <span>转出球员</span>
+                    <span class="count" id="transferOutCount">0人</span>
+                </div>
+                <div id="transferOutList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let teamData = null;
+        let currentTab = 'detail';
+        
+        function getTeamId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id') || '19';
+        }
+        
+        async function loadTeamData() {
+            const teamId = getTeamId();
+            try {
+                const response = await fetch(`data/team_${teamId}.json?t=${Date.now()}`);
+                if (!response.ok) {
+                    document.getElementById('detailSection').innerHTML = '<div class="loading">暂无数据</div>';
+                    return;
+                }
+                teamData = await response.json();
+                renderTeam();
+            } catch(e) {
+                console.error('加载失败:', e);
+                document.getElementById('detailSection').innerHTML = '<div class="loading">加载失败</div>';
+            }
+        }
+        
+        function renderTeam() {
+            if (!teamData || !teamData.detail) {
+                document.getElementById('detailSection').innerHTML = '<div class="loading">暂无数据</div>';
+                return;
+            }
+            
+            const detail = teamData.detail;
+            
+            document.getElementById('headerTitle').textContent = detail.name_cn;
+            document.getElementById('teamName').textContent = detail.name_cn;
+            document.getElementById('teamNameEn').textContent = detail.name_en;
+            document.getElementById('teamLogo').src = detail.logo;
+            
+            const metaHtml = `
+                <div class="team-meta-item">${detail.city_cn || detail.city_en}</div>
+                <div class="team-meta-item">${detail.stadium_cn}</div>
+                <div class="team-meta-item">容量 ${detail.capacity}</div>
+            `;
+            document.getElementById('teamMeta').innerHTML = metaHtml;
+            
+            renderCharacter();
+            renderTechStats();
+            renderBasicInfo(detail);
+            renderIntro(detail.intro);
+            renderLeagueStats();
+            renderCupStats();
+            renderHonor();
+            renderLineup();
+            renderPlayers();
+            renderHistory();
+            renderTransfers();
+        }
+        
+        function renderCharacter() {
+            const techStats = teamData.tech_stats || [];
+            const leagueStats = teamData.league_stats || [];
+            
+            if (techStats.length === 0 && leagueStats.length === 0) {
+                document.getElementById('teamCharacter').innerHTML = '<div class="loading">暂无数据</div>';
+                return;
+            }
+            
+            const advantages = [];
+            const styles = [];
+            const weaknesses = [];
+            
+            const premierLeagueStats = techStats.find(s => s.league_id === '36') || techStats[0];
+            const leagueData = leagueStats[0] || null;
+            
+            if (premierLeagueStats) {
+                const winRate = parseFloat(premierLeagueStats.win_rate) || 0;
+                const totalMatches = parseInt(premierLeagueStats.total_matches) || 0;
+                const goalsPerMatch = totalMatches > 0 ? (parseInt(premierLeagueStats.total_goals) || 0) / totalMatches : 0;
+                const concededPerMatch = totalMatches > 0 ? (parseInt(premierLeagueStats.conceded) || 0) / totalMatches : 0;
+                
+                if (winRate >= 60) {
+                    advantages.push('胜率稳定');
+                } else if (winRate >= 50) {
+                    advantages.push('胜率尚可');
+                } else if (winRate < 30) {
+                    weaknesses.push('胜率偏低');
+                }
+                
+                if (goalsPerMatch >= 2) {
+                    advantages.push('进攻火力强');
+                } else if (goalsPerMatch >= 1.5) {
+                    styles.push('进攻尚可');
+                } else if (goalsPerMatch < 1) {
+                    weaknesses.push('进攻乏力');
+                }
+                
+                if (concededPerMatch <= 0.8) {
+                    advantages.push('防守稳固');
+                } else if (concededPerMatch <= 1.2) {
+                    styles.push('防守一般');
+                } else if (concededPerMatch > 1.5) {
+                    weaknesses.push('防守薄弱');
+                }
+                
+                const cleanSheets = parseInt(premierLeagueStats.clean_sheets) || 0;
+                if (cleanSheets > totalMatches * 0.3) {
+                    advantages.push('零封能力强');
+                }
+            }
+            
+            if (leagueData) {
+                const homeWinRate = leagueData[0] && leagueData[0][7] ? parseFloat(leagueData[0][7]) : 0;
+                const awayWinRate = leagueData[1] && leagueData[1][7] ? parseFloat(leagueData[1][7]) : 0;
+                
+                if (homeWinRate > awayWinRate + 15) {
+                    styles.push('主场优势明显');
+                } else if (awayWinRate > homeWinRate + 10) {
+                    styles.push('客场表现出色');
+                }
+                
+                if (homeWinRate >= 60 && awayWinRate >= 50) {
+                    advantages.push('主客均衡');
+                }
+            }
+            
+            if (advantages.length === 0) advantages.push('整体表现稳定');
+            if (styles.length === 0) styles.push('战术风格灵活');
+            if (weaknesses.length === 0) weaknesses.push('无明显弱点');
+            
+            const html = `
+                <div class="character-section">
+                    <div class="character-title advantage">优势</div>
+                    <div class="character-tags">
+                        ${advantages.map(tag => `<span class="character-tag advantage">${tag}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="character-section">
+                    <div class="character-title style">风格</div>
+                    <div class="character-tags">
+                        ${styles.map(tag => `<span class="character-tag style">${tag}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="character-section">
+                    <div class="character-title weakness">弱点</div>
+                    <div class="character-tags">
+                        ${weaknesses.map(tag => `<span class="character-tag weakness">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('teamCharacter').innerHTML = html;
+        }
+        
+        let currentTechLeague = '0';
+        
+        function renderTechStats() {
+            const techStats = teamData.tech_stats || [];
+            
+            if (techStats.length === 0) {
+                document.getElementById('techStatsContainer').innerHTML = '<div class="loading">暂无数据</div>';
+                return;
+            }
+            
+            // Render league select
+            const selectHtml = techStats.map(s => 
+                `<option value="${s.league_id}" ${s.league_id === currentTechLeague ? 'selected' : ''}>${s.league_name_cn}</option>`
+            ).join('');
+            document.getElementById('techLeagueSelect').innerHTML = selectHtml;
+            
+            // Render cards
+            const cardsHtml = techStats.map(stat => {
+                const totalMatches = parseInt(stat.total_matches) || 0;
+                const totalGoals = parseInt(stat.total_goals) || 0;
+                const conceded = parseInt(stat.conceded) || 0;
+                const goalsPerMatch = totalMatches > 0 ? (totalGoals / totalMatches).toFixed(2) : '0.00';
+                const concededPerMatch = totalMatches > 0 ? (conceded / totalMatches).toFixed(2) : '0.00';
+                
+                const wins = parseInt(stat.wins) || 0;
+                const draws = parseInt(stat.draws) || 0;
+                const losses = totalMatches - wins - draws;
+                const winRate = parseFloat(stat.win_rate) || 0;
+                const cleanSheets = parseInt(stat.clean_sheets) || 0;
+                
+                return `
+                    <div class="tech-card" data-league="${stat.league_id}" style="${stat.league_id !== currentTechLeague && currentTechLeague !== '0' ? 'display:none;' : ''}">
+                        <div class="tech-card-header">
+                            <span class="tech-card-league">${stat.league_name_cn}</span>
+                            <span class="tech-card-winrate">胜率 ${winRate}%</span>
+                        </div>
+                        <div class="tech-card-body">
+                            <div class="tech-card-grid">
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">场次</div>
+                                    <div class="tech-card-item-value">${totalMatches}</div>
+                                </div>
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">胜/平/负</div>
+                                    <div class="tech-card-item-value">${wins}/${draws}/${losses}</div>
+                                </div>
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">进球/失球</div>
+                                    <div class="tech-card-item-value">${totalGoals}/${conceded}</div>
+                                </div>
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">场均进球</div>
+                                    <div class="tech-card-item-value ${goalsPerMatch >= 1.5 ? 'positive' : ''}">${goalsPerMatch}</div>
+                                </div>
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">场均失球</div>
+                                    <div class="tech-card-item-value ${concededPerMatch <= 1 ? 'positive' : concededPerMatch > 1.5 ? 'negative' : ''}">${concededPerMatch}</div>
+                                </div>
+                                <div class="tech-card-item">
+                                    <div class="tech-card-item-label">零封</div>
+                                    <div class="tech-card-item-value">${cleanSheets}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            document.getElementById('techStatsContainer').innerHTML = cardsHtml;
+            
+            // Bind events
+            document.getElementById('techLeagueSelect').onchange = function() {
+                currentTechLeague = this.value;
+                filterTechStats();
+            };
+        }
+        
+        function filterTechStats() {
+            const cards = document.querySelectorAll('.tech-card');
+            cards.forEach(card => {
+                const leagueId = card.dataset.league;
+                if (currentTechLeague === '0' || leagueId === currentTechLeague) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function renderBasicInfo(detail) {
+            const html = `
+                <div class="info-row">
+                    <span class="info-label">成立时间</span>
+                    <span class="info-value">${detail.founded}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">所在城市</span>
+                    <span class="info-value">${detail.city_cn} (${detail.city_en})</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">主场球场</span>
+                    <span class="info-value">${detail.stadium_cn}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">球场容量</span>
+                    <span class="info-value">${detail.capacity} 人</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">平均年龄</span>
+                    <span class="info-value">${detail.avg_age || '-'} 岁</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">球队身价</span>
+                    <span class="info-value">${detail.total_value ? detail.total_value + ' 万欧元' : '-'}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">官方网站</span>
+                    <span class="info-value"><a href="${detail.website}" target="_blank" style="color: var(--primary);">${detail.website}</a></span>
+                </div>
+            `;
+            document.getElementById('basicInfo').innerHTML = html;
+        }
+        
+        function renderIntro(intro) {
+            if (!intro) {
+                document.getElementById('teamIntro').innerHTML = '暂无介绍';
+                return;
+            }
+            const cleanIntro = intro.replace(/<font[^>]*>/g, '').replace(/<\/font>/g, '');
+            document.getElementById('teamIntro').innerHTML = cleanIntro;
+        }
+        
+        function renderLeagueStats() {
+            if (!teamData.league_stats || teamData.league_stats.length === 0) {
+                document.getElementById('leagueSection').innerHTML = '<div class="loading">暂无联赛数据</div>';
+                return;
+            }
+            
+            const stats = teamData.league_stats;
+            const totalStats = stats[stats.length - 1];
+            
+            if (totalStats && totalStats.matches !== '0') {
+                const gridHtml = `
+                    <div class="stat-box">
+                        <div class="stat-box-value">${totalStats.matches || '-'}</div>
+                        <div class="stat-box-label">总场次</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-box-value">${totalStats.wins || '-'}</div>
+                        <div class="stat-box-label">胜场</div>
+                        <div class="stat-box-rate">${totalStats.win_rate}%</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-box-value">${totalStats.goals || '-'}</div>
+                        <div class="stat-box-label">进球</div>
+                    </div>
+                `;
+                document.getElementById('leagueStatsGrid').innerHTML = gridHtml;
+            }
+            
+            const tableHtml = stats.map((s, i) => {
+                const typeLabel = i === 0 ? '主场' : (i === 1 ? '客场' : (i === stats.length - 1 ? '总计' : `类型${i+1}`));
+                return `
+                    <tr>
+                        <td>${typeLabel}</td>
+                        <td>${s.matches}</td>
+                        <td>${s.wins}</td>
+                        <td>${s.draws}</td>
+                        <td>${s.losses}</td>
+                        <td>${s.goals}</td>
+                        <td>${s.conceded}</td>
+                        <td>${s.win_rate}%</td>
+                    </tr>
+                `;
+            }).join('');
+            document.getElementById('leagueTableBody').innerHTML = tableHtml;
+        }
+        
+        function renderCupStats() {
+            const cups = teamData.cup_stats || [];
+            const techStats = teamData.tech_stats || [];
+            
+            if (cups.length > 0) {
+                const cupBadgesHtml = cups.map(c => `
+                    <span class="cup-badge">${c.name_cn}</span>
+                `).join('');
+                document.getElementById('cupStats').innerHTML = `<div style="padding: 8px 0;">${cupBadgesHtml}</div>`;
+            }
+            
+            const cupTableHtml = techStats
+                .filter(s => s.league_id !== '0' && s.league_id !== '36' && s.league_id !== '41')
+                .slice(0, 10)
+                .map(s => `
+                    <tr>
+                        <td>${s.league_name_cn}</td>
+                        <td>${s.total_matches}</td>
+                        <td>${s.wins}</td>
+                        <td>${s.draws}</td>
+                        <td>${parseInt(s.total_matches) - parseInt(s.wins) - parseInt(s.draws)}</td>
+                        <td>${s.total_goals}</td>
+                        <td>${s.win_rate}%</td>
+                    </tr>
+                `).join('');
+            
+            if (cupTableHtml) {
+                document.getElementById('cupTableBody').innerHTML = cupTableHtml;
+            } else {
+                document.getElementById('cupTableBody').innerHTML = '<tr><td colspan="7" class="loading">暂无数据</td></tr>';
+            }
+        }
+        
+        function renderHonor() {
+            const intro = teamData.detail?.intro || '';
+            // Match "俱乐部荣誉" section until next section or end
+            const honorMatch = intro.match(/俱乐部荣誉<\/strong><br\s*\/?><\/font>([\s\S]+?)(?:<\/font><\/p>|阿森纳的历史之最|<\/p><p>&nbsp;)/);
+            
+            if (!honorMatch) {
+                document.getElementById('honorList').innerHTML = '<div class="loading">暂无荣誉数据</div>';
+                return;
+            }
+            
+            const honorText = honorMatch[1];
+            const lines = honorText.split(/<br\s*\/?>/i).filter(l => l.trim());
+            const honors = [];
+            
+            lines.forEach(line => {
+                const cleanLine = line.replace(/&nbsp;/g, ' ').replace(/<[^>]*>/g, '').trim();
+                if (!cleanLine || !cleanLine.includes('冠军')) return;
+                
+                // Match pattern: "赛事名称 冠军 年份..."
+                // e.g., "英格兰超级联赛 冠军 1997-98年，2001-02年"
+                const match = cleanLine.match(/^(.+?)\s*冠军\s+(.+)$/);
+                if (match) {
+                    const trophyName = match[1].trim();
+                    const yearsStr = match[2].trim();
+                    
+                    // Parse years
+                    const years = yearsStr.split(/[,，、\s]+/)
+                        .map(y => y.replace(/[年]/g, '').trim())
+                        .filter(y => y && (y.match(/\d{4}/) || y.match(/\d{2}-\d{2}/)));
+                    
+                    if (years.length > 0 && trophyName) {
+                        let type = 'other';
+                        
+                        if (trophyName.includes('超级联赛') || trophyName.includes('甲级') || trophyName.includes('甲组')) {
+                            type = 'major';
+                        } else if (trophyName.includes('足总杯') || trophyName.includes('联赛杯') || trophyName.includes('社区盾') || trophyName.includes('慈善盾')) {
+                            type = 'domestic';
+                        } else if (trophyName.includes('欧洲') || trophyName.includes('欧冠') || trophyName.includes('欧罗巴') || trophyName.includes('优胜者') || trophyName.includes('博览会')) {
+                            type = 'european';
+                        }
+                        
+                        honors.push({
+                            name: trophyName,
+                            years: years,
+                            type: type
+                        });
+                    }
+                }
+            });
+            
+            if (honors.length === 0) {
+                document.getElementById('honorList').innerHTML = '<div class="loading">暂无荣誉数据</div>';
+                return;
+            }
+            
+            const typeOrder = { major: 0, european: 1, domestic: 2, other: 3 };
+            honors.sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
+            
+            const honorHtml = honors.map(honor => `
+                <div class="honor-card ${honor.type}">
+                    <div class="honor-card-header">
+                        <span class="honor-title">${honor.name}</span>
+                        <span class="honor-count">${honor.years.length}次</span>
+                    </div>
+                    <div class="honor-years">
+                        ${honor.years.map(y => `<span class="honor-year">${y}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+            
+            document.getElementById('honorList').innerHTML = `<div class="honor-container">${honorHtml}</div>`;
+        }
+        
+        function renderLineup() {
+            const lineup = teamData.lineup || {};
+            const positions = [
+                { key: 'coach', name: '教练' },
+                { key: 'goalkeeper', name: '门将' },
+                { key: 'defender', name: '后卫' },
+                { key: 'midfielder', name: '中场' },
+                { key: 'forward', name: '前锋' }
+            ];
+            
+            let html = '';
+            positions.forEach(pos => {
+                const players = lineup[pos.key] || [];
+                if (players.length > 0) {
+                    html += `
+                        <div class="position-section">
+                            <div class="position-title">
+                                <span>${pos.name}</span>
+                                <span class="position-count">${players.length}人</span>
+                            </div>
+                            ${players.map(p => `
+                                <div class="player-card">
+                                    <div class="player-number ${p.is_captain ? 'captain' : ''}">${p.number || '-'}</div>
+                                    <div class="player-info">
+                                        <div class="player-name">${p.name_cn} ${p.is_captain ? '(C)' : ''}</div>
+                                        <div class="player-name-en">${p.name_en}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+            });
+            
+            document.getElementById('lineupContainer').innerHTML = html || '<div class="loading">暂无阵容数据</div>';
+        }
+        
+        function renderPlayers() {
+            const players = teamData.lineup_detail || [];
+            
+            if (players.length === 0) {
+                document.getElementById('playersContainer').innerHTML = '<div class="loading" style="padding:20px;text-align:center;">暂无球员数据</div>';
+                return;
+            }
+            
+            // 按位置分组
+            const positionOrder = ['守门员', '后卫', '中场', '前锋'];
+            const grouped = {};
+            players.forEach(p => {
+                const pos = p.position || '其他';
+                if (!grouped[pos]) grouped[pos] = [];
+                grouped[pos].push(p);
+            });
+            
+            // 排序
+            const sortedPositions = Object.keys(grouped).sort((a, b) => {
+                const idxA = positionOrder.indexOf(a);
+                const idxB = positionOrder.indexOf(b);
+                if (idxA === -1) return 1;
+                if (idxB === -1) return -1;
+                return idxA - idxB;
+            });
+            
+            let html = '';
+            sortedPositions.forEach(pos => {
+                const posPlayers = grouped[pos];
+                html += `
+                    <div class="transfer-card" data-position="${pos}">
+                        <div class="transfer-header ${pos === '守门员' ? 'out' : 'in'}">
+                            <span>${pos}</span>
+                            <span class="count">${posPlayers.length}人</span>
+                        </div>
+                        <div class="players-list">
+                `;
+                
+                posPlayers.forEach(p => {
+                    html += `
+                        <div class="player-item" data-position="${p.position}">
+                            <span class="player-number">${p.number || '-'}</span>
+                            <span class="player-name">${p.name_cn}${p.is_captain ? ' (C)' : ''}</span>
+                            <span class="player-stats">
+                                <span class="stat">${p.total_matches || 0}场</span>
+                                <span class="stat">${p.goals || 0}球</span>
+                                <span class="stat">${p.assists || 0}助</span>
+                            </span>
+                            <span class="player-value">${p.value || '-'}</span>
+                        </div>
+                    `;
+                });
+                
+                html += '</div></div>';
+            });
+            
+            document.getElementById('playersContainer').innerHTML = html;
+            
+            // 绑定筛选事件
+            document.getElementById('playerPositionSelect').onchange = function() {
+                const selected = this.value;
+                document.querySelectorAll('.transfer-card').forEach(card => {
+                    if (selected === 'all' || card.dataset.position === selected) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            };
+        }
+        
+        function renderHistory() {
+            const history = teamData.history_ranking || [];
+            
+            if (history.length === 0) {
+                document.getElementById('historyTableBody').innerHTML = '<tr><td colspan="6" class="loading">暂无数据</td></tr>';
+                return;
+            }
+            
+            // 倒序排序（最新赛季在前）
+            const sortedHistory = [...history].sort((a, b) => {
+                const yearA = parseInt(a.season.split('-')[0]);
+                const yearB = parseInt(b.season.split('-')[0]);
+                return yearB - yearA;
+            });
+            
+            const tableHtml = sortedHistory.map(h => `
+                <tr>
+                    <td>${h.season}</td>
+                    <td><span class="rank-badge ${h.rank <= 4 ? 'top' : h.rank >= 17 ? 'bottom' : ''}">${h.rank}</span></td>
+                    <td>${h.wins}</td>
+                    <td>${h.draws}</td>
+                    <td>${h.losses}</td>
+                    <td class="points">${h.points}</td>
+                </tr>
+            `).join('');
+            
+            document.getElementById('historyTableBody').innerHTML = tableHtml;
+        }
+        
+        function renderTransfers() {
+            const transfers = teamData.transfers || {};
+            
+            // 获取所有赛季并排序（从新到旧）
+            const seasons = Object.keys(transfers).sort((a, b) => {
+                const yearA = parseInt(a.split('-')[0]);
+                const yearB = parseInt(b.split('-')[0]);
+                return yearB - yearA;
+            });
+            
+            if (seasons.length === 0) {
+                document.getElementById('transferInList').innerHTML = '<div class="transfer-item" style="justify-content:center;color:var(--text-muted);">暂无转会数据</div>';
+                document.getElementById('transferOutList').innerHTML = '<div class="transfer-item" style="justify-content:center;color:var(--text-muted);">暂无转会数据</div>';
+                document.getElementById('transferSeasonSelect').innerHTML = '';
+                return;
+            }
+            
+            // 渲染赛季选择器
+            const selectHtml = seasons.map(s => `<option value="${s}">${s}赛季</option>`).join('');
+            document.getElementById('transferSeasonSelect').innerHTML = selectHtml;
+            
+            // 渲染第一个赛季
+            renderTransferSeason(seasons[0]);
+            
+            // 绑定选择器事件
+            document.getElementById('transferSeasonSelect').onchange = function() {
+                renderTransferSeason(this.value);
+            };
+        }
+        
+        function renderTransferSeason(season) {
+            const transfers = teamData.transfers || {};
+            const seasonData = transfers[season] || {in: [], out: []};
+            
+            const transferIn = seasonData.in || [];
+            document.getElementById('transferInCount').textContent = transferIn.length + '人';
+            
+            if (transferIn.length === 0) {
+                document.getElementById('transferInList').innerHTML = '<div class="transfer-item" style="justify-content:center;color:var(--text-muted);">暂无转入球员</div>';
+            } else {
+                const inHtml = transferIn.map(t => {
+                    const typeClass = getTypeClass(t.type);
+                    return `
+                        <div class="transfer-item">
+                            <span class="transfer-date">${formatDate(t.date)}</span>
+                            <span class="transfer-player">${t.player}</span>
+                            <span class="transfer-position">${t.position || '-'}</span>
+                            <span class="transfer-club">← ${t.club}</span>
+                            <span class="transfer-type ${typeClass}">${t.type}</span>
+                        </div>
+                    `;
+                }).join('');
+                document.getElementById('transferInList').innerHTML = inHtml;
+            }
+            
+            const transferOut = seasonData.out || [];
+            document.getElementById('transferOutCount').textContent = transferOut.length + '人';
+            
+            if (transferOut.length === 0) {
+                document.getElementById('transferOutList').innerHTML = '<div class="transfer-item" style="justify-content:center;color:var(--text-muted);">暂无转出球员</div>';
+            } else {
+                const outHtml = transferOut.map(t => {
+                    const typeClass = getTypeClass(t.type);
+                    return `
+                        <div class="transfer-item">
+                            <span class="transfer-date">${formatDate(t.date)}</span>
+                            <span class="transfer-player">${t.player}</span>
+                            <span class="transfer-position">${t.position || '-'}</span>
+                            <span class="transfer-club">→ ${t.club}</span>
+                            <span class="transfer-type ${typeClass}">${t.type}</span>
+                        </div>
+                    `;
+                }).join('');
+                document.getElementById('transferOutList').innerHTML = outHtml;
+            }
+        }
+        
+        function formatDate(dateStr) {
+            if (!dateStr) return '-';
+            const parts = dateStr.split('-');
+            if (parts.length >= 2) {
+                return parts[1] + '/' + parts[2];
+            }
+            return dateStr;
+        }
+        
+        function getTypeClass(type) {
+            if (!type) return 'other';
+            if (type.includes('租借')) return 'loan';
+            if (type.includes('自由')) return 'free';
+            if (type.includes('转会') || type.includes('所有')) return 'transfer';
+            return 'other';
+        }
+        
+        function switchTab(tab) {
+            currentTab = tab;
+            
+            document.querySelectorAll('.nav-tab').forEach(t => {
+                t.classList.toggle('active', t.dataset.tab === tab);
+            });
+            
+            const sections = ['detail', 'league', 'cup', 'honor', 'lineup', 'players', 'history', 'transfer'];
+            sections.forEach(s => {
+                const el = document.getElementById(s + 'Section');
+                if (el) el.classList.toggle('hidden', s !== tab);
+            });
+        }
+        
+        document.getElementById('navTabs').addEventListener('click', (e) => {
+            if (e.target.classList.contains('nav-tab')) {
+                switchTab(e.target.dataset.tab);
+            }
+        });
+        
+        loadTeamData();
+    </script>
+</body>
+</html>

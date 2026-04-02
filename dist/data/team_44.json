@@ -1,0 +1,4942 @@
+{
+  "team_id": "44",
+  "update_time": "2026-04-02 15:56:59",
+  "detail": {
+    "team_id": "44",
+    "name_cn": "青岛海牛",
+    "name_hk": "青島海牛",
+    "name_en": "Qingdao Manatee",
+    "logo": "images/team/44.png",
+    "logo_original": "https://zq.titan007.com/images/44/1gy3vkgfwg2p.png",
+    "city_cn": "青岛",
+    "city_hk": "青岛",
+    "city_en": "Qingdao",
+    "stadium_cn": "青岛青春足球场",
+    "stadium_hk": "青島青春足球場",
+    "stadium_en": "Qingdao Youth Football Stadium",
+    "capacity": "20525",
+    "founded": "1994",
+    "website": "https://www.zhongnengfc.com/",
+    "intro": "&nbsp;&nbsp;&nbsp;&nbsp;1994年甲级联赛B组冠军；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;1995年甲级联赛A组第十一名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;1996年甲级联赛B组亚军；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;1997年甲级联赛A组第九名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;1998年甲级联赛A组第六名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;1999年甲级联赛A组第十名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2000年甲级联赛A组第十一名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2001年甲级联赛A组第十三名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2002年甲级联赛A组第八名、足协杯冠军；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2003年甲级联赛A组第十一名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2004年中国超级联赛第十一名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2005年中国超级联赛第七名；<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;2006年中国超级联赛第十四名<br />&nbsp;&nbsp;&nbsp;&nbsp;青岛中能足球俱乐部隶属青岛中能集团，前身系青岛海牛俱乐部，该俱乐部成立于1993年12月31日，经过十年职业联赛的洗礼和几代青岛足球人的努力，成长为征战国内顶级足球联赛的十六支中超足球俱乐部之一。&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;中能足球俱乐部发扬&quot;团结拼搏、开拓进取&quot;的精神，按照&quot;建一流足球俱乐部&quot;的指导方针，进行了一系列的实际运作。全队在主教练殷铁生的带领下，以年轻球员为主，在历年中超比赛中保持良好的斗志和高昂的比赛风貌。中能俱乐部一贯注重与国外俱乐部加强友好交流，先后与英国南安普敦俱乐部、韩国釜山I-PARK俱乐部展开合作，同时俱乐部对后备队伍的培养，建立起规范的二、三、四、五线后备梯队，梯队队员的培养为今后一线球队输送大批有用人才提供了可靠的保障，为青岛足球的可持续发展奠定了基础。<br />&nbsp;&nbsp;&nbsp;&nbsp;中能足球俱乐部还建立了设施完善的足球训练基地。这里拥有标准的草坪足球场2块，有设备齐全的健身房和统一管理的队员宿舍，基地内有新闻发布厅和荣誉陈列厅。&nbsp;<br />",
+    "stadium_address": "青岛市海尔路中段颐中体育场内",
+    "avg_age": "28.4",
+    "total_value": "5.49万欧元"
+  },
+  "lineup": {
+    "goalkeeper": [
+      {
+        "player_id": "07470",
+        "number": "1",
+        "name_cn": "刘君",
+        "name_hk": "劉君",
+        "name_en": "Liu Jun",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "43582",
+        "number": "28",
+        "name_cn": "牟鹏飞",
+        "name_hk": "牟鵬飛",
+        "name_en": "Mu Pengfei",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "556053",
+        "number": "43",
+        "name_cn": "买乌兰·加帕尔",
+        "name_hk": "M.加帕爾",
+        "name_en": "Mewlan Jappar",
+        "is_captain": false,
+        "position": "守门员"
+      }
+    ],
+    "defender": [
+      {
+        "player_id": "853332",
+        "number": "2",
+        "name_cn": "张卫",
+        "name_hk": "張衛",
+        "name_en": "Zhang Wei",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "848978",
+        "number": "3",
+        "name_cn": "刘军帅",
+        "name_hk": "劉軍帥",
+        "name_en": "Junshuai Liu",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "05613",
+        "number": "4",
+        "name_cn": "金洋洋",
+        "name_hk": "金洋洋",
+        "name_en": "Jin Yangyang",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "559219",
+        "number": "6",
+        "name_cn": "穆斯塔帕·塔西",
+        "name_hk": "穆斯塔帕·塔西",
+        "name_en": "Mustapa Tash",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "888598",
+        "number": "14",
+        "name_cn": "孙正傲",
+        "name_hk": "孫正傲",
+        "name_en": "Sun Zheng Ao",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "822350",
+        "number": "16",
+        "name_cn": "李海龙",
+        "name_hk": "李海龍",
+        "name_en": "Hailong Li",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "828074",
+        "number": "17",
+        "name_cn": "王峤",
+        "name_hk": "王峤",
+        "name_en": "Qiao Wang",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "11802",
+        "number": "23",
+        "name_cn": "宋龙",
+        "name_hk": "宋龍",
+        "name_en": "Song Long",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "831173",
+        "number": "26",
+        "name_cn": "内曼贾·安德杰尔科维奇",
+        "name_hk": "尼曼亞·安積高域治",
+        "name_en": "Nemanja Andjelkovic",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "596571",
+        "number": "29",
+        "name_cn": "李苏达",
+        "name_hk": "李蘇達",
+        "name_en": "Suda Li",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "07950",
+        "number": "33",
+        "name_cn": "刘佳燊",
+        "name_hk": "劉佳燊",
+        "name_en": "Liu Jiashen",
+        "is_captain": false,
+        "position": "后卫"
+      }
+    ],
+    "midfielder": [
+      {
+        "player_id": "868247",
+        "number": "6",
+        "name_cn": "埃德欧玛",
+        "name_hk": "埃德歐瑪",
+        "name_en": "Malcom Sylas Edjouma",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "888970",
+        "number": "8",
+        "name_cn": "林创益",
+        "name_hk": "林創益",
+        "name_en": "Lin Chuangyi",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "852213",
+        "number": "11",
+        "name_cn": "梅萨欧迪",
+        "name_hk": "亞美德",
+        "name_en": "Ahmed El Messaoudi",
+        "is_captain": true,
+        "position": "中场"
+      },
+      {
+        "player_id": "579680",
+        "number": "24",
+        "name_cn": "颜卓彬",
+        "name_hk": "顏卓彬",
+        "name_en": "Ngan Chuck Pan",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "589767",
+        "number": "27",
+        "name_cn": "吴星宇",
+        "name_hk": "吳星宇",
+        "name_en": "Wu Xingyu",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "895384",
+        "number": "30",
+        "name_cn": "车世伟",
+        "name_hk": "車世偉",
+        "name_en": "Che Shiwei",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "887164",
+        "number": "31",
+        "name_cn": "罗森文",
+        "name_hk": "羅森文",
+        "name_en": "Luo Senwen",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "509063",
+        "number": "34",
+        "name_cn": "金永浩",
+        "name_hk": "金永浩",
+        "name_en": "Yonghao Jin",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "503973",
+        "number": "37",
+        "name_cn": "魏子娴",
+        "name_hk": "魏子嫻",
+        "name_en": "Zixian Wei",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "987649",
+        "number": "47",
+        "name_cn": "郑传辉",
+        "name_hk": "鄭傳輝",
+        "name_en": "Chuanhui Zheng",
+        "is_captain": false,
+        "position": "中场"
+      }
+    ],
+    "forward": [
+      {
+        "player_id": "895192",
+        "number": "7",
+        "name_cn": "Y.耶保亚",
+        "name_hk": "Y.耶保亞",
+        "name_en": "Yaw Yeboah",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "882833",
+        "number": "10",
+        "name_cn": "斯特兰德伯格",
+        "name_hk": "史特蘭貝治",
+        "name_en": "Carlos Strandberg",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "07940",
+        "number": "19",
+        "name_cn": "宋文杰",
+        "name_hk": "宋文傑",
+        "name_en": "Song Wenjie",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "987667",
+        "number": "22",
+        "name_cn": "杨聪",
+        "name_hk": "楊聰",
+        "name_en": "Cong Yang",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "945246",
+        "number": "27",
+        "name_cn": "邝兆镭",
+        "name_hk": "鄺兆鐳",
+        "name_en": "Kuang Zhaolei",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "30958",
+        "number": "30",
+        "name_cn": "刘鑫瑜",
+        "name_hk": "劉鑫瑜",
+        "name_en": "Liu XinYu",
+        "is_captain": false,
+        "position": "前锋"
+      }
+    ],
+    "coach": [
+      {
+        "player_id": "573215",
+        "number": "",
+        "name_cn": "米兰·里斯蒂奇",
+        "name_hk": "米蘭·里斯蒂奇",
+        "name_en": "Milan Ristic",
+        "is_captain": false,
+        "position": "教练"
+      }
+    ]
+  },
+  "lineup_detail": [
+    {
+      "player_id": "209472",
+      "number": "",
+      "name_cn": "米兰·里斯蒂奇",
+      "name_hk": "米蘭·里斯蒂奇",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "主教练",
+      "position": "塞尔维亚",
+      "country_cn": "塞爾維亞",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "132734",
+      "number": "7",
+      "name_cn": "Y.耶保亚",
+      "name_hk": "Y.耶保亞",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "175",
+      "height": "70",
+      "weight": "前锋",
+      "position": "加纳",
+      "country_cn": "加納",
+      "country_en": "100",
+      "value": "",
+      "contract_end": "3",
+      "total_matches": "1",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "114199",
+      "number": "10",
+      "name_cn": "斯特兰德伯格",
+      "name_hk": "史特蘭貝治",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "187",
+      "height": "",
+      "weight": "前锋",
+      "position": "瑞典",
+      "country_cn": "瑞典",
+      "country_en": "70",
+      "value": "2026-12-31万欧元",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "80358",
+      "number": "19",
+      "name_cn": "宋文杰",
+      "name_hk": "宋文傑",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "74",
+      "weight": "前锋",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "2.5",
+      "value": "",
+      "contract_end": "10",
+      "total_matches": "1",
+      "goals": "38",
+      "assists": "3",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "310660",
+      "number": "22",
+      "name_cn": "杨聪",
+      "name_hk": "楊聰",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "177",
+      "height": "65",
+      "weight": "前锋",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "0",
+      "value": "2027-12-31万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "352456",
+      "number": "27",
+      "name_cn": "邝兆镭",
+      "name_hk": "鄺兆鐳",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "172",
+      "height": "",
+      "weight": "前锋",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "0",
+      "value": "2028-12-31万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "98321",
+      "number": "30",
+      "name_cn": "刘鑫瑜",
+      "name_hk": "劉鑫瑜",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "183",
+      "height": "68",
+      "weight": "前锋",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "2.5",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "161450",
+      "number": "6",
+      "name_cn": "埃德欧玛",
+      "name_hk": "埃德歐瑪",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "191",
+      "height": "88",
+      "weight": "中场",
+      "position": "摩洛哥",
+      "country_cn": "摩洛哥",
+      "country_en": "80",
+      "value": "",
+      "contract_end": "2",
+      "total_matches": "1",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "111308",
+      "number": "8",
+      "name_cn": "林创益",
+      "name_hk": "林創益",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "178",
+      "height": "72",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "7.5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "21",
+      "total_matches": "2",
+      "goals": "8",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "124479",
+      "number": "11",
+      "name_cn": "梅萨欧迪",
+      "name_hk": "亞美德",
+      "name_en": "1",
+      "is_captain": false,
+      "birthday": "182",
+      "height": "",
+      "weight": "中场",
+      "position": "摩洛哥",
+      "country_cn": "摩洛哥",
+      "country_en": "80",
+      "value": "",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "203618",
+      "number": "24",
+      "name_cn": "颜卓彬",
+      "name_hk": "顏卓彬",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "175",
+      "height": "",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "17.5",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "213060",
+      "number": "27",
+      "name_cn": "吴星宇",
+      "name_hk": "吳星宇",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "172",
+      "height": "64",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "12.5",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "132915",
+      "number": "30",
+      "name_cn": "车世伟",
+      "name_hk": "車世偉",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "183",
+      "height": "73",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "7.5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "7",
+      "total_matches": "0",
+      "goals": "14",
+      "assists": "1",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "110765",
+      "number": "31",
+      "name_cn": "罗森文",
+      "name_hk": "羅森文",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "80",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "10",
+      "total_matches": "1",
+      "goals": "11",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "283869",
+      "number": "34",
+      "name_cn": "金永浩",
+      "name_hk": "金永浩",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "168",
+      "height": "60",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "15",
+      "value": "2026-12-31万欧元",
+      "contract_end": "24",
+      "total_matches": "2",
+      "goals": "13",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "289309",
+      "number": "37",
+      "name_cn": "魏子娴",
+      "name_hk": "魏子嫻",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "175",
+      "height": "",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "310653",
+      "number": "47",
+      "name_cn": "郑传辉",
+      "name_hk": "鄭傳輝",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "177",
+      "height": "72",
+      "weight": "中场",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "0",
+      "value": "2027-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "129994",
+      "number": "2",
+      "name_cn": "张卫",
+      "name_hk": "張衛",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "177",
+      "height": "73",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "10",
+      "value": "",
+      "contract_end": "27",
+      "total_matches": "3",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "151301",
+      "number": "3",
+      "name_cn": "刘军帅",
+      "name_hk": "劉軍帥",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "87",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "10",
+      "value": "2027-12-31万欧元",
+      "contract_end": "104",
+      "total_matches": "11",
+      "goals": "8",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "82679",
+      "number": "4",
+      "name_cn": "金洋洋",
+      "name_hk": "金洋洋",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "189",
+      "height": "91",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "10",
+      "value": "",
+      "contract_end": "30",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "223473",
+      "number": "6",
+      "name_cn": "穆斯塔帕·塔西",
+      "name_hk": "穆斯塔帕·塔西",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "186",
+      "height": "",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "111231",
+      "number": "14",
+      "name_cn": "孙正傲",
+      "name_hk": "孫正傲",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "183",
+      "height": "70",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "144928",
+      "number": "16",
+      "name_cn": "李海龙",
+      "name_hk": "李海龍",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "181",
+      "height": "75",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "2.5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "22",
+      "total_matches": "0",
+      "goals": "7",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "141805",
+      "number": "17",
+      "name_cn": "王峤",
+      "name_hk": "王峤",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "181",
+      "height": "60",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "10",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "77184",
+      "number": "23",
+      "name_cn": "宋龙",
+      "name_hk": "宋龍",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "72",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "2.5",
+      "value": "",
+      "contract_end": "46",
+      "total_matches": "1",
+      "goals": "16",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "197709",
+      "number": "26",
+      "name_cn": "内曼贾·安德杰尔科维奇",
+      "name_hk": "尼曼亞·安積高域治",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "",
+      "weight": "后卫",
+      "position": "塞尔维亚",
+      "country_cn": "塞爾維亞",
+      "country_en": "65",
+      "value": "2026-12-31万欧元",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "236207",
+      "number": "29",
+      "name_cn": "李苏达",
+      "name_hk": "李蘇達",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "176",
+      "height": "",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "8",
+      "value": "2025-12-31万欧元",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "80328",
+      "number": "33",
+      "name_cn": "刘佳燊",
+      "name_hk": "劉佳燊",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "190",
+      "height": "86",
+      "weight": "后卫",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "",
+      "contract_end": "54",
+      "total_matches": "0",
+      "goals": "17",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "80508",
+      "number": "1",
+      "name_cn": "刘君",
+      "name_hk": "劉君",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "185",
+      "height": "86",
+      "weight": "守门员",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "2.5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "59214",
+      "number": "28",
+      "name_cn": "牟鹏飞",
+      "name_hk": "牟鵬飛",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "193",
+      "height": "77",
+      "weight": "守门员",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "2026-12-31万欧元",
+      "contract_end": "117",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "226829",
+      "number": "43",
+      "name_cn": "买乌兰·加帕尔",
+      "name_hk": "M.加帕爾",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "195",
+      "height": "",
+      "weight": "守门员",
+      "position": "中国",
+      "country_cn": "中國",
+      "country_en": "5",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    }
+  ],
+  "league_stats": [
+    {
+      "type": "主场",
+      "matches": "1",
+      "wins": "0",
+      "draws": "0",
+      "losses": "1",
+      "goals": "1",
+      "conceded": "4",
+      "goal_diff": "-3",
+      "win_rate": "0.0",
+      "draw_rate": "0.0",
+      "loss_rate": "100.0",
+      "avg_goals": "1.00",
+      "avg_conceded": "4.00"
+    },
+    {
+      "type": "客场",
+      "matches": "2",
+      "wins": "0",
+      "draws": "0",
+      "losses": "2",
+      "goals": "1",
+      "conceded": "4",
+      "goal_diff": "-3",
+      "win_rate": "0.0",
+      "draw_rate": "0.0",
+      "loss_rate": "100.0",
+      "avg_goals": "0.50",
+      "avg_conceded": "2.00"
+    },
+    {
+      "type": "总",
+      "matches": "3",
+      "wins": "0",
+      "draws": "0",
+      "losses": "3",
+      "goals": "2",
+      "conceded": "8",
+      "goal_diff": "-6",
+      "win_rate": "0.0",
+      "draw_rate": "0.0",
+      "loss_rate": "100.0",
+      "avg_goals": "0.67",
+      "avg_conceded": "2.67"
+    },
+    {
+      "type": "上半场主场",
+      "matches": "1",
+      "wins": "1",
+      "draws": "0",
+      "losses": "0",
+      "goals": "1",
+      "conceded": "0",
+      "goal_diff": "1",
+      "win_rate": "100.0",
+      "draw_rate": "0.0",
+      "loss_rate": "0.0",
+      "avg_goals": "1.00",
+      "avg_conceded": "0.00"
+    },
+    {
+      "type": "上半场客场",
+      "matches": "2",
+      "wins": "0",
+      "draws": "1",
+      "losses": "1",
+      "goals": "0",
+      "conceded": "3",
+      "goal_diff": "-3",
+      "win_rate": "0.0",
+      "draw_rate": "50.0",
+      "loss_rate": "50.0",
+      "avg_goals": "0.00",
+      "avg_conceded": "1.50"
+    },
+    {
+      "type": "上半场总",
+      "matches": "3",
+      "wins": "1",
+      "draws": "1",
+      "losses": "1",
+      "goals": "1",
+      "conceded": "3",
+      "goal_diff": "-2",
+      "win_rate": "33.3",
+      "draw_rate": "33.3",
+      "loss_rate": "33.3",
+      "avg_goals": "0.33",
+      "avg_conceded": "1.00"
+    }
+  ],
+  "cup_stats": [],
+  "tech_stats": [
+    {
+      "league_id": "0",
+      "league_name_cn": "全部",
+      "league_name_hk": "全部",
+      "total_matches": "134",
+      "wins": "82",
+      "draws": "110",
+      "total_goals": "1267",
+      "conceded": "571",
+      "clean_sheets": "36",
+      "win_rate": "22.02"
+    },
+    {
+      "league_id": "41",
+      "league_name_cn": "球会友谊赛",
+      "league_name_hk": "球會友誼賽",
+      "total_matches": "2",
+      "wins": "0",
+      "draws": "0",
+      "total_goals": "0",
+      "conceded": "0",
+      "clean_sheets": "0",
+      "win_rate": "0"
+    },
+    {
+      "league_id": "60",
+      "league_name_cn": "中国超级联赛",
+      "league_name_hk": "中國超級聯賽",
+      "total_matches": "20",
+      "wins": "22",
+      "draws": "51",
+      "total_goals": "1255",
+      "conceded": "192",
+      "clean_sheets": "12",
+      "win_rate": "44.81"
+    },
+    {
+      "league_id": "61",
+      "league_name_cn": "中国甲级联赛",
+      "league_name_hk": "中國甲级聯賽",
+      "total_matches": "56",
+      "wins": "28",
+      "draws": "31",
+      "total_goals": "0",
+      "conceded": "187",
+      "clean_sheets": "15",
+      "win_rate": "7.81"
+    },
+    {
+      "league_id": "87",
+      "league_name_cn": "中国足协杯",
+      "league_name_hk": "中國足協盃",
+      "total_matches": "11",
+      "wins": "6",
+      "draws": "9",
+      "total_goals": "12",
+      "conceded": "34",
+      "clean_sheets": "2",
+      "win_rate": "21.04"
+    },
+    {
+      "league_id": "686",
+      "league_name_cn": "中国足球乙级联赛",
+      "league_name_hk": "中國足球乙級聯賽",
+      "total_matches": "45",
+      "wins": "26",
+      "draws": "18",
+      "total_goals": "0",
+      "conceded": "157",
+      "clean_sheets": "7",
+      "win_rate": "17.04"
+    },
+    {
+      "league_id": "1366",
+      "league_name_cn": "国际友谊赛",
+      "league_name_hk": "國際友誼賽",
+      "total_matches": "0",
+      "wins": "0",
+      "draws": "1",
+      "total_goals": "0",
+      "conceded": "1",
+      "clean_sheets": "0",
+      "win_rate": "48"
+    }
+  ],
+  "history_ranking": [
+    {
+      "season": "2004",
+      "rank": 11,
+      "wins": 4,
+      "draws": 9,
+      "losses": 9,
+      "points": 21
+    },
+    {
+      "season": "2005",
+      "rank": 7,
+      "wins": 9,
+      "draws": 7,
+      "losses": 10,
+      "points": 34
+    },
+    {
+      "season": "2006",
+      "rank": 14,
+      "wins": 6,
+      "draws": 7,
+      "losses": 15,
+      "points": 25
+    },
+    {
+      "season": "2007",
+      "rank": 8,
+      "wins": 10,
+      "draws": 6,
+      "losses": 12,
+      "points": 36
+    },
+    {
+      "season": "2008",
+      "rank": 9,
+      "wins": 10,
+      "draws": 9,
+      "losses": 11,
+      "points": 39
+    },
+    {
+      "season": "2009",
+      "rank": 13,
+      "wins": 8,
+      "draws": 12,
+      "losses": 10,
+      "points": 36
+    },
+    {
+      "season": "2010",
+      "rank": 15,
+      "wins": 6,
+      "draws": 12,
+      "losses": 12,
+      "points": 30
+    },
+    {
+      "season": "2011",
+      "rank": 6,
+      "wins": 12,
+      "draws": 9,
+      "losses": 9,
+      "points": 45
+    },
+    {
+      "season": "2012",
+      "rank": 12,
+      "wins": 10,
+      "draws": 6,
+      "losses": 14,
+      "points": 36
+    },
+    {
+      "season": "2013",
+      "rank": 15,
+      "wins": 7,
+      "draws": 10,
+      "losses": 13,
+      "points": 31
+    },
+    {
+      "season": "2014",
+      "rank": 5,
+      "wins": 15,
+      "draws": 8,
+      "losses": 7,
+      "points": 46
+    },
+    {
+      "season": "2015",
+      "rank": 7,
+      "wins": 11,
+      "draws": 8,
+      "losses": 11,
+      "points": 41
+    },
+    {
+      "season": "2016",
+      "rank": 15,
+      "wins": 8,
+      "draws": 9,
+      "losses": 13,
+      "points": 33
+    },
+    {
+      "season": "2017",
+      "rank": 2,
+      "wins": 12,
+      "draws": 8,
+      "losses": 2,
+      "points": 44
+    },
+    {
+      "season": "2018",
+      "rank": 4,
+      "wins": 16,
+      "draws": 3,
+      "losses": 7,
+      "points": 51
+    },
+    {
+      "season": "2019",
+      "rank": 6,
+      "wins": 14,
+      "draws": 9,
+      "losses": 7,
+      "points": 51
+    },
+    {
+      "season": "2020",
+      "rank": 3,
+      "wins": 4,
+      "draws": 4,
+      "losses": 1,
+      "points": 16
+    },
+    {
+      "season": "2021",
+      "rank": 1,
+      "wins": 9,
+      "draws": 4,
+      "losses": 1,
+      "points": 31
+    },
+    {
+      "season": "2022",
+      "rank": 1,
+      "wins": 8,
+      "draws": 2,
+      "losses": 0,
+      "points": 26
+    },
+    {
+      "season": "2023",
+      "rank": 13,
+      "wins": 7,
+      "draws": 7,
+      "losses": 16,
+      "points": 28
+    },
+    {
+      "season": "2024",
+      "rank": 12,
+      "wins": 8,
+      "draws": 5,
+      "losses": 17,
+      "points": 29
+    },
+    {
+      "season": "2025",
+      "rank": 13,
+      "wins": 5,
+      "draws": 10,
+      "losses": 15,
+      "points": 25
+    },
+    {
+      "season": "2026",
+      "rank": 15,
+      "wins": 0,
+      "draws": 0,
+      "losses": 3,
+      "points": -7
+    }
+  ],
+  "transfers": {
+    "2003-2004": {
+      "in": [
+        {
+          "date": "2004-02-01",
+          "player": "周挺",
+          "player_id": "63125",
+          "position": "后卫",
+          "club": "云南红塔",
+          "type": "完全所有"
+        }
+      ],
+      "out": []
+    },
+    "2004-2005": {
+      "in": [
+        {
+          "date": "2005-01-01",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "山东泰山",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2005-01-01",
+          "player": "杨君",
+          "player_id": "17891",
+          "position": "守门员",
+          "club": "长春亚泰",
+          "type": "租借"
+        },
+        {
+          "date": "2005-02-01",
+          "player": "周挺",
+          "player_id": "63125",
+          "position": "后卫",
+          "club": "深圳队",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2005-2006": {
+      "in": [
+        {
+          "date": "2005-12-31",
+          "player": "杨君",
+          "player_id": "17891",
+          "position": "守门员",
+          "club": "长春亚泰",
+          "type": "租借结束"
+        },
+        {
+          "date": "2006-01-01",
+          "player": "郑龙",
+          "player_id": "63069",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2006-01-01",
+          "player": "杨君",
+          "player_id": "17891",
+          "position": "守门员",
+          "club": "北京国安",
+          "type": "租借"
+        }
+      ]
+    },
+    "2006-2007": {
+      "in": [
+        {
+          "date": "2006-12-31",
+          "player": "杨君",
+          "player_id": "17891",
+          "position": "守门员",
+          "club": "北京国安",
+          "type": "租借结束"
+        },
+        {
+          "date": "2007-01-01",
+          "player": "邹正",
+          "player_id": "63074",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2007-01-01",
+          "player": "李帅",
+          "player_id": "76316",
+          "position": "",
+          "club": "广州队",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2007-2008": {
+      "in": [],
+      "out": [
+        {
+          "date": "2007-09-01",
+          "player": "秦升",
+          "player_id": "63307",
+          "position": "",
+          "club": "江苏苏宁易购",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-01-01",
+          "player": "杨君",
+          "player_id": "17891",
+          "position": "守门员",
+          "club": "天津津门虎",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2008-2009": {
+      "in": [
+        {
+          "date": "2009-01-01",
+          "player": "姚江山",
+          "player_id": "131885",
+          "position": "中场",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "未知球队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2008-12-09",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "中国",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2009-2010": {
+      "in": [
+        {
+          "date": "2010-01-01",
+          "player": "栗鹏",
+          "player_id": "77201",
+          "position": "中卫",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "魏仁杰",
+          "player_id": "63071",
+          "position": "前锋",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "逄志泉",
+          "player_id": "63087",
+          "position": "中锋",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "宋文杰",
+          "player_id": "80358",
+          "position": "前锋",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "山东鲁能泰山U17",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "沙一博",
+          "player_id": "77202",
+          "position": "后卫",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "未知球队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2010-01-01",
+          "player": "曲波",
+          "player_id": "63059",
+          "position": "",
+          "club": "北京人和",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2010-2011": {
+      "in": [
+        {
+          "date": "2010-08-01",
+          "player": "李壮飞",
+          "player_id": "63298",
+          "position": "后卫",
+          "club": "江苏苏宁易购",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "牟鹏飞",
+          "player_id": "59214",
+          "position": "守门员",
+          "club": "北京人和",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2011-01-01",
+          "player": "姜宁",
+          "player_id": "63057",
+          "position": "中场",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "全龙海",
+          "player_id": "173516",
+          "position": "",
+          "club": "大理锐龙",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2011-2012": {
+      "in": [
+        {
+          "date": "2011-07-01",
+          "player": "伊布拉吉莫夫",
+          "player_id": "76623",
+          "position": "前锋",
+          "club": "波希米亚1905",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "未知球队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "尹广俊",
+          "player_id": "110902",
+          "position": "后卫",
+          "club": "未知球队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2012-01-01",
+          "player": "黄准",
+          "player_id": "63081",
+          "position": "后卫",
+          "club": "沈阳东进",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "河北队",
+          "type": "租借"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "华森",
+          "type": "租借"
+        }
+      ]
+    },
+    "2012-2013": {
+      "in": [
+        {
+          "date": "2012-07-01",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "华森",
+          "type": "租借结束"
+        },
+        {
+          "date": "2012-12-31",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "河北队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-02-16",
+          "player": "矫喆",
+          "player_id": "63419",
+          "position": "",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-02-25",
+          "player": "郑剑峰",
+          "player_id": "76164",
+          "position": "后卫",
+          "club": "大连实德",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-02-26",
+          "player": "莫拉德",
+          "player_id": "3155",
+          "position": "",
+          "club": "西里安斯卡FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-02-27",
+          "player": "马磊磊",
+          "player_id": "62995",
+          "position": "",
+          "club": "天津津门虎",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-02-27",
+          "player": "权磊",
+          "player_id": "63030",
+          "position": "",
+          "club": "大连实德",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2013-01-01",
+          "player": "逄志泉",
+          "player_id": "63087",
+          "position": "中锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-01-01",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "山东滕鼎",
+          "type": "租借"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "山东滕鼎",
+          "type": "租借"
+        },
+        {
+          "date": "2013-02-01",
+          "player": "魏仁杰",
+          "player_id": "63071",
+          "position": "前锋",
+          "club": "山东滕鼎",
+          "type": "租借"
+        },
+        {
+          "date": "2013-03-26",
+          "player": "伊布拉吉莫夫",
+          "player_id": "76623",
+          "position": "前锋",
+          "club": "FK莫斯特",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2013-2014": {
+      "in": [
+        {
+          "date": "2013-07-22",
+          "player": "科尔特斯",
+          "player_id": "105871",
+          "position": "前锋",
+          "club": "阿尔米兰提布朗",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-09-05",
+          "player": "戈兰·斯特万诺维奇",
+          "player_id": "117176",
+          "position": "",
+          "club": "维瑞亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "屯门",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "山东滕鼎",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "山东滕鼎",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-12-31",
+          "player": "魏仁杰",
+          "player_id": "63071",
+          "position": "前锋",
+          "club": "山东滕鼎",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "王琦",
+          "player_id": "132977",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-02",
+          "player": "尹广俊",
+          "player_id": "110902",
+          "position": "后卫",
+          "club": "屯门",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "毛剑卿",
+          "player_id": "77164",
+          "position": "中场",
+          "club": "北京国安",
+          "type": "租借"
+        },
+        {
+          "date": "2014-02-28",
+          "player": "王伟",
+          "player_id": "80716",
+          "position": "",
+          "club": "北京北体大",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-28",
+          "player": "王君",
+          "player_id": "80713",
+          "position": "中场",
+          "club": "大连人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-02-28",
+          "player": "李晨光",
+          "player_id": "77179",
+          "position": "后卫",
+          "club": "新疆天山雪豹",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-02-28",
+          "player": "克里斯蒂安·达纳拉赫",
+          "player_id": "48926",
+          "position": "",
+          "club": "江苏苏宁易购",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2013-07-16",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "屯门",
+          "type": "租借"
+        },
+        {
+          "date": "2013-07-19",
+          "player": "郑龙",
+          "player_id": "63069",
+          "position": "中场",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-08-09",
+          "player": "莫拉德",
+          "player_id": "3155",
+          "position": "",
+          "club": "奥尔格里特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-10-18",
+          "player": "尹广俊",
+          "player_id": "110902",
+          "position": "后卫",
+          "club": "屯门",
+          "type": "租借"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "王秀富",
+          "player_id": "132978",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "魏仁杰",
+          "player_id": "63071",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "马磊磊",
+          "player_id": "62995",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-01",
+          "player": "郑剑峰",
+          "player_id": "76164",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-01-03",
+          "player": "刘健",
+          "player_id": "63082",
+          "position": "后卫",
+          "club": "广州队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-01-14",
+          "player": "科尔特斯",
+          "player_id": "105871",
+          "position": "前锋",
+          "club": "费罗卡利",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2014-2015": {
+      "in": [
+        {
+          "date": "2014-07-01",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "蒲先林",
+          "player_id": "110897",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "王子铭",
+          "player_id": "132981",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "钟义浩",
+          "player_id": "132980",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "王秀富",
+          "player_id": "132978",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "赵承德",
+          "player_id": "132979",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-09",
+          "player": "B.科芬拿",
+          "player_id": "30759",
+          "position": "前锋",
+          "club": "贝尔格莱德游击",
+          "type": "租借"
+        },
+        {
+          "date": "2015-02-01",
+          "player": "迪力木拉提·巴吐尔",
+          "player_id": "83163",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-11",
+          "player": "何杨",
+          "player_id": "63001",
+          "position": "",
+          "club": "天津津门虎",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-11",
+          "player": "胡威威",
+          "player_id": "111007",
+          "position": "中场",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-14",
+          "player": "李谋",
+          "player_id": "82646",
+          "position": "后卫",
+          "club": "成都天诚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-14",
+          "player": "赵鹏",
+          "player_id": "80377",
+          "position": "后卫",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-26",
+          "player": "J·卡洛斯",
+          "player_id": "104443",
+          "position": "中场",
+          "club": "堪萨斯城竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-27",
+          "player": "D.雷斯",
+          "player_id": "99182",
+          "position": "前锋",
+          "club": "马利利亚",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2014-07-01",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "山东滕鼎",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-29",
+          "player": "矫喆",
+          "player_id": "63419",
+          "position": "",
+          "club": "内蒙古中优",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-12-01",
+          "player": "蒲先林",
+          "player_id": "110897",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-12-31",
+          "player": "毛剑卿",
+          "player_id": "77164",
+          "position": "中场",
+          "club": "北京国安",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "牟鹏飞",
+          "player_id": "59214",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "张润豪",
+          "player_id": "120543",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "宋博",
+          "player_id": "53685",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "李晨光",
+          "player_id": "77179",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-01",
+          "player": "邹正",
+          "player_id": "63074",
+          "position": "",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-03",
+          "player": "姚江山",
+          "player_id": "131885",
+          "position": "中场",
+          "club": "湖南湘涛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-26",
+          "player": "李霄鹏",
+          "player_id": "118988",
+          "position": "",
+          "club": "沧州雄狮",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-09",
+          "player": "克里斯蒂安·达纳拉赫",
+          "player_id": "48926",
+          "position": "",
+          "club": "新疆天山雪豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-02-27",
+          "player": "宋文杰",
+          "player_id": "80358",
+          "position": "前锋",
+          "club": "河北队",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2015-2016": {
+      "in": [
+        {
+          "date": "2015-07-07",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-07",
+          "player": "蒲先林",
+          "player_id": "110897",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-07",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-16",
+          "player": "牟鹏飞",
+          "player_id": "59214",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "钱哲隆",
+          "player_id": "80516",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "张润豪",
+          "player_id": "120543",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "王秀富",
+          "player_id": "132978",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-02-04",
+          "player": "约翰尼",
+          "player_id": "52718",
+          "position": "后卫",
+          "club": "上海申鑫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-05",
+          "player": "沙洛泽·乌度基",
+          "player_id": "140324",
+          "position": "",
+          "club": "明斯克迪纳摩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-15",
+          "player": "王建文",
+          "player_id": "60087",
+          "position": "中场",
+          "club": "江西庐山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-21",
+          "player": "艾迪靴南迪斯",
+          "player_id": "98243",
+          "position": "中锋",
+          "club": "摩塔瓜",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2015-07-10",
+          "player": "钱哲隆",
+          "player_id": "80516",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-10",
+          "player": "赵鹏",
+          "player_id": "80377",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-10",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-16",
+          "player": "王秀富",
+          "player_id": "132978",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-10-09",
+          "player": "B.科芬拿",
+          "player_id": "30759",
+          "position": "前锋",
+          "club": "贝尔格莱德游击",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-11-30",
+          "player": "戈兰·斯特万诺维奇",
+          "player_id": "117176",
+          "position": "",
+          "club": "阿格罗蒂科斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "王子铭",
+          "player_id": "132981",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-02",
+          "player": "刘震理",
+          "player_id": "63091",
+          "position": "守门员",
+          "club": "山东泰山",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-15",
+          "player": "J·卡洛斯",
+          "player_id": "104443",
+          "position": "中场",
+          "club": "阿拉胡埃伦斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-16",
+          "player": "权磊",
+          "player_id": "63030",
+          "position": "",
+          "club": "内蒙古中优",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-02-26",
+          "player": "牟鹏飞",
+          "player_id": "59214",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-02-26",
+          "player": "王君",
+          "player_id": "80713",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-02-26",
+          "player": "栗鹏",
+          "player_id": "77201",
+          "position": "中卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2016-2017": {
+      "in": [
+        {
+          "date": "2016-07-01",
+          "player": "王子铭",
+          "player_id": "132981",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-15",
+          "player": "栗鹏",
+          "player_id": "77201",
+          "position": "中卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-11-08",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "青岛海牛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "李昱",
+          "player_id": "173520",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "王泽阳",
+          "player_id": "164958",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "王宗哲",
+          "player_id": "173523",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-03-07",
+          "player": "吴凯",
+          "player_id": "133170",
+          "position": "中场",
+          "club": "青岛黄海制药后备队",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2016-07-15",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-15",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-11-08",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "青岛海牛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-12-31",
+          "player": "艾迪靴南迪斯",
+          "player_id": "98243",
+          "position": "中锋",
+          "club": "摩塔瓜",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "郭亮",
+          "player_id": "63065",
+          "position": "",
+          "club": "浙江俱乐部绿城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "栗鹏",
+          "player_id": "77201",
+          "position": "中卫",
+          "club": "上海申花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-01",
+          "player": "朱建荣",
+          "player_id": "63056",
+          "position": "",
+          "club": "上海申花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-01-14",
+          "player": "何杨",
+          "player_id": "63001",
+          "position": "",
+          "club": "绍兴柯桥越甲",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-07",
+          "player": "王建文",
+          "player_id": "60087",
+          "position": "中场",
+          "club": "北京北体大",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-13",
+          "player": "孙江山",
+          "player_id": "63085",
+          "position": "",
+          "club": "保定容大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-02-20",
+          "player": "约翰尼",
+          "player_id": "52718",
+          "position": "后卫",
+          "club": "云南飞虎",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-02-28",
+          "player": "王伟",
+          "player_id": "80716",
+          "position": "",
+          "club": "上海申花",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-03-03",
+          "player": "沙洛泽·乌度基",
+          "player_id": "140324",
+          "position": "",
+          "club": "利勒斯特罗姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-03-10",
+          "player": "迪力木拉提·巴吐尔",
+          "player_id": "83163",
+          "position": "",
+          "club": "苏州东吴",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2017-2018": {
+      "in": [
+        {
+          "date": "2017-07-14",
+          "player": "吴宇帆",
+          "player_id": "165570",
+          "position": "前锋",
+          "club": "河北华夏幸福后备队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-14",
+          "player": "徐憶海",
+          "player_id": "114026",
+          "position": "前锋",
+          "club": "北京北体大",
+          "type": "租借"
+        },
+        {
+          "date": "2017-07-14",
+          "player": "全龙海",
+          "player_id": "173516",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-14",
+          "player": "王子铭",
+          "player_id": "132981",
+          "position": "前锋",
+          "club": "北京国安",
+          "type": "租借"
+        },
+        {
+          "date": "2017-12-25",
+          "player": "戈兰·斯特万诺维奇",
+          "player_id": "117176",
+          "position": "",
+          "club": "阿格罗蒂科斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-12-31",
+          "player": "李壮飞",
+          "player_id": "63298",
+          "position": "后卫",
+          "club": "云南飞虎",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "王泽阳",
+          "player_id": "164958",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "张华楠",
+          "player_id": "173522",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "曹国峻",
+          "player_id": "173517",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-02-08",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "广州富力后备队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-12",
+          "player": "胡俊",
+          "player_id": "63066",
+          "position": "中场",
+          "club": "银川山屿海贺兰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-02-14",
+          "player": "于祥",
+          "player_id": "98044",
+          "position": "",
+          "club": "昆山FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-03-07",
+          "player": "李凯",
+          "player_id": "63018",
+          "position": "前锋",
+          "club": "江西庐山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-03-07",
+          "player": "朱晓健",
+          "player_id": "120540",
+          "position": "前锋",
+          "club": "北京北控后备队",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2017-07-14",
+          "player": "王泽阳",
+          "player_id": "164958",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-14",
+          "player": "曹国峻",
+          "player_id": "173517",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-12-31",
+          "player": "王子铭",
+          "player_id": "132981",
+          "position": "前锋",
+          "club": "北京国安",
+          "type": "租借结束"
+        },
+        {
+          "date": "2017-12-31",
+          "player": "徐憶海",
+          "player_id": "114026",
+          "position": "前锋",
+          "club": "北京北体大",
+          "type": "租借结束"
+        },
+        {
+          "date": "2018-02-24",
+          "player": "钟义浩",
+          "player_id": "132980",
+          "position": "前锋",
+          "club": "广州队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-03-09",
+          "player": "胡义飞",
+          "player_id": "141827",
+          "position": "守门员",
+          "club": "四川FC",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-03-09",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-03-09",
+          "player": "吴宇帆",
+          "player_id": "165570",
+          "position": "前锋",
+          "club": "苏州东吴",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-03-09",
+          "player": "李壮飞",
+          "player_id": "63298",
+          "position": "后卫",
+          "club": "淄博蹴鞠",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-03-09",
+          "player": "吴凯",
+          "player_id": "133170",
+          "position": "中场",
+          "club": "内蒙古草上飞",
+          "type": "租借"
+        },
+        {
+          "date": "2018-03-15",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "泰州远大",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2018-2019": {
+      "in": [
+        {
+          "date": "2018-12-31",
+          "player": "吴凯",
+          "player_id": "133170",
+          "position": "中场",
+          "club": "内蒙古草上飞",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "周宝林",
+          "player_id": "174369",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "逄成泰",
+          "player_id": "174370",
+          "position": "中场",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "杨锐",
+          "player_id": "174371",
+          "position": "前锋",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "宋明天",
+          "player_id": "174368",
+          "position": "后卫",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-24",
+          "player": "陈博",
+          "player_id": "82638",
+          "position": "",
+          "club": "银川山屿海贺兰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-24",
+          "player": "李鑫",
+          "player_id": "98120",
+          "position": "中场",
+          "club": "吉林百嘉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-19",
+          "player": "金弘宇",
+          "player_id": "80424",
+          "position": "后卫",
+          "club": "吉林百嘉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-20",
+          "player": "宋博",
+          "player_id": "53685",
+          "position": "",
+          "club": "银川山屿海贺兰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-28",
+          "player": "朱泉",
+          "player_id": "150741",
+          "position": "守门员",
+          "club": "延边富德",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2019-02-22",
+          "player": "王琦",
+          "player_id": "132977",
+          "position": "守门员",
+          "club": "陕西长安竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-26",
+          "player": "曹国峻",
+          "player_id": "173517",
+          "position": "守门员",
+          "club": "泰州远大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-02-26",
+          "player": "张润豪",
+          "player_id": "120543",
+          "position": "中场",
+          "club": "泰州远大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-03-01",
+          "player": "李凯",
+          "player_id": "63018",
+          "position": "前锋",
+          "club": "菏泽曹州",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2019-2020": {
+      "in": [
+        {
+          "date": "2019-07-03",
+          "player": "韦超",
+          "player_id": "120505",
+          "position": "前锋",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-07-10",
+          "player": "黄准",
+          "player_id": "63081",
+          "position": "后卫",
+          "club": "深圳新鹏城",
+          "type": "租借"
+        },
+        {
+          "date": "2019-12-23",
+          "player": "朱炯",
+          "player_id": "80524",
+          "position": "主教练",
+          "club": "上海申鑫",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-02-28",
+          "player": "谭力玮",
+          "player_id": "154447",
+          "position": "中场",
+          "club": "定南赣联",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2019-12-31",
+          "player": "黄准",
+          "player_id": "63081",
+          "position": "后卫",
+          "club": "深圳新鹏城",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2020-2021": {
+      "in": [
+        {
+          "date": "2020-08-13",
+          "player": "姜宁",
+          "player_id": "63057",
+          "position": "中场",
+          "club": "泰州远大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-10-04",
+          "player": "刘文庆",
+          "player_id": "80670",
+          "position": "",
+          "club": "自由球员",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-10-04",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-10-04",
+          "player": "陈钊",
+          "player_id": "155996",
+          "position": "守门员",
+          "club": "上海申花后备队",
+          "type": "租借"
+        },
+        {
+          "date": "2021-01-01",
+          "player": "朱泉",
+          "player_id": "150741",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-19",
+          "player": "殷铁生",
+          "player_id": "147773",
+          "position": "",
+          "club": "泰州远大",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "许嘉俊",
+          "player_id": "174241",
+          "position": "中场",
+          "club": "泰州远大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "崔浩",
+          "player_id": "167053",
+          "position": "中场",
+          "club": "河北卓奥",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "牟鹏飞",
+          "player_id": "59214",
+          "position": "守门员",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "杜文翔",
+          "player_id": "141889",
+          "position": "",
+          "club": "陕西超越",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "陈龙",
+          "player_id": "111259",
+          "position": "后卫",
+          "club": "泰州远大",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "高飞",
+          "player_id": "173553",
+          "position": "前锋",
+          "club": "淄博蹴鞠",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "胡明",
+          "player_id": "82542",
+          "position": "前锋",
+          "club": "北京理工",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-07",
+          "player": "张洋",
+          "player_id": "199994",
+          "position": "",
+          "club": "泰州远大后备队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-10",
+          "player": "张丰羽",
+          "player_id": "77183",
+          "position": "",
+          "club": "淄博蹴鞠",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-11",
+          "player": "吴星宇",
+          "player_id": "213060",
+          "position": "中场",
+          "club": "山东鲁能泰山U18",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2020-07-01",
+          "player": "朱泉",
+          "player_id": "150741",
+          "position": "守门员",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-08-24",
+          "player": "于祥",
+          "player_id": "98044",
+          "position": "",
+          "club": "定南赣联",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-10-05",
+          "player": "戈兰·斯特万诺维奇",
+          "player_id": "117176",
+          "position": "",
+          "club": "纳普里达克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-12-31",
+          "player": "陈钊",
+          "player_id": "155996",
+          "position": "守门员",
+          "club": "上海申花后备队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-03-30",
+          "player": "宋博",
+          "player_id": "53685",
+          "position": "",
+          "club": "青岛西海岸",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-01",
+          "player": "孙唯嘉",
+          "player_id": "226785",
+          "position": "中场",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-04-06",
+          "player": "陈博",
+          "player_id": "82638",
+          "position": "",
+          "club": "广西平果",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-04-10",
+          "player": "刘文庆",
+          "player_id": "80670",
+          "position": "",
+          "club": "河北卓奥",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2021-2022": {
+      "in": [
+        {
+          "date": "2021-07-01",
+          "player": "肖智",
+          "player_id": "80379",
+          "position": "前锋",
+          "club": "河北卓奥",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "张天龙",
+          "player_id": "80301",
+          "position": "后卫",
+          "club": "南通支云",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "定南赣联",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "阿达马·圭拉",
+          "player_id": "88193",
+          "position": "中场",
+          "club": "里奥竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "金斯利·奥努埃格布",
+          "player_id": "37211",
+          "position": "前锋",
+          "club": "陕西长安竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-13",
+          "player": "张桐",
+          "player_id": "202050",
+          "position": "前锋",
+          "club": "山东鲁能泰山U18",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-15",
+          "player": "伊布拉西姆·凯恩",
+          "player_id": "173418",
+          "position": "右中场",
+          "club": "禾斯克拉",
+          "type": "租借"
+        },
+        {
+          "date": "2022-04-22",
+          "player": "谢文能",
+          "player_id": "202963",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2022-04-28",
+          "player": "曹盛",
+          "player_id": "154277",
+          "position": "",
+          "club": "山东鲁能泰山U18",
+          "type": "租借"
+        },
+        {
+          "date": "2022-04-29",
+          "player": "郑龙",
+          "player_id": "63069",
+          "position": "中场",
+          "club": "大连人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-04-29",
+          "player": "刘军帅",
+          "player_id": "151301",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2022-05-01",
+          "player": "孙唯嘉",
+          "player_id": "226785",
+          "position": "中场",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-05-01",
+          "player": "王韬",
+          "player_id": "226791",
+          "position": "前锋",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-05-01",
+          "player": "姚保琛",
+          "player_id": "226784",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-05-01",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-05-01",
+          "player": "邰剑锋",
+          "player_id": "200185",
+          "position": "前锋",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2021-10-04",
+          "player": "巴勃罗·维拉尔",
+          "player_id": "234335",
+          "position": "主教练",
+          "club": "杜纳达纳",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-12-31",
+          "player": "吴星宇",
+          "player_id": "213060",
+          "position": "中场",
+          "club": "山东鲁能泰山U18",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-12-31",
+          "player": "谢文能",
+          "player_id": "202963",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-12-31",
+          "player": "曹盛",
+          "player_id": "154277",
+          "position": "",
+          "club": "山东鲁能泰山U18",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-05-05",
+          "player": "刘洋洋",
+          "player_id": "120545",
+          "position": "",
+          "club": "青岛红狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-05-06",
+          "player": "王昊",
+          "player_id": "80553",
+          "position": "",
+          "club": "青岛红狮",
+          "type": "租借"
+        },
+        {
+          "date": "2022-05-06",
+          "player": "李鑫",
+          "player_id": "98120",
+          "position": "中场",
+          "club": "宁波职业足球俱乐部",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2022-2023": {
+      "in": [
+        {
+          "date": "2022-08-01",
+          "player": "许旸",
+          "player_id": "80386",
+          "position": "中场",
+          "club": "陕西长安竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-01",
+          "player": "陶智略",
+          "player_id": "226531",
+          "position": "中场",
+          "club": "梅州客家",
+          "type": "租借"
+        },
+        {
+          "date": "2022-08-01",
+          "player": "王建明",
+          "player_id": "200007",
+          "position": "右后卫",
+          "club": "陕西长安竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-01",
+          "player": "刘佳燊",
+          "player_id": "80328",
+          "position": "后卫",
+          "club": "陕西长安竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-31",
+          "player": "孙锡鹏",
+          "player_id": "173386",
+          "position": "前锋",
+          "club": "淄博齐盛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-31",
+          "player": "叶丰瑞",
+          "player_id": "235567",
+          "position": "",
+          "club": "自由球员",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-31",
+          "player": "孙塨皓",
+          "player_id": "231227",
+          "position": "",
+          "club": "青岛中能后备队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "李昱",
+          "player_id": "173520",
+          "position": "",
+          "club": "泰安天贶",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "胡明",
+          "player_id": "82542",
+          "position": "前锋",
+          "club": "淄博蹴鞠",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "杜文翔",
+          "player_id": "141889",
+          "position": "",
+          "club": "淄博蹴鞠",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "肖智",
+          "player_id": "80379",
+          "position": "前锋",
+          "club": "辽宁铁人",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "辽宁铁人",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-02-13",
+          "player": "安东尼奥",
+          "player_id": "219484",
+          "position": "",
+          "club": "河南队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-02-22",
+          "player": "福贝斯",
+          "player_id": "78072",
+          "position": "前锋",
+          "club": "武汉长江",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-22",
+          "player": "E.塞里奇",
+          "player_id": "87400",
+          "position": "中场",
+          "club": "水原三星",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-22",
+          "player": "马兴煜",
+          "player_id": "63410",
+          "position": "后腰",
+          "club": "河南队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-22",
+          "player": "许东",
+          "player_id": "98079",
+          "position": "后卫",
+          "club": "武汉长江",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-02-23",
+          "player": "埃文斯.康瓦",
+          "player_id": "119618",
+          "position": "",
+          "club": "图拉兵工厂",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-03-01",
+          "player": "安德雷耶维奇",
+          "player_id": "89070",
+          "position": "后卫",
+          "club": "红星诺维萨德",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-03-23",
+          "player": "宋文杰",
+          "player_id": "80358",
+          "position": "前锋",
+          "club": "广州城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-03-25",
+          "player": "钟晋宝",
+          "player_id": "111210",
+          "position": "中场",
+          "club": "河南队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-03-30",
+          "player": "陈纯新",
+          "player_id": "184204",
+          "position": "前锋",
+          "club": "上海海港",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-01",
+          "player": "吕信凯",
+          "player_id": "235900",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-04-01",
+          "player": "王维轩",
+          "player_id": "235899",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-04-04",
+          "player": "瑟奇·塔贝科尔",
+          "player_id": "135528",
+          "position": "前锋",
+          "club": "利尔斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-06",
+          "player": "刘军帅",
+          "player_id": "151301",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-07",
+          "player": "刘震理",
+          "player_id": "63091",
+          "position": "守门员",
+          "club": "青岛西海岸",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-08",
+          "player": "刘超阳",
+          "player_id": "173072",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-10",
+          "player": "傅韵程",
+          "player_id": "198753",
+          "position": "后卫",
+          "club": "广州城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-10",
+          "player": "龙威",
+          "player_id": "120184",
+          "position": "中场",
+          "club": "浙江俱乐部绿城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-10",
+          "player": "张卫",
+          "player_id": "129994",
+          "position": "后卫",
+          "club": "上海海港",
+          "type": "租借"
+        },
+        {
+          "date": "2023-04-10",
+          "player": "刘君",
+          "player_id": "80508",
+          "position": "守门员",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-11",
+          "player": "郝海毅",
+          "player_id": "219938",
+          "position": "",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2023-04-12",
+          "player": "崔子骏",
+          "player_id": "235898",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-04-12",
+          "player": "王昊",
+          "player_id": "80553",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-04-12",
+          "player": "常经纬",
+          "player_id": "235901",
+          "position": "",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "重庆铜梁龙",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2022-08-02",
+          "player": "李昱",
+          "player_id": "173520",
+          "position": "",
+          "club": "泰安天贶",
+          "type": "租借"
+        },
+        {
+          "date": "2022-08-04",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "辽宁铁人",
+          "type": "租借"
+        },
+        {
+          "date": "2022-08-04",
+          "player": "乔俊锡",
+          "player_id": "226787",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-08-31",
+          "player": "胡明",
+          "player_id": "82542",
+          "position": "前锋",
+          "club": "淄博蹴鞠",
+          "type": "租借"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "谢文能",
+          "player_id": "202963",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "曹盛",
+          "player_id": "154277",
+          "position": "",
+          "club": "山东鲁能泰山U18",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "陶智略",
+          "player_id": "226531",
+          "position": "中场",
+          "club": "梅州客家",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "伊布拉西姆·凯恩",
+          "player_id": "173418",
+          "position": "右中场",
+          "club": "禾斯克拉",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-12-31",
+          "player": "刘军帅",
+          "player_id": "151301",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-01-01",
+          "player": "阿达马·圭拉",
+          "player_id": "88193",
+          "position": "中场",
+          "club": "里奥竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-01",
+          "player": "孙唯嘉",
+          "player_id": "226785",
+          "position": "中场",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-04-11",
+          "player": "邰剑锋",
+          "player_id": "200185",
+          "position": "前锋",
+          "club": "兰州陇原竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-12",
+          "player": "金斯利·奥努埃格布",
+          "player_id": "37211",
+          "position": "前锋",
+          "club": "佛山南狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-18",
+          "player": "张天龙",
+          "player_id": "80301",
+          "position": "后卫",
+          "club": "青岛西海岸",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-19",
+          "player": "王韬",
+          "player_id": "226791",
+          "position": "前锋",
+          "club": "定南赣联",
+          "type": "租借"
+        },
+        {
+          "date": "2023-04-19",
+          "player": "许嘉俊",
+          "player_id": "174241",
+          "position": "中场",
+          "club": "定南赣联",
+          "type": "租借"
+        },
+        {
+          "date": "2023-04-19",
+          "player": "崔浩",
+          "player_id": "167053",
+          "position": "中场",
+          "club": "丹东腾跃",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-21",
+          "player": "朱世玉",
+          "player_id": "77185",
+          "position": "中场",
+          "club": "大连鲲城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-21",
+          "player": "肖智",
+          "player_id": "80379",
+          "position": "前锋",
+          "club": "广东广州豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-22",
+          "player": "张桐",
+          "player_id": "202050",
+          "position": "前锋",
+          "club": "赣州瑞狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-23",
+          "player": "陈龙",
+          "player_id": "111259",
+          "position": "后卫",
+          "club": "青岛红狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-24",
+          "player": "杜文翔",
+          "player_id": "141889",
+          "position": "",
+          "club": "青岛红狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-04-25",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "重庆铜梁龙",
+          "type": "租借"
+        },
+        {
+          "date": "2023-04-26",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "青岛红狮",
+          "type": "租借"
+        }
+      ]
+    },
+    "2023-2024": {
+      "in": [
+        {
+          "date": "2023-07-06",
+          "player": "彭欣力",
+          "player_id": "63368",
+          "position": "中场",
+          "club": "上海申花",
+          "type": "租借"
+        },
+        {
+          "date": "2023-07-28",
+          "player": "冯劲",
+          "player_id": "111335",
+          "position": "前锋",
+          "club": "上海海港",
+          "type": "租借"
+        },
+        {
+          "date": "2023-07-31",
+          "player": "沙利奇",
+          "player_id": "173285",
+          "position": "中锋",
+          "club": "纳普里达克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-12-25",
+          "player": "佩特罗夫",
+          "player_id": "120134",
+          "position": "主教练",
+          "club": "保加利亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "许嘉俊",
+          "player_id": "174241",
+          "position": "中场",
+          "club": "定南赣联",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛红狮",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "孙锡鹏",
+          "player_id": "173386",
+          "position": "前锋",
+          "club": "青岛红狮",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "朱泉",
+          "player_id": "150741",
+          "position": "守门员",
+          "club": "青岛红狮",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "青岛红狮",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-01",
+          "player": "李苏达",
+          "player_id": "236207",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "曹政",
+          "player_id": "225197",
+          "position": "守门员",
+          "club": "山东泰山U21",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "马丁·博阿克耶",
+          "player_id": "199811",
+          "position": "中锋",
+          "club": "奥马利克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "王子豪",
+          "player_id": "120130",
+          "position": "中场",
+          "club": "济南兴州",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "迭戈·洛佩兹",
+          "player_id": "103843",
+          "position": "中场",
+          "club": "狮城水手",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "米洛斯米洛维奇",
+          "player_id": "200678",
+          "position": "后卫",
+          "club": "纳曼干新春",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "张威",
+          "player_id": "175907",
+          "position": "中锋",
+          "club": "上海申花",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "李海龙",
+          "player_id": "144928",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "胡靖航",
+          "player_id": "140649",
+          "position": "前锋",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-06-20",
+          "player": "乔俊锡",
+          "player_id": "226787",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-06-22",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "王韬",
+          "player_id": "226791",
+          "position": "前锋",
+          "club": "兰州陇原竞技",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2023-04-25",
+          "player": "潘昱辰",
+          "player_id": "120544",
+          "position": "中场",
+          "club": "兰州陇原竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-09-12",
+          "player": "瑟奇·塔贝科尔",
+          "player_id": "135528",
+          "position": "前锋",
+          "club": "布凯里耶",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "冯劲",
+          "player_id": "111335",
+          "position": "前锋",
+          "club": "上海海港",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "彭欣力",
+          "player_id": "63368",
+          "position": "中场",
+          "club": "上海申花",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "郝海毅",
+          "player_id": "219938",
+          "position": "",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "张卫",
+          "player_id": "129994",
+          "position": "后卫",
+          "club": "上海海港",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-26",
+          "player": "胡明",
+          "player_id": "82542",
+          "position": "前锋",
+          "club": "深圳青年人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "福贝斯",
+          "player_id": "78072",
+          "position": "前锋",
+          "club": "东孟加拉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-05",
+          "player": "傅韵程",
+          "player_id": "198753",
+          "position": "后卫",
+          "club": "大连英博",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-21",
+          "player": "沙利奇",
+          "player_id": "173285",
+          "position": "中锋",
+          "club": "嘉沃伊万基卡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-24",
+          "player": "安德雷耶维奇",
+          "player_id": "89070",
+          "position": "后卫",
+          "club": "重庆铜梁龙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "朱泉",
+          "player_id": "150741",
+          "position": "守门员",
+          "club": "青岛红狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "青岛红狮",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "孙锡鹏",
+          "player_id": "173386",
+          "position": "前锋",
+          "club": "重庆铜梁龙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-02-28",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛红狮",
+          "type": "租借"
+        },
+        {
+          "date": "2024-03-04",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "兰州陇原竞技",
+          "type": "租借"
+        },
+        {
+          "date": "2024-03-05",
+          "player": "许嘉俊",
+          "player_id": "174241",
+          "position": "中场",
+          "club": "广东广州豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-03-08",
+          "player": "刘超阳",
+          "player_id": "173072",
+          "position": "中场",
+          "club": "广东广州豹",
+          "type": "租借"
+        },
+        {
+          "date": "2024-03-08",
+          "player": "王韬",
+          "player_id": "226791",
+          "position": "前锋",
+          "club": "兰州陇原竞技",
+          "type": "租借"
+        },
+        {
+          "date": "2024-06-28",
+          "player": "李苏达",
+          "player_id": "236207",
+          "position": "后卫",
+          "club": "宁波职业足球俱乐部",
+          "type": "租借"
+        }
+      ]
+    },
+    "2024-2025": {
+      "in": [
+        {
+          "date": "2024-07-04",
+          "player": "尼古拉·拉德马诺夫",
+          "player_id": "197650",
+          "position": "中卫",
+          "club": "巴蒂卡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-12",
+          "player": "金永浩",
+          "player_id": "283869",
+          "position": "中场",
+          "club": "里奥竞技",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-15",
+          "player": "韩丞智",
+          "player_id": "283872",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-15",
+          "player": "黄英豪",
+          "player_id": "283871",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-15",
+          "player": "赵诣",
+          "player_id": "283870",
+          "position": "中锋",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-12-11",
+          "player": "刘超阳",
+          "player_id": "173072",
+          "position": "中场",
+          "club": "广东广州豹",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "威灵顿·席尔瓦",
+          "player_id": "77900",
+          "position": "前锋",
+          "club": "累西腓体育",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "兰州陇原竞技",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "大连鲲城",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "青岛红狮",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "李苏达",
+          "player_id": "236207",
+          "position": "后卫",
+          "club": "宁波职业足球俱乐部",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-13",
+          "player": "罗森文",
+          "player_id": "110765",
+          "position": "中场",
+          "club": "武汉三镇",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-14",
+          "player": "冯伯元",
+          "player_id": "141806",
+          "position": "前锋",
+          "club": "河南队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-15",
+          "player": "韩镕泽",
+          "player_id": "110835",
+          "position": "守门员",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-16",
+          "player": "林创益",
+          "player_id": "111308",
+          "position": "中场",
+          "club": "深圳新鹏城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-17",
+          "player": "金洋洋",
+          "player_id": "82679",
+          "position": "后卫",
+          "club": "上海申花",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-18",
+          "player": "李霄鹏",
+          "player_id": "118988",
+          "position": "",
+          "club": "沧州雄狮",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-31",
+          "player": "黄皓隽",
+          "player_id": "225732",
+          "position": "中场",
+          "club": "东方体育会",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "车世伟",
+          "player_id": "132915",
+          "position": "中场",
+          "club": "佛山南狮",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "杨聪",
+          "player_id": "310660",
+          "position": "前锋",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "王宽",
+          "player_id": "310642",
+          "position": "守门员",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "郑传辉",
+          "player_id": "310653",
+          "position": "中场",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-02",
+          "player": "肖鲲",
+          "player_id": "173747",
+          "position": "中场",
+          "club": "重庆铜梁龙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-03",
+          "player": "韦所为",
+          "player_id": "226348",
+          "position": "后卫",
+          "club": "广州队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-14",
+          "player": "菲利佩·奥古斯托",
+          "player_id": "102927",
+          "position": "中场",
+          "club": "库亚巴",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-15",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2025-02-15",
+          "player": "贾非凡",
+          "player_id": "216810",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2025-06-27",
+          "player": "迪迪埃·兰克尔·泽",
+          "player_id": "145122",
+          "position": "前锋",
+          "club": "圣图尔登",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-06-28",
+          "player": "孙正傲",
+          "player_id": "111231",
+          "position": "后卫",
+          "club": "浙江俱乐部绿城",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2024-08-06",
+          "player": "威灵顿·席尔瓦",
+          "player_id": "77900",
+          "position": "前锋",
+          "club": "累西腓体育",
+          "type": "租借"
+        },
+        {
+          "date": "2024-09-04",
+          "player": "米洛斯米洛维奇",
+          "player_id": "200678",
+          "position": "后卫",
+          "club": "萨姆加耶特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "张威",
+          "player_id": "175907",
+          "position": "中锋",
+          "club": "上海申花",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-12-31",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-01-08",
+          "player": "马丁·博阿克耶",
+          "player_id": "199811",
+          "position": "中锋",
+          "club": "武里南联",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-13",
+          "player": "许东",
+          "player_id": "98079",
+          "position": "后卫",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-17",
+          "player": "钟晋宝",
+          "player_id": "111210",
+          "position": "中场",
+          "club": "武汉三镇",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-01-17",
+          "player": "龙威",
+          "player_id": "120184",
+          "position": "中场",
+          "club": "武汉三镇",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "李苏达",
+          "player_id": "236207",
+          "position": "后卫",
+          "club": "青岛海牛U21",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-03",
+          "player": "埃文斯.康瓦",
+          "player_id": "119618",
+          "position": "",
+          "club": "艾卜哈",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-08",
+          "player": "王建明",
+          "player_id": "200007",
+          "position": "右后卫",
+          "club": "广东广州豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-13",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "大连鲲城",
+          "type": "租借"
+        },
+        {
+          "date": "2025-02-21",
+          "player": "刘鍏成",
+          "player_id": "141828",
+          "position": "中场",
+          "club": "南通支云",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-02-21",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "广西恒宸",
+          "type": "租借"
+        },
+        {
+          "date": "2025-03-07",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "兰州陇原竞技",
+          "type": "租借"
+        },
+        {
+          "date": "2025-06-24",
+          "player": "王子豪",
+          "player_id": "120130",
+          "position": "中场",
+          "club": "延边龙鼎",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-06-24",
+          "player": "赵诣",
+          "player_id": "283870",
+          "position": "中锋",
+          "club": "无锡吴钩",
+          "type": "租借"
+        }
+      ]
+    },
+    "2025-2026": {
+      "in": [
+        {
+          "date": "2025-07-17",
+          "player": "买乌郎·米吉提",
+          "player_id": "231305",
+          "position": "",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2025-07-21",
+          "player": "张驰",
+          "player_id": "63405",
+          "position": "右中场",
+          "club": "山东泰山",
+          "type": "租借"
+        },
+        {
+          "date": "2025-12-27",
+          "player": "米兰·里斯蒂奇",
+          "player_id": "209472",
+          "position": "主教练",
+          "club": "梅州客家",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "陈佳奇",
+          "player_id": "164877",
+          "position": "中锋",
+          "club": "大连鲲城",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "广西恒宸",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "赵诣",
+          "player_id": "283870",
+          "position": "中锋",
+          "club": "无锡吴钩",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "孙旭",
+          "player_id": "134391",
+          "position": "后卫",
+          "club": "兰州陇原竞技",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-23",
+          "player": "埃德欧玛",
+          "player_id": "161450",
+          "position": "中场",
+          "club": "布加勒斯特星队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-23",
+          "player": "内曼贾·安德杰尔科维奇",
+          "player_id": "197709",
+          "position": "后卫",
+          "club": "阿克托比",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-23",
+          "player": "梅萨欧迪",
+          "player_id": "124479",
+          "position": "中场",
+          "club": "杜堡尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-03",
+          "player": "斯特兰德伯格",
+          "player_id": "114199",
+          "position": "前锋",
+          "club": "哈塔斯堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "穆斯塔帕·塔西",
+          "player_id": "223473",
+          "position": "后卫",
+          "club": "山东泰山金钢山队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "孙正傲",
+          "player_id": "111231",
+          "position": "后卫",
+          "club": "浙江俱乐部绿城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "颜卓彬",
+          "player_id": "203618",
+          "position": "中场",
+          "club": "和富大埔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "刘鑫瑜",
+          "player_id": "98321",
+          "position": "前锋",
+          "club": "河南队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "王峤",
+          "player_id": "141805",
+          "position": "后卫",
+          "club": "深圳新鹏城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "吴星宇",
+          "player_id": "213060",
+          "position": "中场",
+          "club": "广东广州豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "张卫",
+          "player_id": "129994",
+          "position": "后卫",
+          "club": "深圳新鹏城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-17",
+          "player": "魏子娴",
+          "player_id": "289309",
+          "position": "中场",
+          "club": "湖北青年星",
+          "type": "租借"
+        },
+        {
+          "date": "2026-02-24",
+          "player": "Y.耶保亚",
+          "player_id": "132734",
+          "position": "前锋",
+          "club": "洛杉矶FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-26",
+          "player": "买乌兰·加帕尔",
+          "player_id": "226829",
+          "position": "守门员",
+          "club": "温州职业",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-02-27",
+          "player": "刘国宝",
+          "player_id": "225510",
+          "position": "中锋",
+          "club": "山东泰山",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2025-07-18",
+          "player": "胡靖航",
+          "player_id": "140649",
+          "position": "前锋",
+          "club": "南京城市",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "孙正傲",
+          "player_id": "111231",
+          "position": "后卫",
+          "club": "浙江俱乐部绿城",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "宋龙",
+          "player_id": "77184",
+          "position": "后卫",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "贾非凡",
+          "player_id": "216810",
+          "position": "中场",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "买乌郎·米吉提",
+          "player_id": "231305",
+          "position": "",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-12-31",
+          "player": "张驰",
+          "player_id": "63405",
+          "position": "右中场",
+          "club": "山东泰山",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-01-01",
+          "player": "韩镕泽",
+          "player_id": "110835",
+          "position": "守门员",
+          "club": "辽宁铁人",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-07",
+          "player": "威灵顿·席尔瓦",
+          "player_id": "77900",
+          "position": "前锋",
+          "club": "成都蓉城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-09",
+          "player": "黄皓隽",
+          "player_id": "225732",
+          "position": "中场",
+          "club": "杰志",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-15",
+          "player": "尼古拉·拉德马诺夫",
+          "player_id": "197650",
+          "position": "中卫",
+          "club": "华达塞",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-28",
+          "player": "韦所为",
+          "player_id": "226348",
+          "position": "后卫",
+          "club": "重庆铜梁龙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-01-31",
+          "player": "陈纯新",
+          "player_id": "184204",
+          "position": "前锋",
+          "club": "重庆铜梁龙",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-03",
+          "player": "冯伯元",
+          "player_id": "141806",
+          "position": "前锋",
+          "club": "陕西联合月亮泊队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-02-25",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "泰安天贶",
+          "type": "租借"
+        },
+        {
+          "date": "2026-02-27",
+          "player": "肖鲲",
+          "player_id": "173747",
+          "position": "中场",
+          "club": "广东广州豹",
+          "type": "自由转会"
+        },
+        {
+          "date": "2026-03-10",
+          "player": "王宽",
+          "player_id": "310642",
+          "position": "守门员",
+          "club": "山西崇德荣海",
+          "type": "租借"
+        }
+      ]
+    },
+    "2026-2027": {
+      "in": [
+        {
+          "date": "2026-12-31",
+          "player": "王宽",
+          "player_id": "310642",
+          "position": "守门员",
+          "club": "山西崇德荣海",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-12-31",
+          "player": "高翊轩",
+          "player_id": "226786",
+          "position": "左中场",
+          "club": "泰安天贶",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2026-12-31",
+          "player": "魏子娴",
+          "player_id": "289309",
+          "position": "中场",
+          "club": "湖北青年星",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-12-31",
+          "player": "刘国宝",
+          "player_id": "225510",
+          "position": "中锋",
+          "club": "山东泰山",
+          "type": "租借结束"
+        }
+      ]
+    }
+  }
+}

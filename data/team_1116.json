@@ -1,0 +1,4704 @@
+{
+  "team_id": "1116",
+  "update_time": "2026-04-02 00:22:59",
+  "detail": null,
+  "lineup": {
+    "goalkeeper": [
+      {
+        "player_id": "844813",
+        "number": "1",
+        "name_cn": "霍夫曼",
+        "name_hk": "G.荷夫曼",
+        "name_en": "Ron Ron Hoffmann",
+        "is_captain": true,
+        "position": "守门员"
+      },
+      {
+        "player_id": "817506",
+        "number": "13",
+        "name_cn": "埃尔汉·卡斯特拉蒂",
+        "name_hk": "E.卡斯泰迪",
+        "name_en": "Elhan Kastrati",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "999154",
+        "number": "33",
+        "name_cn": "马尔科·拉伊科瓦契奇",
+        "name_hk": "馬爾科·拉伊科瓦契奇",
+        "name_en": "Marko Rajkovacic",
+        "is_captain": false,
+        "position": "守门员"
+      },
+      {
+        "player_id": "974682",
+        "number": "35",
+        "name_cn": "莱昂·赫尔德斯",
+        "name_hk": "萊昂·赫爾德斯",
+        "name_en": "Leon Herdes",
+        "is_captain": false,
+        "position": "守门员"
+      }
+    ],
+    "defender": [
+      {
+        "player_id": "590479",
+        "number": "3",
+        "name_cn": "帕特里克·恩科阿",
+        "name_hk": "帕特里克·恩科阿",
+        "name_en": "Patrick Nkoa",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "832494",
+        "number": "4",
+        "name_cn": "霍蒂",
+        "name_hk": "A.霍蒂",
+        "name_en": "Andi Hoti",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "810869",
+        "number": "5",
+        "name_cn": "弗雷德里克·雅克尔",
+        "name_hk": "F.積基爾",
+        "name_en": "Frederik Jakel",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "580490",
+        "number": "16",
+        "name_cn": "路易斯·布鲁尼",
+        "name_hk": "路易斯·布魯尼",
+        "name_en": "Louis Breunig",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "890222",
+        "number": "19",
+        "name_cn": "莱昂.贝尔",
+        "name_hk": "萊昂.貝爾",
+        "name_en": "Leon Bell Bell",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "815333",
+        "number": "21",
+        "name_cn": "K.埃勒斯",
+        "name_hk": "K.埃勒斯",
+        "name_en": "Kevin Ehlers",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "553915",
+        "number": "22",
+        "name_cn": "法比奥·桑切斯",
+        "name_hk": "法比奧·桑切斯",
+        "name_en": "Fabio Di Michele Sanchez",
+        "is_captain": false,
+        "position": "后卫"
+      },
+      {
+        "player_id": "504811",
+        "number": "29",
+        "name_cn": "卢卡斯·弗伦克特",
+        "name_hk": "盧卡斯·弗倫克特",
+        "name_en": "Lukas Frenkert",
+        "is_captain": false,
+        "position": "后卫"
+      }
+    ],
+    "midfielder": [
+      {
+        "player_id": "813298",
+        "number": "6",
+        "name_cn": "弗洛里安",
+        "name_hk": "弗洛裏安",
+        "name_en": "Florian Flick",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "879727",
+        "number": "7",
+        "name_cn": "F.考夫曼",
+        "name_hk": "F.哥夫曼",
+        "name_en": "Fabio Kaufmann",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "571876",
+        "number": "8",
+        "name_cn": "梅梅特.坎.艾丁",
+        "name_hk": "梅梅特.坎.艾丁",
+        "name_en": "Mehmet Can Aydin",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "564536",
+        "number": "15",
+        "name_cn": "马克斯·玛利",
+        "name_hk": "馬克斯·瑪利",
+        "name_en": "Max Marie",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "813052",
+        "number": "18",
+        "name_cn": "阿纳斯·巴赫特",
+        "name_hk": "阿納斯·巴赫特",
+        "name_en": "Anas Bakhat",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "840539",
+        "number": "20",
+        "name_cn": "坦佩尔曼",
+        "name_hk": "譚柏文",
+        "name_en": "Lino Tempelmann",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "526088",
+        "number": "26",
+        "name_cn": "雨果·路易斯·阿丰索",
+        "name_hk": "雨果·路易斯·阿豐索",
+        "name_en": "Hugo Luis Afonso",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "590482",
+        "number": "30",
+        "name_cn": "罗宾·赫伯",
+        "name_hk": "羅賓·赫伯",
+        "name_en": "Robin Heusser",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "585700",
+        "number": "37",
+        "name_cn": "西德尼·雷比格",
+        "name_hk": "西德尼·雷比格",
+        "name_en": "Sidney Raebiger",
+        "is_captain": false,
+        "position": "中场"
+      },
+      {
+        "player_id": "579030",
+        "number": "44",
+        "name_cn": "约翰·戈麦斯",
+        "name_hk": "戈麥斯",
+        "name_en": "Johan Gomez",
+        "is_captain": false,
+        "position": "中场"
+      }
+    ],
+    "forward": [
+      {
+        "player_id": "810613",
+        "number": "9",
+        "name_cn": "埃伦坎.雅迪米奇",
+        "name_hk": "埃伦坎.雅迪米奇",
+        "name_en": "Erencan Yardimci",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "580635",
+        "number": "10",
+        "name_cn": "法里德·阿里杜",
+        "name_hk": "法里德·阿里杜",
+        "name_en": "Faride Alidou",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "597281",
+        "number": "11",
+        "name_cn": "约万·米贾托维奇",
+        "name_hk": "米賈托維奇",
+        "name_en": "Jovan Mijatovic",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "861937",
+        "number": "17",
+        "name_cn": "奥普库",
+        "name_hk": "奧普庫",
+        "name_en": "Aaron Opoku",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "597195",
+        "number": "24",
+        "name_cn": "西迪·萨内",
+        "name_hk": "薩內",
+        "name_en": "Sidi Sane",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "597932",
+        "number": "25",
+        "name_cn": "拉诺斯",
+        "name_hk": "拉诺斯",
+        "name_en": "Grant-Leon Ranos",
+        "is_captain": false,
+        "position": "前锋"
+      },
+      {
+        "player_id": "549885",
+        "number": "38",
+        "name_cn": "肯·伊泽科尔",
+        "name_hk": "肯·伊澤科爾",
+        "name_en": "Ken Izekor",
+        "is_captain": false,
+        "position": "前锋"
+      }
+    ],
+    "coach": [
+      {
+        "player_id": "961748",
+        "number": "",
+        "name_cn": "拉尔斯·科尔内特卡",
+        "name_hk": "拉爾斯·科爾內特卡",
+        "name_en": "Lars Kornetka",
+        "is_captain": false,
+        "position": "教练"
+      }
+    ]
+  },
+  "lineup_detail": [
+    {
+      "player_id": "367051",
+      "number": "",
+      "name_cn": "拉尔斯·科尔内特卡",
+      "name_hk": "拉爾斯·科爾內特卡",
+      "name_en": "",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "主教练",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "218692",
+      "number": "10",
+      "name_cn": "法里德·阿里杜",
+      "name_hk": "法里德·阿里杜",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "186",
+      "height": "84",
+      "weight": "左边锋",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "80",
+      "value": "2028-06-30万欧元",
+      "contract_end": "1",
+      "total_matches": "0",
+      "goals": "3",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "167390",
+      "number": "17",
+      "name_cn": "奥普库",
+      "name_hk": "奧普庫",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "186",
+      "height": "71",
+      "weight": "左边锋",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "80",
+      "value": "2028-06-30万欧元",
+      "contract_end": "6",
+      "total_matches": "1",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "178679",
+      "number": "9",
+      "name_cn": "埃伦坎.雅迪米奇",
+      "name_hk": "埃伦坎.雅迪米奇",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "78",
+      "weight": "中锋",
+      "position": "土耳其",
+      "country_cn": "土耳其",
+      "country_en": "200",
+      "value": "",
+      "contract_end": "22",
+      "total_matches": "4",
+      "goals": "3",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "230417",
+      "number": "11",
+      "name_cn": "约万·米贾托维奇",
+      "name_hk": "米賈托維奇",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "179",
+      "height": "73",
+      "weight": "中锋",
+      "position": "塞尔维亚",
+      "country_cn": "塞爾維亞",
+      "country_en": "220",
+      "value": "2028-12-31万欧元",
+      "contract_end": "3",
+      "total_matches": "0",
+      "goals": "4",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "230394",
+      "number": "25",
+      "name_cn": "拉诺斯",
+      "name_hk": "拉诺斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "73",
+      "weight": "中锋",
+      "position": "亚美尼亚",
+      "country_cn": "阿美尼亞",
+      "country_en": "80",
+      "value": "2027-06-30万欧元",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "5",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "253112",
+      "number": "38",
+      "name_cn": "肯·伊泽科尔",
+      "name_hk": "肯·伊澤科爾",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "177",
+      "height": "70",
+      "weight": "中锋",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "40",
+      "value": "2027-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "230732",
+      "number": "24",
+      "name_cn": "西迪·萨内",
+      "name_hk": "薩內",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "187",
+      "height": "82",
+      "weight": "右边锋",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "60",
+      "value": "2027-06-30万欧元",
+      "contract_end": "8",
+      "total_matches": "1",
+      "goals": "25",
+      "assists": "1",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "246811",
+      "number": "26",
+      "name_cn": "雨果·路易斯·阿丰索",
+      "name_hk": "雨果·路易斯·阿豐索",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "中场",
+      "position": "卢森堡",
+      "country_cn": "盧森堡",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "103040",
+      "number": "7",
+      "name_cn": "F.考夫曼",
+      "name_hk": "F.哥夫曼",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "181",
+      "height": "74",
+      "weight": "中前卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "30",
+      "value": "2026-06-30万欧元",
+      "contract_end": "97",
+      "total_matches": "14",
+      "goals": "45",
+      "assists": "1",
+      "yellow_cards": "4",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "265296",
+      "number": "15",
+      "name_cn": "马克斯·玛利",
+      "name_hk": "馬克斯·瑪利",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "73",
+      "weight": "中前卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "150",
+      "value": "2027-06-30万欧元",
+      "contract_end": "32",
+      "total_matches": "2",
+      "goals": "13",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "158293",
+      "number": "20",
+      "name_cn": "坦佩尔曼",
+      "name_hk": "譚柏文",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "175",
+      "height": "75",
+      "weight": "中前卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "80",
+      "value": "2028-06-30万欧元",
+      "contract_end": "24",
+      "total_matches": "7",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "238514",
+      "number": "30",
+      "name_cn": "罗宾·赫伯",
+      "name_hk": "羅賓·赫伯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "170",
+      "height": "73",
+      "weight": "中前卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "70",
+      "value": "2027-06-30万欧元",
+      "contract_end": "21",
+      "total_matches": "1",
+      "goals": "4",
+      "assists": "1",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "212088",
+      "number": "37",
+      "name_cn": "西德尼·雷比格",
+      "name_hk": "西德尼·雷比格",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "176",
+      "height": "70",
+      "weight": "中前卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "25",
+      "value": "2027-06-30万欧元",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "4",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "179824",
+      "number": "18",
+      "name_cn": "阿纳斯·巴赫特",
+      "name_hk": "阿納斯·巴赫特",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "184",
+      "height": "",
+      "weight": "前腰",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "20",
+      "value": "2026-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "203898",
+      "number": "44",
+      "name_cn": "约翰·戈麦斯",
+      "name_hk": "戈麥斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "183",
+      "height": "75",
+      "weight": "前腰",
+      "position": "美国",
+      "country_cn": "美國",
+      "country_en": "80",
+      "value": "2027-06-30万欧元",
+      "contract_end": "68",
+      "total_matches": "4",
+      "goals": "21",
+      "assists": "0",
+      "yellow_cards": "7",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "179431",
+      "number": "6",
+      "name_cn": "弗洛里安",
+      "name_hk": "弗洛裏安",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "190",
+      "height": "79",
+      "weight": "后腰",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "60",
+      "value": "2027-06-30万欧元",
+      "contract_end": "14",
+      "total_matches": "0",
+      "goals": "6",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "207106",
+      "number": "8",
+      "name_cn": "梅梅特.坎.艾丁",
+      "name_hk": "梅梅特.坎.艾丁",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "76",
+      "weight": "右中场",
+      "position": "土耳其",
+      "country_cn": "土耳其",
+      "country_en": "120",
+      "value": "2027-06-30万欧元",
+      "contract_end": "24",
+      "total_matches": "5",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "3",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "238503",
+      "number": "3",
+      "name_cn": "帕特里克·恩科阿",
+      "name_hk": "帕特里克·恩科阿",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "192",
+      "height": "85",
+      "weight": "中卫",
+      "position": "喀麦隆",
+      "country_cn": "喀麥隆",
+      "country_en": "80",
+      "value": "2026-06-30万欧元",
+      "contract_end": "15",
+      "total_matches": "1",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "194535",
+      "number": "4",
+      "name_cn": "霍蒂",
+      "name_hk": "A.霍蒂",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "191",
+      "height": "85",
+      "weight": "中卫",
+      "position": "科索沃",
+      "country_cn": "科索沃",
+      "country_en": "60",
+      "value": "2028-06-30万欧元",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "2",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "178163",
+      "number": "5",
+      "name_cn": "弗雷德里克·雅克尔",
+      "name_hk": "F.積基爾",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "194",
+      "height": "83",
+      "weight": "中卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "45",
+      "value": "2027-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "218538",
+      "number": "16",
+      "name_cn": "路易斯·布鲁尼",
+      "name_hk": "路易斯·布魯尼",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "188",
+      "height": "77",
+      "weight": "中卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "90",
+      "value": "2028-06-30万欧元",
+      "contract_end": "6",
+      "total_matches": "0",
+      "goals": "5",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "172999",
+      "number": "21",
+      "name_cn": "K.埃勒斯",
+      "name_hk": "K.埃勒斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "190",
+      "height": "86",
+      "weight": "中卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "90",
+      "value": "2027-06-30万欧元",
+      "contract_end": "40",
+      "total_matches": "3",
+      "goals": "10",
+      "assists": "0",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "285177",
+      "number": "29",
+      "name_cn": "卢卡斯·弗伦克特",
+      "name_hk": "盧卡斯·弗倫克特",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "190",
+      "height": "83",
+      "weight": "中卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "90",
+      "value": "2027-06-30万欧元",
+      "contract_end": "16",
+      "total_matches": "3",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "138444",
+      "number": "19",
+      "name_cn": "莱昂.贝尔",
+      "name_hk": "萊昂.貝爾",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "78",
+      "weight": "左后卫",
+      "position": "喀麦隆",
+      "country_cn": "喀麥隆",
+      "country_en": "50",
+      "value": "2026-06-30万欧元",
+      "contract_end": "28",
+      "total_matches": "1",
+      "goals": "16",
+      "assists": "1",
+      "yellow_cards": "2",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "229372",
+      "number": "22",
+      "name_cn": "法比奥·桑切斯",
+      "name_hk": "法比奧·桑切斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "180",
+      "height": "83",
+      "weight": "左后卫",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "90",
+      "value": "2027-06-30万欧元",
+      "contract_end": "36",
+      "total_matches": "2",
+      "goals": "18",
+      "assists": "2",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "155179",
+      "number": "1",
+      "name_cn": "霍夫曼",
+      "name_hk": "G.荷夫曼",
+      "name_en": "1",
+      "is_captain": false,
+      "birthday": "192",
+      "height": "86",
+      "weight": "守门员",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "100",
+      "value": "2027-06-30万欧元",
+      "contract_end": "87",
+      "total_matches": "0",
+      "goals": "1",
+      "assists": "0",
+      "yellow_cards": "1",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "170286",
+      "number": "13",
+      "name_cn": "埃尔汉·卡斯特拉蒂",
+      "name_hk": "E.卡斯泰迪",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "189",
+      "height": "93",
+      "weight": "守门员",
+      "position": "阿尔巴尼亚",
+      "country_cn": "阿爾巴尼亞",
+      "country_en": "50",
+      "value": "2027-06-30万欧元",
+      "contract_end": "2",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "333725",
+      "number": "33",
+      "name_cn": "马尔科·拉伊科瓦契奇",
+      "name_hk": "馬爾科·拉伊科瓦契奇",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "191",
+      "height": "82",
+      "weight": "守门员",
+      "position": "瑞士",
+      "country_cn": "瑞士",
+      "country_en": "15",
+      "value": "2026-06-30万欧元",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    },
+    {
+      "player_id": "305614",
+      "number": "35",
+      "name_cn": "莱昂·赫尔德斯",
+      "name_hk": "萊昂·赫爾德斯",
+      "name_en": "0",
+      "is_captain": false,
+      "birthday": "",
+      "height": "",
+      "weight": "守门员",
+      "position": "德国",
+      "country_cn": "德國",
+      "country_en": "",
+      "value": "",
+      "contract_end": "0",
+      "total_matches": "0",
+      "goals": "0",
+      "assists": "0",
+      "yellow_cards": "0",
+      "red_cards": "0"
+    }
+  ],
+  "league_stats": [
+    {
+      "type": "主场",
+      "matches": "14",
+      "wins": "5",
+      "draws": "3",
+      "losses": "6",
+      "goals": "16",
+      "conceded": "23",
+      "goal_diff": "-7",
+      "win_rate": "35.7",
+      "draw_rate": "21.4",
+      "loss_rate": "42.9",
+      "avg_goals": "1.14",
+      "avg_conceded": "1.64"
+    },
+    {
+      "type": "客场",
+      "matches": "13",
+      "wins": "3",
+      "draws": "2",
+      "losses": "8",
+      "goals": "13",
+      "conceded": "21",
+      "goal_diff": "-8",
+      "win_rate": "23.1",
+      "draw_rate": "15.4",
+      "loss_rate": "61.5",
+      "avg_goals": "1.00",
+      "avg_conceded": "1.62"
+    },
+    {
+      "type": "总",
+      "matches": "27",
+      "wins": "8",
+      "draws": "5",
+      "losses": "14",
+      "goals": "29",
+      "conceded": "44",
+      "goal_diff": "-15",
+      "win_rate": "29.6",
+      "draw_rate": "18.5",
+      "loss_rate": "51.9",
+      "avg_goals": "1.07",
+      "avg_conceded": "1.63"
+    },
+    {
+      "type": "上半场主场",
+      "matches": "14",
+      "wins": "4",
+      "draws": "5",
+      "losses": "5",
+      "goals": "8",
+      "conceded": "9",
+      "goal_diff": "-1",
+      "win_rate": "28.6",
+      "draw_rate": "35.7",
+      "loss_rate": "35.7",
+      "avg_goals": "0.57",
+      "avg_conceded": "0.64"
+    },
+    {
+      "type": "上半场客场",
+      "matches": "13",
+      "wins": "3",
+      "draws": "5",
+      "losses": "5",
+      "goals": "9",
+      "conceded": "9",
+      "goal_diff": "0",
+      "win_rate": "23.1",
+      "draw_rate": "38.5",
+      "loss_rate": "38.5",
+      "avg_goals": "0.69",
+      "avg_conceded": "0.69"
+    },
+    {
+      "type": "上半场总",
+      "matches": "27",
+      "wins": "7",
+      "draws": "10",
+      "losses": "10",
+      "goals": "17",
+      "conceded": "18",
+      "goal_diff": "-1",
+      "win_rate": "25.9",
+      "draw_rate": "37.0",
+      "loss_rate": "37.0",
+      "avg_goals": "0.63",
+      "avg_conceded": "0.67"
+    }
+  ],
+  "cup_stats": [
+    {
+      "cup_id": "51",
+      "name_cn": "德国杯",
+      "name_hk": "德國盃",
+      "name_en": "GERC",
+      "season": "2025-2026"
+    }
+  ],
+  "tech_stats": [
+    {
+      "league_id": "0",
+      "league_name_cn": "全部",
+      "league_name_hk": "全部",
+      "total_matches": "204",
+      "wins": "143",
+      "draws": "211",
+      "total_goals": "4843",
+      "conceded": "1046",
+      "clean_sheets": "59",
+      "win_rate": "38.64"
+    },
+    {
+      "league_id": "8",
+      "league_name_cn": "德国甲组联赛",
+      "league_name_hk": "德國甲組聯賽",
+      "total_matches": "6",
+      "wins": "7",
+      "draws": "21",
+      "total_goals": "553",
+      "conceded": "65",
+      "clean_sheets": "7",
+      "win_rate": "42.35"
+    },
+    {
+      "league_id": "9",
+      "league_name_cn": "德国乙组联赛",
+      "league_name_hk": "德國乙組聯賽",
+      "total_matches": "98",
+      "wins": "79",
+      "draws": "126",
+      "total_goals": "4037",
+      "conceded": "678",
+      "clean_sheets": "40",
+      "win_rate": "40.08"
+    },
+    {
+      "league_id": "41",
+      "league_name_cn": "球会友谊赛",
+      "league_name_hk": "球會友誼賽",
+      "total_matches": "47",
+      "wins": "16",
+      "draws": "25",
+      "total_goals": "22",
+      "conceded": "44",
+      "clean_sheets": "0",
+      "win_rate": "23.69"
+    },
+    {
+      "league_id": "51",
+      "league_name_cn": "德国足协杯",
+      "league_name_hk": "德國足協盃",
+      "total_matches": "5",
+      "wins": "4",
+      "draws": "8",
+      "total_goals": "218",
+      "conceded": "34",
+      "clean_sheets": "2",
+      "win_rate": "38.65"
+    },
+    {
+      "league_id": "693",
+      "league_name_cn": "德国丙级联赛",
+      "league_name_hk": "德國丙級聯賽",
+      "total_matches": "46",
+      "wins": "35",
+      "draws": "31",
+      "total_goals": "13",
+      "conceded": "221",
+      "clean_sheets": "10",
+      "win_rate": "45.27"
+    },
+    {
+      "league_id": "1903",
+      "league_name_cn": "德国地区球会杯",
+      "league_name_hk": "德國地區球會盃",
+      "total_matches": "2",
+      "wins": "2",
+      "draws": "0",
+      "total_goals": "0",
+      "conceded": "4",
+      "clean_sheets": "0",
+      "win_rate": "42"
+    }
+  ],
+  "history_ranking": [
+    {
+      "season": "2004-2005",
+      "rank": 2,
+      "wins": 20,
+      "draws": 9,
+      "losses": 7,
+      "points": 69
+    },
+    {
+      "season": "2005-2006",
+      "rank": 12,
+      "wins": 13,
+      "draws": 4,
+      "losses": 17,
+      "points": 43
+    },
+    {
+      "season": "2006-2007",
+      "rank": 18,
+      "wins": 4,
+      "draws": 11,
+      "losses": 19,
+      "points": 23
+    },
+    {
+      "season": "2007-2008",
+      "rank": 10,
+      "wins": 13,
+      "draws": 14,
+      "losses": 9,
+      "points": 53
+    },
+    {
+      "season": "2008-2009",
+      "rank": 13,
+      "wins": 12,
+      "draws": 9,
+      "losses": 17,
+      "points": 45
+    },
+    {
+      "season": "2009-2010",
+      "rank": 4,
+      "wins": 17,
+      "draws": 11,
+      "losses": 10,
+      "points": 62
+    },
+    {
+      "season": "2010-2011",
+      "rank": 1,
+      "wins": 26,
+      "draws": 7,
+      "losses": 5,
+      "points": 85
+    },
+    {
+      "season": "2011-2012",
+      "rank": 8,
+      "wins": 10,
+      "draws": 15,
+      "losses": 9,
+      "points": 45
+    },
+    {
+      "season": "2012-2013",
+      "rank": 2,
+      "wins": 19,
+      "draws": 10,
+      "losses": 5,
+      "points": 67
+    },
+    {
+      "season": "2013-2014",
+      "rank": 18,
+      "wins": 6,
+      "draws": 7,
+      "losses": 21,
+      "points": 25
+    },
+    {
+      "season": "2014-2015",
+      "rank": 6,
+      "wins": 15,
+      "draws": 5,
+      "losses": 14,
+      "points": 50
+    },
+    {
+      "season": "2015-2016",
+      "rank": 8,
+      "wins": 12,
+      "draws": 10,
+      "losses": 12,
+      "points": 46
+    },
+    {
+      "season": "2016-2017",
+      "rank": 3,
+      "wins": 19,
+      "draws": 9,
+      "losses": 6,
+      "points": 66
+    },
+    {
+      "season": "2017-2018",
+      "rank": 17,
+      "wins": 8,
+      "draws": 15,
+      "losses": 11,
+      "points": 39
+    },
+    {
+      "season": "2018-2019",
+      "rank": 16,
+      "wins": 10,
+      "draws": 15,
+      "losses": 13,
+      "points": 45
+    },
+    {
+      "season": "2019-2020",
+      "rank": 3,
+      "wins": 18,
+      "draws": 10,
+      "losses": 10,
+      "points": 64
+    },
+    {
+      "season": "2020-2021",
+      "rank": 17,
+      "wins": 7,
+      "draws": 10,
+      "losses": 17,
+      "points": 31
+    },
+    {
+      "season": "2021-2022",
+      "rank": 2,
+      "wins": 18,
+      "draws": 10,
+      "losses": 8,
+      "points": 64
+    },
+    {
+      "season": "2022-2023",
+      "rank": 15,
+      "wins": 9,
+      "draws": 9,
+      "losses": 16,
+      "points": 36
+    },
+    {
+      "season": "2023-2024",
+      "rank": 15,
+      "wins": 11,
+      "draws": 5,
+      "losses": 18,
+      "points": 38
+    },
+    {
+      "season": "2024-2025",
+      "rank": 16,
+      "wins": 8,
+      "draws": 11,
+      "losses": 15,
+      "points": 35
+    },
+    {
+      "season": "2025-2026",
+      "rank": 13,
+      "wins": 8,
+      "draws": 5,
+      "losses": 14,
+      "points": 29
+    }
+  ],
+  "transfers": {
+    "2003-2004": {
+      "in": [
+        {
+          "date": "2003-07-01",
+          "player": "史杜克文",
+          "player_id": "103223",
+          "position": "",
+          "club": "普鲁士明斯特",
+          "type": "自由转会"
+        }
+      ],
+      "out": []
+    },
+    "2006-2007": {
+      "in": [
+        {
+          "date": "2007-01-02",
+          "player": "莱奥齐尼奥",
+          "player_id": "117215",
+          "position": "中场",
+          "club": "奥林匹亚科斯",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2007-06-30",
+          "player": "莱奥齐尼奥",
+          "player_id": "117215",
+          "position": "中场",
+          "club": "奥林匹亚科斯",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2007-2008": {
+      "in": [
+        {
+          "date": "2007-07-01",
+          "player": "赫恩",
+          "player_id": "37225",
+          "position": "",
+          "club": "凯泽斯劳滕",
+          "type": "自由转会"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "厄赫尔",
+          "player_id": "37364",
+          "position": "",
+          "club": "菲尔特",
+          "type": "租借"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "贝诺·莫尔曼",
+          "player_id": "63495",
+          "position": "",
+          "club": "菲尔特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "本杰明.福赫斯",
+          "player_id": "37235",
+          "position": "后卫",
+          "club": "韦恩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "丹尼尔.丹尼博格",
+          "player_id": "37219",
+          "position": "中场",
+          "club": "比勒菲尔德",
+          "type": "租借"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "雷彻尔",
+          "player_id": "37229",
+          "position": "",
+          "club": "汉堡青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "A.森柏利",
+          "player_id": "37259",
+          "position": "",
+          "club": "马沙斯洛克",
+          "type": "租借"
+        },
+        {
+          "date": "2007-07-01",
+          "player": "查斯明.费伊济奇",
+          "player_id": "37233",
+          "position": "",
+          "club": "菲尔特",
+          "type": "租借"
+        },
+        {
+          "date": "2008-05-12",
+          "player": "托尔斯滕·利伯克内希特",
+          "player_id": "102703",
+          "position": "",
+          "club": "布伦瑞克",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2007-07-01",
+          "player": "史杜克文",
+          "player_id": "103223",
+          "position": "",
+          "club": "亚琛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2008-05-12",
+          "player": "托尔斯滕·利伯克内希特",
+          "player_id": "102703",
+          "position": "",
+          "club": "布伦瑞克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-06-30",
+          "player": "丹尼尔.丹尼博格",
+          "player_id": "37219",
+          "position": "中场",
+          "club": "比勒菲尔德",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-06-30",
+          "player": "A.森柏利",
+          "player_id": "37259",
+          "position": "",
+          "club": "马沙斯洛克",
+          "type": "租借结束"
+        },
+        {
+          "date": "2008-06-30",
+          "player": "厄赫尔",
+          "player_id": "37364",
+          "position": "",
+          "club": "菲尔特",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2008-2009": {
+      "in": [
+        {
+          "date": "2008-07-01",
+          "player": "S.埃德米尔",
+          "player_id": "89754",
+          "position": "",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-07-01",
+          "player": "丹尼尔.丹尼博格",
+          "player_id": "37219",
+          "position": "中场",
+          "club": "比勒菲尔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2008-07-01",
+          "player": "金斯利·奥努埃格布",
+          "player_id": "37211",
+          "position": "前锋",
+          "club": "伊达尔奥伯施泰恩",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-01-01",
+          "player": "米尔科·博兰德",
+          "player_id": "30300",
+          "position": "",
+          "club": "杜伊斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-01-01",
+          "player": "克拉格",
+          "player_id": "97853",
+          "position": "中场",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2008-07-01",
+          "player": "贝诺·莫尔曼",
+          "player_id": "63495",
+          "position": "",
+          "club": "菲尔特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-06-30",
+          "player": "查斯明.费伊济奇",
+          "player_id": "37233",
+          "position": "",
+          "club": "菲尔特",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2009-2010": {
+      "in": [
+        {
+          "date": "2009-07-01",
+          "player": "武兰西奇",
+          "player_id": "40018",
+          "position": "",
+          "club": "多蒙特业余队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2009-07-01",
+          "player": "丹尼尔.达瓦里",
+          "player_id": "39840",
+          "position": "守门员",
+          "club": "缅恩斯业余队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2009-07-01",
+          "player": "特尔考夫",
+          "player_id": "38389",
+          "position": "后腰",
+          "club": "法兰克福青年队",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2009-08-31",
+          "player": "S.埃德米尔",
+          "player_id": "89754",
+          "position": "",
+          "club": "哈雷斯彻",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2010-2011": {
+      "in": [
+        {
+          "date": "2010-07-01",
+          "player": "赖因哈特",
+          "player_id": "49840",
+          "position": "",
+          "club": "卓尼特斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2010-07-01",
+          "player": "本杰明.克塞尔",
+          "player_id": "39832",
+          "position": "",
+          "club": "缅恩斯业余队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2010-07-01",
+          "player": "贝拉拉比",
+          "player_id": "87833",
+          "position": "",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2011-01-01",
+          "player": "斯蒂芬·博尔",
+          "player_id": "37322",
+          "position": "",
+          "club": "韦恩",
+          "type": "自由转会"
+        }
+      ],
+      "out": [
+        {
+          "date": "2010-07-01",
+          "player": "丹尼尔.丹尼博格",
+          "player_id": "37219",
+          "position": "中场",
+          "club": "桑德豪森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2010-07-01",
+          "player": "金斯利·奥努埃格布",
+          "player_id": "37211",
+          "position": "前锋",
+          "club": "菲尔特",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2011-2012": {
+      "in": [
+        {
+          "date": "2011-07-01",
+          "player": "拉菲尔.科特",
+          "player_id": "86667",
+          "position": "",
+          "club": "梅兹特海姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "马塞尔·科雷亚",
+          "player_id": "59184",
+          "position": "",
+          "club": "凯泽斯劳滕青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-07-01",
+          "player": "吉安卢卡.科特",
+          "player_id": "87847",
+          "position": "",
+          "club": "梅兹特海姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-01-01",
+          "player": "比卡克西奇",
+          "player_id": "79109",
+          "position": "",
+          "club": "斯图加特",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2011-07-01",
+          "player": "贝拉拉比",
+          "player_id": "87833",
+          "position": "",
+          "club": "勒沃库森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2011-08-17",
+          "player": "克拉格",
+          "player_id": "97853",
+          "position": "中场",
+          "club": "哈尔伯施塔特",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2012-2013": {
+      "in": [
+        {
+          "date": "2012-07-01",
+          "player": "B.克鲁弗特",
+          "player_id": "94465",
+          "position": "",
+          "club": "普鲁士明斯特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-07-01",
+          "player": "克拉茨",
+          "player_id": "40188",
+          "position": "中场",
+          "club": "亚琛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-07-01",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "阿尔塔奇",
+          "type": "完全所有"
+        },
+        {
+          "date": "2012-08-23",
+          "player": "张呈栋",
+          "player_id": "26526",
+          "position": "后卫",
+          "club": "马夫拉",
+          "type": "租借"
+        },
+        {
+          "date": "2013-01-19",
+          "player": "奥马尔·埃拉布德拉奥伊",
+          "player_id": "100743",
+          "position": "右后卫",
+          "club": "曼彻斯特城U23",
+          "type": "租借"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "简.瓦绍森",
+          "player_id": "37227",
+          "position": "",
+          "club": "奥芬巴查",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2012-07-01",
+          "player": "赖因哈特",
+          "player_id": "49840",
+          "position": "",
+          "club": "奥芬巴查",
+          "type": "自由转会"
+        },
+        {
+          "date": "2012-07-18",
+          "player": "本杰明.福赫斯",
+          "player_id": "37235",
+          "position": "后卫",
+          "club": "马尼萨体育",
+          "type": "自由转会"
+        },
+        {
+          "date": "2013-01-18",
+          "player": "简.瓦绍森",
+          "player_id": "37227",
+          "position": "",
+          "club": "奥芬巴查",
+          "type": "租借"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "奥马尔·埃拉布德拉奥伊",
+          "player_id": "100743",
+          "position": "右后卫",
+          "club": "曼彻斯特城U23",
+          "type": "租借结束"
+        },
+        {
+          "date": "2013-06-30",
+          "player": "张呈栋",
+          "player_id": "26526",
+          "position": "后卫",
+          "club": "马夫拉",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2013-2014": {
+      "in": [
+        {
+          "date": "2013-07-01",
+          "player": "蒂莫.佩尔特尔",
+          "player_id": "37371",
+          "position": "",
+          "club": "杜伊斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "卡利久里",
+          "player_id": "30087",
+          "position": "",
+          "club": "美因茨",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "厄赫尔",
+          "player_id": "37364",
+          "position": "",
+          "club": "奥格斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "贾.霍赫沙伊特",
+          "player_id": "37350",
+          "position": "中场",
+          "club": "奥厄",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-01",
+          "player": "奥马尔·埃拉布德拉奥伊",
+          "player_id": "100743",
+          "position": "右后卫",
+          "club": "曼彻斯特城U23",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-07-10",
+          "player": "西蒙·杰克逊",
+          "player_id": "54765",
+          "position": "前锋",
+          "club": "诺维奇",
+          "type": "完全所有"
+        },
+        {
+          "date": "2013-08-21",
+          "player": "贝拉拉比",
+          "player_id": "87833",
+          "position": "",
+          "club": "勒沃库森",
+          "type": "租借"
+        },
+        {
+          "date": "2014-01-05",
+          "player": "克利芬.尼尔森",
+          "player_id": "79581",
+          "position": "中锋",
+          "club": "萨尔茨堡",
+          "type": "租借"
+        },
+        {
+          "date": "2014-01-30",
+          "player": "S.加利费",
+          "player_id": "95493",
+          "position": "",
+          "club": "洛桑",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "B.克鲁弗特",
+          "player_id": "94465",
+          "position": "",
+          "club": "桑德豪森",
+          "type": "租借结束"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "拉菲尔.科特",
+          "player_id": "86667",
+          "position": "",
+          "club": "萨尔布吕肯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2013-07-01",
+          "player": "拉菲尔.科特",
+          "player_id": "86667",
+          "position": "",
+          "club": "萨尔布吕肯",
+          "type": "租借"
+        },
+        {
+          "date": "2013-08-28",
+          "player": "B.克鲁弗特",
+          "player_id": "94465",
+          "position": "",
+          "club": "桑德豪森",
+          "type": "租借"
+        },
+        {
+          "date": "2014-02-01",
+          "player": "西蒙·杰克逊",
+          "player_id": "54765",
+          "position": "前锋",
+          "club": "米尔沃尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-06-30",
+          "player": "贝拉拉比",
+          "player_id": "87833",
+          "position": "",
+          "club": "勒沃库森",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2014-2015": {
+      "in": [
+        {
+          "date": "2014-07-01",
+          "player": "巴格达迪",
+          "player_id": "132342",
+          "position": "",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "吉杰维茨",
+          "player_id": "60960",
+          "position": "守门员",
+          "club": "史拉斯科",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "沙奧路",
+          "player_id": "115707",
+          "position": "中卫",
+          "club": "利沃诺",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "托比亚斯·祖克",
+          "player_id": "102112",
+          "position": "左后卫",
+          "club": "弗赖堡",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-04",
+          "player": "赫登斯塔德",
+          "player_id": "57980",
+          "position": "右后卫",
+          "club": "弗赖堡",
+          "type": "租借"
+        },
+        {
+          "date": "2014-07-08",
+          "player": "M.巴肯咖",
+          "player_id": "77029",
+          "position": "前锋",
+          "club": "布鲁日",
+          "type": "租借"
+        },
+        {
+          "date": "2014-08-15",
+          "player": "柳承佑",
+          "player_id": "113973",
+          "position": "前腰",
+          "club": "勒沃库森",
+          "type": "租借"
+        },
+        {
+          "date": "2015-01-09",
+          "player": "奥拉迪克",
+          "player_id": "86126",
+          "position": "中场",
+          "club": "卢布尔雅那奥林匹亚",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-02-02",
+          "player": "博格伦",
+          "player_id": "129303",
+          "position": "",
+          "club": "霍布罗",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "亚伦",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "吉安卢卡.科特",
+          "player_id": "87847",
+          "position": "",
+          "club": "亚伦",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2014-07-01",
+          "player": "克拉茨",
+          "player_id": "40188",
+          "position": "中场",
+          "club": "桑德豪森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "丹尼尔.达瓦里",
+          "player_id": "39840",
+          "position": "守门员",
+          "club": "草蜢",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "蒂莫.佩尔特尔",
+          "player_id": "37371",
+          "position": "",
+          "club": "波鸿",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "奥马尔·埃拉布德拉奥伊",
+          "player_id": "100743",
+          "position": "右后卫",
+          "club": "奥林匹亚科斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-01",
+          "player": "比卡克西奇",
+          "player_id": "79109",
+          "position": "",
+          "club": "霍芬海姆",
+          "type": "完全所有"
+        },
+        {
+          "date": "2014-07-24",
+          "player": "埃尔维格·德鲁佩尔",
+          "player_id": "88891",
+          "position": "中场",
+          "club": "雷根斯堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2014-08-22",
+          "player": "卡利久里",
+          "player_id": "30087",
+          "position": "",
+          "club": "菲尔特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-01-09",
+          "player": "B.克鲁弗特",
+          "player_id": "94465",
+          "position": "",
+          "club": "埃森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-01-15",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "亚伦",
+          "type": "租借"
+        },
+        {
+          "date": "2015-01-15",
+          "player": "吉安卢卡.科特",
+          "player_id": "87847",
+          "position": "",
+          "club": "亚伦",
+          "type": "租借"
+        },
+        {
+          "date": "2015-03-18",
+          "player": "M.巴肯咖",
+          "player_id": "77029",
+          "position": "前锋",
+          "club": "布鲁日",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "柳承佑",
+          "player_id": "113973",
+          "position": "前腰",
+          "club": "勒沃库森",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "托比亚斯·祖克",
+          "player_id": "102112",
+          "position": "左后卫",
+          "club": "弗赖堡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "克利芬.尼尔森",
+          "player_id": "79581",
+          "position": "中锋",
+          "club": "萨尔茨堡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2015-06-30",
+          "player": "赫登斯塔德",
+          "player_id": "57980",
+          "position": "右后卫",
+          "club": "弗赖堡",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2015-2016": {
+      "in": [
+        {
+          "date": "2015-07-01",
+          "player": "恩格尔哈特",
+          "player_id": "109133",
+          "position": "守门员",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "霍尔特曼",
+          "player_id": "124578",
+          "position": "左边锋",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "M.索尔",
+          "player_id": "115039",
+          "position": "后卫",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "尼克.基耶斯基",
+          "player_id": "134169",
+          "position": "后卫",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "查斯明.费伊济奇",
+          "player_id": "37233",
+          "position": "",
+          "club": "亚伦",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "朱利斯.邓",
+          "player_id": "125817",
+          "position": "中场",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "托比亚斯·祖克",
+          "player_id": "102112",
+          "position": "左后卫",
+          "club": "弗赖堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "丹尼斯.斯拉马尔",
+          "player_id": "131954",
+          "position": "后卫",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "亚当·马图西克",
+          "player_id": "39988",
+          "position": "中场",
+          "club": "科隆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "帕特里克.斯彻菲德",
+          "player_id": "63566",
+          "position": "",
+          "club": "奥厄",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "菲尔·奥苏福",
+          "player_id": "93619",
+          "position": "右后卫",
+          "club": "亚伦",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-07-26",
+          "player": "约瑟夫·巴菲",
+          "player_id": "82990",
+          "position": "后卫",
+          "club": "哈尔姆斯塔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-06-30",
+          "player": "马德斯·维尔索姆",
+          "player_id": "87496",
+          "position": "中场",
+          "club": "布兰",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2015-07-01",
+          "player": "本杰明.克塞尔",
+          "player_id": "39832",
+          "position": "",
+          "club": "柏林联合",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "拉菲尔.科特",
+          "player_id": "86667",
+          "position": "",
+          "club": "柏林联合",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "特尔考夫",
+          "player_id": "38389",
+          "position": "后腰",
+          "club": "海登海姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2015-07-01",
+          "player": "吉安卢卡.科特",
+          "player_id": "87847",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2015-08-06",
+          "player": "简.瓦绍森",
+          "player_id": "37227",
+          "position": "",
+          "club": "埃弗斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-01",
+          "player": "丹尼斯.斯拉马尔",
+          "player_id": "131954",
+          "position": "后卫",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-08",
+          "player": "马德斯·维尔索姆",
+          "player_id": "87496",
+          "position": "中场",
+          "club": "布兰",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-01-31",
+          "player": "博格伦",
+          "player_id": "129303",
+          "position": "",
+          "club": "美因茨",
+          "type": "完全所有"
+        }
+      ]
+    },
+    "2016-2017": {
+      "in": [
+        {
+          "date": "2016-07-01",
+          "player": "J.比亚达",
+          "player_id": "97146",
+          "position": "前腰",
+          "club": "幸运科隆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "菲利普.蒂茨",
+          "player_id": "141338",
+          "position": "中锋",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "维京",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "奥内尔·赫尔南德斯",
+          "player_id": "78830",
+          "position": "中场",
+          "club": "沃尔夫斯堡青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "Q.摩尔",
+          "player_id": "111632",
+          "position": "中场",
+          "club": "德累斯顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "Q.摩尔",
+          "player_id": "145519",
+          "position": "中场",
+          "club": "德累斯顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-07-30",
+          "player": "古斯塔夫.瓦斯维克",
+          "player_id": "79572",
+          "position": "中卫",
+          "club": "斯托姆加斯特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-08-23",
+          "player": "克里斯托弗·尼曼",
+          "player_id": "79881",
+          "position": "中锋",
+          "club": "北雪平",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-06-30",
+          "player": "马德斯·维尔索姆",
+          "player_id": "87496",
+          "position": "中场",
+          "club": "埃斯比约",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2016-07-01",
+          "player": "马德斯·维尔索姆",
+          "player_id": "87496",
+          "position": "中场",
+          "club": "埃斯比约",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "霍尔特曼",
+          "player_id": "124578",
+          "position": "左边锋",
+          "club": "美因茨",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-07-01",
+          "player": "朱利斯.邓",
+          "player_id": "125817",
+          "position": "中场",
+          "club": "马格德堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2016-08-05",
+          "player": "吉杰维茨",
+          "player_id": "60960",
+          "position": "守门员",
+          "club": "弗赖堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2016-08-31",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "里德",
+          "type": "自由转会"
+        }
+      ]
+    },
+    "2017-2018": {
+      "in": [
+        {
+          "date": "2017-07-01",
+          "player": "R.贝克",
+          "player_id": "139453",
+          "position": "后卫",
+          "club": "勒沃库森",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "博克恩",
+          "player_id": "135744",
+          "position": "中卫",
+          "club": "奥厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "L.萨姆森",
+          "player_id": "136067",
+          "position": "中场",
+          "club": "奥厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "斯蒂芬尼康萨哈",
+          "player_id": "155357",
+          "position": "后卫",
+          "club": "门兴格拉德巴赫青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-08-04",
+          "player": "维尔斯塔彭",
+          "player_id": "126650",
+          "position": "",
+          "club": "格拉夫夏普",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-03",
+          "player": "弗雷德里克·丁加格",
+          "player_id": "143143",
+          "position": "中卫",
+          "club": "欧登塞",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-03",
+          "player": "泰格尔",
+          "player_id": "84794",
+          "position": "右后卫",
+          "club": "奥格斯堡",
+          "type": "租借"
+        },
+        {
+          "date": "2018-01-23",
+          "player": "霍夫曼",
+          "player_id": "88889",
+          "position": "中锋",
+          "club": "菲尔特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-25",
+          "player": "奥奴.贝鲁特",
+          "player_id": "109605",
+          "position": "右后卫",
+          "club": "弗赖堡",
+          "type": "完全所有"
+        }
+      ],
+      "out": [
+        {
+          "date": "2017-07-01",
+          "player": "亚当·马图西克",
+          "player_id": "39988",
+          "position": "中场",
+          "club": "卢宾扎格勒比",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "菲尔·奥苏福",
+          "player_id": "93619",
+          "position": "右后卫",
+          "club": "狼队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "马德斯·维尔索姆",
+          "player_id": "87496",
+          "position": "中场",
+          "club": "埃斯比约",
+          "type": "完全所有"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "奥拉迪克",
+          "player_id": "86126",
+          "position": "中场",
+          "club": "菲尔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-07-01",
+          "player": "马塞尔·科雷亚",
+          "player_id": "59184",
+          "position": "",
+          "club": "凯泽斯劳滕",
+          "type": "自由转会"
+        },
+        {
+          "date": "2017-08-21",
+          "player": "沙奧路",
+          "player_id": "115707",
+          "position": "中卫",
+          "club": "布鲁日",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-01",
+          "player": "菲利普.蒂茨",
+          "player_id": "141338",
+          "position": "中锋",
+          "club": "帕德博恩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-01-25",
+          "player": "奥内尔·赫尔南德斯",
+          "player_id": "78830",
+          "position": "中场",
+          "club": "诺维奇",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-06-30",
+          "player": "泰格尔",
+          "player_id": "84794",
+          "position": "右后卫",
+          "club": "奥格斯堡",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2018-2019": {
+      "in": [
+        {
+          "date": "2018-07-01",
+          "player": "布米斯特",
+          "player_id": "78110",
+          "position": "",
+          "club": "华萨斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "戴维.绍尔兰德",
+          "player_id": "168016",
+          "position": "后卫",
+          "club": "多蒙特业余队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "斯特凡·菲尔斯特纳",
+          "player_id": "25571",
+          "position": "中场",
+          "club": "柏林联合",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "默吉姆·费祖拉胡",
+          "player_id": "116721",
+          "position": "中场",
+          "club": "亚琛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "亨里克.彼得森",
+          "player_id": "169218",
+          "position": "",
+          "club": "柏林联合",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "迈克尔·法斯科",
+          "player_id": "91011",
+          "position": "中场",
+          "club": "草蜢",
+          "type": "租借"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "乔纳斯·索尔森",
+          "player_id": "88727",
+          "position": "右后卫",
+          "club": "霍森斯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "埃里克.维加",
+          "player_id": "147292",
+          "position": "后卫",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "艾哈迈德·坎巴兹",
+          "player_id": "161222",
+          "position": "前锋",
+          "club": "FT布伦瑞克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "扬尼克.班戈",
+          "player_id": "169219",
+          "position": "",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "亚里.奥托",
+          "player_id": "169230",
+          "position": "中场",
+          "club": "沃尔夫斯堡U19",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "马尔特·阿蒙森",
+          "player_id": "134866",
+          "position": "中卫",
+          "club": "罗森博格",
+          "type": "租借"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "伊凡·弗兰基奇",
+          "player_id": "169227",
+          "position": "前锋",
+          "club": "哈尔伯施塔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "塞缪尔.阿比法德",
+          "player_id": "169229",
+          "position": "前锋",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "阿约德勒.阿德乌拉",
+          "player_id": "169231",
+          "position": "前锋",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-08-17",
+          "player": "莱昂德罗.普塔罗",
+          "player_id": "140596",
+          "position": "前锋",
+          "club": "比勒菲尔德",
+          "type": "租借"
+        },
+        {
+          "date": "2018-08-31",
+          "player": "扬泽尔",
+          "player_id": "97859",
+          "position": "",
+          "club": "荷尔斯泰因",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "朱利斯.邓",
+          "player_id": "125817",
+          "position": "中场",
+          "club": "帕德博恩",
+          "type": "租借"
+        },
+        {
+          "date": "2019-01-05",
+          "player": "伯恩德·内赫里格",
+          "player_id": "25685",
+          "position": "中场",
+          "club": "圣保利",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-06",
+          "player": "本杰明.克塞尔",
+          "player_id": "39832",
+          "position": "",
+          "club": "萨尔布吕肯",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-07",
+          "player": "查斯明.费伊济奇",
+          "player_id": "37233",
+          "position": "",
+          "club": "马格德堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-10",
+          "player": "马瑟尔.巴尔",
+          "player_id": "117634",
+          "position": "前锋",
+          "club": "亚伦",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-11",
+          "player": "M.費根斯潘",
+          "player_id": "130606",
+          "position": "",
+          "club": "门兴格拉德巴赫青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-18",
+          "player": "克里斯托夫.门茨",
+          "player_id": "37570",
+          "position": "中场",
+          "club": "BFC维多利亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-06-30",
+          "player": "尼克.奥托",
+          "player_id": "169225",
+          "position": "",
+          "club": "圣保利业余队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-06-30",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "柏林联合",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-06-30",
+          "player": "克尔格西",
+          "player_id": "161322",
+          "position": "后卫",
+          "club": "哈韦尔斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2018-07-01",
+          "player": "维尔斯塔彭",
+          "player_id": "126650",
+          "position": "",
+          "club": "塔比柏林",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "雷彻尔",
+          "player_id": "37229",
+          "position": "",
+          "club": "柏林联合",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "约瑟夫·巴菲",
+          "player_id": "82990",
+          "position": "后卫",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "J.比亚达",
+          "player_id": "97146",
+          "position": "前腰",
+          "club": "凯泽斯劳滕",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "S.加利费",
+          "player_id": "95493",
+          "position": "",
+          "club": "苏黎世",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "贾.霍赫沙伊特",
+          "player_id": "37350",
+          "position": "中场",
+          "club": "奥厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "博克恩",
+          "player_id": "135744",
+          "position": "中卫",
+          "club": "奥厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "帕特里克.斯彻菲德",
+          "player_id": "63566",
+          "position": "",
+          "club": "韦恩",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "L.萨姆森",
+          "player_id": "136067",
+          "position": "中场",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "Q.摩尔",
+          "player_id": "111632",
+          "position": "中场",
+          "club": "慕尼黑1860",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "M.索尔",
+          "player_id": "115039",
+          "position": "后卫",
+          "club": "菲尔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "查斯明.费伊济奇",
+          "player_id": "37233",
+          "position": "",
+          "club": "马格德堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-01",
+          "player": "托比亚斯·祖克",
+          "player_id": "102112",
+          "position": "左后卫",
+          "club": "凯泽斯劳滕",
+          "type": "自由转会"
+        },
+        {
+          "date": "2018-07-21",
+          "player": "米尔科·博兰德",
+          "player_id": "30300",
+          "position": "",
+          "club": "阿德莱德联",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-08-21",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "柏林联合",
+          "type": "租借"
+        },
+        {
+          "date": "2018-10-01",
+          "player": "托尔斯滕·利伯克内希特",
+          "player_id": "102703",
+          "position": "",
+          "club": "杜伊斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2018-12-31",
+          "player": "迈克尔·法斯科",
+          "player_id": "91011",
+          "position": "中场",
+          "club": "草蜢",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-01",
+          "player": "艾哈迈德·坎巴兹",
+          "player_id": "161222",
+          "position": "前锋",
+          "club": "云达不莱梅业余队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-04",
+          "player": "弗雷德里克·丁加格",
+          "player_id": "143143",
+          "position": "中卫",
+          "club": "奥胡斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-08",
+          "player": "克里斯托弗·尼曼",
+          "player_id": "79881",
+          "position": "中锋",
+          "club": "北雪平",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-14",
+          "player": "马尔特·阿蒙森",
+          "player_id": "134866",
+          "position": "中卫",
+          "club": "罗森博格",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-01-18",
+          "player": "古斯塔夫.瓦斯维克",
+          "player_id": "79572",
+          "position": "中卫",
+          "club": "罗森博格",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-01-29",
+          "player": "克尔格西",
+          "player_id": "161322",
+          "position": "后卫",
+          "club": "哈韦尔斯",
+          "type": "租借"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "伊凡·弗兰基奇",
+          "player_id": "169227",
+          "position": "前锋",
+          "club": "萨尔布吕肯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-01-31",
+          "player": "尼克.奥托",
+          "player_id": "169225",
+          "position": "",
+          "club": "圣保利业余队",
+          "type": "租借"
+        },
+        {
+          "date": "2019-02-01",
+          "player": "埃里克.维加",
+          "player_id": "147292",
+          "position": "后卫",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-06-20",
+          "player": "亨里克.彼得森",
+          "player_id": "169218",
+          "position": "",
+          "club": "斯托姆加斯特",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-06-30",
+          "player": "莱昂德罗.普塔罗",
+          "player_id": "140596",
+          "position": "前锋",
+          "club": "比勒菲尔德",
+          "type": "租借结束"
+        },
+        {
+          "date": "2019-06-30",
+          "player": "朱利斯.邓",
+          "player_id": "125817",
+          "position": "中场",
+          "club": "帕德博恩",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2019-2020": {
+      "in": [
+        {
+          "date": "2019-07-01",
+          "player": "莱昂德罗.普塔罗",
+          "player_id": "140596",
+          "position": "前锋",
+          "club": "比勒菲尔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "维尔茨堡踢球者",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "施卢特",
+          "player_id": "120773",
+          "position": "后卫",
+          "club": "科特布斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "马丁.科比兰斯基",
+          "player_id": "86276",
+          "position": "中场",
+          "club": "普鲁士明斯特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-03",
+          "player": "达尼洛·韦博",
+          "player_id": "136597",
+          "position": "中场",
+          "club": "普鲁士明斯特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-05",
+          "player": "阿尔冯斯·阿迈德",
+          "player_id": "167240",
+          "position": "后腰",
+          "club": "霍芬海姆业馀队",
+          "type": "租借"
+        },
+        {
+          "date": "2019-07-12",
+          "player": "罗宾·齐格莱",
+          "player_id": "145948",
+          "position": "后卫",
+          "club": "沃尔夫斯堡青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-09-02",
+          "player": "K.戈登",
+          "player_id": "167205",
+          "position": "前锋",
+          "club": "纽伦堡",
+          "type": "租借"
+        },
+        {
+          "date": "2019-09-02",
+          "player": "P.卡梅尔贝尔",
+          "player_id": "146047",
+          "position": "后卫",
+          "club": "弗赖堡",
+          "type": "租借"
+        },
+        {
+          "date": "2020-01-21",
+          "player": "普利尔",
+          "player_id": "59230",
+          "position": "前锋",
+          "club": "卡尔斯鲁厄",
+          "type": "租借"
+        },
+        {
+          "date": "2020-01-23",
+          "player": "梅维埃·比安卡迪",
+          "player_id": "158089",
+          "position": "中场",
+          "club": "海登海姆",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2019-07-01",
+          "player": "霍夫曼",
+          "player_id": "88889",
+          "position": "中锋",
+          "club": "卡尔斯鲁厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "柏林联合",
+          "type": "完全所有"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "克尔格西",
+          "player_id": "161322",
+          "position": "后卫",
+          "club": "洛特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-01",
+          "player": "阿约德勒.阿德乌拉",
+          "player_id": "169231",
+          "position": "前锋",
+          "club": "埃森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-06",
+          "player": "克里斯托夫.门茨",
+          "player_id": "37570",
+          "position": "中场",
+          "club": "BFC维多利亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-09",
+          "player": "乔纳斯·索尔森",
+          "player_id": "88727",
+          "position": "右后卫",
+          "club": "霍森斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-16",
+          "player": "塞缪尔.阿比法德",
+          "player_id": "169229",
+          "position": "前锋",
+          "club": "沃尔夫斯堡青年队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2019-07-30",
+          "player": "奥奴.贝鲁特",
+          "player_id": "109605",
+          "position": "右后卫",
+          "club": "阿拉尼亚体育",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-07-05",
+          "player": "K.戈登",
+          "player_id": "167205",
+          "position": "前锋",
+          "club": "纽伦堡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-07-05",
+          "player": "梅维埃·比安卡迪",
+          "player_id": "158089",
+          "position": "中场",
+          "club": "海登海姆",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-07-05",
+          "player": "普利尔",
+          "player_id": "59230",
+          "position": "前锋",
+          "club": "卡尔斯鲁厄",
+          "type": "租借结束"
+        },
+        {
+          "date": "2020-07-05",
+          "player": "阿尔冯斯·阿迈德",
+          "player_id": "167240",
+          "position": "后腰",
+          "club": "霍芬海姆业馀队",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2020-2021": {
+      "in": [
+        {
+          "date": "2020-07-15",
+          "player": "佩罗域.尼卡拉欧",
+          "player_id": "103056",
+          "position": "中卫",
+          "club": "德累斯顿",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-07-28",
+          "player": "亚辛本巴拉",
+          "player_id": "179418",
+          "position": "中场",
+          "club": "杜伊斯堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-07-29",
+          "player": "F.考夫曼",
+          "player_id": "103040",
+          "position": "中前卫",
+          "club": "维尔茨堡踢球者",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-08-14",
+          "player": "多尼布什彻",
+          "player_id": "96449",
+          "position": "",
+          "club": "纽伦堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-08-16",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "柏林联合",
+          "type": "租借"
+        },
+        {
+          "date": "2020-08-18",
+          "player": "伊巴梅",
+          "player_id": "184084",
+          "position": "后腰",
+          "club": "沃尔夫斯堡青年队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-08-24",
+          "player": "库普索维奇",
+          "player_id": "177702",
+          "position": "中锋",
+          "club": "贝尔格莱德红星U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2020-09-04",
+          "player": "菲利克斯·克罗斯",
+          "player_id": "50302",
+          "position": "",
+          "club": "柏林联合",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-01",
+          "player": "布莱恩.贝伦特",
+          "player_id": "101244",
+          "position": "后卫",
+          "club": "比勒菲尔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-14",
+          "player": "巴卡里·迪亚科特",
+          "player_id": "130358",
+          "position": "中卫",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-01-29",
+          "player": "池东沅",
+          "player_id": "75898",
+          "position": "中锋",
+          "club": "美因茨",
+          "type": "租借"
+        },
+        {
+          "date": "2021-06-06",
+          "player": "舒尔利",
+          "player_id": "37333",
+          "position": "",
+          "club": "桑德豪森",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-06-30",
+          "player": "迈克尔·舒尔茨",
+          "player_id": "119301",
+          "position": "后卫",
+          "club": "科隆胜利",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-06-30",
+          "player": "扬尼克.班戈",
+          "player_id": "169219",
+          "position": "",
+          "club": "科隆胜利",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2020-07-29",
+          "player": "R.贝克",
+          "player_id": "139453",
+          "position": "后卫",
+          "club": "德累斯顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-09-01",
+          "player": "奥汉·阿德米",
+          "player_id": "87038",
+          "position": "前锋",
+          "club": "杜伊斯堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-09-02",
+          "player": "伯恩德·内赫里格",
+          "player_id": "25685",
+          "position": "中场",
+          "club": "BFC维多利亚",
+          "type": "自由转会"
+        },
+        {
+          "date": "2020-09-14",
+          "player": "扬尼克.班戈",
+          "player_id": "169219",
+          "position": "",
+          "club": "科隆胜利",
+          "type": "租借"
+        },
+        {
+          "date": "2020-09-21",
+          "player": "斯蒂芬尼康萨哈",
+          "player_id": "155357",
+          "position": "后卫",
+          "club": "茨维考FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-01-27",
+          "player": "恩格尔哈特",
+          "player_id": "109133",
+          "position": "守门员",
+          "club": "德班城",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "迈克尔·舒尔茨",
+          "player_id": "119301",
+          "position": "后卫",
+          "club": "科隆胜利",
+          "type": "租借"
+        },
+        {
+          "date": "2021-02-01",
+          "player": "莱昂德罗.普塔罗",
+          "player_id": "140596",
+          "position": "前锋",
+          "club": "SC维尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-06-30",
+          "player": "池东沅",
+          "player_id": "75898",
+          "position": "中锋",
+          "club": "美因茨",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-06-30",
+          "player": "苏雷曼·阿卜杜拉赫",
+          "player_id": "130861",
+          "position": "影锋",
+          "club": "柏林联合",
+          "type": "租借结束"
+        },
+        {
+          "date": "2021-06-30",
+          "player": "P.卡梅尔贝尔",
+          "player_id": "146047",
+          "position": "后卫",
+          "club": "弗赖堡",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2021-2022": {
+      "in": [
+        {
+          "date": "2021-07-01",
+          "player": "伦纳特·舒尔茨·科克尔苏姆",
+          "player_id": "209724",
+          "position": "",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "高立希",
+          "player_id": "218448",
+          "position": "后卫",
+          "club": "霍芬海姆业馀队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "布莱恩·亨宁",
+          "player_id": "158395",
+          "position": "中场",
+          "club": "奥斯纳布鲁克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "卢克·伊霍斯特",
+          "player_id": "178237",
+          "position": "前锋",
+          "club": "云达不莱梅业余队",
+          "type": "租借"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "穆尔塔乌普",
+          "player_id": "131465",
+          "position": "前锋",
+          "club": "奥斯纳布鲁克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "J.克萊伯格",
+          "player_id": "212077",
+          "position": "后卫",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "本杰明",
+          "player_id": "125152",
+          "position": "前锋",
+          "club": "荷尔斯泰因",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "罗宾.卡度比",
+          "player_id": "124557",
+          "position": "中场",
+          "club": "因戈尔施塔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-23",
+          "player": "费利克斯",
+          "player_id": "218449",
+          "position": "中场",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-08-04",
+          "player": "塞巴斯蒂安·穆勒",
+          "player_id": "183797",
+          "position": "前锋",
+          "club": "比勒菲尔德",
+          "type": "租借"
+        },
+        {
+          "date": "2021-08-04",
+          "player": "乔梅因·康斯布鲁克",
+          "player_id": "177733",
+          "position": "中前卫",
+          "club": "比勒菲尔德",
+          "type": "租借"
+        },
+        {
+          "date": "2021-08-05",
+          "player": "佩纳·扎纳",
+          "player_id": "177651",
+          "position": "前锋",
+          "club": "桑德豪森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-08-22",
+          "player": "洛伯莱昂",
+          "player_id": "156158",
+          "position": "中锋",
+          "club": "荷尔斯泰因",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-08-31",
+          "player": "菲利普·斯特隆普",
+          "player_id": "227489",
+          "position": "中卫",
+          "club": "霍芬海姆业馀队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-01",
+          "player": "亨迪克.马尔斯",
+          "player_id": "142032",
+          "position": "右后卫",
+          "club": "因戈尔施塔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-01-28",
+          "player": "哈特曼",
+          "player_id": "167292",
+          "position": "前锋",
+          "club": "RB莱比锡",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2021-07-01",
+          "player": "F.考夫曼",
+          "player_id": "103040",
+          "position": "中前卫",
+          "club": "卡尔斯鲁厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "巴卡里·迪亚科特",
+          "player_id": "130358",
+          "position": "中卫",
+          "club": "桑德豪森",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "亚辛本巴拉",
+          "player_id": "179418",
+          "position": "中场",
+          "club": "因戈尔施塔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "多尼布什彻",
+          "player_id": "96449",
+          "position": "",
+          "club": "福图纳锡塔德",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "库普索维奇",
+          "player_id": "177702",
+          "position": "中锋",
+          "club": "特库古库阿塔斯普",
+          "type": "自由转会"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "罗宾·齐格莱",
+          "player_id": "145948",
+          "position": "后卫",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2021-07-01",
+          "player": "马瑟尔.巴尔",
+          "player_id": "117634",
+          "position": "前锋",
+          "club": "慕尼黑1860",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-06-30",
+          "player": "乔梅因·康斯布鲁克",
+          "player_id": "177733",
+          "position": "中前卫",
+          "club": "比勒菲尔德",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-06-30",
+          "player": "卢克·伊霍斯特",
+          "player_id": "178237",
+          "position": "前锋",
+          "club": "云达不莱梅业余队",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-06-30",
+          "player": "塞巴斯蒂安·穆勒",
+          "player_id": "183797",
+          "position": "前锋",
+          "club": "比勒菲尔德",
+          "type": "租借结束"
+        },
+        {
+          "date": "2022-06-30",
+          "player": "哈特曼",
+          "player_id": "167292",
+          "position": "前锋",
+          "club": "RB莱比锡",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2022-2023": {
+      "in": [
+        {
+          "date": "2022-07-01",
+          "player": "F.考夫曼",
+          "player_id": "103040",
+          "position": "中前卫",
+          "club": "卡尔斯鲁厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "卢克·伊霍斯特",
+          "player_id": "178237",
+          "position": "前锋",
+          "club": "云达不莱梅业余队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "霍夫曼",
+          "player_id": "155179",
+          "position": "守门员",
+          "club": "拜仁慕尼黑",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "沙奧路",
+          "player_id": "115707",
+          "position": "中卫",
+          "club": "波鸿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "A.唐科",
+          "player_id": "145950",
+          "position": "左后卫",
+          "club": "曼海姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "菲拉伊",
+          "player_id": "187899",
+          "position": "前腰",
+          "club": "多蒙特业余队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-07-02",
+          "player": "穆罕默德·易卜拉希米",
+          "player_id": "220653",
+          "position": "前锋",
+          "club": "RB莱比锡",
+          "type": "租借"
+        },
+        {
+          "date": "2022-07-19",
+          "player": "埃米尔·基什卡",
+          "player_id": "230233",
+          "position": "",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-07-19",
+          "player": "远藤溪太",
+          "player_id": "141710",
+          "position": "中场",
+          "club": "柏林联合",
+          "type": "租借"
+        },
+        {
+          "date": "2022-08-02",
+          "player": "乌贾",
+          "player_id": "79578",
+          "position": "前锋",
+          "club": "柏林联合",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-09-01",
+          "player": "本科维奇",
+          "player_id": "135731",
+          "position": "后卫",
+          "club": "乌迪内斯",
+          "type": "租借"
+        },
+        {
+          "date": "2022-09-01",
+          "player": "德梅迪纳",
+          "player_id": "136042",
+          "position": "",
+          "club": "比勒菲尔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-01-01",
+          "player": "盖特",
+          "player_id": "219004",
+          "position": "中卫",
+          "club": "柏林赫塔",
+          "type": "租借"
+        },
+        {
+          "date": "2023-01-07",
+          "player": "曼努埃尔",
+          "player_id": "155059",
+          "position": "前锋",
+          "club": "纽伦堡",
+          "type": "租借"
+        },
+        {
+          "date": "2023-01-24",
+          "player": "哈桑·库鲁卡伊",
+          "player_id": "148044",
+          "position": "中卫",
+          "club": "汉坎",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-01-24",
+          "player": "塔西斯.邦加",
+          "player_id": "169123",
+          "position": "右边锋",
+          "club": "波鸿",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-06-30",
+          "player": "扬尼克.班戈",
+          "player_id": "169219",
+          "position": "",
+          "club": "亚琛",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2022-07-01",
+          "player": "扬尼克.班戈",
+          "player_id": "169219",
+          "position": "",
+          "club": "亚琛",
+          "type": "租借"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "伊巴梅",
+          "player_id": "184084",
+          "position": "后腰",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2022-07-01",
+          "player": "马丁.科比兰斯基",
+          "player_id": "86276",
+          "position": "中场",
+          "club": "慕尼黑1860",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-08-03",
+          "player": "高立希",
+          "player_id": "218448",
+          "position": "后卫",
+          "club": "兹沃勒",
+          "type": "自由转会"
+        },
+        {
+          "date": "2022-09-01",
+          "player": "亚里.奥托",
+          "player_id": "169230",
+          "position": "中场",
+          "club": "SC维尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-01-12",
+          "player": "迈克尔·舒尔茨",
+          "player_id": "119301",
+          "position": "后卫",
+          "club": "科隆胜利",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-06-30",
+          "player": "本科维奇",
+          "player_id": "135731",
+          "position": "后卫",
+          "club": "乌迪内斯",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-06-30",
+          "player": "曼努埃尔",
+          "player_id": "155059",
+          "position": "前锋",
+          "club": "纽伦堡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-06-30",
+          "player": "穆罕默德·易卜拉希米",
+          "player_id": "220653",
+          "position": "前锋",
+          "club": "RB莱比锡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2023-06-30",
+          "player": "盖特",
+          "player_id": "219004",
+          "position": "中卫",
+          "club": "柏林赫塔",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2023-2024": {
+      "in": [
+        {
+          "date": "2023-01-07",
+          "player": "延斯.科特",
+          "player_id": "158069",
+          "position": "主教练",
+          "club": "罗斯托克",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "蒂诺·卡萨利",
+          "player_id": "135324",
+          "position": "守门员",
+          "club": "阿尔塔奇",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "伊万诺夫",
+          "player_id": "152197",
+          "position": "中卫",
+          "club": "瓦塔波兹南",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "约翰·戈麦斯",
+          "player_id": "203898",
+          "position": "中场",
+          "club": "茨维考FC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "雷安·菲利普",
+          "player_id": "178369",
+          "position": "右边锋",
+          "club": "史域夫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "马文 里特米勒",
+          "player_id": "199499",
+          "position": "中场",
+          "club": "海登海姆",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "S.格里斯贝克",
+          "player_id": "108362",
+          "position": "后腰",
+          "club": "菲尔特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "拉米",
+          "player_id": "238492",
+          "position": "",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "贾斯汀·杜达",
+          "player_id": "238491",
+          "position": "守门员",
+          "club": "布伦瑞克II队",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-07-18",
+          "player": "优素福·阿明",
+          "player_id": "218547",
+          "position": "",
+          "club": "费耶诺德后备队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-20",
+          "player": "西迪·萨内",
+          "player_id": "230732",
+          "position": "右边锋",
+          "club": "沙尔克04B队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-08-29",
+          "player": "弗洛里安·克鲁格",
+          "player_id": "167391",
+          "position": "前锋",
+          "club": "格罗宁根",
+          "type": "租借"
+        },
+        {
+          "date": "2023-08-31",
+          "player": "索里尔·赫尔加森",
+          "player_id": "168604",
+          "position": "中前卫",
+          "club": "莱切",
+          "type": "租借"
+        },
+        {
+          "date": "2023-10-25",
+          "player": "比卡克西奇",
+          "player_id": "79109",
+          "position": "",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-11-07",
+          "player": "丹尼尔·舍宁",
+          "player_id": "218453",
+          "position": "",
+          "club": "比勒菲尔德",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-01-03",
+          "player": "尼古拉斯.陶尔",
+          "player_id": "184151",
+          "position": "后腰",
+          "club": "美因茨",
+          "type": "租借"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "卢高基",
+          "player_id": "146106",
+          "position": "后卫",
+          "club": "柏林赫塔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-02-01",
+          "player": "汉普·芬戴尔",
+          "player_id": "164236",
+          "position": "中前卫",
+          "club": "尤尔加登",
+          "type": "租借"
+        },
+        {
+          "date": "2024-06-30",
+          "player": "凯恩·卡利斯卡纳",
+          "player_id": "200217",
+          "position": "中场",
+          "club": "比亚韦斯托克雅盖隆",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2023-07-01",
+          "player": "洛伯莱昂",
+          "player_id": "156158",
+          "position": "中锋",
+          "club": "梅赫伦",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "菲拉伊",
+          "player_id": "187899",
+          "position": "前腰",
+          "club": "汉堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2023-07-01",
+          "player": "布莱恩·亨宁",
+          "player_id": "158395",
+          "position": "中场",
+          "club": "科隆胜利",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-07-27",
+          "player": "佩纳·扎纳",
+          "player_id": "177651",
+          "position": "前锋",
+          "club": "罗达JC",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-08-17",
+          "player": "菲利普·斯特隆普",
+          "player_id": "227489",
+          "position": "中卫",
+          "club": "瓦斯特拉斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-09-13",
+          "player": "德梅迪纳",
+          "player_id": "136042",
+          "position": "",
+          "club": "贝尔格莱德游击",
+          "type": "自由转会"
+        },
+        {
+          "date": "2023-12-31",
+          "player": "远藤溪太",
+          "player_id": "141710",
+          "position": "中场",
+          "club": "柏林联合",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-01-10",
+          "player": "凯恩·卡利斯卡纳",
+          "player_id": "200217",
+          "position": "中场",
+          "club": "比亚韦斯托克雅盖隆",
+          "type": "租借"
+        },
+        {
+          "date": "2024-06-30",
+          "player": "汉普·芬戴尔",
+          "player_id": "164236",
+          "position": "中前卫",
+          "club": "尤尔加登",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-06-30",
+          "player": "弗洛里安·克鲁格",
+          "player_id": "167391",
+          "position": "前锋",
+          "club": "格罗宁根",
+          "type": "租借结束"
+        },
+        {
+          "date": "2024-06-30",
+          "player": "索里尔·赫尔加森",
+          "player_id": "168604",
+          "position": "中前卫",
+          "club": "莱切",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2024-2025": {
+      "in": [
+        {
+          "date": "2024-07-01",
+          "player": "法比奥·桑切斯",
+          "player_id": "229372",
+          "position": "左后卫",
+          "club": "萨尔布吕肯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "莱文特·萨贝",
+          "player_id": "184661",
+          "position": "前锋",
+          "club": "维迪奥顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "萨努西芭",
+          "player_id": "227879",
+          "position": "右后卫",
+          "club": "RB莱比锡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "马克斯·玛利",
+          "player_id": "265296",
+          "position": "中前卫",
+          "club": "圣保利业余队",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "卡里姆·胡内伯格",
+          "player_id": "285182",
+          "position": "中场",
+          "club": "布伦瑞克U19",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "K.埃勒斯",
+          "player_id": "172999",
+          "position": "中卫",
+          "club": "德累斯顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "西德尼·雷比格",
+          "player_id": "212088",
+          "position": "中前卫",
+          "club": "法兰克福",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "斯文·科勒",
+          "player_id": "177655",
+          "position": "后腰",
+          "club": "欧登塞",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "莱昂.贝尔",
+          "player_id": "138444",
+          "position": "左后卫",
+          "club": "马格德堡",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-04",
+          "player": "伦纳特.格里",
+          "player_id": "149067",
+          "position": "守门员",
+          "club": "柏林联合",
+          "type": "租借"
+        },
+        {
+          "date": "2024-07-10",
+          "player": "克里斯蒂安·康斯",
+          "player_id": "175800",
+          "position": "右边锋",
+          "club": "奥斯纳布鲁克",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-31",
+          "player": "瓦利德·奇赫",
+          "player_id": "220535",
+          "position": "前腰",
+          "club": "福伦丹",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-08-09",
+          "player": "马尔科·约翰松",
+          "player_id": "132531",
+          "position": "守门员",
+          "club": "汉堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-08-29",
+          "player": "波尔特",
+          "player_id": "50280",
+          "position": "中锋",
+          "club": "沙尔克04",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-08-29",
+          "player": "保罗·杰克尔",
+          "player_id": "158277",
+          "position": "中卫",
+          "club": "柏林联合",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-06",
+          "player": "坦佩尔曼",
+          "player_id": "158293",
+          "position": "中前卫",
+          "club": "沙尔克04",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-14",
+          "player": "霍夫曼",
+          "player_id": "155179",
+          "position": "守门员",
+          "club": "沙尔克04",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-29",
+          "player": "朱利安·巴斯",
+          "player_id": "199477",
+          "position": "中前卫",
+          "club": "鹿特丹斯巴达",
+          "type": "租借"
+        },
+        {
+          "date": "2025-01-30",
+          "player": "穆罕默德·德拉格",
+          "player_id": "158294",
+          "position": "右后卫",
+          "club": "巴塞尔",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-02-03",
+          "player": "里士满·塔奇",
+          "player_id": "179712",
+          "position": "中锋",
+          "club": "凯泽斯劳滕",
+          "type": "租借"
+        }
+      ],
+      "out": [
+        {
+          "date": "2024-07-01",
+          "player": "哈桑·库鲁卡伊",
+          "player_id": "148044",
+          "position": "中卫",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "沙奧路",
+          "player_id": "115707",
+          "position": "中卫",
+          "club": "草蜢",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "乌贾",
+          "player_id": "79578",
+          "position": "前锋",
+          "club": "普罗夫迪夫博特夫",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "A.唐科",
+          "player_id": "145950",
+          "position": "左后卫",
+          "club": "沙尔克04",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "亨迪克.马尔斯",
+          "player_id": "142032",
+          "position": "右后卫",
+          "club": "德累斯顿",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "卢克·伊霍斯特",
+          "player_id": "178237",
+          "position": "前锋",
+          "club": "温特哈兴",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "达尼洛·韦博",
+          "player_id": "136597",
+          "position": "中场",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-01",
+          "player": "穆尔塔乌普",
+          "player_id": "131465",
+          "position": "前锋",
+          "club": "萨尔布吕肯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-07-16",
+          "player": "凯恩·卡利斯卡纳",
+          "player_id": "200217",
+          "position": "中场",
+          "club": "莫托路宾",
+          "type": "完全所有"
+        },
+        {
+          "date": "2024-07-29",
+          "player": "尼克.基耶斯基",
+          "player_id": "134169",
+          "position": "后卫",
+          "club": "SC维尔",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-08-16",
+          "player": "S.格里斯贝克",
+          "player_id": "108362",
+          "position": "后腰",
+          "club": "斯达",
+          "type": "自由转会"
+        },
+        {
+          "date": "2024-08-28",
+          "player": "优素福·阿明",
+          "player_id": "218547",
+          "position": "",
+          "club": "麦加统一",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-01-21",
+          "player": "伦纳特.格里",
+          "player_id": "149067",
+          "position": "守门员",
+          "club": "柏林联合",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-02-01",
+          "player": "延斯.科特",
+          "player_id": "158069",
+          "position": "主教练",
+          "club": "奥厄",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "尼古拉斯.陶尔",
+          "player_id": "184151",
+          "position": "后腰",
+          "club": "美因茨",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "保罗·杰克尔",
+          "player_id": "158277",
+          "position": "中卫",
+          "club": "柏林联合",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "坦佩尔曼",
+          "player_id": "158293",
+          "position": "中前卫",
+          "club": "沙尔克04",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "霍夫曼",
+          "player_id": "155179",
+          "position": "守门员",
+          "club": "沙尔克04",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "朱利安·巴斯",
+          "player_id": "199477",
+          "position": "中前卫",
+          "club": "鹿特丹斯巴达",
+          "type": "租借结束"
+        },
+        {
+          "date": "2025-06-30",
+          "player": "里士满·塔奇",
+          "player_id": "179712",
+          "position": "中锋",
+          "club": "凯泽斯劳滕",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2025-2026": {
+      "in": [
+        {
+          "date": "2025-07-01",
+          "player": "海纳·巴克豪斯",
+          "player_id": "54402",
+          "position": "",
+          "club": "亚琛",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-07-01",
+          "player": "霍夫曼",
+          "player_id": "155179",
+          "position": "守门员",
+          "club": "沙尔克04",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-07-01",
+          "player": "坦佩尔曼",
+          "player_id": "158293",
+          "position": "中前卫",
+          "club": "沙尔克04",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-07-01",
+          "player": "卢卡斯·弗伦克特",
+          "player_id": "285177",
+          "position": "中卫",
+          "club": "普鲁士明斯特",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-07-02",
+          "player": "梅梅特.坎.艾丁",
+          "player_id": "207106",
+          "position": "右中场",
+          "club": "沙尔克04",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-07-04",
+          "player": "弗雷德里克·雅克尔",
+          "player_id": "178163",
+          "position": "中卫",
+          "club": "RB莱比锡",
+          "type": "租借"
+        },
+        {
+          "date": "2025-07-11",
+          "player": "路易斯·布鲁尼",
+          "player_id": "218538",
+          "position": "中卫",
+          "club": "雷根斯堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-07-19",
+          "player": "埃伦坎.雅迪米奇",
+          "player_id": "178679",
+          "position": "中锋",
+          "club": "霍芬海姆",
+          "type": "租借"
+        },
+        {
+          "date": "2025-07-21",
+          "player": "罗宾·赫伯",
+          "player_id": "238514",
+          "position": "中前卫",
+          "club": "卡尔斯鲁厄",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-08-08",
+          "player": "埃尔汉·卡斯特拉蒂",
+          "player_id": "170286",
+          "position": "守门员",
+          "club": "奇塔代拉",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-08-29",
+          "player": "帕特里克·恩科阿",
+          "player_id": "238503",
+          "position": "中卫",
+          "club": "亚琛",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-09-01",
+          "player": "弗洛里安",
+          "player_id": "179431",
+          "position": "后腰",
+          "club": "纽伦堡",
+          "type": "租借"
+        },
+        {
+          "date": "2025-09-01",
+          "player": "罗伯特·拉马萨克",
+          "player_id": "248138",
+          "position": "中锋",
+          "club": "RB莱比锡",
+          "type": "租借"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "法里德·阿里杜",
+          "player_id": "218692",
+          "position": "左边锋",
+          "club": "凯泽斯劳滕",
+          "type": "租借"
+        },
+        {
+          "date": "2026-01-14",
+          "player": "阿纳斯·巴赫特",
+          "player_id": "179824",
+          "position": "前腰",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-29",
+          "player": "约万·米贾托维奇",
+          "player_id": "230417",
+          "position": "前锋",
+          "club": "纽约城",
+          "type": "租借"
+        },
+        {
+          "date": "2026-02-02",
+          "player": "奥普库",
+          "player_id": "167390",
+          "position": "左边锋",
+          "club": "开塞利体育",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-02-02",
+          "player": "拉诺斯",
+          "player_id": "230394",
+          "position": "前锋",
+          "club": "门兴格拉德巴赫",
+          "type": "租借"
+        },
+        {
+          "date": "2026-02-02",
+          "player": "霍蒂",
+          "player_id": "194535",
+          "position": "后卫",
+          "club": "马格德堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-02-02",
+          "player": "肯·伊泽科尔",
+          "player_id": "253112",
+          "position": "中锋",
+          "club": "勒沃库森U19",
+          "type": "租借"
+        },
+        {
+          "date": "2026-03-11",
+          "player": "拉尔斯·科尔内特卡",
+          "player_id": "367051",
+          "position": "主教练",
+          "club": "奥地利",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "瓦利德·奇赫",
+          "player_id": "220535",
+          "position": "前腰",
+          "club": "赫拉克勒斯",
+          "type": "租借结束"
+        }
+      ],
+      "out": [
+        {
+          "date": "2025-07-01",
+          "player": "马尔科·约翰松",
+          "player_id": "132531",
+          "position": "守门员",
+          "club": "自由球员",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-07-02",
+          "player": "雷安·菲利普",
+          "player_id": "178369",
+          "position": "右边锋",
+          "club": "汉堡",
+          "type": "完全所有"
+        },
+        {
+          "date": "2025-08-13",
+          "player": "伊万诺夫",
+          "player_id": "152197",
+          "position": "中卫",
+          "club": "特里波利斯",
+          "type": "自由转会"
+        },
+        {
+          "date": "2025-09-01",
+          "player": "瓦利德·奇赫",
+          "player_id": "220535",
+          "position": "前腰",
+          "club": "赫拉克勒斯",
+          "type": "租借"
+        },
+        {
+          "date": "2026-01-12",
+          "player": "克里斯蒂安·康斯",
+          "player_id": "175800",
+          "position": "右边锋",
+          "club": "海登海姆",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-01-28",
+          "player": "莱文特·萨贝",
+          "player_id": "184661",
+          "position": "前锋",
+          "club": "卢宾扎格勒比",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-02-01",
+          "player": "罗伯特·拉马萨克",
+          "player_id": "248138",
+          "position": "中锋",
+          "club": "RB莱比锡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-02-09",
+          "player": "斯文·科勒",
+          "player_id": "177655",
+          "position": "后腰",
+          "club": "草蜢",
+          "type": "完全所有"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "约万·米贾托维奇",
+          "player_id": "230417",
+          "position": "前锋",
+          "club": "纽约城",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "拉诺斯",
+          "player_id": "230394",
+          "position": "前锋",
+          "club": "门兴格拉德巴赫",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "肯·伊泽科尔",
+          "player_id": "253112",
+          "position": "中锋",
+          "club": "勒沃库森U19",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "法里德·阿里杜",
+          "player_id": "218692",
+          "position": "左边锋",
+          "club": "凯泽斯劳滕",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "弗洛里安",
+          "player_id": "179431",
+          "position": "后腰",
+          "club": "纽伦堡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "弗雷德里克·雅克尔",
+          "player_id": "178163",
+          "position": "中卫",
+          "club": "RB莱比锡",
+          "type": "租借结束"
+        },
+        {
+          "date": "2026-06-30",
+          "player": "埃伦坎.雅迪米奇",
+          "player_id": "178679",
+          "position": "中锋",
+          "club": "霍芬海姆",
+          "type": "租借结束"
+        }
+      ]
+    },
+    "2026-2027": {
+      "in": [
+        {
+          "date": "2026-07-01",
+          "player": "弗洛里安",
+          "player_id": "179431",
+          "position": "后腰",
+          "club": "纽伦堡",
+          "type": "完全所有"
+        }
+      ],
+      "out": []
+    }
+  }
+}
