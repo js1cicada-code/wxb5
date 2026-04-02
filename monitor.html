@@ -221,7 +221,7 @@
         }
         
         function loadProcessStatus() {
-            fetch('update.log')
+            fetch('data/update.log')
                 .then(r => r.text())
                 .then(text => {
                     try {
@@ -458,7 +458,7 @@
         }
         
         function loadTeamProgress() {
-            fetch('update.log')
+            fetch('data/update.log')
                 .then(r => r.text())
                 .then(text => {
                     try {
