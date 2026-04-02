@@ -60,7 +60,8 @@ jobs:
       - name: Prepare pages
         run: |
           mkdir -p _site
-          cp all_crawlers_monitor.html _site/index.html
+          cp index.html _site/index.html
+          cp all_crawlers_monitor.html _site/monitor.html
           cp update.log _site/ 2>/dev/null || true
           mkdir -p _site/data
           cp data/*.json _site/data/ 2>/dev/null || true
