@@ -46,8 +46,8 @@ CRAWLERS = [
     ('4场总进球', 'zjq4_crawler.py'),
     ('大乐透', 'dlt_crawler.py'),
     ('七星彩', 'qxc_crawler.py'),
+    ('足球分析', 'football_analysis_crawler.py'),
     ('篮球分析', 'basketball_analysis_crawler.py'),
-    ('比赛分析', 'analysis_crawler.py'),
 ]
 
 

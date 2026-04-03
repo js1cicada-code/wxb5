@@ -33,6 +33,7 @@ jobs:
         run: |
           python live_crawler_final.py || true
           python live_basketball_crawler.py || true
+          python match_engine.py || true
           python data_fetcher.py || true
           python bjdc_crawler.py || true
           python dlt_crawler.py || true
@@ -40,7 +41,9 @@ jobs:
           python ctzc_crawler.py || true
           python bqc6_crawler.py || true
           python zjq4_crawler.py || true
+          python football_analysis_crawler.py || true
           python basketball_analysis_crawler.py || true
+          python check_analysis_data.py || true
       
       - name: Commit data changes
         run: |
