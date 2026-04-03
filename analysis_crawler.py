@@ -1474,14 +1474,14 @@ def generate_intelligence(result):
     home_current_rank = home_rank.get('currentRank')
     away_current_rank = away_rank.get('currentRank')
     
-    home_total_val = home_ability.get('totalValue', {}).get('value', 0) or 0
-    away_total_val = away_ability.get('totalValue', {}).get('value', 0) or 0
+    home_total_val = (home_ability.get('totalValue', {}) or {}).get('value', 0) or 0
+    away_total_val = (away_ability.get('totalValue', {}) or {}).get('value', 0) or 0
     
-    home_attack_val = home_ability.get('attackValue', {}).get('value', 0) or 0
-    away_attack_val = away_ability.get('attackValue', {}).get('value', 0) or 0
+    home_attack_val = (home_ability.get('attackValue', {}) or {}).get('value', 0) or 0
+    away_attack_val = (away_ability.get('attackValue', {}) or {}).get('value', 0) or 0
     
-    home_defense_val = home_ability.get('defenseValue', {}).get('value', 0) or 0
-    away_defense_val = away_ability.get('defenseValue', {}).get('value', 0) or 0
+    home_defense_val = (home_ability.get('defenseValue', {}) or {}).get('value', 0) or 0
+    away_defense_val = (away_ability.get('defenseValue', {}) or {}).get('value', 0) or 0
     
     if home_current_rank and home_current_rank <= 5:
         intel['homeStrength'].append(f'联赛排名第{home_current_rank}位，处于上游水平')

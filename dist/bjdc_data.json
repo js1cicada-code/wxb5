@@ -1,17 +1,932 @@
 {
-  "updateTime": "2026-04-02 19:27:10",
-  "period": "26041",
-  "matchCount": 15,
-  "total": 15,
+  "updateTime": "2026-04-03 12:29:51",
+  "period": "26042",
+  "matchCount": 409,
+  "total": 409,
   "matches": [
+    {
+      "id": "1",
+      "matchNum": "1",
+      "league": "澳超",
+      "time": "16:30",
+      "home": "阿德莱德联",
+      "away": "奥克兰FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "2",
+      "matchNum": "2",
+      "league": "25-26丹甲",
+      "time": "18:55",
+      "home": "科灵",
+      "away": "埃斯比约",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "3",
+      "matchNum": "3",
+      "league": "25-26英冠",
+      "time": "19:25",
+      "home": "米德尔斯堡",
+      "away": "米尔沃尔",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "4",
+      "matchNum": "4",
+      "league": "25-26英甲",
+      "time": "19:25",
+      "home": "唐卡斯特",
+      "away": "曼斯菲尔德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "5",
+      "matchNum": "5",
+      "league": "25-26丹甲",
+      "time": "19:55",
+      "home": "B 93",
+      "away": "霍布罗",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "6",
+      "matchNum": "6",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "赫尔辛堡",
+      "away": "厄斯特什",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "7",
+      "matchNum": "7",
+      "league": "25-26丹甲",
+      "time": "21:25",
+      "home": "哈维德夫",
+      "away": "希勒勒",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "8",
+      "matchNum": "8",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "伯明翰",
+      "away": "布莱克本",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "9",
+      "matchNum": "9",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "查尔顿",
+      "away": "布里斯托尔城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "10",
+      "matchNum": "10",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "莱斯特城",
+      "away": "普雷斯顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "11",
+      "matchNum": "11",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "诺维奇",
+      "away": "朴茨茅斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "12",
+      "matchNum": "12",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "牛津联",
+      "away": "赫尔城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "13",
+      "matchNum": "13",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "女王公园巡游者",
+      "away": "沃特福德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "14",
+      "matchNum": "14",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "谢菲尔德联",
+      "away": "斯旺西",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "15",
+      "matchNum": "15",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "西布朗维奇",
+      "away": "雷克瑟姆",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "16",
+      "matchNum": "16",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "布莱克浦",
+      "away": "埃克塞特城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "17",
+      "matchNum": "17",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "布拉德福德城",
+      "away": "北安普顿",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "18",
+      "matchNum": "18",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "伯顿",
+      "away": "巴恩斯利",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "19",
+      "matchNum": "19",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "哈德斯菲尔德",
+      "away": "雷丁",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "20",
+      "matchNum": "20",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "林肯城",
+      "away": "AFC温布尔登",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "21",
+      "matchNum": "21",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "卢顿",
+      "away": "彼得堡联",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "22",
+      "matchNum": "22",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "普利茅斯",
+      "away": "博尔顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "23",
+      "matchNum": "23",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "罗瑟汉姆联",
+      "away": "斯蒂夫尼奇",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "24",
+      "matchNum": "24",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "斯托克波特郡",
+      "away": "威科姆流浪者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "25",
+      "matchNum": "25",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "阿克灵顿",
+      "away": "克鲁",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "26",
+      "matchNum": "26",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "巴尼特",
+      "away": "布罗姆利",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "27",
+      "matchNum": "27",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "布里斯托尔流浪者",
+      "away": "弗利特伍德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "28",
+      "matchNum": "28",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "切斯特菲尔德",
+      "away": "切尔滕汉姆",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "29",
+      "matchNum": "29",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "科尔切斯特联",
+      "away": "奥德汉姆",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "30",
+      "matchNum": "30",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "格里姆斯比",
+      "away": "哈罗盖特",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "31",
+      "matchNum": "31",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "米尔顿凯恩斯",
+      "away": "巴罗",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "32",
+      "matchNum": "32",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "纽波特郡",
+      "away": "克劳利",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "33",
+      "matchNum": "33",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "索尔福德城",
+      "away": "诺茨郡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "34",
+      "matchNum": "34",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "什鲁斯伯里",
+      "away": "特兰米尔流浪者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "35",
+      "matchNum": "35",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "沃尔索尔",
+      "away": "吉林汉姆",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "36",
+      "matchNum": "36",
+      "league": "25-26葡超",
+      "time": "22:25",
+      "home": "吉尔维森特",
+      "away": "A F S",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "37",
+      "matchNum": "37",
+      "league": "25-26葡甲",
+      "time": "22:25",
+      "home": "奥利韦伦斯",
+      "away": "波尔蒂芒斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "38",
+      "matchNum": "38",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "第一维也纳",
+      "away": "卡普芬贝格",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "39",
+      "matchNum": "39",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "韦尔斯赫塔",
+      "away": "奥地利克拉根福",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "40",
+      "matchNum": "40",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "格拉茨风暴二队",
+      "away": "圣珀尔滕",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "41",
+      "matchNum": "41",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "阿姆施泰滕",
+      "away": "奥地利维也纳二队",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "42",
+      "matchNum": "42",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "维也纳快速二队",
+      "away": "FAC维也纳",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "43",
+      "matchNum": "43",
+      "league": "25-26奥乙",
+      "time": "23:55",
+      "home": "奥地利萨尔茨堡",
+      "away": "黑白布雷根茨",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "44",
+      "matchNum": "44",
+      "league": "25-26葡超",
+      "time": "00:55",
+      "home": "吉马良斯",
+      "away": "通德拉",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "45",
+      "matchNum": "45",
+      "league": "25-26奥甲",
+      "time": "01:25",
+      "home": "里德",
+      "away": "阿尔特阿赫",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "46",
+      "matchNum": "46",
+      "league": "25-26罗甲",
+      "time": "01:25",
+      "home": "博托沙尼",
+      "away": "布加勒斯特星",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "47",
+      "matchNum": "47",
+      "league": "25-26瑞士甲",
+      "time": "01:25",
+      "home": "洛桑乌契",
+      "away": "韦尔",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "48",
+      "matchNum": "48",
+      "league": "25-26瑞士甲",
+      "time": "01:25",
+      "home": "伊韦尔东体育",
+      "away": "贝林佐纳",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "49",
+      "matchNum": "49",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "阿讷西",
+      "away": "甘冈",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "50",
+      "matchNum": "50",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "巴斯蒂亚",
+      "away": "亚眠",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "51",
+      "matchNum": "51",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "敦刻尔克",
+      "away": "罗德兹",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "52",
+      "matchNum": "52",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "格勒诺布尔",
+      "away": "克莱蒙",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "53",
+      "matchNum": "53",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "圣旺红星",
+      "away": "拉瓦勒",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "54",
+      "matchNum": "54",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "威廉二世",
+      "away": "PSV埃因霍温青年",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "55",
+      "matchNum": "55",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "芬洛",
+      "away": "坎布尔",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "56",
+      "matchNum": "56",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "马斯特里赫特",
+      "away": "瓦尔韦克",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "57",
+      "matchNum": "57",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "阿尔克马尔青年队",
+      "away": "海尔蒙德体育",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "58",
+      "matchNum": "58",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "FC埃因霍温",
+      "away": "格拉夫夏普",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "59",
+      "matchNum": "59",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "多德雷赫特",
+      "away": "罗达JC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "60",
+      "matchNum": "60",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "阿尔梅勒城",
+      "away": "奥斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "61",
+      "matchNum": "61",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "海牙",
+      "away": "阿贾克斯青年队",
+      "handicap": -2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
     {
       "id": "62",
       "matchNum": "62",
-      "league": "25-26西乙",
-      "time": "00:55",
-      "home": "拉斯帕尔马斯",
-      "away": "格拉纳达",
-      "handicap": 0,
+      "league": "25-26比乙",
+      "time": "01:55",
+      "home": "科特赖克",
+      "away": "根特预备队",
+      "handicap": -1,
       "status": "selling",
       "spf": [
         2.5,
@@ -22,10 +937,10 @@
     {
       "id": "63",
       "matchNum": "63",
-      "league": "25-26西乙",
+      "league": "25-26比乙",
       "time": "01:55",
-      "home": "皇家社会B队",
-      "away": "埃瓦尔",
+      "home": "亨克预备队",
+      "away": "洛克伦",
       "handicap": 0,
       "status": "selling",
       "spf": [
@@ -37,10 +952,10 @@
     {
       "id": "64",
       "matchNum": "64",
-      "league": "25-26西乙",
+      "league": "阿职联",
       "time": "01:55",
-      "home": "卡斯特利翁",
-      "away": "阿尔梅里亚",
+      "home": "门多萨体操",
+      "away": "萨斯菲尔德",
       "handicap": 0,
       "status": "selling",
       "spf": [
@@ -52,11 +967,11 @@
     {
       "id": "65",
       "matchNum": "65",
-      "league": "阿职联",
-      "time": "01:55",
-      "home": "巴拉卡斯中央",
-      "away": "萨米恩托",
-      "handicap": 0,
+      "league": "25-26瑞士甲",
+      "time": "02:10",
+      "home": "纳沙泰尔",
+      "away": "瓦杜兹",
+      "handicap": 1,
       "status": "selling",
       "spf": [
         2.5,
@@ -67,10 +982,10 @@
     {
       "id": "66",
       "matchNum": "66",
-      "league": "25-26英甲",
-      "time": "02:40",
-      "home": "维冈竞技",
-      "away": "莱顿东方",
+      "league": "25-26瑞士甲",
+      "time": "02:10",
+      "home": "卡鲁日星",
+      "away": "尼永奈斯",
       "handicap": 0,
       "status": "selling",
       "spf": [
@@ -82,11 +997,11 @@
     {
       "id": "67",
       "matchNum": "67",
-      "league": "25-26英乙",
-      "time": "02:55",
-      "home": "剑桥联",
-      "away": "斯文登",
-      "handicap": -1,
+      "league": "25-26奥乙",
+      "time": "02:25",
+      "home": "奥地利卢斯特瑙",
+      "away": "阿德米拉",
+      "handicap": 0,
       "status": "selling",
       "spf": [
         2.5,
@@ -97,11 +1012,11 @@
     {
       "id": "68",
       "matchNum": "68",
-      "league": "25-26西乙",
-      "time": "03:25",
-      "home": "莱加内斯",
-      "away": "萨拉戈萨",
-      "handicap": 0,
+      "league": "25-26法甲",
+      "time": "02:40",
+      "home": "巴黎圣日耳曼",
+      "away": "图卢兹",
+      "handicap": -2,
       "status": "selling",
       "spf": [
         2.5,
@@ -112,10 +1027,10 @@
     {
       "id": "69",
       "matchNum": "69",
-      "league": "阿职联",
-      "time": "04:25",
-      "home": "蒂格雷",
-      "away": "里瓦达维亚独立",
+      "league": "25-26比甲",
+      "time": "02:40",
+      "home": "安特卫普",
+      "away": "亨克",
       "handicap": 0,
       "status": "selling",
       "spf": [
@@ -127,11 +1042,11 @@
     {
       "id": "70",
       "matchNum": "70",
-      "league": "智利甲",
-      "time": "04:55",
-      "home": "天主教大学",
-      "away": "巴勒斯坦人",
-      "handicap": -1,
+      "league": "爱超",
+      "time": "02:40",
+      "home": "德罗赫达联",
+      "away": "波希米亚人",
+      "handicap": 1,
       "status": "selling",
       "spf": [
         2.5,
@@ -142,11 +1057,11 @@
     {
       "id": "71",
       "matchNum": "71",
-      "league": "巴西甲",
-      "time": "05:55",
-      "home": "桑托斯",
-      "away": "雷莫",
-      "handicap": -1,
+      "league": "爱超",
+      "time": "02:40",
+      "home": "谢尔伯恩",
+      "away": "邓多克",
+      "handicap": 0,
       "status": "selling",
       "spf": [
         2.5,
@@ -157,11 +1072,11 @@
     {
       "id": "72",
       "matchNum": "72",
-      "league": "巴西甲",
-      "time": "05:55",
-      "home": "沙佩科恩斯",
-      "away": "米内罗竞技",
-      "handicap": 0,
+      "league": "爱超",
+      "time": "02:40",
+      "home": "圣帕特里克竞技",
+      "away": "斯莱戈流浪者",
+      "handicap": -2,
       "status": "selling",
       "spf": [
         2.5,
@@ -172,11 +1087,11 @@
     {
       "id": "73",
       "matchNum": "73",
-      "league": "巴西乙",
-      "time": "05:55",
-      "home": "圣贝尔纳多",
-      "away": "铁路工人",
-      "handicap": 0,
+      "league": "爱超",
+      "time": "02:40",
+      "home": "沃特福德FC",
+      "away": "沙姆洛克流浪者",
+      "handicap": 1,
       "status": "selling",
       "spf": [
         2.5,
@@ -187,10 +1102,10 @@
     {
       "id": "74",
       "matchNum": "74",
-      "league": "阿职联",
-      "time": "06:00",
-      "home": "塔勒瑞斯",
-      "away": "博卡青年",
+      "league": "爱甲",
+      "time": "02:40",
+      "home": "阿斯隆城",
+      "away": "都柏林大学",
       "handicap": 0,
       "status": "selling",
       "spf": [
@@ -202,11 +1117,11 @@
     {
       "id": "75",
       "matchNum": "75",
-      "league": "巴西甲",
-      "time": "06:00",
-      "home": "帕尔梅拉斯",
-      "away": "格雷米奥",
-      "handicap": -1,
+      "league": "爱甲",
+      "time": "02:40",
+      "home": "费恩哈普",
+      "away": "科克城",
+      "handicap": 1,
       "status": "selling",
       "spf": [
         2.5,
@@ -217,11 +1132,5006 @@
     {
       "id": "76",
       "matchNum": "76",
+      "league": "爱甲",
+      "time": "02:40",
+      "home": "凯里",
+      "away": "科夫漫步者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "77",
+      "matchNum": "77",
+      "league": "爱甲",
+      "time": "02:40",
+      "home": "条约联",
+      "away": "朗福德城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "78",
+      "matchNum": "78",
+      "league": "爱甲",
+      "time": "02:40",
+      "home": "韦克斯福德",
+      "away": "布雷流浪者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "79",
+      "matchNum": "79",
+      "league": "25-26西甲",
+      "time": "02:55",
+      "home": "巴列卡诺",
+      "away": "埃尔切",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "80",
+      "matchNum": "80",
+      "league": "25-26英冠",
+      "time": "02:55",
+      "home": "考文垂",
+      "away": "德比郡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "81",
+      "matchNum": "81",
+      "league": "爱超",
+      "time": "02:55",
+      "home": "戈尔韦联",
+      "away": "德里城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "82",
+      "matchNum": "82",
+      "league": "25-26葡超",
+      "time": "03:25",
+      "home": "葡萄牙体育",
+      "away": "圣塔克拉拉",
+      "handicap": -2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "83",
+      "matchNum": "83",
+      "league": "阿职联",
+      "time": "04:10",
+      "home": "圣菲联合",
+      "away": "列斯特拉体育",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "84",
+      "matchNum": "84",
+      "league": "智利甲",
+      "time": "04:25",
+      "home": "科金博联",
+      "away": "科布雷萨尔",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "85",
+      "matchNum": "85",
+      "league": "阿职联",
+      "time": "06:00",
+      "home": "圣洛伦索",
+      "away": "拉普拉塔大学生",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "86",
+      "matchNum": "86",
+      "league": "智利甲",
+      "time": "06:00",
+      "home": "奥伊金斯",
+      "away": "奥达克斯意大利人",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "87",
+      "matchNum": "87",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "普埃布拉",
+      "away": "华雷斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "88",
+      "matchNum": "88",
+      "league": "25-26墨超",
+      "time": "10:55",
+      "home": "内卡萨",
+      "away": "马萨特兰",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "89",
+      "matchNum": "89",
+      "league": "25-26墨超",
+      "time": "10:55",
+      "home": "蒂华纳",
+      "away": "老虎大学",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "90",
+      "matchNum": "90",
+      "league": "J1联赛",
+      "time": "11:55",
+      "home": "千叶市原",
+      "away": "东京绿茵",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "91",
+      "matchNum": "91",
+      "league": "J1联赛",
+      "time": "12:55",
+      "home": "水户蜀葵",
+      "away": "鹿岛鹿角",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "92",
+      "matchNum": "92",
+      "league": "K1联赛",
+      "time": "12:55",
+      "home": "济州SK",
+      "away": "富川1995",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "93",
+      "matchNum": "93",
+      "league": "K1联赛",
+      "time": "12:55",
+      "home": "全北现代",
+      "away": "蔚山HD",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "94",
+      "matchNum": "94",
+      "league": "K2联赛",
+      "time": "12:55",
+      "home": "龙仁FC",
+      "away": "全南天龙",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "95",
+      "matchNum": "95",
+      "league": "K2联赛",
+      "time": "12:55",
+      "home": "首尔衣恋",
+      "away": "水原FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "96",
+      "matchNum": "96",
+      "league": "J1联赛",
+      "time": "13:55",
+      "home": "名古屋鲸",
+      "away": "大阪樱花",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "97",
+      "matchNum": "97",
+      "league": "澳超",
+      "time": "13:55",
+      "home": "中央海岸水手",
+      "away": "珀斯光荣",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "98",
+      "matchNum": "98",
+      "league": "J1联赛",
+      "time": "14:55",
+      "home": "大阪钢巴",
+      "away": "京都不死鸟",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "99",
+      "matchNum": "99",
+      "league": "K1联赛",
+      "time": "15:25",
+      "home": "浦项铁人",
+      "away": "大田韩亚市民",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "100",
+      "matchNum": "100",
+      "league": "K1联赛",
+      "time": "15:25",
+      "home": "江原FC",
+      "away": "光州FC",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "101",
+      "matchNum": "101",
+      "league": "K2联赛",
+      "time": "15:25",
+      "home": "华城FC",
+      "away": "城南FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "102",
+      "matchNum": "102",
+      "league": "K2联赛",
+      "time": "15:25",
+      "home": "庆南FC",
+      "away": "釜山IPark",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "103",
+      "matchNum": "103",
+      "league": "澳超",
+      "time": "16:30",
+      "home": "墨尔本城",
+      "away": "西悉尼流浪者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "104",
+      "matchNum": "104",
+      "league": "芬超",
+      "time": "17:55",
+      "home": "国际图尔库",
+      "away": "瓦萨",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "105",
+      "matchNum": "105",
+      "league": "25-26葡甲",
+      "time": "17:55",
+      "home": "葡萄牙体育B队",
+      "away": "佩纳菲耶尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "106",
+      "matchNum": "106",
+      "league": "25-26葡甲",
+      "time": "17:55",
+      "home": "SC法伦斯",
+      "away": "CD费伦斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "107",
+      "matchNum": "107",
+      "league": "25-26波兰甲",
+      "time": "18:10",
+      "home": "卡托维兹",
+      "away": "普沃茨克维斯瓦",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "108",
+      "matchNum": "108",
+      "league": "瑞典甲",
+      "time": "18:25",
+      "home": "北雪平",
+      "away": "韦纳穆",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "109",
+      "matchNum": "109",
+      "league": "25-26德乙",
+      "time": "18:55",
+      "home": "马格德堡",
+      "away": "波鸿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "110",
+      "matchNum": "110",
+      "league": "25-26德乙",
+      "time": "18:55",
+      "home": "凯泽斯劳滕",
+      "away": "杜塞尔多夫",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "111",
+      "matchNum": "111",
+      "league": "25-26德乙",
+      "time": "18:55",
+      "home": "比勒费尔德",
+      "away": "达姆施塔特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "112",
+      "matchNum": "112",
+      "league": "足总杯",
+      "time": "19:40",
+      "home": "曼彻斯特城",
+      "away": "利物浦",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "113",
+      "matchNum": "113",
+      "league": "25-26西甲",
+      "time": "19:55",
+      "home": "皇家社会",
+      "away": "莱万特",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "114",
+      "matchNum": "114",
+      "league": "25-26西乙",
+      "time": "19:55",
+      "home": "加的斯",
+      "away": "科尔多瓦",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "115",
+      "matchNum": "115",
+      "league": "25-26法乙",
+      "time": "19:55",
+      "home": "蒙彼利埃",
+      "away": "特鲁瓦",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "116",
+      "matchNum": "116",
+      "league": "25-26法乙",
+      "time": "19:55",
+      "home": "兰斯",
+      "away": "布洛涅",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "117",
+      "matchNum": "117",
+      "league": "25-26罗甲",
+      "time": "19:55",
+      "home": "加拉茨钢铁",
+      "away": "赫曼施塔特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "118",
+      "matchNum": "118",
+      "league": "芬超",
+      "time": "19:55",
+      "home": "赫尔辛基",
+      "away": "塞伊奈约基",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "119",
+      "matchNum": "119",
+      "league": "25-26丹甲",
+      "time": "19:55",
+      "home": "米德尔法特",
+      "away": "奥尔堡",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "120",
+      "matchNum": "120",
+      "league": "25-26波兰甲",
+      "time": "20:40",
+      "home": "琴斯托霍瓦",
+      "away": "罗兹维德祖",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "121",
+      "matchNum": "121",
+      "league": "25-26意甲",
+      "time": "20:55",
+      "home": "萨索洛",
+      "away": "卡利亚里",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "122",
+      "matchNum": "122",
+      "league": "25-26希腊超",
+      "time": "20:55",
+      "home": "基菲西亚",
+      "away": "潘塞莱科斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "123",
+      "matchNum": "123",
+      "league": "25-26捷克甲",
+      "time": "20:55",
+      "home": "杜克拉",
+      "away": "帕尔杜比采",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "124",
+      "matchNum": "124",
+      "league": "25-26捷克甲",
+      "time": "20:55",
+      "home": "奥洛穆茨",
+      "away": "姆拉达博莱斯拉夫",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "125",
+      "matchNum": "125",
+      "league": "25-26捷克甲",
+      "time": "20:55",
+      "home": "利贝雷茨",
+      "away": "斯洛瓦茨科",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "126",
+      "matchNum": "126",
+      "league": "25-26捷克甲",
+      "time": "20:55",
+      "home": "兹林",
+      "away": "亚布洛内茨",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "127",
+      "matchNum": "127",
+      "league": "瑞典超",
+      "time": "20:55",
+      "home": "哈马比",
+      "away": "米亚尔比",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "128",
+      "matchNum": "128",
+      "league": "瑞典超",
+      "time": "20:55",
+      "home": "代格福什",
+      "away": "天狼星",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "129",
+      "matchNum": "129",
+      "league": "25-26葡甲",
+      "time": "20:55",
+      "home": "帕索斯费雷拉",
+      "away": "马里迪莫",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "130",
+      "matchNum": "130",
+      "league": "25-26丹甲",
+      "time": "20:55",
+      "home": "霍森斯",
+      "away": "灵比",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "131",
+      "matchNum": "131",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "勒沃库森",
+      "away": "沃尔夫斯堡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "132",
+      "matchNum": "132",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "弗赖堡",
+      "away": "拜仁慕尼黑",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "133",
+      "matchNum": "133",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "云达不来梅",
+      "away": "RB莱比锡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "134",
+      "matchNum": "134",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "门兴格拉德巴赫",
+      "away": "海登海姆",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "135",
+      "matchNum": "135",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "霍芬海姆",
+      "away": "美因茨",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "136",
+      "matchNum": "136",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "汉堡",
+      "away": "奥格斯堡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "137",
+      "matchNum": "137",
+      "league": "25-26苏超",
+      "time": "21:55",
+      "home": "希伯尼安",
+      "away": "基尔马诺克",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "138",
+      "matchNum": "138",
+      "league": "25-26苏超",
+      "time": "21:55",
+      "home": "马瑟韦尔",
+      "away": "福尔柯克",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "139",
+      "matchNum": "139",
+      "league": "25-26苏超",
+      "time": "21:55",
+      "home": "格拉斯哥流浪者",
+      "away": "邓迪联",
+      "handicap": -2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "140",
+      "matchNum": "140",
+      "league": "25-26苏超",
+      "time": "21:55",
+      "home": "圣米伦",
+      "away": "阿伯丁",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "141",
+      "matchNum": "141",
+      "league": "芬超",
+      "time": "21:55",
+      "home": "查路",
+      "away": "拉赫蒂",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "142",
+      "matchNum": "142",
+      "league": "芬超",
+      "time": "21:55",
+      "home": "玛丽港",
+      "away": "TPS图尔库",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "143",
+      "matchNum": "143",
+      "league": "芬超",
+      "time": "21:55",
+      "home": "伊尔维斯",
+      "away": "库普斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "144",
+      "matchNum": "144",
+      "league": "25-26苏冠",
+      "time": "21:55",
+      "home": "阿布罗斯",
+      "away": "圣约翰斯通",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "145",
+      "matchNum": "145",
+      "league": "25-26苏冠",
+      "time": "21:55",
+      "home": "艾尔联",
+      "away": "帕尔蒂克蓟花",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "146",
+      "matchNum": "146",
+      "league": "25-26苏冠",
+      "time": "21:55",
+      "home": "邓弗姆林竞技",
+      "away": "格里诺克摩顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "147",
+      "matchNum": "147",
+      "league": "25-26苏冠",
+      "time": "21:55",
+      "home": "罗斯郡",
+      "away": "艾尔德里人",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "148",
+      "matchNum": "148",
+      "league": "25-26西甲",
+      "time": "22:10",
+      "home": "马略卡",
+      "away": "皇家马德里",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "149",
+      "matchNum": "149",
+      "league": "25-26西乙",
+      "time": "22:10",
+      "home": "阿尔瓦塞特",
+      "away": "布尔戈斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "150",
+      "matchNum": "150",
+      "league": "25-26葡超",
+      "time": "22:25",
+      "home": "葡萄牙国民",
+      "away": "阿马多拉之星",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "151",
+      "matchNum": "151",
+      "league": "25-26荷甲",
+      "time": "22:25",
+      "home": "PSV埃因霍温",
+      "away": "乌德勒支",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "152",
+      "matchNum": "152",
+      "league": "25-26法甲",
+      "time": "22:55",
+      "home": "斯特拉斯堡",
+      "away": "尼斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "153",
+      "matchNum": "153",
+      "league": "25-26奥甲",
+      "time": "22:55",
+      "home": "WSG蒂罗尔",
+      "away": "沃尔夫斯贝格",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "154",
+      "matchNum": "154",
+      "league": "25-26奥甲",
+      "time": "22:55",
+      "home": "格拉茨AK",
+      "away": "蓝白林茨",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "155",
+      "matchNum": "155",
+      "league": "25-26希腊超",
+      "time": "22:55",
+      "home": "特里波利斯之星",
+      "away": "拉里萨",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "156",
+      "matchNum": "156",
+      "league": "25-26波兰甲",
+      "time": "23:25",
+      "home": "扎布热矿工",
+      "away": "克拉科维亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "157",
+      "matchNum": "157",
+      "league": "25-26意甲",
+      "time": "23:55",
+      "home": "维罗纳",
+      "away": "佛罗伦萨",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "158",
+      "matchNum": "158",
+      "league": "25-26瑞士超",
+      "time": "23:55",
+      "home": "卢加诺",
+      "away": "图恩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "159",
+      "matchNum": "159",
+      "league": "25-26瑞士超",
+      "time": "23:55",
+      "home": "洛桑体育",
+      "away": "温特图尔",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "160",
+      "matchNum": "160",
+      "league": "25-26捷克甲",
+      "time": "23:55",
+      "home": "比尔森胜利",
+      "away": "特普利采",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "161",
+      "matchNum": "161",
+      "league": "25-26丹超",
+      "time": "23:55",
+      "home": "中日德兰",
+      "away": "桑德捷斯基",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "162",
+      "matchNum": "162",
+      "league": "芬超",
+      "time": "23:55",
+      "home": "格尼斯坦",
+      "away": "AC奥卢",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "163",
+      "matchNum": "163",
+      "league": "25-26瑞士甲",
+      "time": "23:55",
+      "home": "拉珀斯维尔约纳",
+      "away": "阿劳",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "164",
+      "matchNum": "164",
+      "league": "足总杯",
+      "time": "00:10",
+      "home": "切尔西",
+      "away": "维尔港",
+      "handicap": -3,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "165",
+      "matchNum": "165",
+      "league": "25-26比甲",
+      "time": "00:10",
+      "home": "奥德赫维里鲁汶",
+      "away": "标准列日",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "166",
+      "matchNum": "166",
+      "league": "25-26西甲",
+      "time": "00:25",
+      "home": "皇家贝蒂斯",
+      "away": "西班牙人",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "167",
+      "matchNum": "167",
+      "league": "25-26德甲",
+      "time": "00:25",
+      "home": "斯图加特",
+      "away": "多特蒙德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "168",
+      "matchNum": "168",
+      "league": "25-26西乙",
+      "time": "00:25",
+      "home": "拉科鲁尼亚",
+      "away": "马拉加",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "169",
+      "matchNum": "169",
+      "league": "25-26西乙",
+      "time": "00:25",
+      "home": "莱昂文化体育",
+      "away": "巴利亚多利德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "170",
+      "matchNum": "170",
+      "league": "25-26罗甲",
+      "time": "00:25",
+      "home": "阿尔杰什",
+      "away": "布加勒斯特迪纳摩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "171",
+      "matchNum": "171",
+      "league": "阿职联",
+      "time": "00:25",
+      "home": "阿尔多希维",
+      "away": "里奥夸尔托大学生",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "172",
+      "matchNum": "172",
+      "league": "25-26荷甲",
+      "time": "00:40",
+      "home": "特尔斯达",
+      "away": "格罗宁根",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "173",
+      "matchNum": "173",
+      "league": "25-26荷甲",
+      "time": "00:40",
+      "home": "阿尔克马尔",
+      "away": "锡塔德福图纳",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "174",
+      "matchNum": "174",
+      "league": "25-26法甲",
+      "time": "00:55",
+      "home": "布雷斯特",
+      "away": "雷恩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "175",
+      "matchNum": "175",
+      "league": "25-26葡超",
+      "time": "00:55",
+      "home": "里奥阿维",
+      "away": "阿维卡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "176",
+      "matchNum": "176",
+      "league": "25-26葡超",
+      "time": "00:55",
+      "home": "摩雷伦斯",
+      "away": "布拉加",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "177",
+      "matchNum": "177",
+      "league": "25-26希腊超",
+      "time": "00:55",
+      "home": "帕纳多里科斯",
+      "away": "阿特罗米托斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "178",
+      "matchNum": "178",
+      "league": "25-26葡甲",
+      "time": "00:55",
+      "home": "维塞乌学院",
+      "away": "费尔盖拉斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "179",
+      "matchNum": "179",
+      "league": "美职",
+      "time": "00:55",
+      "home": "多伦多FC",
+      "away": "科罗拉多急流",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "180",
+      "matchNum": "180",
+      "league": "25-26法乙",
+      "time": "01:55",
+      "home": "南锡",
+      "away": "圣埃蒂安",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "181",
+      "matchNum": "181",
+      "league": "25-26比乙",
+      "time": "01:55",
+      "home": "利尔斯",
+      "away": "布瑞恩斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "182",
+      "matchNum": "182",
+      "league": "25-26比乙",
+      "time": "01:55",
+      "home": "布鲁日NXT",
+      "away": "欧本",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "183",
+      "matchNum": "183",
+      "league": "25-26比乙",
+      "time": "01:55",
+      "home": "洛默尔",
+      "away": "莫伦贝克",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "184",
+      "matchNum": "184",
+      "league": "25-26波兰甲",
+      "time": "02:10",
+      "home": "乔治罗尼亚",
+      "away": "波兹南莱赫",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "185",
+      "matchNum": "185",
+      "league": "25-26德乙",
+      "time": "02:25",
+      "home": "德累斯顿",
+      "away": "柏林赫塔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "186",
+      "matchNum": "186",
+      "league": "25-26瑞士超",
+      "time": "02:25",
+      "home": "巴塞尔",
+      "away": "伯尔尼年轻人",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "187",
+      "matchNum": "187",
+      "league": "25-26意甲",
+      "time": "02:40",
+      "home": "拉齐奥",
+      "away": "帕尔马",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "188",
+      "matchNum": "188",
+      "league": "25-26比甲",
+      "time": "02:40",
+      "home": "圣吉罗斯联合",
+      "away": "圣特赖登",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "189",
+      "matchNum": "189",
+      "league": "25-26西甲",
+      "time": "02:55",
+      "home": "马德里竞技",
+      "away": "巴塞罗那",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "190",
+      "matchNum": "190",
+      "league": "足总杯",
+      "time": "02:55",
+      "home": "南安普顿",
+      "away": "阿森纳",
+      "handicap": 2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "191",
+      "matchNum": "191",
+      "league": "25-26荷甲",
+      "time": "02:55",
+      "home": "阿贾克斯",
+      "away": "特温特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "192",
+      "matchNum": "192",
+      "league": "25-26荷甲",
+      "time": "02:55",
+      "home": "鹿特丹精英",
+      "away": "奈梅亨",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "193",
+      "matchNum": "193",
+      "league": "巴西乙",
+      "time": "02:55",
+      "home": "福塔莱萨",
+      "away": "尤文图德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "194",
+      "matchNum": "194",
+      "league": "25-26法甲",
+      "time": "03:00",
+      "home": "里尔",
+      "away": "朗斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "195",
+      "matchNum": "195",
+      "league": "25-26葡超",
+      "time": "03:25",
+      "home": "波尔图",
+      "away": "法马利康",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "196",
+      "matchNum": "196",
+      "league": "阿职联",
+      "time": "04:25",
+      "home": "阿根廷独立",
+      "away": "竞技俱乐部",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "197",
+      "matchNum": "197",
+      "league": "智利甲",
+      "time": "04:25",
+      "home": "利马切",
+      "away": "拉卡莱拉联合",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "198",
+      "matchNum": "198",
+      "league": "美职",
+      "time": "04:25",
+      "home": "新英格兰革命",
+      "away": "CF蒙特利尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "199",
+      "matchNum": "199",
+      "league": "美职",
+      "time": "04:25",
+      "home": "皇家盐湖城",
+      "away": "堪萨斯城体育",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "200",
+      "matchNum": "200",
+      "league": "巴西乙",
+      "time": "04:55",
+      "home": "累西腓航海",
+      "away": "庞特普雷塔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "201",
+      "matchNum": "201",
+      "league": "智利甲",
+      "time": "06:00",
+      "home": "比尼亚德马埃弗顿",
+      "away": "纽布莱恩斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "202",
+      "matchNum": "202",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "蒙特雷",
+      "away": "圣路易斯竞技",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "203",
+      "matchNum": "203",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "克雷塔罗",
+      "away": "托卢卡",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "204",
+      "matchNum": "204",
+      "league": "巴西乙",
+      "time": "06:00",
+      "home": "维拉诺瓦",
+      "away": "戈亚尼亚竞技",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "205",
+      "matchNum": "205",
+      "league": "美职",
+      "time": "06:00",
+      "home": "亚特兰大联",
+      "away": "哥伦布机员",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "206",
+      "matchNum": "206",
+      "league": "美职",
+      "time": "06:00",
+      "home": "夏洛特FC",
+      "away": "费城联合",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "207",
+      "matchNum": "207",
+      "league": "美职",
+      "time": "06:00",
+      "home": "华盛顿联",
+      "away": "FC达拉斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "208",
+      "matchNum": "208",
+      "league": "美职",
+      "time": "06:00",
+      "home": "国际迈阿密",
+      "away": "奥斯汀FC",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "209",
+      "matchNum": "209",
+      "league": "美职",
+      "time": "06:00",
+      "home": "纽约城",
+      "away": "圣路易斯城",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "210",
+      "matchNum": "210",
+      "league": "美职",
+      "time": "06:00",
+      "home": "纽约红牛",
+      "away": "FC辛辛那提",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "211",
+      "matchNum": "211",
+      "league": "巴西乙",
+      "time": "06:00",
+      "home": "隆德里纳",
+      "away": "累西腓体育",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "212",
+      "matchNum": "212",
       "league": "巴西甲",
       "time": "06:00",
-      "home": "布拉干蒂诺红牛",
-      "away": "弗拉门戈",
+      "home": "瓦斯科达伽马",
+      "away": "博塔弗戈",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "213",
+      "matchNum": "213",
+      "league": "阿职联",
+      "time": "06:00",
+      "home": "罗萨里奥中央",
+      "away": "图库曼竞技",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "214",
+      "matchNum": "214",
+      "league": "美职",
+      "time": "06:00",
+      "home": "芝加哥火焰",
+      "away": "纳什维尔SC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "215",
+      "matchNum": "215",
+      "league": "美职",
+      "time": "06:00",
+      "home": "休斯敦迪纳摩",
+      "away": "西雅图海湾人",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "216",
+      "matchNum": "216",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "莱昂",
+      "away": "阿特拉斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "217",
+      "matchNum": "217",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "蓝十字",
+      "away": "帕丘卡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "218",
+      "matchNum": "218",
+      "league": "美职",
+      "time": "06:00",
+      "home": "洛杉矶FC",
+      "away": "奥兰多城",
+      "handicap": -2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "219",
+      "matchNum": "219",
+      "league": "美职",
+      "time": "10:25",
+      "home": "洛杉矶银河",
+      "away": "明尼苏达联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "220",
+      "matchNum": "220",
+      "league": "美职",
+      "time": "10:25",
+      "home": "圣何塞地震",
+      "away": "圣迭戈FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "221",
+      "matchNum": "221",
+      "league": "美职",
+      "time": "10:25",
+      "home": "温哥华白浪",
+      "away": "波特兰伐木者",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "222",
+      "matchNum": "222",
+      "league": "25-26墨超",
+      "time": "10:55",
+      "home": "桑托斯拉古纳",
+      "away": "墨西哥美洲",
       "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "223",
+      "matchNum": "223",
+      "league": "J1联赛",
+      "time": "11:55",
+      "home": "长崎成功丸",
+      "away": "清水心跳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "224",
+      "matchNum": "224",
+      "league": "J1联赛",
+      "time": "12:55",
+      "home": "柏太阳神",
+      "away": "横滨水手",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "225",
+      "matchNum": "225",
+      "league": "J1联赛",
+      "time": "12:55",
+      "home": "冈山绿雉",
+      "away": "神户胜利船",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "226",
+      "matchNum": "226",
+      "league": "J1联赛",
+      "time": "12:55",
+      "home": "广岛三箭",
+      "away": "福冈黄蜂",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "227",
+      "matchNum": "227",
+      "league": "K1联赛",
+      "time": "12:55",
+      "home": "FC安养",
+      "away": "FC首尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "228",
+      "matchNum": "228",
+      "league": "澳超",
+      "time": "12:55",
+      "home": "墨尔本胜利",
+      "away": "惠灵顿凤凰",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "229",
+      "matchNum": "229",
+      "league": "K2联赛",
+      "time": "12:55",
+      "home": "大邱FC",
+      "away": "金浦FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "230",
+      "matchNum": "230",
+      "league": "K2联赛",
+      "time": "12:55",
+      "home": "水原三星蓝翼",
+      "away": "忠北清州FC",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "231",
+      "matchNum": "231",
+      "league": "J1联赛",
+      "time": "13:55",
+      "home": "FC东京",
+      "away": "町田泽维亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "232",
+      "matchNum": "232",
+      "league": "J1联赛",
+      "time": "14:55",
+      "home": "川崎前锋",
+      "away": "浦和红钻",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "233",
+      "matchNum": "233",
+      "league": "K1联赛",
+      "time": "15:25",
+      "home": "仁川联",
+      "away": "金泉尚武",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "234",
+      "matchNum": "234",
+      "league": "K2联赛",
+      "time": "15:25",
+      "home": "安山绿人",
+      "away": "忠南牙山FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "235",
+      "matchNum": "235",
+      "league": "25-26荷甲",
+      "time": "18:10",
+      "home": "前进之鹰",
+      "away": "兹沃勒",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "236",
+      "matchNum": "236",
+      "league": "25-26捷克甲",
+      "time": "18:55",
+      "home": "赫拉德茨克拉洛韦",
+      "away": "波希米亚人1905",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "237",
+      "matchNum": "237",
+      "league": "25-26德乙",
+      "time": "19:25",
+      "home": "基尔",
+      "away": "明斯特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "238",
+      "matchNum": "238",
+      "league": "25-26德乙",
+      "time": "19:25",
+      "home": "汉诺威96",
+      "away": "埃尔沃斯贝格",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "239",
+      "matchNum": "239",
+      "league": "25-26德乙",
+      "time": "19:25",
+      "home": "菲尔特",
+      "away": "帕德博恩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "240",
+      "matchNum": "240",
+      "league": "25-26德乙",
+      "time": "19:25",
+      "home": "沙尔克04",
+      "away": "卡尔斯鲁厄",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "241",
+      "matchNum": "241",
+      "league": "25-26德乙",
+      "time": "19:25",
+      "home": "不伦瑞克",
+      "away": "纽伦堡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "242",
+      "matchNum": "242",
+      "league": "25-26西甲",
+      "time": "19:55",
+      "home": "赫塔费",
+      "away": "毕尔巴鄂竞技",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "243",
+      "matchNum": "243",
+      "league": "25-26西乙",
+      "time": "19:55",
+      "home": "埃瓦尔",
+      "away": "休达",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "244",
+      "matchNum": "244",
+      "league": "瑞典超",
+      "time": "19:55",
+      "home": "AIK索尔纳",
+      "away": "哈尔姆斯塔德",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "245",
+      "matchNum": "245",
+      "league": "瑞典超",
+      "time": "19:55",
+      "home": "卡尔马",
+      "away": "韦斯特罗斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "246",
+      "matchNum": "246",
+      "league": "25-26罗甲",
+      "time": "19:55",
+      "home": "UTA阿拉德",
+      "away": "梅塔洛格洛布斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "247",
+      "matchNum": "247",
+      "league": "25-26荷甲",
+      "time": "20:25",
+      "home": "福伦丹",
+      "away": "费耶诺德",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "248",
+      "matchNum": "248",
+      "league": "25-26荷甲",
+      "time": "20:25",
+      "home": "海伦芬",
+      "away": "赫拉克勒斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "249",
+      "matchNum": "249",
+      "league": "25-26奥甲",
+      "time": "20:25",
+      "home": "LASK林茨",
+      "away": "奥地利维也纳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "250",
+      "matchNum": "250",
+      "league": "25-26奥甲",
+      "time": "20:25",
+      "home": "哈特贝格",
+      "away": "萨尔茨堡红牛",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "251",
+      "matchNum": "251",
+      "league": "25-26意甲",
+      "time": "20:55",
+      "home": "克雷莫纳",
+      "away": "博洛尼亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "252",
+      "matchNum": "252",
+      "league": "25-26法甲",
+      "time": "20:55",
+      "home": "昂热",
+      "away": "里昂",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "253",
+      "matchNum": "253",
+      "league": "25-26苏超",
+      "time": "20:55",
+      "home": "利文斯顿",
+      "away": "哈茨",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "254",
+      "matchNum": "254",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "松兹瓦尔",
+      "away": "诺迪克联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "255",
+      "matchNum": "255",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "诺尔比",
+      "away": "布莱格",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "256",
+      "matchNum": "256",
+      "league": "25-26德甲",
+      "time": "21:25",
+      "home": "柏林联合",
+      "away": "圣保利",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "257",
+      "matchNum": "257",
+      "league": "25-26捷克甲",
+      "time": "21:25",
+      "home": "俄斯特拉发",
+      "away": "布拉格斯拉维亚",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "258",
+      "matchNum": "258",
+      "league": "25-26希腊超",
+      "time": "21:55",
+      "home": "沃洛斯",
+      "away": "OFI克里特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "259",
+      "matchNum": "259",
+      "league": "25-26希腊超",
+      "time": "21:55",
+      "home": "莱瓦贾科斯",
+      "away": "阿瑞斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "260",
+      "matchNum": "260",
+      "league": "25-26比乙",
+      "time": "21:55",
+      "home": "瑟兰",
+      "away": "帕特罗艾斯登",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "261",
+      "matchNum": "261",
+      "league": "25-26比乙",
+      "time": "21:55",
+      "home": "RFC列日",
+      "away": "沙勒罗瓦奥林匹克",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "262",
+      "matchNum": "262",
+      "league": "挪甲",
+      "time": "21:55",
+      "home": "斯托姆加斯特",
+      "away": "斯塔贝克",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "263",
+      "matchNum": "263",
+      "league": "25-26西甲",
+      "time": "22:10",
+      "home": "瓦伦西亚",
+      "away": "维戈塞尔塔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "264",
+      "matchNum": "264",
+      "league": "25-26西乙",
+      "time": "22:10",
+      "home": "FC安道尔",
+      "away": "桑坦德竞技",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "265",
+      "matchNum": "265",
+      "league": "瑞典超",
+      "time": "22:25",
+      "home": "厄尔格里特",
+      "away": "马尔默",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "266",
+      "matchNum": "266",
+      "league": "25-26罗甲",
+      "time": "22:25",
+      "home": "康斯坦察法鲁尔",
+      "away": "斯洛博齐亚乌尼拉",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "267",
+      "matchNum": "267",
+      "league": "25-26荷甲",
+      "time": "22:40",
+      "home": "布雷达",
+      "away": "鹿特丹斯巴达",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "268",
+      "matchNum": "268",
+      "league": "25-26奥甲",
+      "time": "22:55",
+      "home": "维也纳快速",
+      "away": "格拉茨风暴",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "269",
+      "matchNum": "269",
+      "league": "25-26法甲",
+      "time": "23:10",
+      "home": "勒阿弗尔",
+      "away": "欧塞尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "270",
+      "matchNum": "270",
+      "league": "25-26法甲",
+      "time": "23:10",
+      "home": "洛里昂",
+      "away": "巴黎FC",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "271",
+      "matchNum": "271",
+      "league": "25-26法甲",
+      "time": "23:10",
+      "home": "梅斯",
+      "away": "南特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "272",
+      "matchNum": "272",
+      "league": "25-26意乙",
+      "time": "23:10",
+      "home": "弗罗西诺内",
+      "away": "帕多瓦",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "273",
+      "matchNum": "273",
+      "league": "25-26德甲",
+      "time": "23:25",
+      "home": "法兰克福",
+      "away": "科隆",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "274",
+      "matchNum": "274",
+      "league": "足总杯",
+      "time": "23:25",
+      "home": "西汉姆联",
+      "away": "利兹联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "275",
+      "matchNum": "275",
+      "league": "25-26苏超",
+      "time": "23:25",
+      "home": "邓迪FC",
+      "away": "凯尔特人",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "276",
+      "matchNum": "276",
+      "league": "25-26意甲",
+      "time": "23:55",
+      "home": "比萨",
+      "away": "都灵",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "277",
+      "matchNum": "277",
+      "league": "25-26希腊超",
+      "time": "23:55",
+      "home": "PAOK塞萨洛尼基",
+      "away": "帕纳辛纳科斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "278",
+      "matchNum": "278",
+      "league": "25-26丹超",
+      "time": "23:55",
+      "home": "哥本哈根",
+      "away": "锡尔克堡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "279",
+      "matchNum": "279",
+      "league": "25-26西甲",
+      "time": "00:25",
+      "home": "皇家奥维耶多",
+      "away": "塞维利亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "280",
+      "matchNum": "280",
+      "league": "25-26西乙",
+      "time": "00:25",
+      "home": "阿尔梅里亚",
+      "away": "莱加内斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "281",
+      "matchNum": "281",
+      "league": "25-26西乙",
+      "time": "00:25",
+      "home": "拉斯帕尔马斯",
+      "away": "韦斯卡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "282",
+      "matchNum": "282",
+      "league": "25-26比甲",
+      "time": "00:25",
+      "home": "韦斯特洛",
+      "away": "沙勒罗瓦",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "283",
+      "matchNum": "283",
+      "league": "25-26葡甲",
+      "time": "00:55",
+      "home": "莱里亚",
+      "away": "洛罗萨卢西塔尼亚",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "284",
+      "matchNum": "284",
+      "league": "25-26意乙",
+      "time": "01:25",
+      "home": "巴勒莫",
+      "away": "阿韦利诺",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "285",
+      "matchNum": "285",
+      "league": "25-26罗甲",
+      "time": "01:25",
+      "home": "布加勒斯特快速",
+      "away": "克卢日大学",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "286",
+      "matchNum": "286",
+      "league": "25-26希腊超",
+      "time": "01:55",
+      "home": "奥林匹亚科斯",
+      "away": "雅典AEK",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "287",
+      "matchNum": "287",
+      "league": "阿职联",
+      "time": "02:25",
+      "home": "拉普拉塔体操",
+      "away": "飓风",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "288",
+      "matchNum": "288",
+      "league": "25-26意甲",
+      "time": "02:40",
+      "home": "国际米兰",
+      "away": "罗马",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "289",
+      "matchNum": "289",
+      "league": "25-26法甲",
+      "time": "02:40",
+      "home": "摩纳哥",
+      "away": "马赛",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "290",
+      "matchNum": "290",
+      "league": "25-26西甲",
+      "time": "02:55",
+      "home": "阿拉维斯",
+      "away": "奥萨苏纳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "291",
+      "matchNum": "291",
+      "league": "25-26西乙",
+      "time": "02:55",
+      "home": "萨拉戈萨",
+      "away": "米兰德斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "292",
+      "matchNum": "292",
+      "league": "巴西甲",
+      "time": "02:55",
+      "home": "沙佩科恩斯",
+      "away": "维多利亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "293",
+      "matchNum": "293",
+      "league": "巴西乙",
+      "time": "02:55",
+      "home": "阿瓦伊",
+      "away": "铁路工人",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "294",
+      "matchNum": "294",
+      "league": "智利甲",
+      "time": "03:25",
+      "home": "康塞普西翁",
+      "away": "科洛科洛",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "295",
+      "matchNum": "295",
+      "league": "巴西甲",
+      "time": "04:25",
+      "home": "弗拉门戈",
+      "away": "桑托斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "296",
+      "matchNum": "296",
+      "league": "巴西甲",
+      "time": "04:25",
+      "home": "米内罗竞技",
+      "away": "巴拉纳竞技",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "297",
+      "matchNum": "297",
+      "league": "阿职联",
+      "time": "04:55",
+      "home": "河床",
+      "away": "贝尔格拉诺",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "298",
+      "matchNum": "298",
+      "league": "巴西乙",
+      "time": "04:55",
+      "home": "新奥里藏蒂诺",
+      "away": "巴西雷加塔斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "299",
+      "matchNum": "299",
+      "league": "智利甲",
+      "time": "05:55",
+      "home": "智利大学",
+      "away": "拉塞雷纳",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "300",
+      "matchNum": "300",
+      "league": "巴西甲",
+      "time": "06:00",
+      "home": "巴伊亚",
+      "away": "帕尔梅拉斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "301",
+      "matchNum": "301",
+      "league": "巴西甲",
+      "time": "06:00",
+      "home": "科林蒂安",
+      "away": "巴西国际",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "302",
+      "matchNum": "302",
+      "league": "巴西甲",
+      "time": "06:00",
+      "home": "米拉索尔",
+      "away": "布拉干蒂诺红牛",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "303",
+      "matchNum": "303",
+      "league": "巴西乙",
+      "time": "06:00",
+      "home": "米纳斯吉拉斯竞技",
+      "away": "米内罗美洲",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "304",
+      "matchNum": "304",
+      "league": "巴西甲",
+      "time": "06:00",
+      "home": "格雷米奥",
+      "away": "雷莫",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "305",
+      "matchNum": "305",
+      "league": "阿职联",
+      "time": "06:00",
+      "home": "科尔多瓦中央",
+      "away": "纽维尔老男孩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "306",
+      "matchNum": "306",
+      "league": "巴西乙",
+      "time": "06:00",
+      "home": "博塔弗戈SP",
+      "away": "圣贝尔纳多",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "307",
+      "matchNum": "307",
+      "league": "25-26墨超",
+      "time": "06:00",
+      "home": "瓜达拉哈拉",
+      "away": "普马斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "308",
+      "matchNum": "308",
+      "league": "25-26波兰甲",
+      "time": "18:10",
+      "home": "涅切查",
+      "away": "格利维采皮亚斯特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "309",
+      "matchNum": "309",
+      "league": "25-26荷乙",
+      "time": "18:10",
+      "home": "海尔蒙德体育",
+      "away": "瓦尔韦克",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "310",
+      "matchNum": "310",
+      "league": "25-26意甲",
+      "time": "18:25",
+      "home": "乌迪内斯",
+      "away": "科莫",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "311",
+      "matchNum": "311",
+      "league": "25-26意乙",
+      "time": "18:25",
+      "home": "切塞纳",
+      "away": "南蒂罗尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "312",
+      "matchNum": "312",
+      "league": "瑞典甲",
+      "time": "18:55",
+      "home": "法尔肯贝里",
+      "away": "永斯基",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "313",
+      "matchNum": "313",
+      "league": "25-26英冠",
+      "time": "19:25",
+      "home": "朴茨茅斯",
+      "away": "牛津联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "314",
+      "matchNum": "314",
+      "league": "25-26比甲",
+      "time": "19:25",
+      "home": "布鲁日",
+      "away": "安德莱赫特",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "315",
+      "matchNum": "315",
+      "league": "25-26英冠",
+      "time": "19:55",
+      "home": "米尔沃尔",
+      "away": "诺维奇",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "316",
+      "matchNum": "316",
+      "league": "25-26瑞士超",
+      "time": "19:55",
+      "home": "草蜢",
+      "away": "锡永",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "317",
+      "matchNum": "317",
+      "league": "25-26丹超",
+      "time": "19:55",
+      "home": "瓦埃勒",
+      "away": "兰讷斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "318",
+      "matchNum": "318",
+      "league": "瑞典超",
+      "time": "19:55",
+      "home": "赫根",
+      "away": "布鲁马波卡纳",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "319",
+      "matchNum": "319",
+      "league": "瑞典超",
+      "time": "19:55",
+      "home": "埃尔夫斯堡",
+      "away": "哥德堡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "320",
+      "matchNum": "320",
+      "league": "25-26奥乙",
+      "time": "19:55",
+      "home": "列夫林",
+      "away": "阿姆施泰滕",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "321",
+      "matchNum": "321",
+      "league": "25-26奥乙",
+      "time": "19:55",
+      "home": "韦尔斯赫塔",
+      "away": "奥地利萨尔茨堡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "322",
+      "matchNum": "322",
+      "league": "25-26奥乙",
+      "time": "19:55",
+      "home": "奥地利维也纳二队",
+      "away": "奥地利卢斯特瑙",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "323",
+      "matchNum": "323",
+      "league": "25-26奥乙",
+      "time": "19:55",
+      "home": "卡普芬贝格",
+      "away": "维也纳快速二队",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "324",
+      "matchNum": "324",
+      "league": "25-26瑞士甲",
+      "time": "19:55",
+      "home": "尼永奈斯",
+      "away": "伊韦尔东体育",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "325",
+      "matchNum": "325",
+      "league": "挪超",
+      "time": "20:25",
+      "home": "瓦勒伦加",
+      "away": "维京",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "326",
+      "matchNum": "326",
+      "league": "挪甲",
+      "time": "20:25",
+      "home": "埃格尔松",
+      "away": "赖于福斯",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "327",
+      "matchNum": "327",
+      "league": "挪甲",
+      "time": "20:25",
+      "home": "孔斯温厄尔",
+      "away": "布莱尼",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "328",
+      "matchNum": "328",
+      "league": "挪甲",
+      "time": "20:25",
+      "home": "利恩",
+      "away": "海于格松",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "329",
+      "matchNum": "329",
+      "league": "挪甲",
+      "time": "20:25",
+      "home": "奥德",
+      "away": "松达尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "330",
+      "matchNum": "330",
+      "league": "挪甲",
+      "time": "20:25",
+      "home": "奥桑内",
+      "away": "莫斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "331",
+      "matchNum": "331",
+      "league": "25-26波兰甲",
+      "time": "20:40",
+      "home": "拉多米亚克",
+      "away": "卢布林莫托",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "332",
+      "matchNum": "332",
+      "league": "25-26意甲",
+      "time": "20:55",
+      "home": "莱切",
+      "away": "亚特兰大",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "333",
+      "matchNum": "333",
+      "league": "25-26意乙",
+      "time": "20:55",
+      "home": "巴里",
+      "away": "摩德纳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "334",
+      "matchNum": "334",
+      "league": "25-26意乙",
+      "time": "20:55",
+      "home": "卡坦扎罗",
+      "away": "蒙扎",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "335",
+      "matchNum": "335",
+      "league": "25-26意乙",
+      "time": "20:55",
+      "home": "曼托瓦",
+      "away": "恩特拉",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "336",
+      "matchNum": "336",
+      "league": "25-26意乙",
+      "time": "20:55",
+      "home": "雷吉亚纳",
+      "away": "佩斯卡拉",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "337",
+      "matchNum": "337",
+      "league": "25-26意乙",
+      "time": "20:55",
+      "home": "威尼斯",
+      "away": "尤维斯塔比亚",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "338",
+      "matchNum": "338",
+      "league": "25-26丹甲",
+      "time": "20:55",
+      "home": "HB克厄",
+      "away": "奥胡斯前进",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "339",
+      "matchNum": "339",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "厄勒布鲁",
+      "away": "兰斯克鲁纳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "340",
+      "matchNum": "340",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "奥迪沃德",
+      "away": "桑德维肯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "341",
+      "matchNum": "341",
+      "league": "瑞典甲",
+      "time": "20:55",
+      "home": "瓦尔贝里",
+      "away": "厄斯特松德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "342",
+      "matchNum": "342",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "布莱克本",
+      "away": "西布朗维奇",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "343",
+      "matchNum": "343",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "布里斯托尔城",
+      "away": "谢菲尔德联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "344",
+      "matchNum": "344",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "德比郡",
+      "away": "斯托克城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "345",
+      "matchNum": "345",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "伊普斯维奇",
+      "away": "伯明翰",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "346",
+      "matchNum": "346",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "普雷斯顿",
+      "away": "女王公园巡游者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "347",
+      "matchNum": "347",
+      "league": "25-26英冠",
+      "time": "21:55",
+      "home": "沃特福德",
+      "away": "查尔顿",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "348",
+      "matchNum": "348",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "AFC温布尔登",
+      "away": "卢顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "349",
+      "matchNum": "349",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "巴恩斯利",
+      "away": "普利茅斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "350",
+      "matchNum": "350",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "博尔顿",
+      "away": "斯托克波特郡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "351",
+      "matchNum": "351",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "埃克塞特城",
+      "away": "唐卡斯特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "352",
+      "matchNum": "352",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "莱顿东方",
+      "away": "哈德斯菲尔德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "353",
+      "matchNum": "353",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "曼斯菲尔德",
+      "away": "伯顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "354",
+      "matchNum": "354",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "北安普顿",
+      "away": "维冈竞技",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "355",
+      "matchNum": "355",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "彼得堡联",
+      "away": "卡迪夫城",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "356",
+      "matchNum": "356",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "雷丁",
+      "away": "林肯城",
+      "handicap": 1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "357",
+      "matchNum": "357",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "斯蒂夫尼奇",
+      "away": "布莱克浦",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "358",
+      "matchNum": "358",
+      "league": "25-26英甲",
+      "time": "21:55",
+      "home": "威科姆流浪者",
+      "away": "布拉德福德城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "359",
+      "matchNum": "359",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "巴罗",
+      "away": "切斯特菲尔德",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "360",
+      "matchNum": "360",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "切尔滕汉姆",
+      "away": "剑桥联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "361",
+      "matchNum": "361",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "克劳利",
+      "away": "格里姆斯比",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "362",
+      "matchNum": "362",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "克鲁",
+      "away": "索尔福德城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "363",
+      "matchNum": "363",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "弗利特伍德",
+      "away": "巴尼特",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "364",
+      "matchNum": "364",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "吉林汉姆",
+      "away": "阿克灵顿",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "365",
+      "matchNum": "365",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "哈罗盖特",
+      "away": "布里斯托尔流浪者",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "366",
+      "matchNum": "366",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "诺茨郡",
+      "away": "纽波特郡",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "367",
+      "matchNum": "367",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "奥德汉姆",
+      "away": "米尔顿凯恩斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "368",
+      "matchNum": "368",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "斯文登",
+      "away": "沃尔索尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "369",
+      "matchNum": "369",
+      "league": "25-26英乙",
+      "time": "21:55",
+      "home": "特兰米尔流浪者",
+      "away": "科尔切斯特联",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "370",
+      "matchNum": "370",
+      "league": "25-26比甲",
+      "time": "21:55",
+      "home": "拉路维尔",
+      "away": "登德尔",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "371",
+      "matchNum": "371",
+      "league": "25-26丹超",
+      "time": "21:55",
+      "home": "欧登塞",
+      "away": "腓特烈西亚",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "372",
+      "matchNum": "372",
+      "league": "25-26奥乙",
+      "time": "21:55",
+      "home": "FAC维也纳",
+      "away": "第一维也纳",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "373",
+      "matchNum": "373",
+      "league": "25-26瑞士超",
+      "time": "22:25",
+      "home": "圣加仑",
+      "away": "苏黎世",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "374",
+      "matchNum": "374",
+      "league": "25-26瑞士超",
+      "time": "22:25",
+      "home": "塞尔维特",
+      "away": "卢塞恩",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "375",
+      "matchNum": "375",
+      "league": "瑞典超",
+      "time": "22:25",
+      "home": "加尔斯",
+      "away": "佐加顿斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "376",
+      "matchNum": "376",
+      "league": "25-26罗甲",
+      "time": "22:25",
+      "home": "佩特罗鲁",
+      "away": "奇克塞雷达",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "377",
+      "matchNum": "377",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "奥斯",
+      "away": "乌德勒支青年队",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "378",
+      "matchNum": "378",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "坎布尔",
+      "away": "多德雷赫特",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "379",
+      "matchNum": "379",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "埃门",
+      "away": "马斯特里赫特",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "380",
+      "matchNum": "380",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "格拉夫夏普",
+      "away": "阿尔克马尔青年队",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "381",
+      "matchNum": "381",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "海牙",
+      "away": "FC埃因霍温",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "382",
+      "matchNum": "382",
+      "league": "25-26荷乙",
+      "time": "22:40",
+      "home": "罗达JC",
+      "away": "威廉二世",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "383",
+      "matchNum": "383",
+      "league": "挪超",
+      "time": "22:55",
+      "home": "汉坎",
+      "away": "布兰",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "384",
+      "matchNum": "384",
+      "league": "挪超",
+      "time": "22:55",
+      "home": "克里斯蒂安松",
+      "away": "博德闪耀",
+      "handicap": 2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "385",
+      "matchNum": "385",
+      "league": "挪超",
+      "time": "22:55",
+      "home": "莫尔德",
+      "away": "利勒斯特伦",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "386",
+      "matchNum": "386",
+      "league": "挪超",
+      "time": "22:55",
+      "home": "萨尔普斯堡",
+      "away": "斯达",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "387",
+      "matchNum": "387",
+      "league": "25-26奥乙",
+      "time": "22:55",
+      "home": "圣珀尔滕",
+      "away": "奥地利克拉根福",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "388",
+      "matchNum": "388",
+      "league": "25-26奥乙",
+      "time": "22:55",
+      "home": "黑白布雷根茨",
+      "away": "格拉茨风暴二队",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "389",
+      "matchNum": "389",
+      "league": "25-26意乙",
+      "time": "23:10",
+      "home": "桑普多利亚",
+      "away": "恩波利",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "390",
+      "matchNum": "390",
+      "league": "25-26波兰甲",
+      "time": "23:25",
+      "home": "什切青波贡",
+      "away": "华沙莱吉亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "391",
+      "matchNum": "391",
+      "league": "25-26意甲",
+      "time": "23:55",
+      "home": "尤文图斯",
+      "away": "热那亚",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "392",
+      "matchNum": "392",
+      "league": "25-26丹超",
+      "time": "23:55",
+      "home": "维堡",
+      "away": "奥胡斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "393",
+      "matchNum": "393",
+      "league": "25-26英冠",
+      "time": "00:25",
+      "home": "斯旺西",
+      "away": "米德尔斯堡",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "394",
+      "matchNum": "394",
+      "league": "25-26西乙",
+      "time": "00:55",
+      "home": "卡斯特利翁",
+      "away": "格拉纳达",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "395",
+      "matchNum": "395",
+      "league": "25-26葡甲",
+      "time": "00:55",
+      "home": "波尔图B队",
+      "away": "沙维什",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "396",
+      "matchNum": "396",
+      "league": "25-26葡甲",
+      "time": "00:55",
+      "home": "托里什恩斯",
+      "away": "雷克索斯",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "397",
+      "matchNum": "397",
+      "league": "挪超",
+      "time": "01:10",
+      "home": "特罗姆瑟",
+      "away": "罗森博格",
+      "handicap": -1,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "398",
+      "matchNum": "398",
+      "league": "25-26意乙",
+      "time": "01:25",
+      "home": "卡拉拉",
+      "away": "斯佩齐亚",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "399",
+      "matchNum": "399",
+      "league": "25-26罗甲",
+      "time": "01:25",
+      "home": "CS克拉约瓦大学",
+      "away": "克卢日",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "400",
+      "matchNum": "400",
+      "league": "25-26葡超",
+      "time": "01:40",
+      "home": "阿罗卡",
+      "away": "埃斯托里尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "401",
+      "matchNum": "401",
+      "league": "25-26荷乙",
+      "time": "01:55",
+      "home": "PSV埃因霍温青年",
+      "away": "芬洛",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "402",
+      "matchNum": "402",
+      "league": "25-26波兰甲",
+      "time": "02:10",
+      "home": "格但斯克莱希亚",
+      "away": "凯尔采科罗纳",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "403",
+      "matchNum": "403",
+      "league": "25-26西乙",
+      "time": "02:25",
+      "home": "希洪体育",
+      "away": "皇家社会B队",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "404",
+      "matchNum": "404",
+      "league": "25-26意甲",
+      "time": "02:40",
+      "home": "那不勒斯",
+      "away": "AC米兰",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "405",
+      "matchNum": "405",
+      "league": "25-26法乙",
+      "time": "02:40",
+      "home": "勒芒",
+      "away": "波城",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "406",
+      "matchNum": "406",
+      "league": "25-26西甲",
+      "time": "02:55",
+      "home": "赫罗纳",
+      "away": "比利亚雷亚尔",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "407",
+      "matchNum": "407",
+      "league": "25-26英冠",
+      "time": "02:55",
+      "home": "赫尔城",
+      "away": "考文垂",
+      "handicap": 0,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "408",
+      "matchNum": "408",
+      "league": "25-26葡超",
+      "time": "03:40",
+      "home": "卡萨皮亚",
+      "away": "本菲卡",
+      "handicap": 2,
+      "status": "selling",
+      "spf": [
+        2.5,
+        3.2,
+        2.8
+      ]
+    },
+    {
+      "id": "409",
+      "matchNum": "409",
+      "league": "阿职联",
+      "time": "05:55",
+      "home": "阿根廷青年人",
+      "away": "班菲尔德",
+      "handicap": -1,
       "status": "selling",
       "spf": [
         2.5,
