@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1199649",
-  "home": "国际米兰",
-  "away": "罗马",
+  "fixtureId": "1199650",
+  "home": "尤文图斯",
+  "away": "热那亚",
   "league": "",
-  "updateTime": "2026-04-04 05:24:48",
+  "updateTime": "2026-04-04 05:24:59",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 63600.0,
+      "value": 54400.00000000001,
       "unit": "万",
-      "raw": "6.36亿"
+      "raw": "5.44亿"
     },
     "attackValue": {
-      "value": 22260,
+      "value": 19040,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 19080,
+      "value": 16320,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 15900,
+      "value": 13600,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 45400.0,
+      "value": 15000.0,
       "unit": "万",
-      "raw": "4.54亿"
+      "raw": "1.5亿"
     },
     "attackValue": {
-      "value": 15890,
+      "value": 5250,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 13620,
+      "value": 4500,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 11350,
+      "value": 3750,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价54400.00000000001万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(22260万)优于对手防线(11350万)"
+      "锋线身价(19040万)优于对手防线(3750万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手3.6倍，实力差距明显",
+      "对手防线(13600万)优于己方锋线(5250万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日024"
+  "matchNum": "周一010"
 }
