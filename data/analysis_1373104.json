@@ -3,7 +3,7 @@
   "home": "安养FC",
   "away": "首尔FC",
   "league": "",
-  "updateTime": "2026-04-05 06:05:22",
+  "updateTime": "2026-04-05 08:09:52",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,44 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 790.0,
+      "unit": "万",
+      "raw": "790万"
+    },
+    "attackValue": {
+      "value": 276,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 237,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 198,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 1180.0,
+      "unit": "万",
+      "raw": "1180万"
+    },
+    "attackValue": {
+      "value": 413,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 354,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 295,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -29,7 +65,9 @@
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(413万)优于对手防线(198万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
