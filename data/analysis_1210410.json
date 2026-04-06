@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1212137",
-  "home": "勒芒",
-  "away": "波城FC",
+  "fixtureId": "1210410",
+  "home": "伊普斯",
+  "away": "伯明翰",
   "league": "",
-  "updateTime": "2026-04-06 06:25:12",
+  "updateTime": "2026-04-06 06:25:05",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1230.0,
+      "value": 19800.0,
       "unit": "万",
-      "raw": "1230万"
+      "raw": "1.98亿"
     },
     "attackValue": {
-      "value": 430,
+      "value": 6930,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 369,
+      "value": 5940,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 308,
+      "value": 4950,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1890.0,
+      "value": 10700.0,
       "unit": "万",
-      "raw": "1890万"
+      "raw": "1.07亿"
     },
     "attackValue": {
-      "value": 662,
+      "value": 3745,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 567,
+      "value": 3210,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 472,
+      "value": 2675,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价19800.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.5倍，实力差距明显"
+    "homeOpportunity": [
+      "锋线身价(6930万)优于对手防线(2675万)"
     ],
-    "awayStrength": [
-      "球队身价1890.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(662万)优于对手防线(308万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.9倍，实力差距明显",
+      "对手防线(4950万)优于己方锋线(3745万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一013"
+  "matchNum": "周一008"
 }

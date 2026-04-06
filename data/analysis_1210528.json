@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1212137",
-  "home": "勒芒",
-  "away": "波城FC",
+  "fixtureId": "1210528",
+  "home": "朴次茅斯",
+  "away": "牛津联",
   "league": "",
-  "updateTime": "2026-04-06 06:25:12",
+  "updateTime": "2026-04-06 06:25:00",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1230.0,
+      "value": 3548.0,
       "unit": "万",
-      "raw": "1230万"
+      "raw": "3548万"
     },
     "attackValue": {
-      "value": 430,
+      "value": 1242,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 369,
+      "value": 1064,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 308,
+      "value": 887,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1890.0,
+      "value": 3765.0,
       "unit": "万",
-      "raw": "1890万"
+      "raw": "3765万"
     },
     "attackValue": {
-      "value": 662,
+      "value": 1318,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 567,
+      "value": 1130,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 472,
+      "value": 941,
       "unit": "万"
     }
   },
@@ -61,16 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.5倍，实力差距明显"
+    "homeOpportunity": [
+      "锋线身价(1242万)优于对手防线(941万)"
     ],
-    "awayStrength": [
-      "球队身价1890.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(662万)优于对手防线(308万)"
+      "锋线身价(1318万)优于对手防线(887万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -82,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一013"
+  "matchNum": "周一003"
 }
