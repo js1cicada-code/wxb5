@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398561",
-  "home": "弗赖堡",
-  "away": "塞尔塔",
+  "fixtureId": "1398806",
+  "home": "普拉滕斯",
+  "away": "科林蒂安",
   "league": "",
-  "updateTime": "2026-04-09 06:10:10",
+  "updateTime": "2026-04-09 06:10:17",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 19100.0,
+      "value": 1380.0,
       "unit": "万",
-      "raw": "1.91亿"
+      "raw": "1380万"
     },
     "attackValue": {
-      "value": 6685,
+      "value": 483,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5730,
+      "value": 414,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4775,
+      "value": 345,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 15400.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "1.54亿"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 5390,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 4620,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 3850,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(6685万)优于对手防线(4300万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手11.2倍，实力差距明显",
+      "对手防线(3850万)优于己方锋线(483万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价15400.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(5390万)优于对手防线(345万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四003"
+  "matchNum": "周四008"
 }
