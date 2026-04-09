@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398561",
-  "home": "弗赖堡",
-  "away": "塞尔塔",
+  "fixtureId": "1206162",
+  "home": "奥格斯堡",
+  "away": "霍芬海姆",
   "league": "",
-  "updateTime": "2026-04-09 10:24:52",
+  "updateTime": "2026-04-09 10:25:20",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 19100.0,
+      "value": 15900.0,
       "unit": "万",
-      "raw": "1.91亿"
+      "raw": "1.59亿"
     },
     "attackValue": {
-      "value": 6685,
+      "value": 5565,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5730,
+      "value": 4770,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4775,
+      "value": 3975,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 24600.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "2.46亿"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 8610,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 7380,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 6150,
       "unit": "万"
     }
   },
@@ -61,13 +61,17 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(6685万)优于对手防线(4300万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价24600.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(8610万)优于对手防线(3975万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四003"
+  "matchNum": "周五011"
 }
