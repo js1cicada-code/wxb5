@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398555",
-  "home": "利物浦",
-  "away": "巴黎圣曼",
+  "fixtureId": "1210464",
+  "home": "朴次茅斯",
+  "away": "伊普斯",
   "league": "",
-  "updateTime": "2026-04-14 06:10:27",
+  "updateTime": "2026-04-14 06:10:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 102000.0,
+      "value": 3548.0,
       "unit": "万",
-      "raw": "10.2亿"
+      "raw": "3548万"
     },
     "attackValue": {
-      "value": 35700,
+      "value": 1242,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 30600,
+      "value": 1064,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 25500,
+      "value": 887,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 121000.0,
+      "value": 19800.0,
       "unit": "万",
-      "raw": "12.1亿"
+      "raw": "1.98亿"
     },
     "attackValue": {
-      "value": 42350,
+      "value": 6930,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 36300,
+      "value": 5940,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 30250,
+      "value": 4950,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手5.6倍，实力差距明显",
+      "对手防线(4950万)优于己方锋线(1242万)"
+    ],
+    "awayStrength": [
+      "球队身价19800.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(42350万)优于对手防线(25500万)"
+      "锋线身价(6930万)优于对手防线(887万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周二003"
+  "matchNum": "周二005"
 }
