@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398808",
-  "home": "科林蒂安",
-  "away": "圣菲独立",
+  "fixtureId": "1398564",
+  "home": "贝蒂斯",
+  "away": "布拉加",
   "league": "",
-  "updateTime": "2026-04-15 06:11:21",
+  "updateTime": "2026-04-15 06:11:27",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -20,6 +20,25 @@
   "homeLineup": null,
   "awayLineup": null,
   "homeAbility": {
+    "totalValue": {
+      "value": 24800.0,
+      "unit": "万",
+      "raw": "2.48亿"
+    },
+    "attackValue": {
+      "value": 8680,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 7440,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 6200,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
     "totalValue": {
       "value": 15400.0,
       "unit": "万",
@@ -38,41 +57,21 @@
       "unit": "万"
     }
   },
-  "awayAbility": {
-    "totalValue": {
-      "value": 1255.0,
-      "unit": "万",
-      "raw": "1255万"
-    },
-    "attackValue": {
-      "value": 439,
-      "unit": "万"
-    },
-    "midfieldValue": {
-      "value": 376,
-      "unit": "万"
-    },
-    "defenseValue": {
-      "value": 314,
-      "unit": "万"
-    }
-  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [
-      "球队身价15400.0万欧，远超对手"
+      "球队身价24800.0万欧，远超对手"
     ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(5390万)优于对手防线(314万)"
+      "锋线身价(8680万)优于对手防线(3850万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
     "awayThreat": [
-      "对手身价是对手12.3倍，实力差距明显",
-      "对手防线(3850万)优于己方锋线(439万)"
+      "对手身价是对手1.6倍，实力差距明显"
     ],
     "summary": ""
   },
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三008"
+  "matchNum": "周四003"
 }
