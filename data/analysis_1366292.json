@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1212041",
-  "home": "勒芒",
-  "away": "克莱蒙",
+  "fixtureId": "1366292",
+  "home": "名古屋鲸",
+  "away": "福冈黄蜂",
   "league": "",
-  "updateTime": "2026-04-17 06:28:41",
+  "updateTime": "2026-04-17 06:29:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1230.0,
+      "value": 1590.0,
       "unit": "万",
-      "raw": "1230万"
+      "raw": "1590万"
     },
     "attackValue": {
-      "value": 430,
+      "value": 556,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 369,
+      "value": 477,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 308,
+      "value": 398,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1720.0,
+      "value": 1083.0,
       "unit": "万",
-      "raw": "1720万"
+      "raw": "1083万"
     },
     "attackValue": {
-      "value": 602,
+      "value": 379,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 516,
+      "value": 325,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 430,
+      "value": 271,
       "unit": "万"
     }
   },
@@ -61,13 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(556万)优于对手防线(271万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(602万)优于对手防线(308万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周日004"
 }

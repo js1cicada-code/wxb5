@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1212041",
-  "home": "勒芒",
-  "away": "克莱蒙",
+  "fixtureId": "1199669",
+  "home": "克雷莫纳",
+  "away": "都灵",
   "league": "",
-  "updateTime": "2026-04-17 06:28:41",
+  "updateTime": "2026-04-17 06:29:35",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1230.0,
+      "value": 7220.0,
       "unit": "万",
-      "raw": "1230万"
+      "raw": "7220万"
     },
     "attackValue": {
-      "value": 430,
+      "value": 2527,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 369,
+      "value": 2166,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 308,
+      "value": 1805,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1720.0,
+      "value": 13400.0,
       "unit": "万",
-      "raw": "1720万"
+      "raw": "1.34亿"
     },
     "attackValue": {
-      "value": 602,
+      "value": 4690,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 516,
+      "value": 4020,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 430,
+      "value": 3350,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手1.9倍，实力差距明显",
+      "对手防线(3350万)优于己方锋线(2527万)"
+    ],
+    "awayStrength": [
+      "球队身价13400.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(602万)优于对手防线(308万)"
+      "锋线身价(4690万)优于对手防线(1805万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周日006"
 }
