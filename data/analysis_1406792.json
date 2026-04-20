@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1202700",
-  "home": "水晶宫",
-  "away": "西汉姆联",
+  "fixtureId": "1406792",
+  "home": "神户胜利",
+  "away": "吉达国民",
   "league": "",
-  "updateTime": "2026-04-20 07:32:22",
+  "updateTime": "2026-04-20 07:32:25",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 54100.0,
+      "value": 1770.0,
       "unit": "万",
-      "raw": "5.41亿"
+      "raw": "1770万"
     },
     "attackValue": {
-      "value": 18935,
+      "value": 620,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16230,
+      "value": 531,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13525,
+      "value": 442,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 36200.0,
+      "value": 17300.0,
       "unit": "万",
-      "raw": "3.62亿"
+      "raw": "1.73亿"
     },
     "attackValue": {
-      "value": 12670,
+      "value": 6055,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10860,
+      "value": 5190,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 9050,
+      "value": 4325,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(18935万)优于对手防线(9050万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手9.8倍，实力差距明显",
+      "对手防线(4325万)优于己方锋线(620万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价17300.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(6055万)优于对手防线(442万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一003"
+  "matchNum": "周一005"
 }
