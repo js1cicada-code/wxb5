@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1202549",
-  "home": "伯恩茅斯",
-  "away": "利兹联",
+  "fixtureId": "1215842",
+  "home": "奥维耶多",
+  "away": "比利亚雷",
   "league": "",
-  "updateTime": "2026-04-22 06:28:48",
+  "updateTime": "2026-04-22 06:29:11",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 50700.0,
+      "value": 6330.0,
       "unit": "万",
-      "raw": "5.07亿"
+      "raw": "6330万"
     },
     "attackValue": {
-      "value": 17745,
+      "value": 2216,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 15210,
+      "value": 1899,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 12675,
+      "value": 1582,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 34600.0,
+      "value": 28600.0,
       "unit": "万",
-      "raw": "3.46亿"
+      "raw": "2.86亿"
     },
     "attackValue": {
-      "value": 12110,
+      "value": 10010,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10380,
+      "value": 8580,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8650,
+      "value": 7150,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(17745万)优于对手防线(8650万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手4.5倍，实力差距明显",
+      "对手防线(7150万)优于己方锋线(2216万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价28600.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(10010万)优于对手防线(1582万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三012"
+  "matchNum": "周四009"
 }
