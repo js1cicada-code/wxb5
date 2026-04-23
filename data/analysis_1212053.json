@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1202912",
-  "home": "前进之鹰",
-  "away": "阿尔克马",
+  "fixtureId": "1212053",
+  "home": "亚眠",
+  "away": "蒙彼利埃",
   "league": "",
-  "updateTime": "2026-04-23 06:32:29",
+  "updateTime": "2026-04-23 06:32:48",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 3008.0,
+      "value": 2423.0,
       "unit": "万",
-      "raw": "3008万"
+      "raw": "2423万"
     },
     "attackValue": {
-      "value": 1053,
+      "value": 848,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 902,
+      "value": 727,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 752,
+      "value": 606,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 16500.0,
+      "value": 2280.0,
       "unit": "万",
-      "raw": "1.65亿"
+      "raw": "2280万"
     },
     "attackValue": {
-      "value": 5775,
+      "value": 798,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4950,
+      "value": 684,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4125,
+      "value": 570,
       "unit": "万"
     }
   },
@@ -61,17 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手5.5倍，实力差距明显",
-      "对手防线(4125万)优于己方锋线(1053万)"
+    "homeOpportunity": [
+      "锋线身价(848万)优于对手防线(570万)"
     ],
-    "awayStrength": [
-      "球队身价16500.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(5775万)优于对手防线(752万)"
+      "锋线身价(798万)优于对手防线(606万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -83,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四002"
+  "matchNum": "周五007"
 }
