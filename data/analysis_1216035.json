@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1366363",
-  "home": "柏太阳神",
-  "away": "鹿岛鹿角",
+  "fixtureId": "1216035",
+  "home": "赫塔费",
+  "away": "巴萨",
   "league": "",
-  "updateTime": "2026-04-24 06:24:16",
+  "updateTime": "2026-04-24 06:24:59",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1845.0,
+      "value": 8290.0,
       "unit": "万",
-      "raw": "1845万"
+      "raw": "8290万"
     },
     "attackValue": {
-      "value": 646,
+      "value": 2902,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 554,
+      "value": 2487,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 461,
+      "value": 2072,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 2303.0,
+      "value": 117000.0,
       "unit": "万",
-      "raw": "2303万"
+      "raw": "11.7亿"
     },
     "attackValue": {
-      "value": 806,
+      "value": 40950,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 691,
+      "value": 35100,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 576,
+      "value": 29250,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手14.1倍，实力差距明显",
+      "对手防线(29250万)优于己方锋线(2902万)"
+    ],
+    "awayStrength": [
+      "球队身价117000.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(806万)优于对手防线(461万)"
+      "锋线身价(40950万)优于对手防线(2072万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五002"
+  "matchNum": "周六018"
 }

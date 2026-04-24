@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1366363",
-  "home": "柏太阳神",
-  "away": "鹿岛鹿角",
+  "fixtureId": "1202907",
+  "home": "费耶诺德",
+  "away": "格罗宁根",
   "league": "",
-  "updateTime": "2026-04-24 06:24:16",
+  "updateTime": "2026-04-24 06:25:01",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1845.0,
+      "value": 21400.0,
       "unit": "万",
-      "raw": "1845万"
+      "raw": "2.14亿"
     },
     "attackValue": {
-      "value": 646,
+      "value": 7490,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 554,
+      "value": 6420,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 461,
+      "value": 5350,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 2303.0,
+      "value": 3400.0,
       "unit": "万",
-      "raw": "2303万"
+      "raw": "3400万"
     },
     "attackValue": {
-      "value": 806,
+      "value": 1190,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 691,
+      "value": 1020,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 576,
+      "value": 850,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价21400.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(7490万)优于对手防线(850万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(806万)优于对手防线(461万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手6.3倍，实力差距明显",
+      "对手防线(5350万)优于己方锋线(1190万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五002"
+  "matchNum": "周六019"
 }
