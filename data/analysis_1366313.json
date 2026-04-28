@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1407201",
-  "home": "巴黎圣曼",
-  "away": "拜仁",
+  "fixtureId": "1366313",
+  "home": "京都",
+  "away": "大阪钢巴",
   "league": "",
-  "updateTime": "2026-04-28 04:48:36",
+  "updateTime": "2026-04-28 04:48:41",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 121000.0,
+      "value": 1573.0,
       "unit": "万",
-      "raw": "12.1亿"
+      "raw": "1573万"
     },
     "attackValue": {
-      "value": 42350,
+      "value": 551,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 36300,
+      "value": 472,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 30250,
+      "value": 393,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 96500.0,
+      "value": 1612.0,
       "unit": "万",
-      "raw": "9.65亿"
+      "raw": "1612万"
     },
     "attackValue": {
-      "value": 33775,
+      "value": 564,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 28950,
+      "value": 484,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 24125,
+      "value": 403,
       "unit": "万"
     }
   },
@@ -62,12 +62,14 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(42350万)优于对手防线(24125万)"
+      "锋线身价(551万)优于对手防线(403万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(564万)优于对手防线(393万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周二004"
+  "matchNum": "周三002"
 }
