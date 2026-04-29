@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1366322",
-  "home": "神户胜利",
-  "away": "大阪樱花",
+  "fixtureId": "1234986",
+  "home": "利雅得胜利",
+  "away": "吉达国民",
   "league": "",
-  "updateTime": "2026-04-29 04:51:09",
+  "updateTime": "2026-04-29 04:51:22",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1770.0,
+      "value": 13500.0,
       "unit": "万",
-      "raw": "1770万"
+      "raw": "1.35亿"
     },
     "attackValue": {
-      "value": 620,
+      "value": 4725,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 531,
+      "value": 4050,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 442,
+      "value": 3375,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1435.0,
+      "value": 17300.0,
       "unit": "万",
-      "raw": "1435万"
+      "raw": "1.73亿"
     },
     "attackValue": {
-      "value": 502,
+      "value": 6055,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 430,
+      "value": 5190,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 359,
+      "value": 4325,
       "unit": "万"
     }
   },
@@ -61,13 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(620万)优于对手防线(359万)"
-    ],
+    "homeOpportunity": [],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(6055万)优于对手防线(3375万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三001"
+  "matchNum": "周三008"
 }
