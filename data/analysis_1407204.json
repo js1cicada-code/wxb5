@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1407208",
-  "home": "布拉加",
-  "away": "弗赖堡",
+  "fixtureId": "1407204",
+  "home": "巴列卡诺",
+  "away": "斯特拉斯",
   "league": "",
-  "updateTime": "2026-04-30 05:56:16",
+  "updateTime": "2026-04-30 05:56:18",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 15400.0,
+      "value": 10700.0,
       "unit": "万",
-      "raw": "1.54亿"
+      "raw": "1.07亿"
     },
     "attackValue": {
-      "value": 5390,
+      "value": 3745,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4620,
+      "value": 3210,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3850,
+      "value": 2675,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 19100.0,
+      "value": 36100.0,
       "unit": "万",
-      "raw": "1.91亿"
+      "raw": "3.61亿"
     },
     "attackValue": {
-      "value": 6685,
+      "value": 12635,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5730,
+      "value": 10830,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4775,
+      "value": 9025,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手3.4倍，实力差距明显",
+      "对手防线(9025万)优于己方锋线(3745万)"
+    ],
+    "awayStrength": [
+      "球队身价36100.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(6685万)优于对手防线(3850万)"
+      "锋线身价(12635万)优于对手防线(2675万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四003"
+  "matchNum": "周四005"
 }

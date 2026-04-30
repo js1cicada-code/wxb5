@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1407208",
-  "home": "布拉加",
-  "away": "弗赖堡",
+  "fixtureId": "1408448",
+  "home": "瓦尔韦克",
+  "away": "罗达JC",
   "league": "",
-  "updateTime": "2026-04-30 05:56:16",
+  "updateTime": "2026-04-30 05:56:25",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 15400.0,
+      "value": 818.0,
       "unit": "万",
-      "raw": "1.54亿"
+      "raw": "818万"
     },
     "attackValue": {
-      "value": 5390,
+      "value": 286,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4620,
+      "value": 245,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3850,
+      "value": 204,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 19100.0,
+      "value": 768.0,
       "unit": "万",
-      "raw": "1.91亿"
+      "raw": "768万"
     },
     "attackValue": {
-      "value": 6685,
+      "value": 269,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5730,
+      "value": 230,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4775,
+      "value": 192,
       "unit": "万"
     }
   },
@@ -61,12 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(286万)优于对手防线(192万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(6685万)优于对手防线(3850万)"
+      "锋线身价(269万)优于对手防线(204万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四003"
+  "matchNum": "周五002"
 }
