@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1216082",
-  "home": "赫罗纳",
-  "away": "马洛卡",
+  "fixtureId": "1202906",
+  "home": "福图纳",
+  "away": "费耶诺德",
   "league": "",
-  "updateTime": "2026-05-01 05:06:29",
+  "updateTime": "2026-05-01 05:07:17",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 15300.0,
+      "value": 1973.0,
       "unit": "万",
-      "raw": "1.53亿"
+      "raw": "1973万"
     },
     "attackValue": {
-      "value": 5355,
+      "value": 691,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4590,
+      "value": 592,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3825,
+      "value": 493,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 8900.0,
+      "value": 21400.0,
       "unit": "万",
-      "raw": "8900万"
+      "raw": "2.14亿"
     },
     "attackValue": {
-      "value": 3115,
+      "value": 7490,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2670,
+      "value": 6420,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2225,
+      "value": 5350,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价15300.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(5355万)优于对手防线(2225万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手10.8倍，实力差距明显",
+      "对手防线(5350万)优于己方锋线(691万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价21400.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.7倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(7490万)优于对手防线(493万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周日009"
 }

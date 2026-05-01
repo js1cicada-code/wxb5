@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1216082",
-  "home": "赫罗纳",
-  "away": "马洛卡",
+  "fixtureId": "1215815",
+  "home": "阿拉维斯",
+  "away": "毕尔巴鄂",
   "league": "",
-  "updateTime": "2026-05-01 05:06:29",
+  "updateTime": "2026-05-01 05:06:57",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 15300.0,
+      "value": 6690.0,
       "unit": "万",
-      "raw": "1.53亿"
+      "raw": "6690万"
     },
     "attackValue": {
-      "value": 5355,
+      "value": 2342,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4590,
+      "value": 2007,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3825,
+      "value": 1672,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 8900.0,
+      "value": 28300.0,
       "unit": "万",
-      "raw": "8900万"
+      "raw": "2.83亿"
     },
     "attackValue": {
-      "value": 3115,
+      "value": 9905,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2670,
+      "value": 8490,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2225,
+      "value": 7075,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价15300.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(5355万)优于对手防线(2225万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手4.2倍，实力差距明显",
+      "对手防线(7075万)优于己方锋线(2342万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价28300.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.7倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(9905万)优于对手防线(1672万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周六023"
 }
