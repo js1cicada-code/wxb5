@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398816",
-  "home": "圣菲独立",
-  "away": "科林蒂安",
+  "fixtureId": "1407210",
+  "home": "弗赖堡",
+  "away": "布拉加",
   "league": "",
-  "updateTime": "2026-05-06 04:47:17",
+  "updateTime": "2026-05-06 04:47:19",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,20 +21,20 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1255.0,
+      "value": 19100.0,
       "unit": "万",
-      "raw": "1255万"
+      "raw": "1.91亿"
     },
     "attackValue": {
-      "value": 439,
+      "value": 6685,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 376,
+      "value": 5730,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 314,
+      "value": 4775,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手12.3倍，实力差距明显",
-      "对手防线(3850万)优于己方锋线(439万)"
+    "homeOpportunity": [
+      "锋线身价(6685万)优于对手防线(3850万)"
     ],
-    "awayStrength": [
-      "球队身价15400.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(5390万)优于对手防线(314万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三009"
+  "matchNum": "周四002"
 }
