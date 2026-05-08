@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1223066",
-  "home": "凯泽",
-  "away": "比勒费",
+  "fixtureId": "1199707",
+  "home": "维罗纳",
+  "away": "科莫",
   "league": "",
-  "updateTime": "2026-05-08 04:33:27",
+  "updateTime": "2026-05-08 04:34:15",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 3247.0,
+      "value": 9348.0,
       "unit": "万",
-      "raw": "3247万"
+      "raw": "9348万"
     },
     "attackValue": {
-      "value": 1136,
+      "value": 3272,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 974,
+      "value": 2804,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 812,
+      "value": 2337,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1850.0,
+      "value": 35100.0,
       "unit": "万",
-      "raw": "1850万"
+      "raw": "3.51亿"
     },
     "attackValue": {
-      "value": 648,
+      "value": 12285,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 555,
+      "value": 10530,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 462,
+      "value": 8775,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价3247.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(1136万)优于对手防线(462万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手3.8倍，实力差距明显",
+      "对手防线(8775万)优于己方锋线(3272万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价35100.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.8倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(12285万)优于对手防线(2337万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五004"
+  "matchNum": "周日005"
 }
