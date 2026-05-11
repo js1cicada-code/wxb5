@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1216370",
-  "home": "阿马多拉",
-  "away": "法马利康",
+  "fixtureId": "1409626",
+  "home": "米尔沃尔",
+  "away": "赫尔城",
   "league": "",
-  "updateTime": "2026-05-11 05:45:38",
+  "updateTime": "2026-05-11 05:45:31",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1035.0,
+      "value": 8288.0,
       "unit": "万",
-      "raw": "1035万"
+      "raw": "8288万"
     },
     "attackValue": {
-      "value": 362,
+      "value": 2901,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 310,
+      "value": 2486,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 259,
+      "value": 2072,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 7190.0,
+      "value": 8175.0,
       "unit": "万",
-      "raw": "7190万"
+      "raw": "8175万"
     },
     "attackValue": {
-      "value": 2516,
+      "value": 2861,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2157,
+      "value": 2452,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1798,
+      "value": 2044,
       "unit": "万"
     }
   },
@@ -61,17 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手6.9倍，实力差距明显",
-      "对手防线(1798万)优于己方锋线(362万)"
+    "homeOpportunity": [
+      "锋线身价(2901万)优于对手防线(2044万)"
     ],
-    "awayStrength": [
-      "球队身价7190.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(2516万)优于对手防线(259万)"
+      "锋线身价(2861万)优于对手防线(2072万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -83,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一009"
+  "matchNum": "周一006"
 }
