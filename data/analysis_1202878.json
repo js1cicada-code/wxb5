@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1202507",
-  "home": "维拉",
-  "away": "利物浦",
+  "fixtureId": "1202878",
+  "home": "福伦丹",
+  "away": "特尔斯达",
   "league": "",
-  "updateTime": "2026-05-15 05:14:13",
+  "updateTime": "2026-05-15 05:14:58",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 54700.0,
+      "value": 1738.0,
       "unit": "万",
-      "raw": "5.47亿"
+      "raw": "1738万"
     },
     "attackValue": {
-      "value": 19145,
+      "value": 608,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16410,
+      "value": 521,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13675,
+      "value": 434,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 102000.0,
+      "value": 1130.0,
       "unit": "万",
-      "raw": "10.2亿"
+      "raw": "1130万"
     },
     "attackValue": {
-      "value": 35700,
+      "value": 396,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 30600,
+      "value": 339,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 25500,
+      "value": 282,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价1738.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.9倍，实力差距明显",
-      "对手防线(25500万)优于己方锋线(19145万)"
+    "homeOpportunity": [
+      "锋线身价(608万)优于对手防线(282万)"
     ],
-    "awayStrength": [
-      "球队身价102000.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(35700万)优于对手防线(13675万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周日011"
 }
