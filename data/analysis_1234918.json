@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398841",
-  "home": "帕梅拉斯",
-  "away": "波特诺",
+  "fixtureId": "1234918",
+  "home": "吉达联合",
+  "away": "胡巴尔卡德西亚",
   "league": "",
-  "updateTime": "2026-05-20 05:55:51",
+  "updateTime": "2026-05-20 05:55:56",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,28 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 4003.0,
+      "unit": "万",
+      "raw": "4003万"
+    },
+    "attackValue": {
+      "value": 1401,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 1201,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 1001,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": null
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -40,5 +60,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三010"
+  "matchNum": "周四003"
 }

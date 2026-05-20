@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398841",
-  "home": "帕梅拉斯",
-  "away": "波特诺",
+  "fixtureId": "1234943",
+  "home": "利雅得胜利",
+  "away": "达马克",
   "league": "",
-  "updateTime": "2026-05-20 05:55:51",
+  "updateTime": "2026-05-20 05:55:58",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,28 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 13500.0,
+      "unit": "万",
+      "raw": "1.35亿"
+    },
+    "attackValue": {
+      "value": 4725,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 4050,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 3375,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": null
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -40,5 +60,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三010"
+  "matchNum": "周四004"
 }
