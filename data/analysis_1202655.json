@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1363332",
-  "home": "瓦萨",
-  "away": "赫尔辛基",
+  "fixtureId": "1202655",
+  "home": "诺丁汉",
+  "away": "伯恩茅斯",
   "league": "",
-  "updateTime": "2026-05-22 05:53:35",
+  "updateTime": "2026-05-22 05:54:21",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 215.0,
+      "value": 56800.0,
       "unit": "万",
-      "raw": "215万"
+      "raw": "5.68亿"
     },
     "attackValue": {
-      "value": 75,
+      "value": 19880,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 64,
+      "value": 17040,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 54,
+      "value": 14200,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 610.0,
+      "value": 50700.0,
       "unit": "万",
-      "raw": "610万"
+      "raw": "5.07亿"
     },
     "attackValue": {
-      "value": 214,
+      "value": 17745,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 183,
+      "value": 15210,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 152,
+      "value": 12675,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.8倍，实力差距明显",
-      "对手防线(152万)优于己方锋线(75万)"
+    "homeOpportunity": [
+      "锋线身价(19880万)优于对手防线(12675万)"
     ],
-    "awayStrength": [
-      "球队身价610.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(214万)优于对手防线(54万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五002"
+  "matchNum": "周日017"
 }
