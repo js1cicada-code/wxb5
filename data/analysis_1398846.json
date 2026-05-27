@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398892",
-  "home": "德尔瓦耶",
-  "away": "罗萨里奥",
+  "fixtureId": "1398846",
+  "home": "波特诺",
+  "away": "水晶体育",
   "league": "",
-  "updateTime": "2026-05-27 06:00:11",
+  "updateTime": "2026-05-27 06:00:18",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2128.0,
+      "value": 2685.0,
       "unit": "万",
-      "raw": "2128万"
+      "raw": "2685万"
     },
     "attackValue": {
-      "value": 745,
+      "value": 940,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 638,
+      "value": 806,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 532,
+      "value": 671,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 3308.0,
+      "value": 1333.0,
       "unit": "万",
-      "raw": "3308万"
+      "raw": "1333万"
     },
     "attackValue": {
-      "value": 1158,
+      "value": 467,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 992,
+      "value": 400,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 827,
+      "value": 333,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价2685.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.6倍，实力差距明显"
+    "homeOpportunity": [
+      "锋线身价(940万)优于对手防线(333万)"
     ],
-    "awayStrength": [
-      "球队身价3308.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(1158万)优于对手防线(532万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.0倍，实力差距明显",
+      "对手防线(671万)优于己方锋线(467万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周四003"
 }

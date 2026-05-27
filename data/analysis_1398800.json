@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398892",
-  "home": "德尔瓦耶",
-  "away": "罗萨里奥",
+  "fixtureId": "1398800",
+  "home": "博卡",
+  "away": "天主大学",
   "league": "",
-  "updateTime": "2026-05-27 06:00:11",
+  "updateTime": "2026-05-27 06:00:19",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2128.0,
+      "value": 9043.0,
       "unit": "万",
-      "raw": "2128万"
+      "raw": "9043万"
     },
     "attackValue": {
-      "value": 745,
+      "value": 3165,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 638,
+      "value": 2713,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 532,
+      "value": 2261,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 3308.0,
+      "value": 1315.0,
       "unit": "万",
-      "raw": "3308万"
+      "raw": "1315万"
     },
     "attackValue": {
-      "value": 1158,
+      "value": 460,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 992,
+      "value": 394,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 827,
+      "value": 329,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价9043.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.6倍，实力差距明显"
+    "homeOpportunity": [
+      "锋线身价(3165万)优于对手防线(329万)"
     ],
-    "awayStrength": [
-      "球队身价3308.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(1158万)优于对手防线(532万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手6.9倍，实力差距明显",
+      "对手防线(2261万)优于己方锋线(460万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周四005"
 }
