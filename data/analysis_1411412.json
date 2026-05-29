@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1363620",
-  "home": "瓦勒伦加",
-  "away": "克里斯蒂",
+  "fixtureId": "1411412",
+  "home": "波黑",
+  "away": "北马其顿",
   "league": "",
-  "updateTime": "2026-05-29 04:52:42",
+  "updateTime": "2026-05-29 04:52:47",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,56 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1320.0,
+      "value": 14400.0,
       "unit": "万",
-      "raw": "1320万"
+      "raw": "1.44亿"
     },
     "attackValue": {
-      "value": 462,
+      "value": 5040,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 396,
+      "value": 4320,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 330,
+      "value": 3600,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1335.0,
+      "value": 3320.0,
       "unit": "万",
-      "raw": "1335万"
+      "raw": "3320万"
     },
     "attackValue": {
-      "value": 467,
+      "value": 1162,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 400,
+      "value": 996,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 334,
+      "value": 830,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价14400.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(462万)优于对手防线(334万)"
+      "锋线身价(5040万)优于对手防线(830万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(467万)优于对手防线(330万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手4.3倍，实力差距明显",
+      "对手防线(3600万)优于己方锋线(1162万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -80,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五005"
+  "matchNum": "周五008"
 }
