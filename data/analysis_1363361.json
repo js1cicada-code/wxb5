@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1412631",
-  "home": "清水鼓动",
-  "away": "横滨水手",
+  "fixtureId": "1363361",
+  "home": "赫尔辛基火花",
+  "away": "塞伊奈",
   "league": "",
-  "updateTime": "2026-05-30 05:35:43",
+  "updateTime": "2026-05-30 05:35:35",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1290.0,
+      "value": 293.0,
       "unit": "万",
-      "raw": "1290万"
+      "raw": "293万"
     },
     "attackValue": {
-      "value": 451,
+      "value": 103,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 387,
+      "value": 88,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 322,
+      "value": 73,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1443.0,
+      "value": 27.0,
       "unit": "万",
-      "raw": "1443万"
+      "raw": "27万"
     },
     "attackValue": {
-      "value": 505,
+      "value": 9,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 433,
+      "value": 8,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 361,
+      "value": 7,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价293.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(103万)优于对手防线(7万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(505万)优于对手防线(322万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手10.9倍，实力差距明显",
+      "对手防线(73万)优于己方锋线(9万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日002"
+  "matchNum": "周六010"
 }
