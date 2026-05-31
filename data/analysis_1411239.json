@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1362685",
-  "home": "韦斯特罗斯",
-  "away": "哥德堡",
+  "fixtureId": "1411239",
+  "home": "捷克",
+  "away": "科索沃",
   "league": "",
-  "updateTime": "2026-05-31 04:57:55",
+  "updateTime": "2026-05-31 04:58:06",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 886.0,
+      "value": 19600.0,
       "unit": "万",
-      "raw": "886万"
+      "raw": "1.96亿"
     },
     "attackValue": {
-      "value": 310,
+      "value": 6860,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 266,
+      "value": 5880,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 222,
+      "value": 4900,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1855.0,
+      "value": 15500.0,
       "unit": "万",
-      "raw": "1855万"
+      "raw": "1.55亿"
     },
     "attackValue": {
-      "value": 649,
+      "value": 5425,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 556,
+      "value": 4650,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 464,
+      "value": 3875,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.1倍，实力差距明显",
-      "对手防线(464万)优于己方锋线(310万)"
+    "homeOpportunity": [
+      "锋线身价(6860万)优于对手防线(3875万)"
     ],
-    "awayStrength": [
-      "球队身价1855.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(649万)优于对手防线(222万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日004"
+  "matchNum": "周日009"
 }

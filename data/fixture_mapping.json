@@ -1,12 +1,5 @@
 {
   "mapping": {
-    "墨西哥_澳大利亚": {
-      "matchId": "",
-      "fixtureId": "1393324",
-      "namitiyuId": "",
-      "matchNum": "",
-      "league": "国际赛"
-    },
     "冈山绿雉_浦和红钻": {
       "matchId": "",
       "fixtureId": "1412630",
@@ -20,6 +13,13 @@
       "namitiyuId": "",
       "matchNum": "",
       "league": "日职"
+    },
+    "日本_冰岛": {
+      "matchId": "",
+      "fixtureId": "1411024",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
     },
     "韦斯特罗斯_哥德堡": {
       "matchId": "",
@@ -42,24 +42,51 @@
       "matchNum": "",
       "league": "瑞超"
     },
+    "瑞士_约旦": {
+      "matchId": "",
+      "fixtureId": "1393320",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
+    },
     "AC奥卢_雅罗": {
       "matchId": "",
       "fixtureId": "1363385",
       "namitiyuId": "",
       "matchNum": "",
       "league": "芬兰超级联赛"
+    },
+    "捷克_科索沃": {
+      "matchId": "",
+      "fixtureId": "1411239",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
+    },
+    "德国_芬兰": {
+      "matchId": "",
+      "fixtureId": "1393314",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
+    },
+    "美国_塞内加尔": {
+      "matchId": "",
+      "fixtureId": "1393616",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
+    },
+    "巴西_巴拿马": {
+      "matchId": "",
+      "fixtureId": "1411006",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "国际赛"
     }
   },
   "byMatchId": {},
   "byFixtureId": {
-    "1393324": {
-      "matchId": "",
-      "namitiyuId": "",
-      "matchNum": "",
-      "home": "墨西哥",
-      "away": "澳大利亚",
-      "league": "国际赛"
-    },
     "1412630": {
       "matchId": "",
       "namitiyuId": "",
@@ -75,6 +102,14 @@
       "home": "清水鼓动",
       "away": "横滨水手",
       "league": "日职"
+    },
+    "1411024": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "日本",
+      "away": "冰岛",
+      "league": "国际赛"
     },
     "1362685": {
       "matchId": "",
@@ -100,6 +135,14 @@
       "away": "布鲁马波",
       "league": "瑞超"
     },
+    "1393320": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "瑞士",
+      "away": "约旦",
+      "league": "国际赛"
+    },
     "1363385": {
       "matchId": "",
       "namitiyuId": "",
@@ -107,6 +150,38 @@
       "home": "AC奥卢",
       "away": "雅罗",
       "league": "芬兰超级联赛"
+    },
+    "1411239": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "捷克",
+      "away": "科索沃",
+      "league": "国际赛"
+    },
+    "1393314": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "德国",
+      "away": "芬兰",
+      "league": "国际赛"
+    },
+    "1393616": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "美国",
+      "away": "塞内加尔",
+      "league": "国际赛"
+    },
+    "1411006": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "巴西",
+      "away": "巴拿马",
+      "league": "国际赛"
     }
   }
 }

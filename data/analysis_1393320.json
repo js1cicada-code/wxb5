@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1362685",
-  "home": "韦斯特罗斯",
-  "away": "哥德堡",
+  "fixtureId": "1393320",
+  "home": "瑞士",
+  "away": "约旦",
   "league": "",
-  "updateTime": "2026-05-31 04:57:55",
+  "updateTime": "2026-05-31 04:58:02",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 886.0,
+      "value": 33100.0,
       "unit": "万",
-      "raw": "886万"
+      "raw": "3.31亿"
     },
     "attackValue": {
-      "value": 310,
+      "value": 11585,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 266,
+      "value": 9930,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 222,
+      "value": 8275,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1855.0,
+      "value": 1835.0,
       "unit": "万",
-      "raw": "1855万"
+      "raw": "1835万"
     },
     "attackValue": {
-      "value": 649,
+      "value": 642,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 556,
+      "value": 550,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 464,
+      "value": 459,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价33100.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.1倍，实力差距明显",
-      "对手防线(464万)优于己方锋线(310万)"
+    "homeOpportunity": [
+      "锋线身价(11585万)优于对手防线(459万)"
     ],
-    "awayStrength": [
-      "球队身价1855.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(649万)优于对手防线(222万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手18.0倍，实力差距明显",
+      "对手防线(8275万)优于己方锋线(642万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日004"
+  "matchNum": "周日007"
 }
