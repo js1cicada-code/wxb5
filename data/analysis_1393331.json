@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1412635",
-  "home": "鹿岛鹿角",
-  "away": "神户胜利",
+  "fixtureId": "1393331",
+  "home": "比利时",
+  "away": "突尼斯",
   "league": "",
-  "updateTime": "2026-06-06 06:11:41",
+  "updateTime": "2026-06-06 06:11:50",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2303.0,
+      "value": 54200.0,
       "unit": "万",
-      "raw": "2303万"
+      "raw": "5.42亿"
     },
     "attackValue": {
-      "value": 806,
+      "value": 18970,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 691,
+      "value": 16260,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 576,
+      "value": 13550,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1770.0,
+      "value": 7065.0,
       "unit": "万",
-      "raw": "1770万"
+      "raw": "7065万"
     },
     "attackValue": {
-      "value": 620,
+      "value": 2473,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 531,
+      "value": 2120,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 442,
+      "value": 1766,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价54200.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(806万)优于对手防线(442万)"
+      "锋线身价(18970万)优于对手防线(1766万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手7.7倍，实力差距明显",
+      "对手防线(13550万)优于己方锋线(2473万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六201"
+  "matchNum": "周六207"
 }

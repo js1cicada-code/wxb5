@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1412635",
-  "home": "鹿岛鹿角",
-  "away": "神户胜利",
+  "fixtureId": "1412377",
+  "home": "罗马尼亚",
+  "away": "威尔士",
   "league": "",
-  "updateTime": "2026-06-06 06:11:41",
+  "updateTime": "2026-06-06 06:11:52",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2303.0,
+      "value": 9960.0,
       "unit": "万",
-      "raw": "2303万"
+      "raw": "9960万"
     },
     "attackValue": {
-      "value": 806,
+      "value": 3486,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 691,
+      "value": 2988,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 576,
+      "value": 2490,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1770.0,
+      "value": 18100.0,
       "unit": "万",
-      "raw": "1770万"
+      "raw": "1.81亿"
     },
     "attackValue": {
-      "value": 620,
+      "value": 6335,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 531,
+      "value": 5430,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 442,
+      "value": 4525,
       "unit": "万"
     }
   },
@@ -61,13 +61,17 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(806万)优于对手防线(442万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.8倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价18100.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(6335万)优于对手防线(2490万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六201"
+  "matchNum": "周六209"
 }
