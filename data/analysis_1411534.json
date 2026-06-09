@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359227",
-  "home": "卡塔尔",
-  "away": "瑞士",
+  "fixtureId": "1411534",
+  "home": "中国",
+  "away": "泰国",
   "league": "",
-  "updateTime": "2026-06-09 05:53:17",
+  "updateTime": "2026-06-09 05:52:58",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2048.0,
+      "value": 1330.0,
       "unit": "万",
-      "raw": "2048万"
+      "raw": "1330万"
     },
     "attackValue": {
-      "value": 717,
+      "value": 465,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 614,
+      "value": 399,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 512,
+      "value": 332,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 33200.0,
+      "value": 643.0,
       "unit": "万",
-      "raw": "3.32亿"
+      "raw": "643万"
     },
     "attackValue": {
-      "value": 11620,
+      "value": 225,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9960,
+      "value": 193,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8300,
+      "value": 161,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价1330.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手16.2倍，实力差距明显",
-      "对手防线(8300万)优于己方锋线(717万)"
+    "homeOpportunity": [
+      "锋线身价(465万)优于对手防线(161万)"
     ],
-    "awayStrength": [
-      "球队身价33200.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(11620万)优于对手防线(512万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.1倍，实力差距明显",
+      "对手防线(332万)优于己方锋线(225万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六005"
+  "matchNum": "周二201"
 }
