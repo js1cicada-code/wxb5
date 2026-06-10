@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359254",
-  "home": "乌兹别克",
-  "away": "哥伦比亚",
+  "fixtureId": "1393306",
+  "home": "英格兰",
+  "away": "哥斯达",
   "league": "",
-  "updateTime": "2026-06-10 04:48:00",
+  "updateTime": "2026-06-10 04:47:28",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 7033.0,
+      "value": 131000.0,
       "unit": "万",
-      "raw": "7033万"
+      "raw": "13.1亿"
     },
     "attackValue": {
-      "value": 2462,
+      "value": 45850,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2110,
+      "value": 39300,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1758,
+      "value": 32750,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 30400.0,
+      "value": 2938.0,
       "unit": "万",
-      "raw": "3.04亿"
+      "raw": "2938万"
     },
     "attackValue": {
-      "value": 10640,
+      "value": 1028,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9120,
+      "value": 881,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 7600,
+      "value": 734,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价131000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手4.3倍，实力差距明显",
-      "对手防线(7600万)优于己方锋线(2462万)"
+    "homeOpportunity": [
+      "锋线身价(45850万)优于对手防线(734万)"
     ],
-    "awayStrength": [
-      "球队身价30400.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(10640万)优于对手防线(1758万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手44.6倍，实力差距明显",
+      "对手防线(32750万)优于己方锋线(1028万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三024"
+  "matchNum": "周三202"
 }
