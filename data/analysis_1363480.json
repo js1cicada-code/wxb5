@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359179",
-  "home": "捷克",
-  "away": "墨西哥",
+  "fixtureId": "1363480",
+  "home": "国际图尔",
+  "away": "塞伊奈",
   "league": "",
-  "updateTime": "2026-06-23 04:38:48",
+  "updateTime": "2026-06-23 04:38:37",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,56 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 19000.0,
+      "value": 383.0,
       "unit": "万",
-      "raw": "1.9亿"
+      "raw": "383万"
     },
     "attackValue": {
-      "value": 6650,
+      "value": 134,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5700,
+      "value": 115,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4750,
+      "value": 96,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 19400.0,
+      "value": 30.0,
       "unit": "万",
-      "raw": "1.94亿"
+      "raw": "30万"
     },
     "attackValue": {
-      "value": 6790,
+      "value": 10,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5820,
+      "value": 9,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4850,
+      "value": 8,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价383.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(6650万)优于对手防线(4850万)"
+      "锋线身价(134万)优于对手防线(8万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(6790万)优于对手防线(4750万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手12.8倍，实力差距明显",
+      "对手防线(96万)优于己方锋线(10万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -80,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三054"
+  "matchNum": "周二205"
 }
