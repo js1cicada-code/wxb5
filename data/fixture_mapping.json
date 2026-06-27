@@ -1,19 +1,5 @@
 {
   "mapping": {
-    "埃及_伊朗": {
-      "matchId": "",
-      "fixtureId": "1359244",
-      "namitiyuId": "",
-      "matchNum": "",
-      "league": "世界杯"
-    },
-    "新西兰_比利时": {
-      "matchId": "",
-      "fixtureId": "1359208",
-      "namitiyuId": "",
-      "matchNum": "",
-      "league": "世界杯"
-    },
     "克罗地亚_加纳": {
       "matchId": "",
       "fixtureId": "1359259",
@@ -56,9 +42,65 @@
       "matchNum": "",
       "league": "世界杯"
     },
+    "坦佩雷山猫_塞伊奈": {
+      "matchId": "",
+      "fixtureId": "1363498",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
+    "赫尔辛基_库奥皮奥": {
+      "matchId": "",
+      "fixtureId": "1363505",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
+    "玛丽港_国际图尔": {
+      "matchId": "",
+      "fixtureId": "1363510",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
+    "TPS图尔_雅罗": {
+      "matchId": "",
+      "fixtureId": "1363521",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
+    "赫尔辛基火花_瓦萨": {
+      "matchId": "",
+      "fixtureId": "1363515",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
+    "AC奥卢_拉赫蒂": {
+      "matchId": "",
+      "fixtureId": "1363527",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "芬兰超级联赛"
+    },
     "南非_加拿大": {
       "matchId": "",
       "fixtureId": "1359156",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "世界杯"
+    },
+    "巴西_日本": {
+      "matchId": "",
+      "fixtureId": "1359161",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "世界杯"
+    },
+    "荷兰_摩洛哥": {
+      "matchId": "",
+      "fixtureId": "1359158",
       "namitiyuId": "",
       "matchNum": "",
       "league": "世界杯"
@@ -66,22 +108,6 @@
   },
   "byMatchId": {},
   "byFixtureId": {
-    "1359244": {
-      "matchId": "",
-      "namitiyuId": "",
-      "matchNum": "",
-      "home": "埃及",
-      "away": "伊朗",
-      "league": "世界杯"
-    },
-    "1359208": {
-      "matchId": "",
-      "namitiyuId": "",
-      "matchNum": "",
-      "home": "新西兰",
-      "away": "比利时",
-      "league": "世界杯"
-    },
     "1359259": {
       "matchId": "",
       "namitiyuId": "",
@@ -130,12 +156,76 @@
       "away": "阿根廷",
       "league": "世界杯"
     },
+    "1363498": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "坦佩雷山猫",
+      "away": "塞伊奈",
+      "league": "芬兰超级联赛"
+    },
+    "1363505": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "赫尔辛基",
+      "away": "库奥皮奥",
+      "league": "芬兰超级联赛"
+    },
+    "1363510": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "玛丽港",
+      "away": "国际图尔",
+      "league": "芬兰超级联赛"
+    },
+    "1363521": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "TPS图尔",
+      "away": "雅罗",
+      "league": "芬兰超级联赛"
+    },
+    "1363515": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "赫尔辛基火花",
+      "away": "瓦萨",
+      "league": "芬兰超级联赛"
+    },
+    "1363527": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "AC奥卢",
+      "away": "拉赫蒂",
+      "league": "芬兰超级联赛"
+    },
     "1359156": {
       "matchId": "",
       "namitiyuId": "",
       "matchNum": "",
       "home": "南非",
       "away": "加拿大",
+      "league": "世界杯"
+    },
+    "1359161": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "巴西",
+      "away": "日本",
+      "league": "世界杯"
+    },
+    "1359158": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "荷兰",
+      "away": "摩洛哥",
       "league": "世界杯"
     }
   }
