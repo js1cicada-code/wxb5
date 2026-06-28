@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359156",
-  "home": "南非",
-  "away": "加拿大",
+  "fixtureId": "1359157",
+  "home": "德国",
+  "away": "巴拉圭",
   "league": "",
-  "updateTime": "2026-06-28 06:04:36",
+  "updateTime": "2026-06-28 06:04:44",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4580.0,
+      "value": 99800.0,
       "unit": "万",
-      "raw": "4580万"
+      "raw": "9.98亿"
     },
     "attackValue": {
-      "value": 1603,
+      "value": 34930,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1374,
+      "value": 29940,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1145,
+      "value": 24950,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 19600.0,
+      "value": 15500.0,
       "unit": "万",
-      "raw": "1.96亿"
+      "raw": "1.55亿"
     },
     "attackValue": {
-      "value": 6860,
+      "value": 5425,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5880,
+      "value": 4650,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4900,
+      "value": 3875,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价99800.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手4.3倍，实力差距明显",
-      "对手防线(4900万)优于己方锋线(1603万)"
+    "homeOpportunity": [
+      "锋线身价(34930万)优于对手防线(3875万)"
     ],
-    "awayStrength": [
-      "球队身价19600.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(6860万)优于对手防线(1145万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手6.4倍，实力差距明显",
+      "对手防线(24950万)优于己方锋线(5425万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日073"
+  "matchNum": "周一075"
 }
