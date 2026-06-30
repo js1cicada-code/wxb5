@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359184",
-  "home": "比利时",
-  "away": "塞内加尔",
+  "fixtureId": "1359187",
+  "home": "葡萄牙",
+  "away": "克罗地亚",
   "league": "",
-  "updateTime": "2026-06-30 06:14:36",
+  "updateTime": "2026-06-30 06:14:42",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 54200.0,
+      "value": 102000.0,
       "unit": "万",
-      "raw": "5.42亿"
+      "raw": "10.2亿"
     },
     "attackValue": {
-      "value": 18970,
+      "value": 35700,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16260,
+      "value": 30600,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13550,
+      "value": 25500,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 47200.0,
+      "value": 38900.0,
       "unit": "万",
-      "raw": "4.72亿"
+      "raw": "3.89亿"
     },
     "attackValue": {
-      "value": 16520,
+      "value": 13615,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 14160,
+      "value": 11670,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 11800,
+      "value": 9725,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价102000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(18970万)优于对手防线(11800万)"
+      "锋线身价(35700万)优于对手防线(9725万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手2.6倍，实力差距明显",
+      "对手防线(25500万)优于己方锋线(13615万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三081"
+  "matchNum": "周四084"
 }
