@@ -3,7 +3,7 @@
   "home": "英格兰",
   "away": "刚果(金)",
   "league": "",
-  "updateTime": "2026-07-01 01:58:46",
+  "updateTime": "2026-07-01 10:31:47",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,18 +19,61 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 131000.0,
+      "unit": "万",
+      "raw": "13.1亿"
+    },
+    "attackValue": {
+      "value": 45850,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 39300,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 32750,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 14800.0,
+      "unit": "万",
+      "raw": "1.48亿"
+    },
+    "attackValue": {
+      "value": 5180,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 4440,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 3700,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价131000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(45850万)优于对手防线(3700万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手8.9倍，实力差距明显",
+      "对手防线(32750万)优于己方锋线(5180万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
