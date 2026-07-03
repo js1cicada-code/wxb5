@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359164",
-  "home": "加拿大",
-  "away": "摩洛哥",
+  "fixtureId": "1373115",
+  "home": "全北现代",
+  "away": "江原FC",
   "league": "",
-  "updateTime": "2026-07-03 04:12:40",
+  "updateTime": "2026-07-03 04:12:48",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 19600.0,
+      "value": 1488.0,
       "unit": "万",
-      "raw": "1.96亿"
+      "raw": "1488万"
     },
     "attackValue": {
-      "value": 6860,
+      "value": 521,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5880,
+      "value": 446,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4900,
+      "value": 372,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 48800.0,
+      "value": 973.0,
       "unit": "万",
-      "raw": "4.88亿"
+      "raw": "973万"
     },
     "attackValue": {
-      "value": 17080,
+      "value": 341,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 14640,
+      "value": 292,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 12200,
+      "value": 243,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价1488.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.5倍，实力差距明显",
-      "对手防线(12200万)优于己方锋线(6860万)"
+    "homeOpportunity": [
+      "锋线身价(521万)优于对手防线(243万)"
     ],
-    "awayStrength": [
-      "球队身价48800.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(17080万)优于对手防线(4900万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六089"
+  "matchNum": "周六203"
 }
