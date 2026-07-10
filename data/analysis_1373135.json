@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1359175",
-  "home": "阿根廷",
-  "away": "瑞士",
+  "fixtureId": "1373135",
+  "home": "光州FC",
+  "away": "浦项制铁",
   "league": "",
-  "updateTime": "2026-07-10 04:20:28",
+  "updateTime": "2026-07-10 04:20:31",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 81700.0,
+      "value": 468.0,
       "unit": "万",
-      "raw": "8.17亿"
+      "raw": "468万"
     },
     "attackValue": {
-      "value": 28595,
+      "value": 164,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 24510,
+      "value": 140,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 20425,
+      "value": 117,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 33200.0,
+      "value": 845.0,
       "unit": "万",
-      "raw": "3.32亿"
+      "raw": "845万"
     },
     "attackValue": {
-      "value": 11620,
+      "value": 296,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9960,
+      "value": 254,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8300,
+      "value": 211,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价81700.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(28595万)优于对手防线(8300万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.8倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价845.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手2.5倍，实力差距明显",
-      "对手防线(20425万)优于己方锋线(11620万)"
+    "awayOpportunity": [
+      "锋线身价(296万)优于对手防线(117万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六100"
+  "matchNum": "周六201"
 }
