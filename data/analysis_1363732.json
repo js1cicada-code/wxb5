@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373149",
-  "home": "仁川联",
-  "away": "安养FC",
+  "fixtureId": "1363732",
+  "home": "特罗姆瑟",
+  "away": "瓦勒伦加",
   "league": "",
-  "updateTime": "2026-07-11 04:28:10",
+  "updateTime": "2026-07-11 04:28:07",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,56 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 745.0,
+      "value": 3340.0,
       "unit": "万",
-      "raw": "745万"
+      "raw": "3340万"
     },
     "attackValue": {
-      "value": 261,
+      "value": 1169,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 224,
+      "value": 1002,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 186,
+      "value": 835,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 773.0,
+      "value": 1320.0,
       "unit": "万",
-      "raw": "773万"
+      "raw": "1320万"
     },
     "attackValue": {
-      "value": 271,
+      "value": 462,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 232,
+      "value": 396,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 193,
+      "value": 330,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价3340.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(261万)优于对手防线(193万)"
+      "锋线身价(1169万)优于对手防线(330万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(271万)优于对手防线(186万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.5倍，实力差距明显",
+      "对手防线(835万)优于己方锋线(462万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -80,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日201"
+  "matchNum": "周六211"
 }

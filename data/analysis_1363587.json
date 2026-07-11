@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373149",
-  "home": "仁川联",
-  "away": "安养FC",
+  "fixtureId": "1363587",
+  "home": "拉赫蒂",
+  "away": "赫尔辛基",
   "league": "",
-  "updateTime": "2026-07-11 04:28:10",
+  "updateTime": "2026-07-11 04:28:00",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 745.0,
+      "value": 230.0,
       "unit": "万",
-      "raw": "745万"
+      "raw": "230万"
     },
     "attackValue": {
-      "value": 261,
+      "value": 80,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 224,
+      "value": 69,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 186,
+      "value": 58,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 773.0,
+      "value": 610.0,
       "unit": "万",
-      "raw": "773万"
+      "raw": "610万"
     },
     "attackValue": {
-      "value": 271,
+      "value": 214,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 232,
+      "value": 183,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 193,
+      "value": 152,
       "unit": "万"
     }
   },
@@ -61,14 +61,17 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(261万)优于对手防线(193万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.7倍，实力差距明显",
+      "对手防线(152万)优于己方锋线(80万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价610.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(271万)优于对手防线(186万)"
+      "锋线身价(214万)优于对手防线(58万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -80,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日201"
+  "matchNum": "周六205"
 }
