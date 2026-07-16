@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1358418",
-  "home": "西雅图",
-  "away": "波特兰",
+  "fixtureId": "1359167",
+  "home": "西班牙",
+  "away": "阿根廷",
   "league": "",
-  "updateTime": "2026-07-16 04:26:19",
+  "updateTime": "2026-07-16 04:26:22",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4433.0,
+      "value": 126000.0,
       "unit": "万",
-      "raw": "4433万"
+      "raw": "12.6亿"
     },
     "attackValue": {
-      "value": 1552,
+      "value": 44100,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1330,
+      "value": 37800,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1108,
+      "value": 31500,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 4970.0,
+      "value": 81700.0,
       "unit": "万",
-      "raw": "4970万"
+      "raw": "8.17亿"
     },
     "attackValue": {
-      "value": 1740,
+      "value": 28595,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1491,
+      "value": 24510,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1242,
+      "value": 20425,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价126000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(44100万)优于对手防线(20425万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(1740万)优于对手防线(1108万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四210"
+  "matchNum": "周日104"
 }
