@@ -3,7 +3,7 @@
   "home": "巴伊亚",
   "away": "沙佩科",
   "league": "",
-  "updateTime": "2026-07-16 09:01:34",
+  "updateTime": "2026-07-16 11:05:26",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,18 +19,61 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 12000.0,
+      "unit": "万",
+      "raw": "1.2亿"
+    },
+    "attackValue": {
+      "value": 4200,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 3600,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 3000,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 1893.0,
+      "unit": "万",
+      "raw": "1893万"
+    },
+    "attackValue": {
+      "value": 663,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 568,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 473,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价12000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(4200万)优于对手防线(473万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手6.3倍，实力差距明显",
+      "对手防线(3000万)优于己方锋线(663万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
