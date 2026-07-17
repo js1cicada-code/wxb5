@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1358420",
-  "home": "纳什维尔",
-  "away": "亚特联",
+  "fixtureId": "1373171",
+  "home": "富川FC",
+  "away": "首尔FC",
   "league": "",
-  "updateTime": "2026-07-17 04:25:18",
+  "updateTime": "2026-07-17 04:25:31",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4398.0,
+      "value": 703.0,
       "unit": "万",
-      "raw": "4398万"
+      "raw": "703万"
     },
     "attackValue": {
-      "value": 1539,
+      "value": 246,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1319,
+      "value": 211,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1100,
+      "value": 176,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 5480.0,
+      "value": 1173.0,
       "unit": "万",
-      "raw": "5480万"
+      "raw": "1173万"
     },
     "attackValue": {
-      "value": 1918,
+      "value": 411,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1644,
+      "value": 352,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1370,
+      "value": 293,
       "unit": "万"
     }
   },
@@ -62,11 +62,15 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手1.7倍，实力差距明显"
+    ],
+    "awayStrength": [
+      "球队身价1173.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(1918万)优于对手防线(1100万)"
+      "锋线身价(411万)优于对手防线(176万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五207"
+  "matchNum": "周日201"
 }

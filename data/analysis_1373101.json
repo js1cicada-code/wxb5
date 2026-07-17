@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1358420",
-  "home": "纳什维尔",
-  "away": "亚特联",
+  "fixtureId": "1373101",
+  "home": "济州SK",
+  "away": "浦项制铁",
   "league": "",
-  "updateTime": "2026-07-17 04:25:18",
+  "updateTime": "2026-07-17 04:25:26",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4398.0,
+      "value": 1058.0,
       "unit": "万",
-      "raw": "4398万"
+      "raw": "1058万"
     },
     "attackValue": {
-      "value": 1539,
+      "value": 370,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1319,
+      "value": 317,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1100,
+      "value": 264,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 5480.0,
+      "value": 845.0,
       "unit": "万",
-      "raw": "5480万"
+      "raw": "845万"
     },
     "attackValue": {
-      "value": 1918,
+      "value": 296,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1644,
+      "value": 254,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1370,
+      "value": 211,
       "unit": "万"
     }
   },
@@ -61,13 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(370万)优于对手防线(211万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(1918万)优于对手防线(1100万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五207"
+  "matchNum": "周六203"
 }
