@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373117",
-  "home": "江原FC",
-  "away": "金泉尚武",
+  "fixtureId": "1363607",
+  "home": "赫尔辛基",
+  "away": "瓦萨",
   "league": "",
-  "updateTime": "2026-07-18 03:28:12",
+  "updateTime": "2026-07-18 03:28:21",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 973.0,
+      "value": 610.0,
       "unit": "万",
-      "raw": "973万"
+      "raw": "610万"
     },
     "attackValue": {
-      "value": 341,
+      "value": 214,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 292,
+      "value": 183,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 243,
+      "value": 152,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1095.0,
+      "value": 215.0,
       "unit": "万",
-      "raw": "1095万"
+      "raw": "215万"
     },
     "attackValue": {
-      "value": 383,
+      "value": 75,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 328,
+      "value": 64,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 274,
+      "value": 54,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价610.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(214万)优于对手防线(54万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(383万)优于对手防线(243万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.8倍，实力差距明显",
+      "对手防线(152万)优于己方锋线(75万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六202"
+  "matchNum": "周六206"
 }
