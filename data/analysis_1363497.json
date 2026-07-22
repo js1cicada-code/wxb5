@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373205",
-  "home": "光州FC",
-  "away": "金泉尚武",
+  "fixtureId": "1363497",
+  "home": "博德闪耀",
+  "away": "汉坎",
   "league": "",
-  "updateTime": "2026-07-22 04:31:13",
+  "updateTime": "2026-07-22 04:31:14",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 468.0,
+      "value": 8128.0,
       "unit": "万",
-      "raw": "468万"
+      "raw": "8128万"
     },
     "attackValue": {
-      "value": 164,
+      "value": 2845,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 140,
+      "value": 2438,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 117,
+      "value": 2032,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1095.0,
+      "value": 1195.0,
       "unit": "万",
-      "raw": "1095万"
+      "raw": "1195万"
     },
     "attackValue": {
-      "value": 383,
+      "value": 418,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 328,
+      "value": 358,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 274,
+      "value": 299,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价8128.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.3倍，实力差距明显",
-      "对手防线(274万)优于己方锋线(164万)"
+    "homeOpportunity": [
+      "锋线身价(2845万)优于对手防线(299万)"
     ],
-    "awayStrength": [
-      "球队身价1095.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(383万)优于对手防线(117万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手6.8倍，实力差距明显",
+      "对手防线(2032万)优于己方锋线(418万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三203"
+  "matchNum": "周三204"
 }

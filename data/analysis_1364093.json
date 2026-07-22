@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373205",
-  "home": "光州FC",
-  "away": "金泉尚武",
+  "fixtureId": "1364093",
+  "home": "利勒斯特",
+  "away": "维京",
   "league": "",
-  "updateTime": "2026-07-22 04:31:13",
+  "updateTime": "2026-07-22 04:31:16",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 468.0,
+      "value": 1455.0,
       "unit": "万",
-      "raw": "468万"
+      "raw": "1455万"
     },
     "attackValue": {
-      "value": 164,
+      "value": 509,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 140,
+      "value": 436,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 117,
+      "value": 364,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1095.0,
+      "value": 975.0,
       "unit": "万",
-      "raw": "1095万"
+      "raw": "975万"
     },
     "attackValue": {
-      "value": 383,
+      "value": 341,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 328,
+      "value": 292,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 274,
+      "value": 244,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.3倍，实力差距明显",
-      "对手防线(274万)优于己方锋线(164万)"
+    "homeOpportunity": [
+      "锋线身价(509万)优于对手防线(244万)"
     ],
-    "awayStrength": [
-      "球队身价1095.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(383万)优于对手防线(117万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三203"
+  "matchNum": "周三205"
 }
