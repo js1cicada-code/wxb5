@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373200",
-  "home": "光州FC",
-  "away": "济州SK",
+  "fixtureId": "1362299",
+  "home": "桑托斯",
+  "away": "沙佩科",
   "league": "",
-  "updateTime": "2026-07-25 04:30:35",
+  "updateTime": "2026-07-25 04:30:29",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 468.0,
+      "value": 10000.0,
       "unit": "万",
-      "raw": "468万"
+      "raw": "1亿"
     },
     "attackValue": {
-      "value": 164,
+      "value": 3500,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 140,
+      "value": 3000,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 117,
+      "value": 2500,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1058.0,
+      "value": 1893.0,
       "unit": "万",
-      "raw": "1058万"
+      "raw": "1893万"
     },
     "attackValue": {
-      "value": 370,
+      "value": 663,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 317,
+      "value": 568,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 264,
+      "value": 473,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价10000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.3倍，实力差距明显",
-      "对手防线(264万)优于己方锋线(164万)"
+    "homeOpportunity": [
+      "锋线身价(3500万)优于对手防线(473万)"
     ],
-    "awayStrength": [
-      "球队身价1058.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(370万)优于对手防线(117万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手5.3倍，实力差距明显",
+      "对手防线(2500万)优于己方锋线(663万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日203"
+  "matchNum": "周六209"
 }

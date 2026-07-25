@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373200",
-  "home": "光州FC",
-  "away": "济州SK",
+  "fixtureId": "1362327",
+  "home": "弗拉门戈",
+  "away": "圣保罗",
   "league": "",
-  "updateTime": "2026-07-25 04:30:35",
+  "updateTime": "2026-07-25 04:30:50",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 468.0,
+      "value": 21300.0,
       "unit": "万",
-      "raw": "468万"
+      "raw": "2.13亿"
     },
     "attackValue": {
-      "value": 164,
+      "value": 7455,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 140,
+      "value": 6390,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 117,
+      "value": 5325,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1058.0,
+      "value": 7950.0,
       "unit": "万",
-      "raw": "1058万"
+      "raw": "7950万"
     },
     "attackValue": {
-      "value": 370,
+      "value": 2782,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 317,
+      "value": 2385,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 264,
+      "value": 1988,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价21300.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.3倍，实力差距明显",
-      "对手防线(264万)优于己方锋线(164万)"
+    "homeOpportunity": [
+      "锋线身价(7455万)优于对手防线(1988万)"
     ],
-    "awayStrength": [
-      "球队身价1058.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(370万)优于对手防线(117万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.7倍，实力差距明显",
+      "对手防线(5325万)优于己方锋线(2782万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日203"
+  "matchNum": "周日217"
 }

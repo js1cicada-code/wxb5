@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373200",
-  "home": "光州FC",
-  "away": "济州SK",
+  "fixtureId": "1364264",
+  "home": "克里斯蒂",
+  "away": "斯达",
   "league": "",
-  "updateTime": "2026-07-25 04:30:35",
+  "updateTime": "2026-07-25 04:30:26",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 468.0,
+      "value": 1335.0,
       "unit": "万",
-      "raw": "468万"
+      "raw": "1335万"
     },
     "attackValue": {
-      "value": 164,
+      "value": 467,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 140,
+      "value": 400,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 117,
+      "value": 334,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1058.0,
+      "value": 873.0,
       "unit": "万",
-      "raw": "1058万"
+      "raw": "873万"
     },
     "attackValue": {
-      "value": 370,
+      "value": 306,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 317,
+      "value": 262,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 264,
+      "value": 218,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价1335.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.3倍，实力差距明显",
-      "对手防线(264万)优于己方锋线(164万)"
+    "homeOpportunity": [
+      "锋线身价(467万)优于对手防线(218万)"
     ],
-    "awayStrength": [
-      "球队身价1058.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(370万)优于对手防线(117万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日203"
+  "matchNum": "周六205"
 }
