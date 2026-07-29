@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427653",
-  "home": "波兹南",
-  "away": "奥胡斯",
+  "fixtureId": "1362421",
+  "home": "巴西国际",
+  "away": "弗拉门戈",
   "league": "",
-  "updateTime": "2026-07-29 03:47:32",
+  "updateTime": "2026-07-29 03:47:36",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4410.0,
+      "value": 7785.0,
       "unit": "万",
-      "raw": "4410万"
+      "raw": "7785万"
     },
     "attackValue": {
-      "value": 1544,
+      "value": 2725,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1323,
+      "value": 2336,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1102,
+      "value": 1946,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 3254.0,
+      "value": 21300.0,
       "unit": "万",
-      "raw": "3254万"
+      "raw": "2.13亿"
     },
     "attackValue": {
-      "value": 1139,
+      "value": 7455,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 976,
+      "value": 6390,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 814,
+      "value": 5325,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(1544万)优于对手防线(814万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.7倍，实力差距明显",
+      "对手防线(5325万)优于己方锋线(2725万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价21300.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(7455万)优于对手防线(1946万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周三004"
 }
