@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-08-01 11:58:25",
+  "updateTime": "2026-08-01 13:21:36",
   "matches": [
     {
       "id": "1373181",
@@ -12,9 +12,9 @@
       "away": "富川FC",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "upcoming",
+      "status": "finished",
       "minute": "",
-      "statusOrder": 2,
+      "statusOrder": 1,
       "namitiyuId": ""
     },
     {
@@ -28,9 +28,9 @@
       "away": "首尔FC",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "upcoming",
+      "status": "finished",
       "minute": "",
-      "statusOrder": 2,
+      "statusOrder": 1,
       "namitiyuId": ""
     },
     {
@@ -44,9 +44,9 @@
       "away": "金泉尚武",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "upcoming",
+      "status": "finished",
       "minute": "",
-      "statusOrder": 2,
+      "statusOrder": 1,
       "namitiyuId": ""
     },
     {
@@ -170,6 +170,22 @@
       "time": "07:30",
       "home": "温哥华",
       "away": "洛杉矶FC",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "upcoming",
+      "minute": "",
+      "statusOrder": 2,
+      "namitiyuId": ""
+    },
+    {
+      "id": "1412960",
+      "fid": "1412960",
+      "matchNum": "",
+      "league": "巴西杯",
+      "date": "2026-08-02",
+      "time": "08:00",
+      "home": "桑托斯",
+      "away": "里莫",
       "homeScore": 0,
       "awayScore": 0,
       "status": "upcoming",
@@ -530,8 +546,8 @@
       "namitiyuId": ""
     }
   ],
-  "total": 33,
+  "total": 34,
   "live": 0,
-  "finished": 0,
-  "upcoming": 33
+  "finished": 3,
+  "upcoming": 31
 }
