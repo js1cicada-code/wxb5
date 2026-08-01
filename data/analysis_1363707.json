@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1373177",
-  "home": "济州SK",
-  "away": "仁川联",
+  "fixtureId": "1363707",
+  "home": "塞伊奈",
+  "away": "赫尔辛基",
   "league": "",
-  "updateTime": "2026-08-01 04:42:26",
+  "updateTime": "2026-08-01 04:42:43",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1058.0,
+      "value": 30.0,
       "unit": "万",
-      "raw": "1058万"
+      "raw": "30万"
     },
     "attackValue": {
-      "value": 370,
+      "value": 10,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 317,
+      "value": 9,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 264,
+      "value": 8,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 745.0,
+      "value": 610.0,
       "unit": "万",
-      "raw": "745万"
+      "raw": "610万"
     },
     "attackValue": {
-      "value": 261,
+      "value": 214,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 224,
+      "value": 183,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 186,
+      "value": 152,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(370万)优于对手防线(186万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手20.3倍，实力差距明显",
+      "对手防线(152万)优于己方锋线(10万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价610.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(214万)优于对手防线(8万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日002"
+  "matchNum": "周一001"
 }
