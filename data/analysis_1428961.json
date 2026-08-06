@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1412969",
-  "home": "维多利亚",
-  "away": "巴竞技",
+  "fixtureId": "1428961",
+  "home": "米堡",
+  "away": "雷克斯",
   "league": "",
-  "updateTime": "2026-08-06 06:49:35",
+  "updateTime": "2026-08-06 06:49:55",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,28 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 14700.0,
+      "unit": "万",
+      "raw": "1.47亿"
+    },
+    "attackValue": {
+      "value": 5145,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 4410,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 3675,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": null
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -40,5 +60,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四001"
+  "matchNum": "周五009"
 }
