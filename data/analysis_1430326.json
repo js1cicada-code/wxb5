@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1363714",
-  "home": "塞伊奈",
-  "away": "赫尔辛基火花",
+  "fixtureId": "1430326",
+  "home": "圣保利",
+  "away": "菲尔特",
   "league": "",
-  "updateTime": "2026-08-07 03:37:10",
+  "updateTime": "2026-08-07 03:37:54",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 30.0,
+      "value": 6345.0,
       "unit": "万",
-      "raw": "30万"
+      "raw": "6345万"
     },
     "attackValue": {
-      "value": 10,
+      "value": 2221,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9,
+      "value": 1904,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8,
+      "value": 1586,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 293.0,
+      "value": 2845.0,
       "unit": "万",
-      "raw": "293万"
+      "raw": "2845万"
     },
     "attackValue": {
-      "value": 103,
+      "value": 996,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 88,
+      "value": 854,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 73,
+      "value": 711,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价6345.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手9.8倍，实力差距明显",
-      "对手防线(73万)优于己方锋线(10万)"
+    "homeOpportunity": [
+      "锋线身价(2221万)优于对手防线(711万)"
     ],
-    "awayStrength": [
-      "球队身价293.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(103万)优于对手防线(8万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.2倍，实力差距明显",
+      "对手防线(1586万)优于己方锋线(996万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五003"
+  "matchNum": "周日005"
 }

@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1363714",
-  "home": "塞伊奈",
-  "away": "赫尔辛基火花",
+  "fixtureId": "1438055",
+  "home": "吉马良斯",
+  "away": "阿罗卡",
   "league": "",
-  "updateTime": "2026-08-07 03:37:10",
+  "updateTime": "2026-08-07 03:37:39",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 30.0,
+      "value": 5970.0,
       "unit": "万",
-      "raw": "30万"
+      "raw": "5970万"
     },
     "attackValue": {
-      "value": 10,
+      "value": 2090,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9,
+      "value": 1791,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8,
+      "value": 1492,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 293.0,
+      "value": 2950.0,
       "unit": "万",
-      "raw": "293万"
+      "raw": "2950万"
     },
     "attackValue": {
-      "value": 103,
+      "value": 1032,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 88,
+      "value": 885,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 73,
+      "value": 738,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价5970.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手9.8倍，实力差距明显",
-      "对手防线(73万)优于己方锋线(10万)"
+    "homeOpportunity": [
+      "锋线身价(2090万)优于对手防线(738万)"
     ],
-    "awayStrength": [
-      "球队身价293.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(103万)优于对手防线(8万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.0倍，实力差距明显",
+      "对手防线(1492万)优于己方锋线(1032万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五003"
+  "matchNum": "周六017"
 }

@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1363714",
-  "home": "塞伊奈",
-  "away": "赫尔辛基火花",
+  "fixtureId": "1415838",
+  "home": "埃因霍温",
+  "away": "福图纳",
   "league": "",
-  "updateTime": "2026-08-07 03:37:10",
+  "updateTime": "2026-08-07 03:37:41",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 30.0,
+      "value": 30700.0,
       "unit": "万",
-      "raw": "30万"
+      "raw": "3.07亿"
     },
     "attackValue": {
-      "value": 10,
+      "value": 10745,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 9,
+      "value": 9210,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8,
+      "value": 7675,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 293.0,
+      "value": 2048.0,
       "unit": "万",
-      "raw": "293万"
+      "raw": "2048万"
     },
     "attackValue": {
-      "value": 103,
+      "value": 717,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 88,
+      "value": 614,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 73,
+      "value": 512,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价30700.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手9.8倍，实力差距明显",
-      "对手防线(73万)优于己方锋线(10万)"
+    "homeOpportunity": [
+      "锋线身价(10745万)优于对手防线(512万)"
     ],
-    "awayStrength": [
-      "球队身价293.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(103万)优于对手防线(8万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手15.0倍，实力差距明显",
+      "对手防线(7675万)优于己方锋线(717万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五003"
+  "matchNum": "周六018"
 }
