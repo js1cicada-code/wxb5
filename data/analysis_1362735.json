@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428984",
-  "home": "西汉姆联",
-  "away": "朴次茅斯",
+  "fixtureId": "1362735",
+  "home": "韦斯特罗斯",
+  "away": "佐加顿斯",
   "league": "",
-  "updateTime": "2026-08-08 03:15:51",
+  "updateTime": "2026-08-08 03:16:49",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 36200.0,
+      "value": 886.0,
       "unit": "万",
-      "raw": "3.62亿"
+      "raw": "886万"
     },
     "attackValue": {
-      "value": 12670,
+      "value": 310,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10860,
+      "value": 266,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 9050,
+      "value": 222,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 3610.0,
+      "value": 2095.0,
       "unit": "万",
-      "raw": "3610万"
+      "raw": "2095万"
     },
     "attackValue": {
-      "value": 1264,
+      "value": 733,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1083,
+      "value": 628,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 902,
+      "value": 524,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价36200.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(12670万)优于对手防线(902万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.4倍，实力差距明显",
+      "对手防线(524万)优于己方锋线(310万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价2095.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手10.0倍，实力差距明显",
-      "对手防线(9050万)优于己方锋线(1264万)"
+    "awayOpportunity": [
+      "锋线身价(733万)优于对手防线(222万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六009"
+  "matchNum": "周一002"
 }
