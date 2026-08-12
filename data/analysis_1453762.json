@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1453759",
-  "home": "普拉滕斯",
-  "away": "科金博联",
+  "fixtureId": "1453762",
+  "home": "罗萨里奥",
+  "away": "科林蒂安",
   "league": "",
-  "updateTime": "2026-08-12 03:12:13",
+  "updateTime": "2026-08-12 03:12:19",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1380.0,
+      "value": 3308.0,
       "unit": "万",
-      "raw": "1380万"
+      "raw": "3308万"
     },
     "attackValue": {
-      "value": 483,
+      "value": 1158,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 414,
+      "value": 992,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 345,
+      "value": 827,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1243.0,
+      "value": 15000.0,
       "unit": "万",
-      "raw": "1243万"
+      "raw": "1.5亿"
     },
     "attackValue": {
-      "value": 435,
+      "value": 5250,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 373,
+      "value": 4500,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 311,
+      "value": 3750,
       "unit": "万"
     }
   },
@@ -61,13 +61,18 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(483万)优于对手防线(311万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手4.5倍，实力差距明显",
+      "对手防线(3750万)优于己方锋线(1158万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价15000.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(5250万)优于对手防线(827万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周四010"
 }
