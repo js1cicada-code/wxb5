@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1453762",
-  "home": "罗萨里奥",
-  "away": "科林蒂安",
+  "fixtureId": "1460767",
+  "home": "流浪者",
+  "away": "比亚韦",
   "league": "",
-  "updateTime": "2026-08-13 03:17:40",
+  "updateTime": "2026-08-13 03:17:35",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 3308.0,
+      "value": 12600.0,
       "unit": "万",
-      "raw": "3308万"
+      "raw": "1.26亿"
     },
     "attackValue": {
-      "value": 1158,
+      "value": 4410,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 992,
+      "value": 3780,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 827,
+      "value": 3150,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 15000.0,
+      "value": 3468.0,
       "unit": "万",
-      "raw": "1.5亿"
+      "raw": "3468万"
     },
     "attackValue": {
-      "value": 5250,
+      "value": 1214,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4500,
+      "value": 1040,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3750,
+      "value": 867,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价12600.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手4.5倍，实力差距明显",
-      "对手防线(3750万)优于己方锋线(1158万)"
+    "homeOpportunity": [
+      "锋线身价(4410万)优于对手防线(867万)"
     ],
-    "awayStrength": [
-      "球队身价15000.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(5250万)优于对手防线(827万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手3.6倍，实力差距明显",
+      "对手防线(3150万)优于己方锋线(1214万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四010"
+  "matchNum": "周四006"
 }
