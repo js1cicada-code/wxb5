@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1460786",
-  "home": "哈茨",
-  "away": "本菲卡",
+  "fixtureId": "1415866",
+  "home": "瓦尔韦克",
+  "away": "多德勒支",
   "league": "",
-  "updateTime": "2026-08-13 06:45:24",
+  "updateTime": "2026-08-13 06:45:39",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 3125.0,
+      "value": 860.0,
       "unit": "万",
-      "raw": "3125万"
+      "raw": "860万"
     },
     "attackValue": {
-      "value": 1094,
+      "value": 301,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 938,
+      "value": 258,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 781,
+      "value": 215,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 35900.0,
+      "value": 900.0,
       "unit": "万",
-      "raw": "3.59亿"
+      "raw": "900万"
     },
     "attackValue": {
-      "value": 12565,
+      "value": 315,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10770,
+      "value": 270,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8975,
+      "value": 225,
       "unit": "万"
     }
   },
@@ -61,17 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手11.5倍，实力差距明显",
-      "对手防线(8975万)优于己方锋线(1094万)"
+    "homeOpportunity": [
+      "锋线身价(301万)优于对手防线(225万)"
     ],
-    "awayStrength": [
-      "球队身价35900.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(12565万)优于对手防线(781万)"
+      "锋线身价(315万)优于对手防线(215万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -83,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四008"
+  "matchNum": "周五011"
 }

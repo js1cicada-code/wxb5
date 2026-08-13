@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1460786",
-  "home": "哈茨",
-  "away": "本菲卡",
+  "fixtureId": "1416869",
+  "home": "圣埃蒂安",
+  "away": "克莱蒙",
   "league": "",
-  "updateTime": "2026-08-13 06:45:24",
+  "updateTime": "2026-08-13 06:45:46",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 3125.0,
+      "value": 8425.0,
       "unit": "万",
-      "raw": "3125万"
+      "raw": "8425万"
     },
     "attackValue": {
-      "value": 1094,
+      "value": 2949,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 938,
+      "value": 2528,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 781,
+      "value": 2106,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 35900.0,
+      "value": 1843.0,
       "unit": "万",
-      "raw": "3.59亿"
+      "raw": "1843万"
     },
     "attackValue": {
-      "value": 12565,
+      "value": 645,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10770,
+      "value": 553,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8975,
+      "value": 461,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价8425.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手11.5倍，实力差距明显",
-      "对手防线(8975万)优于己方锋线(1094万)"
+    "homeOpportunity": [
+      "锋线身价(2949万)优于对手防线(461万)"
     ],
-    "awayStrength": [
-      "球队身价35900.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(12565万)优于对手防线(781万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手4.6倍，实力差距明显",
+      "对手防线(2106万)优于己方锋线(645万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四008"
+  "matchNum": "周五015"
 }
