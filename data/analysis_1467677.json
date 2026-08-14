@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1415850",
-  "home": "特尔斯达",
-  "away": "鹿斯巴达",
+  "fixtureId": "1467677",
+  "home": "利雅得新月",
+  "away": "哈马赫费萨利",
   "league": "",
-  "updateTime": "2026-08-14 02:41:13",
+  "updateTime": "2026-08-14 02:41:12",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,28 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 20800.0,
+      "unit": "万",
+      "raw": "2.08亿"
+    },
+    "attackValue": {
+      "value": 7280,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 6240,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 5200,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": null
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -40,5 +60,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五010"
+  "matchNum": "周五009"
 }
