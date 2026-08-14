@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1416868",
-  "home": "兰斯",
-  "away": "敦刻尔克",
+  "fixtureId": "1438056",
+  "home": "维塞乌",
+  "away": "圣克拉拉",
   "league": "",
-  "updateTime": "2026-08-14 04:31:13",
+  "updateTime": "2026-08-14 04:31:31",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 10000.0,
+      "value": 1148.0,
       "unit": "万",
-      "raw": "1亿"
+      "raw": "1148万"
     },
     "attackValue": {
-      "value": 3500,
+      "value": 402,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3000,
+      "value": 344,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2500,
+      "value": 287,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 2785.0,
+      "value": 4003.0,
       "unit": "万",
-      "raw": "2785万"
+      "raw": "4003万"
     },
     "attackValue": {
-      "value": 975,
+      "value": 1401,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 836,
+      "value": 1201,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 696,
+      "value": 1001,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价10000.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(3500万)优于对手防线(696万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手3.5倍，实力差距明显",
+      "对手防线(1001万)优于己方锋线(402万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价4003.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手3.6倍，实力差距明显",
-      "对手防线(2500万)优于己方锋线(975万)"
+    "awayOpportunity": [
+      "锋线身价(1401万)优于对手防线(287万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五014"
+  "matchNum": "周六018"
 }

@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1425275",
-  "home": "伍尔弗汉普顿",
-  "away": "布莱克本",
+  "fixtureId": "1418884",
+  "home": "秋田闪电",
+  "away": "富山胜利",
   "league": "",
-  "updateTime": "2026-08-14 04:31:16",
+  "updateTime": "2026-08-14 04:31:19",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,28 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 448.0,
+      "unit": "万",
+      "raw": "448万"
+    },
+    "attackValue": {
+      "value": 157,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 134,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 112,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": null
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -40,5 +60,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五016"
+  "matchNum": "周六002"
 }
