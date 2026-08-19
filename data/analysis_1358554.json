@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427938",
-  "home": "马竞",
-  "away": "马拉加",
+  "fixtureId": "1358554",
+  "home": "纽约红牛",
+  "away": "纳什维尔",
   "league": "",
-  "updateTime": "2026-08-19 03:16:30",
+  "updateTime": "2026-08-19 03:16:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 58700.0,
+      "value": 2910.0,
       "unit": "万",
-      "raw": "5.87亿"
+      "raw": "2910万"
     },
     "attackValue": {
-      "value": 20545,
+      "value": 1018,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 17610,
+      "value": 873,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 14675,
+      "value": 728,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 2720.0,
+      "value": 4398.0,
       "unit": "万",
-      "raw": "2720万"
+      "raw": "4398万"
     },
     "attackValue": {
-      "value": 952,
+      "value": 1539,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 816,
+      "value": 1319,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 680,
+      "value": 1100,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价58700.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(20545万)优于对手防线(680万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价4398.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手21.6倍，实力差距明显",
-      "对手防线(14675万)优于己方锋线(952万)"
+    "awayOpportunity": [
+      "锋线身价(1539万)优于对手防线(728万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周三004"
 }
