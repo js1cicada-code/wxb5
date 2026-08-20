@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1464478",
-  "home": "波兹南",
-  "away": "图恩",
+  "fixtureId": "1363783",
+  "home": "塞伊奈",
+  "away": "拉赫蒂",
   "league": "",
-  "updateTime": "2026-08-20 06:22:20",
+  "updateTime": "2026-08-20 06:22:28",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4410.0,
+      "value": 30.0,
       "unit": "万",
-      "raw": "4410万"
+      "raw": "30万"
     },
     "attackValue": {
-      "value": 1544,
+      "value": 10,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1323,
+      "value": 9,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1102,
+      "value": 8,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 2873.0,
+      "value": 230.0,
       "unit": "万",
-      "raw": "2873万"
+      "raw": "230万"
     },
     "attackValue": {
-      "value": 1006,
+      "value": 80,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 862,
+      "value": 69,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 718,
+      "value": 58,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价4410.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(1544万)优于对手防线(718万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手7.7倍，实力差距明显",
+      "对手防线(58万)优于己方锋线(10万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价230.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.5倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(80万)优于对手防线(8万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四007"
+  "matchNum": "周五004"
 }
