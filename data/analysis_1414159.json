@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427950",
-  "home": "贝蒂斯",
-  "away": "皇家社会",
+  "fixtureId": "1414159",
+  "home": "都灵",
+  "away": "AC米兰",
   "league": "",
-  "updateTime": "2026-08-21 03:30:36",
+  "updateTime": "2026-08-21 03:31:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 24800.0,
+      "value": 12600.0,
       "unit": "万",
-      "raw": "2.48亿"
+      "raw": "1.26亿"
     },
     "attackValue": {
-      "value": 8680,
+      "value": 4410,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 7440,
+      "value": 3780,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 6200,
+      "value": 3150,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 27200.000000000004,
+      "value": 42900.0,
       "unit": "万",
-      "raw": "2.72亿"
+      "raw": "4.29亿"
     },
     "attackValue": {
-      "value": 9520,
+      "value": 15015,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 8160,
+      "value": 12870,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 6800,
+      "value": 10725,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手3.4倍，实力差距明显",
+      "对手防线(10725万)优于己方锋线(4410万)"
+    ],
+    "awayStrength": [
+      "球队身价42900.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(9520万)优于对手防线(6200万)"
+      "锋线身价(15015万)优于对手防线(3150万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周日022"
 }

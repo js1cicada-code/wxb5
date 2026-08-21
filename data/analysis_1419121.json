@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427950",
-  "home": "贝蒂斯",
-  "away": "皇家社会",
+  "fixtureId": "1419121",
+  "home": "秋田闪电",
+  "away": "甲府风林",
   "league": "",
-  "updateTime": "2026-08-21 03:30:36",
+  "updateTime": "2026-08-21 03:30:39",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 24800.0,
+      "value": 448.0,
       "unit": "万",
-      "raw": "2.48亿"
+      "raw": "448万"
     },
     "attackValue": {
-      "value": 8680,
+      "value": 157,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 7440,
+      "value": 134,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 6200,
+      "value": 112,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 27200.000000000004,
+      "value": 470.0,
       "unit": "万",
-      "raw": "2.72亿"
+      "raw": "470万"
     },
     "attackValue": {
-      "value": 9520,
+      "value": 164,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 8160,
+      "value": 141,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 6800,
+      "value": 118,
       "unit": "万"
     }
   },
@@ -61,12 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(157万)优于对手防线(118万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(9520万)优于对手防线(6200万)"
+      "锋线身价(164万)优于对手防线(112万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六002"
 }
