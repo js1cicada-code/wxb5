@@ -1,24 +1,54 @@
 {
-  "currentPeriod": "26095",
-  "nextPeriod": "26096",
+  "currentPeriod": "26096",
+  "nextPeriod": "26097",
   "nextDrawDate": "2026-08-24",
   "nextDrawDay": "周一",
   "nextDrawTime": "21:25",
-  "updateTime": "2026-08-24 13:17:05",
+  "updateTime": "2026-08-24 14:05:09",
   "latest": {
-    "period": "26095",
+    "period": "26096",
     "numbers": [
-      "04",
-      "06",
       "08",
+      "09",
       "10",
-      "14",
+      "11",
+      "25",
       "04",
-      "05"
+      "12"
     ],
-    "date": "2026-08-22"
+    "date": "2026-08-24"
   },
   "history": [
+    {
+      "period": "26096",
+      "numbers": [
+        "08",
+        "09",
+        "10",
+        "11",
+        "25",
+        "04",
+        "12"
+      ],
+      "front": [
+        "08",
+        "09",
+        "10",
+        "11",
+        "25"
+      ],
+      "back": [
+        "04",
+        "12"
+      ],
+      "pool": "0",
+      "firstCount": "0",
+      "firstPrize": "0",
+      "secondCount": "0",
+      "secondPrize": "0",
+      "sales": "0",
+      "date": "2026-08-24"
+    },
     {
       "period": "26095",
       "numbers": [
@@ -888,36 +918,6 @@
       "secondPrize": "79968",
       "sales": "322509643",
       "date": "2026-06-17"
-    },
-    {
-      "period": "26066",
-      "numbers": [
-        "10",
-        "13",
-        "19",
-        "21",
-        "30",
-        "04",
-        "05"
-      ],
-      "front": [
-        "10",
-        "13",
-        "19",
-        "21",
-        "30"
-      ],
-      "back": [
-        "04",
-        "05"
-      ],
-      "pool": "817519005",
-      "firstCount": "2",
-      "firstPrize": "10000000",
-      "secondCount": "106",
-      "secondPrize": "194605",
-      "sales": "352461614",
-      "date": "2026-06-15"
     }
   ]
 }
