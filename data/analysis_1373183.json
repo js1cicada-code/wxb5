@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1464449",
-  "home": "LASK林茨",
-  "away": "凯尔特人",
+  "fixtureId": "1373183",
+  "home": "大田市民",
+  "away": "蔚山现代",
   "league": "",
-  "updateTime": "2026-08-25 03:35:41",
+  "updateTime": "2026-08-25 03:35:50",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4865.0,
+      "value": 1288.0,
       "unit": "万",
-      "raw": "4865万"
+      "raw": "1288万"
     },
     "attackValue": {
-      "value": 1703,
+      "value": 451,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1460,
+      "value": 386,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1216,
+      "value": 322,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 14600.0,
+      "value": 1335.0,
       "unit": "万",
-      "raw": "1.46亿"
+      "raw": "1335万"
     },
     "attackValue": {
-      "value": 5110,
+      "value": 467,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4380,
+      "value": 400,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3650,
+      "value": 334,
       "unit": "万"
     }
   },
@@ -61,17 +61,14 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手3.0倍，实力差距明显",
-      "对手防线(3650万)优于己方锋线(1703万)"
+    "homeOpportunity": [
+      "锋线身价(451万)优于对手防线(334万)"
     ],
-    "awayStrength": [
-      "球队身价14600.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(5110万)优于对手防线(1216万)"
+      "锋线身价(467万)优于对手防线(322万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -83,5 +80,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周二005"
+  "matchNum": "周三001"
 }

@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1464449",
-  "home": "LASK林茨",
-  "away": "凯尔特人",
+  "fixtureId": "1427944",
+  "home": "皇马",
+  "away": "皇家社会",
   "league": "",
-  "updateTime": "2026-08-25 03:35:41",
+  "updateTime": "2026-08-25 03:35:57",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4865.0,
+      "value": 134000.0,
       "unit": "万",
-      "raw": "4865万"
+      "raw": "13.4亿"
     },
     "attackValue": {
-      "value": 1703,
+      "value": 46900,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1460,
+      "value": 40200,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1216,
+      "value": 33500,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 14600.0,
+      "value": 27200.000000000004,
       "unit": "万",
-      "raw": "1.46亿"
+      "raw": "2.72亿"
     },
     "attackValue": {
-      "value": 5110,
+      "value": 9520,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4380,
+      "value": 8160,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3650,
+      "value": 6800,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价134000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手3.0倍，实力差距明显",
-      "对手防线(3650万)优于己方锋线(1703万)"
+    "homeOpportunity": [
+      "锋线身价(46900万)优于对手防线(6800万)"
     ],
-    "awayStrength": [
-      "球队身价14600.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(5110万)优于对手防线(1216万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手4.9倍，实力差距明显",
+      "对手防线(33500万)优于己方锋线(9520万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周二005"
+  "matchNum": "周三010"
 }
