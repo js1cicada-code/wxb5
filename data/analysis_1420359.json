@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427939",
-  "home": "塞尔塔",
-  "away": "奥萨苏纳",
+  "fixtureId": "1420359",
+  "home": "水晶宫",
+  "away": "曼城",
   "league": "",
-  "updateTime": "2026-08-27 09:35:41",
+  "updateTime": "2026-08-27 09:36:02",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 55900.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "5.59亿"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 19565,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 16770,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 13975,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 10000.0,
+      "value": 132000.0,
       "unit": "万",
-      "raw": "1亿"
+      "raw": "13.2亿"
     },
     "attackValue": {
-      "value": 3500,
+      "value": 46200,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3000,
+      "value": 39600,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2500,
+      "value": 33000,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价17200.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(6020万)优于对手防线(2500万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.4倍，实力差距明显",
+      "对手防线(33000万)优于己方锋线(19565万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价132000.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.7倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(46200万)优于对手防线(13975万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四007"
+  "matchNum": "周五011"
 }

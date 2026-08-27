@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427939",
-  "home": "塞尔塔",
-  "away": "奥萨苏纳",
+  "fixtureId": "1464459",
+  "home": "费伦茨",
+  "away": "特拉布宗",
   "league": "",
-  "updateTime": "2026-08-27 09:35:41",
+  "updateTime": "2026-08-27 09:35:38",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 4515.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "4515万"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 1580,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 1354,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 1129,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 10000.0,
+      "value": 12900.0,
       "unit": "万",
-      "raw": "1亿"
+      "raw": "1.29亿"
     },
     "attackValue": {
-      "value": 3500,
+      "value": 4515,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3000,
+      "value": 3870,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2500,
+      "value": 3225,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价17200.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(6020万)优于对手防线(2500万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.9倍，实力差距明显",
+      "对手防线(3225万)优于己方锋线(1580万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价12900.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.7倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(4515万)优于对手防线(1129万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四007"
+  "matchNum": "周四005"
 }

@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1427939",
-  "home": "塞尔塔",
-  "away": "奥萨苏纳",
+  "fixtureId": "1464467",
+  "home": "奥莫尼亚",
+  "away": "圣图尔登",
   "league": "",
-  "updateTime": "2026-08-27 09:35:41",
+  "updateTime": "2026-08-27 09:35:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 1490.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "1490万"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 522,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 447,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 372,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 10000.0,
+      "value": 4380.0,
       "unit": "万",
-      "raw": "1亿"
+      "raw": "4380万"
     },
     "attackValue": {
-      "value": 3500,
+      "value": 1533,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3000,
+      "value": 1314,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2500,
+      "value": 1095,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价17200.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(6020万)优于对手防线(2500万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.9倍，实力差距明显",
+      "对手防线(1095万)优于己方锋线(522万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价4380.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手1.7倍，实力差距明显"
+    "awayOpportunity": [
+      "锋线身价(1533万)优于对手防线(372万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四007"
+  "matchNum": "周四002"
 }
