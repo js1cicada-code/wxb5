@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1420359",
-  "home": "水晶宫",
-  "away": "曼城",
+  "fixtureId": "1373226",
+  "home": "蔚山现代",
+  "away": "金泉尚武",
   "league": "",
-  "updateTime": "2026-08-28 04:06:21",
+  "updateTime": "2026-08-28 04:06:29",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 55900.0,
+      "value": 1335.0,
       "unit": "万",
-      "raw": "5.59亿"
+      "raw": "1335万"
     },
     "attackValue": {
-      "value": 19565,
+      "value": 467,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16770,
+      "value": 400,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13975,
+      "value": 334,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 132000.0,
+      "value": 1095.0,
       "unit": "万",
-      "raw": "13.2亿"
+      "raw": "1095万"
     },
     "attackValue": {
-      "value": 46200,
+      "value": 383,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 39600,
+      "value": 328,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 33000,
+      "value": 274,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.4倍，实力差距明显",
-      "对手防线(33000万)优于己方锋线(19565万)"
+    "homeOpportunity": [
+      "锋线身价(467万)优于对手防线(274万)"
     ],
-    "awayStrength": [
-      "球队身价132000.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(46200万)优于对手防线(13975万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六004"
 }

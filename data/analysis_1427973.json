@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1420359",
-  "home": "水晶宫",
-  "away": "曼城",
+  "fixtureId": "1427973",
+  "home": "皇马",
+  "away": "马拉加",
   "league": "",
-  "updateTime": "2026-08-28 04:06:21",
+  "updateTime": "2026-08-28 04:07:06",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 55900.0,
+      "value": 134000.0,
       "unit": "万",
-      "raw": "5.59亿"
+      "raw": "13.4亿"
     },
     "attackValue": {
-      "value": 19565,
+      "value": 46900,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16770,
+      "value": 40200,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13975,
+      "value": 33500,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 132000.0,
+      "value": 2720.0,
       "unit": "万",
-      "raw": "13.2亿"
+      "raw": "2720万"
     },
     "attackValue": {
-      "value": 46200,
+      "value": 952,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 39600,
+      "value": 816,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 33000,
+      "value": 680,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价134000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.4倍，实力差距明显",
-      "对手防线(33000万)优于己方锋线(19565万)"
+    "homeOpportunity": [
+      "锋线身价(46900万)优于对手防线(680万)"
     ],
-    "awayStrength": [
-      "球队身价132000.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(46200万)优于对手防线(13975万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手49.3倍，实力差距明显",
+      "对手防线(33500万)优于己方锋线(952万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周日013"
 }

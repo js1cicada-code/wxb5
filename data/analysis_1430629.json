@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1420359",
-  "home": "水晶宫",
-  "away": "曼城",
+  "fixtureId": "1430629",
+  "home": "圣保利",
+  "away": "凯泽",
   "league": "",
-  "updateTime": "2026-08-28 04:06:21",
+  "updateTime": "2026-08-28 04:06:59",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 55900.0,
+      "value": 6345.0,
       "unit": "万",
-      "raw": "5.59亿"
+      "raw": "6345万"
     },
     "attackValue": {
-      "value": 19565,
+      "value": 2221,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16770,
+      "value": 1904,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13975,
+      "value": 1586,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 132000.0,
+      "value": 3178.0,
       "unit": "万",
-      "raw": "13.2亿"
+      "raw": "3178万"
     },
     "attackValue": {
-      "value": 46200,
+      "value": 1112,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 39600,
+      "value": 953,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 33000,
+      "value": 794,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价6345.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.4倍，实力差距明显",
-      "对手防线(33000万)优于己方锋线(19565万)"
+    "homeOpportunity": [
+      "锋线身价(2221万)优于对手防线(794万)"
     ],
-    "awayStrength": [
-      "球队身价132000.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(46200万)优于对手防线(13975万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.0倍，实力差距明显",
+      "对手防线(1586万)优于己方锋线(1112万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周日004"
 }
