@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1418921",
-  "home": "大阪樱花",
-  "away": "柏太阳神",
+  "fixtureId": "1425418",
+  "home": "伯恩利",
+  "away": "米堡",
   "league": "",
-  "updateTime": "2026-09-02 05:38:01",
+  "updateTime": "2026-09-02 05:38:18",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1435.0,
+      "value": 25900.0,
       "unit": "万",
-      "raw": "1435万"
+      "raw": "2.59亿"
     },
     "attackValue": {
-      "value": 502,
+      "value": 9065,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 430,
+      "value": 7770,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 359,
+      "value": 6475,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 1845.0,
+      "value": 14700.0,
       "unit": "万",
-      "raw": "1845万"
+      "raw": "1.47亿"
     },
     "attackValue": {
-      "value": 646,
+      "value": 5145,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 554,
+      "value": 4410,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 461,
+      "value": 3675,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价25900.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(9065万)优于对手防线(3675万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(646万)优于对手防线(359万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.8倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三002"
+  "matchNum": "周三011"
 }
