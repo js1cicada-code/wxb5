@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1475691",
-  "home": "格雷米奥",
-  "away": "巴西国际",
+  "fixtureId": "1415099",
+  "home": "里昂",
+  "away": "欧塞尔",
   "league": "",
-  "updateTime": "2026-09-03 09:34:06",
+  "updateTime": "2026-09-03 09:34:08",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 11100.000000000002,
+      "value": 29900.000000000004,
       "unit": "万",
-      "raw": "1.11亿"
+      "raw": "2.99亿"
     },
     "attackValue": {
-      "value": 3885,
+      "value": 10465,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3330,
+      "value": 8970,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2775,
+      "value": 7475,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 7785.0,
+      "value": 9120.0,
       "unit": "万",
-      "raw": "7785万"
+      "raw": "9120万"
     },
     "attackValue": {
-      "value": 2725,
+      "value": 3192,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2336,
+      "value": 2736,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1946,
+      "value": 2280,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价29900.000000000004万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(3885万)优于对手防线(1946万)"
+      "锋线身价(10465万)优于对手防线(2280万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手3.3倍，实力差距明显",
+      "对手防线(7475万)优于己方锋线(3192万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四007"
+  "matchNum": "周五002"
 }
