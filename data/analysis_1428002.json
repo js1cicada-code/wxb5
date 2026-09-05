@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1415100",
-  "home": "马赛",
-  "away": "巴黎FC",
+  "fixtureId": "1428002",
+  "home": "赫塔费",
+  "away": "塞尔塔",
   "league": "",
-  "updateTime": "2026-09-05 05:43:46",
+  "updateTime": "2026-09-05 05:43:51",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 36300.0,
+      "value": 8290.0,
       "unit": "万",
-      "raw": "3.63亿"
+      "raw": "8290万"
     },
     "attackValue": {
-      "value": 12705,
+      "value": 2902,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10890,
+      "value": 2487,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 9075,
+      "value": 2072,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 15200.0,
+      "value": 17200.0,
       "unit": "万",
-      "raw": "1.52亿"
+      "raw": "1.72亿"
     },
     "attackValue": {
-      "value": 5320,
+      "value": 6020,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4560,
+      "value": 5160,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3800,
+      "value": 4300,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价36300.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(12705万)优于对手防线(3800万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手2.1倍，实力差距明显",
+      "对手防线(4300万)优于己方锋线(2902万)"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价17200.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手2.4倍，实力差距明显",
-      "对手防线(9075万)优于己方锋线(5320万)"
+    "awayOpportunity": [
+      "锋线身价(6020万)优于对手防线(2072万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日022"
+  "matchNum": "周一002"
 }
