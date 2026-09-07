@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428002",
-  "home": "赫塔费",
-  "away": "塞尔塔",
+  "fixtureId": "1479870",
+  "home": "雅典AEK",
+  "away": "LASK林茨",
   "league": "",
-  "updateTime": "2026-09-07 09:36:06",
+  "updateTime": "2026-09-07 09:36:18",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 8290.0,
+      "value": 7388.0,
       "unit": "万",
-      "raw": "8290万"
+      "raw": "7388万"
     },
     "attackValue": {
-      "value": 2902,
+      "value": 2586,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2487,
+      "value": 2216,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2072,
+      "value": 1847,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 4865.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "4865万"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 1703,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 1460,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 1216,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价7388.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.1倍，实力差距明显",
-      "对手防线(4300万)优于己方锋线(2902万)"
+    "homeOpportunity": [
+      "锋线身价(2586万)优于对手防线(1216万)"
     ],
-    "awayStrength": [
-      "球队身价17200.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(6020万)优于对手防线(2072万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.5倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一002"
+  "matchNum": "周二002"
 }

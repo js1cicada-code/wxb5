@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428002",
-  "home": "赫塔费",
-  "away": "塞尔塔",
+  "fixtureId": "1480002",
+  "home": "里尔",
+  "away": "贝蒂斯",
   "league": "",
-  "updateTime": "2026-09-07 09:36:06",
+  "updateTime": "2026-09-07 09:36:23",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 8290.0,
+      "value": 27400.000000000004,
       "unit": "万",
-      "raw": "8290万"
+      "raw": "2.74亿"
     },
     "attackValue": {
-      "value": 2902,
+      "value": 9590,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 2487,
+      "value": 8220,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2072,
+      "value": 6850,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 17200.0,
+      "value": 24800.0,
       "unit": "万",
-      "raw": "1.72亿"
+      "raw": "2.48亿"
     },
     "attackValue": {
-      "value": 6020,
+      "value": 8680,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5160,
+      "value": 7440,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4300,
+      "value": 6200,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手2.1倍，实力差距明显",
-      "对手防线(4300万)优于己方锋线(2902万)"
+    "homeOpportunity": [
+      "锋线身价(9590万)优于对手防线(6200万)"
     ],
-    "awayStrength": [
-      "球队身价17200.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(6020万)优于对手防线(2072万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周一002"
+  "matchNum": "周二010"
 }
