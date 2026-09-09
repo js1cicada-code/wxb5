@@ -1,24 +1,54 @@
 {
-  "currentPeriod": "26102",
-  "nextPeriod": "26103",
+  "currentPeriod": "26103",
+  "nextPeriod": "26104",
   "nextDrawDate": "2026-09-09",
   "nextDrawDay": "周三",
   "nextDrawTime": "21:25",
-  "updateTime": "2026-09-09 09:42:19",
+  "updateTime": "2026-09-09 13:58:18",
   "latest": {
-    "period": "26102",
+    "period": "26103",
     "numbers": [
-      "01",
       "03",
-      "07",
-      "27",
-      "28",
-      "06",
-      "07"
+      "16",
+      "17",
+      "32",
+      "35",
+      "02",
+      "12"
     ],
-    "date": "2026-09-07"
+    "date": "2026-09-09"
   },
   "history": [
+    {
+      "period": "26103",
+      "numbers": [
+        "03",
+        "16",
+        "17",
+        "32",
+        "35",
+        "02",
+        "12"
+      ],
+      "front": [
+        "03",
+        "16",
+        "17",
+        "32",
+        "35"
+      ],
+      "back": [
+        "02",
+        "12"
+      ],
+      "pool": "0",
+      "firstCount": "0",
+      "firstPrize": "0",
+      "secondCount": "0",
+      "secondPrize": "0",
+      "sales": "0",
+      "date": "2026-09-09"
+    },
     {
       "period": "26102",
       "numbers": [
@@ -41,12 +71,12 @@
         "06",
         "07"
       ],
-      "pool": "0",
-      "firstCount": "0",
-      "firstPrize": "0",
-      "secondCount": "0",
-      "secondPrize": "0",
-      "sales": "0",
+      "pool": "725321799",
+      "firstCount": "1",
+      "firstPrize": "10000000",
+      "secondCount": "183",
+      "secondPrize": "57598",
+      "sales": "291295536",
       "date": "2026-09-07"
     },
     {
@@ -888,36 +918,6 @@
       "secondPrize": "140052",
       "sales": "319733435",
       "date": "2026-07-04"
-    },
-    {
-      "period": "26073",
-      "numbers": [
-        "04",
-        "10",
-        "22",
-        "23",
-        "33",
-        "02",
-        "12"
-      ],
-      "front": [
-        "04",
-        "10",
-        "22",
-        "23",
-        "33"
-      ],
-      "back": [
-        "02",
-        "12"
-      ],
-      "pool": "798037522",
-      "firstCount": "6",
-      "firstPrize": "8427733",
-      "secondCount": "129",
-      "secondPrize": "160748",
-      "sales": "306363724",
-      "date": "2026-07-01"
     }
   ]
 }
