@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1479744",
-  "home": "切尔西",
-  "away": "利兹联",
+  "fixtureId": "1358655",
+  "home": "芝加哥",
+  "away": "迈阿密国际",
   "league": "",
-  "updateTime": "2026-09-09 05:11:47",
+  "updateTime": "2026-09-09 05:11:52",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 116000.0,
+      "value": 4815.0,
       "unit": "万",
-      "raw": "11.6亿"
+      "raw": "4815万"
     },
     "attackValue": {
-      "value": 40600,
+      "value": 1685,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 34800,
+      "value": 1444,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 29000,
+      "value": 1204,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 34600.0,
+      "value": 8570.0,
       "unit": "万",
-      "raw": "3.46亿"
+      "raw": "8570万"
     },
     "attackValue": {
-      "value": 12110,
+      "value": 3000,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10380,
+      "value": 2571,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8650,
+      "value": 2142,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价116000.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(40600万)优于对手防线(8650万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.8倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价8570.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手3.4倍，实力差距明显",
-      "对手防线(29000万)优于己方锋线(12110万)"
+    "awayOpportunity": [
+      "锋线身价(3000万)优于对手防线(1204万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周三011"
+  "matchNum": "周三015"
 }
