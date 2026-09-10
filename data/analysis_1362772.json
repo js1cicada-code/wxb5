@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1438066",
-  "home": "阿马多拉",
-  "away": "布拉加",
+  "fixtureId": "1362772",
+  "home": "赫根",
+  "away": "米亚尔比",
   "league": "",
-  "updateTime": "2026-09-10 09:29:58",
+  "updateTime": "2026-09-10 09:30:08",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 1035.0,
+      "value": 2125.0,
       "unit": "万",
-      "raw": "1035万"
+      "raw": "2125万"
     },
     "attackValue": {
-      "value": 362,
+      "value": 744,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 310,
+      "value": 638,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 259,
+      "value": 531,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 18200.0,
+      "value": 1890.0,
       "unit": "万",
-      "raw": "1.82亿"
+      "raw": "1890万"
     },
     "attackValue": {
-      "value": 6370,
+      "value": 662,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 5460,
+      "value": 567,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4550,
+      "value": 472,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手17.6倍，实力差距明显",
-      "对手防线(4550万)优于己方锋线(362万)"
+    "homeOpportunity": [
+      "锋线身价(744万)优于对手防线(472万)"
     ],
-    "awayStrength": [
-      "球队身价18200.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(6370万)优于对手防线(259万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四006"
+  "matchNum": "周五004"
 }
