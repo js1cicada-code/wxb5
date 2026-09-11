@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428019",
-  "home": "塞维利亚",
-  "away": "巴伦西亚",
+  "fixtureId": "1428489",
+  "home": "奥格斯堡",
+  "away": "勒沃库森",
   "league": "",
-  "updateTime": "2026-09-11 06:36:12",
+  "updateTime": "2026-09-11 06:36:29",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 14000.0,
+      "value": 16600.0,
       "unit": "万",
-      "raw": "1.4亿"
+      "raw": "1.66亿"
     },
     "attackValue": {
-      "value": 4900,
+      "value": 5810,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4200,
+      "value": 4980,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3500,
+      "value": 4150,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 16299.999999999998,
+      "value": 43800.0,
       "unit": "万",
-      "raw": "1.63亿"
+      "raw": "4.38亿"
     },
     "attackValue": {
-      "value": 5705,
+      "value": 15330,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4890,
+      "value": 13140,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4075,
+      "value": 10950,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手2.6倍，实力差距明显",
+      "对手防线(10950万)优于己方锋线(5810万)"
+    ],
+    "awayStrength": [
+      "球队身价43800.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(5705万)优于对手防线(3500万)"
+      "锋线身价(15330万)优于对手防线(4150万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六010"
 }

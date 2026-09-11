@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428019",
-  "home": "塞维利亚",
-  "away": "巴伦西亚",
+  "fixtureId": "1420416",
+  "home": "桑德兰",
+  "away": "阿森纳",
   "league": "",
-  "updateTime": "2026-09-11 06:36:12",
+  "updateTime": "2026-09-11 06:36:56",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 14000.0,
+      "value": 38100.0,
       "unit": "万",
-      "raw": "1.4亿"
+      "raw": "3.81亿"
     },
     "attackValue": {
-      "value": 4900,
+      "value": 13335,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4200,
+      "value": 11430,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3500,
+      "value": 9525,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 16299.999999999998,
+      "value": 123000.0,
       "unit": "万",
-      "raw": "1.63亿"
+      "raw": "12.3亿"
     },
     "attackValue": {
-      "value": 5705,
+      "value": 43050,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4890,
+      "value": 36900,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4075,
+      "value": 30750,
       "unit": "万"
     }
   },
@@ -62,11 +62,16 @@
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手3.2倍，实力差距明显",
+      "对手防线(30750万)优于己方锋线(13335万)"
+    ],
+    "awayStrength": [
+      "球队身价123000.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(5705万)优于对手防线(3500万)"
+      "锋线身价(43050万)优于对手防线(9525万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六029"
 }

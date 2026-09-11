@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428019",
-  "home": "塞维利亚",
-  "away": "巴伦西亚",
+  "fixtureId": "1420407",
+  "home": "水晶宫",
+  "away": "伊普斯",
   "league": "",
-  "updateTime": "2026-09-11 06:36:12",
+  "updateTime": "2026-09-11 06:36:36",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 14000.0,
+      "value": 55900.0,
       "unit": "万",
-      "raw": "1.4亿"
+      "raw": "5.59亿"
     },
     "attackValue": {
-      "value": 4900,
+      "value": 19565,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4200,
+      "value": 16770,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3500,
+      "value": 13975,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 16299.999999999998,
+      "value": 21000.0,
       "unit": "万",
-      "raw": "1.63亿"
+      "raw": "2.1亿"
     },
     "attackValue": {
-      "value": 5705,
+      "value": 7350,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 4890,
+      "value": 6300,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 4075,
+      "value": 5250,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价55900.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(19565万)优于对手防线(5250万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(5705万)优于对手防线(3500万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.7倍，实力差距明显",
+      "对手防线(13975万)优于己方锋线(7350万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六015"
 }
