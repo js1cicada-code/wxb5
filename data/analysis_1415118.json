@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1479935",
-  "home": "贝西克塔",
-  "away": "马赛",
+  "fixtureId": "1415118",
+  "home": "摩纳哥",
+  "away": "朗斯",
   "league": "",
-  "updateTime": "2026-09-17 06:16:08",
+  "updateTime": "2026-09-17 06:16:24",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 10300.0,
+      "value": 39500.0,
       "unit": "万",
-      "raw": "1.03亿"
+      "raw": "3.95亿"
     },
     "attackValue": {
-      "value": 3605,
+      "value": 13825,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3090,
+      "value": 11850,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 2575,
+      "value": 9875,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 36300.0,
+      "value": 23400.0,
       "unit": "万",
-      "raw": "3.63亿"
+      "raw": "2.34亿"
     },
     "attackValue": {
-      "value": 12705,
+      "value": 8190,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10890,
+      "value": 7020,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 9075,
+      "value": 5850,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价39500.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手3.5倍，实力差距明显",
-      "对手防线(9075万)优于己方锋线(3605万)"
+    "homeOpportunity": [
+      "锋线身价(13825万)优于对手防线(5850万)"
     ],
-    "awayStrength": [
-      "球队身价36300.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(12705万)优于对手防线(2575万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手1.7倍，实力差距明显"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周四008"
+  "matchNum": "周五010"
 }
