@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1454182",
-  "home": "沙特阿拉伯亚足",
-  "away": "卡塔尔亚",
+  "fixtureId": "1428043",
+  "home": "塞尔塔",
+  "away": "桑坦德",
   "league": "",
-  "updateTime": "2026-09-18 05:00:05",
+  "updateTime": "2026-09-18 05:00:54",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,56 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 370.0,
+      "value": 17200.0,
       "unit": "万",
-      "raw": "370万"
+      "raw": "1.72亿"
     },
     "attackValue": {
-      "value": 130,
+      "value": 6020,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 111,
+      "value": 5160,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 92,
+      "value": 4300,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 360.0,
+      "value": 6110.0,
       "unit": "万",
-      "raw": "360万"
+      "raw": "6110万"
     },
     "attackValue": {
-      "value": 126,
+      "value": 2138,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 108,
+      "value": 1833,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 90,
+      "value": 1528,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价17200.0万欧，远超对手"
+    ],
     "homeWeakness": [],
     "homeOpportunity": [
-      "锋线身价(130万)优于对手防线(90万)"
+      "锋线身价(6020万)优于对手防线(1528万)"
     ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(126万)优于对手防线(92万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.8倍，实力差距明显",
+      "对手防线(4300万)优于己方锋线(2138万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -80,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五001"
+  "matchNum": "周六023"
 }
