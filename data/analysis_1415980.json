@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1398452",
-  "home": "意大利",
-  "away": "比利时",
+  "fixtureId": "1415980",
+  "home": "赫拉克勒",
+  "away": "维迪斯",
   "league": "",
-  "updateTime": "2026-09-25 10:20:58",
+  "updateTime": "2026-09-25 10:21:14",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,58 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 34000.0,
+      "value": 1168.0,
       "unit": "万",
-      "raw": "3.4亿"
+      "raw": "1168万"
     },
     "attackValue": {
-      "value": 11900,
+      "value": 409,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 10200,
+      "value": 350,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 8500,
+      "value": 292,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 54200.0,
+      "value": 555.0,
       "unit": "万",
-      "raw": "5.42亿"
+      "raw": "555万"
     },
     "attackValue": {
-      "value": 18970,
+      "value": 194,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 16260,
+      "value": 166,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 13550,
+      "value": 139,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价1168.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手1.6倍，实力差距明显"
+    "homeOpportunity": [
+      "锋线身价(409万)优于对手防线(139万)"
     ],
-    "awayStrength": [
-      "球队身价54200.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(18970万)优于对手防线(8500万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手2.1倍，实力差距明显",
+      "对手防线(292万)优于己方锋线(194万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -82,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五008"
+  "matchNum": "周六009"
 }
