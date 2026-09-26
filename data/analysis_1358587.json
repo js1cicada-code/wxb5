@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1495380",
-  "home": "中国亚运男足",
-  "away": "泰国亚运男足",
+  "fixtureId": "1358587",
+  "home": "达拉斯",
+  "away": "洛杉矶FC",
   "league": "",
-  "updateTime": "2026-09-26 05:48:54",
+  "updateTime": "2026-09-26 05:49:31",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,58 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 850.0,
+      "value": 4180.0,
       "unit": "万",
-      "raw": "850万"
+      "raw": "4180万"
     },
     "attackValue": {
-      "value": 298,
+      "value": 1463,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 255,
+      "value": 1254,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 212,
+      "value": 1045,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 305.0,
+      "value": 6618.0,
       "unit": "万",
-      "raw": "305万"
+      "raw": "6618万"
     },
     "attackValue": {
-      "value": 107,
+      "value": 2316,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 92,
+      "value": 1985,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 76,
+      "value": 1654,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [
-      "球队身价850.0万欧，远超对手"
-    ],
+    "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(298万)优于对手防线(76万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.6倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价6618.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
-    "awayThreat": [
-      "对手身价是对手2.8倍，实力差距明显",
-      "对手防线(212万)优于己方锋线(107万)"
+    "awayOpportunity": [
+      "锋线身价(2316万)优于对手防线(1045万)"
     ],
+    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周六001"
+  "matchNum": "周六021"
 }
