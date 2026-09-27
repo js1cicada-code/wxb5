@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1415992",
-  "home": "格拉夫",
-  "away": "登博思",
+  "fixtureId": "1398461",
+  "home": "挪威",
+  "away": "葡萄牙",
   "league": "",
-  "updateTime": "2026-09-27 07:06:59",
+  "updateTime": "2026-09-27 07:07:06",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 663.0,
+      "value": 60100.0,
       "unit": "万",
-      "raw": "663万"
+      "raw": "6.01亿"
     },
     "attackValue": {
-      "value": 232,
+      "value": 21035,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 199,
+      "value": 18030,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 166,
+      "value": 15025,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 653.0,
+      "value": 102000.0,
       "unit": "万",
-      "raw": "653万"
+      "raw": "10.2亿"
     },
     "attackValue": {
-      "value": 229,
+      "value": 35700,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 196,
+      "value": 30600,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 163,
+      "value": 25500,
       "unit": "万"
     }
   },
@@ -61,14 +61,16 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [
-      "锋线身价(232万)优于对手防线(163万)"
+    "homeOpportunity": [],
+    "homeThreat": [
+      "对手身价是对手1.7倍，实力差距明显"
     ],
-    "homeThreat": [],
-    "awayStrength": [],
+    "awayStrength": [
+      "球队身价102000.0万欧，远超对手"
+    ],
     "awayWeakness": [],
     "awayOpportunity": [
-      "锋线身价(229万)优于对手防线(166万)"
+      "锋线身价(35700万)优于对手防线(15025万)"
     ],
     "awayThreat": [],
     "summary": ""
@@ -80,5 +82,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周日003"
+  "matchNum": "周日008"
 }
