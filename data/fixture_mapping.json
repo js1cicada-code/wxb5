@@ -1,5 +1,37 @@
 {
-  "mapping": {},
+  "mapping": {
+    "韩国亚运男足_中国亚运男足": {
+      "matchId": "",
+      "fixtureId": "1495377",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "亚运男足"
+    },
+    "乌兹别克亚运男足_日本亚": {
+      "matchId": "",
+      "fixtureId": "1495376",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "亚运男足"
+    }
+  },
   "byMatchId": {},
-  "byFixtureId": {}
+  "byFixtureId": {
+    "1495377": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "韩国亚运男足",
+      "away": "中国亚运男足",
+      "league": "亚运男足"
+    },
+    "1495376": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "乌兹别克亚运男足",
+      "away": "日本亚",
+      "league": "亚运男足"
+    }
+  }
 }
