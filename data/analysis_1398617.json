@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1358414",
-  "home": "芝加哥",
-  "away": "温哥华",
+  "fixtureId": "1398617",
+  "home": "瑞士",
+  "away": "北马其顿",
   "league": "",
-  "updateTime": "2026-10-06 08:56:37",
+  "updateTime": "2026-10-06 08:56:32",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,54 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 4815.0,
+      "value": 33200.0,
       "unit": "万",
-      "raw": "4815万"
+      "raw": "3.32亿"
     },
     "attackValue": {
-      "value": 1685,
+      "value": 11620,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1444,
+      "value": 9960,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1204,
+      "value": 8300,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 6125.0,
+      "value": 3220.0,
       "unit": "万",
-      "raw": "6125万"
+      "raw": "3220万"
     },
     "attackValue": {
-      "value": 2144,
+      "value": 1127,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 1838,
+      "value": 966,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 1531,
+      "value": 805,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价33200.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(11620万)优于对手防线(805万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(2144万)优于对手防线(1204万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手10.3倍，实力差距明显",
+      "对手防线(8300万)优于己方锋线(1127万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -78,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周二012"
+  "matchNum": "周二009"
 }
