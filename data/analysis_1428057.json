@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428060",
-  "home": "马拉加",
-  "away": "西班牙人",
+  "fixtureId": "1428057",
+  "home": "巴萨",
+  "away": "赫塔费",
   "league": "",
-  "updateTime": "2026-10-09 14:46:28",
+  "updateTime": "2026-10-09 14:46:57",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,59 +21,59 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2720.0,
+      "value": 117000.0,
       "unit": "万",
-      "raw": "2720万"
+      "raw": "11.7亿"
     },
     "attackValue": {
-      "value": 952,
+      "value": 40950,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 816,
+      "value": 35100,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 680,
+      "value": 29250,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 12400.0,
+      "value": 8290.0,
       "unit": "万",
-      "raw": "1.24亿"
+      "raw": "8290万"
     },
     "attackValue": {
-      "value": 4340,
+      "value": 2902,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3720,
+      "value": 2487,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3100,
+      "value": 2072,
       "unit": "万"
     }
   },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价117000.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手4.6倍，实力差距明显",
-      "对手防线(3100万)优于己方锋线(952万)"
+    "homeOpportunity": [
+      "锋线身价(40950万)优于对手防线(2072万)"
     ],
-    "awayStrength": [
-      "球队身价12400.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(4340万)优于对手防线(680万)"
+    "awayOpportunity": [],
+    "awayThreat": [
+      "对手身价是对手14.1倍，实力差距明显",
+      "对手防线(29250万)优于己方锋线(2902万)"
     ],
-    "awayThreat": [],
     "summary": ""
   },
   "asianOdds": [],
@@ -83,5 +83,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周六022"
 }

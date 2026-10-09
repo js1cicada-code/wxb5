@@ -1,9 +1,9 @@
 {
-  "fixtureId": "1428060",
-  "home": "马拉加",
-  "away": "西班牙人",
+  "fixtureId": "1415974",
+  "home": "兹沃勒",
+  "away": "坎布尔",
   "league": "",
-  "updateTime": "2026-10-09 14:46:28",
+  "updateTime": "2026-10-09 14:47:19",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -21,39 +21,39 @@
   "awayLineup": null,
   "homeAbility": {
     "totalValue": {
-      "value": 2720.0,
+      "value": 2210.0,
       "unit": "万",
-      "raw": "2720万"
+      "raw": "2210万"
     },
     "attackValue": {
-      "value": 952,
+      "value": 774,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 816,
+      "value": 663,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 680,
+      "value": 552,
       "unit": "万"
     }
   },
   "awayAbility": {
     "totalValue": {
-      "value": 12400.0,
+      "value": 1648.0,
       "unit": "万",
-      "raw": "1.24亿"
+      "raw": "1648万"
     },
     "attackValue": {
-      "value": 4340,
+      "value": 577,
       "unit": "万"
     },
     "midfieldValue": {
-      "value": 3720,
+      "value": 494,
       "unit": "万"
     },
     "defenseValue": {
-      "value": 3100,
+      "value": 412,
       "unit": "万"
     }
   },
@@ -61,18 +61,13 @@
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
-    "homeThreat": [
-      "对手身价是对手4.6倍，实力差距明显",
-      "对手防线(3100万)优于己方锋线(952万)"
+    "homeOpportunity": [
+      "锋线身价(774万)优于对手防线(412万)"
     ],
-    "awayStrength": [
-      "球队身价12400.0万欧，远超对手"
-    ],
+    "homeThreat": [],
+    "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [
-      "锋线身价(4340万)优于对手防线(680万)"
-    ],
+    "awayOpportunity": [],
     "awayThreat": [],
     "summary": ""
   },
@@ -83,5 +78,5 @@
   "bettingAnalysis": null,
   "homeRank": "",
   "awayRank": "",
-  "matchNum": "周五011"
+  "matchNum": "周日009"
 }
