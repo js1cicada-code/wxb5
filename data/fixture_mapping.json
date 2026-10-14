@@ -1,5 +1,12 @@
 {
   "mapping": {
+    "墨胜利_首尔FC": {
+      "matchId": "",
+      "fixtureId": "1474005",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "亚洲冠军乙级联赛"
+    },
     "神户胜利_全北现代": {
       "matchId": "",
       "fixtureId": "1473986",
@@ -34,6 +41,13 @@
       "namitiyuId": "",
       "matchNum": "",
       "league": "欧冠"
+    },
+    "诺维奇_南安普敦": {
+      "matchId": "",
+      "fixtureId": "1425722",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "英冠"
     },
     "罗马_皇马": {
       "matchId": "",
@@ -76,10 +90,25 @@
       "namitiyuId": "",
       "matchNum": "",
       "league": "解放者杯"
+    },
+    "圣路易斯城_温哥华": {
+      "matchId": "",
+      "fixtureId": "1358538",
+      "namitiyuId": "",
+      "matchNum": "",
+      "league": "美职足"
     }
   },
   "byMatchId": {},
   "byFixtureId": {
+    "1474005": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "墨胜利",
+      "away": "首尔FC",
+      "league": "亚洲冠军乙级联赛"
+    },
     "1473986": {
       "matchId": "",
       "namitiyuId": "",
@@ -119,6 +148,14 @@
       "home": "LASK林茨",
       "away": "利物浦",
       "league": "欧冠"
+    },
+    "1425722": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "诺维奇",
+      "away": "南安普敦",
+      "league": "英冠"
     },
     "1479875": {
       "matchId": "",
@@ -167,6 +204,14 @@
       "home": "弗鲁米嫩",
       "away": "帕梅拉斯",
       "league": "解放者杯"
+    },
+    "1358538": {
+      "matchId": "",
+      "namitiyuId": "",
+      "matchNum": "",
+      "home": "圣路易斯城",
+      "away": "温哥华",
+      "league": "美职足"
     }
   }
 }
