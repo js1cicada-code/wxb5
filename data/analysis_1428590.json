@@ -3,7 +3,7 @@
   "home": "弗赖堡",
   "away": "拜仁",
   "league": "",
-  "updateTime": "2026-10-24 05:22:24",
+  "updateTime": "2026-10-24 09:43:45",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,17 +19,60 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 23900.0,
+      "unit": "万",
+      "raw": "2.39亿"
+    },
+    "attackValue": {
+      "value": 8365,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 7170,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 5975,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 95700.0,
+      "unit": "万",
+      "raw": "9.57亿"
+    },
+    "attackValue": {
+      "value": 33495,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 28710,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 23925,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手4.0倍，实力差距明显",
+      "对手防线(23925万)优于己方锋线(8365万)"
+    ],
+    "awayStrength": [
+      "球队身价95700.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(33495万)优于对手防线(5975万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

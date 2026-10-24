@@ -3,7 +3,7 @@
   "home": "毕尔巴鄂",
   "away": "赫塔费",
   "league": "",
-  "updateTime": "2026-10-24 05:22:14",
+  "updateTime": "2026-10-24 09:43:26",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,18 +19,61 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 28300.0,
+      "unit": "万",
+      "raw": "2.83亿"
+    },
+    "attackValue": {
+      "value": 9905,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 8490,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 7075,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 8290.0,
+      "unit": "万",
+      "raw": "8290万"
+    },
+    "attackValue": {
+      "value": 2902,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 2487,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2072,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价28300.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(9905万)优于对手防线(2072万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手3.4倍，实力差距明显",
+      "对手防线(7075万)优于己方锋线(2902万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],

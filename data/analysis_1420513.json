@@ -3,7 +3,7 @@
   "home": "桑德兰",
   "away": "利兹联",
   "league": "",
-  "updateTime": "2026-10-24 05:22:24",
+  "updateTime": "2026-10-24 09:43:43",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,13 +19,51 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 38100.0,
+      "unit": "万",
+      "raw": "3.81亿"
+    },
+    "attackValue": {
+      "value": 13335,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 11430,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 9525,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 34600.0,
+      "unit": "万",
+      "raw": "3.46亿"
+    },
+    "attackValue": {
+      "value": 12110,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 10380,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 8650,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(13335万)优于对手防线(8650万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],

@@ -3,7 +3,7 @@
   "home": "桑托斯",
   "away": "巴伊亚",
   "league": "",
-  "updateTime": "2026-10-24 05:22:06",
+  "updateTime": "2026-10-24 09:43:17",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,44 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 10000.0,
+      "unit": "万",
+      "raw": "1亿"
+    },
+    "attackValue": {
+      "value": 3500,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 3000,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2500,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 12000.0,
+      "unit": "万",
+      "raw": "1.2亿"
+    },
+    "attackValue": {
+      "value": 4200,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 3600,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 3000,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -29,7 +65,9 @@
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(4200万)优于对手防线(2500万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

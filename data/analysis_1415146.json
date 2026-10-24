@@ -3,7 +3,7 @@
   "home": "摩纳哥",
   "away": "里尔",
   "league": "",
-  "updateTime": "2026-10-24 05:22:22",
+  "updateTime": "2026-10-24 09:43:38",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,13 +19,51 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 39500.0,
+      "unit": "万",
+      "raw": "3.95亿"
+    },
+    "attackValue": {
+      "value": 13825,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 11850,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 9875,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 27400.000000000004,
+      "unit": "万",
+      "raw": "2.74亿"
+    },
+    "attackValue": {
+      "value": 9590,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 8220,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 6850,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(13825万)优于对手防线(6850万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],

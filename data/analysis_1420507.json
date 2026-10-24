@@ -3,7 +3,7 @@
   "home": "水晶宫",
   "away": "纽卡斯尔",
   "league": "",
-  "updateTime": "2026-10-24 05:22:18",
+  "updateTime": "2026-10-24 09:43:33",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,44 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 55900.0,
+      "unit": "万",
+      "raw": "5.59亿"
+    },
+    "attackValue": {
+      "value": 19565,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 16770,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 13975,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 71200.0,
+      "unit": "万",
+      "raw": "7.12亿"
+    },
+    "attackValue": {
+      "value": 24920,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 21360,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 17800,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -29,7 +65,9 @@
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(24920万)优于对手防线(13975万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

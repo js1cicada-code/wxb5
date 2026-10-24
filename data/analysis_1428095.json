@@ -3,7 +3,7 @@
   "home": "巴萨",
   "away": "皇马",
   "league": "",
-  "updateTime": "2026-10-24 05:22:27",
+  "updateTime": "2026-10-24 09:43:51",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,44 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 117000.0,
+      "unit": "万",
+      "raw": "11.7亿"
+    },
+    "attackValue": {
+      "value": 40950,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 35100,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 29250,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 134000.0,
+      "unit": "万",
+      "raw": "13.4亿"
+    },
+    "attackValue": {
+      "value": 46900,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 40200,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 33500,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -29,7 +65,9 @@
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(46900万)优于对手防线(29250万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

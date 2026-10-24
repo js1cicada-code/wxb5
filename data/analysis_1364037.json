@@ -3,7 +3,7 @@
   "home": "博德闪耀",
   "away": "瓦勒伦加",
   "league": "",
-  "updateTime": "2026-10-24 05:21:52",
+  "updateTime": "2026-10-24 09:43:00",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,18 +19,61 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 8128.0,
+      "unit": "万",
+      "raw": "8128万"
+    },
+    "attackValue": {
+      "value": 2845,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 2438,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2032,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 1320.0,
+      "unit": "万",
+      "raw": "1320万"
+    },
+    "attackValue": {
+      "value": 462,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 396,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 330,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价8128.0万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(2845万)优于对手防线(330万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手6.2倍，实力差距明显",
+      "对手防线(2032万)优于己方锋线(462万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],

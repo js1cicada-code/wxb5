@@ -3,7 +3,7 @@
   "home": "皇家社会",
   "away": "莱万特",
   "league": "",
-  "updateTime": "2026-10-24 05:22:25",
+  "updateTime": "2026-10-24 09:43:47",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,18 +19,61 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 27200.000000000004,
+      "unit": "万",
+      "raw": "2.72亿"
+    },
+    "attackValue": {
+      "value": 9520,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 8160,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 6800,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 8670.0,
+      "unit": "万",
+      "raw": "8670万"
+    },
+    "attackValue": {
+      "value": 3034,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 2601,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2168,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
-    "homeStrength": [],
+    "homeStrength": [
+      "球队身价27200.000000000004万欧，远超对手"
+    ],
     "homeWeakness": [],
-    "homeOpportunity": [],
+    "homeOpportunity": [
+      "锋线身价(9520万)优于对手防线(2168万)"
+    ],
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
     "awayOpportunity": [],
-    "awayThreat": [],
+    "awayThreat": [
+      "对手身价是对手3.1倍，实力差距明显",
+      "对手防线(6800万)优于己方锋线(3034万)"
+    ],
     "summary": ""
   },
   "asianOdds": [],

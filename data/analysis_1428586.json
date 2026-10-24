@@ -3,7 +3,7 @@
   "home": "霍芬海姆",
   "away": "勒沃库森",
   "league": "",
-  "updateTime": "2026-10-24 05:22:22",
+  "updateTime": "2026-10-24 09:43:39",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,17 +19,59 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 27000.0,
+      "unit": "万",
+      "raw": "2.7亿"
+    },
+    "attackValue": {
+      "value": 9450,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 8100,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 6750,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 43800.0,
+      "unit": "万",
+      "raw": "4.38亿"
+    },
+    "attackValue": {
+      "value": 15330,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 13140,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 10950,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手1.6倍，实力差距明显"
+    ],
+    "awayStrength": [
+      "球队身价43800.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(15330万)优于对手防线(6750万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

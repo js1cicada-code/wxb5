@@ -3,7 +3,7 @@
   "home": "维京",
   "away": "特罗姆瑟",
   "league": "",
-  "updateTime": "2026-10-24 05:22:16",
+  "updateTime": "2026-10-24 09:43:30",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,17 +19,60 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 975.0,
+      "unit": "万",
+      "raw": "975万"
+    },
+    "attackValue": {
+      "value": 341,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 292,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 244,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 3340.0,
+      "unit": "万",
+      "raw": "3340万"
+    },
+    "attackValue": {
+      "value": 1169,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 1002,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 835,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手3.4倍，实力差距明显",
+      "对手防线(835万)优于己方锋线(341万)"
+    ],
+    "awayStrength": [
+      "球队身价3340.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(1169万)优于对手防线(244万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

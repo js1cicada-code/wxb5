@@ -3,7 +3,7 @@
   "home": "雷恩",
   "away": "斯特拉斯",
   "league": "",
-  "updateTime": "2026-10-24 05:22:23",
+  "updateTime": "2026-10-24 09:43:42",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,8 +19,44 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 26100.0,
+      "unit": "万",
+      "raw": "2.61亿"
+    },
+    "attackValue": {
+      "value": 9135,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 7830,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 6525,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 38400.0,
+      "unit": "万",
+      "raw": "3.84亿"
+    },
+    "attackValue": {
+      "value": 13440,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 11520,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 9600,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
@@ -29,7 +65,9 @@
     "homeThreat": [],
     "awayStrength": [],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(13440万)优于对手防线(6525万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

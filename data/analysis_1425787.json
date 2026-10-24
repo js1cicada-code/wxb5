@@ -3,7 +3,7 @@
   "home": "查尔顿",
   "away": "诺维奇",
   "league": "",
-  "updateTime": "2026-10-24 05:21:41",
+  "updateTime": "2026-10-24 09:42:45",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,17 +19,60 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 3095.0,
+      "unit": "万",
+      "raw": "3095万"
+    },
+    "attackValue": {
+      "value": 1083,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 928,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 774,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 10200.0,
+      "unit": "万",
+      "raw": "1.02亿"
+    },
+    "attackValue": {
+      "value": 3570,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 3060,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2550,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手3.3倍，实力差距明显",
+      "对手防线(2550万)优于己方锋线(1083万)"
+    ],
+    "awayStrength": [
+      "球队身价10200.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(3570万)优于对手防线(774万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },

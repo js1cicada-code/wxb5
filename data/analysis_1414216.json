@@ -3,7 +3,7 @@
   "home": "莱切",
   "away": "尤文图斯",
   "league": "",
-  "updateTime": "2026-10-24 05:22:25",
+  "updateTime": "2026-10-24 09:43:46",
   "homeRanking": {},
   "awayRanking": {},
   "standings": [],
@@ -19,17 +19,60 @@
   "awayAverageStats": null,
   "homeLineup": null,
   "awayLineup": null,
-  "homeAbility": null,
-  "awayAbility": null,
+  "homeAbility": {
+    "totalValue": {
+      "value": 8858.0,
+      "unit": "万",
+      "raw": "8858万"
+    },
+    "attackValue": {
+      "value": 3100,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 2657,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 2214,
+      "unit": "万"
+    }
+  },
+  "awayAbility": {
+    "totalValue": {
+      "value": 49900.0,
+      "unit": "万",
+      "raw": "4.99亿"
+    },
+    "attackValue": {
+      "value": 17465,
+      "unit": "万"
+    },
+    "midfieldValue": {
+      "value": 14970,
+      "unit": "万"
+    },
+    "defenseValue": {
+      "value": 12475,
+      "unit": "万"
+    }
+  },
   "recommendation": null,
   "intelligence": {
     "homeStrength": [],
     "homeWeakness": [],
     "homeOpportunity": [],
-    "homeThreat": [],
-    "awayStrength": [],
+    "homeThreat": [
+      "对手身价是对手5.6倍，实力差距明显",
+      "对手防线(12475万)优于己方锋线(3100万)"
+    ],
+    "awayStrength": [
+      "球队身价49900.0万欧，远超对手"
+    ],
     "awayWeakness": [],
-    "awayOpportunity": [],
+    "awayOpportunity": [
+      "锋线身价(17465万)优于对手防线(2214万)"
+    ],
     "awayThreat": [],
     "summary": ""
   },
